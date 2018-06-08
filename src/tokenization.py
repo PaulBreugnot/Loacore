@@ -3,7 +3,6 @@ import re
 import nltk
 import matplotlib.pyplot as plt
 from nltk.probability import FreqDist
-from nltk.corpus import cess_esp
 
 
 def main():
@@ -54,12 +53,12 @@ def init_stopwords():
 
 def process_tokens(tokens, stop_words):
     print(tokens)
-    #Remove stop words
+    # Remove stop words
     for stop_word in stop_words:
         if stop_word in tokens:
             tokens.remove(stop_word)
 
-    #Remove decimal characters
+    # Remove decimal characters
     decimal_to_remove = []
     for token in tokens:
         if not (re.match(r'\d+', token) is None):
@@ -68,14 +67,6 @@ def process_tokens(tokens, stop_words):
     for word in decimal_to_remove:
         tokens.remove(word)
 
-def train_tagger():
-    tag_sents = cess_esp.tagged_sents()
-    unigram_tagger = nltk.UnigramTagger(tag_sents)
-    return unigram_tagger
-
-def check_tags(tags):
-    for tag in tags:
-        print(tag[1], nltk.help.upenn_tagset(tag[1]))
 
 if __name__ == "__main__":
     main()
