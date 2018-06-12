@@ -9,11 +9,10 @@ def main():
             raw_text = open(path.join(dirpath, name), encoding='windows-1252')
 
             normalized_string = raw_text.read().lower()
-
             alphanumeric_chars = re.findall(r'[\w\s]', normalized_string)
             dirname = re.findall(r'^\.\./data/raw/(.*)', dirpath)
 
-            normalized_text = open(path.join('../data/normalized/', dirname[0], name), 'w')
+            normalized_text = open(path.join('../data/normalized/', dirname[0], name), 'w', encoding='utf-8')
             for char in alphanumeric_chars:
                 normalized_text.write(char)
 

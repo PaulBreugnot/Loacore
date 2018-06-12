@@ -10,7 +10,7 @@ def main():
     stop_words = init_stopwords()
     for dirpath, dirnames, filenames in os.walk('../data/normalized/'):
         for filename in filenames:
-            normalized_text = open(os.path.join(dirpath, filename))
+            normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
             tokens = sorted(list(set(nltk.word_tokenize(normalized_text.read()))))
 
             write_raw_tokens(tokens, dirpath, filename)
@@ -26,7 +26,7 @@ def write_raw_tokens(tokens, dirpath, filename):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    tokens_file = open(os.path.join(directory, filename), 'w')
+    tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
     for token in tokens:
         tokens_file.write(token)
         tokens_file.write('\n')
@@ -38,7 +38,7 @@ def write_processed_tokens(tokens, dirpath, filename):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-    tokens_file = open(os.path.join(directory, filename), 'w')
+    tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
     for token in tokens:
         tokens_file.write(token)
         tokens_file.write('\n')
