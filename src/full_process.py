@@ -1,6 +1,6 @@
 import src.normalization as norm
 import src.tokenization as token
-import src.stemming as lem
+import src.lemmatization as lem
 
 
 def main():

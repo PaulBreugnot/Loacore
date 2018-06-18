@@ -1,7 +1,6 @@
 import os
 import re
 import nltk
-import matplotlib.pyplot as plt
 from nltk.probability import FreqDist
 
 

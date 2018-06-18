@@ -1,0 +1,6 @@
+barra
+billar
+juegos
+mesa
+trago
+transporte

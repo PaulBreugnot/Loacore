@@ -1,0 +1,5 @@
+ajedrez
+juego
+mesa
+privacidad
+zona

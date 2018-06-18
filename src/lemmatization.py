@@ -50,7 +50,7 @@ def main():
                         lemmas.append(lemma)
 
             lemmas = sorted(list(set(lemmas)))
-            write_processed_tokens(lemmas, dirpath, filename)
+            write_lemmas(lemmas, dirpath, filename)
 
 
 def maco_options(lang,lpath) :
@@ -64,15 +64,15 @@ def maco_options(lang,lpath) :
     return opt
 
 
-def write_processed_tokens(tokens, dirpath, filename):
+def write_lemmas(lemmas, dirpath, filename):
     dirname = re.findall(r'^\.\./data/tokenized/processed/(.*)', dirpath)
     directory = os.path.join('../data/lemmatized/', dirname[0])
     if not os.path.exists(directory):
         os.makedirs(directory)
 
     tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
-    for token in tokens:
-        tokens_file.write(token)
+    for lemma in lemmas:
+        tokens_file.write(lemma)
         tokens_file.write('\n')
 
 

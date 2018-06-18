@@ -1,0 +1,16 @@
+acceso
+baño
+comedir
+costo
+cuanto
+descansar
+higiene
+insumo
+jugo
+personal
+precio
+restaurante
+servir
+tardar
+tender
+zona

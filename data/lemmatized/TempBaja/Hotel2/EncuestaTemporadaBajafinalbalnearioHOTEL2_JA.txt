@@ -1,0 +1,11 @@
+alto
+cliente
+costo
+hotel
+internet
+manejar
+persona
+ruta
+servicio
+sufrir
+trasporte
