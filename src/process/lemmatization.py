@@ -1,8 +1,7 @@
-import nltk
 import os
 import re
-from nltk.corpus import wordnet as wn
 import ressources.pyfreeling as freeling
+
 
 def main():
 
@@ -74,31 +73,6 @@ def write_lemmas(lemmas, dirpath, filename):
     for lemma in lemmas:
         tokens_file.write(lemma)
         tokens_file.write('\n')
-
-
-def lemmatize(tokens):
-    lemmatizer = nltk.WordNetLemmatizer()
-    processed_tokens = sorted(list(set([lemmatizer.lemmatize(t) for t in tokens])))
-
-    # Check
-    for t in tokens:
-        lemma = lemmatizer.lemmatize(t)
-        if lemma != t:
-            print("word : ", t, "    lemma :", lemma)
-
-    wrong_words = []
-    for t in processed_tokens:
-        print(t)
-        print(wn.synsets(t, lang='spa'))
-        '''
-        if len(wn.synsets(t, lang='spa')) == 0:
-            print(t)
-            wrong_words.append(t)
-    for w in wrong_words:
-        processed_tokens.remove(w)
-        '''
-
-    return processed_tokens
 
 
 if __name__ == "__main__":
