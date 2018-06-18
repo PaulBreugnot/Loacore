@@ -48,7 +48,7 @@ def main():
                     if (len(lemma)) > 0:
                         lemmas.append(lemma)
 
-            lemmas = sorted(list(set(lemmas)))
+            lemmas = sorted(lemmas)
             write_lemmas(lemmas, dirpath, filename)
 
 

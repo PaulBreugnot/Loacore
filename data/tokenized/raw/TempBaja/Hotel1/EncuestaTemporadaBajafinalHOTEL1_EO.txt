@@ -1,5 +1,7 @@
 ajedrez
 de
+de
+juegos
 juegos
 mesa
 privacidad

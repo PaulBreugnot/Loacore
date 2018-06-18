@@ -1,6 +1,10 @@
 barra
 billar
+de
+de
 juegos
+juegos
+mesa
 mesa
 trago
 transporte

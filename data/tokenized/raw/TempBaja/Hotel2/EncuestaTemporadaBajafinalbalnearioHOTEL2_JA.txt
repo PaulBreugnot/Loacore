@@ -4,8 +4,11 @@ atencion
 cliente
 costos
 de
+de
 del
 el
+el
+en
 en
 hotel
 imformaciones
@@ -15,6 +18,7 @@ la
 las
 manejo
 neceita
+para
 para
 personas
 que

@@ -10,7 +10,7 @@ def main():
     for dirpath, dirnames, filenames in os.walk('../data/normalized/'):
         for filename in filenames:
             normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
-            tokens = sorted(list(set(nltk.word_tokenize(normalized_text.read()))))
+            tokens = sorted(nltk.word_tokenize(normalized_text.read()))
 
             write_raw_tokens(tokens, dirpath, filename)
 
