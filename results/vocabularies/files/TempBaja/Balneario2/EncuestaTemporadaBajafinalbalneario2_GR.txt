@@ -1,0 +1,9 @@
+agua
+carretera
+entrada
+escalera
+hospedaje
+juego
+juguete
+mas
+paraguas
