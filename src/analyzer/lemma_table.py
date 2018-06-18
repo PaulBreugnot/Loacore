@@ -1,22 +1,18 @@
 import os
 import nltk
 import re
+from prettytable import PrettyTable
 
 
 def main():
-    get_words("_ENCUESTA_ENERO_2018_.txt")
-    get_words("_ENCUESTA_ENERO_2018_.txt", lemmatized=False)
-    get_words_count("_ENCUESTA_ENERO_2018_.txt")
-    get_words_count("_ENCUESTA_ENERO_2018_.txt", lemmatized=False)
-    print(get_reduction_rate("_ENCUESTA_ENERO_2018_.txt"))
-    print(get_folder("_ENCUESTA_ENERO_2018_.txt"))
+    draw_table()
 
 
 def get_folder(file_name):
-    for dirpath, dirnames, filenames in os.walk('../../data/lemmatized/'):
+    for dirpath, dirnames, filenames in os.walk('../../data/raw/'):
         for filename in filenames:
             if filename == file_name:
-                dirname = re.findall(r'^\.\./\.\./data/lemmatized/(.*)', dirpath)
+                dirname = re.findall(r'^\.\./\.\./data/raw/(.*)', dirpath)
                 return dirname[0]
 
 
@@ -44,7 +40,21 @@ def get_words_count(file_name, lemmatized=True):
 
 
 def get_reduction_rate(file_name):
-    return round(1 - get_words_count(file_name) / get_words_count(file_name, lemmatized=False), 2)
+    if get_words_count(file_name, lemmatized=False) > 0:
+        return round(1 - get_words_count(file_name) / get_words_count(file_name, lemmatized=False), 2)
+    return 0
+
+
+def draw_table():
+    table = PrettyTable(['Folder', 'File', 'Words count (tokens)', 'Words count (lemmas)', 'Reduction rate'])
+    for dirpath, dirnames, filenames in os.walk('../../data/raw/'):
+        for filename in filenames:
+            folder = get_folder(filename)
+            tokens_count = get_words_count(filename, lemmatized=False)
+            lemmas_count = get_words_count(filename)
+            reduction = get_reduction_rate(filename)
+            table.add_row([folder, filename, tokens_count, lemmas_count, reduction])
+    print(table)
 
 
 if __name__ == "__main__":
