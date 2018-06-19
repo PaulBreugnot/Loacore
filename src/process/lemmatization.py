@@ -32,7 +32,7 @@ def main():
     tk = freeling.tokenizer(lpath + "tokenizer.dat")
     sp = freeling.splitter(lpath + "splitter.dat");
 
-    for dirpath, dirnames, filenames in os.walk('../data/tokenized/processed/'):
+    for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
         for filename in filenames:
             tokenized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
             tokens = tk.tokenize(tokenized_text.read())
@@ -64,8 +64,8 @@ def maco_options(lang,lpath) :
 
 
 def write_lemmas(lemmas, dirpath, filename):
-    dirname = re.findall(r'^\.\./data/tokenized/processed/(.*)', dirpath)
-    directory = os.path.join('../data/lemmatized/', dirname[0])
+    dirname = re.findall(r'^\.\./\.\./data/tokenized/processed/(.*)', dirpath)
+    directory = os.path.join('../../data/lemmatized/', dirname[0])
     if not os.path.exists(directory):
         os.makedirs(directory)
 

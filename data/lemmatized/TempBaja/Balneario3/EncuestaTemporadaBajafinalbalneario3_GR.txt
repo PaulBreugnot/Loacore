@@ -1,7 +1,5 @@
 barra
 billar
-de
-de
 juego
 juego
 mesa

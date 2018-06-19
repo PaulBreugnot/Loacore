@@ -1,5 +1,4 @@
 ajedrez
-de
 juego
 juego
 mesa

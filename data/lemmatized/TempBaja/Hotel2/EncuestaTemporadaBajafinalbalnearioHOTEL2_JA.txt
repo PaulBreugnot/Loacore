@@ -1,13 +1,9 @@
 alto
 cliente
 costo
-de
-el
-en
 hotel
 internet
 manejar
-para
 persona
 ruta
 servicio
