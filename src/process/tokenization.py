@@ -1,7 +1,7 @@
 import os
 import re
 import nltk
-from nltk.probability import FreqDist
+import src.utils.file_writer as file_writer
 
 
 def main():
@@ -10,7 +10,10 @@ def main():
     for dirpath, dirnames, filenames in os.walk('../../data/normalized/'):
         for filename in filenames:
             normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
-            tokens = sorted(nltk.word_tokenize(normalized_text.read()))
+
+            tokens = []
+
+            init_tokens(tokens, normalized_text.read(), sort=True)
 
             write_raw_tokens(tokens, dirpath, filename)
 
@@ -20,27 +23,19 @@ def main():
 
 
 def write_raw_tokens(tokens, dirpath, filename):
+    print(len(tokens))
+    raw_tokens_string = '\n'.join(tokens)
     dirname = re.findall(r'^\.\./\.\./data/normalized/(.*)', dirpath)
     directory = os.path.join('../../data/tokenized/raw/', dirname[0])
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
-    for token in tokens:
-        tokens_file.write(token)
-        tokens_file.write('\n')
+    file_writer.write(raw_tokens_string, directory, filename)
 
 
 def write_processed_tokens(tokens, dirpath, filename):
+
+    processed_tokens_string = '\n'.join(tokens)
     dirname = re.findall(r'^\.\./\.\./data/normalized/(.*)', dirpath)
     directory = os.path.join('../../data/tokenized/processed/', dirname[0])
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
-    for token in tokens:
-        tokens_file.write(token)
-        tokens_file.write('\n')
+    file_writer.write(processed_tokens_string, directory, filename)
 
 
 def init_stopwords():
@@ -48,6 +43,17 @@ def init_stopwords():
     stop_words_string = stop_words_file.read()
     stop_words = re.findall(r'^(\w+)\s*(?:\|.*\s*)?', stop_words_string, re.MULTILINE)
     return stop_words
+
+
+def init_tokens(tokens, text, sort=False):
+    nltk_tokens = nltk.word_tokenize(text)
+    for nltk_token in nltk_tokens:
+        tokens.append(nltk_token)
+    if sort:
+        sorted_tokens = sorted(tokens)
+        tokens.clear()
+        for sorted_token in sorted_tokens:
+            tokens.append(sorted_token)
 
 
 def process_tokens(tokens, stop_words):
@@ -66,6 +72,7 @@ def process_tokens(tokens, stop_words):
     for word in decimals_to_remove:
         while word in tokens:
             tokens.remove(word)
+
 
 if __name__ == "__main__":
     main()
