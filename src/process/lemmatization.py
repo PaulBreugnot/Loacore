@@ -1,10 +1,23 @@
 import os
 import re
 import ressources.pyfreeling as freeling
+import src.utils.file_writer as file_writer
 
 
 def main():
 
+    tk, sp, morfo = init_analyzers()
+
+    for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
+        for filename in filenames:
+            tokenized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
+            tokens = tk.tokenize(tokenized_text.read())
+
+            lemmas = search_lemmas(tokens, sp, morfo)
+            write_lemmas(lemmas, dirpath, filename)
+
+
+def init_analyzers():
     lang = "es"
     ipath = "/usr/local"
     # path to language data
@@ -32,24 +45,7 @@ def main():
     tk = freeling.tokenizer(lpath + "tokenizer.dat")
     sp = freeling.splitter(lpath + "splitter.dat");
 
-    for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
-        for filename in filenames:
-            tokenized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
-            tokens = tk.tokenize(tokenized_text.read())
-            sentences_list = sp.split(tokens)
-
-            # perform morphosyntactic analysis (here : dictionary search)
-            sentences_list = morfo.analyze(sentences_list)
-
-            lemmas = []
-            for sentence in sentences_list :
-                for word in sentence :
-                    lemma = word.get_lemma()
-                    if (len(lemma)) > 0:
-                        lemmas.append(lemma)
-
-            lemmas = sorted(lemmas)
-            write_lemmas(lemmas, dirpath, filename)
+    return tk, sp, morfo
 
 
 def maco_options(lang,lpath) :
@@ -63,16 +59,30 @@ def maco_options(lang,lpath) :
     return opt
 
 
+def search_lemmas(tokens, sp, morfo, sort=True):
+    sentences_list = sp.split(tokens)
+
+    # perform morphosyntactic analysis (here : dictionary search)
+    sentences_list = morfo.analyze(sentences_list)
+
+    lemmas = []
+    for sentence in sentences_list:
+        for word in sentence:
+            lemma = word.get_lemma()
+            if (len(lemma)) > 0:
+                lemmas.append(lemma)
+
+    if sort:
+        lemmas = sorted(lemmas)
+    return lemmas
+
+
 def write_lemmas(lemmas, dirpath, filename):
+
+    lemmas_string = '\n'.join(lemmas)
     dirname = re.findall(r'^\.\./\.\./data/tokenized/processed/(.*)', dirpath)
     directory = os.path.join('../../data/lemmatized/', dirname[0])
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    tokens_file = open(os.path.join(directory, filename), 'w', encoding='utf-8')
-    for lemma in lemmas:
-        tokens_file.write(lemma)
-        tokens_file.write('\n')
+    file_writer.write(lemmas_string, directory, filename)
 
 
 if __name__ == "__main__":
