@@ -1,5 +1,6 @@
 import os
 import re
+import src.utils.file_writer as file_writer
 
 
 def main():
@@ -7,16 +8,20 @@ def main():
         for name in filenames:
             raw_text = open(os.path.join(dirpath, name), encoding='windows-1252')
 
-            normalized_string = raw_text.read().lower()
-            alphanumeric_chars = re.findall(r'[\w\s]', normalized_string)
-            subname = re.findall(r'^\.\./\.\./data/raw/(.*)', dirpath)
-            directory = os.path.join('../../data/normalized/', subname[0])
-            if not os.path.exists(directory):
-                os.makedirs(directory)
+            normalized_string = normalize(raw_text.read())
+            write_normalized_text(normalized_string, dirpath, name)
 
-            normalized_text = open(os.path.join(directory, name), 'w', encoding='utf-8')
-            for char in alphanumeric_chars:
-                normalized_text.write(char)
+
+def write_normalized_text(normalized_string, dirpath, filename):
+    subname = re.findall(r'^\.\./\.\./data/raw/(.*)', dirpath)
+    directory = os.path.join('../../data/normalized/', subname[0])
+    file_writer.write(normalized_string, directory, filename)
+
+
+def normalize(text):
+    normalized_string = text.lower()
+    alphanumeric_chars = re.findall(r'[\w\s]', normalized_string)
+    return ''.join(alphanumeric_chars)
 
 
 if __name__ == "__main__":
