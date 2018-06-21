@@ -1,8 +1,8 @@
-barra
 billar
-juegos
-juegos
-mesa
-mesa
-trago
 transporte
+juegos
+mesa
+juegos
+mesa
+barra
+trago

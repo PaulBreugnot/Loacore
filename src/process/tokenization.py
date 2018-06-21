@@ -11,7 +11,7 @@ def main():
         for filename in filenames:
             normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
 
-            tokens = init_tokens(normalized_text.read(), sort=True)
+            tokens = init_tokens(normalized_text.read(), sort=False)
 
             write_raw_tokens(tokens, dirpath, filename)
 
@@ -21,7 +21,6 @@ def main():
 
 
 def write_raw_tokens(tokens, dirpath, filename):
-    print(len(tokens))
     raw_tokens_string = '\n'.join(tokens)
     dirname = re.findall(r'^\.\./\.\./data/normalized/(.*)', dirpath)
     directory = os.path.join('../../data/tokenized/raw/', dirname[0])

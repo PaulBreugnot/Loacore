@@ -1,0 +1,7 @@
+# teleferico
+# toboganvy
+water.n.01# agua
+smell.v.02# huela
+# asufre
+runway.n.04# pista
+dancing.n.01# baile

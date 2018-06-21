@@ -1,0 +1,8 @@
+billiards.n.01# billar
+transportation.n.02# transporte
+game.n.01# juegos
+dining_table.n.01# mesa
+game.n.01# juegos
+dining_table.n.01# mesa
+sweep.v.06# barra
+liquor.n.01# trago

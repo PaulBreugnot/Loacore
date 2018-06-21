@@ -1,0 +1,4 @@
+meal.n.01# comida
+# tipica
+cook.v.03# asados
+sauna.n.01# sauna

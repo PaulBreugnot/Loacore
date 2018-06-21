@@ -1,0 +1,2 @@
+price.n.02# precios
+low.a.02# bajos

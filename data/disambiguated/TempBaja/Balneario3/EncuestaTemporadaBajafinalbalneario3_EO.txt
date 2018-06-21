@@ -1,0 +1,3 @@
+game.n.01# juegos
+dining_table.n.01# mesa
+# calbalgata

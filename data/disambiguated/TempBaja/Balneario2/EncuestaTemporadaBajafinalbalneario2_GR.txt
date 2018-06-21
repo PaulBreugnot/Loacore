@@ -1,0 +1,14 @@
+plaything.n.01# juguetes
+water.n.01# agua
+stairway.n.01# escaleras
+# electricas
+game.n.01# juegos
+# didacticos
+# padimentaran
+highway.n.01# carretera
+umbrella.n.01# paraguas
+# ka
+entrance.n.03# entrada
+# mas
+# economico
+hostel.n.01# hospedaje

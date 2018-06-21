@@ -1,0 +1,7 @@
+zone.n.01# zona
+set.n.01# juegos
+chess.n.02# ajedrez
+set.n.01# juegos
+dining_table.n.01# mesa
+# relajacion
+privacy.n.02# privacidad

@@ -14,7 +14,6 @@ def main():
             tokens = tk.tokenize(tokenized_text.read())
 
             lemmas = search_lemmas(tokens, sp, morfo)
-            write_lemmas(lemmas, dirpath, filename)
 
 
 def init_analyzers():
