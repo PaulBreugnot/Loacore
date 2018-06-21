@@ -11,9 +11,7 @@ def main():
         for filename in filenames:
             normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
 
-            tokens = []
-
-            init_tokens(tokens, normalized_text.read(), sort=True)
+            tokens = init_tokens(normalized_text.read(), sort=True)
 
             write_raw_tokens(tokens, dirpath, filename)
 
@@ -45,15 +43,11 @@ def init_stopwords():
     return stop_words
 
 
-def init_tokens(tokens, text, sort=False):
-    nltk_tokens = nltk.word_tokenize(text)
-    for nltk_token in nltk_tokens:
-        tokens.append(nltk_token)
+def init_tokens(text, sort=False):
+    tokens = nltk.word_tokenize(text)
     if sort:
-        sorted_tokens = sorted(tokens)
-        tokens.clear()
-        for sorted_token in sorted_tokens:
-            tokens.append(sorted_token)
+        tokens = sorted(tokens)
+    return tokens
 
 
 def process_tokens(tokens, stop_words):
