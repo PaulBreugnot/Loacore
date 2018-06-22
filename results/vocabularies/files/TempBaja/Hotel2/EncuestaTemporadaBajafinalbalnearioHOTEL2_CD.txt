@@ -8,11 +8,9 @@ comedir
 cosa
 cumpleaños
 dar
-de
 dejar
 descontar
 ducha
-el
 entrada
 entrar
 especial
@@ -25,10 +23,8 @@ mas
 mediar
 mucho
 musicar
-no
 precio
 q
-que
 refrigerio
 restaurante
 ruta
@@ -36,4 +32,3 @@ sauna
 tener
 transportar
 turco
-y

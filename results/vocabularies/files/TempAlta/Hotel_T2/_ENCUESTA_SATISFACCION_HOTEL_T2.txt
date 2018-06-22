@@ -1,5 +1,3 @@
-a
-a+el
 abandonar
 adecuar
 agua
@@ -36,7 +34,6 @@ colocar
 comedir
 comer
 comprar
-con
 conductor
 contar
 contestar
@@ -46,8 +43,6 @@ cosa
 costoso
 cumplir
 dar
-de
-de+el
 debe
 deber
 decir
@@ -63,10 +58,8 @@ disponibilidad
 disposición
 diversión
 edad
-el
 embarazar
 empleado
-en
 encender
 entrada
 entrar
@@ -74,8 +67,6 @@ entrega
 equipaje
 equivocar
 esperar
-estar
-este
 evaluar
 existir
 falta
@@ -101,23 +92,19 @@ malo
 manera
 mas
 mayor
-me
 mejor
 mejora
 mejorar
 mencionar
 menor
 mesa
-mi
 mil
 minuto
 mismo
 moblar
 molestar
 mujer
-muy
 niño
-no
 norma
 o
 objeto
@@ -127,7 +114,6 @@ ofrecer
 orden
 organización
 orinar
-para
 parecer
 pareja
 parte
@@ -141,14 +127,11 @@ personal
 piscina
 plan
 poder
-por
-porque
 precio
 prenda
 publicidad
 puerta
 pues
-que
 quejar
 quintar
 regadera
@@ -160,7 +143,6 @@ sacar
 salar
 salida
 saludable
-se
 seguridad
 ser
 servicio
@@ -173,7 +155,6 @@ sistema
 sitiar
 solicitar
 solo
-su
 subir
 sucio
 suegro
@@ -192,7 +173,5 @@ transportar
 trasporte
 tumulto
 turismo
-unir
 utilizar
 ver
-y

@@ -1,5 +1,3 @@
-a
-a+el
 acondicionar
 acordar
 acorde
@@ -42,7 +40,6 @@ cobrar
 comedir
 comedor
 completar
-con
 contar
 control
 convenio
@@ -50,8 +47,6 @@ coquetear
 costo
 crear
 dar
-de
-de+el
 debe
 demasiado
 diferente
@@ -61,13 +56,9 @@ disponibilidad
 distinto
 dormir
 ducha
-el
-en
 encontrar
 especial
 establecer
-estar
-este
 evento
 familiar
 gancho
@@ -108,15 +99,12 @@ mismo
 moblar
 mucho
 musicar
-muy
 naturaleza
 nevera
 niño
-no
 noche
 nocturno
 nunca
-o
 ofertar
 oficina
 ofrecer
@@ -124,7 +112,6 @@ opción
 organizar
 pago
 paisaje
-para
 parasol
 pareja
 parque
@@ -141,14 +128,12 @@ plan
 platicar
 plato
 poder
-por
 prestar
 principal
 principiar
 problema
 programa
 pronto
-que
 recibir
 recorrer
 refrigerador
@@ -157,8 +142,6 @@ restaurante
 ruido
 saludable
 sanitario
-se
-sea
 sendero
 ser
 servicio
@@ -178,12 +161,9 @@ trabajador
 traer
 tranquilidad
 trasladar
-unir
-uno
 variedad
 vario
 vidriar
 viejo
 volumen
-y
 zona

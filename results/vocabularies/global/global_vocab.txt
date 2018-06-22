@@ -2,8 +2,6 @@
 2
 4
 9
-a
-a+el
 abajar
 abandonar
 abastecimiento
@@ -89,7 +87,6 @@ alegrar
 alejar
 alergia
 alfombra
-algo
 alguien
 alguno
 alimentar
@@ -132,9 +129,7 @@ animal
 animar
 anoche
 anotar
-ante
 anterior
-antes
 antideslizante
 antiguar
 antojar
@@ -438,7 +433,6 @@ comprometer
 compromiso
 comunicación
 común
-con
 concepto
 conchudo
 condicionar
@@ -511,7 +505,6 @@ crudo
 cual
 cualidad
 cualquiera
-cuando
 cuanto
 cubano
 cubierto
@@ -537,8 +530,6 @@ dado
 dar
 dato
 dañar
-de
-de+el
 debe
 deber
 debilidad
@@ -574,7 +565,6 @@ descontar
 descremar
 descuento
 descuidar
-desde
 desear
 desechable
 desempeñar
@@ -644,18 +634,15 @@ dolar
 dolor
 domingo
 don
-donde
 dormir
 dotar
 ducha
 duda
 dueño
 dulce
-durante
 durar
 dureza
 duro
-e
 echar
 edad
 educar
@@ -668,13 +655,11 @@ eficiente
 ejemplar
 ejemplo
 ejercicio
-el
 elegir
 elementar
 elemento
 elevador
 elevar
-ellos
 embarazar
 embargar
 emergencia
@@ -688,7 +673,6 @@ emplear
 empolvar
 empozar
 empresa
-en
 encadar
 encantador
 encantar
@@ -721,7 +705,6 @@ equipaje
 equipamiento
 equipar
 equivocar
-era
 erar
 escala
 escalar
@@ -732,7 +715,6 @@ escribir
 escucha
 escuchar
 escupir
-ese
 esencia
 esmerar
 espaciar
@@ -752,10 +734,7 @@ esplender
 esposar
 establecer
 establecimiento
-estado
-estar
 estatus
-este
 estilar
 estimar
 estimulante
@@ -854,7 +833,6 @@ freír
 fruto
 fríjol
 fuente
-fuera
 fuerte
 fuga
 fumador
@@ -911,7 +889,6 @@ guardar
 gurdo
 gustar
 gusto
-ha
 haber
 habilitar
 habitable
@@ -925,7 +902,6 @@ hallar
 hamaca
 hamburguesa
 harina
-hasta
 helado
 helar
 hermanar
@@ -1069,7 +1045,6 @@ lastimar
 lavado
 lavamanos
 lavar
-le
 leche
 lechuga
 leer
@@ -1156,7 +1131,6 @@ material
 mayor
 mañana
 mañanero
-me
 mecanismo
 media
 mediano
@@ -1182,7 +1156,6 @@ mesa
 mesero
 meter
 mezcla
-mi
 mientras
 miguel
 mil
@@ -1221,9 +1194,7 @@ mundo
 municipio
 musical
 musicar
-muy
 nacional
-nada
 nadie
 naranja
 natural
@@ -1236,25 +1207,21 @@ necesitar
 negar
 negro
 nevera
-ni
 ninguno
 nivel
 niño
-no
 noche
 nocturno
 nombrar
 nominar
 norma
 normal
-nosotros
 nota
 notar
 noticia
 notificar
 nova
 novio
-nuestro
 nueva
 nuevo
 nuez
@@ -1300,7 +1267,6 @@ orinar
 orlar
 osar
 oscuro
-otro
 p
 paciencia
 paciente
@@ -1323,7 +1289,6 @@ papel
 papelera
 paquete
 par
-para
 paradisiaco
 paraguas
 parar
@@ -1417,10 +1382,8 @@ poder
 pollo
 poner
 popular
-por
 porcentaje
 porción
-porque
 porta
 portal
 portero
@@ -1493,7 +1456,6 @@ puntada
 punto
 puro
 q
-que
 queda
 quedar
 queja
@@ -1502,7 +1464,6 @@ quemado
 quemar
 querer
 queso
-quien
 quintar
 quintero
 quiosco
@@ -1654,8 +1615,6 @@ santo
 satisfacer
 satisfactorio
 sauna
-se
-sea
 seca
 secador
 secar
@@ -1699,7 +1658,6 @@ silla
 similar
 simple
 simular
-sin
 sincerar
 sistema
 sitiar
@@ -1733,7 +1691,6 @@ sostenibilidad
 staff
 stick
 stock
-su
 suave
 subida
 subir
@@ -1775,7 +1732,6 @@ tarifa
 tarjeta
 tarro
 taza
-te
 techar
 techo
 tela
@@ -1858,7 +1814,6 @@ unidad
 unificar
 unir
 universo
-uno
 usar
 usted
 usual
@@ -1918,10 +1873,6 @@ volumen
 volver
 voz
 web
-y
-ya
-yo
 yogur
 zanahoria
 zona
-él

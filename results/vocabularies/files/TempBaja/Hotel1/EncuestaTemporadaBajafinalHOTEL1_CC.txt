@@ -9,8 +9,6 @@ cascada
 clima
 comedir
 comodidad
-de
-el
 empleado
 exclusivo
 externo
@@ -30,9 +28,7 @@ paradisiaco
 paz
 piscina
 privacidad
-ser
 servicio
 sitiar
 termal
 tranquilidad
-y

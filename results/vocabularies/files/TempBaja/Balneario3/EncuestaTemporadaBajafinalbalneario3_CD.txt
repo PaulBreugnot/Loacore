@@ -3,8 +3,6 @@ alimento
 almorzar
 comedir
 costo
-de
-el
 entrada
 escalera
 ingresar

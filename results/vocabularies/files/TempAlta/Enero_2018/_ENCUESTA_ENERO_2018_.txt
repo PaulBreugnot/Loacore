@@ -1,6 +1,4 @@
 4
-a
-a+el
 abrir
 acceso
 acompañamiento
@@ -81,7 +79,6 @@ comedir
 comedor
 comodidad
 comunicación
-con
 condicionar
 conectador
 conectar
@@ -100,8 +97,6 @@ costoso
 cubierto
 cultura
 cumplir
-de
-de+el
 dejar
 demora
 demorar
@@ -116,24 +111,20 @@ discapacitado
 dispensador
 distraer
 efectivo
-el
 elevar
 empolvar
-en
 encuesta
 entrada
 entrar
 espaciar
 espacio
 espejo
-este
 estrategia
 falta
 familiar
 farmacia
 fila
 flecha
-fuera
 fumar
 general
 gente
@@ -161,7 +152,6 @@ internet
 invalidar
 largo
 lavamanos
-le
 lejos
 lento
 limitar
@@ -190,10 +180,8 @@ moda
 movilidad
 mucho
 musicar
-muy
 natural
 niño
-no
 nominar
 numerar
 nunca
@@ -204,7 +192,6 @@ organizar
 orlar
 pagar
 paquete
-para
 paraguas
 parasol
 parecer
@@ -224,7 +211,6 @@ plan
 poco
 poder
 poner
-por
 postrar
 preciar
 precio
@@ -240,7 +226,6 @@ publicar
 publicidad
 puerta
 q
-que
 quiosco
 rapidez
 rebaja
@@ -288,7 +273,6 @@ tendero
 tener
 terapia
 termal
-todo
 toma
 topar
 transportar
@@ -297,8 +281,6 @@ tratar
 turco
 turista
 ubicación
-unir
-uno
 usted
 valor
 variar
@@ -312,5 +294,4 @@ vigilante
 visitante
 visitar
 volver
-y
 zona

@@ -12,12 +12,8 @@ chorizo
 comedir
 costo
 costoso
-de
-de+el
 distancia
-el
 empleado
-en
 entrada
 gorro
 higiene
@@ -28,7 +24,6 @@ mal
 malo
 maluco
 musicar
-muy
 palabra
 personal
 piedra

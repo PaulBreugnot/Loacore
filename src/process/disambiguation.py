@@ -21,7 +21,6 @@ def main():
 def disambiguate_tokens(indexed_tokens, tk, sp, morfo, sen, wsd, tagger):
 
     disambiguated_tokens = []
-    print(indexed_tokens)
     # The file contains not ordered tokens, in the same order as in the original file
     lw = [freeling.word(re.findall(r'\d+ (\w+)', token)[0]) for token in indexed_tokens]
     text_offsets = [re.findall(r'(\d+ )\w+', token)[0] for token in indexed_tokens]
@@ -41,6 +40,8 @@ def disambiguate_tokens(indexed_tokens, tk, sp, morfo, sen, wsd, tagger):
             if len(rank) > 0:
                 disambiguated_tokens.append(text_offsets[index] + wn.of2ss(rank[0][0]).name() + "# " + ls[0][index].get_lemma())
             else:
+                # print *~Strange words~*
+                # print(ls[0][index].get_lemma(), " : ", wn.synsets(ls[0][index].get_lemma()))
                 disambiguated_tokens.append(text_offsets[index] + "# " + ls[0][index].get_lemma())
     return disambiguated_tokens
 

@@ -2,8 +2,6 @@
 2
 4
 9
-a
-a+el
 abajar
 abastecimiento
 abordar
@@ -55,7 +53,6 @@ ajar
 ajustar
 alegrar
 alergia
-algo
 alguno
 alimentar
 alimenticio
@@ -84,9 +81,7 @@ ampliar
 amplio
 animar
 anoche
-ante
 anterior
-antes
 aparecer
 aperitivo
 aplauso
@@ -245,7 +240,6 @@ completo
 comprender
 comprometer
 compromiso
-con
 concepto
 confianza
 confortable
@@ -291,10 +285,8 @@ criollo
 crocante
 croissant
 crudo
-cual
 cualidad
 cualquiera
-cuando
 cuanto
 cubierto
 cucharita
@@ -311,8 +303,6 @@ cursar
 d
 dar
 dato
-de
-de+el
 debe
 deber
 decidir
@@ -338,7 +328,6 @@ descontar
 descremar
 descuento
 descuidar
-desde
 desear
 desechable
 desmejora
@@ -374,15 +363,12 @@ do
 documento
 domingo
 don
-donde
 ducha
 duda
 dueño
 dulce
-durante
 durar
 duro
-e
 edad
 educar
 eficaz
@@ -390,17 +376,14 @@ eficiencia
 eficiente
 ejemplar
 ejemplo
-el
 elegir
 elevar
-ellos
 embargar
 empacar
 empanada
 empezar
 empleado
 empresa
-en
 encadar
 encantador
 encantar
@@ -422,12 +405,9 @@ equilibrio
 equipaje
 equipar
 equivocar
-era
-erar
 escoger
 escuchar
 escupir
-ese
 esmerar
 espaciar
 espantoso
@@ -438,9 +418,6 @@ esperar
 espinaca
 esplender
 esposar
-estado
-estar
-este
 estilar
 estupendo
 estándar
@@ -496,7 +473,6 @@ freír
 fruto
 fríjol
 fuente
-fuera
 fuerte
 fuga
 fumador
@@ -530,7 +506,6 @@ grupo
 gua
 gustar
 gusto
-ha
 haber
 habitación
 habla
@@ -541,7 +516,6 @@ hacia
 hallar
 hamburguesa
 harina
-hasta
 helado
 hermoso
 hervir
@@ -623,7 +597,6 @@ largo
 lastimar
 lavamanos
 lavar
-le
 leche
 lechuga
 leer
@@ -674,7 +647,6 @@ mas
 masticar
 mayor
 mañana
-me
 mecanismo
 media
 mediano
@@ -691,7 +663,6 @@ merecer
 mes
 mesa
 mesero
-mi
 mil
 minuto
 mismo
@@ -709,7 +680,6 @@ mu
 mucho
 mundo
 musicar
-muy
 nadie
 naranja
 natural
@@ -721,17 +691,13 @@ necesidad
 necesitar
 negro
 nevera
-ni
 ninguno
 nivel
 niño
-no
 noche
-nosotros
 nota
 notificar
 novio
-nuestro
 nueva
 nuevo
 numeral
@@ -762,7 +728,6 @@ orgullo
 orientar
 original
 orinar
-otro
 p
 paciencia
 pacificar
@@ -780,7 +745,6 @@ papel
 papelera
 paquete
 par
-para
 parecer
 pared
 pareja
@@ -811,7 +775,6 @@ perico
 permanecer
 permitir
 pernil
-pero
 persona
 personal
 personalidad
@@ -838,9 +801,7 @@ poco
 poder
 pollo
 poner
-por
 porción
-porque
 porta
 portal
 portero
@@ -885,7 +846,6 @@ puerta
 pues
 punto
 puro
-que
 queda
 quedar
 queja
@@ -893,7 +853,6 @@ quemado
 quemar
 querer
 queso
-quien
 quitar
 ranchero
 rapidez
@@ -976,8 +935,6 @@ sanitario
 santo
 satisfacer
 satisfactorio
-se
-sea
 seca
 secador
 secar
@@ -1013,7 +970,6 @@ silenciar
 silla
 similar
 simple
-sin
 sincerar
 sistema
 sitiar
@@ -1039,7 +995,6 @@ sorprender
 staff
 stick
 stock
-su
 suave
 subida
 subir
@@ -1058,11 +1013,9 @@ talento
 tamaño
 tan
 tanda
-tanto
 tardar
 tarifa
 taza
-te
 techar
 tela
 televisar
@@ -1102,7 +1055,6 @@ turismo
 turista
 ultimar
 unir
-uno
 usar
 usted
 usuario
@@ -1140,9 +1092,6 @@ visitante
 visitar
 volumen
 volver
-y
-ya
-yo
 yogur
 zanahoria
 zona

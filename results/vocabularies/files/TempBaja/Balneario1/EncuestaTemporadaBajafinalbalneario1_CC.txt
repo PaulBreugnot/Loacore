@@ -10,7 +10,6 @@ calentar
 cascada
 clima
 comedir
-el
 excelente
 fascinante
 gente
@@ -31,7 +30,6 @@ servicio
 sitiar
 sostenibilidad
 termal
-todo
 tranquilidad
 ver
 zona

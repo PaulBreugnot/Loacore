@@ -44,7 +44,6 @@ class WordPolarity:
 
     def __init__(self, filename, indexed_word, select='none'):
         self.filename = filename
-        print(indexed_word)
         self.text_offset = re.findall(r'(\d+) .+', indexed_word)[0]
         self.word = re.findall(r'\d+ (.+)', indexed_word)[0]
         self.selected_synsets = self.select_synsets(self, wn.synsets(self.word, lang='spa'), select)
@@ -169,6 +168,8 @@ class WordPolarity:
         disambiguated_dict = WordPolarity.disambiguated_dicts.get(self.filename)
         if disambiguated_dict.get(self.text_offset) is not None:
             return [wn.synset(disambiguated_dict.get(self.text_offset))]
+        # print unkown words
+        # print(self.word, " : ", wn.synsets(self.word))
         return []
 
     @staticmethod
