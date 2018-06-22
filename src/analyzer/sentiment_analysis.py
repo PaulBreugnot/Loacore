@@ -6,18 +6,20 @@ import matplotlib.patches as mpatches
 from nltk.corpus import wordnet as wn
 from nltk.corpus import sentiwordnet as swn
 from prettytable import PrettyTable
+from src.process.disambiguation import load_disambiguated_dict
 
 
 class TextPolarity:
 
-    def __init__(self, lemmas, select='none'):
-        self.lemmas = lemmas
+    def __init__(self, filename, indexed_lemmas, select='none'):
+        self.filename = filename
+        self.indexed_lemmas = indexed_lemmas
         self.pos_score, self.neg_score, self.obj_score = self.compute_scores(select)
 
     def compute_scores(self, select):
         word_polarities = []
-        for lemma in self.lemmas:
-            polarity = WordPolarity(lemma, select=select)
+        for indexed_lemma in self.indexed_lemmas:
+            polarity = WordPolarity(self.filename, indexed_lemma, select=select)
             if len(polarity.selected_synsets) > 0:
                 word_polarities.append(polarity)
         if len(word_polarities) > 0:
@@ -37,8 +39,13 @@ class TextPolarity:
 
 class WordPolarity:
 
-    def __init__(self, indexed_word, select='none'):
-        self.text_offset = re.findall(r'(\d+ ).+', indexed_word)[0]
+    loaded_disambiguated_dict = False
+    disambiguated_dicts = dict()
+
+    def __init__(self, filename, indexed_word, select='none'):
+        self.filename = filename
+        print(indexed_word)
+        self.text_offset = re.findall(r'(\d+) .+', indexed_word)[0]
         self.word = re.findall(r'\d+ (.+)', indexed_word)[0]
         self.selected_synsets = self.select_synsets(self, wn.synsets(self.word, lang='spa'), select)
         self.pos_score, self.neg_score, self.obj_score = self.compute_scores()
@@ -66,6 +73,8 @@ class WordPolarity:
             return self.select_optimistic_synsets(self, synsets)
         if select == 'pessimistic':
             return self.select_pessimistic_synsets(self, synsets)
+        if select == 'disambiguated':
+            return self.select_disambiguated_synset(self)
         if select == 'none':
             return synsets
 
@@ -149,17 +158,31 @@ class WordPolarity:
         return valid_synsets
 
     @staticmethod
-    def select_disambiguated_synset(self, synsets):
+    def select_disambiguated_synset(self):
         """
-        :param synsets: useless here
         :return: the synset corresponding to the disambiguated one corresponding to the word in its context,
         previously computed in disambiguated folder
         """
 
+        if not self.loaded_disambiguated_dict:
+            WordPolarity.load_dicts()
+        disambiguated_dict = WordPolarity.disambiguated_dicts.get(self.filename)
+        if disambiguated_dict.get(self.text_offset) is not None:
+            return [wn.synset(disambiguated_dict.get(self.text_offset))]
+        return []
+
+    @staticmethod
+    def load_dicts():
+        for dirpath, dirnames, filenames in os.walk('../../data/disambiguated/'):
+            for filename in filenames:
+                WordPolarity.disambiguated_dicts.update([(filename, load_disambiguated_dict(filename))])
+        WordPolarity.loaded_disambiguated_dict = True
+
+
 def main():
-    #print_polarity_table(select='common')
+    print_polarity_table(select='disambiguated')
     #plot_polarity_pie_charts()
-    save_polarity_pie_charts()
+    #save_polarity_pie_charts()
 
 
 def print_polarity_table(select='none'):
@@ -252,8 +275,9 @@ def get_text_polarity(file_name, select='none'):
         for filename in filenames:
             if filename == file_name:
                 lemmas_file = open(os.path.join(dirpath, filename), encoding='utf-8')
-                lemmas = nltk.word_tokenize(lemmas_file.read())
-                return TextPolarity(lemmas, select)
+                lemmas = re.findall(r'\d+ .+', lemmas_file.read(), re.MULTILINE)
+                print(lemmas)
+                return TextPolarity(file_name, lemmas, select)
 
 
 if __name__ == "__main__":

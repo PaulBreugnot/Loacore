@@ -106,13 +106,13 @@ def load_disambiguated_dict(file_name):
             if filename == file_name:
                 disambiguated_file = open(os.path.join(dirpath, filename), encoding='utf-8')
                 disambiguated_string = disambiguated_file.read()
-                print(disambiguated_string)
                 text_offsets = re.findall(r'^(\d+) \w+\.\w\.\d+\s*\#\s*\w+\s*', disambiguated_string, re.MULTILINE)
                 disambiguated_synset = re.findall(r'^\d+ (\w+\.\w\.\d+)\s*\#.+\s*', disambiguated_string, re.MULTILINE)
                 disambiguated_dict = dict()
                 for index in range(len(text_offsets)):
                     disambiguated_dict.update([(text_offsets[index], disambiguated_synset[index])])
                     #print(text_offsets[index], " : ", disambiguated_dict.get(text_offsets[index]))
+                return disambiguated_dict
 
 
 if __name__ == "__main__":
