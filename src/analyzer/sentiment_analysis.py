@@ -180,9 +180,9 @@ class WordPolarity:
 
 
 def main():
-    print_polarity_table(select='disambiguated')
-    #plot_polarity_pie_charts()
-    #save_polarity_pie_charts()
+    #print_polarity_table(select='disambiguated')
+    #plot_polarity_pie_charts(select='disambiguated')
+    save_polarity_pie_charts()
 
 
 def print_polarity_table(select='none'):
@@ -197,7 +197,7 @@ def print_polarity_table(select='none'):
 
 
 def save_polarity_pie_charts():
-    select_modes = ['none', 'optimistic', 'pessimistic', 'common']
+    select_modes = ['none', 'optimistic', 'pessimistic', 'common', 'disambiguated']
     for select_mode in select_modes:
         plot_polarity_pie_charts(select=select_mode, show=False)
         plt.savefig('../../results/sentiment_analysis/mode_' + select_mode + '.png', dpi=200)
@@ -276,7 +276,6 @@ def get_text_polarity(file_name, select='none'):
             if filename == file_name:
                 lemmas_file = open(os.path.join(dirpath, filename), encoding='utf-8')
                 lemmas = re.findall(r'\d+ .+', lemmas_file.read(), re.MULTILINE)
-                print(lemmas)
                 return TextPolarity(file_name, lemmas, select)
 
 
