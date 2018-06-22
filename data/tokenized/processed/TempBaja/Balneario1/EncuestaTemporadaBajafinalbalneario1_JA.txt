@@ -1,24 +1,24 @@
-precios
-tiendas
-costo
-insumos
-zona
-descanso
-restaurante
-personal
-higiene
-baños
-costos
-retaurante
-precios
-costos
-tardan
-servir
-ña
-comida
-jugo
-azucar
-diabeticos
-acceso
-cuanto
-informacion
+1 precios
+3 tiendas
+5 costo
+8 insumos
+9 zona
+11 descanso
+13 restaurante
+15 personal
+17 higiene
+20 baños
+22 costos
+24 retaurante
+27 precios
+29 costos
+30 tardan
+33 servir
+34 ña
+35 comida
+36 jugo
+38 azucar
+40 diabeticos
+42 acceso
+44 cuanto
+46 informacion

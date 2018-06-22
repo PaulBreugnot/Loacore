@@ -1,7 +1,7 @@
-teleferico
-toboganvy
-agua
-huela
-asufre
-pista
-baile
+0 teleferico
+1 toboganvy
+4 agua
+5 huela
+7 asufre
+8 pista
+10 baile

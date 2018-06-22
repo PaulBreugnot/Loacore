@@ -1,107 +1,107 @@
-entrada
-taquilla
-carretera
-distancia
-servicio
-cafeteria
-precios
-temperatura
-agua
-caliento
-restaurante
-comida
-regular
-precios
-servicio
-restaurante
-costo
-restaurante
-cafeteria
-caro
-musica
-ruido
-restaurante
-costoso
-chorizos
-piedras
-caminos
-lama
-cascada
-acceso
-costo
-restaurante
-precios
-costos
-costos
-comida
-codto
-fel
-restaurante
-costo
-restaurante
-precios
-insumos
-guardaropa
-servicio
-costos
-guias
-almuerzo
-costos
-insumos
-costos
-insumos
-higiene
-gorros
-baño
-personal
-restaurante
-precios
-almuerzos
-parqueadero
-humedad
-vestidores
-restaurante
-metodo
-costos
-insumos
-taquilla
-empleada
-atendio
-mal
-utilizando
-malas
-palabras
-precios
-comida
-almuerzo
-mala
-preparacion
-cafe
-pindana
-mala
-atencion
-mala
-preparcion
-cafe
-informacion
-orientacion
-costo
-insumos
-sabor
-comida
-costo
-insumos
-costo
-insumos
-allmuerzo
-maluco
-comida
-mal
-sabor
-costo
-restaurante
-costos
-precios
-precios
-costos
-insumos
+0 entrada
+1 taquilla
+2 carretera
+3 distancia
+4 servicio
+5 cafeteria
+7 precios
+9 temperatura
+11 agua
+13 caliento
+15 restaurante
+17 comida
+18 regular
+20 precios
+21 servicio
+23 restaurante
+25 costo
+27 restaurante
+28 cafeteria
+30 caro
+31 musica
+33 ruido
+35 restaurante
+37 costoso
+38 chorizos
+39 piedras
+41 caminos
+43 lama
+46 cascada
+48 acceso
+50 costo
+52 restaurante
+54 precios
+56 costos
+58 costos
+61 comida
+63 codto
+64 fel
+65 restaurante
+66 costo
+68 restaurante
+70 precios
+73 insumos
+75 guardaropa
+77 servicio
+79 costos
+80 guias
+82 almuerzo
+84 costos
+87 insumos
+89 costos
+92 insumos
+94 higiene
+96 gorros
+98 baño
+100 personal
+103 restaurante
+105 precios
+108 almuerzos
+110 parqueadero
+112 humedad
+115 vestidores
+117 restaurante
+119 metodo
+121 costos
+124 insumos
+126 taquilla
+128 empleada
+130 atendio
+131 mal
+132 utilizando
+133 malas
+134 palabras
+136 precios
+139 comida
+141 almuerzo
+142 mala
+143 preparacion
+145 cafe
+146 pindana
+147 mala
+148 atencion
+150 mala
+151 preparcion
+153 cafe
+154 informacion
+156 orientacion
+157 costo
+160 insumos
+162 sabor
+165 comida
+167 costo
+170 insumos
+172 costo
+175 insumos
+177 allmuerzo
+179 maluco
+181 comida
+182 mal
+183 sabor
+185 costo
+187 restaurante
+189 costos
+191 precios
+193 precios
+195 costos
+197 insumos

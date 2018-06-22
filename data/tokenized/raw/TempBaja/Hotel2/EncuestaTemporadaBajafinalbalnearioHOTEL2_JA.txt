@@ -1,31 +1,31 @@
-en
-el
-manejo
-de
-las
-imformaciones
-en
-internet
-neceita
-un
-trasporte
-servicios
-para
-personas
-que
-sufren
-de
-invobilidad
-la
-atencion
-al
-cliente
-toballas
-ruta
-para
-el
-servicuo
-del
-hotel
-costos
-altos
+0 en
+1 el
+2 manejo
+3 de
+4 las
+5 imformaciones
+6 en
+7 internet
+8 neceita
+9 un
+10 trasporte
+11 servicios
+12 para
+13 personas
+14 que
+15 sufren
+16 de
+17 invobilidad
+18 la
+19 atencion
+20 al
+21 cliente
+22 toballas
+23 ruta
+24 para
+25 el
+26 servicuo
+27 del
+28 hotel
+29 costos
+30 altos

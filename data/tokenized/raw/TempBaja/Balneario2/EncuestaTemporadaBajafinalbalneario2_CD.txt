@@ -1,168 +1,168 @@
-el
-parqueadero
-ingreso
-de
-alimentos
-promocion
-lamusica
-mas
-seguridad
-no
-tomar
-en
-picsina
-ruta
-de
-trasporte
-algunos
-empleados
-mal
-educados
-el
-almuerzo
-por
-que
-estaba
-muy
-frio
-trasporte
-muy
-caro
-todo
-los
-precios
-muy
-altos
-el
-tiempo
-costo
-la
-comida
-el
-ingreso
-a
-mascotas
-como
-sirven
-las
-comidas
-costoso
-muy
-caro
-no
-hay
-donderumbear
-lo
-caro
-algunos
-sitios
-resvalosos
-la
-entrada
-a
-los
-baños
-muy
-costoso
-que
-no
-tomen
-en
-la
-picsina
-nada
-el
-costo
-nada
-transporte
-ver
-comiendo
-dentro
-de
-las
-pcsinad
-la
-entrada
-de
-alimentos
-la
-distancia
-que
-no
-se
-les
-dio
-almuerzo
-duchas
-privadas
-la
-comida
-duchas
-privadas
-muy
-lleno
-el
-estableciiento
-los
-baños
-muy
-cochinad
-mas
-picsinas
-las
-dichas
-privadas
-los
-precios
-para
-haer
-fila
-y
-la
-revicion
-de
-los
-bolsos
-la
-comida
-el
-precio
-las
-entradas
-eztra
-la
-comida
-el
-servicio
-de
-loslocker
-que
-no
-hay
-juegos
-didacticos
-lo
-caro
-del
-restaurante
-el
-pisp
-y
-la
-humedad
-los
-precios
-lo
-costo
-lo
-costoso
-la
-comida
-poquitas
-opciones
-lo
-caro
-el
-frio
-lo
-lejos
+0 el
+1 parqueadero
+2 ingreso
+3 de
+4 alimentos
+5 promocion
+6 lamusica
+7 mas
+8 seguridad
+9 no
+10 tomar
+11 en
+12 picsina
+13 ruta
+14 de
+15 trasporte
+16 algunos
+17 empleados
+18 mal
+19 educados
+20 el
+21 almuerzo
+22 por
+23 que
+24 estaba
+25 muy
+26 frio
+27 trasporte
+28 muy
+29 caro
+30 todo
+31 los
+32 precios
+33 muy
+34 altos
+35 el
+36 tiempo
+37 costo
+38 la
+39 comida
+40 el
+41 ingreso
+42 a
+43 mascotas
+44 como
+45 sirven
+46 las
+47 comidas
+48 costoso
+49 muy
+50 caro
+51 no
+52 hay
+53 donderumbear
+54 lo
+55 caro
+56 algunos
+57 sitios
+58 resvalosos
+59 la
+60 entrada
+61 a
+62 los
+63 baños
+64 muy
+65 costoso
+66 que
+67 no
+68 tomen
+69 en
+70 la
+71 picsina
+72 nada
+73 el
+74 costo
+75 nada
+76 transporte
+77 ver
+78 comiendo
+79 dentro
+80 de
+81 las
+82 pcsinad
+83 la
+84 entrada
+85 de
+86 alimentos
+87 la
+88 distancia
+89 que
+90 no
+91 se
+92 les
+93 dio
+94 almuerzo
+95 duchas
+96 privadas
+97 la
+98 comida
+99 duchas
+100 privadas
+101 muy
+102 lleno
+103 el
+104 estableciiento
+105 los
+106 baños
+107 muy
+108 cochinad
+109 mas
+110 picsinas
+111 las
+112 dichas
+113 privadas
+114 los
+115 precios
+116 para
+117 haer
+118 fila
+119 y
+120 la
+121 revicion
+122 de
+123 los
+124 bolsos
+125 la
+126 comida
+127 el
+128 precio
+129 las
+130 entradas
+131 eztra
+132 la
+133 comida
+134 el
+135 servicio
+136 de
+137 loslocker
+138 que
+139 no
+140 hay
+141 juegos
+142 didacticos
+143 lo
+144 caro
+145 del
+146 restaurante
+147 el
+148 pisp
+149 y
+150 la
+151 humedad
+152 los
+153 precios
+154 lo
+155 costo
+156 lo
+157 costoso
+158 la
+159 comida
+160 poquitas
+161 opciones
+162 lo
+163 caro
+164 el
+165 frio
+166 lo
+167 lejos

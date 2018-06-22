@@ -1,14 +1,14 @@
-juguetes
-agua
-escaleras
-electricas
-juegos
-didacticos
-padimentaran
-carretera
-paraguas
-ka
-entrada
-mas
-economico
-hospedaje
+0 juguetes
+2 agua
+3 escaleras
+4 electricas
+5 juegos
+6 didacticos
+8 padimentaran
+10 carretera
+12 paraguas
+14 ka
+15 entrada
+16 mas
+17 economico
+19 hospedaje

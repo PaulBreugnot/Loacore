@@ -7,14 +7,16 @@ from nltk.corpus import wordnet as wn
 
 def main():
 
+    load_disambiguated_dict("_ENCUESTA_ENERO_2018_.txt")
+
     # Awesome freeling tools
     tk, sp, morfo, sen, wsd, tagger = init_analyzers()
 
     for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
         for filename in filenames:
             tokens = open(os.path.join(dirpath, filename), encoding='utf-8').read()
-            disambiguated_tokens = disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger)
-            write_disambiguated_tokens(disambiguated_tokens, dirpath, filename)
+            #disambiguated_tokens = disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger)
+            #write_disambiguated_tokens(disambiguated_tokens, dirpath, filename)
 
 
 def disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger):
@@ -96,6 +98,23 @@ def init_analyzers():
     tagger = freeling.hmm_tagger(lpath + "tagger.dat", True, 2)
 
     return tk, sp, morfo, sen, wsd, tagger
+
+
+def load_disambiguated_dict(file_name):
+    for dirpath, dirnames, filenames in os.walk('../../data/disambiguated/'):
+        for filename in filenames:
+            if filename == file_name:
+                disambiguated_file = open(os.path.join(dirpath, filename), encoding='utf-8')
+                disambiguated_string = disambiguated_file.read()
+                print(disambiguated_string)
+                lemmas = re.findall(r'^\w+\.\w\.\d+\s*\#\s*(\w+)\s*', disambiguated_string, re.MULTILINE)
+                disambiguated_synset = re.findall(r'^(\w+\.\w\.\d+)\s*\#.+\s*', disambiguated_string, re.MULTILINE)
+                disambiguated_dict = dict()
+                for index in range(len(lemmas)):
+                    print(lemmas[index], " : ", disambiguated_dict.get(lemmas[index]))
+                    disambiguated_dict.update([(lemmas[index], disambiguated_synset[index])])
+                print(lemmas)
+                print(disambiguated_synset)
 
 
 if __name__ == "__main__":

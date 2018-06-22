@@ -1,44 +1,44 @@
-musica
-comida
-comida
-mismo
-menu
-costos
-comida
-precios
-precios
-escaleras
-pindana
-acceso
-precios
-servicio
-cafeteria
-subida
-vestieres
-precios
-precios
-precios
-comida
-almuerzo
-precios
-acceso
-ingreso
-alimentos
-precios
-precio
-precios
-precios
-entrada
-mal
-servicio
-ingreso
-techo
-sendero
-precios
-atencion
-cafesito
-comida
-taquilla
-costo
-restaurante
-atencion
+1 musica
+2 comida
+4 comida
+6 mismo
+7 menu
+9 costos
+12 comida
+14 precios
+15 precios
+17 escaleras
+18 pindana
+20 acceso
+22 precios
+24 servicio
+27 cafeteria
+29 subida
+30 vestieres
+32 precios
+34 precios
+36 precios
+38 comida
+40 almuerzo
+42 precios
+44 acceso
+46 ingreso
+48 alimentos
+50 precios
+52 precio
+54 precios
+56 precios
+58 entrada
+60 mal
+61 servicio
+63 ingreso
+64 techo
+67 sendero
+69 precios
+71 atencion
+74 cafesito
+76 comida
+77 taquilla
+79 costo
+81 restaurante
+83 atencion

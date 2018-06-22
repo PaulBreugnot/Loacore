@@ -1,363 +1,363 @@
-abajar
-acorde
-actualidad
-agradar
-ahora
-alimento
-alimento
-altanero
-altanero
-altanero
-amabilidad
-amable
-amable
-amable
-animal
-argumentar
-arriba
-atender
-atender
-atender
-atrás
-atrás
-auto
-año
-año
-bajar
-bajar
-balneario
-bastante
-baño
-bien
-bolso
-brindar
-bueno
-bueno
-caja
-calidad
-calidad
-cambiar
-cambiar
-camisa
-capacidad
-capacitación
-cargar
-carro
-carro
-carta
-casar
-certificado
-chorro
-clara
-clasista
-cliente
-cliente
-cliente
-cliente
-cliente
-cobrar
-colmar
-comedir
-comedir
-comedir
-comedir
-comportamiento
-compra
-comprar
-comprometer
-comunicación
-conchudo
-considerando
-consumir
-contar
-contar
-contar
-contar
-contar
-contestar
-contratar
-costoso
-cual
-cucaracha
-cumplir
-dar
-dar
-dar
-debe
-debe
-decir
-decir
-deficiente
-dejar
-dejar
-dejar
-demasiado
-dentro
-derecho
-desagradable
-desayuno
-desinfectante
-desinteresar
-detallar
-diario
-diferente
-diferente
-diferente
-diferente
-diferente
-dinero
-empanada
-empanada
-empanada
-empanada
-empanada
-empleado
-empresa
-empresa
-encargado
-encontrar
-engañoso
-ensalada
-entonces
-entrada
-entrar
-entrar
-entrega
-entrega
-espaciar
-espaciar
-especial
-esperar
-esperar
-establecer
-establecimiento
-estimar
-evidencia
-existir
-extrañar
-factor
-falta
-falta
-falta
-familiar
-felicitación
-feo
-forma
-formol
-funcionario
-funcionario
-gente
-gentil
-gracia
-gracia
-gracia
-gracia
-gracia
-gracia
-gracia
-grosero
-grosero
-grosero
-grupo
-hablar
-hacer
-hacer
-hallar
-hallar
-horario
-horario
-hotel
-igual
-importante
-inconforme
-infernal
-informar
-informar
-instalación
-instalación
-instrumental
-ir
-ir
-ir
-ir
-irrespetuoso
-jefe
-julio
-llamar
-llamar
-llamar
-luego
-luego
-luego
-mal
-mal
-maleta
-maleta
-malo
-manera
-manera
-manera
-manera
-manera
-manifestar
-marzo
-mas
-mas
-mejor
-mejor
-mejor
-mejor
-mesa
-minuto
-minuto
-mojarra
-momento
-momento
-musicar
-musicar
-musicar
-necesario
-necesitar
-normal
-notar
-ocurrir
-ofrecer
-oler
-organizar
-orientar
-parecer
-parte
-parte
-parte
-parte
-pasar
-pasear
-pensar
-pereza
-persona
-persona
-persona
-persona
-persona
-persona
-persona
-personal
-personal
-personal
-personal
-personal
-piscina
-plantear
-poder
-poder
-pollo
-pollo
-poner
-preciar
-pregunta
-presentar
-presentar
-prestar
-prestar
-producto
-promover
-proveedor
-publicidad
-punto
-punto
-queja
-queja
-queja
-quejar
-querer
-querer
-querer
-realizar
-realizar
-recibir
-recibir
-reclamar
-reintegrar
-respetar
-respetar
-respetar
-responder
-respuesta
-restar
-restaurante
-restaurante
-revisar
-revisar
-sabor
-sabor
-salio
-salsa
-seguir
-sellar
-sensacional
-ser
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-señor
-señor
-señor
-señor
-señor
-si
-si
-si
-siempre
-siguiente
-sitiar
-sitiar
-so
-solicitar
-subir
-sugerencia
-sugerencia
-sugerencia
-sugerir
-supervisor
-tal
-tampoco
-tan
-tarifa
-tener
-tenia
-tenia
-tenia
-tinto
-tipo
-todo
-tomar
-trabajador
-trabajar
-trucha
-turista
-turnar
-usted
-usuario
-utilizar
-utilizar
-variable
-venir
-venir
-ver
-ver
-verde
-video
-vinagre
-visible
-visita
-volumen
-volver
-zona
+1 parecer
+3 colmar
+7 sitiar
+9 promover
+11 diario
+15 personal
+18 atender
+21 manera
+22 grosero
+24 altanero
+26 igual
+27 manera
+29 señor
+31 atender
+34 entrada
+35 atender
+37 manera
+40 si
+42 turista
+43 venir
+45 pasar
+52 orientar
+53 capacitación
+57 servicio
+59 cliente
+61 contratar
+62 personal
+66 falta
+68 respetar
+72 altanero
+74 parte
+77 trabajador
+79 argumentar
+84 supervisor
+91 poder
+92 poner
+94 queja
+97 querer
+99 señor
+100 tan
+101 irrespetuoso
+103 altanero
+105 solicitar
+106 ser
+107 mas
+108 amable
+110 gentil
+115 cliente
+116 cumplir
+119 carta
+121 alimento
+123 establecer
+125 horario
+127 comedir
+129 zona
+130 visible
+131 gracia
+133 sugerir
+136 ir
+138 subir
+140 informar
+144 revisar
+145 todo
+147 maleta
+148 abajar
+152 señor
+158 parte
+160 arriba
+162 dejar
+163 bajar
+165 maleta
+170 tampoco
+172 revisar
+174 agradar
+177 sitiar
+178 gracia
+181 servicio
+186 presentar
+189 siguiente
+194 mesa
+196 auto
+197 servicio
+200 manera
+201 grosero
+207 necesitar
+209 espaciar
+212 desayuno
+213 considerando
+215 debe
+216 existir
+217 mejor
+218 espaciar
+220 mejor
+222 venir
+230 persona
+232 servicio
+234 cliente
+236 parte
+238 personal
+239 querer
+240 manifestar
+248 servicio
+249 recibir
+258 forma
+260 especial
+261 comprometer
+264 empresa
+265 pensar
+266 siempre
+269 usuario
+270 felicitación
+274 empanada
+276 variable
+278 bien
+283 diferente
+285 año
+286 atrás
+288 calidad
+291 comedir
+293 acorde
+295 calidad
+297 preciar
+302 actualidad
+306 punto
+308 ver
+311 costoso
+314 producto
+315 recibir
+318 prestar
+320 año
+321 atrás
+323 mejor
+324 organizar
+327 contar
+329 entonces
+331 ahora
+333 grupo
+336 persona
+338 querer
+339 decir
+343 hallar
+345 malo
+347 personal
+350 amable
+356 sugerencia
+358 seguir
+359 bajar
+364 servicio
+367 contar
+369 detallar
+377 factor
+378 importante
+381 persona
+384 visita
+387 contar
+389 usted
+391 dejar
+392 entrar
+394 tipo
+397 gracia
+404 sellar
+409 realizar
+411 compra
+414 trucha
+417 mojarra
+420 tenia
+423 estimar
+426 minuto
+429 entrega
+431 minuto
+435 hacer
+436 entrega
+441 falta
+443 respetar
+444 luego
+445 comprar
+447 empanada
+449 cual
+451 vinagre
+454 hacer
+456 reclamar
+458 decir
+461 normal
+463 oler
+465 si
+470 ir
+472 responder
+473 notar
+481 quejar
+484 empanada
+485 luego
+486 llamar
+489 funcionario
+491 camisa
+492 verde
+495 contar
+501 dar
+503 luego
+504 mas
+507 realizar
+512 empanada
+515 gracia
+518 empanada
+519 salio
+522 extrañar
+525 animal
+527 desagradable
+531 gracia
+535 diferente
+537 clasista
+541 hotel
+543 señor
+546 llamar
+551 julio
+554 ver
+556 video
+560 informar
+568 bolso
+571 familiar
+576 jefe
+579 dentro
+582 comedir
+585 encontrar
+587 cucaracha
+590 tal
+592 certificado
+595 presentar
+597 momento
+600 queja
+603 dejar
+604 evidencia
+609 ocurrir
+611 comedir
+613 restaurante
+614 bastante
+615 deficiente
+617 ensalada
+618 tenia
+619 sabor
+621 desinfectante
+624 pollo
+625 tenia
+626 sabor
+628 formol
+631 salsa
+632 feo
+634 sugerencia
+635 cambiar
+636 proveedor
+638 pollo
+642 cambiar
+645 restar
+649 sensacional
+650 gracia
+652 cobrar
+653 tarifa
+654 diferente
+656 persona
+659 utilizar
+661 instalación
+663 piscina
+665 chorro
+666 si
+668 carro
+670 derecho
+672 entrar
+677 baño
+678 so
+680 necesario
+683 contar
+686 persona
+688 ir
+690 consumir
+693 alimento
+694 poder
+695 utilizar
+696 diferente
+700 tinto
+704 conchudo
+706 mal
+708 clara
+710 encargado
+715 prestar
+717 servicio
+720 carro
+723 persona
+725 capacidad
+726 diferente
+736 comportamiento
+738 debe
+739 tener
+741 funcionario
+743 balneario
+744 demasiado
+745 grosero
+750 señor
+752 caja
+754 restaurante
+757 desinteresar
+760 amable
+762 dar
+763 bueno
+766 contestar
+768 amabilidad
+771 pregunta
+772 plantear
+774 inconforme
+777 servicio
+780 persona
+781 sugerencia
+784 empleado
+787 mejor
+788 comunicación
+791 momento
+795 punto
+797 trabajar
+800 turnar
+802 tomar
+808 hallar
+810 cargar
+813 cliente
+816 casar
+818 bueno
+819 servicio
+820 pasear
+823 empresa
+828 instalación
+832 llamar
+834 marzo
+840 musicar
+847 musicar
+851 ir
+855 gente
+857 queja
+860 dar
+862 pereza
+863 volver
+865 volumen
+866 infernal
+868 musicar
+869 instrumental
+870 esperar
+873 reintegrar
+875 dinero
+878 mal
+879 servicio
+881 falta
+883 respetar
+885 parte
+887 personal
+889 establecimiento
+892 publicidad
+893 engañoso
+896 cliente
+898 hablar
+901 horario
+903 servicio
+906 brindar
+909 manera
+912 ofrecer
+913 gracia
+914 esperar
+916 respuesta

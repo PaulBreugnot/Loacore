@@ -1,6 +1,6 @@
-ajedrez
-juego
-juego
-mesa
-privacidad
-zona
+0 zona
+2 juego
+3 ajedrez
+4 juego
+6 mesa
+9 privacidad

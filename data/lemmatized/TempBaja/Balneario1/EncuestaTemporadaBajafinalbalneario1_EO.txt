@@ -1,2 +1,2 @@
-escalar
-montano
+0 escalar
+2 montano

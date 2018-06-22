@@ -1,376 +1,376 @@
-no
-hay
-informacion
-en
-folletos
-la
-carrtera
-los
-baños
-sucios
-precio
-que
-haya
-pasadia
-pero
-con
-almuerzo
-incluido
-la
-falta
-de
-publicidad
-el
-incremento
-de
-las
-entradas
-sitio
-exlusivo
-pero
-excluyente
-no
-le
-ayudaron
-con
-su
-mama
-demasiada
-presion
-del
-agua
-falta
-de
-atencion
-a
-su
-necesidad
-vestier
-no
-hay
-en
-el
-primer
-piso
-carretera
-sin
-pavimentar
-los
-pisos
-mojados
-porque
-estaban
-resbaladizos
-horario
-restringido
-de
-la
-piscina
-y
-los
-brazaletes
-que
-la
-temperatura
-del
-agua
-sea
-mas
-baja
-mas
-agradable
-en
-el
-camino
-las
-camaras
-estan
-tapadas
-con
-arbustos
-no
-hay
-facilidad
-para
-personas
-mayores
-las
-vias
-le
-falta
-infraestructura
-que
-no
-hay
-sombrilla
-en
-las
-mesas
-y
-que
-haya
-carpa
-pata
-no
-mojatse
-en
-el
-camino
-el
-cafe
-temperatura
-alta
-el
-acceso
-no
-invierten
-en
-el
-lugar
-todo
-es
-lo
-mismo
-maltrato
-hacia
-los
-empleados
-la
-carretera
-angosta
-la
-entrada
-le
-falta
-sabor
-a
-la
-comida
-la
-comida
-desde
-la
-habitacion
-se
-escuchaba
-el
-sonido
-de
-la
-cascafa
-que
-no
-tenga
-servicio
-de
-toallas
-que
-no
-tienen
-los
-mimos
-beneficios
-que
-los
-huespedes
-tanta
-gente
-y
-el
-espacio
-tan
-pequeño
-que
-solo
-tuvieran
-acceso
-a
-una
-sola
-piscina
-la
-atencion
-uno
-de
-los
-meseros
-no
-lo
-quiso
-atender
-y
-lo
-trataron
-mal
-la
-piscina
-pequeña
-la
-comida
-el
-servicio
-y
-la
-comida
-la
-construccion
-nova
-a
-aer
-acorde
-con
-el
-entorno
-no
-tiene
-agua
-caliente
-la
-ducha
-ni
-jabon
-no
-hay
-elevador
-en
-el
-hotel
-cuartos
-sin
-ventilador
-comida
-muy
-regular
-sin
-mucha
-variedad
-el
-hotel
-el
-estado
-de
-las
-habitaciones
-la
-construccion
-el
-trayecto
-de
-el
-hotel
-a
-la
-piscina
-las
-piscinas
-anexas
-no
-tienen
-buena
-atencion
-faltaron
-batas
-la
-habitacion
-no
-hay
-tranquilidad
-en
-algunas
-zonas
-restaurante
-zona
-de
-parqueo
-lejania
-la
-poca
-variedad
-en
-el
-menu
-la
-demora
-en
-la
-construccion
-y
-el
-costo
-de
-los
-tragos
-el
-precio
-de
-la
-entrada
-el
-valor
-que
-desde
-las
-habitaciones
-no
-se
-pueden
-ver
-las
-piscinas
-el
-precio
-el
-cafe
-parqueadero
-lejos
-el
-precio
-de
-la
-comid
-baja
-atencion
-en
-el
-restaurante
-no
-funciona
-el
-wi
-fi
-en
-la
-habitacion
-inconvenientes
-para
-los
-masajes
-porque
-muchas
-vecesno
-hay
-disponibilidad
-atencional
-cliente
-el
-frio
-la
-construccion
-el
-clima
-el
-frio
-las
-ventanas
-no
-son
-muy
-gruesas
-y
-se
-escuchaba
-el
-sonido
-de
-la
-cascada
+0 no
+1 hay
+2 informacion
+3 en
+4 folletos
+5 la
+6 carrtera
+7 los
+8 baños
+9 sucios
+10 precio
+11 que
+12 haya
+13 pasadia
+14 pero
+15 con
+16 almuerzo
+17 incluido
+18 la
+19 falta
+20 de
+21 publicidad
+22 el
+23 incremento
+24 de
+25 las
+26 entradas
+27 sitio
+28 exlusivo
+29 pero
+30 excluyente
+31 no
+32 le
+33 ayudaron
+34 con
+35 su
+36 mama
+37 demasiada
+38 presion
+39 del
+40 agua
+41 falta
+42 de
+43 atencion
+44 a
+45 su
+46 necesidad
+47 vestier
+48 no
+49 hay
+50 en
+51 el
+52 primer
+53 piso
+54 carretera
+55 sin
+56 pavimentar
+57 los
+58 pisos
+59 mojados
+60 porque
+61 estaban
+62 resbaladizos
+63 horario
+64 restringido
+65 de
+66 la
+67 piscina
+68 y
+69 los
+70 brazaletes
+71 que
+72 la
+73 temperatura
+74 del
+75 agua
+76 sea
+77 mas
+78 baja
+79 mas
+80 agradable
+81 en
+82 el
+83 camino
+84 las
+85 camaras
+86 estan
+87 tapadas
+88 con
+89 arbustos
+90 no
+91 hay
+92 facilidad
+93 para
+94 personas
+95 mayores
+96 las
+97 vias
+98 le
+99 falta
+100 infraestructura
+101 que
+102 no
+103 hay
+104 sombrilla
+105 en
+106 las
+107 mesas
+108 y
+109 que
+110 haya
+111 carpa
+112 pata
+113 no
+114 mojatse
+115 en
+116 el
+117 camino
+118 el
+119 cafe
+120 temperatura
+121 alta
+122 el
+123 acceso
+124 no
+125 invierten
+126 en
+127 el
+128 lugar
+129 todo
+130 es
+131 lo
+132 mismo
+133 maltrato
+134 hacia
+135 los
+136 empleados
+137 la
+138 carretera
+139 angosta
+140 la
+141 entrada
+142 le
+143 falta
+144 sabor
+145 a
+146 la
+147 comida
+148 la
+149 comida
+150 desde
+151 la
+152 habitacion
+153 se
+154 escuchaba
+155 el
+156 sonido
+157 de
+158 la
+159 cascafa
+160 que
+161 no
+162 tenga
+163 servicio
+164 de
+165 toallas
+166 que
+167 no
+168 tienen
+169 los
+170 mimos
+171 beneficios
+172 que
+173 los
+174 huespedes
+175 tanta
+176 gente
+177 y
+178 el
+179 espacio
+180 tan
+181 pequeño
+182 que
+183 solo
+184 tuvieran
+185 acceso
+186 a
+187 una
+188 sola
+189 piscina
+190 la
+191 atencion
+192 uno
+193 de
+194 los
+195 meseros
+196 no
+197 lo
+198 quiso
+199 atender
+200 y
+201 lo
+202 trataron
+203 mal
+204 la
+205 piscina
+206 pequeña
+207 la
+208 comida
+209 el
+210 servicio
+211 y
+212 la
+213 comida
+214 la
+215 construccion
+216 nova
+217 a
+218 aer
+219 acorde
+220 con
+221 el
+222 entorno
+223 no
+224 tiene
+225 agua
+226 caliente
+227 la
+228 ducha
+229 ni
+230 jabon
+231 no
+232 hay
+233 elevador
+234 en
+235 el
+236 hotel
+237 cuartos
+238 sin
+239 ventilador
+240 comida
+241 muy
+242 regular
+243 sin
+244 mucha
+245 variedad
+246 el
+247 hotel
+248 el
+249 estado
+250 de
+251 las
+252 habitaciones
+253 la
+254 construccion
+255 el
+256 trayecto
+257 de
+258 el
+259 hotel
+260 a
+261 la
+262 piscina
+263 las
+264 piscinas
+265 anexas
+266 no
+267 tienen
+268 buena
+269 atencion
+270 faltaron
+271 batas
+272 la
+273 habitacion
+274 no
+275 hay
+276 tranquilidad
+277 en
+278 algunas
+279 zonas
+280 restaurante
+281 zona
+282 de
+283 parqueo
+284 lejania
+285 la
+286 poca
+287 variedad
+288 en
+289 el
+290 menu
+291 la
+292 demora
+293 en
+294 la
+295 construccion
+296 y
+297 el
+298 costo
+299 de
+300 los
+301 tragos
+302 el
+303 precio
+304 de
+305 la
+306 entrada
+307 el
+308 valor
+309 que
+310 desde
+311 las
+312 habitaciones
+313 no
+314 se
+315 pueden
+316 ver
+317 las
+318 piscinas
+319 el
+320 precio
+321 el
+322 cafe
+323 parqueadero
+324 lejos
+325 el
+326 precio
+327 de
+328 la
+329 comid
+330 baja
+331 atencion
+332 en
+333 el
+334 restaurante
+335 no
+336 funciona
+337 el
+338 wi
+339 fi
+340 en
+341 la
+342 habitacion
+343 inconvenientes
+344 para
+345 los
+346 masajes
+347 porque
+348 muchas
+349 vecesno
+350 hay
+351 disponibilidad
+352 atencional
+353 cliente
+354 el
+355 frio
+356 la
+357 construccion
+358 el
+359 clima
+360 el
+361 frio
+362 las
+363 ventanas
+364 no
+365 son
+366 muy
+367 gruesas
+368 y
+369 se
+370 escuchaba
+371 el
+372 sonido
+373 de
+374 la
+375 cascada

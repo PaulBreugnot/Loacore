@@ -44,25 +44,28 @@ def init_stopwords():
 
 def init_tokens(text, sort=False):
     tokens = nltk.word_tokenize(text)
+    for text_offset in range(len(tokens)):
+        tokens[text_offset] = ' '.join([str(text_offset), tokens[text_offset]])
     if sort:
         tokens = sorted(tokens)
     return tokens
 
 
 def process_tokens(tokens, stop_words):
-    # Remove stop words
-    for stop_word in stop_words:
-        while stop_word in tokens:
-            tokens.remove(stop_word)
+    tokens_to_remove = []
+    for token in tokens:
+        unindexed_token = re.findall(r'\d+ (.+)', token)[0]
+        if unindexed_token in stop_words:
+            tokens_to_remove.append(token)
+
     # Remove decimal characters
 
-    decimals_to_remove = []
     for token in tokens:
-        decimal = (len(re.findall(r'\d+', token)) > 0)
+        decimal = (len(re.findall(r'\d+ (\d+)', token)) > 0)
         if decimal:
-            decimals_to_remove.append(token)
+            tokens_to_remove.append(token)
 
-    for word in decimals_to_remove:
+    for word in tokens_to_remove:
         while word in tokens:
             tokens.remove(word)
 

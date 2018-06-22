@@ -1,8 +1,8 @@
-billar
-transporte
-juegos
-mesa
-juegos
-mesa
-barra
-trago
+0 billar
+1 transporte
+2 juegos
+4 mesa
+5 juegos
+7 mesa
+8 barra
+10 trago

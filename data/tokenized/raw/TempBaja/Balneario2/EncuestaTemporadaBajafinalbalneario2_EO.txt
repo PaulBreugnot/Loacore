@@ -1,11 +1,11 @@
-teleferico
-toboganvy
-que
-el
-agua
-huela
-a
-asufre
-pista
-de
-baile
+0 teleferico
+1 toboganvy
+2 que
+3 el
+4 agua
+5 huela
+6 a
+7 asufre
+8 pista
+9 de
+10 baile

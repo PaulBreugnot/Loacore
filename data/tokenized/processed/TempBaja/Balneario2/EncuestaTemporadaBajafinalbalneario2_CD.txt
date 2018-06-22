@@ -1,89 +1,89 @@
-parqueadero
-ingreso
-alimentos
-promocion
-lamusica
-mas
-seguridad
-tomar
-picsina
-ruta
-trasporte
-empleados
-mal
-educados
-almuerzo
-frio
-trasporte
-caro
-precios
-altos
-tiempo
-costo
-comida
-ingreso
-mascotas
-sirven
-comidas
-costoso
-caro
-donderumbear
-caro
-sitios
-resvalosos
-entrada
-baños
-costoso
-tomen
-picsina
-costo
-transporte
-ver
-comiendo
-dentro
-pcsinad
-entrada
-alimentos
-distancia
-dio
-almuerzo
-duchas
-privadas
-comida
-duchas
-privadas
-lleno
-estableciiento
-baños
-cochinad
-mas
-picsinas
-dichas
-privadas
-precios
-haer
-fila
-revicion
-bolsos
-comida
-precio
-entradas
-eztra
-comida
-servicio
-loslocker
-juegos
-didacticos
-caro
-restaurante
-pisp
-humedad
-precios
-costo
-costoso
-comida
-poquitas
-opciones
-caro
-frio
-lejos
+1 parqueadero
+2 ingreso
+4 alimentos
+5 promocion
+6 lamusica
+7 mas
+8 seguridad
+10 tomar
+12 picsina
+13 ruta
+15 trasporte
+17 empleados
+18 mal
+19 educados
+21 almuerzo
+26 frio
+27 trasporte
+29 caro
+32 precios
+34 altos
+36 tiempo
+37 costo
+39 comida
+41 ingreso
+43 mascotas
+45 sirven
+47 comidas
+48 costoso
+50 caro
+53 donderumbear
+55 caro
+57 sitios
+58 resvalosos
+60 entrada
+63 baños
+65 costoso
+68 tomen
+71 picsina
+74 costo
+76 transporte
+77 ver
+78 comiendo
+79 dentro
+82 pcsinad
+84 entrada
+86 alimentos
+88 distancia
+93 dio
+94 almuerzo
+95 duchas
+96 privadas
+98 comida
+99 duchas
+100 privadas
+102 lleno
+104 estableciiento
+106 baños
+108 cochinad
+109 mas
+110 picsinas
+112 dichas
+113 privadas
+115 precios
+117 haer
+118 fila
+121 revicion
+124 bolsos
+126 comida
+128 precio
+130 entradas
+131 eztra
+133 comida
+135 servicio
+137 loslocker
+141 juegos
+142 didacticos
+144 caro
+146 restaurante
+148 pisp
+151 humedad
+153 precios
+155 costo
+157 costoso
+159 comida
+160 poquitas
+161 opciones
+163 caro
+165 frio
+167 lejos

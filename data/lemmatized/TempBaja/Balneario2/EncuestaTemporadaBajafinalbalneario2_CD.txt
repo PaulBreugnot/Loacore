@@ -1,69 +1,69 @@
-alimento
-alimento
-almorzar
-almorzar
-alto
-baño
-baño
-bolso
-caro
-caro
-caro
-caro
-caro
-comedir
-comedir
-comedir
-comedir
-comedir
-comedir
-comer
-costo
-costo
-costo
-costoso
-costoso
-costoso
-dar
-decir
-dentro
-distancia
-ducha
-ducha
-educar
-empleado
-entrada
-entrada
-entrada
-fila
-humedad
-ingresar
-ingresar
-juego
-lejos
-llenar
-mal
-mas
-mas
-mascota
-opción
-preciar
-precio
-precio
-precio
-privado
-privado
-privado
-restaurante
-ruta
-seguridad
-servicio
-servir
-sitio
-tiempo
-tomar
-tomar
-transportar
-trasporte
-trasporte
-ver
+2 ingresar
+4 alimento
+7 mas
+8 seguridad
+10 tomar
+13 ruta
+15 trasporte
+17 empleado
+18 mal
+19 educar
+21 almorzar
+27 trasporte
+29 caro
+32 precio
+34 alto
+36 tiempo
+37 costo
+39 comedir
+41 ingresar
+43 mascota
+45 servir
+47 comedir
+48 costoso
+50 caro
+55 caro
+57 sitio
+60 entrada
+63 baño
+65 costoso
+68 tomar
+74 costo
+76 transportar
+77 ver
+78 comer
+79 dentro
+84 entrada
+86 alimento
+88 distancia
+93 dar
+94 almorzar
+95 ducha
+96 privado
+98 comedir
+99 ducha
+100 privado
+102 llenar
+106 baño
+109 mas
+112 decir
+113 privado
+115 precio
+118 fila
+124 bolso
+126 comedir
+128 preciar
+130 entrada
+133 comedir
+135 servicio
+141 juego
+144 caro
+146 restaurante
+151 humedad
+153 precio
+155 costo
+157 costoso
+159 comedir
+161 opción
+163 caro
+167 lejos

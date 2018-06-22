@@ -1,20 +1,20 @@
-juguetes
-de
-agua
-escaleras
-electricas
-juegos
-didacticos
-que
-padimentaran
-la
-carretera
-y
-paraguas
-en
-ka
-entrada
-mas
-economico
-el
-hospedaje
+0 juguetes
+1 de
+2 agua
+3 escaleras
+4 electricas
+5 juegos
+6 didacticos
+7 que
+8 padimentaran
+9 la
+10 carretera
+11 y
+12 paraguas
+13 en
+14 ka
+15 entrada
+16 mas
+17 economico
+18 el
+19 hospedaje

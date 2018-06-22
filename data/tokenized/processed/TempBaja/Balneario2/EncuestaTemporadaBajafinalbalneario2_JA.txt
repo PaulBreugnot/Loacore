@@ -1,31 +1,31 @@
-lockers
-amavilidad
-meseros
-precio
-pisos
-lisos
-restaurant
-precios
-restaurante
-parasoles
-lockers
-tomar
-mas
-grande
-parqueadero
-costo
-ruta
-anvianos
-transporte
-comunicasion
-transporte
-duchas
-privadas
-bebidas
-alcoholicas
-mejorar
-jardines
-mas
-variedad
-lockers
-comidas
+1 lockers
+3 amavilidad
+6 meseros
+8 precio
+10 pisos
+12 lisos
+15 restaurant
+17 precios
+19 restaurante
+21 parasoles
+23 lockers
+25 tomar
+28 mas
+29 grande
+31 parqueadero
+33 costo
+34 ruta
+37 anvianos
+38 transporte
+41 comunicasion
+43 transporte
+44 duchas
+45 privadas
+47 bebidas
+48 alcoholicas
+49 mejorar
+51 jardines
+53 mas
+54 variedad
+56 lockers
+58 comidas

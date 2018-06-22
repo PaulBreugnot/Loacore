@@ -1,7 +1,7 @@
-zona
-juegos
-ajedrez
-juegos
-mesa
-relajacion
-privacidad
+0 zona
+2 juegos
+3 ajedrez
+4 juegos
+6 mesa
+7 relajacion
+9 privacidad

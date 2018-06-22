@@ -1,37 +1,37 @@
-acceso
-acceso
-alimento
-almorzar
-comedir
-comedir
-comedir
-comedir
-comedir
-costo
-costo
-entrada
-escalera
-ingresar
-ingresar
-mal
-mismo
-musicar
-preciar
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-restaurante
-sendero
-servicio
-servicio
-subida
-taquilla
-techar
+1 musicar
+2 comedir
+4 comedir
+6 mismo
+9 costo
+12 comedir
+14 precio
+15 precio
+17 escalera
+20 acceso
+22 precio
+24 servicio
+29 subida
+32 precio
+34 precio
+36 precio
+38 comedir
+40 almorzar
+42 precio
+44 acceso
+46 ingresar
+48 alimento
+50 precio
+52 preciar
+54 precio
+56 precio
+58 entrada
+60 mal
+61 servicio
+63 ingresar
+64 techar
+67 sendero
+69 precio
+76 comedir
+77 taquilla
+79 costo
+81 restaurante

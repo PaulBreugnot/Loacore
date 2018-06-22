@@ -1,47 +1,47 @@
-los
-precios
-las
-tiendas
-el
-costo
-de
-los
-insumos
-zona
-de
-descanso
-el
-restaurante
-el
-personal
-el
-higiene
-de
-los
-baños
-los
-costos
-el
-retaurante
-por
-los
-precios
-los
-costos
-tardan
-mucho
-en
-servir
-ña
-comida
-jugo
-sin
-azucar
-para
-diabeticos
-el
-acceso
-en
-cuanto
-a
-informacion
+0 los
+1 precios
+2 las
+3 tiendas
+4 el
+5 costo
+6 de
+7 los
+8 insumos
+9 zona
+10 de
+11 descanso
+12 el
+13 restaurante
+14 el
+15 personal
+16 el
+17 higiene
+18 de
+19 los
+20 baños
+21 los
+22 costos
+23 el
+24 retaurante
+25 por
+26 los
+27 precios
+28 los
+29 costos
+30 tardan
+31 mucho
+32 en
+33 servir
+34 ña
+35 comida
+36 jugo
+37 sin
+38 azucar
+39 para
+40 diabeticos
+41 el
+42 acceso
+43 en
+44 cuanto
+45 a
+46 informacion

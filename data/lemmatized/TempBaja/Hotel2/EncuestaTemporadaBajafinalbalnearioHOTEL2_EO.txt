@@ -1,2 +1,2 @@
-bajo
-precio
+0 precio
+1 bajo

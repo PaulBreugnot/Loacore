@@ -1,89 +1,89 @@
-acceso
-agua
-almorzar
-almorzar
-almuerzo
-bañar
-calentar
-camino
-caro
-carretera
-cascada
-chorizo
-comedir
-comedir
-comedir
-comedir
-comedir
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costo
-costoso
-distancia
-empleado
-entrada
-gorro
-higiene
-humedad
-insumo
-insumo
-insumo
-insumo
-insumo
-insumo
-insumo
-insumo
-lama
-mal
-mal
-malo
-malo
-malo
-malo
-maluco
-musicar
-palabra
-personal
-piedra
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-precio
-regular
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-restaurante
-ruido
-sabor
-sabor
-servicio
-servicio
-servicio
-taquilla
-taquilla
-temperatura
-utilizar
-vestidor
+0 entrada
+1 taquilla
+2 carretera
+3 distancia
+4 servicio
+7 precio
+9 temperatura
+11 agua
+13 calentar
+15 restaurante
+17 comedir
+18 regular
+20 precio
+21 servicio
+23 restaurante
+25 costo
+27 restaurante
+30 caro
+31 musicar
+33 ruido
+35 restaurante
+37 costoso
+38 chorizo
+39 piedra
+41 camino
+43 lama
+46 cascada
+48 acceso
+50 costo
+52 restaurante
+54 precio
+56 costo
+58 costo
+61 comedir
+65 restaurante
+66 costo
+68 restaurante
+70 precio
+73 insumo
+77 servicio
+79 costo
+82 almorzar
+84 costo
+87 insumo
+89 costo
+92 insumo
+94 higiene
+96 gorro
+98 bañar
+100 personal
+103 restaurante
+105 precio
+108 almuerzo
+112 humedad
+115 vestidor
+117 restaurante
+121 costo
+124 insumo
+126 taquilla
+128 empleado
+131 mal
+132 utilizar
+133 malo
+134 palabra
+136 precio
+139 comedir
+141 almorzar
+142 malo
+147 malo
+150 malo
+157 costo
+160 insumo
+162 sabor
+165 comedir
+167 costo
+170 insumo
+172 costo
+175 insumo
+179 maluco
+181 comedir
+182 mal
+183 sabor
+185 costo
+187 restaurante
+189 costo
+191 precio
+193 precio
+195 costo
+197 insumo

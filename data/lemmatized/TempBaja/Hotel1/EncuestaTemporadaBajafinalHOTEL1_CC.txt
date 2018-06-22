@@ -1,131 +1,131 @@
-4
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-ambientar
-ambientar
-ambientar
-ambientar
-ambientar
-bonito
-calentar
-calentar
-calentar
-calentar
-calentar
-calentar
-calor
-caminata
-cascada
-cascada
-clima
-clima
-clima
-clima
-clima
-comedir
-comedir
-comedir
-comedir
-comedir
-comodidad
-comodidad
-empleado
-exclusivo
-externo
-hotel
-infraestructura
-infraestructura
-instalación
-instalación
-lugar
-maravilloso
-mejorar
-mezcla
-mundo
-natural
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-nueva
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paisaje
-paradisiaco
-paz
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-privacidad
-servicio
-servicio
-servicio
-sitiar
-termal
-termal
-termal
-termal
-termal
-termal
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
+2 paisaje
+3 clima
+5 tranquilidad
+6 tranquilidad
+12 piscina
+13 comedir
+15 paisaje
+16 naturaleza
+17 cascada
+19 naturaleza
+20 paisaje
+22 piscina
+23 piscina
+28 naturaleza
+32 comedir
+35 comedir
+37 lugar
+39 clima
+40 comodidad
+43 piscina
+45 paisaje
+47 paisaje
+49 piscina
+50 tranquilidad
+52 agua
+53 termal
+55 naturaleza
+57 agua
+58 termal
+62 agua
+65 calentar
+69 naturaleza
+71 piscina
+73 piscina
+75 clima
+77 piscina
+78 comedir
+80 paradisiaco
+82 agua
+83 termal
+85 clima
+87 natural
+89 mezcla
+93 calor
+95 piscina
+97 tranquilidad
+101 naturaleza
+104 ambientar
+107 exclusivo
+109 ambientar
+111 agua
+113 bonito
+115 naturaleza
+117 naturaleza
+121 mundo
+122 externo
+124 naturaleza
+128 agua
+129 calentar
+131 agua
+132 calentar
+136 naturaleza
+137 piscina
+138 paisaje
+140 mejorar
+142 infraestructura
+144 agua
+146 agua
+149 hotel
+151 maravilloso
+153 paisaje
+155 paisaje
+157 naturaleza
+159 ambientar
+161 agua
+163 privacidad
+165 instalación
+167 agua
+170 calentar
+172 caminata
+174 tranquilidad
+176 servicio
+178 naturaleza
+180 termal
+181 tranquilidad
+183 paisaje
+185 paisaje
+189 instalación
+191 naturaleza
+193 naturaleza
+195 naturaleza
+197 paisaje
+200 cascada
+204 paisaje
+206 servicio
+208 comodidad
+210 paisaje
+212 naturaleza
+214 agua
+215 calentar
+220 empleado
+224 agua
+226 tranquilidad
+228 piscina
+230 naturaleza
+232 naturaleza
+234 naturaleza
+236 paisaje
+238 termal
+241 termal
+243 paisaje
+245 infraestructura
+249 ambientar
+250 clima
+251 servicio
+253 comedir
+255 sitiar
+257 4
+258 ambientar
+260 naturaleza
+261 nueva
+264 piscina
+266 tranquilidad
+267 paz
+269 naturaleza
+270 agua
+273 agua
+274 calentar
+276 piscina
+279 naturaleza
+281 naturaleza

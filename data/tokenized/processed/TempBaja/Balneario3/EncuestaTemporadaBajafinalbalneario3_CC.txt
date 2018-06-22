@@ -1,75 +1,75 @@
-paisaje
-agua
-cascada
-agua
-caliente
-agua
-agua
-naturaleza
-cascada
-agua
-cascada
-piscina
-paisaje
-cascada
-paisaje
-cascada
-cascada
-agua
-agua
-naturaleza
-cascada
-atencion
-cascada
-paisaje
-agua
-ambiente
-paisaje
-paisaje
-agua
-cascada
-paisaje
-cascada
-cascada
-agua
-agua
-agua
-agua
-agua
-paisaje
-cascada
-cascada
-agua
-cascada
-cascada
-paisaje
-cascada
-agua
-ambiente
-paisaje
-paisaje
-conformidad
-agua
-cascada
-cascada
-agua
-cascada
-cascada
-naturaleza
-renovacion
-paisaje
-comida
-paisaje
-cascada
-agua
-agua
-paisaje
-paisaje
-cascada
-cascada
-cascada
-cascada
-agua
-agua
-cascada
-agua
+0 paisaje
+1 agua
+2 cascada
+3 agua
+4 caliente
+7 agua
+10 agua
+12 naturaleza
+14 cascada
+17 agua
+18 cascada
+19 piscina
+20 paisaje
+21 cascada
+23 paisaje
+26 cascada
+28 cascada
+31 agua
+33 agua
+34 naturaleza
+36 cascada
+39 atencion
+42 cascada
+45 paisaje
+47 agua
+49 ambiente
+51 paisaje
+53 paisaje
+58 agua
+60 cascada
+63 paisaje
+65 cascada
+69 cascada
+72 agua
+77 agua
+79 agua
+86 agua
+88 agua
+92 paisaje
+94 cascada
+97 cascada
+100 agua
+102 cascada
+106 cascada
+108 paisaje
+111 cascada
+113 agua
+115 ambiente
+122 paisaje
+125 paisaje
+132 conformidad
+134 agua
+137 cascada
+140 cascada
+145 agua
+147 cascada
+149 cascada
+152 naturaleza
+154 renovacion
+157 paisaje
+161 comida
+167 paisaje
+172 cascada
+175 agua
+177 agua
+180 paisaje
+184 paisaje
+186 cascada
+188 cascada
+190 cascada
+192 cascada
+195 agua
+201 agua
+204 cascada
+206 agua

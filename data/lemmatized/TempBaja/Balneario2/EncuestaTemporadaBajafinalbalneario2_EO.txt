@@ -1,4 +1,4 @@
-agua
-bailar
-oler
-pista
+4 agua
+5 oler
+8 pista
+10 bailar

@@ -1,104 +1,104 @@
-comida
-la
-musica
-falta
-cosas
-ecologicas
-no
-dejan
-entrar
-refrigerios
-precios
-altos
-faltan
-mas
-habitaciones
-los
-precios
-prosupuestos
-muy
-altos
-la
-comida
-y
-la
-musica
-sin
-hodaje
-le
-falta
-turco
-y
-sauna
-que
-no
-tenga
-transporte
-especial
-no
-celebran
-los
-cumpleaños
-el
-alojamiento
-restaurante
-precios
-altos
-y
-la
-atencion
-la
-comida
-que
-no
-haya
-infrastructuras
-y
-la
-comida
-precios
-altos
-las
-vias
-que
-no
-dan
-refrigerio
-mucha
-gente
-la
-atencion
-la
-comida
-toballas
-la
-lluvia
-el
-parqueadero
-deberian
-de
-tener
-ruta
-q
-no
-hay
-medio
-de
-transporte
-no
-tienen
-descuento
-pars
-las
-entradas
-de
-ancianos
-el
-agua
-de
-las
-duchas
-hidratacion
-en
-las
-caminatas
+0 comida
+1 la
+2 musica
+3 falta
+4 cosas
+5 ecologicas
+6 no
+7 dejan
+8 entrar
+9 refrigerios
+10 precios
+11 altos
+12 faltan
+13 mas
+14 habitaciones
+15 los
+16 precios
+17 prosupuestos
+18 muy
+19 altos
+20 la
+21 comida
+22 y
+23 la
+24 musica
+25 sin
+26 hodaje
+27 le
+28 falta
+29 turco
+30 y
+31 sauna
+32 que
+33 no
+34 tenga
+35 transporte
+36 especial
+37 no
+38 celebran
+39 los
+40 cumpleaños
+41 el
+42 alojamiento
+43 restaurante
+44 precios
+45 altos
+46 y
+47 la
+48 atencion
+49 la
+50 comida
+51 que
+52 no
+53 haya
+54 infrastructuras
+55 y
+56 la
+57 comida
+58 precios
+59 altos
+60 las
+61 vias
+62 que
+63 no
+64 dan
+65 refrigerio
+66 mucha
+67 gente
+68 la
+69 atencion
+70 la
+71 comida
+72 toballas
+73 la
+74 lluvia
+75 el
+76 parqueadero
+77 deberian
+78 de
+79 tener
+80 ruta
+81 q
+82 no
+83 hay
+84 medio
+85 de
+86 transporte
+87 no
+88 tienen
+89 descuento
+90 pars
+91 las
+92 entradas
+93 de
+94 ancianos
+95 el
+96 agua
+97 de
+98 las
+99 duchas
+100 hidratacion
+101 en
+102 las
+103 caminatas

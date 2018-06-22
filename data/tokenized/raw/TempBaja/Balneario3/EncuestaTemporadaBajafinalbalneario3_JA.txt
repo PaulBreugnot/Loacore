@@ -1,40 +1,40 @@
-los
-precios
-la
-cafeteria
-varios
-vigilantes
-en
-la
-entrada
-los
-precios
-rutas
-de
-accesibilidad
-faltan
-duchas
-los
-precios
-mas
-meseros
-los
-precios
-los
-precios
-las
-opciones
-en
-los
-alimentos
-cafeteria
-los
-precios
-la
-atencion
-del
-cafe
-mi
-cafesito
-la
-informacion
+0 los
+1 precios
+2 la
+3 cafeteria
+4 varios
+5 vigilantes
+6 en
+7 la
+8 entrada
+9 los
+10 precios
+11 rutas
+12 de
+13 accesibilidad
+14 faltan
+15 duchas
+16 los
+17 precios
+18 mas
+19 meseros
+20 los
+21 precios
+22 los
+23 precios
+24 las
+25 opciones
+26 en
+27 los
+28 alimentos
+29 cafeteria
+30 los
+31 precios
+32 la
+33 atencion
+34 del
+35 cafe
+36 mi
+37 cafesito
+38 la
+39 informacion

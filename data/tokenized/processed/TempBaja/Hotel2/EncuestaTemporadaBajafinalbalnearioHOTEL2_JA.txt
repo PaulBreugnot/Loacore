@@ -1,17 +1,17 @@
-manejo
-imformaciones
-internet
-neceita
-trasporte
-servicios
-personas
-sufren
-invobilidad
-atencion
-cliente
-toballas
-ruta
-servicuo
-hotel
-costos
-altos
+2 manejo
+5 imformaciones
+7 internet
+8 neceita
+10 trasporte
+11 servicios
+13 personas
+15 sufren
+17 invobilidad
+19 atencion
+21 cliente
+22 toballas
+23 ruta
+26 servicuo
+28 hotel
+29 costos
+30 altos

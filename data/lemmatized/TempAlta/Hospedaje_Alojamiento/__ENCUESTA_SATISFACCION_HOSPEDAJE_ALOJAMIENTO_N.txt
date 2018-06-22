@@ -1,288 +1,288 @@
-acondicionar
-acordar
-acordar
-acorde
-actividad
-adicional
-adicional
-administrador
-agua
-agua
-agua
-agua
-aire
-alimento
-ambiental
-ambientar
-ambientar
-amigable
-apoyar
-asear
-asilar
-atención
-aviso
-bajar
-bar
-barato
-bañar
-bañar
-bañar
-baño
-baño
-bien
-bien
-bien
-bien
-bolsa
-botonar
-broma
-bueno
-buffer
-cabellar
-café
-calentar
-calidad
-calidad
-camino
-camping
-cepillar
-cerca
-chorro
-cliente
-cobrar
-comedir
-comedir
-comedir
-comedir
-comedor
-comedor
-completar
-completar
-completar
-contar
-control
-convenio
-coquetear
-costo
-crear
-dar
-debe
-demasiado
-diferente
-discapacitado
-discoteca
-discoteca
-disponibilidad
-distinto
-dormir
-ducha
-ducha
-ducha
-ducha
-encontrar
-especial
-establecer
-evento
-familiar
-gancho
-gasto
-gracia
-gracia
-grande
-grupo
-habitación
-habitación
-habitación
-habitación
-habitación
-habitación
-habitación
-habitación
-habitación
-hacer
-hacer
-hamaca
-helar
-historia
-hora
-horario
-horario
-hospitalidad
-hotel
-hotel
-hotel
-hotel
-hoy
-incluir
-incluir
-incluir
-incluir
-instalación
-instalación
-internet
-laso
-lastimar
-limitación
-limpia
-llamar
-maleducado
-maleta
-malo
-mantenimiento
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mayor
-mayor
-mejor
-mejor
-mejor
-mejor
-mejor
-mejor
-mejor
-mejor
-mejor
-mejorar
-mejorar
-mejorar
-mejorar
-mejorar
-merecer
-mesa
-mesa
-mil
-mismo
-mismo
-mismo
-moblar
-mucho
-musicar
-naturaleza
-nevera
-nevera
-niño
-niño
-noche
-nocturno
-nunca
-ofertar
-oficina
-ofrecer
-ofrecer
-opción
-opción
-organizar
-pago
-paisaje
-parasol
-pareja
-parque
-pasear
-pasear
-peineta
-pensar
-pequeño
-perfecto
-permitir
-persona
-persona
-personal
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-plan
-plan
-plan
-plan
-platicar
-plato
-poder
-poder
-poder
-poder
-prestar
-principal
-principiar
-problema
-programa
-pronto
-recibir
-recibir
-recorrer
-refrigerador
-refrigerador
-requerir
-restaurante
-restaurante
-restaurante
-restaurante
-ruido
-saludable
-sanitario
-sendero
-ser
-ser
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-servicio
-señal
-sitiar
-solicitar
-sombrilla
-tardar
-tarifa
-televisor
-tener
-tener
-tener
-terrible
-tintar
-tintar
-tipo
-todo
-todo
-trabajador
-traer
-tranquilidad
-trasladar
-variedad
-variedad
-variedad
-variedad
-variedad
-variedad
-vario
-vidriar
-viejo
-volumen
-zona
+1 mismo
+2 servicio
+3 camino
+5 mas
+8 hacer
+9 recorrer
+10 sanitario
+11 cerca
+14 piscina
+15 mas
+16 opción
+22 perfecto
+26 agua
+30 niño
+31 mejorar
+32 baño
+33 mas
+34 piscina
+35 bañar
+37 todo
+39 habitación
+41 moblar
+45 plan
+47 incluir
+48 broma
+53 comedor
+54 mas
+55 disponibilidad
+58 hotel
+60 ofrecer
+61 comedir
+62 saludable
+66 horario
+67 diferente
+70 establecer
+73 hotel
+75 hamaca
+77 mejor
+81 sitiar
+84 merecer
+87 servicio
+88 recibir
+89 mayor
+92 control
+95 maleducado
+98 lastimar
+100 musicar
+102 volumen
+103 bajar
+105 acorde
+108 naturaleza
+109 crear
+116 bien
+118 gasto
+119 pago
+120 mejorar
+126 oficina
+129 ducha
+133 mejorar
+135 bueno
+137 mejorar
+138 servicio
+140 restaurante
+144 niño
+145 pasear
+151 mantenimiento
+152 horario
+153 aviso
+154 gancho
+158 convenio
+161 servicio
+171 incluir
+172 completar
+174 habitación
+176 mas
+179 persona
+181 bañar
+182 adicional
+183 mil
+184 gracia
+187 atención
+189 especial
+195 todo
+198 mejorar
+201 hospitalidad
+204 servicio
+206 restaurante
+207 encontrar
+210 servicio
+212 tintar
+216 administrador
+222 malo
+223 calidad
+226 señal
+228 internet
+231 costo
+233 noche
+235 hotel
+237 ser
+238 mejor
+240 contar
+242 mesa
+246 llamar
+252 hoy
+255 problema
+265 hora
+266 mas
+267 tardar
+269 mejor
+270 servicio
+273 agua
+274 calentar
+280 cobrar
+282 tintar
+284 piscina
+288 agua
+290 poder
+291 ser
+293 mejor
+294 servicio
+295 helar
+296 mas
+297 personal
+301 habitación
+302 instalación
+304 discapacitado
+306 refrigerador
+307 aire
+308 acondicionar
+309 permitir
+312 servicio
+316 poder
+317 tener
+321 mas
+324 acordar
+327 tarifa
+328 pasear
+329 ambiental
+331 pronto
+333 zona
+335 camping
+337 parque
+341 hacer
+342 actividad
+347 mas
+348 barato
+349 piscina
+350 principal
+353 mas
+354 limpia
+355 mucho
+356 gracia
+357 variedad
+363 apoyar
+365 botonar
+367 trasladar
+369 maleta
+373 persona
+376 limitación
+380 mismo
+382 ambientar
+384 paisaje
+387 piscina
+388 grande
+389 mas
+390 asear
+395 mejor
+398 comedor
+399 mas
+400 habitación
+403 tener
+404 café
+410 plan
+414 solicitar
+416 televisor
+417 adicional
+419 servicio
+421 poder
+422 dar
+423 sombrilla
+428 nunca
+430 distinto
+434 terrible
+438 vidriar
+440 asilar
+442 ruido
+444 poder
+445 dormir
+447 organizar
+449 habitación
+451 laso
+452 viejo
+453 mas
+454 variedad
+457 comedir
+458 mejor
+459 comedir
+461 mejor
+462 servicio
+464 restaurante
+466 mejor
+467 servicio
+469 restaurante
+472 ofrecer
+475 servicio
+476 recibir
+478 hotel
+479 mas
+480 amigable
+484 ambientar
+485 nevera
+489 nevera
+490 vario
+491 opción
+495 acordar
+500 traer
+503 ducha
+506 habitación
+507 bolsa
+508 platicar
+510 servicio
+513 completar
+514 parasol
+517 mesa
+519 bar
+521 historia
+524 principiar
+525 mas
+526 variedad
+529 comedir
+530 discoteca
+532 ducha
+537 demasiado
+538 pequeño
+539 habitación
+541 grupo
+543 baño
+551 piscina
+552 evento
+553 nocturno
+554 mejor
+556 peineta
+558 cepillar
+560 cabellar
+561 habitación
+563 ducha
+564 tener
+565 refrigerador
+566 plan
+568 incluir
+570 mas
+571 variedad
+575 completar
+578 bien
+580 plan
+581 debe
+582 incluir
+584 tipo
+585 buffer
+593 alimento
+594 discoteca
+595 mayor
+600 requerir
+601 pensar
+604 trabajador
+607 prestar
+608 bien
+610 servicio
+613 coquetear
+616 pareja
+619 cliente
+620 calidad
+622 servicio
+625 instalación
+626 programa
+628 variedad
+632 habitación
+633 familiar
+636 bañar
+641 mismo
+644 bien
+645 sendero
+648 chorro
+650 agua
+658 ofertar
+660 tranquilidad
+663 variedad
+666 plato

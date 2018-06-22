@@ -1,59 +1,59 @@
-los
-lockers
-la
-amavilidad
-de
-los
-meseros
-el
-precio
-los
-pisos
-muy
-lisos
-en
-el
-restaurant
-los
-precios
-de
-restaurante
-los
-parasoles
-los
-lockers
-no
-tomar
-que
-sea
-mas
-grande
-el
-parqueadero
-el
-costo
-ruta
-para
-los
-anvianos
-transporte
-y
-la
-comunicasion
-el
-transporte
-duchas
-privadas
-no
-bebidas
-alcoholicas
-mejorar
-los
-jardines
-con
-mas
-variedad
-los
-lockers
-las
-comidas
+0 los
+1 lockers
+2 la
+3 amavilidad
+4 de
+5 los
+6 meseros
+7 el
+8 precio
+9 los
+10 pisos
+11 muy
+12 lisos
+13 en
+14 el
+15 restaurant
+16 los
+17 precios
+18 de
+19 restaurante
+20 los
+21 parasoles
+22 los
+23 lockers
+24 no
+25 tomar
+26 que
+27 sea
+28 mas
+29 grande
+30 el
+31 parqueadero
+32 el
+33 costo
+34 ruta
+35 para
+36 los
+37 anvianos
+38 transporte
+39 y
+40 la
+41 comunicasion
+42 el
+43 transporte
+44 duchas
+45 privadas
+46 no
+47 bebidas
+48 alcoholicas
+49 mejorar
+50 los
+51 jardines
+52 con
+53 mas
+54 variedad
+55 los
+56 lockers
+57 las
+58 comidas

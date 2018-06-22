@@ -1,388 +1,388 @@
-mismo
-servicio
-caminos
-mas
-señalizacion
-hacer
-recorridos
-sanitario
-cerca
-piscina
-mas
-opciones
-coomida
-recreacion
-perfecto
-psicina
-agua
-fria
-recreacion
-niños
-mejorar
-baños
-mas
-piscinas
-baño
-todas
-habitaciones
-mejorr
-muebles
-habitacion
-plan
-incluido
-broma
-furtas
-comedor
-mas
-disponibilidad
-hotel
-ofrecer
-comidas
-saludables
-sercios
-horarios
-diferentes
-establecidos
-hotel
-hamaca
-mejor
-administracion
-sitio
-merece
-pesimo
-servicio
-recibido
-mayor
-precion
-anbiental
-control
-huspedes
-maleducados
-bullosos
-lastima
-atencion
-musica
-volumen
-bajo
-acorde
-naturaleza
-creo
-excelnte
-bien
-invitacion
-gastos
-pagos
-mejorar
-coordinacion
-recepcion
-oficina
-spa
-ducha
-habitacion
-mejorar
-atencion
-buena
-alimentacion
-mejorar
-servicio
-restaurante
-recreacion
-niños
-paseo
-rutra
-ecologica
-mantenimiento
-horarios
-avisos
-ganchos
-percehros
-convenio
-servicios
-trasnporte
-habitacion
-alimentacion
-incluya
-completo
-habitaciones
-mas
-personas
-baño
-adicional
-mil
-gracias
-atenciones
-especiales
-atencion
-perosnal
-todas
-areas
-mejorar
-atencion
-hospitalidad
-nel
-servicio
-restaurante
-encontrar
-nuevamente
-servicio
-tinto
-administrador
-anterio
-television
-hambas
-ahabitaciones
-mala
-calidad
-señal
-internet
-costo
-noche
-hotel
-deberia
-ser
-mejor
-deberia
-contar
-mesa
-habitacion
-llamamos
-am
-hoy
-problema
-television
-hora
-mas
-tarde
-mejor
-servicio
-restauarante
-agua
-caliente
-habitacion
-cobre
-tinto
-piscina
-jacuzzi
-agua
-fria
-puede
-ser
-poseta
-mejor
-servicio
-hielo
-mas
-personal
-asecensor
-habitaciones
-instalaciones
-discapacitados
-refrigerador
-aire
-acondicionado
-permitir
-servicio
-comidads
-puede
-tener
-habitacion
-mas
-comodida
-acuerdo
-tarifa
-paseo
-ambiental
-pronto
-zona
-camping
-parque
-hagan
-actividades
-menu
-mas
-barato
-piscina
-principal
-mas
-limpia
-muchas
-gracias
-variedad
-menu
-alimentacion
-apoyo
-botones
-traslado
-maletas
-ramplas
-personas
-limitaciones
-mismo
-ambiente
-paisaje
-piscinas
-grandes
-mas
-aseo
-vestieres
-mejor
-atencion
-comedor
-mas
-habitaciones
-escelente
-toatencion
-tener
-café
-permanentemente
-recepcion
-plan
-full
-solicita
-televisor
-adicional
-servicio
-pueda
-dar
-sombrillas
-pisicnas
-jamoas
-nunca
-distinto
-habitacion
-terrible
-deberian
-colocarle
-vidrio
-asile
-ruido
-pudimos
-dormir
-organicen
-habitaciones
-lasa
-vieja
-mas
-variedad
-comidas
-mejor
-comida
-mejor
-servicio
-restaurante
-mejor
-servicio
-restaurante
-ofrecieron
-servicio
-recibido
-hotel
-mas
-amigable
-mdeio
-ambiente
-nevera
-habitacion
-nevera
-varias
-opciones
-menu
-acordado
-servico
-traer
-mascostas
-duchas
-habitaciones
-bolsas
-platicas
-servicio
-completo
-parasoles
-mesas
-bar
-historia
-principio
-mas
-variedad
-comidas
-discoteca
-ducha
-habitacioin
-demasiado
-pequeña
-habitaciones
-grupos
-baños
-nhevera
-habitacion
-citofono
-piscina
-eventos
-nocturnos
-mejor
-atencion
-peinetas
-cepillo
-cabello
-habitaciones
-duchas
-tener
-refrigerador
-plan
-incluido
-mas
-variedad
-menu
-alimentacion
-completa
-bien
-plan
-debe
-incluir
-alimentacion
-tipo
-buffer
-opcion
-alimentos
-discoteca
-mayor
-coordinacion
-informacion
-requerida
-pienso
-trabajadores
-estan
-prestar
-bien
-sius
-servicios
-coquetear
-parejas
-clientes
-calidad
-servicio
-instalaciones
-programas
-ambietales
-variedad
-cocteles
-habitaciones
-familiares
-baño
-calefaccion
-habitacion
-mismo
-bien
-senderos
-ecologicops
-sistencia
-chorros
-agua
-fria
-debtro
-piscnas
-ofertan
-tranquilidad
-desacanso
-variedad
-platos
+1 mismo
+2 servicio
+3 caminos
+5 mas
+6 señalizacion
+8 hacer
+9 recorridos
+10 sanitario
+11 cerca
+14 piscina
+15 mas
+16 opciones
+18 coomida
+20 recreacion
+22 perfecto
+24 psicina
+26 agua
+27 fria
+28 recreacion
+30 niños
+31 mejorar
+32 baños
+33 mas
+34 piscinas
+35 baño
+37 todas
+39 habitaciones
+40 mejorr
+41 muebles
+44 habitacion
+45 plan
+47 incluido
+48 broma
+50 furtas
+53 comedor
+54 mas
+55 disponibilidad
+58 hotel
+60 ofrecer
+61 comidas
+62 saludables
+64 sercios
+66 horarios
+67 diferentes
+70 establecidos
+73 hotel
+75 hamaca
+77 mejor
+78 administracion
+81 sitio
+84 merece
+86 pesimo
+87 servicio
+88 recibido
+89 mayor
+90 precion
+91 anbiental
+92 control
+94 huspedes
+95 maleducados
+97 bullosos
+98 lastima
+99 atencion
+100 musica
+102 volumen
+103 bajo
+105 acorde
+108 naturaleza
+109 creo
+114 excelnte
+116 bien
+117 invitacion
+118 gastos
+119 pagos
+120 mejorar
+121 coordinacion
+123 recepcion
+126 oficina
+128 spa
+129 ducha
+132 habitacion
+133 mejorar
+134 atencion
+135 buena
+136 alimentacion
+137 mejorar
+138 servicio
+140 restaurante
+141 recreacion
+144 niños
+145 paseo
+147 rutra
+148 ecologica
+151 mantenimiento
+152 horarios
+153 avisos
+154 ganchos
+156 percehros
+158 convenio
+161 servicios
+163 trasnporte
+166 habitacion
+169 alimentacion
+171 incluya
+172 completo
+174 habitaciones
+176 mas
+179 personas
+181 baño
+182 adicional
+183 mil
+184 gracias
+187 atenciones
+189 especiales
+191 atencion
+193 perosnal
+195 todas
+197 areas
+198 mejorar
+199 atencion
+201 hospitalidad
+203 nel
+204 servicio
+206 restaurante
+207 encontrar
+208 nuevamente
+210 servicio
+212 tinto
+216 administrador
+217 anterio
+218 television
+220 hambas
+221 ahabitaciones
+222 mala
+223 calidad
+226 señal
+228 internet
+231 costo
+233 noche
+235 hotel
+236 deberia
+237 ser
+238 mejor
+239 deberia
+240 contar
+242 mesa
+245 habitacion
+246 llamamos
+250 am
+252 hoy
+255 problema
+257 television
+265 hora
+266 mas
+267 tarde
+269 mejor
+270 servicio
+272 restauarante
+273 agua
+274 caliente
+277 habitacion
+280 cobre
+282 tinto
+284 piscina
+286 jacuzzi
+288 agua
+289 fria
+290 puede
+291 ser
+292 poseta
+293 mejor
+294 servicio
+295 hielo
+296 mas
+297 personal
+298 asecensor
+301 habitaciones
+302 instalaciones
+304 discapacitados
+306 refrigerador
+307 aire
+308 acondicionado
+309 permitir
+312 servicio
+314 comidads
+316 puede
+317 tener
+320 habitacion
+321 mas
+322 comodida
+324 acuerdo
+327 tarifa
+328 paseo
+329 ambiental
+331 pronto
+333 zona
+335 camping
+337 parque
+341 hagan
+342 actividades
+345 menu
+347 mas
+348 barato
+349 piscina
+350 principal
+353 mas
+354 limpia
+355 muchas
+356 gracias
+357 variedad
+360 menu
+362 alimentacion
+363 apoyo
+365 botones
+367 traslado
+369 maletas
+370 ramplas
+373 personas
+376 limitaciones
+380 mismo
+382 ambiente
+384 paisaje
+387 piscinas
+388 grandes
+389 mas
+390 aseo
+393 vestieres
+395 mejor
+396 atencion
+398 comedor
+399 mas
+400 habitaciones
+401 escelente
+402 toatencion
+403 tener
+404 café
+405 permanentemente
+408 recepcion
+410 plan
+411 full
+414 solicita
+416 televisor
+417 adicional
+419 servicio
+421 pueda
+422 dar
+423 sombrillas
+426 pisicnas
+427 jamoas
+428 nunca
+430 distinto
+432 habitacion
+434 terrible
+435 deberian
+436 colocarle
+438 vidrio
+440 asile
+442 ruido
+444 pudimos
+445 dormir
+447 organicen
+449 habitaciones
+451 lasa
+452 vieja
+453 mas
+454 variedad
+457 comidas
+458 mejor
+459 comida
+461 mejor
+462 servicio
+464 restaurante
+466 mejor
+467 servicio
+469 restaurante
+472 ofrecieron
+475 servicio
+476 recibido
+478 hotel
+479 mas
+480 amigable
+483 mdeio
+484 ambiente
+485 nevera
+488 habitacion
+489 nevera
+490 varias
+491 opciones
+494 menu
+495 acordado
+498 servico
+500 traer
+502 mascostas
+503 duchas
+506 habitaciones
+507 bolsas
+508 platicas
+510 servicio
+513 completo
+514 parasoles
+517 mesas
+519 bar
+521 historia
+524 principio
+525 mas
+526 variedad
+529 comidas
+530 discoteca
+532 ducha
+535 habitacioin
+537 demasiado
+538 pequeña
+539 habitaciones
+541 grupos
+543 baños
+544 nhevera
+547 habitacion
+548 citofono
+551 piscina
+552 eventos
+553 nocturnos
+554 mejor
+555 atencion
+556 peinetas
+558 cepillo
+560 cabello
+561 habitaciones
+563 duchas
+564 tener
+565 refrigerador
+566 plan
+568 incluido
+570 mas
+571 variedad
+573 menu
+574 alimentacion
+575 completa
+578 bien
+580 plan
+581 debe
+582 incluir
+583 alimentacion
+584 tipo
+585 buffer
+591 opcion
+593 alimentos
+594 discoteca
+595 mayor
+596 coordinacion
+599 informacion
+600 requerida
+601 pienso
+604 trabajadores
+605 estan
+607 prestar
+608 bien
+609 sius
+610 servicios
+613 coquetear
+616 parejas
+619 clientes
+620 calidad
+622 servicio
+625 instalaciones
+626 programas
+627 ambietales
+628 variedad
+630 cocteles
+632 habitaciones
+633 familiares
+636 baño
+637 calefaccion
+639 habitacion
+641 mismo
+644 bien
+645 senderos
+646 ecologicops
+647 sistencia
+648 chorros
+650 agua
+651 fria
+652 debtro
+655 piscnas
+658 ofertan
+660 tranquilidad
+662 desacanso
+663 variedad
+666 platos

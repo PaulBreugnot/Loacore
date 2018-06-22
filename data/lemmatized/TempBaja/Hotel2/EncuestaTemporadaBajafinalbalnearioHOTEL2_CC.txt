@@ -1,54 +1,54 @@
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-agua
-ambientar
-bueno
-bueno
-lado
-mas
-medicinal
-natural
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-naturaleza
-paisaje
-paisaje
-paisaje
-piscina
-piscina
-piscina
-piscina
-poder
-privado
-salud
-servicio
-servicio
-servicio
-tomar
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilidad
-tranquilo
-ver
+0 bueno
+1 tranquilidad
+2 ambientar
+4 naturaleza
+5 piscina
+7 agua
+10 piscina
+12 naturaleza
+13 naturaleza
+14 poder
+15 tomar
+17 lado
+20 piscina
+22 servicio
+24 agua
+27 agua
+28 piscina
+29 tranquilidad
+33 naturaleza
+34 bueno
+35 servicio
+36 tranquilidad
+38 tranquilidad
+40 agua
+42 naturaleza
+44 agua
+46 agua
+47 tranquilidad
+49 agua
+50 naturaleza
+51 naturaleza
+53 agua
+55 agua
+57 medicinal
+58 tranquilo
+60 agua
+62 tranquilidad
+64 agua
+68 servicio
+71 tranquilidad
+74 ver
+76 paisaje
+77 paisaje
+84 salud
+86 agua
+89 agua
+94 natural
+97 naturaleza
+98 mas
+99 privado
+102 paisaje
+104 agua
+106 naturaleza
+108 naturaleza

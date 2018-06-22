@@ -11,9 +11,10 @@ def main():
     for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
         for filename in filenames:
             tokenized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
-            tokens = tk.tokenize(tokenized_text.read())
-
-            lemmas = search_lemmas(tokens, sp, morfo)
+            indexed_tokens = re.findall(r'\d+ \w*', tokenized_text.read(), re.MULTILINE)
+            lemmas_dict = search_lemmas(unindexed_tokens(indexed_tokens, tk), sp, morfo)
+            lemmatize_indexed_tokens = lemmatize(indexed_tokens, lemmas_dict)
+            write_lemmas(lemmatize_indexed_tokens, dirpath, filename)
 
 
 def init_analyzers():
@@ -58,22 +59,45 @@ def maco_options(lang,lpath) :
     return opt
 
 
-def search_lemmas(tokens, sp, morfo, sort=True):
+def unindexed_tokens(tokens, tk):
+    unindexed_tokens_list = []
+    for token in tokens:
+        unindexed_tokens_list.append(freeling.word(re.findall(r'\d+ (.+)', token)[0]))
+
+    #Lot of useless operations, but freeling format requires it...
+    return unindexed_tokens_list
+
+
+def search_lemmas(tokens, sp, morfo, sort=False):
+
+    lemmas_dict = dict()
     sentences_list = sp.split(tokens)
 
     # perform morphosyntactic analysis (here : dictionary search)
     sentences_list = morfo.analyze(sentences_list)
 
-    lemmas = []
     for sentence in sentences_list:
         for word in sentence:
             lemma = word.get_lemma()
             if (len(lemma)) > 0:
-                lemmas.append(lemma)
+                #print(word, ' : ', lemma)
+                lemmas_dict.update([(word.get_form(), lemma)])
 
-    if sort:
-        lemmas = sorted(lemmas)
-    return lemmas
+    #if sort:
+    #    lemmas = sorted(lemmas)
+    return lemmas_dict
+
+
+def lemmatize(indexed_tokens, lemmas_dict):
+    lemmatize_indexed_tokens = []
+    for indexed_token in indexed_tokens:
+        index = re.findall(r'(\d+ ).+', indexed_token)[0]
+        word = re.findall(r'\d+ (.+)', indexed_token)[0]
+        lemma = lemmas_dict.get(word)
+        if lemma is not None:
+            #print(indexed_token, ' , ', index + lemma)
+            lemmatize_indexed_tokens.append(index + lemma)
+    return lemmatize_indexed_tokens
 
 
 def write_lemmas(lemmas, dirpath, filename):

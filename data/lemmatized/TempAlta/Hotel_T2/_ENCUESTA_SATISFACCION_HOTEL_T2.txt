@@ -1,254 +1,254 @@
-abandonar
-adecuar
-agua
-alguno
-alguno
-alimento
-alternar
-apropiar
-arreglar
-asear
-asear
-atracción
-ayudar
-baja
-bajar
-banco
-bandeja
-bañar
-bañar
-baño
-beber
-brazo
-bus
-callosidad
-camioneta
-capacidad
-capacidad
-cara
-caro
-cascada
-cascada
-chorizo
-cliente
-cobrar
-coche
-coche
-colaborar
-colmar
-colmar
-colocar
-comedir
-comer
-comer
-comer
-comprar
-conductor
-conductor
-conductor
-contar
-contestar
-controlar
-cordialidad
-cosa
-costoso
-cumplir
-dar
-debe
-debe
-deber
-decir
-decir
-decir
-decir
-dejar
-dejar
-demorar
-deplorable
-deplorable
-descontar
-desocupar
-devolver
-dinero
-discapacitado
-disponibilidad
-disposición
-diversión
-edad
-embarazar
-empleado
-encender
-entrada
-entrada
-entrada
-entrada
-entrada
-entrar
-entrega
-equipaje
-equivocar
-esperar
-esperar
-evaluar
-existir
-falta
-falta
-falta
-favor
-gana
-gente
-gente
-gorro
-gorro
-grosero
-hacer
-hacer
-higiene
-higiene
-hijo
-hombre
-hora
-hora
-hoy
-impresión
-ingresar
-ingresar
-instalar
-limpieza
-llegar
-llevar
-llevar
-mal
-malo
-malo
-manera
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mas
-mayor
-mejor
-mejor
-mejor
-mejor
-mejora
-mejorar
-mejorar
-mejorar
-mejorar
-mejorar
-mejorar
-mejorar
-mencionar
-menor
-mesa
-mesa
-mil
-minuto
-mismo
-moblar
-molestar
-mujer
-niño
-niño
-norma
-o
-objeto
-obligatorio
-obligatorio
-ocasión
-ofrecer
-orden
-orden
-organización
-orinar
-parecer
-parecer
-pareja
-parte
-pedido
-peligroso
-pelo
-pendiente
-pendiente
-permanente
-persona
-persona
-persona
-persona
-personal
-personal
-piscina
-piscina
-piscina
-piscina
-piscina
-plan
-poder
-poder
-precio
-prenda
-publicidad
-publicidad
-puerta
-pues
-quejar
-quintar
-regadera
-respetar
-respuesta
-revisar
-rodar
-sacar
-sacar
-salar
-salida
-saludable
-seguridad
-ser
-servicio
-servicio
-sexo
-señor
-señor
-señorito
-si
-silla
-sistema
-sitiar
-sitiar
-solicitar
-solo
-solo
-subir
-subir
-sucio
-suegro
-suficiente
-suministrar
-tarifa
-temperatura
-tener
-tener
-tener
-tenia
-tenia
-termal
-tiquete
-torniquete
-trabajar
-transportación
-transportar
-transportar
-transportar
-trasporte
-tumulto
-turismo
-utilizar
-ver
-ver
+1 pendiente
+7 entrar
+12 mujer
+13 mejorar
+18 puerta
+21 banco
+24 cascada
+26 mas
+27 publicidad
+28 cara
+30 entrada
+31 mejorar
+33 chorizo
+34 mejorar
+36 baño
+37 mejorar
+39 sistema
+42 mejorar
+43 asear
+46 bandeja
+47 mejorar
+52 alimento
+55 caro
+56 mejor
+57 disposición
+60 mesa
+61 tener
+62 mas
+63 cosa
+65 objeto
+67 llevar
+69 transportar
+74 tener
+76 contar
+78 trasporte
+81 persona
+82 discapacitado
+83 precio
+84 temperatura
+86 agua
+87 moblar
+88 piscina
+90 diversión
+92 gorro
+94 bañar
+95 utilizar
+96 obligatorio
+99 entrada
+101 costoso
+103 camioneta
+106 colaborar
+109 niño
+111 beber
+113 coche
+114 pues
+119 mas
+120 si
+122 bus
+123 baja
+124 desocupar
+126 piscina
+128 sucio
+130 gorro
+132 bañar
+134 ser
+135 obligatorio
+139 sacar
+140 pelo
+143 piscina
+145 comer
+148 piscina
+149 termal
+151 turismo
+153 quejar
+155 publicidad
+157 hacer
+158 comprar
+159 tiquete
+160 mas
+161 cordialidad
+164 señorito
+170 poder
+171 solicitar
+173 equipaje
+175 alguno
+176 ocasión
+178 sacar
+179 alguno
+180 prenda
+182 tener
+184 molestar
+187 persona
+190 cumplir
+193 plan
+195 descontar
+196 ofrecer
+197 mejorar
+200 controlar
+201 capacidad
+203 disponibilidad
+205 mesa
+206 mejora
+209 respuesta
+210 grosero
+212 empleado
+214 decir
+216 mejor
+217 devolver
+219 dinero
+221 malo
+226 parte
+228 personal
+233 comedir
+235 demorar
+236 mas
+239 hora
+241 equivocar
+244 pedido
+247 entrega
+251 malo
+252 gana
+254 dejar
+255 subir
+260 organización
+261 suministrar
+263 servicio
+264 hoy
+271 hijo
+272 menor
+274 edad
+277 suegro
+278 o
+281 transportar
+282 llevar
+283 mas
+289 llegar
+294 colmar
+296 entrada
+298 mejor
+300 coche
+302 silla
+304 rodar
+310 niño
+313 ingresar
+319 adecuar
+322 conductor
+326 sitiar
+329 abandonar
+331 sitiar
+333 trabajar
+335 cliente
+337 debe
+338 esperar
+340 bajar
+343 salar
+344 mas
+348 transportar
+351 conductor
+352 subir
+354 comer
+356 mismo
+359 parecer
+361 colmar
+364 hacer
+365 esperar
+366 mas
+369 minuto
+372 señor
+377 contestar
+379 manera
+380 apropiar
+382 transportación
+387 dar
+391 alternar
+393 tenia
+394 conductor
+400 hombre
+402 seguridad
+403 decir
+406 comer
+410 dejar
+411 favor
+412 colocar
+413 orden
+415 asear
+416 permanente
+419 falta
+421 orden
+423 higiene
+425 gente
+426 quintar
+427 callosidad
+430 piscina
+433 deplorable
+435 falta
+437 higiene
+439 norma
+441 limpieza
+443 parecer
+445 deber
+446 arreglar
+447 mejor
+449 entrada
+451 mal
+452 servicio
+455 hora
+457 evaluar
+459 gente
+461 solo
+462 torniquete
+464 debe
+468 entrada
+473 salida
+475 tumulto
+478 falta
+480 respetar
+483 persona
+484 mayor
+486 señor
+489 revisar
+491 tenia
+496 poder
+497 ingresar
+502 embarazar
+506 brazo
+508 decir
+513 ver
+516 ayudar
+521 pendiente
+522 mas
+525 impresión
+527 deplorable
+529 capacidad
+530 instalar
+538 suficiente
+539 personal
+542 saludable
+544 peligroso
+546 orinar
+550 pareja
+552 sexo
+554 atracción
+556 decir
+558 ver
+560 cascada
+563 encender
+564 cobrar
+565 tarifa
+567 mencionar
+573 mil
+575 persona
+576 solo
+577 existir
+579 regadera

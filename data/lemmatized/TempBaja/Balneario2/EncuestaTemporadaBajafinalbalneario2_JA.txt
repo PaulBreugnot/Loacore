@@ -1,22 +1,22 @@
-beber
-comedir
-costo
-ducha
-grande
-jardín
-liso
-mas
-mas
-mejorar
-mesero
-parasol
-piso
-preciar
-precio
-privado
-restaurante
-ruta
-tomar
-transportar
-transportar
-variedad
+6 mesero
+8 preciar
+10 piso
+12 liso
+17 precio
+19 restaurante
+21 parasol
+25 tomar
+28 mas
+29 grande
+33 costo
+34 ruta
+38 transportar
+43 transportar
+44 ducha
+45 privado
+47 beber
+49 mejorar
+51 jardín
+53 mas
+54 variedad
+58 comedir

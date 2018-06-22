@@ -1,324 +1,324 @@
-paisajes
-el
-agua
-caliemten
-la
-cascada
-todo
-todo
-los
-termales
-cascada
-y
-nsturaleza
-ecologia
-todo
-paisaje
-la
-reserva
-natural
-el
-paisaje
-la
-naturalesa
-el
-paisahe
-de
-la
-cascada
-el
-paiaaje
-y
-las
-piscinas
-el
-agua
-y
-el
-paisaje
-la
-cascada
-el
-paisaje
-y
-los
-pesesitos
-el
-paisaje
-picsina
-tofo
-naturaleza
-la
-cascada
-y
-el
-paisaje
-su
-paisaje
-su
-paisaje
-todo
-muy
-acojedor
-todo
-el
-paisaje
-la
-cascada
-todo
-muy
-tranquilo
-el
-paisaje
-y
-la
-cascada
-muy
-buena
-atencion
-el
-paisaje
-termales
-y
-calidad
-todo
-todo
-tranqulidad
-el
-paisaje
-todo
-tranqulidad
-el
-paisaje
-paisaje
-la
-armonia
-todo
-su
-paisaje
-el
-ambiente
-la
-tranwuiludad
-la
-tranquilidad
-paisaje
-la
-naturaleza
-todo
-todo
-el
-paisaje
-todo
-todo
-el
-paisaje
-todo
-la
-naturaleza
-la
-teanqulidad
-el
-agua
-termal
-el
-aguala
-cascada
-los
-termales
-el
-paisaje
-las
-aguas
-la
-comida
-y
-la
-atencin
-la
-nsturaleza
-todo
-todo
-la
-naturaleza
-todo
-todo
-todo
-muy
-limpio
-todo
-todo
-el
-ambiente
-el
-paisaje
-las
-aguas
-el
-paisaje
-la
-naturaleza
-el
-paisajr
-belleza
-el
-entorno
-naturaleza
-el
-agua
-la
-cascada
-el
-paisaje
-el
-paisaje
-todo
-el
-agua
-la
-cascada
-el
-paisaje
-todo
-la
-adecuacion
-todo
-la
-cascada
-el
-paisaje
-el
-paisaje
-todo
-muy
-bien
-distribuido
-la
-omodidad
-la
-cascada
-las
-cascadas
-el
-agua
-termal
-y
-el
-paisaje
-el
-aguacaliente
-y
-el
-servicio
-todo
-el
-paisaje
-el
-paisaje
-y
-todo
-todo
-el
-paisaje
-las
-picsinas
-la
-atencion
-todo
-todo
-el
-paisje
-las
-cascadas
-los
-teermales
-todo
-todo
-todo
-la
-cascada
-la
-nsturaleza
-todo
-todo
-los
-masajes
-el
-paisaje
-la
-cascada
-la
-gente
-muyamable
-el
-ambiente
-lanaruraleza
-todo
-todo
-todo
-el
-agua
-termal
-todo
-el
-ambiente
-todo
-todo
-el
-paisaje
-las
-aguas
-termales
-las
-cascadasb
-el
-paisaje
-el
-ambiente
-natural
-la
-atencion
-todo
-la
-cascada
-la
-cascada
-la
-fauna
-todo
-el
-agua
-y
-la
-atencion
-y
-la
-naturaleza
-todo
-las
-cascadas
-naturales
-el
-aguatermal
-todo
-la
-belleza
-natural
-el
-paisaje
-la
-cascada
-el
-paisaje
-todo
-la
-cascada
-el
-servicio
-la
-cascada
-y
-el
-sendero
-la
-cascada
+0 paisajes
+1 el
+2 agua
+3 caliemten
+4 la
+5 cascada
+6 todo
+7 todo
+8 los
+9 termales
+10 cascada
+11 y
+12 nsturaleza
+13 ecologia
+14 todo
+15 paisaje
+16 la
+17 reserva
+18 natural
+19 el
+20 paisaje
+21 la
+22 naturalesa
+23 el
+24 paisahe
+25 de
+26 la
+27 cascada
+28 el
+29 paiaaje
+30 y
+31 las
+32 piscinas
+33 el
+34 agua
+35 y
+36 el
+37 paisaje
+38 la
+39 cascada
+40 el
+41 paisaje
+42 y
+43 los
+44 pesesitos
+45 el
+46 paisaje
+47 picsina
+48 tofo
+49 naturaleza
+50 la
+51 cascada
+52 y
+53 el
+54 paisaje
+55 su
+56 paisaje
+57 su
+58 paisaje
+59 todo
+60 muy
+61 acojedor
+62 todo
+63 el
+64 paisaje
+65 la
+66 cascada
+67 todo
+68 muy
+69 tranquilo
+70 el
+71 paisaje
+72 y
+73 la
+74 cascada
+75 muy
+76 buena
+77 atencion
+78 el
+79 paisaje
+80 termales
+81 y
+82 calidad
+83 todo
+84 todo
+85 tranqulidad
+86 el
+87 paisaje
+88 todo
+89 tranqulidad
+90 el
+91 paisaje
+92 paisaje
+93 la
+94 armonia
+95 todo
+96 su
+97 paisaje
+98 el
+99 ambiente
+100 la
+101 tranwuiludad
+102 la
+103 tranquilidad
+104 paisaje
+105 la
+106 naturaleza
+107 todo
+108 todo
+109 el
+110 paisaje
+111 todo
+112 todo
+113 el
+114 paisaje
+115 todo
+116 la
+117 naturaleza
+118 la
+119 teanqulidad
+120 el
+121 agua
+122 termal
+123 el
+124 aguala
+125 cascada
+126 los
+127 termales
+128 el
+129 paisaje
+130 las
+131 aguas
+132 la
+133 comida
+134 y
+135 la
+136 atencin
+137 la
+138 nsturaleza
+139 todo
+140 todo
+141 la
+142 naturaleza
+143 todo
+144 todo
+145 todo
+146 muy
+147 limpio
+148 todo
+149 todo
+150 el
+151 ambiente
+152 el
+153 paisaje
+154 las
+155 aguas
+156 el
+157 paisaje
+158 la
+159 naturaleza
+160 el
+161 paisajr
+162 belleza
+163 el
+164 entorno
+165 naturaleza
+166 el
+167 agua
+168 la
+169 cascada
+170 el
+171 paisaje
+172 el
+173 paisaje
+174 todo
+175 el
+176 agua
+177 la
+178 cascada
+179 el
+180 paisaje
+181 todo
+182 la
+183 adecuacion
+184 todo
+185 la
+186 cascada
+187 el
+188 paisaje
+189 el
+190 paisaje
+191 todo
+192 muy
+193 bien
+194 distribuido
+195 la
+196 omodidad
+197 la
+198 cascada
+199 las
+200 cascadas
+201 el
+202 agua
+203 termal
+204 y
+205 el
+206 paisaje
+207 el
+208 aguacaliente
+209 y
+210 el
+211 servicio
+212 todo
+213 el
+214 paisaje
+215 el
+216 paisaje
+217 y
+218 todo
+219 todo
+220 el
+221 paisaje
+222 las
+223 picsinas
+224 la
+225 atencion
+226 todo
+227 todo
+228 el
+229 paisje
+230 las
+231 cascadas
+232 los
+233 teermales
+234 todo
+235 todo
+236 todo
+237 la
+238 cascada
+239 la
+240 nsturaleza
+241 todo
+242 todo
+243 los
+244 masajes
+245 el
+246 paisaje
+247 la
+248 cascada
+249 la
+250 gente
+251 muyamable
+252 el
+253 ambiente
+254 lanaruraleza
+255 todo
+256 todo
+257 todo
+258 el
+259 agua
+260 termal
+261 todo
+262 el
+263 ambiente
+264 todo
+265 todo
+266 el
+267 paisaje
+268 las
+269 aguas
+270 termales
+271 las
+272 cascadasb
+273 el
+274 paisaje
+275 el
+276 ambiente
+277 natural
+278 la
+279 atencion
+280 todo
+281 la
+282 cascada
+283 la
+284 cascada
+285 la
+286 fauna
+287 todo
+288 el
+289 agua
+290 y
+291 la
+292 atencion
+293 y
+294 la
+295 naturaleza
+296 todo
+297 las
+298 cascadas
+299 naturales
+300 el
+301 aguatermal
+302 todo
+303 la
+304 belleza
+305 natural
+306 el
+307 paisaje
+308 la
+309 cascada
+310 el
+311 paisaje
+312 todo
+313 la
+314 cascada
+315 el
+316 servicio
+317 la
+318 cascada
+319 y
+320 el
+321 sendero
+322 la
+323 cascada

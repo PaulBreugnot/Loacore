@@ -1,48 +1,48 @@
-agua
-alojamiento
-alto
-alto
-alto
-alto
-anciano
-caminata
-celebrar
-comedir
-comedir
-comedir
-comedir
-comedir
-cosa
-cumpleaños
-dar
-dejar
-descontar
-ducha
-entrada
-entrar
-especial
-falta
-falta
-faltar
-gente
-habitación
-lluvia
-mas
-mediar
-mucho
-musicar
-musicar
-precio
-precio
-precio
-precio
-q
-refrigerio
-refrigerio
-restaurante
-ruta
-sauna
-tener
-transportar
-transportar
-turco
+0 comedir
+2 musicar
+3 falta
+4 cosa
+7 dejar
+8 entrar
+9 refrigerio
+10 precio
+11 alto
+12 faltar
+13 mas
+14 habitación
+16 precio
+19 alto
+21 comedir
+24 musicar
+28 falta
+29 turco
+31 sauna
+35 transportar
+36 especial
+38 celebrar
+40 cumpleaños
+42 alojamiento
+43 restaurante
+44 precio
+45 alto
+50 comedir
+57 comedir
+58 precio
+59 alto
+64 dar
+65 refrigerio
+66 mucho
+67 gente
+71 comedir
+74 lluvia
+79 tener
+80 ruta
+81 q
+84 mediar
+86 transportar
+89 descontar
+92 entrada
+94 anciano
+96 agua
+99 ducha
+103 caminata

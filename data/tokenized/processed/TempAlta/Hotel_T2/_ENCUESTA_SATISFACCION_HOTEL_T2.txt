@@ -1,306 +1,306 @@
-pendientes
-hombrtes
-entren
-vestier
-mujeres
-mejorar
-mantenimintos
-puertas
-bancos
-cascadas
-mas
-publicidad
-cara
-entrada
-mejorar
-chorizo
-mejorar
-baños
-mejorar
-sistema
-guardaropa
-mejorar
-aseo
-bandejas
-mejorar
-presios
-alimentos
-estan
-caros
-mejor
-disposición
-mesas
-tener
-mas
-cosas
-objetos
-llevar
-transporte
-subio
-tener
-cuenta
-trasporte
-personas
-discapacitadas
-precios
-temperatura
-agua
-muebles
-piscinas
-diversiones
-gorro
-baño
-utilizar
-obligatorio
-entradas
-costosas
-camioneta
-tien
-uncupo
-colaborar
-niños
-bebes
-coche
-pues
-dificil
-desenso
-mas
-si
-bus
-baja
-desocupado
-piscinas
-sucias
-ek
-gorro
-baño
-deberia
-ser
-obligatorio
-sacando
-pelos
-piscinas
-comer
-piscinas
-termales
-turismo
-quejo
-publicidad
-engañoza
-hacen
-comprar
-tiquetes
-mas
-cordialidad
-señoritas
-vestiercreo
-puede
-solicitar
-equipaje
-alguna
-ocasión
-sacar
-alguna
-prenda
-tener
-molestar
-persona
-cumple
-plan
-descuento
-ofrecido
-mejorar
-atencion
-controlar
-capacidad
-disponibilidad
-mesas
-mejora
-atencion
-respuesta
-grosera
-empleado
-dijo
-mejor
-devolviera
-dinero
-mala
-experienci
-pesima
-atencion
-parte
-personal
-cafeteria
-comida
-demoro
-mas
-hora
-equivocaron
-pedido
-entrega
-fria
-mala
-gana
-dejan
-subir
-arros
-organización
-suministra
-servicio
-hoy
-enro
-hijos
-menores
-edad
-suegros
-u
-transporte
-llevamos
-mas
-horta
-llega
-buseta
-colmo
-entrada
-mejor
-coches
-sillas
-ruedas
-atencion
-niña
-adriana
-ingreso
-lugara
-adecuada
-conductores
-permanescan
-sitio
-abandonen
-sitio
-trabajo
-cliente
-debe
-esperar
-bajar
-salan
-mas
-rapido
-sevicio
-transporte
-pesimo
-conductores
-subieron
-comer
-mismo
-teimpo
-parece
-colmo
-hagan
-esperar
-mas
-minutos
-señores
-ña
-porteria
-contesten
-manera
-apropiada
-transportaciones
-dan
-parqueadero
-alterno
-tenia
-conductor
-devolvernos
-hablarle
-hombre
-seguridad
-dijo
-comiendo
-dejara
-favor
-colocar
-orden
-aseo
-permanente
-falta
-orden
-higiene
-gente
-quintando
-callosidades
-piscina
-deplorable
-falta
-higiene
-apliar
-normas
-limpieza
-parece
-deben
-arreglar
-mejor
-entrada
-mal
-servicio
-hora
-evaluar
-gente
-solo
-torniquete
-debe
-entrada
-salida
-tumulto
-falta
-respeto
-personas
-mayores
-señor
-reviso
-tenia
-razon
-poder
-ingresar
-mascostas
-embarazo
-sarandeo
-brazo
-dijo
-habia
-visto
-ayudan
-parqueadero
-estan
-pendientes
-mas
-interes
-impresión
-deplorable
-capacidad
-instalada
-full
-increible
-suficiente
-personal
-saludable
-peligroso
-habia
-orines
-habia
-pareja
-sexo
-atracciones
-dicen
-vieron
-cascadas
-encendidas
-cobraron
-tarifas
-mencionaron
-increible
-miles
-personas
-solo
-existan
-regaderas
+1 pendientes
+5 hombrtes
+7 entren
+9 vestier
+12 mujeres
+13 mejorar
+15 mantenimintos
+18 puertas
+21 bancos
+24 cascadas
+26 mas
+27 publicidad
+28 cara
+30 entrada
+31 mejorar
+33 chorizo
+34 mejorar
+36 baños
+37 mejorar
+39 sistema
+41 guardaropa
+42 mejorar
+43 aseo
+46 bandejas
+47 mejorar
+49 presios
+52 alimentos
+53 estan
+55 caros
+56 mejor
+57 disposición
+60 mesas
+61 tener
+62 mas
+63 cosas
+65 objetos
+67 llevar
+69 transporte
+73 subio
+74 tener
+76 cuenta
+78 trasporte
+81 personas
+82 discapacitadas
+83 precios
+84 temperatura
+86 agua
+87 muebles
+88 piscinas
+90 diversiones
+92 gorro
+94 baño
+95 utilizar
+96 obligatorio
+99 entradas
+101 costosas
+103 camioneta
+104 tien
+105 uncupo
+106 colaborar
+109 niños
+111 bebes
+113 coche
+114 pues
+115 dificil
+117 desenso
+119 mas
+120 si
+122 bus
+123 baja
+124 desocupado
+126 piscinas
+128 sucias
+129 ek
+130 gorro
+132 baño
+133 deberia
+134 ser
+135 obligatorio
+139 sacando
+140 pelos
+143 piscinas
+145 comer
+148 piscinas
+149 termales
+151 turismo
+153 quejo
+155 publicidad
+156 engañoza
+157 hacen
+158 comprar
+159 tiquetes
+160 mas
+161 cordialidad
+164 señoritas
+167 vestiercreo
+170 puede
+171 solicitar
+173 equipaje
+175 alguna
+176 ocasión
+178 sacar
+179 alguna
+180 prenda
+182 tener
+184 molestar
+187 persona
+190 cumple
+193 plan
+195 descuento
+196 ofrecido
+197 mejorar
+198 atencion
+200 controlar
+201 capacidad
+203 disponibilidad
+205 mesas
+206 mejora
+207 atencion
+209 respuesta
+210 grosera
+212 empleado
+214 dijo
+216 mejor
+217 devolviera
+219 dinero
+221 mala
+222 experienci
+223 pesima
+224 atencion
+226 parte
+228 personal
+231 cafeteria
+233 comida
+235 demoro
+236 mas
+239 hora
+241 equivocaron
+244 pedido
+247 entrega
+248 fria
+251 mala
+252 gana
+254 dejan
+255 subir
+257 arros
+260 organización
+261 suministra
+263 servicio
+264 hoy
+267 enro
+271 hijos
+272 menores
+274 edad
+277 suegros
+278 u
+281 transporte
+282 llevamos
+283 mas
+286 horta
+289 llega
+291 buseta
+294 colmo
+296 entrada
+298 mejor
+300 coches
+302 sillas
+304 ruedas
+307 atencion
+310 niña
+311 adriana
+313 ingreso
+315 lugara
+319 adecuada
+322 conductores
+323 permanescan
+326 sitio
+329 abandonen
+331 sitio
+333 trabajo
+335 cliente
+337 debe
+338 esperar
+340 bajar
+343 salan
+344 mas
+345 rapido
+346 sevicio
+348 transporte
+349 pesimo
+351 conductores
+352 subieron
+354 comer
+356 mismo
+357 teimpo
+359 parece
+361 colmo
+364 hagan
+365 esperar
+366 mas
+369 minutos
+372 señores
+374 ña
+375 porteria
+377 contesten
+379 manera
+380 apropiada
+382 transportaciones
+387 dan
+390 parqueadero
+391 alterno
+393 tenia
+394 conductor
+396 devolvernos
+398 hablarle
+400 hombre
+402 seguridad
+403 dijo
+406 comiendo
+410 dejara
+411 favor
+412 colocar
+413 orden
+415 aseo
+416 permanente
+419 falta
+421 orden
+423 higiene
+425 gente
+426 quintando
+427 callosidades
+430 piscina
+433 deplorable
+435 falta
+437 higiene
+438 apliar
+439 normas
+441 limpieza
+443 parece
+445 deben
+446 arreglar
+447 mejor
+449 entrada
+451 mal
+452 servicio
+455 hora
+457 evaluar
+459 gente
+461 solo
+462 torniquete
+464 debe
+468 entrada
+473 salida
+475 tumulto
+478 falta
+480 respeto
+483 personas
+484 mayores
+486 señor
+489 reviso
+491 tenia
+493 razon
+496 poder
+497 ingresar
+498 mascostas
+502 embarazo
+504 sarandeo
+506 brazo
+508 dijo
+512 habia
+513 visto
+516 ayudan
+518 parqueadero
+520 estan
+521 pendientes
+522 mas
+523 interes
+525 impresión
+527 deplorable
+529 capacidad
+530 instalada
+532 full
+534 increible
+538 suficiente
+539 personal
+542 saludable
+544 peligroso
+545 habia
+546 orines
+548 habia
+550 pareja
+552 sexo
+554 atracciones
+556 dicen
+558 vieron
+560 cascadas
+563 encendidas
+564 cobraron
+565 tarifas
+567 mencionaron
+569 increible
+573 miles
+575 personas
+576 solo
+577 existan
+579 regaderas

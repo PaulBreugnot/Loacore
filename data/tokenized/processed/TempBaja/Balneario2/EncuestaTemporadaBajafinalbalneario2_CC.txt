@@ -1,146 +1,146 @@
-paisajes
-agua
-caliemten
-cascada
-termales
-cascada
-nsturaleza
-ecologia
-paisaje
-reserva
-natural
-paisaje
-naturalesa
-paisahe
-cascada
-paiaaje
-piscinas
-agua
-paisaje
-cascada
-paisaje
-pesesitos
-paisaje
-picsina
-tofo
-naturaleza
-cascada
-paisaje
-paisaje
-paisaje
-acojedor
-paisaje
-cascada
-tranquilo
-paisaje
-cascada
-buena
-atencion
-paisaje
-termales
-calidad
-tranqulidad
-paisaje
-tranqulidad
-paisaje
-paisaje
-armonia
-paisaje
-ambiente
-tranwuiludad
-tranquilidad
-paisaje
-naturaleza
-paisaje
-paisaje
-naturaleza
-teanqulidad
-agua
-termal
-aguala
-cascada
-termales
-paisaje
-aguas
-comida
-atencin
-nsturaleza
-naturaleza
-limpio
-ambiente
-paisaje
-aguas
-paisaje
-naturaleza
-paisajr
-belleza
-entorno
-naturaleza
-agua
-cascada
-paisaje
-paisaje
-agua
-cascada
-paisaje
-adecuacion
-cascada
-paisaje
-paisaje
-bien
-distribuido
-omodidad
-cascada
-cascadas
-agua
-termal
-paisaje
-aguacaliente
-servicio
-paisaje
-paisaje
-paisaje
-picsinas
-atencion
-paisje
-cascadas
-teermales
-cascada
-nsturaleza
-masajes
-paisaje
-cascada
-gente
-muyamable
-ambiente
-lanaruraleza
-agua
-termal
-ambiente
-paisaje
-aguas
-termales
-cascadasb
-paisaje
-ambiente
-natural
-atencion
-cascada
-cascada
-fauna
-agua
-atencion
-naturaleza
-cascadas
-naturales
-aguatermal
-belleza
-natural
-paisaje
-cascada
-paisaje
-cascada
-servicio
-cascada
-sendero
-cascada
+0 paisajes
+2 agua
+3 caliemten
+5 cascada
+9 termales
+10 cascada
+12 nsturaleza
+13 ecologia
+15 paisaje
+17 reserva
+18 natural
+20 paisaje
+22 naturalesa
+24 paisahe
+27 cascada
+29 paiaaje
+32 piscinas
+34 agua
+37 paisaje
+39 cascada
+41 paisaje
+44 pesesitos
+46 paisaje
+47 picsina
+48 tofo
+49 naturaleza
+51 cascada
+54 paisaje
+56 paisaje
+58 paisaje
+61 acojedor
+64 paisaje
+66 cascada
+69 tranquilo
+71 paisaje
+74 cascada
+76 buena
+77 atencion
+79 paisaje
+80 termales
+82 calidad
+85 tranqulidad
+87 paisaje
+89 tranqulidad
+91 paisaje
+92 paisaje
+94 armonia
+97 paisaje
+99 ambiente
+101 tranwuiludad
+103 tranquilidad
+104 paisaje
+106 naturaleza
+110 paisaje
+114 paisaje
+117 naturaleza
+119 teanqulidad
+121 agua
+122 termal
+124 aguala
+125 cascada
+127 termales
+129 paisaje
+131 aguas
+133 comida
+136 atencin
+138 nsturaleza
+142 naturaleza
+147 limpio
+151 ambiente
+153 paisaje
+155 aguas
+157 paisaje
+159 naturaleza
+161 paisajr
+162 belleza
+164 entorno
+165 naturaleza
+167 agua
+169 cascada
+171 paisaje
+173 paisaje
+176 agua
+178 cascada
+180 paisaje
+183 adecuacion
+186 cascada
+188 paisaje
+190 paisaje
+193 bien
+194 distribuido
+196 omodidad
+198 cascada
+200 cascadas
+202 agua
+203 termal
+206 paisaje
+208 aguacaliente
+211 servicio
+214 paisaje
+216 paisaje
+221 paisaje
+223 picsinas
+225 atencion
+229 paisje
+231 cascadas
+233 teermales
+238 cascada
+240 nsturaleza
+244 masajes
+246 paisaje
+248 cascada
+250 gente
+251 muyamable
+253 ambiente
+254 lanaruraleza
+259 agua
+260 termal
+263 ambiente
+267 paisaje
+269 aguas
+270 termales
+272 cascadasb
+274 paisaje
+276 ambiente
+277 natural
+279 atencion
+282 cascada
+284 cascada
+286 fauna
+289 agua
+292 atencion
+295 naturaleza
+298 cascadas
+299 naturales
+301 aguatermal
+304 belleza
+305 natural
+307 paisaje
+309 cascada
+311 paisaje
+314 cascada
+316 servicio
+318 cascada
+321 sendero
+323 cascada

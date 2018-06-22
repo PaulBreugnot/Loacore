@@ -1,109 +1,109 @@
-buena
-tranquilidad
-ambiente
-la
-naturaleza
-piscinas
-el
-agua
-un
-paraiso
-piscinas
-la
-naturaleza
-naturaleza
-puedo
-tomar
-al
-lado
-de
-la
-piscina
-exelente
-servicio
-las
-aguas
-todo
-las
-aguas
-piscinas
-tranquilidad
-mucho
-comfor
-la
-naturaleza
-buen
-servicio
-tranquilidad
-todo
-tranquilidad
-el
-agua
-la
-naturaleza
-el
-agua
-las
-aguas
-tranquilidad
-el
-agua
-naturaleza
-naturaleza
-las
-aguas
-las
-aguas
-lo
-medicinal
-tranquilo
-el
-agua
-todo
-tranquilidad
-el
-agua
-todo
-todo
-el
-servicio
-todo
-exotico
-tranquilidad
-relajacion
-la
-vista
-relajacion
-paisaje
-paisaje
-y
-la
-atencion
-la
-atencion
-por
-salud
-el
-agua
-intalaciones
-las
-aguas
-la
-atencion
-todo
-lo
-natural
-todo
-la
-naturaleza
-mas
-privado
-todo
-el
-paisaje
-las
-aguas
-todo
-naturaleza
-la
-naturaleza
+0 buena
+1 tranquilidad
+2 ambiente
+3 la
+4 naturaleza
+5 piscinas
+6 el
+7 agua
+8 un
+9 paraiso
+10 piscinas
+11 la
+12 naturaleza
+13 naturaleza
+14 puedo
+15 tomar
+16 al
+17 lado
+18 de
+19 la
+20 piscina
+21 exelente
+22 servicio
+23 las
+24 aguas
+25 todo
+26 las
+27 aguas
+28 piscinas
+29 tranquilidad
+30 mucho
+31 comfor
+32 la
+33 naturaleza
+34 buen
+35 servicio
+36 tranquilidad
+37 todo
+38 tranquilidad
+39 el
+40 agua
+41 la
+42 naturaleza
+43 el
+44 agua
+45 las
+46 aguas
+47 tranquilidad
+48 el
+49 agua
+50 naturaleza
+51 naturaleza
+52 las
+53 aguas
+54 las
+55 aguas
+56 lo
+57 medicinal
+58 tranquilo
+59 el
+60 agua
+61 todo
+62 tranquilidad
+63 el
+64 agua
+65 todo
+66 todo
+67 el
+68 servicio
+69 todo
+70 exotico
+71 tranquilidad
+72 relajacion
+73 la
+74 vista
+75 relajacion
+76 paisaje
+77 paisaje
+78 y
+79 la
+80 atencion
+81 la
+82 atencion
+83 por
+84 salud
+85 el
+86 agua
+87 intalaciones
+88 las
+89 aguas
+90 la
+91 atencion
+92 todo
+93 lo
+94 natural
+95 todo
+96 la
+97 naturaleza
+98 mas
+99 privado
+100 todo
+101 el
+102 paisaje
+103 las
+104 aguas
+105 todo
+106 naturaleza
+107 la
+108 naturaleza

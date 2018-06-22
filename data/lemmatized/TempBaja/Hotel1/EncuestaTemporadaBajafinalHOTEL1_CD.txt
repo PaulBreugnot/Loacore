@@ -1,148 +1,148 @@
-1
-4
-acceso
-acceso
-acorde
-agradable
-agua
-agua
-agua
-almorzar
-alta
-anexar
-angostar
-arbusto
-atender
-ayudar
-baja
-baja
-bata
-baño
-beneficio
-brazalete
-bueno
-calentar
-caminar
-caminar
-carpa
-carretera
-carretera
-cascada
-cliente
-clima
-comedir
-comedir
-comedir
-comedir
-comedir
-costo
-demasiado
-demora
-disponibilidad
-ducha
-elevador
-empleado
-entornar
-entrada
-entrada
-entrada
-escuchar
-escuchar
-espaciar
-excluyente
-facilidad
-falta
-falta
-falta
-falta
-faltar
-fi
-folleto
-funcionar
-gente
-gruesa
-habitación
-habitación
-hacia
-horario
-hotel
-hotel
-hotel
-incluir
-inconveniente
-incrementar
-infraestructura
-invertir
-lejos
-lugar
-mal
-maltratar
-mama
-mas
-mas
-masaje
-mayor
-mesa
-mesero
-mimo
-mismo
-mojar
-mucho
-mucho
-necesidad
-nova
-parquear
-pata
-pavimentar
-pequeño
-pequeño
-persona
-pisar
-piscina
-piscina
-piscina
-piscina
-piscina
-piscina
-piso
-poco
-poder
-preciar
-preciar
-preciar
-preciar
-publicidad
-querer
-regular
-resbaladizo
-restaurante
-restaurante
-restringir
-sabor
-servicio
-servicio
-sitiar
-solo
-solo
-sombrilla
-sonido
-sonido
-sucio
-tan
-tanto
-tapar
-temperatura
-temperatura
-toalla
-trago
-tranquilidad
-tratar
-trayecto
-valor
-variedad
-variedad
-ventana
-ventilador
-ver
-zona
-zona
+4 folleto
+8 baño
+9 sucio
+10 preciar
+16 almorzar
+17 incluir
+19 falta
+21 publicidad
+23 incrementar
+26 entrada
+27 sitiar
+30 excluyente
+33 ayudar
+36 mama
+37 demasiado
+40 agua
+41 falta
+46 necesidad
+52 1
+53 pisar
+54 carretera
+56 pavimentar
+58 piso
+59 mojar
+62 resbaladizo
+63 horario
+64 restringir
+67 piscina
+70 brazalete
+73 temperatura
+75 agua
+77 mas
+78 baja
+79 mas
+80 agradable
+83 caminar
+87 tapar
+89 arbusto
+92 facilidad
+94 persona
+95 mayor
+99 falta
+100 infraestructura
+104 sombrilla
+107 mesa
+111 carpa
+112 pata
+117 caminar
+120 temperatura
+121 alta
+123 acceso
+125 invertir
+128 lugar
+132 mismo
+133 maltratar
+134 hacia
+136 empleado
+138 carretera
+139 angostar
+141 entrada
+143 falta
+144 sabor
+147 comedir
+149 comedir
+154 escuchar
+156 sonido
+163 servicio
+165 toalla
+170 mimo
+171 beneficio
+175 tanto
+176 gente
+179 espaciar
+180 tan
+181 pequeño
+183 solo
+185 acceso
+188 solo
+189 piscina
+195 mesero
+198 querer
+199 atender
+202 tratar
+203 mal
+205 piscina
+206 pequeño
+208 comedir
+210 servicio
+213 comedir
+216 nova
+219 acorde
+222 entornar
+225 agua
+226 calentar
+228 ducha
+233 elevador
+236 hotel
+237 4
+239 ventilador
+240 comedir
+242 regular
+244 mucho
+245 variedad
+247 hotel
+252 habitación
+256 trayecto
+259 hotel
+262 piscina
+264 piscina
+265 anexar
+268 bueno
+270 faltar
+271 bata
+276 tranquilidad
+279 zona
+280 restaurante
+281 zona
+283 parquear
+286 poco
+287 variedad
+292 demora
+298 costo
+301 trago
+303 preciar
+306 entrada
+308 valor
+312 habitación
+315 poder
+316 ver
+318 piscina
+320 preciar
+324 lejos
+326 preciar
+330 baja
+334 restaurante
+336 funcionar
+339 fi
+343 inconveniente
+346 masaje
+348 mucho
+351 disponibilidad
+353 cliente
+359 clima
+363 ventana
+367 gruesa
+370 escuchar
+372 sonido
+375 cascada

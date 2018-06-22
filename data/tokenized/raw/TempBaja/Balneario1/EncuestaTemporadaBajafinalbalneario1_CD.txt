@@ -1,198 +1,198 @@
-entrada
-taquilla
-carretera
-distancia
-servicio
-cafeteria
-los
-precios
-la
-temperatura
-del
-agua
-muy
-caliento
-el
-restaurante
-la
-comida
-regular
-los
-precios
-servicio
-del
-restaurante
-el
-costo
-del
-restaurante
-cafeteria
-muy
-caro
-musica
-mucho
-ruido
-el
-restaurante
-muy
-costoso
-chorizos
-piedras
-del
-caminos
-la
-lama
-de
-la
-cascada
-el
-acceso
-el
-costo
-del
-restaurante
-los
-precios
-muy
-costos
-los
-costos
-de
-la
-comida
-el
-codto
-fel
-restaurante
-costo
-del
-restaurante
-los
-precios
-de
-los
-insumos
-el
-guardaropa
-el
-servicio
-los
-costos
-guias
-el
-almuerzo
-los
-costos
-de
-los
-insumos
-los
-costos
-de
-los
-insumos
-el
-higiene
-los
-gorros
-de
-baño
-poco
-personal
-en
-el
-restaurante
-los
-precios
-de
-los
-almuerzos
-el
-parqueadero
-la
-humedad
-en
-los
-vestidores
-el
-restaurante
-el
-metodo
-los
-costos
-de
-los
-insumos
-la
-taquilla
-la
-empleada
-los
-atendio
-mal
-utilizando
-malas
-palabras
-los
-precios
-de
-la
-comida
-el
-almuerzo
-mala
-preparacion
-el
-cafe
-pindana
-mala
-atencion
-y
-mala
-preparcion
-del
-cafe
-informacion
-de
-orientacion
-costo
-de
-los
-insumos
-el
-sabor
-de
-la
-comida
-el
-costo
-de
-los
-insumos
-el
-costo
-de
-los
-insumos
-el
-allmuerzo
-muy
-maluco
-la
-comida
-mal
-sabor
-el
-costo
-del
-restaurante
-los
-costos
-los
-precios
-los
-precios
-los
-costos
-de
-insumos
+0 entrada
+1 taquilla
+2 carretera
+3 distancia
+4 servicio
+5 cafeteria
+6 los
+7 precios
+8 la
+9 temperatura
+10 del
+11 agua
+12 muy
+13 caliento
+14 el
+15 restaurante
+16 la
+17 comida
+18 regular
+19 los
+20 precios
+21 servicio
+22 del
+23 restaurante
+24 el
+25 costo
+26 del
+27 restaurante
+28 cafeteria
+29 muy
+30 caro
+31 musica
+32 mucho
+33 ruido
+34 el
+35 restaurante
+36 muy
+37 costoso
+38 chorizos
+39 piedras
+40 del
+41 caminos
+42 la
+43 lama
+44 de
+45 la
+46 cascada
+47 el
+48 acceso
+49 el
+50 costo
+51 del
+52 restaurante
+53 los
+54 precios
+55 muy
+56 costos
+57 los
+58 costos
+59 de
+60 la
+61 comida
+62 el
+63 codto
+64 fel
+65 restaurante
+66 costo
+67 del
+68 restaurante
+69 los
+70 precios
+71 de
+72 los
+73 insumos
+74 el
+75 guardaropa
+76 el
+77 servicio
+78 los
+79 costos
+80 guias
+81 el
+82 almuerzo
+83 los
+84 costos
+85 de
+86 los
+87 insumos
+88 los
+89 costos
+90 de
+91 los
+92 insumos
+93 el
+94 higiene
+95 los
+96 gorros
+97 de
+98 baño
+99 poco
+100 personal
+101 en
+102 el
+103 restaurante
+104 los
+105 precios
+106 de
+107 los
+108 almuerzos
+109 el
+110 parqueadero
+111 la
+112 humedad
+113 en
+114 los
+115 vestidores
+116 el
+117 restaurante
+118 el
+119 metodo
+120 los
+121 costos
+122 de
+123 los
+124 insumos
+125 la
+126 taquilla
+127 la
+128 empleada
+129 los
+130 atendio
+131 mal
+132 utilizando
+133 malas
+134 palabras
+135 los
+136 precios
+137 de
+138 la
+139 comida
+140 el
+141 almuerzo
+142 mala
+143 preparacion
+144 el
+145 cafe
+146 pindana
+147 mala
+148 atencion
+149 y
+150 mala
+151 preparcion
+152 del
+153 cafe
+154 informacion
+155 de
+156 orientacion
+157 costo
+158 de
+159 los
+160 insumos
+161 el
+162 sabor
+163 de
+164 la
+165 comida
+166 el
+167 costo
+168 de
+169 los
+170 insumos
+171 el
+172 costo
+173 de
+174 los
+175 insumos
+176 el
+177 allmuerzo
+178 muy
+179 maluco
+180 la
+181 comida
+182 mal
+183 sabor
+184 el
+185 costo
+186 del
+187 restaurante
+188 los
+189 costos
+190 los
+191 precios
+192 los
+193 precios
+194 los
+195 costos
+196 de
+197 insumos

@@ -1,60 +1,60 @@
-comida
-musica
-falta
-cosas
-ecologicas
-dejan
-entrar
-refrigerios
-precios
-altos
-faltan
-mas
-habitaciones
-precios
-prosupuestos
-altos
-comida
-musica
-hodaje
-falta
-turco
-sauna
-transporte
-especial
-celebran
-cumpleaños
-alojamiento
-restaurante
-precios
-altos
-atencion
-comida
-infrastructuras
-comida
-precios
-altos
-vias
-dan
-refrigerio
-mucha
-gente
-atencion
-comida
-toballas
-lluvia
-parqueadero
-deberian
-tener
-ruta
-q
-medio
-transporte
-descuento
-pars
-entradas
-ancianos
-agua
-duchas
-hidratacion
-caminatas
+0 comida
+2 musica
+3 falta
+4 cosas
+5 ecologicas
+7 dejan
+8 entrar
+9 refrigerios
+10 precios
+11 altos
+12 faltan
+13 mas
+14 habitaciones
+16 precios
+17 prosupuestos
+19 altos
+21 comida
+24 musica
+26 hodaje
+28 falta
+29 turco
+31 sauna
+35 transporte
+36 especial
+38 celebran
+40 cumpleaños
+42 alojamiento
+43 restaurante
+44 precios
+45 altos
+48 atencion
+50 comida
+54 infrastructuras
+57 comida
+58 precios
+59 altos
+61 vias
+64 dan
+65 refrigerio
+66 mucha
+67 gente
+69 atencion
+71 comida
+72 toballas
+74 lluvia
+76 parqueadero
+77 deberian
+79 tener
+80 ruta
+81 q
+84 medio
+86 transporte
+89 descuento
+90 pars
+92 entradas
+94 ancianos
+96 agua
+99 duchas
+100 hidratacion
+103 caminatas
