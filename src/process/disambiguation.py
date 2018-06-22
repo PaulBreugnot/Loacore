@@ -14,6 +14,10 @@ def main():
         for filename in filenames:
             indexed_tokens_string = open(os.path.join(dirpath, filename), encoding='utf-8').read()
             indexed_tokens = re.findall(r'\d+ \w+', indexed_tokens_string, re.MULTILINE)
+
+            # Reorder tokens in the order they are found in the original text
+            indexed_tokens = sorted(indexed_tokens, key=lambda indexed_token: int(re.findall(r'(\d+) .*', indexed_token)[0]))
+            
             disambiguated_tokens = disambiguate_tokens(indexed_tokens, tk, sp, morfo, sen, wsd, tagger)
             write_disambiguated_tokens(disambiguated_tokens, dirpath, filename)
 

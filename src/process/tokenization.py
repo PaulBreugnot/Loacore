@@ -11,7 +11,7 @@ def main():
         for filename in filenames:
             normalized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
 
-            tokens = init_tokens(normalized_text.read(), sort=False)
+            tokens = init_tokens(normalized_text.read(), sort=True)
 
             write_raw_tokens(tokens, dirpath, filename)
 
@@ -47,7 +47,7 @@ def init_tokens(text, sort=False):
     for text_offset in range(len(tokens)):
         tokens[text_offset] = ' '.join([str(text_offset), tokens[text_offset]])
     if sort:
-        tokens = sorted(tokens)
+        tokens = sorted(tokens, key=lambda token: re.findall(r'\d+ (.*)', token)[0])
     return tokens
 
 

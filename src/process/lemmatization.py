@@ -6,13 +6,13 @@ import src.utils.file_writer as file_writer
 
 def main():
 
-    tk, sp, morfo = init_analyzers()
+    sp, morfo = init_analyzers()
 
     for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
         for filename in filenames:
             tokenized_text = open(os.path.join(dirpath, filename), encoding='utf-8')
             indexed_tokens = re.findall(r'\d+ \w*', tokenized_text.read(), re.MULTILINE)
-            lemmas_dict = search_lemmas(unindexed_tokens(indexed_tokens, tk), sp, morfo)
+            lemmas_dict = search_lemmas(unindexed_tokens(indexed_tokens), sp, morfo)
             lemmatize_indexed_tokens = lemmatize(indexed_tokens, lemmas_dict)
             write_lemmas(lemmatize_indexed_tokens, dirpath, filename)
 
@@ -42,10 +42,9 @@ def init_analyzers():
                              False)  # ProbabilityAssignment
 
     # create analyzers
-    tk = freeling.tokenizer(lpath + "tokenizer.dat")
     sp = freeling.splitter(lpath + "splitter.dat");
 
-    return tk, sp, morfo
+    return sp, morfo
 
 
 def maco_options(lang,lpath) :
@@ -59,7 +58,7 @@ def maco_options(lang,lpath) :
     return opt
 
 
-def unindexed_tokens(tokens, tk):
+def unindexed_tokens(tokens):
     unindexed_tokens_list = []
     for token in tokens:
         unindexed_tokens_list.append(freeling.word(re.findall(r'\d+ (.+)', token)[0]))
@@ -68,7 +67,7 @@ def unindexed_tokens(tokens, tk):
     return unindexed_tokens_list
 
 
-def search_lemmas(tokens, sp, morfo, sort=False):
+def search_lemmas(tokens, sp, morfo):
 
     lemmas_dict = dict()
     sentences_list = sp.split(tokens)
@@ -82,13 +81,10 @@ def search_lemmas(tokens, sp, morfo, sort=False):
             if (len(lemma)) > 0:
                 #print(word, ' : ', lemma)
                 lemmas_dict.update([(word.get_form(), lemma)])
-
-    #if sort:
-    #    lemmas = sorted(lemmas)
     return lemmas_dict
 
 
-def lemmatize(indexed_tokens, lemmas_dict):
+def lemmatize(indexed_tokens, lemmas_dict, sort=True):
     lemmatize_indexed_tokens = []
     for indexed_token in indexed_tokens:
         index = re.findall(r'(\d+ ).+', indexed_token)[0]
@@ -96,6 +92,8 @@ def lemmatize(indexed_tokens, lemmas_dict):
         lemma = lemmas_dict.get(word)
         if lemma is not None:
             lemmatize_indexed_tokens.append(index + lemma)
+    if sort:
+        lemmatize_indexed_tokens = sorted(lemmatize_indexed_tokens, key=lambda token: re.findall(r'\d+ (.*)', token)[0])
     return lemmatize_indexed_tokens
 
 

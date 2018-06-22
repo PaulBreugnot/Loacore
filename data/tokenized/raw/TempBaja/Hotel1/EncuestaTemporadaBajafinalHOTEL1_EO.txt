@@ -1,10 +1,10 @@
-0 zona
-1 de
-2 juegos
 3 ajedrez
-4 juegos
+1 de
 5 de
+2 juegos
+4 juegos
 6 mesa
+9 privacidad
 7 relajacion
 8 y
-9 privacidad
+0 zona

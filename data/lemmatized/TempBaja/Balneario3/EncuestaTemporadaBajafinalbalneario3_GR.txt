@@ -1,8 +1,8 @@
-0 billar
-1 transportar
-2 juego
-4 mesa
-5 juego
-7 mesa
 8 barra
+0 billar
+2 juego
+5 juego
+4 mesa
+7 mesa
 10 tragar
+1 transportar

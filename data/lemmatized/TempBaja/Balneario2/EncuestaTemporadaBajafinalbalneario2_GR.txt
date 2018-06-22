@@ -1,9 +1,9 @@
-0 juguete
 2 agua
-3 escalera
-5 juego
 10 carretera
-12 paraguas
 15 entrada
-16 mas
+3 escalera
 19 hospedaje
+5 juego
+0 juguete
+16 mas
+12 paraguas
