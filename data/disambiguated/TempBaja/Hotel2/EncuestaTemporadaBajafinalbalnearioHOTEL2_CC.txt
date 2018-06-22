@@ -1,64 +1,64 @@
-good.a.01# buena
-composure.n.01# tranquilidad
-environment.n.02# ambiente
-universe.n.01# naturaleza
-swimming_pool.n.01# piscinas
-water.n.01# agua
-# paraiso
-swimming_pool.n.01# piscinas
-universe.n.01# naturaleza
-universe.n.01# naturaleza
-displace.v.03# puedo
-consume.v.02# tomar
-side.n.06# lado
-swimming_pool.n.01# piscina
-# exelente
-facility.n.01# servicio
-water.n.01# aguas
-water.n.01# aguas
-swimming_pool.n.01# piscinas
-composure.n.01# tranquilidad
-# comfor
-universe.n.01# naturaleza
-good.a.01# buen
-facility.n.01# servicio
-composure.n.01# tranquilidad
-composure.n.01# tranquilidad
-water.n.01# agua
-universe.n.01# naturaleza
-water.n.01# agua
-water.n.01# aguas
-composure.n.01# tranquilidad
-water.n.01# agua
-universe.n.01# naturaleza
-universe.n.01# naturaleza
-water.n.01# aguas
-water.n.01# aguas
-curative.s.01# medicinal
-quiet.a.01# tranquilo
-water.n.01# agua
-composure.n.01# tranquilidad
-water.n.01# agua
-facility.n.01# servicio
-# exotico
-composure.n.01# tranquilidad
-# relajacion
-look.v.01# vista
-# relajacion
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-watchfulness.n.02# atencion
-watchfulness.n.02# atencion
-health.n.01# salud
-water.n.01# agua
-# intalaciones
-water.n.01# aguas
-watchfulness.n.02# atencion
-unaffected.a.04# natural
-universe.n.01# naturaleza
-# mas
-private.a.01# privado
-landscape.n.01# paisaje
-water.n.01# aguas
-universe.n.01# naturaleza
-universe.n.01# naturaleza
+0 good.a.01# bueno
+1 composure.n.01# tranquilidad
+2 environment.n.02# ambiente
+4 universe.n.01# naturaleza
+5 swimming_pool.n.01# piscina
+7 water.n.01# agua
+9 # paraiso
+10 swimming_pool.n.01# piscina
+12 universe.n.01# naturaleza
+13 universe.n.01# naturaleza
+14 displace.v.03# poder
+15 consume.v.02# tomar
+17 side.n.06# lado
+20 swimming_pool.n.01# piscina
+21 # exelente
+22 facility.n.01# servicio
+24 water.n.01# agua
+27 water.n.01# agua
+28 swimming_pool.n.01# piscina
+29 composure.n.01# tranquilidad
+31 # comfor
+33 universe.n.01# naturaleza
+34 good.a.01# bueno
+35 facility.n.01# servicio
+36 composure.n.01# tranquilidad
+38 composure.n.01# tranquilidad
+40 water.n.01# agua
+42 universe.n.01# naturaleza
+44 water.n.01# agua
+46 water.n.01# agua
+47 composure.n.01# tranquilidad
+49 water.n.01# agua
+50 universe.n.01# naturaleza
+51 universe.n.01# naturaleza
+53 water.n.01# agua
+55 water.n.01# agua
+57 curative.s.01# medicinal
+58 quiet.a.01# tranquilo
+60 water.n.01# agua
+62 composure.n.01# tranquilidad
+64 water.n.01# agua
+68 facility.n.01# servicio
+70 # exotico
+71 composure.n.01# tranquilidad
+72 # relajacion
+74 look.v.01# ver
+75 # relajacion
+76 landscape.n.01# paisaje
+77 landscape.n.01# paisaje
+80 watchfulness.n.02# atencion
+82 watchfulness.n.02# atencion
+84 health.n.01# salud
+86 water.n.01# agua
+87 # intalaciones
+89 water.n.01# agua
+91 watchfulness.n.02# atencion
+94 unaffected.a.04# natural
+97 universe.n.01# naturaleza
+98 # mas
+99 private.a.01# privar
+102 landscape.n.01# paisaje
+104 water.n.01# agua
+106 universe.n.01# naturaleza
+108 universe.n.01# naturaleza

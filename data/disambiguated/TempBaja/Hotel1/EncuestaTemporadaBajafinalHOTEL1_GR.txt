@@ -1,4 +1,4 @@
-meal.n.01# comida
-# tipica
-cook.v.03# asados
-sauna.n.01# sauna
+0 meal.n.01# comida
+1 # tipica
+3 cook.v.03# asar
+4 sauna.n.01# sauna

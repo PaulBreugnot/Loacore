@@ -1,2974 +1,2974 @@
-watchfulness.n.02# atencion
-particular.s.01# especial
-equipment.n.01# equipo
-female.a.01# femenino
-# dia
-october.n.01# octubre
-bad.a.01# mala
-greet.v.01# saludan
-give.v.10# dan
-# mucha
-# informacion
-# habitacion
-price.n.02# precio
-apologize.v.02# justifico
-bathtub.n.01# bañera
-bad.a.01# mala
-put.v.01# poner
-# jabon
-breakfast.n.01# desayuno
-meager.a.01# pobre
-breakfast.n.01# desayuno
-egg.n.02# huevo
-miss.v.06# falta
-respect.n.03# respeto
-fee.n.01# tarifa
-sooth.n.01# verdad
-displace.v.03# puede
-look.v.01# ver
-television.n.01# tv
-# nadie
-order.v.01# indico
-# hacerlo
-displace.v.03# pudimos
-lunch.v.01# almorzar
-# nadie
-give.v.10# dio
-# informacion
-impaired.a.01# deteriorado
-flaw.v.01# desmejorado
-ugly.a.01# feo
-sooth.n.01# verdad
-# crei
-topographic_point.n.01# lugar
-beautiful.a.01# bonito
-bring.v.01# traer
-family.n.06# familia
-# asi
-price.n.02# precios
-eminent.s.01# altos
-look.v.02# parece
-examination.n.01# control
-authority.n.01# autoridades
-hire.v.01# contratar
-# recreadores
-problem.n.01# dificultad
-operation.n.01# manejo
-television.n.01# tv
-keep.v.01# mantener
-good.a.01# buen
-service.n.01# servicio
-good.a.01# bueno
-grace.n.02# gracias
-watchfulness.n.02# atencion
-# recepcion
-good.a.01# buena
-lack.n.01# falta
-# velocidada
-# alimentacion
-owe.v.01# deben
-better.v.02# mejorar
-watchfulness.n.02# atencion
-# alimnetacion
-resource.n.01# recurso
-plain.s.06# natural
-function.n.02# uso
-beautiful.a.01# bonito
-# aprovenchelon
-# mejorenlo
-displace.v.03# pueda
-recommend.v.01# recomendar
-bathtub.n.01# baños
-# habitacion
-refer.v.02# refiero
-shower.n.04# ducha
-important.a.01# importante
-# escalon
-concluding.s.01# final
-stand.n.10# gradas
-dwelling.n.01# piso
-eminent.s.01# alto
-displace.v.03# puede
-add.v.01# añadir
-prevent.v.01# evitar
-# caidas
-# ultima
-time.n.02# hora
-proceed.v.02# sigan
-# asi
-good.a.01# buenos
-service.n.01# servicios
-bathtub.n.01# baños
-# habitacion
-congratulation.n.02# felicidades
-grace.n.02# gracias
-cordial_reception.n.01# hospitalidad
-personal.a.01# personal
-watchfulness.n.02# atencion
-swimming_pool.n.01# piscina
-meal.n.01# comida
-# fria
-# care
-re.n.03# res
-# parecia
-arrogance.n.01# copete
-fatty.a.01# grasa
-simple.a.01# simple
-give_birth.v.01# tener
-umbrella.n.01# sombrillas
-function.n.02# uso
-# huspedes
-service.n.01# servicios
-# habitacion
-# mas
-agility.n.01# agilidad
-dispatch.n.02# despacho
-cafeteria.n.01# autoservicio
-# higienico
-give_birth.v.01# tener
-rug.n.01# tapetes
-untidy.a.01# sucios
-# habitacion
-towel.n.01# toallas
-damage.v.01# rotas
-give_birth.v.01# entregaron
-# habitacion
-untidy.a.01# desaseada
-spider_web.n.02# telarañas
-bathtub.n.01# baño
-untidy.a.01# sucio
-shower.n.04# ducha
-hair.n.01# pelos
-miss.v.06# falta
-# vairedad
-breakfast.n.01# desayuno
-dangerous.s.02# seria
-best.a.01# mejor
-buffet.n.02# buffet
-massage.n.01# masaje
-divine.s.06# excelente
-# deberian
-offer.v.01# ofrecer
-plan.n.01# plan
-enclosed.a.01# incluido
-meal.n.01# comida
-customer.n.01# cliente
-old.a.02# viejo
-# ustedes
-please.v.01# gusto
-change.n.01# cambios
-transport.v.02# efectuado
-close.v.01# cierren
-# balnearios
-# huespedes
-# deberian
-put.v.01# dejar
-pull_in.v.03# entrar
-# tanta
-people.n.01# gente
-measure.v.04# afuera
-befit.v.01# adecuar
-shower.n.04# duchas
-room.n.01# habitaciones
-hotel.n.01# hotel
-old.a.02# antiguo
-# habitacion
-tapeworm.n.01# tenia
-shower.n.04# ducha
-even.a.03# regular
-# alimentacion
-# encontre
-# salasa
-disturbance.n.03# tomate
-cheese.n.01# queso
-gaseous.a.01# gaseosas
-# dieteticas
-delay.n.01# demora
-# servieron
-# frio
-room.n.01# habitaciones
-smell.v.02# huelen
-chlorine.n.01# cloro
-egg.n.02# huevo
-# casacara
-# churrasco
-difficult.a.01# duro
-# room
-# servicie
-# wifi
-# feficiente
-# habitacion
-category.n.02# categoria
-superior.a.01# superior
-look.v.01# ve
-promptly.r.02# pronto
-# menu
-# mas
-change.v.01# variado
-# alimentacion
-be.v.01# ser
-card.n.01# carta
-nasty.a.01# horrible
-service.n.01# servicio
-# alimentacion
-meal.n.01# comida
-# maluca
-# masl
-serve.v.10# servida
-time.n.02# hora
-ask.v.04# esperar
-# unas
-# salchipapas
-people.n.01# gente
-# descortes
-die.v.01# salir
-hotel.n.01# hotel
-# alimentarnos
-best.a.01# mejor
-buffet.n.02# buffet
-offer.v.01# ofrecer
-breakfast.n.01# desayuno
-sneak_thief.n.01# chorizo
-# santarrosano
-think_of.v.03# considero
-bathtub.n.01# baños
-# deberian
-estate.n.01# haber
-# alfo
-hang.v.01# colgar
-clothing.n.01# trajes
-bathtub.n.01# baño
-side.n.04# lado
-swimming_pool.n.01# piscinas
-kind.n.01# tipo
-# jacuzzi
-# salvavidas
-name.n.01# nombre
-# stiven
-peasant.n.03# grosero
-arrogant.s.01# prepotente
-# huespedes
-endowment.n.01# don
-people.n.01# gente
-know.v.01# sabe
-give.v.10# prestar
-service.n.01# servicio
-happen.v.01# pasamos
-# dias
-hotel.n.01# hotel
-breakfast.n.01# desayuno
-adequate.a.01# igual
-# ninguna
-# variacion
-miss.v.06# falta
-option.n.02# opciones
-# menu
-breakfast.n.01# desayuno
-# sorprendio
-# tinto
-gain.v.08# cobran
-lack.n.01# falta
-waiter.n.01# mesero
-continuous.a.01# permanente
-swimming_pool.n.01# piscina
-# huespedes
-watchfulness.n.02# atencion
-personal.a.01# personal
-head.n.04# jefe
-service.n.01# servicios
-disappointing.s.01# decepcionante
-unpleasant.a.01# grosera
-# hgora
-give.v.10# dar
-# solucuin
-margarita.n.01# margarita
-serve.v.10# servido
-drink.n.01# copa
-# mas
-small.a.01# pequeña
-usual.a.01# usual
-inform.v.01# advirtieron
-either.r.01# tampoco
-# habia
-service.n.01# servicio
-# habitacion
-necessitate.v.01# solicitar
-service.n.01# servicios
-# habitacion
-unpleasant.a.01# groseros
-form.v.02# formas
-state.v.01# decir
-bear.n.01# osas
-correct.a.01# correcta
-# tendrian
-be.v.01# ser
-person.n.01# ser
-# mas
-affable.s.01# cordiales
-refer.v.02# referirse
-# huespedes
-swimming_pool.n.01# piscina
-# dia
-# fria
-necessitate.v.01# preguntar
-react.v.01# contestaron
-# desicion
-personal.a.01# personal
-thing.n.08# cosas
-# debeb
-happen.v.01# suceder
-less.r.01# menos
-hotel.n.01# hotel
-# dia
-give_birth.v.01# entrega
-# cocteles
-# mas
-time.n.02# hora
-# incondedible
-# perswonal
-# si
-order.v.01# encargado
-topographic_point.n.01# lugar
-# habitacion
-# alquilaria
-# nadie
-abridge.v.01# resumiendo
-lack.n.01# falta
-respect.n.03# respeto
-# quehospeden
-people.n.01# gente
-# ahí
-bad.a.01# mala
-# informacion
-box.n.01# caja
-assurance.n.01# seguridad
-sink.n.01# pilas
-# habia
-put.v.01# poner
-towel.n.01# toallas
-# alimentacion
-cafeteria.n.01# autoservicio
-expensive.a.01# costosa
-arrive.v.01# vinimos
-position.n.06# oficina
-car.n.01# turismo
-# parecio
-expensive.a.01# costoso
-service.n.01# servicio
-give_birth.v.01# tener
-watchfulness.n.02# atencion
-service.n.01# servicio
-change.v.01# cambie
-public_opinion.n.01# opinion
-better.v.02# mejorar
-cocktail.n.01# cocktails
-eat.v.02# consumidos
-knock.n.03# piña
-put.v.01# colocada
-ill.r.01# mal
-make.v.15# preparada
-# decirle
-waiter.n.01# mesero
-state.v.01# dijo
-make.v.03# hacer
-# si
-make.v.15# preparaban
-hotel.n.01# hotel
-clean.v.01# limpiar
-sludge.n.02# lama
-dwelling.n.01# piso
-descend.v.01# cae
-water.n.01# agua
-# fria
-swimming_pool.n.01# piscina
-look.v.01# vimos
-# varias
-person.n.01# personas
-slide.v.03# deslizar
-sludge.n.02# lama
-# habitacion
-miss.v.06# faltan
-# mas
-bathtub.n.01# baños
-sum.n.01# cantidad
-person.n.01# personas
-lodge.v.04# alojadas
-# mas
-meal.n.01# comida
-restaurant.n.01# restaurante
-even.a.03# regulares
-price.n.02# precio
-lack.n.01# falta
-# mas
-personal.a.01# personal
-time.n.02# horas
-cock.n.01# pico
-restaurant.n.01# restaurante
-major.a.01# principal
-better.v.02# mejorar
-# iluminacion
-room.n.01# cuartos
-better.v.02# mejorar
-service.n.01# servicio
-# telefono
-bathtub.n.01# baños
-slow.a.02# lentos
-# baciado
-effective.a.01# efectiva
-reaction.n.03# respuestas
-world_wide_web.n.01# internet
-miss.v.06# falta
-# aromonia
-design.v.02# diseño
-make.v.03# hacer
-two.s.01# segundo
-hotel.n.01# hotel
-make.v.03# hacer
-# mas
-# publiciada
-international.a.01# internacional
-think_of.v.03# considerar
-# mas
-# alimentacion
-bad.a.01# mala
-repair.n.01# instalaciones
-about.r.07# cerca
-# persna
-even.a.03# regular
-# podrian
-better.v.02# mejorar
-topographic_point.n.01# sitio
-divine.s.06# divino
-put.v.01# colocar
-dwelling.n.01# piso
-nonslip.s.01# antideslizante
-region.n.01# parte
-shower.v.03# ducha
-put.v.01# colocar
-# jabon
-bathtub.n.01# baño
-small.a.01# pequeña
-shelf.n.01# repisa
-region.n.01# parte
-sink.n.01# lavamanos
-# habitacion
-person.n.01# personas
-owe.v.01# debe
-give_birth.v.01# tener
-bathtub.n.01# baños
-farcical.s.01# absurdo
-red_wine.n.01# tinto
-# mañanero
-offer.v.01# ofrecen
-gratis.r.01# gratis
-hotel.n.01# hotel
-# habitacion
-# encuntre
-bag.n.01# bolsas
-clothing.n.01# ropa
-retool.v.01# revisar
-bathtub.n.01# baños
-bathtub.n.01# baño
-district.n.01# zona
-swimming_pool.n.01# piscina
-small.a.01# pequeño
-tapeworm.n.01# tenia
-energy.n.03# energia
-night.n.01# noche
-obstruct.v.01# dificulta
-function.n.02# uso
-owe.v.01# deben
-give_birth.v.01# tener
-# mas
-curse.n.01# tacos
-better.v.02# mejorar
-condition.n.01# condiciones
-quality.n.01# calidad
-breakfast.n.01# desayuno
-consume.v.05# disminuido
-swimming_pool.n.01# piscina
-# huespedes
-necessitate.v.01# requiere
-better.v.02# mejorar
-# ambientacion
-restaurant.n.01# restaurante
-# alimentacion
-lack.n.01# falta
-# mas
-assortment.n.01# variedad
-watchfulness.n.02# atencion
-# deberia
-give_birth.v.01# tener
-# menu
-breakfast.n.01# almuerzo
-breakfast.n.01# desayuno
-calamity.n.01# desastre
-hurt.v.05# dañan
-experience.n.03# experiencia
-so.r.01# tan
-beautiful.a.01# bonita
-# ojala
-give.v.10# presten
-# servicos
-buffet.n.02# buffet
-owe.v.01# deben
-better.v.02# mejorar
-# menu
-breakfast.n.01# desayuno
-kind.n.01# tipo
-hotel.n.01# hotel
-# menu
-breakfast.n.01# desayuno
-owe.v.01# debe
-be.v.01# ser
-# mas
-wide.a.01# amplio
-change.n.01# cambio
-# arto
-share.n.01# porcentaje
-# asi
-owe.v.01# debe
-better.v.02# mejorar
-appearance.n.01# aspecto
-# sser
-# maiz
-# jamon
-breakfast.n.01# desayuno
-please.v.01# gusta
-owe.v.01# deben
-better.v.02# mejorado
-# muchas
-demand.n.01# reclamaciones
-change.v.01# cambian
-experience.n.03# experiencias
-# huesped
-bathtub.n.01# baño
-small.a.01# pequeño
-clean.a.01# limpio
-beautiful.a.01# bonito
-unaccompanied.a.01# solo
-close.v.01# cerrar
-door.n.01# puerta
-# incomodo
-general.a.01# general
-divine.s.06# excelente
-# guarderia
-# mascostas
-# adecuacion
-person.n.01# personas
-disabled.s.01# discapacitadas
-# ramplas
-doorway.n.01# acceso
-room.n.01# cuartos
-dwelling.n.01# piso
-step.n.04# escalones
-# menu
-assortment.n.01# variedad
-think_of.v.03# considerar
-run.v.03# ampliar
-watering_place.n.01# spa
-# habia
-# cupo
-# wifi
-# mas
-wide.a.01# amplio
-# ventilador
-bathtub.n.01# baño
-relish.n.03# gusto
-gain.v.08# cobraran
-# tinto
-service.n.01# servicio
-eat.v.02# comidas
-cafeteria.n.01# autoservicio
-necessitate.v.01# necesita
-be.v.01# ser
-# mas
-lissome.s.01# agil
-spend.v.02# gastar
-less.r.01# menos
-paper.n.01# papel
-# balneario
-purchase.n.01# compra
-miss.v.06# falta
-toilet.n.01# aseo
-# vestieres
-# publicos
-bathtub.n.01# baños
-# estan
-full.a.01# llenos
-sludge.n.02# lama
-give.v.10# da
-think.v.03# pensar
-use.v.01# usar
-bag.n.01# bolsas
-# plastico
-# vestier
-# ecologico
-dwelling.n.01# pisos
-flaw.v.01# desmejorados
-topographic_point.n.01# lugar
-service.n.01# servicio
-personal.a.01# personal
-good.a.01# bueno
-# ojala
-# ojala
-# tertminene
-# remodelacion
-promptly.r.02# pronto
-look.v.02# parece
-dangerous.s.02# terrible
-new.a.01# nuevo
-arrangement.n.03# sistema
-meal.n.01# comida
-card.n.01# carta
-postpone.v.01# demoran
-time.n.02# hora
-serve.v.10# servir
-# deberian
-make.v.03# hacer
-dish.n.02# plato
-# dia
-postpone.v.01# demora
-return.v.01# devolver
-money.n.01# dinero
-please.v.01# gusta
-new.a.01# nueva
-# administracion
-brother.n.01# hermano
-arrive.v.01# viene
-italy.n.01# italia
-# veniamos
-# toda
-family.n.06# familia
-# habitacion
-step.n.04# escaleras
-step.n.04# peldaños
-# antideslisante
-wood.n.01# madera
-make.v.03# hace
-dangerous.a.01# peligrosa
-cub.n.02# hijos
-year.n.01# años
-stand.n.10# gradas
-# alimentacion
-expensive.a.01# costosa
-coffee.n.01# café
-smack.n.06# cale
-expensive.a.01# caro
-price.n.04# valor
-card.n.01# carta
-small.a.01# pequeñas
-price.n.04# valor
-make.v.03# hacer
-shower.v.03# ducha
-retool.v.01# revisar
-television.n.01# tv
-inadequate.s.02# baja
-book.n.02# volumen
-# informacion
-# mas
-accurate.a.01# exacta
-room.n.01# habitaciones
-put.v.01# poner
-bathrobe.n.01# albornoces
-district.n.01# zona
-thermal.a.01# termal
-favor.n.01# favor
-better.v.02# mejorar
-world_wide_web.n.01# web
-foreign.a.02# extranjeros
-make.v.03# realizar
-booking.n.02# reservas
-complex.a.01# complicado
-pull_in.v.03# ingresar
-eat.v.02# comidas
-# cobro
-coffee.n.01# café
-# huespedes
-baneful.s.01# mortal
-expensive.a.01# caro
-finely.r.03# bien
-divine.s.06# excelente
-# gia
-# jhon
-# jairo
-restaurant.n.01# restaurante
-weakness.n.03# debilidades
-watchfulness.n.02# atencion
-room.n.01# cuartos
-familiar.a.01# familiares
-bathtub.n.01# baños
-# sufientes
-best.a.01# mejor
-television.n.01# tv
-look.v.01# ven
-like.a.02# mismo
-plan.n.01# programa
-# recepcion
-personal.a.01# personal
-highly.r.03# altamente
-qualify.v.06# calificado
-serve.v.10# atender
-# pubvlico
-necessitate.v.01# requiere
-give_birth.v.01# tener
-# mas
-training.n.01# entrenamiento
-# estadia
-positive.a.01# positiva
-put.v.01# colocar
-# parlantes
-set_to_music.v.01# musica
-swimming_pool.n.01# piscina
-# huespedes
-tablecloth.n.01# manteles
-untidy.a.01# sucios
-even.a.03# regular
-watchfulness.n.02# atencion
-swimming_pool.n.01# piscina
-# huespedes
-kill.v.01# acabo
-# ek
-ice.n.01# hielo
-serve.v.10# sirvieron
-liquor.n.01# licores
-ice.n.01# hielo
-# menu
-immature.a.01# infantil
-meal.n.01# comida
-# porfavor
-stretcher.n.03# camilla
-massage.n.01# masaje
-# em
-bed.n.01# cama
-district.n.01# zonas
-moisture.n.01# humedades
-divine.s.06# excelente
-# sevicio
-hotel.n.01# hotel
-swimming_pool.n.01# piscinas
-good.a.01# buenas
-better.v.02# mejorar
-meal.n.01# comida
-be.v.01# ser
-topographic_point.n.01# lugar
-so.r.01# tan
-expensive.a.01# caro
-# comida
-be.v.01# ser
-best.a.01# mejor
-quality.n.01# calidad
-# habitacion
-respect.n.01# respecto
-price.n.02# precio
-insufficient.a.01# insuficiente
-# arta
-realize.v.03# actualizada
-# comidas
-displace.v.03# pueden
-necessitate.v.01# pedir
-# aunque
-tell.v.03# explicaron
-room.n.01# habitaciones
-# tenian
-shower.n.04# ducha
-opportunity.n.01# oportunidad
-add.v.01# adicionar
-shower.n.04# duchas
-divine.s.06# excelente
-watchfulness.n.02# atencion
-personal.a.01# personal
-bathtub.n.01# baños
-owe.v.01# deben
-better.v.02# mejorar
-# demasiados
-small.a.01# pequeños
-# humedos
-# vestier
-miss.v.06# falta
-look.v.01# vista
-# habitacion
-# ramplas
-fa.n.01# fa
-# dificl
-slope.n.01# subida
-stand.n.10# gradas
-# ortal
-knee.n.01# rodillas
-noise.n.01# ruido
-# huespedes
-# habitacion
-side.n.04# lado
-# dejarin
-sleep.v.01# dormir
-bathtub.n.01# baño
-arrange.v.01# dispuesto
-# habitacion
-# area
-district.n.01# zona
-# jacuzzi
-good.a.01# bueno
-# incomodo
-open.v.01# abierto
-# ene
-liter.n.01# l
-# balcon
-# habitacion
-# sifon
-serve.v.10# sirve
-# proteccion
-# regilla
-produce.v.03# ocasiono
-child.n.01# niño
-year.n.01# años
-hurt.v.05# lastimaran
-slightly.r.01# levemente
-restaurant.n.01# restaurante
-hint.v.01# sugiero
-prevent.v.01# prohibir
-consumption.n.01# consumo
-cigarette.n.01# cigarrillo
-# sera
-# mas
-coherent.a.01# coherente
-meaning.n.01# sentido
-finish.n.04# destino
-universe.n.01# naturaleza
-increase.v.02# incrementar
-care.n.06# mantenimiento
-room.n.01# habitaciones
-bathtub.n.01# baño
-bad.a.01# mal
-lack.n.01# falta
-# desague
-shower.n.04# ducha
-sink.n.01# lavamanos
-hide.v.01# tapados
-curtain.n.01# cortinas
-bad.a.01# mal
-lack.n.01# falta
-container.n.01# recipiente
-rubbish.n.01# basura
-dangerous.s.02# seria
-advisable.a.01# conveniente
-offer.v.01# ofrecieran
-plan.n.01# planes
-# alimentacion
-district.n.01# zona
-dancing.n.01# baile
-bathtub.n.01# tinas
-# habitacion
-clean.v.01# limpiar
-room.n.01# cuartos
-eat.v.02# jamas
-liveliness.n.02# vida
-own.v.01# quedare
-hotel.n.01# hotel
-so.r.01# tan
-filthy.s.01# asqueroso
-cock.n.01# bichos
-die.v.01# muertos
-dwelling.n.01# piso
-shower.v.03# ducha
-# rota
-curtain.n.01# cortina
-move.v.15# destruida
-vessel.n.03# vasos
-filthy.s.01# asqueroso
-refrigerator.n.01# nevera
-equipment.n.01# equipo
-radio_receiver.n.01# radio
-good.a.01# buena
-topographic_point.n.01# lugar
-divine.s.06# excelente
-# resavar
-give_birth.v.01# tener
-person.n.01# persona
-regulate.v.02# regule
-action.n.01# acciones
-# ela
-# gua
-game.n.01# juego
-# unico
-problem.n.02# problema
-miss.v.06# falta
-world_wide_web.n.01# internet
-room.n.01# habitaciones
-slow.a.02# lento
-service.n.01# servicio
-room.n.01# sala
-time.n.02# hora
-ask.v.04# espera
-grace.n.02# gracias
-divine.s.06# excelente
-service.n.01# servicio
-change.v.01# cambiar
-intake.n.02# tomas
-room.n.01# habitaciones
-resist.v.02# resistan
-major.a.03# mayor
-amperage.n.01# amperaje
-overheat.v.02# recalientan
-associate.v.01# conecta
-# cargadores
-board.n.03# planchas
-restaurant.n.01# restaurante
-make.v.03# hace
-lack.n.01# falta
-assortment.n.01# variedad
-# papeleria
-bathtub.n.01# baño
-# habian
-change.v.01# cambiado
-meal.n.01# comida
-displace.v.03# puede
-better.v.02# mejorar
-# muchusimo
-watering_place.n.01# spa
-# mas
-early.r.02# temprano
-time.n.02# horas
-tomorrow.r.01# mañana
-# faltaria
-put.v.01# poner
-# secador
-hair.n.01# pelo
-# dispocision
-customer.n.01# cliente
-topographic_point.n.01# lugar
-fantastic.s.02# maravilloso
-make.v.02# volveremos
-better.v.02# mejorar
-watchfulness.n.02# atencion
-waiter.n.01# meseros
-restaurant.n.01# restaurante
-make.v.03# hacer
-# rampla
-disabled.s.01# discapacitados
-die.v.01# salir
-morning.n.01# am
-dwelling.n.01# pisos
-# mas
-nonslip.s.01# antideslizantes
-inform.v.01# avisaron
-# habia
-# wifi
-# iluminacion
-four.s.01# cuarto
-# podria
-be.v.01# ser
-best.a.01# mejor
-lord.n.03# señor
-# norberto
-# capitan
-oversee.v.01# maneja
-service.n.01# servicio
-customer.n.01# cliente
-# pesimo
-owe.v.01# debe
-hotel.n.01# hotel
-# habia
-ice.n.01# hielo
-beverage.n.01# bebidas
-# bafle
-musical.a.01# musical
-swimming_pool.n.01# piscina
-meal.n.01# comida
-bad.a.01# mala
-displace.v.03# puede
-give_birth.v.01# tener
-bathtub.n.01# baño
-# recomendaria
-earth.n.01# mundo
-large.a.01# gran
-service.n.01# servicio
-miss.v.06# faltan
-cabinet.n.03# armario
-room.n.01# habitaciones
-hang.v.01# colgar
-clothing.n.01# ropa
-# minimo
-better.v.02# mejorar
-# wifi
-favor.n.01# favor
-put.v.01# colocar
-dump.n.02# basurera
-two.s.01# segundo
-degree.n.01# nivel
-# habitcion
-remove.v.01# sacar
-new.a.01# nuevo
-# menu
-newspaper.n.01# diario
-full.a.01# completo
-pleasing.a.01# agradable
-change.v.01# cambiar
-breakfast.n.01# desayuno
-constantly.r.01# siempre
-like.a.02# mismo
-customer.n.01# clientes
-frequent.a.01# frecuentes
-hotel.n.01# hotel
-thermal.a.01# termales
-saint.n.01# santa
-scandalmongering.s.01# rosa
-sooth.n.01# verdad
-perceive.v.01# sentimos
-inconvenient.a.01# molestos
-# cada
-year.n.01# año
-arrive.v.01# venimos
-# varias
-case.n.01# veces
-one.s.01# primera
-case.n.01# vez
-meal.n.01# comida
-enclosed.a.01# incluida
-arrive.v.01# vinimos
-plan.n.01# plan
-familiar.a.01# familiar
-# parecio
-expensive.a.01# caro
-bed.n.01# camas
-# mas
-large.a.01# grandes
-# cajon
-gratuity.n.01# propinas
-retool.v.01# revisar
-shower.n.04# ducha
-remove.v.01# saca
-water.n.01# agua
-shower.v.03# ducha
-praise.n.01# felicitaciones
-suggestion.n.02# propuesta
-# yodoterapia
-think.v.03# creo
-# deberian
-create.v.02# generar
-# mas
-place.n.03# espacios
-wellbeing.n.01# bienestar
-put.v.01# dejar
-while.n.01# rato
-# mas
-set_to_music.v.01# musica
-# relajacion
-# frente
-# alimentacion
-sneak_thief.n.01# chorizos
-# santarosanos
-tasty.a.01# deliciosos
-miss.v.06# falta
-stretcher.n.03# camillas
-rock.n.02# piedras
-# habitacion
-room.n.01# habitaciones
-# familarias
-# deberian
-state.v.01# contar
-do.n.02# dos
-bathtub.n.01# baños
-state.v.01# dijeron
-# habia
-shower.n.04# ducha
-# habitacion
-watchfulness.n.02# atencion
-good.a.01# buena
-# excepto
-person.n.01# personas
-restaurant.n.01# restaurantes
-time.n.02# hora
-breakfast.n.01# desayuno
-owe.v.01# debe
-better.v.02# mejorar
-meaning.n.01# sentido
-service.n.01# servicio
-restaurant.n.01# restaurante
-good.a.01# bueno
-service.n.01# servicio
-# alimentacion
-good.a.01# bueno
-postpone.v.01# demorado
-arrangement.n.03# orden
-serve.v.10# servir
-# bebeidas
-serve.v.10# sirvieron
-discontinue.v.01# terminamos
-look.v.01# ve
-impaired.a.01# deteriorada
-price.n.02# precio
-night.n.01# noche
-person.n.01# personas
-super.s.03# super
-finely.r.03# bien
-beautiful.a.01# linda
-people.n.01# gente
-# balnerario
-night.n.01# noche
-# habia
-people.n.01# gente
-eat.v.02# consumiendo
-cannabis.n.02# mariguana
-# habitacion
-excessively.r.01# demasiado
-consume.v.05# reducida
-annoy.v.01# incomoda
-price.n.02# precio
-so.r.01# tan
-eminent.s.01# alto
-# gurdar
-baggage.n.01# maletas
-consume.v.05# reduce
-# mas
-place.n.03# espacio
-shower.v.03# ducha
-give.v.10# dar
-best.a.01# mejor
-# informacion
-transport.v.02# llevar
-amble.n.01# caminata
-# mediante
-# bolante
-# bordes
-swimming_pool.n.01# piscinas
-# bridio
-defeated.s.02# insatisfecha
-agreement.n.03# convenio
-cooperative.a.02# cooperativa
-# coomeva
-buy.v.01# compre
-doorway.n.01# entradas
-# balneario
-displace.v.03# puede
-pull_in.v.03# ingresar
-detect.v.01# encontraba
-full.a.01# lleno
-forbid.v.01# negaron
-income.n.01# ingreso
-service.n.01# servicio
-restaurant.n.01# restaurante
-insufficient.a.01# deficiente
-child.n.01# chica
-serve.v.10# atiende
-# enn
-cabinet.n.03# taquilla
-serve.v.10# atiende
-accurately.r.01# correctamente
-visitor.n.01# visitantes
-try.v.01# trata
-# groseria
-# yesica
-think_of.v.03# considero
-function.v.01# trabajo
-be.v.01# ser
-amiable.s.01# amable
-make.v.02# volver
-include.v.02# incluir
-# alimentacion
-proceed.v.02# continuar
-plan.n.01# plan
-breakfast.n.01# desayuno
-breakfast.n.01# almuerzo
-meal.n.01# comida
-plan.n.01# plan
-familiar.a.01# familiar
-excessively.r.01# demasiado
-# incomodo
-# tenerlo
-understand.v.01# entiende
-inconvenience.n.03# incomodidad
-# remodelacion
-# mas
-price.n.02# daño
-service.n.01# servicio
-give.v.10# prestado
-while.n.01# tiempo
-be.v.01# ser
-customer.n.01# clientes
-customer.n.01# cliente
-frequent.a.01# frecuente
-agreement.n.03# acuerdo
-# quietaran
-deduction.n.02# descuento
-# ademas
-fee.n.01# tarifa
-displace.v.03# puede
-retool.v.01# revisar
-# cuantas
-case.n.01# veces
-thermal.a.01# termales
-divine.s.06# excelente
-# buenisimo
-night.n.01# noches
-make.v.03# hacer
-# alguna
-action.n.02# actividad
-# huespedes
-custom.n.02# rutina
-praise.n.01# felicitaciones
-# cada
-# opurtunidad
-arrive.v.01# venir
-make.v.03# hacemos
-constantly.r.01# siempre
-agreeable.a.01# grata
-# estadia
-look.v.02# parece
-important.a.01# importante
-make.v.02# volver
-arrangement.n.03# sistema
-enclosed.a.01# incluido
-reserve.v.04# reserva
-# alimentacion
-# huspededes
-# mas
-# comodo
-functional.a.01# funcional
-similarly.r.01# igualmente
-name.v.01# llamar
-make.v.03# hacer
-# rerva
-# informacion
-unaccompanied.a.01# solo
-# habia
-cabana.n.01# cabañas
-arrive.v.01# llegar
-# estan
-offer.v.01# ofreciendo
-# husped
-room.n.01# habitaciones
-building.n.01# casa
-farm.n.01# finca
-think.v.02# supone
-reserve.v.04# reservar
-# si
-# habian
-building.n.01# casa
-farm.n.01# finca
-good.a.01# buen
-hostel.n.01# hospedaje
-necessitate.v.01# implica
-motion.n.06# desplazamientos
-cabana.n.01# cabañas
-# qunque
-# mas
-# modernogrcias
-watchfulness.n.02# atencion
-divine.s.06# excelente
-# estadia
-name.v.01# llamo
-customer.n.01# cliente
-# hixo
-# ninguna
-# observacion
-even.a.03# regular
-think.v.03# pienso
-make.v.02# volver
-give_birth.v.01# tener
-supervisory.a.01# supervisor
-# area
-# escuhe
-customer.n.01# cliente
-available.a.01# disponible
-function.v.01# trabajar
-# mas
-# logisticas
-operation.n.08# funcionamiento
-miss.v.06# falta
-# sason
-bread.n.01# pan
-difficult.a.01# duro
-# manteqquilla
-frozen.a.01# congelada
-necessitate.v.01# necesitan
-# muchas
-improvement.n.02# mejoras
-change.v.01# cambiar
-rug.n.01# alfombra
-dwelling.n.01# piso
-better.v.02# mejorar
-bathtub.n.01# baños
-advice.n.01# recomendación
-# iluminacion
-# habitacion
-even.a.03# regular
-meal.n.01# comida
-good.a.01# buena
-watchfulness.n.02# atencion
-personal.a.01# personal
-meal.n.01# comida
-even.a.03# regular
-retool.v.01# revisar
-discipline.n.01# tema
-shower.v.03# ducha
-# habitacion
-service.n.01# servicio
-sanitary.a.01# sanitario
-# presion
-water.n.01# agua
-bathtub.n.01# baño
-miss.v.06# falta
-put.v.01# poner
-put.v.01# colocar
-component.n.03# elementos
-# unico
-# incomveniente
-# habitacion
-excessively.r.01# demasiado
-# humeda
-pull_in.v.03# entramos
-moisture.n.01# humedad
-breathe.v.01# respira
-environment.n.02# ambiente
-better.v.02# mejorar
-signal.n.01# señal
-television.n.01# tv
-owe.v.01# debimos
-buy.v.01# comprar
-# acetaminofen
-supply.v.01# dotar
-bathtub.n.01# baños
-inform.v.01# avisar
-# estan
-# manteimiento
-miss.v.06# falta
-# señalizacion
-possible.a.01# posible
-# sr
-assurance.n.01# seguridad
-fastener.n.02# cierre
-door.n.01# puertas
-advice.n.01# aviso
-adequate.a.01# adecuado
-put.v.01# dejando
-# huespedes
-# afuera
-# indicacion
-# cómo
-arrive.v.01# llegar
-# habitacion
-refer.v.02# toco
-particular.s.01# propios
-measure.v.04# medido
-# despues
-long.a.02# largo
-while.n.01# rato
-try.v.01# buscar
-arrive.v.01# llegar
-# habitacion
-oversee.v.01# manejar
-like.a.02# misma
-# informacion
-couple.n.04# par
-hire.v.01# empleados
-familiarity.n.05# impertinencia
-# lod
-data.n.01# datos
-honorary.s.01# honorarios
-give_birth.v.01# entrega
-towel.n.01# toallas
-# teramales
-name.v.01# llamaron
-# medellin
-offer.v.01# ofrecer
-dinner.n.01# cena
-particular.s.01# especial
-state.v.01# dijimos
-# si
-arrive.v.01# llegamos
-# nadie
-wise.a.01# sabia
-descend.v.01# bajamos
-eat.v.02# comer
-case.n.01# vez
-q.n.01# q
-state.v.01# dijeron
-meal.n.01# comida
-arrive.v.01# llegamos
-owe.v.01# deben
-# ponserse
-agreement.n.03# acuerdo
-refer.v.02# toco
-ask.v.04# esperar
-meal.n.01# comida
-time.n.02# hora
-# teniamos
-# frio
-service.n.01# servicio
-towel.n.01# toallas
-flaw.v.01# desmejorado
-better.r.01# mejor
-outstanding.s.03# pendientes
-# huesped
-change.v.01# cambiaba
-towel.n.01# toalla
-# cada
-while.n.01# rato
-perceive.v.01# sentir
-# frio
-die.v.01# sale
-swimming_pool.n.01# piscina
-owe.v.01# debe
-# mas
-outstanding.s.03# pendientes
-# huespedes
-hotel.n.01# hotel
-flaw.v.01# desmejorado
-service.n.01# servicio
-# si
-# habitacion
-available.a.01# disponible
-three.s.01# tres
-# huesped
-necessitate.v.01# requiere
-beam.n.04# haces
-# entrea
-grace.n.02# gracias
-wash.v.02# lavar
-sludge.n.02# lama
-swimming_pool.n.01# piscina
-necessitate.v.01# solicitar
-# huespedes
-# esten
-swimming_pool.n.01# piscinas
-pull_in.v.03# entrar
-meal.n.01# comida
-miss.v.06# faltan
-towel.n.01# toallas
-mattress.n.01# colchones
-uncommon.a.01# raros
-give.v.10# dar
-# pocion
-nutriment.n.01# alimentos
-beverage.n.01# bebidas
-# diabeticos
-put.v.01# poner
-shower.n.04# duchas
-# todas
-room.n.01# habitaciones
-unaccompanied.a.01# solo
-recommend.v.01# recomendar
-give.v.10# dar
-beverage.n.01# bebidas
-# alcoholicas
-district.n.01# zona
-swimming_pool.n.01# piscinas
-put.v.01# poner
-set_to_music.v.01# musica
-# mas
-# acorde
-# viviencia
-room.n.01# habitaciones
-building.n.01# casa
-farm.n.01# finca
-bad.a.01# malos
-ugly.a.01# feos
-# iluminacion
-bad.a.01# mal
-liter.n.01# l
-# alimentacion
-# mas
-# economica
-retool.v.01# revisar
-sample.n.01# muestra
-picture.n.01# imagen
-tell.v.03# explica
-four.s.01# cuarto
-sample.n.01# muestra
-option.n.02# opciones
-sink.n.01# lavamanos
-wet.a.01# mojado
-tapeworm.n.01# tenia
-bad.a.01# mal
-smell.n.01# olor
-better.v.02# arreglar
-room.n.01# cuartos
-# deberian
-give_birth.v.01# tener
-# mas
-# iluminacion
-create.v.02# generar
-plan.n.01# plan
-operation.n.01# manejo
-noise.n.01# ruidos
-# solidos
-cruddy.s.01# verdes
-# pues
-# mucha
-rubbish.n.01# basura
-put.v.01# depositada
-manner.n.01# forma
-untidy.a.01# desorganizada
-preferably.r.01# preferiblemente
-# alimentacion
-kind.n.01# tipo
-# buffette
-# deberian
-give_birth.v.01# tener
-drug.n.01# medicamentos
-# acetaqminofen
-better.v.02# mejorar
-# tencion
-restaurant.n.01# restaurante
-# especialemente
-foreign.a.02# extranjeros
-service.n.01# servicio
-bathtub.n.01# baño
-state.v.01# contaba
-water.n.01# agua
-warm.a.01# caliente
-solve.v.01# soluciono
-# duerante
-# estadia
-unaccompanied.a.01# solo
-# mas
-personal.a.01# personal
-restaurant.n.01# restaurante
-# mas
-assortment.n.01# variedad
-eat.v.02# comidas
-bathtub.n.01# baños
-# habitacion
-bathtub.n.01# baños
-# habitacion
-# frios
-put.v.01# colocar
-object.n.01# objetos
-dress.v.15# aseo
-better.v.02# mejorar
-meal.n.01# comida
-# vejetariana
-picture.v.02# pintar
-# habitacion
-note.v.01# observa
-moisture.n.01# humedad
-# closer
-wall.n.01# paredes
-near.a.01# cercanas
-roof.n.01# techo
-room.n.01# habitaciones
-refrigerator.n.01# nevera
-merchandise.n.01# productos
-beer.n.01# cerveza
-water.n.01# agua
-juice.n.01# jugos
-# demas
-# dia
-february.n.01# febrero
-swimming_pool.n.01# piscinas
-unaccompanied.a.01# solo
-# sono
-sauce.n.01# salsa
-topographic_point.n.01# lugar
-kind.n.01# tipo
-watering_place.n.01# spa
-# dias
-brave.s.03# estupendos
-region.n.01# parte
-cabana.n.01# cabaña
-make.v.03# hace
-lack.n.01# falta
-service.n.01# servicio
-waiter.n.01# mesero
-continuous.a.01# permanente
-bathtub.n.01# baño
-make.v.03# hace
-miss.v.06# falta
-give_birth.v.01# tener
-vessel.n.03# vasos
-service.n.01# servicio
-general.a.01# general
-good.a.01# bueno
-# mucha
-problem.n.01# dificultad
-give_birth.v.01# entrega
-towel.n.01# toallas
-swimming_pool.n.01# piscinas
-prevent.v.01# prohibir
-eat.v.02# consumir
-meal.n.01# comida
-beverage.n.01# bebidas
-inside.r.02# dentro
-swimming_pool.n.01# piscinas
-oversee.v.01# vigilar
-visitor.n.01# visitantes
-waste.v.01# arrojen
-rubbish.n.01# basuras
-keep.v.01# conservar
-middle.a.04# medio
-environment.n.02# ambiente
-# pasadia
-topographic_point.n.01# lugar
-favored.s.01# favorito
-less.r.01# menos
-revenge.v.01# vengo
-case.n.01# vez
-calendar_month.n.01# mes
-owe.v.01# debo
-descend.v.01# bajar
-straight.n.02# escalas
-hint.v.01# sugiero
-# vestier
-region.n.01# parte
-inadequate.s.02# baja
-swimming_pool.n.01# piscina
-unaccompanied.a.01# solo
-case.n.01# casos
-particular.s.01# especiales
-room.n.01# habitaciones
-# familariares
-# mas
-person.n.01# personas
-dangerous.s.02# seria
-good.a.01# bueno
-give_birth.v.01# tener
-bathtub.n.01# baños
-miss.v.06# falta
-room.n.01# habitaciones
-coatrack.n.01# percheros
-hang.v.01# colgar
-towel.n.01# toallas
-wet.a.01# mojadas
-coat.n.01# chaquetas
-better.v.02# mejorar
-# alimentacion
-praise.n.01# felicitaciones
-# escelente
-watchfulness.n.02# atencion
-shower.v.03# ducha
-room.n.01# habitaciones
-eminent.s.01# suma
-worth.n.02# importancia
-agreeable.a.01# grata
-# estadia
-favor.n.01# favor
-better.v.02# arreglar
-# desague
-bathtub.n.01# baño
-# evacua
-water.n.01# agua
-# antihigienico
-shower.n.04# cascadas
-dramatic.s.02# espectaculares
-thermal.a.01# termales
-particular.s.01# especiales
-unaccompanied.a.01# solo
-dangerous.s.02# seria
-good.a.01# bueno
-look.v.01# vieran
-tube.n.01# tubos
-region.n.01# parte
-superior.a.01# superior
-debris.n.01# resto
-# parecio
-super.s.03# super
-particular.s.01# especial
-suggestion.n.02# sugerencia
-give_birth.v.01# paren
-massage.n.01# masaje
-serve.v.10# atender
-customer.n.01# clientes
-child.n.01# niña
-# administracion
-# muyb
-want.v.02# querida
-patron.n.03# colaboradora
-diligent.a.02# diligente
-person.n.01# personas
-constantly.r.01# siempre
-necessitate.v.01# necesitan
-occupation.n.01# empresa
-grace.n.02# gracias
-retool.v.01# revisar
-service.n.01# servicio
-television.n.01# tv
-function.v.01# funciona
-finely.r.03# bien
-# mas
-treat.v.03# cuidado
-meal.n.01# comida
-wife.n.01# esposo
-# estan
-necessitate.v.01# pidiendo
-duplicate.n.02# copia
-passport.n.02# pasaporte
-foreign.a.02# extranjero
-travel.v.01# viajado
-region.n.01# partes
-correct.a.01# correcto
-prevent.v.01# impidan
-doorway.n.01# entrada
-duplicate.n.02# copia
-document.n.01# documento
-favor.n.01# favor
-inform.v.01# informar
-# internt
-good.a.01# bueno
-service.n.01# servicio
-people.n.01# gente
-amiable.s.01# amable
-advice.n.01# recomendación
-put.v.01# colocar
-bannister.n.02# pasamanos
-shower.n.04# duchas
-smooth.a.01# liso
-television.n.01# televisores
-# demaciados
-small.a.01# pequeños
-# iluminacion
-incident.n.01# incidente
-agency.n.01# agencia
-# pues
-lawsuit.n.01# proceso
-# contratacion
-# desinformado
-# desaganizado
-express.v.01# presentaron
-picture.n.01# imagen
-software.n.01# paquete
-carry_through.v.01# cumple
-# espectativas
-# toda
-experience.n.03# experiencia
-hotel.n.01# hotel
-divine.s.06# excelente
-meat.n.01# carne
-sting.n.03# picada
-difficult.a.01# dura
-displace.v.03# echan
-# chicarron
-dwelling.n.01# piso
-shower.n.04# chorros
-region.n.01# parte
-# huespedes
-# lamoso
-# deberian
-gain.v.08# cobrar
-# tinto
-person.n.01# persona
-lodge.v.04# hospeda
-# ahí
-curtain.n.01# cortina
-miss.v.06# falta
-change.v.01# cambiar
-door.n.01# puerta
-service.n.01# servicio
-good.a.01# bueno
-# menu
-breakfast.n.01# desayuno
-dangerous.s.02# seria
-good.a.01# bueno
-# mas
-# tipico
-country.n.02# tierra
-favor.n.01# favor
-put.v.01# colocar
-# secador
-hair.n.01# cabello
-service.n.01# servicio
-# habitacion
-barroom.n.01# bar
-signal.n.01# señal
-# wifi
-arrive.v.01# llega
-# habitacion
-room.n.01# habitaciones
-detect.v.01# encontramos
-spider.n.01# arañas
-spider_web.n.02# telarañas
-# sentia
-smell.n.01# olor
-moisture.n.01# humedad
-think_of.v.03# considero
-repair.n.01# instalaciones
-thermal.a.01# termal
-good.a.01# buena
-divine.s.06# excelente
-give.v.10# da
-composure.n.01# tranquilidad
-comfort.v.01# conforta
-# unico
-bad.a.01# malo
-shower.n.04# duchas
-# habitacion
-put.v.01# poner
-light.n.01# luces
-swimming_pool.n.01# piscinas
-night.n.01# noche
-dangerous.s.02# seria
-good.a.01# bueno
-# calefaccion
-room.n.01# habitaciones
-restaurant.n.01# restaurante
-box.n.01# caja
-assurance.n.01# seguridad
-bad.a.01# mala
-# room
-# service
-moisture.n.01# humedad
-# hongos
-wall.n.01# paredes
-room.n.01# habitaciones
-express.v.01# mostraron
-smell.n.01# olor
-keep.v.03# guardado
-# alimentacion
-even.a.03# regular
-own.v.01# quedaron
-desire.n.01# ganas
-make.v.02# volver
-foreign.a.02# extranjeros
-pay.v.01# pagan
-tax.n.01# impuesto
-national.a.03# nacional
-vat.n.01# iva
-service.n.01# servicios
-# hoteleros
-# extension
-make.v.03# hizo
-order.v.01# impuesto
-# cobros
-service.n.01# servicios
-concluding.s.01# final
-offer.v.01# ofrecieron
-buckshee.s.01# gratuitos
-coffee.n.01# café
-postpone.v.01# demora
-# aentregar
-# habitacion
-monetary_value.n.01# costos
-meal.n.01# comida
-eminent.s.01# alto
-deduction.n.02# descuento
-particular.s.01# especial
-# huespedes
-# proximas
-# estadias
-hotel.n.01# hotel
-good.a.01# bueno
-make.v.02# volveremos
-case.n.01# vez
-arrive.v.01# venimos
-divine.s.06# excelente
-better.v.02# mejorar
-# eltema
-meal.n.01# comida
-watchfulness.n.02# atencion
-user.n.01# usuario
-while.n.01# tiempos
-# preparacion
-better.v.02# mejorar
-coma.n.01# comas
-mattress.n.01# colchones
-difficult.a.01# duros
-put.v.01# poner
-rug.n.01# mantas
-sleeve.n.01# fundas
-# habitcion
-# pues
-make.v.03# hace
-# frio
-# wifi
-slow.a.02# lento
-about.r.07# casi
-serve.v.10# sirve
-# unas
-bed.n.01# camas
-# tiania
-smell.n.01# olor
-# humedo
-best.a.01# mejores
-shower.n.04# duchas
-# huespedes
-lack.n.01# falta
-respect.v.01# respeto
-time.n.02# hora
-shower.v.03# ducharse
-room.n.01# habitaciones
-cabana.n.01# cabaña
-# deberian
-give_birth.v.01# tener
-glass.n.01# vidrios
-# antiruido
-shower.n.04# cascada
-make.v.03# hace
-noise.n.01# ruido
-# dia
-yesterday.r.01# ayer
-# muhca
-people.n.01# gente
-service.n.01# servicio
-good.a.01# bueno
-night.n.01# noche
-bathtub.n.01# baño
-small.a.01# pequeño
-# habia
-leak.n.01# gotera
-step.n.04# escalera
-# habitacion
-# tal
-case.n.01# vez
-be.v.01# ser
-# mas
-argus-eyed.s.02# atentos
-service.n.01# servicio
-# atndieron
-person.n.01# personas
-arrive.v.01# llegaron
-# despues
-add.v.01# agregar
-milk.n.01# leche
-milk.n.01# leche
-# deslatosada
-beverage.n.01# bebidas
-whole.a.01# entera
-make.v.03# hace
-price.n.02# daño
-set_to_music.v.01# musica
-# habitacion
-# habitacion
-shower.n.04# ducha
-make.v.03# hace
-# facil
-# estadia
-travel.v.01# ir
-uncover.v.02# destapado
-room.n.01# habitaciones
-dwelling.n.01# piso
-divine.s.06# excelentes
-two.s.01# segundo
-dark.a.02# oscuras
-# ventilacion
-# deberia
-stretch.v.04# darse
-consumption.n.01# consumo
-liquor.n.01# alcohol
-swimming_pool.n.01# piscina
-# asi
-prevent.v.01# evitaron
-inflection.n.01# accidentes
-signal.n.01# señal
-# wifi
-world_wide_web.n.01# internet
-descend.v.01# cae
-# bo
-# habia
-water.n.01# agua
-warm.a.01# caliente
-# desague
-shower.n.04# ducha
-# taqueado
-# valvula
-access.n.03# paso
-sanitary.a.01# sanitario
-function.v.01# funciona
-leak.n.01# gotera
-shower.n.04# ducha
-inadequate.s.02# baja
-finely.r.03# bien
-water.n.01# agua
-contact.n.02# contacto
-owe.v.01# debe
-make.v.03# realizar
-# alguien
-group.n.01# grupo
-give_birth.v.01# tener
-inconvenience.n.03# inconvenientes
-# informacion
-owe.v.01# debido
-# turitas
-owe.v.01# deben
-oversee.v.01# manejar
-# informacion
-agreement.n.03# convenio
-# ewl
-# calentador
-water.n.01# agua
-function.v.01# funciona
-entirely.r.02# solo
-# despues
-open.v.01# abrir
-key.n.04# llave
-while.n.01# tiempo
-waste.v.01# desperdicia
-# mucha
-# aagua
-dangerous.s.02# seria
-good.a.01# bueno
-better.v.02# arreglar
-change.v.01# cambiar
-supplier.n.01# proveedor
-# shampoo
-# rinse
-anterior.a.01# anterior
-divine.s.06# excelente
-divine.s.06# excelente
-lack.n.01# falta
-shower.v.03# ducha
-room.n.01# cuartos
-# mas
-outstanding.s.03# pendientes
-television.n.01# televisores
-arrive.v.01# llega
-# habitacion
-# estan
-# desprogramados
-displace.v.03# pueden
-look.v.01# ver
-news.n.01# noticias
-# pelicilas
-arrangement.n.03# sistema
-television.n.01# television
-# fallas
-service.n.01# servicio
-massage.n.01# masaje
-even.a.03# regular
-price.n.02# precio
-requite.v.01# compensa
-# econ
-service.n.01# servicio
-quality.n.01# calidad
-massage.n.01# masaje
-world.n.03# realidad
-# faltal
-experience.n.03# experiencia
-# mas
-cleanliness.n.02# limpieza
-room.n.01# habitaciones
-give_birth.v.01# tener
-# mas
-assortment.n.01# variedad
-breakfast.n.01# desayunos
-arrive.v.01# venido
-# varias
-# ocaciones
-dangerous.s.02# seria
-good.a.01# bueno
-include.v.02# incluir
-massage.n.01# masaje
-capillary.s.02# capilar
-while.n.01# minutos
-# cortesia
-option.n.02# opciones
-# vegetarianas
-# vegunas
-communication.n.02# comunicación
-direct.a.03# directa
-topographic_point.n.01# sitio
-reserve.v.04# reserva
-hotel.n.01# hotel
-arrive.v.01# llegamos
-child.n.01# niñas
-hotel.n.01# hotel
-# tenian
-# informacion
-coupon.n.01# cupones
-count.v.02# pesar
-estate.n.01# haber
-gain.v.08# cobrados
-# deberian
-# implemetar
-again.r.01# nuevamente
-# menu
-traditional.a.01# tradicional
-meal.n.01# comida
-tasty.a.01# exquisito
-immediately.r.01# ahora
-meal.n.01# comida
-best.a.01# mejor
-simple.a.01# sencilla
-price.n.02# precio
-so.r.01# tan
-eminent.s.01# alto
-# mas
-assortment.n.01# variedad
-# alimentacion
-meal.n.01# comidas
-# rapidas
-simple.a.01# sencillas
-service.n.01# servicio
-watering_place.n.01# spa
-# pesimo
-# teniamos
-treatment.n.01# terapia
-morning.n.01# am
-serve.v.10# atendieron
-make.v.03# hacer
-name.v.01# llamada
-arrive.v.01# llegamos
-serve.v.10# atendieron
-# despostas
-bathtub.n.01# baños
-# deberia
-give_birth.v.01# tener
-# vestilacion
-window.n.01# ventana
-# mas
-meal.n.01# comida
-# light
-unaccompanied.a.01# solo
-better.v.02# mejorar
-boyfriend.n.01# parejas
-displace.v.03# pudimos
-open.v.01# abrir
-box.n.01# caja
-loud.a.01# fuerte
-mistake.n.01# fallo
-# telefono
-# habitacion
-problem.n.02# problemas
-# desague
-shower.n.04# ducha
-sink.n.01# lavamanos
-litterbin.n.01# papelera
-leak.n.01# gotera
-bed.n.01# cama
-include.v.02# incluir
-service.n.01# servicio
-# reposteria
-# instalacion
-offer.v.01# ofrecieron
-four.s.01# cuarto
-# telefono
-tapeworm.n.01# tenia
-television.n.01# tv
-# desprogramado
-refer.v.02# toco
-change.v.01# cambiar
-# habitacion
-do.n.02# dos
-night.n.01# noches
-waiter.n.01# camarera
-clean.a.01# limpio
-# habitacion
-swimming_pool.n.01# piscina
-care.n.06# mantenimiento
-# dia
-whole.a.01# entero
-inform.v.01# informaron
-favor.n.01# favor
-swimming_pool.n.01# piscina
-# mantenimineto
-put.v.01# dejar
-pull_in.v.03# ingresar
-# pasadia
-# incomodo
-# deberian
-travel.v.01# ir
-# baneario
-hurt.v.05# lastima
-room.n.01# habitaciones
-# duccha
-repair.n.01# reparaciones
-adequacy.n.01# adecuaciones
-# debrian
-happen.v.04# realizarse
-# epoca
-inadequate.s.02# baja
-inflow.n.01# afluencia
-traveler.n.01# turistas
-# ustedes
-# huespedes
-dangerous.s.02# seria
-good.a.01# bueno
-better.v.02# mejorar
-# iluminacion
-four.s.01# cuarto
-dark.a.02# oscura
-light_bulb.n.01# bombillo
-thrifty.a.01# ahorrador
-think.v.03# creemos
-force.n.04# personal
-amiable.s.01# amable
-# muchas
-grace.n.02# gracias
-opportune.a.01# oportuno
-good.a.01# bueno
-grace.n.02# gracias
-miss.v.06# falta
-shower.n.04# ducha
-# habitacion
-give.v.10# den
-red_wine.n.01# tinto
-# aromaticas
-barroom.n.01# bar
-swimming_pool.n.01# piscina
-# incomodo
-die.v.01# salir
-swimming_pool.n.01# piscina
-couple.n.04# par
-muster.v.01# avenir
-# recepcion
-necessitate.v.01# pedir
-red_wine.n.01# tinto
-better.v.02# mejorar
-# lamuerzos
-# habitacion
-shower.n.04# ducha
-baneful.s.01# mortal
-pillow.n.01# almohada
-# cobijas
-divine.s.06# excelentes
-# balis
-# insufucientes
-person.n.01# personas
-lodge.v.04# alojadas
-room.n.01# cuarto
-unaccompanied.a.01# solo
-bathtub.n.01# baño
-# geeral
-# mucha
-inconvenience.n.03# incomodidades
-price.n.02# precios
-meal.n.01# comida
-barroom.n.01# bar
-water.n.01# agua
-# fria
-swimming_pool.n.01# piscina
-# peligorsa
-region.n.01# parte
-shower.n.04# chorros
-# gua
-# fria
-swimming_pool.n.01# piscinas
-# lavarlos
-constantly.r.01# constantemente
-# lamoso
-displace.v.03# puede
-be.v.01# ser
-dangerous.a.01# peligroso
-couple.n.04# par
-# cualquier
-person.n.01# persona
-# caida
-think_of.v.03# considerar
-# todas
-room.n.01# habitaciones
-shower.n.04# ducha
-important.a.01# importante
-shower.v.03# ducha
-# todas
-room.n.01# habitaciones
-# recomiendo
-give_birth.v.01# tener
-room.n.01# habitaciones
-person.n.01# personas
-disabled.s.01# discapacitadas
-give_birth.v.01# tener
-ribbon.n.04# cinta
-# proteccion
-step.n.04# escaleras
-dining_table.n.01# mesas
-general.a.01# general
-better.v.02# mejorar
-breakfast.n.01# desayuno
-accelerate.v.01# agilizar
-while.n.01# tiempos
-delivery.n.01# entregas
-request.n.02# solicitudes
-nutriment.n.01# alimentos
-auxiliary.s.01# adicionales
-thermal.a.01# termales
-better.v.02# mejorar
-service.n.01# servicio
-customer.n.01# cliente
-# faltal
-# room
-# service
-owe.v.01# deben
-equip.v.01# equipar
-room.n.01# habitaciones
-refrigerator.n.01# nevera
-owe.v.01# deben
-put.v.01# poner
-kind.n.01# tipo
-set_to_music.v.01# musica
-entirely.r.02# solo
-instrumental.a.01# instrumental
-# mas
-assortment.n.01# variedad
-meal.n.01# comida
-lack.n.01# falta
-major.a.03# mayor
-assortment.n.01# variedad
-card.n.01# carta
-restaurant.n.01# restaurante
-better.v.02# mejorar
-mattress.n.01# colchones
-agility.n.01# agilidad
-# resverva
-inconvenience.n.03# inconvenientes
-payment.n.01# pago
-technetium.n.01# tc
-run.v.03# ampliar
-while.n.01# tiempo
-# estadia
-# habitacion
-give.v.10# dar
-ease.n.01# facilidad
-solve.v.01# solucionar
-problem.n.02# problemas
-customer.n.01# cliente
-service.n.01# servicio
-restaurant.n.01# restaurante
-watchfulness.n.02# atencion
-postpone.v.01# demorada
-person.n.01# personas
-serve.v.10# atendieron
-# tenian
-obviously.r.01# claro
-necessitate.v.01# pedido
-make.v.03# realizado
-give_birth.v.01# entregando
-bad.a.01# mal
-dish.n.02# platos
-# tambien
-# habitacion
-cockroach.n.01# cucarachas
-room.n.01# habitaciones
-familiar.a.01# familiares
-# deberian
-state.v.01# contar
-do.n.02# dos
-bathtub.n.01# baños
-suggestion.n.02# sugerencia
-# region
-celebrated.s.01# famosa
-sneak_thief.n.01# chorizos
-look.v.02# parece
-important.a.01# importante
-include.v.02# incluir
-breakfast.n.01# desayuno
-bathtub.n.01# baño
-sanitary.a.01# sanitarios
-bad.a.01# malos
-service.n.01# servicios
-meal.n.01# comida
-# habitacion
-# menu
-meal.n.01# comida
-# mas
-choose.v.01# seleccionada
-relish.n.03# gustos
-best.a.01# mejor
-# preparacion
-relish.n.03# sabor
-recommend.v.01# recomienda
-try.v.01# buscar
-assurance.n.01# seguridad
-# area
-# humeda
-# pues
-opportunity.n.01# posibilidad
-# caida
-dwelling.n.01# piso
-# lamoso
-# ciertas
-region.n.01# partes
-service.n.01# servicios
-# cuales
-consume.v.02# tomamos
-# habitacion
-state.v.01# decir
-shower.n.04# ducha
-swimming_pool.n.01# piscina
-available.a.01# disponibles
-# estadia
-# relacion
-# prescio
-service.n.01# servicio
-adequate.a.01# adecuada
-knock.n.03# piña
-slip_in.v.01# colada
-eat.v.02# consumida
-night.n.01# noche
-bad.a.01# mala
-short.a.02# corto
-mend.v.02# sane
-knock.n.03# piña
-slip_in.v.01# colada
-eat.v.02# consume
-topographic_point.n.01# lugares
-necessitate.v.01# pedimos
-repayment.n.02# reembolso
-pay.v.01# pagado
-juice.n.01# jugo
-knock.n.03# piña
-correct.a.01# justo
-pay.v.01# pagar
-do.n.02# dos
-juice.n.01# jugos
-knock.n.03# piña
-cut.v.01# cortados
-# habitacion
-place.n.03# espacio
-# nevere
-abbreviated.s.01# mini
-barroom.n.01# bar
-make.v.03# hace
-lack.n.01# falta
-room.n.01# habitaciones
-building.n.01# casa
-farm.n.01# finca
-equipment.n.01# equipamiento
-full.a.01# completo
-adequate.a.01# adecuados
-kind.n.01# clase
-topographic_point.n.01# lugar
-# habitacion
-carry_through.v.01# cumple
-# estandar
-# equioamiento
-wicked.a.01# perverso
-whole.n.02# unidad
-sanitary.a.01# sanitaria
-feign.v.01# simulada
-state.v.01# cuenta
-place.n.03# espacio
-lodge.v.04# alojar
-person.n.01# persona
-environment.n.02# ambiente
-noisy.a.01# ruidoso
-eminent.s.01# alto
-transit.v.01# transito
-personal.a.01# personal
-hotel.n.01# hotel
-# huespedes
-# ventilacion
-# mas
-bad.a.01# mala
-room.n.01# sala
-# toldillo
-bad.a.01# mal
-curtain.n.01# cortina
-filter.v.01# filtra
-light.n.01# luz
-rank.n.02# estatus
-hotel.n.01# hotel
-# deberia
-think_of.v.03# considerar
-think.v.03# pensar
-lodge.v.04# alojar
-# alguien
-# alli
-recommend.v.01# recomendada
-mountain.n.01# montañas
-cabana.n.01# cabañas
-appeal.n.02# encanto
-good.a.01# bueno
-connection.n.01# conexión
-world_wide_web.n.01# internet
-room.n.01# cuarto
-divine.s.06# excelente
-best.a.01# mejor
-# iluminacion
-bathtub.n.01# baño
-# vestieres
-untidy.a.01# sucios
-bad.a.01# mal
-# pasadia
-important.a.01# importante
-give_birth.v.01# tener
-topographic_point.n.01# lugar
-# comodo
-available.a.01# disponible
-one.s.01# primer
-dwelling.n.01# piso
-adult.n.01# adultos
-major.a.03# mayores
-disabled.s.01# discapacitados
-change.v.05# cambiarse
-clothing.n.01# ropa
-dining_table.n.01# mesas
-# estan
-side.n.04# lado
-bed.n.01# cama
-stitch.n.01# puntadas
-dangerous.a.01# peligrosas
-boyfriend.n.01# novio
-# dormio
-knock.n.01# golpeo
-head.n.01# cabeza
-head.n.01# punta
-# causandole
-# chichon
-shed_blood.v.02# sangrado
-favor.n.01# favor
-solve.v.01# solucionar
-problem.n.02# problema
-give_birth.v.01# tener
-state.v.01# cuenta
-shower.n.04# chorro
-proceed.v.02# sigue
-count.v.02# pesar
-sludge.n.02# lama
-slippery.a.01# resbaladizo
-better.v.02# mejorar
-# wifi
-# habitacion
-better.v.02# mejorar
-delivery.n.01# entrega
-# habitacion
-# cuanto
-service.n.01# servicio
-enclosed.a.01# incluido
-service.n.01# servicio
-# alimentacion
-price.n.04# valor
-# estadia
-better.v.02# mejorar
-communication.n.02# comunicación
-booking.n.02# reserva
-complex.a.01# complicada
-rent.n.01# alquiler
-departure.n.01# salida
-descend.v.01# bajar
-increase.v.02# subir
-watering_place.n.01# balneario
-# algun
-# vehiculo
-try.v.01# tratar
-better.v.02# mejorar
-doorway.n.01# acceso
-# huespedes
-season.n.01# temporada
-eminent.s.01# alta
-water.n.01# agua
-hot.a.01# tibia
-sink.n.01# lavamanos
-# repar
-torch.n.01# linterna
-bathtub.n.01# baño
-put.v.01# colocar
-set_to_music.v.01# musica
-colombian.a.01# colombiana
-supply.v.01# suministrar
-number.v.02# numero
-mobile.a.02# celular
-thermal.a.01# termales
-displace.v.03# pudimos
-# estabamos
-township.n.01# municipio
-# requeriamos
-# informacion
-# calefaccion
-fireplace.n.01# chimeneas
-time.n.02# horas
-social.a.01# sociales
-delay.n.01# demora
-# comedor
-even.a.03# regular
-watchfulness.n.02# atencion
-water.n.01# agua
-warm.a.01# caliente
-# habitacion
-water.n.01# agua
-sink.n.01# lavamanos
-run.v.06# corre
-water.n.01# agua
-step.n.04# escaleras
-# afuera
-transport.v.02# lleva
-# habitacion
-brew.n.01# pociones
-# menu
-restaurant.n.01# restaurante
-breakfast.n.01# desayuno
-bad.a.01# mala
-watchfulness.n.02# atencion
-# deberia
-region.n.01# parte
-personal.a.01# personal
-cafeteria.n.01# autoservicio
-barroom.n.01# bar
-better.v.02# mejorar
-service.n.01# servicio
-restaurant.n.01# restaurante
-necessitate.v.01# solicitamos
-box.n.01# caja
-# habia
-hurt.v.05# dañado
-plot.v.01# maquina
-bad.s.09# inseguro
-slippery.a.01# resbaloso
-dangerous.a.01# peligroso
-hang.v.01# colgar
-chair.n.01# silla
-four.s.01# cuarto
-# habitacion
-give_birth.v.01# entregada
-# restraso
-while.n.01# minutos
-room.n.01# habitaciones
-# estan
-full.a.01# llenas
-moisture.n.01# humedad
-sooth.n.01# verdad
-# dormi
-lawsuit.n.01# causa
-smell.n.01# olor
-loud.a.01# fuerte
-shower.n.04# ducha
-# empoza
-# iluminacion
-bathtub.n.01# baño
-bad.a.01# mala
-change.v.01# cambiar
-curtain.n.01# cortinas
-bathtub.n.01# baño
-# inda
-put.v.01# colocar
-shelf.n.01# repisa
-shower.v.03# ducha
-change.v.01# cambiar
-# sifon
-effective.a.01# efectivo
-service.n.01# servicio
-# habitacion
-give_birth.v.01# tener
-service.n.01# servicio
-meal.n.01# comida
-# habitacion
-name.v.01# llame
-necessitate.v.01# solicite
-give.v.10# dieran
-# habitacion
-small.a.01# pequeña
-# ahí
-small.a.01# pequeña
-bathtub.n.01# baño
-bustle.n.01# bulla
-sell.v.01# vende
-# informacion
-foolproof.s.01# certera
-inside.r.02# dentro
-software.n.01# paquetes
-# turisticos
-sell.v.01# venden
-software.n.01# paquetes
-# informacion
-# erronea
-# publiciad
-gilded.s.02# engañosa
-# catigada
-# cotelco
-function.n.03# ministerio
-car.n.01# turismo
-# varias
-thing.n.08# cosas
-better.v.02# mejorar
-# mobiliario
-# habitacion
-rug.n.01# tapete
-time.n.02# hora
-# cambiarlo
-retool.v.01# remodelar
-room.n.01# habitaciones
-elevator.n.01# ascensor
-give_birth.v.01# entrega
-# habitacion
-post_meridiem.s.01# pm
-waiter.n.01# meseros
-argus-eyed.s.02# atentos
-lack.n.01# falta
-best.a.01# mejor
-# programacion
-while.n.01# tiempos
-bathtub.n.01# baños
-# mas
-watchfulness.n.02# atencion
-paper.n.01# papel
-odorless.a.01# inodoros
-finely.r.03# bien
-include.v.02# incluir
-hugo.n.01# hugo
-# guanabana
-milk.n.01# leche
-# menu
-# tencion
-# repcion
-divine.s.06# excelente
-owe.v.01# debe
-be.v.03# haber
-bathtub.n.01# baño
-room.n.01# habitaciones
-divine.s.06# excelente
-water.n.01# agua
-warm.a.01# caliente
-shower.n.04# duchas
-better.v.02# mejorar
-card.n.01# carta
-eat.v.02# comidas
-handiness.n.02# disponibilidad
-dish.n.02# platos
-adequate.a.01# acertados
-heater.n.01# calentador
-about.r.07# casi
-# toda
-# estadia
-visible.s.03# visible
-# politica
-sustainability.n.01# sostenibilidad
-# mas
-service.n.01# servicio
-customer.n.01# cliente
-privacy.n.02# privacidad
-# huespedese
-ask.v.04# esperamos
-while.n.01# minutos
-meal.n.01# comida
-better.v.02# mejorar
-quality.n.01# calidad
-meal.n.01# comida
-explicit.a.01# expreso
-groan.v.01# queja
-departure.n.01# salida
-correct.a.01# justo
-put.v.01# pongan
-ask.v.04# esperar
-do.n.02# dos
-time.n.02# horas
-queue.n.01# filas
-# larguisimas
-ability.n.02# poder
-increase.v.02# subir
-hotel.n.01# hotel
-# congestion
-# balnerario
-arrive.v.01# vinimos
-bogota.n.01# bogota
-child.n.01# niños
-# nadie
-give.v.10# dio
-appearance.n.01# cara
-necessitate.v.01# pedir
-apology.n.01# disculpas
-service.n.01# servicio
-world_wide_web.n.01# internet
-bad.a.01# malo
-better.v.02# mejorar
-car.n.01# auto
-service.n.01# servicio
-opportunity.n.01# oportunidad
-divine.s.06# excelente
-consume.v.05# reducir
-# presion
-shower.n.04# duchas
-# habitacion
-try.v.01# tratar
-consume.v.05# reducir
-moisture.n.01# humedad
-# habitcion
-better.v.02# mejorar
-# iluminacion
-room.n.01# habitaciones
-# televison
-wire.n.02# cable
-while.n.01# tiempo
-# habitacion
-eat.v.02# comidas
-postpone.v.01# demorado
-serve.v.10# atienda
-round.a.01# circulares
-action.n.02# actividades
-hotel.n.01# hotel
-sleep.v.01# dormimos
-# habitacion
-impossible.a.01# imposible
-sleep.v.01# dormir
-side.n.04# lado
-# vestier
-restaurant.n.01# restaurante
-noise.n.01# ruido
-impressive.a.01# impresionante
-switch_off.v.01# apagaron
-child.n.01# niña
-displace.v.03# puedo
-sleep.v.01# dormir
-finely.r.03# bien
-give_birth.v.01# tener
-education.n.01# instrucciones
-written.a.01# escritas
-room.n.01# habitaciones
-operation.n.01# manejo
-television.n.01# televisores
-# salvavidas
-swimming_pool.n.01# piscinas
-# huspedes
-never.r.01# nunca
-# funcio
-television.n.01# televisor
-examination.n.01# control
-far.a.01# remoto
-try.v.01# intentaron
-better.v.02# arreglar
-do.n.02# dos
-case.n.01# veces
-never.r.01# nunca
-function.v.01# funciono
-# debrian
-treat.v.03# preocuparse
-# mas
-customer.n.01# clientes
-hotel.n.01# hotel
-happen.v.01# pasan
-# dia
-room.n.01# habitaciones
-shower.n.04# duchas
-better.v.02# mejorar
-mold.n.05# moho
-wall.n.01# paredes
-two.s.01# segundo
-dwelling.n.01# piso
-roof.n.01# techo
-bathtub.n.01# baño
-give.v.10# da
-ill.r.01# mal
-appearance.n.01# apariencia
-consume.v.02# tome
-plan.n.01# plan
-# romantico
-repair.n.01# arreglo
-# habitacion
-# basico
-# informacion
-# incluia
-# petalos
-pink.n.01# rosas
-# asi
-set_to_music.v.01# musica
-swimming_pool.n.01# piscina
-case.n.01# instancia
-like.a.02# misma
-cuban.a.01# cubano
-instrumental.a.01# instrumental
-time.n.02# horas
-necessitate.v.01# solicite
-# cambiarla
-reaction.n.03# respuesta
-recommend.v.01# recomienda
-receptionist.n.01# recepcionista
-# mas
-teach.v.01# educados
-# groeros
-respect.v.01# respeten
-people.n.01# gente
-grace.n.02# gracias
-meal.n.01# comida
-bad.a.01# mala
-elate.v.01# intoxique
-pie.n.01# empanadas
-# sr
-# arvelaez
-arrive.v.01# llego
-personal.a.01# personal
-increase.v.02# subir
-baggage.n.01# maletas
-# muchas
-step.n.04# escaleras
-# mas
-arrangement.n.03# organización
-service.n.01# servicio
-restaurant.n.01# restaurante
-eat.v.02# comidas
-option.n.02# opciones
-# vegetarianas
-# menu
-afford.v.04# permitir
-consumption.n.01# consumo
-nutriment.n.01# alimentos
-# bebdidas
-put.v.01# dejando
-# pisconas
-improvement.n.02# mejoras
-arrangement.n.03# organización
-waiter.n.01# meseros
-# wifi
-function.v.01# funciona
-accurately.r.01# correctamente
-# separacion
-# huspedes
-# dificl
-impossible.a.01# imposible
-achieve.v.01# conseguir
-ice.n.01# hielo
-plot.v.01# maquina
-ice.n.01# hielo
-# refrigerador
-ice.n.01# hielo
-watchfulness.n.02# atencion
-barroom.n.01# bar
-adequate.a.01# adecuada
-miss.v.06# falta
-# amabalidad
-world_wide_web.n.01# internet
-slow.a.02# lento
-better.v.02# mejorar
-# wifi
-# enla
-# habitacion
-# neverita
-# citon
-bathtub.n.01# baño
-inadequate.s.02# baja
-favor.n.01# favor
-retool.v.01# revisar
-advisable.a.01# recomendable
-put.v.01# poner
-double.a.04# doble
-shower.n.04# ducha
-better.v.02# mejorar
-location.n.01# ubicación
-television.n.01# tv
-# habitacion
-consume.v.02# tomas
-about.r.07# cerca
-bed.n.01# cama
-increase.v.02# aumentar
-examination.n.01# control
-income.n.01# ingreso
-clothing.n.01# ropa
-adequate.a.01# adecuada
-swimming_pool.n.01# piscinas
-# menu
-# mas
-healthy.a.01# saludable
-better.v.02# mejorar
-income.n.01# ingreso
-# huespedes
-hotel.n.01# hotel
-ask.v.04# esperar
-time.n.02# hora
-pull_in.v.03# ingresar
-dangerous.s.02# seria
-good.a.01# bueno
-give.v.10# dieran
-preference.n.01# preferencias
-income.n.01# ingreso
-# huepedes
-paper.n.01# papel
-bathtub.n.01# baño
-# iluminacion
-# habitacion
-noise.n.01# ruido
-cooking.n.01# cocina
-# habia
-litterbin.n.01# papelera
-assortment.n.01# variedad
-breakfast.n.01# desayunos
-# debuido
-# estadia
-# dias
-unpleasant.a.01# desagradable
-option.n.02# opciones
-think_of.v.03# considero
-visitor.n.01# visitantes
-necessitate.v.01# pida
-# profesion
-greatcoat.n.01# sobretodo
-# medicos
-better.v.02# mejoren
-world_wide_web.n.01# internet
-restaurant.n.01# restaurante
-bad.a.01# mala
-meal.n.01# comida
+1 watchfulness.n.02# atencion
+3 particular.s.01# especial
+5 equipment.n.01# equipo
+6 female.a.01# femenino
+8 # dia
+11 october.n.01# octubre
+16 bad.a.01# malo
+18 greet.v.01# saludar
+20 give.v.10# dar
+21 # mucho
+22 # informacion
+24 # habitacion
+27 price.n.02# precio
+30 apologize.v.02# justificar
+32 bathtub.n.01# bañera
+34 bad.a.01# malo
+38 put.v.01# poner
+40 # jabon
+43 breakfast.n.01# desayuno
+45 meager.a.01# pobre
+47 breakfast.n.01# desayuno
+49 egg.n.02# huevo
+51 miss.v.06# faltar
+53 respect.n.03# respeto
+56 fee.n.01# tarifa
+60 sooth.n.01# verdad
+62 displace.v.03# poder
+63 look.v.01# ver
+64 television.n.01# tv
+65 # nadie
+67 order.v.01# indicar
+69 # hacerlo
+72 displace.v.03# poder
+73 lunch.v.01# almorzar
+74 # nadie
+75 give.v.10# dar
+76 # informacion
+79 impaired.a.01# deteriorar
+80 flaw.v.01# desmejorar
+81 ugly.a.01# feo
+83 sooth.n.01# verdad
+84 # crei
+88 topographic_point.n.01# lugar
+89 beautiful.a.01# bonito
+91 bring.v.01# traer
+94 family.n.06# familia
+98 # asi
+101 price.n.02# precio
+103 eminent.s.01# alto
+106 look.v.02# parecer
+110 examination.n.01# control
+113 authority.n.01# autoridad
+114 hire.v.01# contratar
+115 # recreadores
+116 problem.n.01# dificultad
+119 operation.n.01# manejo
+122 television.n.01# tv
+123 keep.v.01# mantener
+125 good.a.01# bueno
+126 service.n.01# servicio
+129 good.a.01# bueno
+130 grace.n.02# gracia
+131 watchfulness.n.02# atencion
+134 # recepcion
+137 good.a.01# bueno
+138 lack.n.01# falta
+139 # velocidada
+142 # alimentacion
+143 owe.v.01# deber
+145 better.v.02# mejorar
+147 watchfulness.n.02# atencion
+149 # alimnetacion
+152 resource.n.01# recurso
+153 plain.s.06# natural
+157 function.n.02# uso
+160 beautiful.a.01# bonito
+161 # aprovenchelon
+163 # mejorenlo
+167 displace.v.03# poder
+168 recommend.v.01# recomendar
+169 bathtub.n.01# baño
+172 # habitacion
+175 refer.v.02# referir
+178 shower.n.04# ducha
+181 important.a.01# importante
+182 # escalon
+184 concluding.s.01# final
+186 stand.n.10# grada
+189 dwelling.n.01# piso
+196 eminent.s.01# alto
+200 displace.v.03# poder
+201 add.v.01# añadir
+204 prevent.v.01# evitar
+205 # caidas
+207 # ultimar
+208 time.n.02# hora
+210 proceed.v.02# seguir
+211 # asi
+213 good.a.01# bueno
+214 service.n.01# servicio
+215 bathtub.n.01# baño
+218 # habitacion
+220 congratulation.n.02# felicidad
+221 grace.n.02# gracia
+224 cordial_reception.n.01# hospitalidad
+227 personal.a.01# personal
+229 watchfulness.n.02# atencion
+232 swimming_pool.n.01# piscina
+234 meal.n.01# comida
+236 # fria
+239 # care
+241 re.n.03# re
+242 # parecia
+243 arrogance.n.01# copete
+245 fatty.a.01# graso
+247 simple.a.01# simple
+249 give_birth.v.01# tener
+250 umbrella.n.01# sombrilla
+252 function.n.02# uso
+255 # huspedes
+256 service.n.01# servicio
+259 # habitacion
+260 # mas
+261 agility.n.01# agilidad
+264 dispatch.n.02# despacho
+266 cafeteria.n.01# autoservicio
+269 # higienico
+270 give_birth.v.01# tener
+271 rug.n.01# tapete
+272 untidy.a.01# sucio
+275 # habitacion
+277 towel.n.01# toalla
+278 damage.v.01# romper
+279 give_birth.v.01# entregar
+281 # habitacion
+282 untidy.a.01# desasear
+284 spider_web.n.02# telaraña
+286 bathtub.n.01# baño
+287 untidy.a.01# sucio
+288 shower.n.04# ducha
+290 hair.n.01# pelo
+292 miss.v.06# faltar
+293 # vairedad
+296 breakfast.n.01# desayuno
+297 dangerous.s.02# serio
+298 best.a.01# mejor
+300 buffet.n.02# buffet
+303 massage.n.01# masaje
+304 divine.s.06# excelente
+305 # deberian
+306 offer.v.01# ofrecer
+308 plan.n.01# plan
+310 enclosed.a.01# incluir
+311 meal.n.01# comida
+313 customer.n.01# cliente
+314 old.a.02# viejo
+316 # usted
+320 please.v.01# gustar
+322 change.n.01# cambio
+325 transport.v.02# efectuar
+327 close.v.01# cerrar
+329 # balneario
+332 # huespedes
+334 # deberian
+335 put.v.01# dejar
+336 pull_in.v.03# entrar
+337 # tanto
+338 people.n.01# gente
+340 measure.v.04# aforar
+341 befit.v.01# adecuar
+342 shower.n.04# ducha
+345 room.n.01# habitación
+347 hotel.n.01# hotel
+348 old.a.02# antiguo
+350 # habitacion
+352 tapeworm.n.01# tenia
+353 shower.n.04# ducha
+355 even.a.03# regular
+357 # alimentacion
+359 # encontre
+360 # salasa
+362 disturbance.n.03# tomate
+363 cheese.n.01# queso
+364 gaseous.a.01# gaseoso
+365 # dieteticas
+366 delay.n.01# demora
+368 # servieron
+369 # frio
+371 room.n.01# habitación
+372 smell.v.02# oler
+374 chlorine.n.01# cloro
+376 egg.n.02# huevo
+378 # casacara
+381 # churrasco
+382 difficult.a.01# duro
+384 # room
+385 # servicie
+387 # wifi
+388 # feficiente
+391 # habitacion
+393 category.n.02# categoria
+394 superior.a.01# superior
+398 look.v.01# ver
+400 promptly.r.02# pronto
+402 # menu
+403 # mas
+404 change.v.01# variar
+407 # alimentacion
+413 be.v.01# ser
+416 card.n.01# carta
+417 nasty.a.01# horrible
+419 service.n.01# servicio
+421 # alimentacion
+422 meal.n.01# comida
+423 # maluco
+424 # masl
+425 serve.v.10# servir
+427 time.n.02# hora
+429 ask.v.04# esperar
+430 # uno
+431 # salchipapas
+434 people.n.01# gente
+435 # descortes
+438 die.v.01# salir
+440 hotel.n.01# hotel
+442 # alimentarnos
+444 best.a.01# mejor
+447 buffet.n.02# buffet
+448 offer.v.01# ofrecer
+451 breakfast.n.01# desayuno
+452 sneak_thief.n.01# chorizo
+453 # santarrosano
+454 think_of.v.03# considerar
+458 bathtub.n.01# baño
+459 # deberian
+460 estate.n.01# haber
+461 # alfo
+463 hang.v.01# colgar
+465 clothing.n.01# traje
+467 bathtub.n.01# baño
+470 side.n.04# lado
+473 swimming_pool.n.01# piscina
+474 kind.n.01# tipo
+475 # jacuzzi
+477 # salvavidas
+479 name.n.01# nombre
+480 # stiven
+483 peasant.n.03# grosero
+485 arrogant.s.01# prepotente
+488 # huespedes
+492 endowment.n.01# don
+495 people.n.01# gente
+498 know.v.01# saber
+501 give.v.10# prestar
+503 service.n.01# servicio
+504 happen.v.01# pasar
+506 # dias
+509 hotel.n.01# hotel
+512 breakfast.n.01# desayuno
+514 adequate.a.01# igual
+516 # ninguno
+517 # variacion
+518 miss.v.06# faltar
+519 option.n.02# opción
+522 # menu
+524 breakfast.n.01# desayuno
+527 # sorprendio
+531 # tinto
+533 gain.v.08# cobrar
+535 lack.n.01# falta
+536 waiter.n.01# mesero
+537 continuous.a.01# permanente
+540 swimming_pool.n.01# piscina
+542 # huespedes
+544 watchfulness.n.02# atencion
+546 personal.a.01# personal
+547 head.n.04# jefe
+549 service.n.01# servicio
+551 disappointing.s.01# decepcionante
+553 unpleasant.a.01# grosero
+556 # hgora
+558 give.v.10# dar
+559 # solucuin
+562 margarita.n.01# margarita
+563 serve.v.10# servir
+566 drink.n.01# copa
+567 # mas
+568 small.a.01# pequeño
+571 usual.a.01# usual
+573 inform.v.01# advertir
+574 either.r.01# tampoco
+577 # habia
+578 service.n.01# servicio
+581 # habitacion
+584 necessitate.v.01# solicitar
+585 service.n.01# servicio
+588 # habitacion
+590 unpleasant.a.01# grosero
+593 form.v.02# formar
+595 state.v.01# decir
+597 bear.n.01# oso
+601 correct.a.01# correcto
+602 # tendrian
+604 be.v.01# ser
+606 person.n.01# ser
+607 # mas
+608 affable.s.01# cordial
+610 refer.v.02# referirse
+613 # huespedes
+615 swimming_pool.n.01# piscina
+617 # dia
+620 # fria
+623 necessitate.v.01# preguntar
+625 react.v.01# contestar
+628 # desicion
+630 personal.a.01# personal
+632 thing.n.08# cosa
+634 # debeb
+635 happen.v.01# suceder
+637 less.r.01# menos
+640 hotel.n.01# hotel
+643 # dia
+646 give_birth.v.01# entregar
+648 # cocteles
+650 # mas
+653 time.n.02# hora
+655 # incondedible
+658 # perswonal
+659 # si
+663 order.v.01# encargar
+666 topographic_point.n.01# lugar
+668 # habitacion
+672 # alquilaria
+674 # nadie
+675 abridge.v.01# resumir
+678 lack.n.01# falta
+680 respect.n.03# respeto
+681 # quehospeden
+682 people.n.01# gente
+683 # ahí
+684 bad.a.01# malo
+685 # informacion
+686 box.n.01# caja
+688 assurance.n.01# seguridad
+690 sink.n.01# pila
+692 # habia
+694 put.v.01# poner
+696 towel.n.01# toalla
+698 # alimentacion
+700 cafeteria.n.01# autoservicio
+704 expensive.a.01# costoso
+706 arrive.v.01# venir
+709 position.n.06# oficina
+711 car.n.01# turismo
+713 # parecio
+714 expensive.a.01# costoso
+716 service.n.01# servicio
+719 give_birth.v.01# tener
+720 watchfulness.n.02# atencion
+722 service.n.01# servicio
+723 change.v.01# cambiar
+725 public_opinion.n.01# opinion
+726 better.v.02# mejorar
+727 cocktail.n.01# cocktail
+728 eat.v.02# consumir
+730 knock.n.03# piña
+731 put.v.01# colocar
+734 ill.r.01# mal
+735 make.v.15# preparar
+737 # decirle
+739 waiter.n.01# mesero
+740 state.v.01# decir
+743 make.v.03# hacer
+746 # si
+748 make.v.15# preparar
+751 hotel.n.01# hotel
+752 clean.v.01# limpiar
+754 sludge.n.02# lama
+758 dwelling.n.01# piso
+760 descend.v.01# caer
+762 water.n.01# agua
+763 # fria
+766 swimming_pool.n.01# piscina
+767 look.v.01# ver
+768 # varios
+769 person.n.01# persona
+770 slide.v.03# deslizar
+773 sludge.n.02# lama
+776 # habitacion
+777 miss.v.06# faltar
+778 # mas
+779 bathtub.n.01# baño
+782 sum.n.01# cantidad
+784 person.n.01# persona
+785 lodge.v.04# alojar
+787 # mas
+788 meal.n.01# comida
+791 restaurant.n.01# restaurante
+794 even.a.03# regular
+797 price.n.02# precio
+799 lack.n.01# falta
+800 # mas
+801 personal.a.01# personal
+804 time.n.02# hora
+805 cock.n.01# pico
+808 restaurant.n.01# restaurante
+809 major.a.01# principal
+810 better.v.02# mejorar
+812 # iluminacion
+815 room.n.01# cuarto
+816 better.v.02# mejorar
+817 service.n.01# servicio
+819 # telefono
+820 bathtub.n.01# baño
+822 slow.a.02# lento
+824 # baciado
+826 effective.a.01# efectivo
+828 reaction.n.03# respuesta
+830 world_wide_web.n.01# internet
+831 miss.v.06# faltar
+832 # aromonia
+835 design.v.02# diseñar
+836 make.v.03# hacer
+838 two.s.01# 2
+839 hotel.n.01# hotel
+841 make.v.03# hacer
+842 # mas
+843 # publiciada
+844 international.a.01# internacional
+845 think_of.v.03# considerar
+846 # mas
+848 # alimentacion
+850 bad.a.01# malo
+852 repair.n.01# instalación
+853 about.r.07# cerca
+856 # persna
+858 even.a.03# regular
+859 # podrian
+860 better.v.02# mejorar
+862 topographic_point.n.01# sitio
+863 divine.s.06# divino
+864 put.v.01# colocar
+865 dwelling.n.01# piso
+866 nonslip.s.01# antideslizante
+869 region.n.01# parte
+871 shower.v.03# duchar
+873 put.v.01# colocar
+875 # jabon
+878 bathtub.n.01# baño
+881 small.a.01# pequeño
+882 shelf.n.01# repisa
+885 region.n.01# parte
+887 sink.n.01# lavamanos
+889 # habitacion
+892 person.n.01# persona
+893 owe.v.01# deber
+894 give_birth.v.01# tener
+896 bathtub.n.01# baño
+898 farcical.s.01# absurdo
+901 red_wine.n.01# tinto
+902 # mañanero
+905 offer.v.01# ofrecer
+906 gratis.r.01# gratis
+909 hotel.n.01# hotel
+913 # habitacion
+915 # encuntre
+916 bag.n.01# bolsa
+919 clothing.n.01# ropa
+920 retool.v.01# revisar
+922 bathtub.n.01# baño
+924 bathtub.n.01# baño
+927 district.n.01# zona
+930 swimming_pool.n.01# piscina
+933 small.a.01# pequeño
+935 tapeworm.n.01# tenia
+936 energy.n.03# energia
+940 night.n.01# noche
+942 obstruct.v.01# dificultar
+944 function.n.02# uso
+945 owe.v.01# deber
+946 give_birth.v.01# tener
+947 # mas
+948 curse.n.01# taco
+950 better.v.02# mejorar
+951 condition.n.01# condición
+953 quality.n.01# calidad
+955 breakfast.n.01# desayuno
+957 consume.v.05# disminuir
+959 swimming_pool.n.01# piscina
+961 # huespedes
+962 necessitate.v.01# requerir
+963 better.v.02# mejorar
+964 # ambientacion
+966 restaurant.n.01# restaurante
+969 # alimentacion
+971 lack.n.01# falta
+972 # mas
+973 assortment.n.01# variedad
+974 watchfulness.n.02# atencion
+975 # deberia
+976 give_birth.v.01# tener
+977 # menu
+980 breakfast.n.01# almuerzo
+982 breakfast.n.01# desayuno
+985 calamity.n.01# desastre
+987 hurt.v.05# dañar
+989 experience.n.03# experiencia
+990 so.r.01# tan
+991 beautiful.a.01# bonito
+992 # ojalar
+993 give.v.10# prestar
+995 # servicos
+997 buffet.n.02# buffet
+998 owe.v.01# deber
+999 better.v.02# mejorar
+1001 # menu
+1003 breakfast.n.01# desayuno
+1005 kind.n.01# tipo
+1007 hotel.n.01# hotel
+1011 # menu
+1013 breakfast.n.01# desayuno
+1014 owe.v.01# deber
+1015 be.v.01# ser
+1016 # mas
+1017 wide.a.01# amplio
+1023 change.n.01# cambio
+1026 # arto
+1027 share.n.01# porcentaje
+1028 # asi
+1030 owe.v.01# deber
+1031 better.v.02# mejorar
+1033 appearance.n.01# aspecto
+1035 # sser
+1039 # maiz
+1040 # jamon
+1042 breakfast.n.01# desayuno
+1045 please.v.01# gustar
+1046 owe.v.01# deber
+1047 better.v.02# mejorar
+1050 # mucho
+1051 demand.n.01# reclamación
+1054 change.v.01# cambiar
+1056 experience.n.03# experiencia
+1058 # huesped
+1060 bathtub.n.01# baño
+1062 small.a.01# pequeño
+1065 clean.a.01# limpio
+1067 beautiful.a.01# bonito
+1068 unaccompanied.a.01# solo
+1071 close.v.01# cerrar
+1073 door.n.01# puerta
+1075 # incomodo
+1078 general.a.01# general
+1079 divine.s.06# excelente
+1080 # guarderia
+1082 # mascostas
+1085 # adecuacion
+1087 person.n.01# persona
+1088 disabled.s.01# discapacitado
+1090 # ramplas
+1092 doorway.n.01# acceso
+1093 room.n.01# cuarto
+1097 dwelling.n.01# piso
+1099 step.n.04# escalón
+1103 # menu
+1104 assortment.n.01# variedad
+1106 think_of.v.03# considerar
+1107 run.v.03# ampliar
+1110 watering_place.n.01# spa
+1112 # habia
+1113 # cupo
+1114 # wifi
+1115 # mas
+1116 wide.a.01# amplio
+1118 # ventilador
+1121 bathtub.n.01# baño
+1124 relish.n.03# gusto
+1126 gain.v.08# cobrar
+1128 # tinto
+1130 service.n.01# servicio
+1132 eat.v.02# comer
+1135 cafeteria.n.01# autoservicio
+1136 necessitate.v.01# necesitar
+1137 be.v.01# ser
+1138 # mas
+1139 lissome.s.01# agil
+1140 spend.v.02# gastar
+1141 less.r.01# menos
+1142 paper.n.01# papel
+1145 # balneario
+1148 purchase.n.01# compra
+1150 miss.v.06# faltar
+1152 toilet.n.01# aseo
+1155 # vestieres
+1156 # publicos
+1158 bathtub.n.01# baño
+1159 # estan
+1160 full.a.01# lleno
+1162 sludge.n.02# lama
+1164 give.v.10# dar
+1167 think.v.03# pensar
+1169 use.v.01# usar
+1170 bag.n.01# bolsa
+1172 # plastico
+1175 # vestier
+1179 # ecologico
+1181 dwelling.n.01# piso
+1183 flaw.v.01# desmejorar
+1185 topographic_point.n.01# lugar
+1188 service.n.01# servicio
+1190 personal.a.01# personal
+1191 good.a.01# bueno
+1192 # ojalar
+1193 # ojalar
+1194 # tertminene
+1196 # remodelacion
+1197 promptly.r.02# pronto
+1199 look.v.02# parecer
+1200 dangerous.s.02# terrible
+1202 new.a.01# nuevo
+1203 arrangement.n.03# sistema
+1205 meal.n.01# comida
+1208 card.n.01# carta
+1210 postpone.v.01# demorar
+1212 time.n.02# hora
+1214 serve.v.10# servir
+1215 # deberian
+1216 make.v.03# hacer
+1218 dish.n.02# plato
+1220 # dia
+1224 postpone.v.01# demorar
+1226 return.v.01# devolver
+1228 money.n.01# dinero
+1231 please.v.01# gustar
+1233 new.a.01# nuevo
+1234 # administracion
+1238 brother.n.01# hermano
+1239 arrive.v.01# venir
+1241 italy.n.01# italia
+1243 # veniamos
+1245 # todo
+1247 family.n.06# familia
+1250 # habitacion
+1253 step.n.04# escalera
+1255 step.n.04# peldaño
+1260 # antideslisante
+1262 wood.n.01# madera
+1266 make.v.03# hacer
+1268 dangerous.a.01# peligroso
+1271 cub.n.02# hijo
+1274 year.n.01# año
+1278 stand.n.10# grada
+1279 # alimentacion
+1280 expensive.a.01# costoso
+1282 coffee.n.01# café
+1284 smack.n.06# cale
+1286 expensive.a.01# caro
+1288 price.n.04# valor
+1291 card.n.01# carta
+1293 small.a.01# pequeño
+1296 price.n.04# valor
+1299 make.v.03# hacer
+1300 shower.v.03# duchar
+1302 retool.v.01# revisar
+1304 television.n.01# tv
+1306 inadequate.s.02# bajo
+1308 book.n.02# volumen
+1309 # informacion
+1310 # mas
+1311 accurate.a.01# exacto
+1314 room.n.01# habitación
+1315 put.v.01# poner
+1316 bathrobe.n.01# albornoz
+1319 district.n.01# zona
+1320 thermal.a.01# termal
+1321 favor.n.01# favor
+1322 better.v.02# mejorar
+1324 world_wide_web.n.01# web
+1326 foreign.a.02# extranjero
+1327 make.v.03# realizar
+1328 booking.n.02# reserva
+1331 complex.a.01# complicar
+1332 pull_in.v.03# ingresar
+1334 eat.v.02# comer
+1337 # cobro
+1339 coffee.n.01# café
+1343 # huespedes
+1344 baneful.s.01# mortal
+1347 expensive.a.01# caro
+1349 finely.r.03# bien
+1350 divine.s.06# excelente
+1351 # gia
+1352 # jhon
+1353 # jairo
+1356 restaurant.n.01# restaurante
+1358 weakness.n.03# debilidad
+1360 watchfulness.n.02# atencion
+1363 room.n.01# cuarto
+1364 familiar.a.01# familiar
+1367 bathtub.n.01# baño
+1370 # sufientes
+1372 best.a.01# mejor
+1374 television.n.01# tv
+1377 look.v.01# ver
+1379 like.a.02# mismo
+1380 plan.n.01# programa
+1382 # recepcion
+1385 personal.a.01# personal
+1387 highly.r.03# altamente
+1388 qualify.v.06# calificar
+1390 serve.v.10# atender
+1392 # pubvlico
+1394 necessitate.v.01# requerir
+1395 give_birth.v.01# tener
+1396 # mas
+1397 training.n.01# entrenamiento
+1399 # estadia
+1402 positive.a.01# positivo
+1403 put.v.01# colocar
+1404 # parlantes
+1405 set_to_music.v.01# musicar
+1408 swimming_pool.n.01# piscina
+1410 # huespedes
+1412 tablecloth.n.01# mantel
+1413 untidy.a.01# sucio
+1414 even.a.03# regular
+1416 watchfulness.n.02# atencion
+1419 swimming_pool.n.01# piscina
+1421 # huespedes
+1424 kill.v.01# acabar
+1425 # ek
+1426 ice.n.01# hielo
+1428 serve.v.10# servir
+1430 liquor.n.01# licor
+1433 ice.n.01# hielo
+1434 # menu
+1435 immature.a.01# infantil
+1438 meal.n.01# comida
+1440 # porfavor
+1441 stretcher.n.03# camilla
+1443 massage.n.01# masaje
+1444 # em
+1445 bed.n.01# cama
+1447 district.n.01# zona
+1448 moisture.n.01# humedad
+1449 divine.s.06# excelente
+1450 # sevicio
+1452 hotel.n.01# hotel
+1454 swimming_pool.n.01# piscina
+1456 good.a.01# bueno
+1459 better.v.02# mejorar
+1462 meal.n.01# comida
+1464 be.v.01# ser
+1466 topographic_point.n.01# lugar
+1467 so.r.01# tan
+1468 expensive.a.01# caro
+1470 # comedir
+1473 be.v.01# ser
+1475 best.a.01# mejor
+1477 quality.n.01# calidad
+1480 # habitacion
+1482 respect.n.01# respecto
+1484 price.n.02# precio
+1487 insufficient.a.01# insuficiente
+1489 # arta
+1492 realize.v.03# actualizar
+1494 # comedir
+1498 displace.v.03# poder
+1499 necessitate.v.01# pedir
+1503 # aunque
+1505 tell.v.03# explicar
+1508 room.n.01# habitación
+1510 # tenian
+1511 shower.n.04# ducha
+1514 opportunity.n.01# oportunidad
+1515 add.v.01# adicionar
+1516 shower.n.04# ducha
+1517 divine.s.06# excelente
+1518 watchfulness.n.02# atencion
+1520 personal.a.01# personal
+1522 bathtub.n.01# baño
+1523 owe.v.01# deber
+1524 better.v.02# mejorar
+1526 # demasiado
+1527 small.a.01# pequeño
+1528 # humedos
+1531 # vestier
+1533 miss.v.06# faltar
+1534 look.v.01# ver
+1537 # habitacion
+1538 # ramplas
+1540 fa.n.01# fa
+1542 # dificl
+1544 slope.n.01# subida
+1546 stand.n.10# grada
+1547 # ortal
+1550 knee.n.01# rodilla
+1552 noise.n.01# ruido
+1554 # huespedes
+1557 # habitacion
+1559 side.n.04# lado
+1561 # dejarin
+1562 sleep.v.01# dormir
+1564 bathtub.n.01# baño
+1565 arrange.v.01# disponer
+1568 # habitacion
+1571 # area
+1575 district.n.01# zona
+1577 # jacuzzi
+1580 good.a.01# bueno
+1582 # incomodo
+1585 open.v.01# abrir
+1586 # ene
+1587 liter.n.01# l
+1588 # balcon
+1591 # habitacion
+1593 # sifon
+1595 serve.v.10# servir
+1597 # proteccion
+1598 # regilla
+1601 produce.v.03# ocasionar
+1604 child.n.01# niño
+1607 year.n.01# año
+1609 hurt.v.05# lastimar
+1610 slightly.r.01# levemente
+1613 restaurant.n.01# restaurante
+1614 hint.v.01# sugerir
+1615 prevent.v.01# prohibir
+1617 consumption.n.01# consumo
+1619 cigarette.n.01# cigarrillo
+1620 # sera
+1621 # mas
+1622 coherent.a.01# coherente
+1625 meaning.n.01# sentido
+1628 finish.n.04# destino
+1630 universe.n.01# naturaleza
+1631 increase.v.02# incrementar
+1633 care.n.06# mantenimiento
+1636 room.n.01# habitación
+1638 bathtub.n.01# baño
+1640 bad.a.01# mal
+1642 lack.n.01# falta
+1643 # desague
+1646 shower.n.04# ducha
+1649 sink.n.01# lavamanos
+1650 hide.v.01# tapar
+1652 curtain.n.01# cortina
+1655 bad.a.01# mal
+1658 lack.n.01# falta
+1659 container.n.01# recipiente
+1662 rubbish.n.01# basura
+1663 dangerous.s.02# serio
+1664 advisable.a.01# conveniente
+1666 offer.v.01# ofrecer
+1667 plan.n.01# plan
+1669 # alimentacion
+1672 district.n.01# zona
+1674 dancing.n.01# baile
+1675 bathtub.n.01# tina
+1678 # habitacion
+1681 clean.v.01# limpiar
+1683 room.n.01# cuarto
+1684 eat.v.02# jamar
+1687 liveliness.n.02# vida
+1689 own.v.01# quedar
+1692 hotel.n.01# hotel
+1695 so.r.01# tan
+1696 filthy.s.01# asqueroso
+1697 cock.n.01# bicho
+1698 die.v.01# morir
+1701 dwelling.n.01# piso
+1702 shower.v.03# duchar
+1703 # rota
+1704 curtain.n.01# cortina
+1705 move.v.15# destruir
+1707 vessel.n.03# vaso
+1708 filthy.s.01# asqueroso
+1709 refrigerator.n.01# nevera
+1710 equipment.n.01# equipo
+1712 radio_receiver.n.01# radio
+1714 good.a.01# bueno
+1716 topographic_point.n.01# lugar
+1717 divine.s.06# excelente
+1719 # resavar
+1720 give_birth.v.01# tener
+1722 person.n.01# persona
+1724 regulate.v.02# regular
+1726 action.n.01# acción
+1728 # ela
+1729 # gua
+1732 game.n.01# juego
+1734 # unico
+1735 problem.n.02# problema
+1738 miss.v.06# faltar
+1740 world_wide_web.n.01# internet
+1743 room.n.01# habitación
+1744 slow.a.02# lento
+1746 service.n.01# servicio
+1749 room.n.01# sala
+1751 time.n.02# hora
+1753 ask.v.04# esperar
+1754 grace.n.02# gracia
+1755 divine.s.06# excelente
+1756 service.n.01# servicio
+1757 change.v.01# cambiar
+1759 intake.n.02# toma
+1762 room.n.01# habitación
+1766 resist.v.02# resistir
+1768 major.a.03# mayor
+1769 amperage.n.01# amperaje
+1774 overheat.v.02# recalentar
+1777 associate.v.01# conectar
+1778 # cargador
+1780 board.n.03# plancha
+1782 restaurant.n.01# restaurante
+1784 make.v.03# hacer
+1785 lack.n.01# falta
+1786 assortment.n.01# variedad
+1789 # papeleria
+1791 bathtub.n.01# baño
+1794 # habian
+1795 change.v.01# cambiar
+1797 meal.n.01# comida
+1798 displace.v.03# poder
+1799 better.v.02# mejorar
+1800 # muchusimo
+1801 watering_place.n.01# spa
+1802 # mas
+1803 early.r.02# temprano
+1805 time.n.02# hora
+1808 tomorrow.r.01# mañana
+1809 # faltaria
+1810 put.v.01# poner
+1811 # secador
+1813 hair.n.01# pelo
+1815 # dispocision
+1817 customer.n.01# cliente
+1820 topographic_point.n.01# lugar
+1821 fantastic.s.02# maravilloso
+1822 make.v.02# volver
+1823 better.v.02# mejorar
+1825 watchfulness.n.02# atencion
+1828 waiter.n.01# mesero
+1830 restaurant.n.01# restaurante
+1832 make.v.03# hacer
+1833 # rampla
+1836 disabled.s.01# discapacitado
+1837 die.v.01# salir
+1841 morning.n.01# am
+1842 dwelling.n.01# piso
+1843 # mas
+1844 nonslip.s.01# antideslizante
+1847 inform.v.01# avisar
+1849 # habia
+1850 # wifi
+1853 # iluminacion
+1855 four.s.01# 4
+1856 # podria
+1857 be.v.01# ser
+1858 best.a.01# mejor
+1859 lord.n.03# señor
+1860 # norberto
+1861 # capitan
+1863 oversee.v.01# manejar
+1864 service.n.01# servicio
+1866 customer.n.01# cliente
+1867 # pesimo
+1869 owe.v.01# deber
+1872 hotel.n.01# hotel
+1874 # habia
+1875 ice.n.01# hielo
+1878 beverage.n.01# bebida
+1880 # bafle
+1881 musical.a.01# musical
+1884 swimming_pool.n.01# piscina
+1887 meal.n.01# comida
+1888 bad.a.01# malo
+1889 displace.v.03# poder
+1890 give_birth.v.01# tener
+1892 bathtub.n.01# baño
+1894 # recomendaria
+1898 earth.n.01# mundo
+1901 large.a.01# gran
+1902 service.n.01# servicio
+1903 miss.v.06# faltar
+1904 cabinet.n.03# armario
+1907 room.n.01# habitación
+1909 hang.v.01# colgar
+1910 clothing.n.01# ropa
+1911 # minimo
+1912 better.v.02# mejorar
+1914 # wifi
+1915 favor.n.01# favor
+1916 put.v.01# colocar
+1917 dump.n.02# basurero
+1920 two.s.01# 2
+1921 degree.n.01# nivel
+1923 # habitcion
+1925 remove.v.01# sacar
+1927 new.a.01# nuevo
+1929 # menu
+1931 newspaper.n.01# diario
+1933 full.a.01# completo
+1935 pleasing.a.01# agradable
+1936 change.v.01# cambiar
+1938 breakfast.n.01# desayuno
+1939 constantly.r.01# siempre
+1942 like.a.02# mismo
+1944 customer.n.01# cliente
+1945 frequent.a.01# frecuente
+1947 hotel.n.01# hotel
+1948 thermal.a.01# termal
+1950 saint.n.01# santo
+1951 scandalmongering.s.01# rosa
+1954 sooth.n.01# verdad
+1956 perceive.v.01# sentir
+1957 inconvenient.a.01# molesto
+1959 # cada
+1960 year.n.01# año
+1961 arrive.v.01# venir
+1963 # varios
+1964 case.n.01# vez
+1968 one.s.01# 1
+1969 case.n.01# vez
+1972 meal.n.01# comida
+1975 enclosed.a.01# incluir
+1976 arrive.v.01# venir
+1978 plan.n.01# plan
+1979 familiar.a.01# familiar
+1982 # parecio
+1985 expensive.a.01# caro
+1986 bed.n.01# cama
+1987 # mas
+1988 large.a.01# grande
+1990 # cajon
+1992 gratuity.n.01# propina
+1993 retool.v.01# revisar
+1995 shower.n.04# ducha
+1997 remove.v.01# sacar
+1998 water.n.01# agua
+2002 shower.v.03# duchar
+2003 praise.n.01# felicitación
+2006 suggestion.n.02# propuesta
+2008 # yodoterapia
+2009 think.v.03# creer
+2012 # deberian
+2013 create.v.02# generar
+2014 # mas
+2015 place.n.03# espacio
+2017 wellbeing.n.01# bienestar
+2018 put.v.01# dejar
+2020 while.n.01# rato
+2021 # mas
+2023 set_to_music.v.01# musicar
+2025 # relajacion
+2027 # frente
+2030 # alimentacion
+2032 sneak_thief.n.01# chorizo
+2033 # santarosanos
+2035 tasty.a.01# delicioso
+2036 miss.v.06# faltar
+2038 stretcher.n.03# camilla
+2040 rock.n.02# piedra
+2043 # habitacion
+2045 room.n.01# habitación
+2046 # familarias
+2047 # deberian
+2048 state.v.01# contar
+2050 do.n.02# do
+2051 bathtub.n.01# baño
+2053 state.v.01# decir
+2056 # habia
+2057 shower.n.04# ducha
+2060 # habitacion
+2062 watchfulness.n.02# atencion
+2064 good.a.01# bueno
+2065 # excepto
+2067 person.n.01# persona
+2069 restaurant.n.01# restaurante
+2072 time.n.02# hora
+2074 breakfast.n.01# desayuno
+2076 owe.v.01# deber
+2077 better.v.02# mejorar
+2079 meaning.n.01# sentido
+2081 service.n.01# servicio
+2084 restaurant.n.01# restaurante
+2087 good.a.01# bueno
+2089 service.n.01# servicio
+2092 # alimentacion
+2094 good.a.01# bueno
+2097 postpone.v.01# demorar
+2101 arrangement.n.03# orden
+2103 serve.v.10# servir
+2106 # bebeidas
+2109 serve.v.10# servir
+2111 discontinue.v.01# terminar
+2113 look.v.01# ver
+2114 impaired.a.01# deteriorar
+2117 price.n.02# precio
+2119 night.n.01# noche
+2122 person.n.01# persona
+2123 super.s.03# super
+2124 finely.r.03# bien
+2126 beautiful.a.01# lindo
+2128 people.n.01# gente
+2132 # balnerario
+2135 night.n.01# noche
+2136 # habia
+2137 people.n.01# gente
+2138 eat.v.02# consumir
+2139 cannabis.n.02# mariguana
+2141 # habitacion
+2142 excessively.r.01# demasiado
+2143 consume.v.05# reducir
+2144 annoy.v.01# incomodar
+2147 price.n.02# precio
+2148 so.r.01# tan
+2149 eminent.s.01# alto
+2154 # gurdar
+2156 baggage.n.01# maleta
+2159 consume.v.05# reducir
+2160 # mas
+2162 place.n.03# espacio
+2166 shower.v.03# duchar
+2167 give.v.10# dar
+2168 best.a.01# mejor
+2169 # informacion
+2175 transport.v.02# llevar
+2178 amble.n.01# caminata
+2179 # mediante
+2181 # bolante
+2183 # borde
+2185 swimming_pool.n.01# piscina
+2187 # bridio
+2188 defeated.s.02# insatisfecho
+2191 agreement.n.03# convenio
+2196 cooperative.a.02# cooperativo
+2198 # coomeva
+2201 buy.v.01# comprar
+2202 doorway.n.01# entrada
+2205 # balneario
+2208 displace.v.03# poder
+2209 pull_in.v.03# ingresar
+2212 detect.v.01# encontrar
+2213 full.a.01# lleno
+2216 forbid.v.01# negar
+2218 income.n.01# ingreso
+2219 service.n.01# servicio
+2221 restaurant.n.01# restaurante
+2222 insufficient.a.01# deficiente
+2224 child.n.01# chico
+2226 serve.v.10# atender
+2227 # enn
+2229 cabinet.n.03# taquilla
+2231 serve.v.10# atender
+2232 accurately.r.01# correctamente
+2235 visitor.n.01# visitante
+2237 try.v.01# tratar
+2239 # groseria
+2241 # yesica
+2242 think_of.v.03# considerar
+2246 function.v.01# trabajar
+2247 be.v.01# ser
+2248 amiable.s.01# amable
+2249 make.v.02# volver
+2251 include.v.02# incluir
+2253 # alimentacion
+2254 proceed.v.02# continuar
+2257 plan.n.01# plan
+2259 breakfast.n.01# desayuno
+2260 breakfast.n.01# almuerzo
+2262 meal.n.01# comida
+2264 plan.n.01# plan
+2265 familiar.a.01# familiar
+2267 excessively.r.01# demasiado
+2268 # incomodo
+2270 # tenerlo
+2272 understand.v.01# entender
+2274 inconvenience.n.03# incomodidad
+2277 # remodelacion
+2278 # mas
+2281 price.n.02# daño
+2283 service.n.01# servicio
+2284 give.v.10# prestar
+2287 while.n.01# tiempo
+2289 be.v.01# ser
+2290 customer.n.01# cliente
+2292 customer.n.01# cliente
+2293 frequent.a.01# frecuente
+2298 agreement.n.03# acuerdo
+2301 # quietaran
+2303 deduction.n.02# descuento
+2304 # adema
+2306 fee.n.01# tarifa
+2307 displace.v.03# poder
+2308 retool.v.01# revisar
+2309 # cuanto
+2310 case.n.01# vez
+2314 thermal.a.01# termal
+2317 divine.s.06# excelente
+2318 # buenisimo
+2321 night.n.01# noche
+2322 make.v.03# hacer
+2323 # alguno
+2324 action.n.02# actividad
+2327 # huespedes
+2332 custom.n.02# rutina
+2333 praise.n.01# felicitación
+2334 # cada
+2337 # opurtunidad
+2339 arrive.v.01# venir
+2341 make.v.03# hacer
+2343 constantly.r.01# siempre
+2345 agreeable.a.01# grato
+2347 # estadia
+2349 look.v.02# parecer
+2350 important.a.01# importante
+2351 make.v.02# volver
+2353 arrangement.n.03# sistema
+2356 enclosed.a.01# incluir
+2359 reserve.v.04# reservar
+2361 # alimentacion
+2365 # huspededes
+2367 # mas
+2368 # comodo
+2370 functional.a.01# funcional
+2371 similarly.r.01# igualmente
+2373 name.v.01# llamar
+2375 make.v.03# hacer
+2377 # rerva
+2379 # informacion
+2382 unaccompanied.a.01# solo
+2383 # habia
+2385 cabana.n.01# cabaña
+2388 arrive.v.01# llegar
+2389 # estan
+2390 offer.v.01# ofrecer
+2393 # husped
+2394 room.n.01# habitación
+2396 building.n.01# casa
+2397 farm.n.01# finca
+2401 think.v.02# suponer
+2405 reserve.v.04# reservar
+2406 # si
+2407 # habian
+2412 building.n.01# casa
+2413 farm.n.01# finca
+2416 good.a.01# bueno
+2417 hostel.n.01# hospedaje
+2420 necessitate.v.01# implicar
+2421 motion.n.06# desplazamiento
+2425 cabana.n.01# cabaña
+2426 # qunque
+2428 # mas
+2429 # modernogrcias
+2432 watchfulness.n.02# atencion
+2434 divine.s.06# excelente
+2435 # estadia
+2437 name.v.01# llamar
+2439 customer.n.01# cliente
+2442 # hixo
+2443 # ninguno
+2444 # observacion
+2446 even.a.03# regular
+2448 think.v.03# pensar
+2450 make.v.02# volver
+2451 give_birth.v.01# tener
+2452 supervisory.a.01# supervisor
+2455 # area
+2457 # escuhe
+2459 customer.n.01# cliente
+2463 available.a.01# disponible
+2465 function.v.01# trabajar
+2466 # mas
+2469 # logisticas
+2471 operation.n.08# funcionamiento
+2473 miss.v.06# faltar
+2474 # sason
+2475 bread.n.01# pan
+2476 difficult.a.01# duro
+2479 # manteqquilla
+2480 frozen.a.01# congelar
+2482 necessitate.v.01# necesitar
+2483 # mucho
+2484 improvement.n.02# mejora
+2485 change.v.01# cambiar
+2487 rug.n.01# alfombra
+2489 dwelling.n.01# piso
+2490 better.v.02# mejorar
+2492 bathtub.n.01# baño
+2494 advice.n.01# recomendación
+2497 # iluminacion
+2500 # habitacion
+2505 even.a.03# regular
+2507 meal.n.01# comida
+2509 good.a.01# bueno
+2511 watchfulness.n.02# atencion
+2515 personal.a.01# personal
+2518 meal.n.01# comida
+2520 even.a.03# regular
+2521 retool.v.01# revisar
+2522 discipline.n.01# tema
+2524 shower.v.03# duchar
+2527 # habitacion
+2529 service.n.01# servicio
+2530 sanitary.a.01# sanitario
+2532 # presion
+2534 water.n.01# agua
+2537 bathtub.n.01# baño
+2538 miss.v.06# faltar
+2539 put.v.01# poner
+2542 put.v.01# colocar
+2543 component.n.03# elemento
+2545 # unico
+2546 # incomveniente
+2551 # habitacion
+2554 excessively.r.01# demasiado
+2555 # humeda
+2558 pull_in.v.03# entrar
+2560 moisture.n.01# humedad
+2562 breathe.v.01# respirar
+2565 environment.n.02# ambiente
+2566 better.v.02# mejorar
+2568 signal.n.01# señal
+2570 television.n.01# tv
+2571 owe.v.01# deber
+2572 buy.v.01# comprar
+2573 # acetaminofen
+2574 supply.v.01# dotar
+2576 bathtub.n.01# baño
+2577 inform.v.01# avisar
+2579 # estan
+2581 # manteimiento
+2582 miss.v.06# faltar
+2583 # señalizacion
+2586 possible.a.01# posible
+2589 # sr
+2591 assurance.n.01# seguridad
+2592 fastener.n.02# cierre
+2594 door.n.01# puerta
+2597 advice.n.01# aviso
+2598 adequate.a.01# adecuar
+2599 put.v.01# dejar
+2601 # huespedes
+2602 # afuera
+2605 # indicacion
+2607 # cómo
+2608 arrive.v.01# llegar
+2611 # habitacion
+2613 refer.v.02# tocar
+2616 particular.s.01# propio
+2617 measure.v.04# medir
+2619 # despues
+2622 long.a.02# largo
+2623 while.n.01# rato
+2624 try.v.01# buscar
+2626 arrive.v.01# llegar
+2629 # habitacion
+2630 oversee.v.01# manejar
+2632 like.a.02# mismo
+2633 # informacion
+2634 couple.n.04# par
+2637 hire.v.01# emplear
+2639 familiarity.n.05# impertinencia
+2641 # lod
+2642 data.n.01# dato
+2644 honorary.s.01# honorario
+2646 give_birth.v.01# entregar
+2648 towel.n.01# toalla
+2650 # teramales
+2652 name.v.01# llamar
+2654 # medellin
+2656 offer.v.01# ofrecer
+2658 dinner.n.01# cena
+2659 particular.s.01# especial
+2661 state.v.01# decir
+2663 # si
+2665 arrive.v.01# llegar
+2666 # nadie
+2667 wise.a.01# sabio
+2668 descend.v.01# bajar
+2670 eat.v.02# comer
+2672 case.n.01# vez
+2673 q.n.01# q
+2675 state.v.01# decir
+2678 meal.n.01# comida
+2684 arrive.v.01# llegar
+2692 owe.v.01# deber
+2694 # ponserse
+2696 agreement.n.03# acuerdo
+2698 refer.v.02# tocar
+2699 ask.v.04# esperar
+2701 meal.n.01# comida
+2703 time.n.02# hora
+2705 # teniamos
+2706 # frio
+2708 service.n.01# servicio
+2710 towel.n.01# toalla
+2711 flaw.v.01# desmejorar
+2713 better.r.01# mejor
+2716 outstanding.s.03# pendiente
+2718 # huesped
+2722 change.v.01# cambiar
+2724 towel.n.01# toalla
+2725 # cada
+2726 while.n.01# rato
+2729 perceive.v.01# sentir
+2730 # frio
+2733 die.v.01# salir
+2736 swimming_pool.n.01# piscina
+2738 owe.v.01# deber
+2740 # mas
+2741 outstanding.s.03# pendiente
+2744 # huespedes
+2746 hotel.n.01# hotel
+2747 flaw.v.01# desmejorar
+2750 service.n.01# servicio
+2751 # si
+2754 # habitacion
+2755 available.a.01# disponible
+2759 three.s.01# tres
+2761 # huesped
+2763 necessitate.v.01# requerir
+2764 beam.n.04# haz
+2766 # entrea
+2769 grace.n.02# gracia
+2770 wash.v.02# lavar
+2771 sludge.n.02# lama
+2774 swimming_pool.n.01# piscina
+2775 necessitate.v.01# solicitar
+2778 # huespedes
+2780 # esten
+2783 swimming_pool.n.01# piscina
+2785 pull_in.v.03# entrar
+2786 meal.n.01# comida
+2787 miss.v.06# faltar
+2788 towel.n.01# toalla
+2790 mattress.n.01# colchón
+2792 uncommon.a.01# raro
+2794 give.v.10# dar
+2795 # pocion
+2797 nutriment.n.01# alimento
+2799 beverage.n.01# bebida
+2801 # diabeticos
+2802 put.v.01# poner
+2803 shower.n.04# ducha
+2805 # todo
+2807 room.n.01# habitación
+2808 unaccompanied.a.01# solo
+2809 recommend.v.01# recomendar
+2811 give.v.10# dar
+2812 beverage.n.01# bebida
+2813 # alcoholicas
+2816 district.n.01# zona
+2819 swimming_pool.n.01# piscina
+2821 put.v.01# poner
+2823 set_to_music.v.01# musicar
+2824 # mas
+2825 # acorde
+2828 # viviencia
+2830 room.n.01# habitación
+2832 building.n.01# casa
+2833 farm.n.01# finca
+2835 bad.a.01# malo
+2836 ugly.a.01# feo
+2838 # iluminacion
+2839 bad.a.01# mal
+2841 liter.n.01# l
+2842 # alimentacion
+2843 # mas
+2844 # economica
+2845 retool.v.01# revisar
+2847 sample.n.01# muestra
+2848 picture.n.01# imagen
+2851 tell.v.03# explicar
+2855 four.s.01# 4
+2858 sample.n.01# muestra
+2860 option.n.02# opción
+2862 sink.n.01# lavamanos
+2864 wet.a.01# mojar
+2866 tapeworm.n.01# tenia
+2867 bad.a.01# mal
+2868 smell.n.01# olor
+2869 better.v.02# arreglar
+2871 room.n.01# cuarto
+2872 # deberian
+2873 give_birth.v.01# tener
+2874 # mas
+2875 # iluminacion
+2876 create.v.02# generar
+2878 plan.n.01# plan
+2880 operation.n.01# manejo
+2883 noise.n.01# ruido
+2884 # solidos
+2886 cruddy.s.01# verde
+2887 # pues
+2888 # mucho
+2889 rubbish.n.01# basura
+2890 put.v.01# depositar
+2892 manner.n.01# forma
+2893 untidy.a.01# desorganizar
+2894 preferably.r.01# preferiblemente
+2895 # alimentacion
+2896 kind.n.01# tipo
+2897 # buffette
+2899 # deberian
+2900 give_birth.v.01# tener
+2901 drug.n.01# medicamento
+2903 # acetaqminofen
+2904 better.v.02# mejorar
+2906 # tencion
+2909 restaurant.n.01# restaurante
+2910 # especialemente
+2915 foreign.a.02# extranjero
+2917 service.n.01# servicio
+2919 bathtub.n.01# baño
+2921 state.v.01# contar
+2923 water.n.01# agua
+2924 warm.a.01# caliente
+2928 solve.v.01# solucionar
+2929 # duerante
+2931 # estadia
+2932 unaccompanied.a.01# solo
+2933 # mas
+2934 personal.a.01# personal
+2937 restaurant.n.01# restaurante
+2938 # mas
+2939 assortment.n.01# variedad
+2942 eat.v.02# comer
+2945 bathtub.n.01# baño
+2948 # habitacion
+2950 bathtub.n.01# baño
+2953 # habitacion
+2955 # frios
+2960 put.v.01# colocar
+2962 object.n.01# objeto
+2964 dress.v.15# asear
+2965 better.v.02# mejorar
+2967 meal.n.01# comida
+2968 # vejetariana
+2969 picture.v.02# pintar
+2971 # habitacion
+2973 note.v.01# observar
+2974 moisture.n.01# humedad
+2977 # closer
+2981 wall.n.01# pared
+2982 near.a.01# cercano
+2984 roof.n.01# techo
+2987 room.n.01# habitación
+2989 refrigerator.n.01# nevera
+2992 merchandise.n.01# producto
+2994 beer.n.01# cerveza
+2995 water.n.01# agua
+2996 juice.n.01# jugo
+2998 # demas
+3000 # dia
+3002 february.n.01# febrero
+3005 swimming_pool.n.01# piscina
+3006 unaccompanied.a.01# solo
+3007 # sono
+3008 sauce.n.01# salsa
+3014 topographic_point.n.01# lugar
+3016 kind.n.01# tipo
+3017 watering_place.n.01# spa
+3020 # dias
+3021 brave.s.03# estupendo
+3024 region.n.01# parte
+3027 cabana.n.01# cabaña
+3028 make.v.03# hacer
+3029 lack.n.01# falta
+3030 service.n.01# servicio
+3032 waiter.n.01# mesero
+3033 continuous.a.01# permanente
+3036 bathtub.n.01# baño
+3037 make.v.03# hacer
+3038 miss.v.06# faltar
+3039 give_birth.v.01# tener
+3041 vessel.n.03# vaso
+3045 service.n.01# servicio
+3046 general.a.01# general
+3048 good.a.01# bueno
+3049 # mucho
+3050 problem.n.01# dificultad
+3053 give_birth.v.01# entregar
+3055 towel.n.01# toalla
+3057 swimming_pool.n.01# piscina
+3058 prevent.v.01# prohibir
+3059 eat.v.02# consumir
+3060 meal.n.01# comida
+3062 beverage.n.01# bebida
+3063 inside.r.02# dentro
+3066 swimming_pool.n.01# piscina
+3067 oversee.v.01# vigilar
+3070 visitor.n.01# visitante
+3072 waste.v.01# arrojar
+3073 rubbish.n.01# basura
+3075 keep.v.01# conservar
+3077 middle.a.04# medio
+3078 environment.n.02# ambiente
+3082 # pasadia
+3085 topographic_point.n.01# lugar
+3086 favored.s.01# favorito
+3089 less.r.01# menos
+3090 revenge.v.01# vengar
+3092 case.n.01# vez
+3095 calendar_month.n.01# mes
+3098 owe.v.01# deber
+3099 descend.v.01# bajar
+3100 straight.n.02# escala
+3102 hint.v.01# sugerir
+3103 # vestier
+3106 region.n.01# parte
+3107 inadequate.s.02# bajo
+3110 swimming_pool.n.01# piscina
+3111 unaccompanied.a.01# solo
+3113 case.n.01# caso
+3114 particular.s.01# especial
+3116 room.n.01# habitación
+3117 # familariares
+3119 # mas
+3122 person.n.01# persona
+3123 dangerous.s.02# serio
+3124 good.a.01# bueno
+3125 give_birth.v.01# tener
+3127 bathtub.n.01# baño
+3128 miss.v.06# faltar
+3131 room.n.01# habitación
+3132 coatrack.n.01# perchero
+3134 hang.v.01# colgar
+3135 towel.n.01# toalla
+3136 wet.a.01# mojar
+3138 coat.n.01# chaqueta
+3139 better.v.02# mejorar
+3141 # alimentacion
+3142 praise.n.01# felicitación
+3143 # escelente
+3144 watchfulness.n.02# atencion
+3146 shower.v.03# duchar
+3149 room.n.01# habitación
+3152 eminent.s.01# sumo
+3153 worth.n.02# importancia
+3155 agreeable.a.01# grato
+3156 # estadia
+3157 favor.n.01# favor
+3158 better.v.02# arreglar
+3160 # desague
+3162 bathtub.n.01# baño
+3166 # evacua
+3168 water.n.01# agua
+3171 # antihigienico
+3173 shower.n.04# cascada
+3174 dramatic.s.02# espectacular
+3178 thermal.a.01# termal
+3180 particular.s.01# especial
+3181 unaccompanied.a.01# solo
+3183 dangerous.s.02# serio
+3184 good.a.01# bueno
+3188 look.v.01# ver
+3190 tube.n.01# tubo
+3193 region.n.01# parte
+3194 superior.a.01# superior
+3196 debris.n.01# resto
+3198 # parecio
+3199 super.s.03# super
+3200 particular.s.01# especial
+3201 suggestion.n.02# sugerencia
+3204 give_birth.v.01# parir
+3206 massage.n.01# masaje
+3208 serve.v.10# atender
+3211 customer.n.01# cliente
+3214 child.n.01# niño
+3216 # administracion
+3217 # muyb
+3218 want.v.02# querer
+3219 patron.n.03# colaborador
+3221 diligent.a.02# diligente
+3224 person.n.01# persona
+3227 constantly.r.01# siempre
+3229 necessitate.v.01# necesitar
+3232 occupation.n.01# empresa
+3233 grace.n.02# gracia
+3234 retool.v.01# revisar
+3235 service.n.01# servicio
+3236 television.n.01# tv
+3238 function.v.01# funcionar
+3240 finely.r.03# bien
+3242 # mas
+3243 treat.v.03# cuidar
+3246 meal.n.01# comida
+3250 wife.n.01# esposo
+3253 # estan
+3254 necessitate.v.01# pedir
+3255 duplicate.n.02# copia
+3257 passport.n.02# pasaporte
+3260 foreign.a.02# extranjero
+3262 travel.v.01# viajar
+3265 region.n.01# parte
+3269 correct.a.01# correcto
+3272 prevent.v.01# impedir
+3274 doorway.n.01# entrada
+3276 duplicate.n.02# copia
+3279 document.n.01# documento
+3280 favor.n.01# favor
+3281 inform.v.01# informar
+3283 # internt
+3285 good.a.01# bueno
+3287 service.n.01# servicio
+3288 people.n.01# gente
+3290 amiable.s.01# amable
+3291 advice.n.01# recomendación
+3292 put.v.01# colocar
+3293 bannister.n.02# pasamanos
+3296 shower.n.04# ducha
+3302 smooth.a.01# liso
+3304 television.n.01# televisor
+3306 # demaciados
+3307 small.a.01# pequeño
+3309 # iluminacion
+3313 incident.n.01# incidente
+3317 agency.n.01# agencia
+3318 # pues
+3320 lawsuit.n.01# proceso
+3322 # contratacion
+3324 # desinformado
+3325 # desaganizado
+3328 express.v.01# presentar
+3330 picture.n.01# imagen
+3332 software.n.01# paquete
+3335 carry_through.v.01# cumplir
+3337 # espectativas
+3338 # todo
+3340 experience.n.03# experiencia
+3343 hotel.n.01# hotel
+3345 divine.s.06# excelente
+3347 meat.n.01# carne
+3350 sting.n.03# picada
+3352 difficult.a.01# duro
+3355 displace.v.03# echar
+3356 # chicarron
+3359 dwelling.n.01# piso
+3362 shower.n.04# chorro
+3365 region.n.01# parte
+3367 # huespedes
+3369 # lamoso
+3371 # deberian
+3372 gain.v.08# cobrar
+3374 # tinto
+3377 person.n.01# persona
+3380 lodge.v.04# hospedar
+3381 # ahí
+3383 curtain.n.01# cortina
+3384 miss.v.06# faltar
+3385 change.v.01# cambiar
+3386 door.n.01# puerta
+3388 service.n.01# servicio
+3390 good.a.01# bueno
+3392 # menu
+3394 breakfast.n.01# desayuno
+3395 dangerous.s.02# serio
+3396 good.a.01# bueno
+3400 # mas
+3401 # tipico
+3404 country.n.02# tierra
+3405 favor.n.01# favor
+3406 put.v.01# colocar
+3407 # secador
+3409 hair.n.01# cabello
+3412 service.n.01# servicio
+3415 # habitacion
+3417 barroom.n.01# bar
+3419 signal.n.01# señal
+3421 # wifi
+3423 arrive.v.01# llegar
+3426 # habitacion
+3429 room.n.01# habitación
+3430 detect.v.01# encontrar
+3431 spider.n.01# araña
+3433 spider_web.n.02# telaraña
+3435 # sentia
+3437 smell.n.01# olor
+3439 moisture.n.01# humedad
+3440 think_of.v.03# considerar
+3443 repair.n.01# instalación
+3445 thermal.a.01# termal
+3448 good.a.01# bueno
+3449 divine.s.06# excelente
+3451 give.v.10# dar
+3452 composure.n.01# tranquilidad
+3453 comfort.v.01# confortar
+3456 # unico
+3459 bad.a.01# malo
+3463 shower.n.04# ducha
+3466 # habitacion
+3467 put.v.01# poner
+3468 light.n.01# luz
+3471 swimming_pool.n.01# piscina
+3474 night.n.01# noche
+3476 dangerous.s.02# serio
+3477 good.a.01# bueno
+3478 # calefaccion
+3481 room.n.01# habitación
+3483 restaurant.n.01# restaurante
+3484 box.n.01# caja
+3486 assurance.n.01# seguridad
+3487 bad.a.01# malo
+3490 # room
+3491 # service
+3493 moisture.n.01# humedad
+3494 # hongo
+3497 wall.n.01# pared
+3501 room.n.01# habitación
+3504 express.v.01# mostrar
+3506 smell.n.01# olor
+3508 keep.v.03# guardar
+3511 # alimentacion
+3513 even.a.03# regular
+3516 own.v.01# quedar
+3517 desire.n.01# gana
+3519 make.v.02# volver
+3521 foreign.a.02# extranjero
+3523 pay.v.01# pagar
+3525 tax.n.01# impuesto
+3526 national.a.03# nacional
+3528 vat.n.01# iva
+3531 service.n.01# servicio
+3532 # hotelero
+3534 # extension
+3537 make.v.03# hacer
+3539 order.v.01# imponer
+3545 # cobro
+3547 service.n.01# servicio
+3549 concluding.s.01# final
+3552 offer.v.01# ofrecer
+3554 buckshee.s.01# gratuito
+3557 coffee.n.01# café
+3560 postpone.v.01# demorar
+3562 # aentregar
+3564 # habitacion
+3566 monetary_value.n.01# costo
+3569 meal.n.01# comida
+3572 eminent.s.01# alto
+3573 deduction.n.02# descuento
+3574 particular.s.01# especial
+3577 # huespedes
+3579 # proximas
+3580 # estadias
+3583 hotel.n.01# hotel
+3585 good.a.01# bueno
+3587 make.v.02# volver
+3591 case.n.01# vez
+3593 arrive.v.01# venir
+3597 divine.s.06# excelente
+3598 better.v.02# mejorar
+3599 # eltema
+3602 meal.n.01# comida
+3605 watchfulness.n.02# atencion
+3607 user.n.01# usuario
+3609 while.n.01# tiempo
+3611 # preparacion
+3612 better.v.02# mejorar
+3614 coma.n.01# coma
+3616 mattress.n.01# colchón
+3618 difficult.a.01# duro
+3620 put.v.01# poner
+3621 rug.n.01# manta
+3623 sleeve.n.01# funda
+3626 # habitcion
+3627 # pues
+3628 make.v.03# hacer
+3630 # frio
+3632 # wifi
+3635 slow.a.02# lento
+3636 about.r.07# casi
+3638 serve.v.10# servir
+3640 # uno
+3643 bed.n.01# cama
+3644 # tiania
+3645 smell.n.01# olor
+3647 # humedo
+3648 best.a.01# mejor
+3649 shower.n.04# ducha
+3652 # huespedes
+3654 lack.n.01# falta
+3656 respect.v.01# respetar
+3659 time.n.02# hora
+3661 shower.v.03# ducharse
+3663 room.n.01# habitación
+3666 cabana.n.01# cabaña
+3667 # deberian
+3668 give_birth.v.01# tener
+3669 glass.n.01# vidrio
+3670 # antiruido
+3673 shower.n.04# cascada
+3674 make.v.03# hacer
+3676 noise.n.01# ruido
+3678 # dia
+3680 yesterday.r.01# ayer
+3682 # muhca
+3683 people.n.01# gente
+3686 service.n.01# servicio
+3689 good.a.01# bueno
+3692 night.n.01# noche
+3695 bathtub.n.01# baño
+3698 small.a.01# pequeño
+3700 # habia
+3702 leak.n.01# gotera
+3705 step.n.04# escalera
+3708 # habitacion
+3709 # tal
+3710 case.n.01# vez
+3711 be.v.01# ser
+3712 # mas
+3713 argus-eyed.s.02# atento
+3717 service.n.01# servicio
+3720 # atndieron
+3723 person.n.01# persona
+3725 arrive.v.01# llegar
+3727 # despues
+3731 add.v.01# agregar
+3732 milk.n.01# leche
+3733 milk.n.01# leche
+3734 # deslatosada
+3737 beverage.n.01# bebida
+3741 whole.a.01# entero
+3742 make.v.03# hacer
+3744 price.n.02# daño
+3747 set_to_music.v.01# musicar
+3750 # habitacion
+3753 # habitacion
+3757 shower.n.04# ducha
+3759 make.v.03# hacer
+3761 # facil
+3763 # estadia
+3765 travel.v.01# ir
+3770 uncover.v.02# destapar
+3772 room.n.01# habitación
+3775 dwelling.n.01# piso
+3776 divine.s.06# excelente
+3779 two.s.01# 2
+3781 dark.a.02# oscuro
+3784 # ventilacion
+3786 # deberia
+3787 stretch.v.04# darse
+3789 consumption.n.01# consumo
+3791 liquor.n.01# alcohol
+3794 swimming_pool.n.01# piscina
+3795 # asi
+3796 prevent.v.01# evitar
+3797 inflection.n.01# accidente
+3798 signal.n.01# señal
+3800 # wifi
+3802 world_wide_web.n.01# internet
+3804 descend.v.01# caer
+3806 # bo
+3807 # habia
+3808 water.n.01# agua
+3809 warm.a.01# caliente
+3811 # desague
+3814 shower.n.04# ducha
+3816 # taqueado
+3819 # valvula
+3821 access.n.03# paso
+3823 sanitary.a.01# sanitario
+3825 function.v.01# funcionar
+3826 leak.n.01# gotera
+3829 shower.n.04# ducha
+3835 inadequate.s.02# bajo
+3836 finely.r.03# bien
+3838 water.n.01# agua
+3840 contact.n.02# contacto
+3842 owe.v.01# deber
+3843 make.v.03# realizar
+3845 # alguien
+3847 group.n.01# grupo
+3850 give_birth.v.01# tener
+3851 inconvenience.n.03# inconveniente
+3853 # informacion
+3854 owe.v.01# deber
+3858 # turitas
+3860 owe.v.01# deber
+3861 oversee.v.01# manejar
+3862 # informacion
+3864 agreement.n.03# convenio
+3865 # ewl
+3866 # calentador
+3868 water.n.01# agua
+3869 function.v.01# funcionar
+3870 entirely.r.02# solo
+3871 # despues
+3873 open.v.01# abrir
+3875 key.n.04# llave
+3877 while.n.01# tiempo
+3879 waste.v.01# desperdiciar
+3880 # mucho
+3881 # aagua
+3883 dangerous.s.02# serio
+3884 good.a.01# bueno
+3885 better.v.02# arreglar
+3888 change.v.01# cambiar
+3889 supplier.n.01# proveedor
+3891 # shampoo
+3893 # rinse
+3895 anterior.a.01# anterior
+3897 divine.s.06# excelente
+3898 divine.s.06# excelente
+3900 lack.n.01# falta
+3901 shower.v.03# duchar
+3905 room.n.01# cuarto
+3907 # mas
+3908 outstanding.s.03# pendiente
+3911 television.n.01# televisor
+3915 arrive.v.01# llegar
+3919 # habitacion
+3920 # estan
+3921 # desprogramar
+3924 displace.v.03# poder
+3925 look.v.01# ver
+3927 news.n.01# noticia
+3929 # pelicilas
+3930 arrangement.n.03# sistema
+3932 television.n.01# television
+3934 # fallo
+3935 service.n.01# servicio
+3937 massage.n.01# masaje
+3939 even.a.03# regular
+3941 price.n.02# precio
+3943 requite.v.01# compensar
+3944 # econ
+3946 service.n.01# servicio
+3948 quality.n.01# calidad
+3950 massage.n.01# masaje
+3952 world.n.03# realidad
+3953 # faltal
+3954 experience.n.03# experiencia
+3955 # mas
+3956 cleanliness.n.02# limpieza
+3959 room.n.01# habitación
+3961 give_birth.v.01# tener
+3962 # mas
+3963 assortment.n.01# variedad
+3966 breakfast.n.01# desayuno
+3968 arrive.v.01# venir
+3970 # varios
+3971 # ocaciones
+3973 dangerous.s.02# serio
+3974 good.a.01# bueno
+3975 include.v.02# incluir
+3977 massage.n.01# masaje
+3978 capillary.s.02# capilar
+3981 while.n.01# minuto
+3983 # cortesia
+3984 option.n.02# opción
+3985 # vegetariano
+3987 # vegunas
+3988 communication.n.02# comunicación
+3989 direct.a.03# directo
+3992 topographic_point.n.01# sitio
+3994 reserve.v.04# reservar
+3996 hotel.n.01# hotel
+3999 arrive.v.01# llegar
+4001 child.n.01# niño
+4003 hotel.n.01# hotel
+4005 # tenian
+4006 # informacion
+4009 coupon.n.01# cupón
+4011 count.v.02# pesar
+4013 estate.n.01# haber
+4016 gain.v.08# cobrar
+4017 # deberian
+4019 # implemetar
+4020 again.r.01# nuevamente
+4022 # menu
+4023 traditional.a.01# tradicional
+4025 meal.n.01# comida
+4030 tasty.a.01# exquisito
+4031 immediately.r.01# ahora
+4033 meal.n.01# comida
+4037 best.a.01# mejor
+4040 simple.a.01# sencillo
+4043 price.n.02# precio
+4044 so.r.01# tan
+4045 eminent.s.01# alto
+4046 # mas
+4047 assortment.n.01# variedad
+4050 # alimentacion
+4051 meal.n.01# comida
+4052 # rapidas
+4054 simple.a.01# sencillo
+4056 service.n.01# servicio
+4058 watering_place.n.01# spa
+4060 # pesimo
+4061 # teniamos
+4062 treatment.n.01# terapia
+4066 morning.n.01# am
+4069 serve.v.10# atender
+4073 make.v.03# hacer
+4075 name.v.01# llamar
+4077 arrive.v.01# llegar
+4085 serve.v.10# atender
+4087 # despostar
+4090 bathtub.n.01# baño
+4091 # deberia
+4092 give_birth.v.01# tener
+4093 # vestilacion
+4096 window.n.01# ventana
+4097 # mas
+4098 meal.n.01# comida
+4099 # light
+4100 unaccompanied.a.01# solo
+4101 better.v.02# mejorar
+4103 boyfriend.n.01# pareja
+4105 displace.v.03# poder
+4106 open.v.01# abrir
+4108 box.n.01# caja
+4109 loud.a.01# fuerte
+4110 mistake.n.01# fallo
+4113 # telefono
+4115 # habitacion
+4118 problem.n.02# problema
+4121 # desague
+4124 shower.n.04# ducha
+4126 sink.n.01# lavamanos
+4128 litterbin.n.01# papelera
+4130 leak.n.01# gotera
+4133 bed.n.01# cama
+4134 include.v.02# incluir
+4135 service.n.01# servicio
+4137 # reposteria
+4140 # instalacion
+4142 offer.v.01# ofrecer
+4144 four.s.01# 4
+4147 # telefono
+4150 tapeworm.n.01# tenia
+4152 television.n.01# tv
+4153 # desprogramar
+4155 refer.v.02# tocar
+4156 change.v.01# cambiar
+4158 # habitacion
+4160 do.n.02# do
+4161 night.n.01# noche
+4163 waiter.n.01# camarero
+4165 clean.a.01# limpio
+4167 # habitacion
+4170 swimming_pool.n.01# piscina
+4173 care.n.06# mantenimiento
+4175 # dia
+4176 whole.a.01# entero
+4179 inform.v.01# informar
+4181 favor.n.01# favor
+4184 swimming_pool.n.01# piscina
+4187 # mantenimineto
+4189 put.v.01# dejar
+4190 pull_in.v.03# ingresar
+4191 # pasadia
+4194 # incomodo
+4195 # deberian
+4196 travel.v.01# ir
+4198 # baneario
+4199 hurt.v.05# lastimar
+4203 room.n.01# habitación
+4206 # duccha
+4207 repair.n.01# reparación
+4209 adequacy.n.01# adecuación
+4210 # debrian
+4211 happen.v.04# realizarse
+4213 # epoca
+4215 inadequate.s.02# bajo
+4216 inflow.n.01# afluencia
+4218 traveler.n.01# turista
+4221 # usted
+4226 # huespedes
+4227 dangerous.s.02# serio
+4228 good.a.01# bueno
+4229 better.v.02# mejorar
+4231 # iluminacion
+4233 four.s.01# 4
+4238 dark.a.02# oscuro
+4241 light_bulb.n.01# bombillo
+4243 thrifty.a.01# ahorrador
+4245 think.v.03# creer
+4248 force.n.04# personal
+4251 amiable.s.01# amable
+4252 # mucho
+4253 grace.n.02# gracia
+4256 opportune.a.01# oportuno
+4258 good.a.01# bueno
+4259 grace.n.02# gracia
+4260 miss.v.06# faltar
+4261 shower.n.04# ducha
+4264 # habitacion
+4267 give.v.10# dar
+4268 red_wine.n.01# tinto
+4270 # aromaticas
+4273 barroom.n.01# bar
+4276 swimming_pool.n.01# piscina
+4278 # incomodo
+4279 die.v.01# salir
+4282 swimming_pool.n.01# piscina
+4283 couple.n.04# par
+4284 muster.v.01# avenir
+4286 # recepcion
+4288 necessitate.v.01# pedir
+4289 red_wine.n.01# tinto
+4290 better.v.02# mejorar
+4294 # lamuerzos
+4296 # habitacion
+4298 shower.n.04# ducha
+4300 baneful.s.01# mortal
+4302 pillow.n.01# almohada
+4304 # cobija
+4305 divine.s.06# excelente
+4306 # balis
+4307 # insufucientes
+4309 person.n.01# persona
+4310 lodge.v.04# alojar
+4313 room.n.01# cuarto
+4316 unaccompanied.a.01# solo
+4317 bathtub.n.01# baño
+4320 # geeral
+4321 # mucho
+4322 inconvenience.n.03# incomodidad
+4323 price.n.02# precio
+4326 meal.n.01# comida
+4327 barroom.n.01# bar
+4329 water.n.01# agua
+4330 # fria
+4332 swimming_pool.n.01# piscina
+4334 # peligorsa
+4337 region.n.01# parte
+4340 shower.n.04# chorro
+4342 # gua
+4343 # fria
+4346 swimming_pool.n.01# piscina
+4347 # lavarlos
+4348 constantly.r.01# constantemente
+4352 # lamoso
+4354 displace.v.03# poder
+4355 be.v.01# ser
+4356 dangerous.a.01# peligroso
+4357 couple.n.04# par
+4358 # cualquiera
+4359 person.n.01# persona
+4362 # caida
+4363 think_of.v.03# considerar
+4365 # todo
+4367 room.n.01# habitación
+4369 shower.n.04# ducha
+4371 important.a.01# importante
+4373 shower.v.03# duchar
+4375 # todo
+4377 room.n.01# habitación
+4378 # recomer
+4379 give_birth.v.01# tener
+4380 room.n.01# habitación
+4382 person.n.01# persona
+4383 disabled.s.01# discapacitado
+4385 give_birth.v.01# tener
+4386 ribbon.n.04# cinta
+4388 # proteccion
+4391 step.n.04# escalera
+4394 dining_table.n.01# mesa
+4396 general.a.01# general
+4397 better.v.02# mejorar
+4399 breakfast.n.01# desayuno
+4400 accelerate.v.01# agilizar
+4401 while.n.01# tiempo
+4403 delivery.n.01# entrega
+4406 request.n.02# solicitud
+4408 nutriment.n.01# alimento
+4409 auxiliary.s.01# adicional
+4415 thermal.a.01# termal
+4416 better.v.02# mejorar
+4418 service.n.01# servicio
+4420 customer.n.01# cliente
+4422 # faltal
+4426 # room
+4427 # service
+4428 owe.v.01# deber
+4429 equip.v.01# equipar
+4431 room.n.01# habitación
+4433 refrigerator.n.01# nevera
+4434 owe.v.01# deber
+4436 put.v.01# poner
+4438 kind.n.01# tipo
+4440 set_to_music.v.01# musicar
+4442 entirely.r.02# solo
+4443 instrumental.a.01# instrumental
+4444 # mas
+4445 assortment.n.01# variedad
+4447 meal.n.01# comida
+4448 lack.n.01# falta
+4449 major.a.03# mayor
+4450 assortment.n.01# variedad
+4453 card.n.01# carta
+4455 restaurant.n.01# restaurante
+4456 better.v.02# mejorar
+4457 mattress.n.01# colchón
+4458 agility.n.01# agilidad
+4461 # resverva
+4462 inconvenience.n.03# inconveniente
+4465 payment.n.01# pago
+4467 technetium.n.01# tc
+4468 run.v.03# ampliar
+4470 while.n.01# tiempo
+4472 # estadia
+4475 # habitacion
+4476 give.v.10# dar
+4477 ease.n.01# facilidad
+4479 solve.v.01# solucionar
+4480 problem.n.02# problema
+4482 customer.n.01# cliente
+4485 service.n.01# servicio
+4487 restaurant.n.01# restaurante
+4489 watchfulness.n.02# atencion
+4491 postpone.v.01# demorar
+4494 person.n.01# persona
+4497 serve.v.10# atender
+4499 # tenian
+4500 obviously.r.01# claro
+4502 necessitate.v.01# pedir
+4503 make.v.03# realizar
+4506 give_birth.v.01# entregar
+4507 bad.a.01# mal
+4509 dish.n.02# plato
+4510 # tambien
+4513 # habitacion
+4516 cockroach.n.01# cucaracha
+4518 room.n.01# habitación
+4519 familiar.a.01# familiar
+4520 # deberian
+4521 state.v.01# contar
+4522 do.n.02# do
+4523 bathtub.n.01# baño
+4524 suggestion.n.02# sugerencia
+4526 # region
+4528 celebrated.s.01# famoso
+4531 sneak_thief.n.01# chorizo
+4533 look.v.02# parecer
+4534 important.a.01# importante
+4535 include.v.02# incluir
+4538 breakfast.n.01# desayuno
+4540 bathtub.n.01# baño
+4542 sanitary.a.01# sanitario
+4543 bad.a.01# malo
+4544 service.n.01# servicio
+4546 meal.n.01# comida
+4549 # habitacion
+4550 # menu
+4552 meal.n.01# comida
+4553 # mas
+4554 choose.v.01# seleccionar
+4558 relish.n.03# gusto
+4559 best.a.01# mejor
+4560 # preparacion
+4562 relish.n.03# sabor
+4564 recommend.v.01# recomendar
+4565 try.v.01# buscar
+4567 assurance.n.01# seguridad
+4570 # area
+4571 # humeda
+4572 # pues
+4574 opportunity.n.01# posibilidad
+4577 # caida
+4581 dwelling.n.01# piso
+4584 # lamoso
+4586 # cierto
+4587 region.n.01# parte
+4589 service.n.01# servicio
+4592 # cual
+4593 consume.v.02# tomar
+4595 # habitacion
+4597 state.v.01# decir
+4598 shower.n.04# ducha
+4600 swimming_pool.n.01# piscina
+4603 available.a.01# disponible
+4606 # estadia
+4609 # relacion
+4611 # prescio
+4614 service.n.01# servicio
+4618 adequate.a.01# adecuar
+4620 knock.n.03# piña
+4621 slip_in.v.01# colar
+4622 eat.v.02# consumir
+4625 night.n.01# noche
+4627 bad.a.01# malo
+4629 short.a.02# corto
+4632 mend.v.02# sanar
+4635 knock.n.03# piña
+4636 slip_in.v.01# colar
+4639 eat.v.02# consumir
+4642 topographic_point.n.01# lugar
+4643 necessitate.v.01# pedir
+4644 repayment.n.02# reembolso
+4647 pay.v.01# pagar
+4650 juice.n.01# jugo
+4653 knock.n.03# piña
+4656 correct.a.01# justo
+4657 pay.v.01# pagar
+4660 do.n.02# do
+4661 juice.n.01# jugo
+4663 knock.n.03# piña
+4664 cut.v.01# cortar
+4667 # habitacion
+4670 place.n.03# espacio
+4673 # nevere
+4674 abbreviated.s.01# mini
+4676 barroom.n.01# bar
+4677 make.v.03# hacer
+4678 lack.n.01# falta
+4680 room.n.01# habitación
+4683 building.n.01# casa
+4684 farm.n.01# finca
+4686 equipment.n.01# equipamiento
+4687 full.a.01# completo
+4690 adequate.a.01# adecuar
+4693 kind.n.01# clase
+4695 topographic_point.n.01# lugar
+4698 # habitacion
+4700 carry_through.v.01# cumplir
+4703 # estandar
+4706 # equioamiento
+4707 wicked.a.01# perverso
+4710 whole.n.02# unidad
+4711 sanitary.a.01# sanitario
+4712 feign.v.01# simular
+4714 state.v.01# contar
+4717 place.n.03# espacio
+4719 lodge.v.04# alojar
+4722 person.n.01# persona
+4725 environment.n.02# ambiente
+4726 noisy.a.01# ruidoso
+4727 eminent.s.01# alto
+4728 transit.v.01# transitar
+4731 personal.a.01# personal
+4733 hotel.n.01# hotel
+4736 # huespedes
+4738 # ventilacion
+4739 # mas
+4741 bad.a.01# malo
+4743 room.n.01# sala
+4745 # toldillo
+4747 bad.a.01# mal
+4751 curtain.n.01# cortina
+4753 filter.v.01# filtrar
+4754 light.n.01# luz
+4757 rank.n.02# estatus
+4759 hotel.n.01# hotel
+4762 # deberia
+4763 think_of.v.03# considerar
+4765 think.v.03# pensar
+4767 lodge.v.04# alojar
+4769 # alguien
+4770 # alli
+4771 recommend.v.01# recomendar
+4772 mountain.n.01# montaña
+4774 cabana.n.01# cabaña
+4776 appeal.n.02# encanto
+4779 good.a.01# bueno
+4780 connection.n.01# conexión
+4782 world_wide_web.n.01# internet
+4785 room.n.01# cuarto
+4787 divine.s.06# excelente
+4788 best.a.01# mejor
+4789 # iluminacion
+4792 bathtub.n.01# baño
+4793 # vestieres
+4794 untidy.a.01# sucio
+4797 bad.a.01# mal
+4799 # pasadia
+4802 important.a.01# importante
+4803 give_birth.v.01# tener
+4805 topographic_point.n.01# lugar
+4806 # comodo
+4808 available.a.01# disponible
+4811 one.s.01# 1
+4812 dwelling.n.01# piso
+4814 adult.n.01# adulto
+4815 major.a.03# mayor
+4817 disabled.s.01# discapacitado
+4819 change.v.05# cambiarse
+4821 clothing.n.01# ropa
+4823 dining_table.n.01# mesa
+4825 # estan
+4827 side.n.04# lado
+4830 bed.n.01# cama
+4832 stitch.n.01# puntada
+4834 dangerous.a.01# peligroso
+4836 boyfriend.n.01# novio
+4838 # dormio
+4841 knock.n.01# golpeo
+4843 head.n.01# cabeza
+4846 head.n.01# punta
+4847 # causandole
+4849 # chichon
+4851 shed_blood.v.02# sangrar
+4852 favor.n.01# favor
+4853 solve.v.01# solucionar
+4855 problem.n.02# problema
+4856 give_birth.v.01# tener
+4858 state.v.01# contar
+4861 shower.n.04# chorro
+4862 proceed.v.02# seguir
+4865 count.v.02# pesar
+4867 sludge.n.02# lama
+4869 slippery.a.01# resbaladizo
+4870 better.v.02# mejorar
+4871 # wifi
+4874 # habitacion
+4875 better.v.02# mejorar
+4876 delivery.n.01# entrega
+4878 # habitacion
+4880 # cuanto
+4882 service.n.01# servicio
+4885 enclosed.a.01# incluir
+4887 service.n.01# servicio
+4889 # alimentacion
+4892 price.n.04# valor
+4895 # estadia
+4896 better.v.02# mejorar
+4898 communication.n.02# comunicación
+4900 booking.n.02# reserva
+4903 complex.a.01# complicar
+4904 rent.n.01# alquiler
+4905 departure.n.01# salida
+4907 descend.v.01# bajar
+4909 increase.v.02# subir
+4911 watering_place.n.01# balneario
+4912 # algun
+4913 # vehicular
+4914 try.v.01# tratar
+4916 better.v.02# mejorar
+4918 doorway.n.01# acceso
+4920 # huespedes
+4922 season.n.01# temporada
+4923 eminent.s.01# alto
+4924 water.n.01# agua
+4925 hot.a.01# tibio
+4928 sink.n.01# lavamanos
+4930 # repar
+4931 torch.n.01# linterna
+4933 bathtub.n.01# baño
+4934 put.v.01# colocar
+4935 set_to_music.v.01# musicar
+4936 colombian.a.01# colombiano
+4937 supply.v.01# suministrar
+4939 number.v.02# numerar
+4941 mobile.a.02# celular
+4944 thermal.a.01# termal
+4949 displace.v.03# poder
+4951 # estabamos
+4954 township.n.01# municipio
+4956 # requeriamos
+4958 # informacion
+4959 # calefaccion
+4961 fireplace.n.01# chimenea
+4964 time.n.02# hora
+4965 social.a.01# social
+4966 delay.n.01# demora
+4969 # comedor
+4972 even.a.03# regular
+4974 watchfulness.n.02# atencion
+4977 water.n.01# agua
+4978 warm.a.01# caliente
+4981 # habitacion
+4983 water.n.01# agua
+4986 sink.n.01# lavamanos
+4987 run.v.06# correr
+4988 water.n.01# agua
+4991 step.n.04# escalera
+4993 # afuera
+4995 transport.v.02# llevar
+4998 # habitacion
+5000 brew.n.01# poción
+5002 # menu
+5004 restaurant.n.01# restaurante
+5007 breakfast.n.01# desayuno
+5008 bad.a.01# malo
+5009 watchfulness.n.02# atencion
+5011 # deberia
+5013 region.n.01# parte
+5015 personal.a.01# personal
+5017 cafeteria.n.01# autoservicio
+5020 barroom.n.01# bar
+5021 better.v.02# mejorar
+5023 service.n.01# servicio
+5025 restaurant.n.01# restaurante
+5027 necessitate.v.01# solicitar
+5028 box.n.01# caja
+5031 # habia
+5032 hurt.v.05# dañar
+5034 plot.v.01# maquinar
+5036 bad.s.09# inseguro
+5037 slippery.a.01# resbaloso
+5039 dangerous.a.01# peligroso
+5044 hang.v.01# colgar
+5048 chair.n.01# silla
+5051 four.s.01# 4
+5053 # habitacion
+5055 give_birth.v.01# entregar
+5058 # restraso
+5061 while.n.01# minuto
+5063 room.n.01# habitación
+5064 # estan
+5065 full.a.01# lleno
+5067 moisture.n.01# humedad
+5070 sooth.n.01# verdad
+5072 # dormi
+5075 lawsuit.n.01# causa
+5077 smell.n.01# olor
+5080 loud.a.01# fuerte
+5082 shower.n.04# ducha
+5084 # empozar
+5087 # iluminacion
+5089 bathtub.n.01# baño
+5091 bad.a.01# malo
+5092 change.v.01# cambiar
+5093 curtain.n.01# cortina
+5095 bathtub.n.01# baño
+5098 # inda
+5100 put.v.01# colocar
+5101 shelf.n.01# repisa
+5104 shower.v.03# duchar
+5106 change.v.01# cambiar
+5108 # sifon
+5110 effective.a.01# efectivo
+5112 service.n.01# servicio
+5115 # habitacion
+5116 give_birth.v.01# tener
+5117 service.n.01# servicio
+5119 meal.n.01# comida
+5122 # habitacion
+5124 name.v.01# llamar
+5125 necessitate.v.01# solicitar
+5129 give.v.10# dar
+5131 # habitacion
+5132 small.a.01# pequeño
+5137 # ahí
+5141 small.a.01# pequeño
+5143 bathtub.n.01# baño
+5146 bustle.n.01# bulla
+5148 sell.v.01# vender
+5149 # informacion
+5150 foolproof.s.01# certero
+5151 inside.r.02# dentro
+5154 software.n.01# paquete
+5155 # turisticos
+5159 sell.v.01# vender
+5160 software.n.01# paquete
+5162 # informacion
+5163 # erronea
+5165 # publiciad
+5166 gilded.s.02# engañoso
+5169 # catigada
+5171 # cotelco
+5173 function.n.03# ministerio
+5175 car.n.01# turismo
+5177 # varios
+5178 thing.n.08# cosa
+5180 better.v.02# mejorar
+5181 # mobiliario
+5183 # habitacion
+5185 rug.n.01# tapete
+5191 time.n.02# hora
+5193 # cambiarlo
+5194 retool.v.01# remodelar
+5196 room.n.01# habitación
+5197 elevator.n.01# ascensor
+5198 give_birth.v.01# entregar
+5200 # habitacion
+5204 post_meridiem.s.01# pm
+5206 waiter.n.01# mesero
+5208 argus-eyed.s.02# atento
+5210 lack.n.01# falta
+5211 best.a.01# mejor
+5212 # programacion
+5215 while.n.01# tiempo
+5218 bathtub.n.01# baño
+5219 # mas
+5220 watchfulness.n.02# atencion
+5223 paper.n.01# papel
+5225 odorless.a.01# inodoro
+5226 finely.r.03# bien
+5227 include.v.02# incluir
+5228 hugo.n.01# hugo
+5230 # guanabana
+5232 milk.n.01# leche
+5234 # menu
+5236 # tencion
+5238 # repcion
+5239 divine.s.06# excelente
+5240 owe.v.01# deber
+5242 be.v.03# haber
+5243 bathtub.n.01# baño
+5246 room.n.01# habitación
+5249 divine.s.06# excelente
+5250 water.n.01# agua
+5251 warm.a.01# caliente
+5254 shower.n.04# ducha
+5255 better.v.02# mejorar
+5257 card.n.01# carta
+5259 eat.v.02# comer
+5262 handiness.n.02# disponibilidad
+5265 dish.n.02# plato
+5266 adequate.a.01# acertar
+5269 heater.n.01# calentador
+5271 about.r.07# casi
+5272 # todo
+5274 # estadia
+5277 visible.s.03# visible
+5279 # politica
+5281 sustainability.n.01# sostenibilidad
+5282 # mas
+5283 service.n.01# servicio
+5285 customer.n.01# cliente
+5286 privacy.n.02# privacidad
+5289 # huespedese
+5290 ask.v.04# esperar
+5292 while.n.01# minuto
+5295 meal.n.01# comida
+5296 better.v.02# mejorar
+5297 quality.n.01# calidad
+5301 meal.n.01# comida
+5302 explicit.a.01# expreso
+5303 groan.v.01# quejar
+5306 departure.n.01# salida
+5311 correct.a.01# justo
+5314 put.v.01# poner
+5316 ask.v.04# esperar
+5317 do.n.02# do
+5318 time.n.02# hora
+5320 queue.n.01# fila
+5321 # larguisimas
+5323 ability.n.02# poder
+5324 increase.v.02# subir
+5326 hotel.n.01# hotel
+5330 # congestion
+5333 # balnerario
+5336 arrive.v.01# venir
+5338 bogota.n.01# bogota
+5341 child.n.01# niño
+5343 # nadie
+5344 give.v.10# dar
+5346 appearance.n.01# cara
+5348 necessitate.v.01# pedir
+5349 apology.n.01# disculpa
+5351 service.n.01# servicio
+5353 world_wide_web.n.01# internet
+5356 bad.a.01# malo
+5357 better.v.02# mejorar
+5358 car.n.01# auto
+5359 service.n.01# servicio
+5361 opportunity.n.01# oportunidad
+5362 divine.s.06# excelente
+5363 consume.v.05# reducir
+5365 # presion
+5368 shower.n.04# ducha
+5371 # habitacion
+5373 try.v.01# tratar
+5375 consume.v.05# reducir
+5377 moisture.n.01# humedad
+5380 # habitcion
+5381 better.v.02# mejorar
+5383 # iluminacion
+5386 room.n.01# habitación
+5388 # televison
+5390 wire.n.02# cable
+5393 while.n.01# tiempo
+5396 # habitacion
+5398 eat.v.02# comer
+5401 postpone.v.01# demorar
+5406 serve.v.10# atender
+5407 round.a.01# circular
+5410 action.n.02# actividad
+5412 hotel.n.01# hotel
+5413 sleep.v.01# dormir
+5416 # habitacion
+5420 impossible.a.01# imposible
+5421 sleep.v.01# dormir
+5424 side.n.04# lado
+5427 # vestier
+5429 restaurant.n.01# restaurante
+5432 noise.n.01# ruido
+5434 impressive.a.01# impresionante
+5436 switch_off.v.01# apagar
+5444 child.n.01# niño
+5446 displace.v.03# poder
+5447 sleep.v.01# dormir
+5448 finely.r.03# bien
+5449 give_birth.v.01# tener
+5450 education.n.01# instrucción
+5451 written.a.01# escribir
+5454 room.n.01# habitación
+5457 operation.n.01# manejo
+5460 television.n.01# televisor
+5463 # salvavidas
+5466 swimming_pool.n.01# piscina
+5468 # huspedes
+5469 never.r.01# nunca
+5470 # funcio
+5473 television.n.01# televisor
+5476 examination.n.01# control
+5477 far.a.01# remoto
+5480 try.v.01# intentar
+5481 better.v.02# arreglar
+5482 do.n.02# do
+5483 case.n.01# vez
+5485 never.r.01# nunca
+5486 function.v.01# funcionar
+5487 # debrian
+5488 treat.v.03# preocuparse
+5489 # mas
+5492 customer.n.01# cliente
+5494 hotel.n.01# hotel
+5499 happen.v.01# pasar
+5501 # dia
+5504 room.n.01# habitación
+5506 shower.n.04# ducha
+5507 better.v.02# mejorar
+5509 mold.n.05# moho
+5512 wall.n.01# pared
+5514 two.s.01# 2
+5515 dwelling.n.01# piso
+5517 roof.n.01# techo
+5519 bathtub.n.01# baño
+5520 give.v.10# dar
+5521 ill.r.01# mal
+5522 appearance.n.01# apariencia
+5523 consume.v.02# tomar
+5525 plan.n.01# plan
+5526 # romantico
+5529 repair.n.01# arreglo
+5532 # habitacion
+5535 # basico
+5536 # informacion
+5538 # incluia
+5539 # petalos
+5541 pink.n.01# rosa
+5545 # asi
+5547 set_to_music.v.01# musicar
+5550 swimming_pool.n.01# piscina
+5553 case.n.01# instancia
+5556 like.a.02# mismo
+5559 cuban.a.01# cubano
+5560 instrumental.a.01# instrumental
+5563 time.n.02# hora
+5565 necessitate.v.01# solicitar
+5566 # cambiarla
+5569 reaction.n.03# respuesta
+5574 recommend.v.01# recomendar
+5577 receptionist.n.01# recepcionista
+5579 # mas
+5580 teach.v.01# educar
+5583 # groeros
+5585 respect.v.01# respetar
+5587 people.n.01# gente
+5588 grace.n.02# gracia
+5590 meal.n.01# comida
+5592 bad.a.01# malo
+5594 elate.v.01# intoxicar
+5596 pie.n.01# empanada
+5599 # sr
+5600 # arvelaez
+5601 arrive.v.01# llegar
+5604 personal.a.01# personal
+5606 increase.v.02# subir
+5607 baggage.n.01# maleta
+5608 # mucho
+5609 step.n.04# escalera
+5610 # mas
+5611 arrangement.n.03# organización
+5614 service.n.01# servicio
+5616 restaurant.n.01# restaurante
+5618 eat.v.02# comer
+5619 option.n.02# opción
+5620 # vegetariano
+5623 # menu
+5625 afford.v.04# permitir
+5627 consumption.n.01# consumo
+5629 nutriment.n.01# alimento
+5631 # bebdidas
+5632 put.v.01# dejar
+5635 # pisconas
+5636 improvement.n.02# mejora
+5637 arrangement.n.03# organización
+5640 waiter.n.01# mesero
+5642 # wifi
+5644 function.v.01# funcionar
+5645 accurately.r.01# correctamente
+5647 # separacion
+5649 # huspedes
+5651 # dificl
+5653 impossible.a.01# imposible
+5654 achieve.v.01# conseguir
+5655 ice.n.01# hielo
+5657 plot.v.01# maquinar
+5659 ice.n.01# hielo
+5662 # refrigerador
+5664 ice.n.01# hielo
+5666 watchfulness.n.02# atencion
+5669 barroom.n.01# bar
+5672 adequate.a.01# adecuar
+5673 miss.v.06# faltar
+5674 # amabalidad
+5677 world_wide_web.n.01# internet
+5680 slow.a.02# lento
+5681 better.v.02# mejorar
+5683 # wifi
+5685 # enla
+5686 # habitacion
+5690 # neverita
+5691 # citon
+5693 bathtub.n.01# baño
+5695 inadequate.s.02# bajo
+5697 favor.n.01# favor
+5698 retool.v.01# revisar
+5700 advisable.a.01# recomendable
+5701 put.v.01# poner
+5703 double.a.04# doble
+5704 shower.n.04# ducha
+5706 better.v.02# mejorar
+5708 location.n.01# ubicación
+5710 television.n.01# tv
+5713 # habitacion
+5716 consume.v.02# tomar
+5717 about.r.07# cerca
+5720 bed.n.01# cama
+5721 increase.v.02# aumentar
+5723 examination.n.01# control
+5725 income.n.01# ingreso
+5727 clothing.n.01# ropa
+5728 adequate.a.01# adecuar
+5730 swimming_pool.n.01# piscina
+5732 # menu
+5733 # mas
+5734 healthy.a.01# saludable
+5735 better.v.02# mejorar
+5737 income.n.01# ingreso
+5739 # huespedes
+5741 hotel.n.01# hotel
+5746 ask.v.04# esperar
+5748 time.n.02# hora
+5750 pull_in.v.03# ingresar
+5751 dangerous.s.02# serio
+5752 good.a.01# bueno
+5755 give.v.10# dar
+5756 preference.n.01# preferencia
+5758 income.n.01# ingreso
+5760 # huepedes
+5761 paper.n.01# papel
+5763 bathtub.n.01# baño
+5765 # iluminacion
+5768 # habitacion
+5771 noise.n.01# ruido
+5774 cooking.n.01# cocina
+5776 # habia
+5777 litterbin.n.01# papelera
+5778 assortment.n.01# variedad
+5781 breakfast.n.01# desayuno
+5782 # debuido
+5786 # estadia
+5789 # dias
+5791 unpleasant.a.01# desagradable
+5793 option.n.02# opción
+5794 think_of.v.03# considerar
+5797 visitor.n.01# visitante
+5800 necessitate.v.01# pedir
+5802 # profesion
+5803 greatcoat.n.01# sobretodo
+5805 # medicos
+5806 better.v.02# mejorar
+5808 world_wide_web.n.01# internet
+5811 restaurant.n.01# restaurante
+5813 bad.a.01# malo
+5814 meal.n.01# comida

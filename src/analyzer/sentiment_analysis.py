@@ -37,8 +37,9 @@ class TextPolarity:
 
 class WordPolarity:
 
-    def __init__(self, word, select='none'):
-        self.word = word
+    def __init__(self, indexed_word, select='none'):
+        self.text_offset = re.findall(r'(\d+ ).+', indexed_word)[0]
+        self.word = re.findall(r'\d+ (.+)', indexed_word)[0]
         self.selected_synsets = self.select_synsets(self, wn.synsets(self.word, lang='spa'), select)
         self.pos_score, self.neg_score, self.obj_score = self.compute_scores()
 
@@ -147,6 +148,13 @@ class WordPolarity:
                     valid_synsets.append(synset)
         return valid_synsets
 
+    @staticmethod
+    def select_disambiguated_synset(self, synsets):
+        """
+        :param synsets: useless here
+        :return: the synset corresponding to the disambiguated one corresponding to the word in its context,
+        previously computed in disambiguated folder
+        """
 
 def main():
     #print_polarity_table(select='common')

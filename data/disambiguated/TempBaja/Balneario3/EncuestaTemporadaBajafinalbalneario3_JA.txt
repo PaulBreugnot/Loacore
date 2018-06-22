@@ -1,23 +1,23 @@
-monetary_value.n.01# precios
-# cafeteria
-# varios
-argus-eyed.s.02# vigilantes
-entrance.n.03# entrada
-monetary_value.n.01# precios
-path.n.03# rutas
-handiness.n.02# accesibilidad
-miss.v.06# faltan
-shower.n.01# duchas
-monetary_value.n.01# precios
-# mas
-waiter.n.01# meseros
-monetary_value.n.01# precios
-monetary_value.n.01# precios
-option.n.01# opciones
-nutriment.n.01# alimentos
-# cafeteria
-monetary_value.n.01# precios
-watchfulness.n.02# atencion
-# cafe
-# cafesito
-# informacion
+1 monetary_value.n.01# precio
+3 # cafeteria
+4 # varios
+5 argus-eyed.s.02# vigilante
+8 entrance.n.03# entrada
+10 monetary_value.n.01# precio
+11 path.n.03# ruta
+13 handiness.n.02# accesibilidad
+14 miss.v.06# faltar
+15 shower.n.01# ducha
+17 monetary_value.n.01# precio
+18 # mas
+19 waiter.n.01# mesero
+21 monetary_value.n.01# precio
+23 monetary_value.n.01# precio
+25 option.n.01# opción
+28 nutriment.n.01# alimento
+29 # cafeteria
+31 monetary_value.n.01# precio
+33 watchfulness.n.02# atencion
+35 # cafe
+37 # cafesito
+39 # informacion

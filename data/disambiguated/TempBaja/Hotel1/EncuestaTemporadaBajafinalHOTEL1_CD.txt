@@ -1,184 +1,184 @@
-# informacion
-booklet.n.01# folletos
-# carrtera
-bathroom.n.01# baños
-dirty.a.01# sucios
-monetary_value.n.01# precio
-# pasadia
-lunch.n.01# almuerzo
-enclosed.a.01# incluido
-miss.v.06# falta
-ad.n.01# publicidad
-increase.n.02# incremento
-entrance.n.01# entradas
-topographic_point.n.01# sitio
-# exlusivo
-# excluyente
-help.v.01# ayudaron
-mammary_gland.n.01# mama
-# demasiada
-# presion
-water.n.01# agua
-miss.v.06# falta
-watchfulness.n.02# atencion
-necessity.n.02# necesidad
-# vestier
-one.s.01# primer
-dwelling.n.01# piso
-road.n.01# carretera
-pave.v.01# pavimentar
-dwelling.n.01# pisos
-wet.a.01# mojados
-slippery.a.01# resbaladizos
-schedule.n.02# horario
-restrict.v.03# restringido
-swimming_pool.n.01# piscina
-bracelet.n.02# brazaletes
-temperature.n.01# temperatura
-water.n.01# agua
-# mas
-short.a.03# baja
-# mas
-pleasing.a.01# agradable
-road.n.01# camino
-# camaras
-# estan
-hide.v.01# tapadas
-shrub.n.01# arbustos
-ease.n.01# facilidad
-person.n.01# personas
-major.a.03# mayores
-# vias
-miss.v.06# falta
-framework.n.03# infraestructura
-umbrella.n.01# sombrilla
-dining_table.n.01# mesas
-# carpa
-hand.n.01# pata
-# mojatse
-road.n.01# camino
-# cafe
-temperature.n.01# temperatura
-tall.a.01# alta
-entrance.n.01# acceso
-invest.v.01# invierten
-topographic_point.n.01# lugar
-same.a.02# mismo
-maltreatment.n.01# maltrato
-# hacia
-employee.n.01# empleados
-road.n.01# carretera
-narrow.a.01# angosta
-entrance.n.01# entrada
-miss.v.06# falta
-relish.n.03# sabor
-lunch.n.01# comida
-lunch.n.01# comida
-# habitacion
-listen.v.01# escuchaba
-sound.n.02# sonido
-# cascafa
-service.n.01# servicio
-towel.n.01# toallas
-indulgence.n.03# mimos
-benefit.n.02# beneficios
-# huespedes
-# tanta
-people.n.01# gente
-place.n.03# espacio
-so.r.01# tan
-small.a.01# pequeño
-unaccompanied.a.01# solo
-entrance.n.01# acceso
-unaccompanied.a.01# sola
-swimming_pool.n.01# piscina
-watchfulness.n.02# atencion
-waiter.n.01# meseros
-desire.v.01# quiso
-listen.v.01# atender
-treat.v.03# trataron
-bad.a.01# mal
-swimming_pool.n.01# piscina
-small.a.01# pequeña
-lunch.n.01# comida
-service.n.01# servicio
-lunch.n.01# comida
-# construccion
-# nova
-# aer
-# acorde
-environment.n.02# entorno
-water.n.01# agua
-warm.a.01# caliente
-shower.n.01# ducha
-# jabon
-# elevador
-hotel.n.01# hotel
-room.n.01# cuartos
-# ventilador
-lunch.n.01# comida
-even.a.03# regular
-# mucha
-assortment.n.01# variedad
-hotel.n.01# hotel
-room.n.01# habitaciones
-# construccion
-way.n.07# trayecto
-hotel.n.01# hotel
-swimming_pool.n.01# piscina
-swimming_pool.n.01# piscinas
-attached.a.02# anexas
-good.a.01# buena
-watchfulness.n.02# atencion
-miss.v.06# faltaron
-negligee.n.01# batas
-# habitacion
-comfort.n.02# tranquilidad
-area.n.05# zonas
-restaurant.n.01# restaurante
-area.n.05# zona
-parking_lot.n.01# parqueo
-# lejania
-# poca
-assortment.n.01# variedad
-# menu
-delay.n.01# demora
-# construccion
-monetary_value.n.01# costo
-beverage.n.01# tragos
-monetary_value.n.01# precio
-entrance.n.01# entrada
-price.n.04# valor
-room.n.01# habitaciones
-displace.v.03# pueden
-perceive.v.01# ver
-swimming_pool.n.01# piscinas
-monetary_value.n.01# precio
-# cafe
-# parqueadero
-farther.r.02# lejos
-monetary_value.n.01# precio
-# comid
-short.a.03# baja
-watchfulness.n.02# atencion
-restaurant.n.01# restaurante
-function.v.01# funciona
-# wi
-phi.n.01# fi
-# habitacion
-troublesomeness.n.01# inconvenientes
-massage.n.01# masajes
-# muchas
-# vecesno
-handiness.n.02# disponibilidad
-attentional.a.01# atencional
-customer.n.01# cliente
-# frio
-# construccion
-weather.n.01# clima
-# frio
-window.n.01# ventanas
-thick.a.01# gruesas
-listen.v.01# escuchaba
-sound.n.02# sonido
-masturbate.v.02# cascada
+2 # informacion
+4 booklet.n.01# folleto
+6 # carrtera
+8 bathroom.n.01# baño
+9 dirty.a.01# sucio
+10 monetary_value.n.01# precio
+13 # pasadia
+16 lunch.n.01# almuerzo
+17 enclosed.a.01# incluir
+19 miss.v.06# faltar
+21 ad.n.01# publicidad
+23 increase.n.02# incremento
+26 entrance.n.01# entrada
+27 topographic_point.n.01# sitio
+28 # exlusivo
+30 # excluyente
+33 help.v.01# ayudar
+36 mammary_gland.n.01# mama
+37 # demasiado
+38 # presion
+40 water.n.01# agua
+41 miss.v.06# faltar
+43 watchfulness.n.02# atencion
+46 necessity.n.02# necesidad
+47 # vestier
+52 one.s.01# 1
+53 dwelling.n.01# piso
+54 road.n.01# carretera
+56 pave.v.01# pavimentar
+58 dwelling.n.01# piso
+59 wet.a.01# mojar
+62 slippery.a.01# resbaladizo
+63 schedule.n.02# horario
+64 restrict.v.03# restringir
+67 swimming_pool.n.01# piscina
+70 bracelet.n.02# brazalete
+73 temperature.n.01# temperatura
+75 water.n.01# agua
+77 # mas
+78 short.a.03# bajo
+79 # mas
+80 pleasing.a.01# agradable
+83 road.n.01# camino
+85 # camaras
+86 # estan
+87 hide.v.01# tapar
+89 shrub.n.01# arbusto
+92 ease.n.01# facilidad
+94 person.n.01# persona
+95 major.a.03# mayor
+97 # vias
+99 miss.v.06# faltar
+100 framework.n.03# infraestructura
+104 umbrella.n.01# sombrilla
+107 dining_table.n.01# mesa
+111 # carpir
+112 hand.n.01# pata
+114 # mojatse
+117 road.n.01# camino
+119 # cafe
+120 temperature.n.01# temperatura
+121 tall.a.01# alto
+123 entrance.n.01# acceso
+125 invest.v.01# invertir
+128 topographic_point.n.01# lugar
+132 same.a.02# mismo
+133 maltreatment.n.01# maltrato
+134 # hacia
+136 employee.n.01# empleado
+138 road.n.01# carretera
+139 narrow.a.01# angosto
+141 entrance.n.01# entrada
+143 miss.v.06# faltar
+144 relish.n.03# sabor
+147 lunch.n.01# comida
+149 lunch.n.01# comida
+152 # habitacion
+154 listen.v.01# escuchar
+156 sound.n.02# sonido
+159 # cascafa
+163 service.n.01# servicio
+165 towel.n.01# toalla
+170 indulgence.n.03# mimo
+171 benefit.n.02# beneficio
+174 # huespedes
+175 # tanto
+176 people.n.01# gente
+179 place.n.03# espacio
+180 so.r.01# tan
+181 small.a.01# pequeño
+183 unaccompanied.a.01# solo
+185 entrance.n.01# acceso
+188 unaccompanied.a.01# solo
+189 swimming_pool.n.01# piscina
+191 watchfulness.n.02# atencion
+195 waiter.n.01# mesero
+198 desire.v.01# querer
+199 listen.v.01# atender
+202 treat.v.03# tratar
+203 bad.a.01# mal
+205 swimming_pool.n.01# piscina
+206 small.a.01# pequeño
+208 lunch.n.01# comida
+210 service.n.01# servicio
+213 lunch.n.01# comida
+215 # construccion
+216 # novar
+218 # aer
+219 # acorde
+222 environment.n.02# entorno
+225 water.n.01# agua
+226 warm.a.01# caliente
+228 shower.n.01# ducha
+230 # jabon
+233 # elevador
+236 hotel.n.01# hotel
+237 room.n.01# cuarto
+239 # ventilador
+240 lunch.n.01# comida
+242 even.a.03# regular
+244 # mucho
+245 assortment.n.01# variedad
+247 hotel.n.01# hotel
+252 room.n.01# habitación
+254 # construccion
+256 way.n.07# trayecto
+259 hotel.n.01# hotel
+262 swimming_pool.n.01# piscina
+264 swimming_pool.n.01# piscina
+265 attached.a.02# anexo
+268 good.a.01# bueno
+269 watchfulness.n.02# atencion
+270 miss.v.06# faltar
+271 negligee.n.01# bata
+273 # habitacion
+276 comfort.n.02# tranquilidad
+279 area.n.05# zona
+280 restaurant.n.01# restaurante
+281 area.n.05# zona
+283 parking_lot.n.01# parqueo
+284 # lejania
+286 # poco
+287 assortment.n.01# variedad
+290 # menu
+292 delay.n.01# demora
+295 # construccion
+298 monetary_value.n.01# costo
+301 beverage.n.01# trago
+303 monetary_value.n.01# precio
+306 entrance.n.01# entrada
+308 price.n.04# valor
+312 room.n.01# habitación
+315 displace.v.03# poder
+316 perceive.v.01# ver
+318 swimming_pool.n.01# piscina
+320 monetary_value.n.01# precio
+322 # cafe
+323 # parqueadero
+324 farther.r.02# lejos
+326 monetary_value.n.01# precio
+329 # comid
+330 short.a.03# bajo
+331 watchfulness.n.02# atencion
+334 restaurant.n.01# restaurante
+336 function.v.01# funcionar
+338 # wi
+339 phi.n.01# fi
+342 # habitacion
+343 troublesomeness.n.01# inconveniente
+346 massage.n.01# masaje
+348 # mucho
+349 # vecesno
+351 handiness.n.02# disponibilidad
+352 attentional.a.01# atencional
+353 customer.n.01# cliente
+355 # frio
+357 # construccion
+359 weather.n.01# clima
+361 # frio
+363 window.n.01# ventana
+367 thick.a.01# grueso
+370 listen.v.01# escuchar
+372 sound.n.02# sonido
+375 masturbate.v.02# cascar

@@ -1,2 +1,2 @@
-price.n.02# precios
-low.a.02# bajos
+0 price.n.02# precio
+1 low.a.02# bajo

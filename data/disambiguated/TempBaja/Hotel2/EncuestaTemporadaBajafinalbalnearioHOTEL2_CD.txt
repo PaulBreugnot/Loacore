@@ -1,60 +1,60 @@
-lunch.n.01# comida
-set_to_music.v.01# musica
-lack.n.01# falta
-thing.n.08# cosas
-# ecologicas
-put.v.01# dejan
-enter.v.01# entrar
-lunch.n.01# refrigerios
-price.n.02# precios
-tall.a.01# altos
-miss.v.06# faltan
-# mas
-room.n.01# habitaciones
-price.n.02# precios
-# prosupuestos
-tall.a.01# altos
-lunch.n.01# comida
-set_to_music.v.01# musica
-# hodaje
-lack.n.01# falta
-turkish.a.01# turco
-sauna.n.01# sauna
-transportation.n.02# transporte
-particular.s.01# especial
-observe.v.06# celebran
-birthday.n.01# cumpleaños
-residency.n.01# alojamiento
-restaurant.n.01# restaurante
-price.n.02# precios
-tall.a.01# altos
-watchfulness.n.02# atencion
-lunch.n.01# comida
-# infrastructuras
-lunch.n.01# comida
-price.n.02# precios
-tall.a.01# altos
-# vias
-bequeath.v.01# dan
-lunch.n.01# refrigerio
-# mucha
-people.n.01# gente
-watchfulness.n.02# atencion
-lunch.n.01# comida
-# toballas
-shower.n.04# lluvia
-# parqueadero
-# deberian
-give_birth.v.01# tener
-road.n.01# ruta
-q.n.01# q
-middle.a.04# medio
-transportation.n.02# transporte
-deduction.n.02# descuento
-# pars
-entrance.n.03# entradas
-old_man.n.01# ancianos
-rain.n.02# agua
-shower.n.04# duchas
-# hidratacion
-hike.n.01# caminatas
+0 lunch.n.01# comida
+2 set_to_music.v.01# musicar
+3 lack.n.01# falta
+4 thing.n.08# cosa
+5 # ecologicas
+7 put.v.01# dejar
+8 enter.v.01# entrar
+9 lunch.n.01# refrigerio
+10 price.n.02# precio
+11 tall.a.01# alto
+12 miss.v.06# faltar
+13 # mas
+14 room.n.01# habitación
+16 price.n.02# precio
+17 # prosupuestos
+19 tall.a.01# alto
+21 lunch.n.01# comida
+24 set_to_music.v.01# musicar
+26 # hodaje
+28 lack.n.01# falta
+29 turkish.a.01# turco
+31 sauna.n.01# sauna
+35 transportation.n.02# transporte
+36 particular.s.01# especial
+38 observe.v.06# celebrar
+40 birthday.n.01# cumpleaños
+42 residency.n.01# alojamiento
+43 restaurant.n.01# restaurante
+44 price.n.02# precio
+45 tall.a.01# alto
+48 watchfulness.n.02# atencion
+50 lunch.n.01# comida
+54 # infrastructuras
+57 lunch.n.01# comida
+58 price.n.02# precio
+59 tall.a.01# alto
+61 # vias
+64 bequeath.v.01# dar
+65 lunch.n.01# refrigerio
+66 # mucho
+67 people.n.01# gente
+69 watchfulness.n.02# atencion
+71 lunch.n.01# comida
+72 # toballas
+74 shower.n.04# lluvia
+76 # parqueadero
+77 # deberian
+79 give_birth.v.01# tener
+80 road.n.01# ruta
+81 q.n.01# q
+84 middle.a.04# medio
+86 transportation.n.02# transporte
+89 deduction.n.02# descuento
+90 # pars
+92 entrance.n.03# entrada
+94 old_man.n.01# anciano
+96 rain.n.02# agua
+99 shower.n.04# ducha
+100 # hidratacion
+103 hike.n.01# caminata

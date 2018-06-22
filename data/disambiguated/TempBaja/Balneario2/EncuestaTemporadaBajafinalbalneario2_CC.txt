@@ -1,146 +1,146 @@
-landscape.n.01# paisajes
-water.n.01# agua
-# caliemten
-waterfall.n.01# cascada
-thermal.a.01# termales
-masturbate.v.02# cascada
-# nsturaleza
-# ecologia
-landscape.n.01# paisaje
-store.n.02# reserva
-unaffected.a.04# natural
-landscape.n.01# paisaje
-# naturalesa
-# paisahe
-masturbate.v.02# cascada
-# paiaaje
-swimming_pool.n.01# piscinas
-water.n.01# agua
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-# pesesitos
-landscape.n.01# paisaje
-# picsina
-tophus.n.01# tofo
-universe.n.01# naturaleza
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-# acojedor
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-quiet.a.01# tranquilo
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-good.a.01# buena
-watchfulness.n.02# atencion
-landscape.n.01# paisaje
-thermal.a.01# termales
-quality.n.01# calidad
-# tranqulidad
-landscape.n.01# paisaje
-# tranqulidad
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-# armonia
-landscape.n.01# paisaje
-environment.n.02# ambiente
-# tranwuiludad
-composure.n.01# tranquilidad
-landscape.n.01# paisaje
-universe.n.01# naturaleza
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-universe.n.01# naturaleza
-# teanqulidad
-water.n.01# agua
-thermal.a.01# termal
-# aguala
-waterfall.n.01# cascada
-thermal.a.01# termales
-landscape.n.01# paisaje
-water.n.01# aguas
-meal.n.01# comida
-# atencin
-# nsturaleza
-universe.n.01# naturaleza
-clean.a.01# limpio
-environment.n.02# ambiente
-landscape.n.01# paisaje
-water.n.01# aguas
-landscape.n.01# paisaje
-universe.n.01# naturaleza
-# paisajr
-beauty.n.01# belleza
-environment.n.02# entorno
-universe.n.01# naturaleza
-water.n.01# agua
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-water.n.01# agua
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-# adecuacion
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-right.r.04# bien
-distributed.a.01# distribuido
-# omodidad
-masturbate.v.02# cascada
-masturbate.v.02# cascadas
-water.n.01# agua
-thermal.a.01# termal
-landscape.n.01# paisaje
-# aguacaliente
-facility.n.01# servicio
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-# picsinas
-watchfulness.n.02# atencion
-# paisje
-masturbate.v.02# cascadas
-# teermales
-waterfall.n.01# cascada
-# nsturaleza
-massage.n.01# masajes
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-people.n.01# gente
-# muyamable
-environment.n.02# ambiente
-# lanaruraleza
-water.n.01# agua
-thermal.a.01# termal
-environment.n.02# ambiente
-landscape.n.01# paisaje
-water.n.01# aguas
-thermal.a.01# termales
-# cascadasb
-landscape.n.01# paisaje
-environment.n.02# ambiente
-unaffected.a.04# natural
-watchfulness.n.02# atencion
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-animal.n.01# fauna
-water.n.01# agua
-watchfulness.n.02# atencion
-universe.n.01# naturaleza
-waterfall.n.01# cascadas
-unaffected.a.04# naturales
-# aguatermal
-beauty.n.01# belleza
-unaffected.a.04# natural
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-facility.n.01# servicio
-masturbate.v.02# cascada
-trail.n.02# sendero
-masturbate.v.02# cascada
+0 landscape.n.01# paisaje
+2 water.n.01# agua
+3 # caliemten
+5 waterfall.n.01# cascada
+9 thermal.a.01# termal
+10 masturbate.v.02# cascar
+12 # nsturaleza
+13 # ecologia
+15 landscape.n.01# paisaje
+17 store.n.02# reserva
+18 unaffected.a.04# natural
+20 landscape.n.01# paisaje
+22 # naturalesa
+24 # paisahe
+27 masturbate.v.02# cascar
+29 # paiaaje
+32 swimming_pool.n.01# piscina
+34 water.n.01# agua
+37 landscape.n.01# paisaje
+39 masturbate.v.02# cascar
+41 landscape.n.01# paisaje
+44 # pesesitos
+46 landscape.n.01# paisaje
+47 # picsina
+48 tophus.n.01# tofo
+49 universe.n.01# naturaleza
+51 masturbate.v.02# cascar
+54 landscape.n.01# paisaje
+56 landscape.n.01# paisaje
+58 landscape.n.01# paisaje
+61 # acojedor
+64 landscape.n.01# paisaje
+66 masturbate.v.02# cascar
+69 quiet.a.01# tranquilo
+71 landscape.n.01# paisaje
+74 masturbate.v.02# cascar
+76 good.a.01# bueno
+77 watchfulness.n.02# atencion
+79 landscape.n.01# paisaje
+80 thermal.a.01# termal
+82 quality.n.01# calidad
+85 # tranqulidad
+87 landscape.n.01# paisaje
+89 # tranqulidad
+91 landscape.n.01# paisaje
+92 landscape.n.01# paisaje
+94 # armonia
+97 landscape.n.01# paisaje
+99 environment.n.02# ambiente
+101 # tranwuiludad
+103 composure.n.01# tranquilidad
+104 landscape.n.01# paisaje
+106 universe.n.01# naturaleza
+110 landscape.n.01# paisaje
+114 landscape.n.01# paisaje
+117 universe.n.01# naturaleza
+119 # teanqulidad
+121 water.n.01# agua
+122 thermal.a.01# termal
+124 # aguala
+125 waterfall.n.01# cascada
+127 thermal.a.01# termal
+129 landscape.n.01# paisaje
+131 water.n.01# agua
+133 meal.n.01# comida
+136 # atencin
+138 # nsturaleza
+142 universe.n.01# naturaleza
+147 clean.a.01# limpio
+151 environment.n.02# ambiente
+153 landscape.n.01# paisaje
+155 water.n.01# agua
+157 landscape.n.01# paisaje
+159 universe.n.01# naturaleza
+161 # paisajr
+162 beauty.n.01# belleza
+164 environment.n.02# entorno
+165 universe.n.01# naturaleza
+167 water.n.01# agua
+169 masturbate.v.02# cascar
+171 landscape.n.01# paisaje
+173 landscape.n.01# paisaje
+176 water.n.01# agua
+178 masturbate.v.02# cascar
+180 landscape.n.01# paisaje
+183 # adecuacion
+186 masturbate.v.02# cascar
+188 landscape.n.01# paisaje
+190 landscape.n.01# paisaje
+193 right.r.04# bien
+194 distributed.a.01# distribuir
+196 # omodidad
+198 masturbate.v.02# cascar
+200 masturbate.v.02# cascar
+202 water.n.01# agua
+203 thermal.a.01# termal
+206 landscape.n.01# paisaje
+208 # aguacaliente
+211 facility.n.01# servicio
+214 landscape.n.01# paisaje
+216 landscape.n.01# paisaje
+221 landscape.n.01# paisaje
+223 # picsinas
+225 watchfulness.n.02# atencion
+229 # paisje
+231 masturbate.v.02# cascar
+233 # teermales
+238 waterfall.n.01# cascada
+240 # nsturaleza
+244 massage.n.01# masaje
+246 landscape.n.01# paisaje
+248 masturbate.v.02# cascar
+250 people.n.01# gente
+251 # muyamable
+253 environment.n.02# ambiente
+254 # lanaruraleza
+259 water.n.01# agua
+260 thermal.a.01# termal
+263 environment.n.02# ambiente
+267 landscape.n.01# paisaje
+269 water.n.01# agua
+270 thermal.a.01# termal
+272 # cascadasb
+274 landscape.n.01# paisaje
+276 environment.n.02# ambiente
+277 unaffected.a.04# natural
+279 watchfulness.n.02# atencion
+282 masturbate.v.02# cascar
+284 masturbate.v.02# cascar
+286 animal.n.01# fauna
+289 water.n.01# agua
+292 watchfulness.n.02# atencion
+295 universe.n.01# naturaleza
+298 waterfall.n.01# cascada
+299 unaffected.a.04# natural
+301 # aguatermal
+304 beauty.n.01# belleza
+305 unaffected.a.04# natural
+307 landscape.n.01# paisaje
+309 masturbate.v.02# cascar
+311 landscape.n.01# paisaje
+314 masturbate.v.02# cascar
+316 facility.n.01# servicio
+318 masturbate.v.02# cascar
+321 trail.n.02# sendero
+323 masturbate.v.02# cascar

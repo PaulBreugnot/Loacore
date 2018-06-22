@@ -1,2 +1,2 @@
-end.v.02# terminen
-# construccion
+1 end.v.02# terminar
+3 # construccion

@@ -1,2420 +1,2420 @@
-make.v.03# hace
-# frio
-# ambientacion
-set_to_music.v.01# musica
-hole.n.02# hueco
-# mas
-small.a.01# pequeño
-make.v.03# hace
-# frio
-# calefaccion
-advisable.a.01# recomendable
-# muchas
-congratulation.n.02# felicitaciones
-change.v.01# cambiar
-pillow.n.01# almohadas
-establish.v.01# fundas
-# cada
-service.n.01# servicio
-# ungorro
-# emsuciar
-hair.n.01# cabello
-hand.n.01# manos
-mild.a.01# suaves
-grace.n.06# gracias
-hotness.n.01# calor
-environment.n.02# ambiente
-make.v.03# hace
-# frio
-grace.n.06# gracias
-schedule.n.02# horario
-# mas
-early.r.02# temprano
-morning.n.01# am
-# mas
-relax.v.04# relajado
-# unico
-make.v.03# hace
-# frio
-remainder.n.01# resto
-super.s.03# super
-well.r.02# bien
-expertness.n.01# experiencia
-child.n.01# chicas
-accommodating.a.01# amables
-congratulation.n.02# felicitaciones
-perceive.v.01# sentir
-set_to_music.v.01# musica
-health_spa.n.01# spa
-good.a.01# buena
-watchfulness.n.02# atencion
-massage.n.01# masaje
-displace.v.03# puede
-be.v.01# ser
-# mas
-potent.s.02# fuerte
-be.v.01# ser
-ace.s.01# excelente
-# bien
-put.v.01# poner
-# calefaccion
-favor.n.01# favor
-# calefaccion
-salt.v.04# sala
-put.v.01# poner
-radiator.n.02# radiador
-utter.v.02# emita
-hotness.n.01# calor
-massage.n.01# masaje
-price.n.04# valores
-# mas
-military_personnel.n.01# efectivos
-think.v.03# pienso
-topographic_point.n.01# sitio
-# deberia
-person.n.01# ser
-# mas
-air-conditioned.s.01# climatizado
-well.r.02# bien
-grace.n.06# gracias
-short_story.n.01# cuento
-# comidada
-sound.n.04# ruido
-# remodelacion
-intolerable.a.01# insoportable
-make.v.03# hace
-# teria
-forfeit.v.01# pierda
-meaning.n.01# sentido
-# ninguna
-ace.s.01# excelente
-massage.n.01# masaje
-# muchas
-grace.n.06# gracias
-accommodating.a.01# amables
-good.a.01# buen
-service.n.01# servicio
-sound.n.04# ruido
-region.n.01# parte
-worker.n.01# trabajadores
-make.v.03# realizan
-# remodelacion
-set_to_music.v.01# musica
-environmental.a.01# ambiental
-# aroterapia
-treatment.n.01# terapia
-ace.s.01# excelente
-ace.s.01# excelente
-service.n.01# servicio
-quality.n.01# calidad
-human.a.03# humana
-grace.n.06# gracias
-# yesica
-# adriana
-ace.s.01# excelente
-service.n.01# servicio
-# ninguna
-set_to_music.v.01# musica
-good.a.01# bueno
-# esten
-reshuffle.n.01# remodelaciones
-new.a.01# nuevas
-congratulation.n.02# felicidades
-ace.s.01# excelente
-watchfulness.n.02# atencion
-respect.n.03# respeto
-personal.a.01# personal
-ace.s.01# excelente
-good.a.01# buen
-operation.n.01# manejo
-congratulation.n.02# felicitaciones
-person.n.01# personas
-accommodating.a.01# amables
-# senti
-well.r.02# bien
-# muchas
-grace.n.06# gracias
-stay.v.01# sigan
-# asi
-taste.n.06# gusto
-watchfulness.n.02# atencion
-accommodating.a.01# amables
-good.a.01# buena
-watchfulness.n.02# atencion
-congratulation.n.02# felicitaciones
-# senti
-super.s.03# super
-well.r.02# bien
-# muchisimas
-grace.n.06# gracias
-expertness.n.01# experiencia
-good.a.01# buena
-# profecionales
-grace.n.06# gracias
-congratulation.n.02# felicitaciones
-congratulation.n.02# felicitaciones
-better.v.02# mejorar
-# presion
-water.n.01# agua
-shower.n.04# ducha
-ace.s.01# excelente
-entrance.n.01# acceso
-person.n.01# personas
-mobility.n.01# movilidad
-reduce.v.01# reducida
-congratulation.n.02# felicitaciones
-# volvere
-# felcitaciones
-ace.s.01# excelente
-ace.s.01# excelente
-# muchas
-grace.n.06# gracias
-ace.s.01# excelente
-good.a.01# bueno
-# muchas
-grace.n.06# gracias
-super.s.03# super
-better.r.01# mejor
-professional.a.01# profesionales
-beloved.n.01# queridas
-ace.s.01# excelente
-good.a.01# bueno
-survive.v.01# dura
-# muchas
-grace.n.06# gracias
-well.r.02# bien
-well.r.02# bien
-job.n.02# trabajo
-grace.n.06# gracias
-grace.n.06# gracias
-# volvere
-# maximo
-make.v.02# volveremos
-super.s.03# super
-# unica
-advice.n.01# recomendación
-good.s.16# seria
-supply.v.01# proveer
-negligee.n.01# batas
-white.a.01# blancas
-pride.v.01# felicitar
-grace.n.06# gracias
-# dahiana
-make.v.03# hizo
-ace.s.01# excelente
-job.n.02# trabajo
-ace.s.01# excelente
-# chevere
-topographic_point.n.01# sitio
-congratulation.n.02# felicitaciones
-well.r.02# bien
-# flicitaciones
-water.n.01# agua
-warm.a.01# caliente
-# ayudaria
-better.v.02# mejorar
-treatment.n.01# terapia
-water.n.01# agua
-warm.a.01# caliente
-accommodating.a.01# amables
-ace.s.01# excelentes
-# gladis
-glad.a.01# feliz
-set_to_music.v.01# musica
-aromatherapy.n.01# aromaterapia
-congratulation.n.02# felicitaciones
-therapist.n.01# terapeuta
-# jesica
-# tecnica
-massage.n.01# masaje
-stay.v.01# sigan
-# asi
-watchfulness.n.02# atencion
-so.r.01# tan
-good.a.01# buena
-grace.n.06# gracias
-well.r.02# bien
-grace.n.06# gracias
-decidedly.r.01# definitivamente
-expertness.n.01# experiencia
-pleasing.a.01# agradable
-cost.v.01# vale
-punishment.n.01# pena
-# repetirlo
-ace.s.01# excelente
-job.n.02# trabajo
-perfect.a.01# perfecto
-professional.a.01# profesionales
-use.v.01# emplear
-manner.n.01# formas
-massage.n.01# masaje
-different.a.01# diferente
-hand.n.01# manos
-bantam.s.01# chica
-# atendio
-# dahiana
-extra.s.02# especial
-# dificil
-have.v.01# tener
-while.n.01# tiempo
-# relajacion
-sound.n.04# ruido
-shower.n.04# ducha
-bad.a.01# mala
-# poca
-# presion
-displace.v.03# puede
-remove.v.01# retirar
-mud.n.01# lodo
-topographic_point.n.01# lugar
-private.a.01# privado
-grace.n.06# gracias
-# dahiana
-accommodating.a.01# amable
-have.v.01# tener
-state.v.01# cuenta
-appearance.n.01# aspectos
-pillow.n.01# almohadas
-# bajo
-abdomen.n.01# abdomen
-# mientras
-body.n.01# cuerpo
-strengthen.v.01# fortalece
-# xxxxxxx
-# mas
-washcloth.n.01# toallas
-different.a.01# diferentes
-people.n.01# gente
-thousand.s.01# mil
-grace.n.06# gracias
-delectable.s.01# rico
-# implemetar
-new.a.01# nuevo
-# chocolateriapia
-# cafeterapia
-increase.n.03# aumento
-service.n.01# servicio
-# terapeutico
-have.v.01# tener
-# mas
-force.n.04# personal
-# terapeutico
-be.v.01# ser
-listen.v.01# atendido
-# minimo
-while.n.01# minutos
-necessitate.v.01# requerir
-# procedimineto
-aromatherapy.n.01# aromaterapia
-use.v.01# utilizar
-tool.n.01# instrumentos
-massage.n.01# masajes
-good.a.01# bueno
-ace.s.01# excelente
-congratulation.n.02# felicidades
-benediction.n.02# bendiciones
-large.a.01# gran
-service.n.01# servicio
-good.a.01# buena
-watchfulness.n.02# atencion
-therapist.n.01# terapeutas
-make.v.03# hacen
-large.a.01# gran
-job.n.02# labor
-target.n.01# diana
-# nunguna
-# sandra
-well.r.02# bien
-# jessica
-well.r.02# bien
-retain.v.02# continuar
-give.v.10# prestando
-so.r.01# tan
-ace.s.01# excelente
-service.n.01# servicio
-congratulation.n.02# felicitaciones
-child.n.01# chicas
-# adrianas
-grace.n.06# gracias
-perfect.a.01# perfecto
-appeal.n.02# encanto
-child.n.01# niña
-job.n.02# trabajo
-use.v.01# aplica
-# deberian
-put.v.01# colocar
-water.n.01# agua
-warm.a.01# caliente
-# ducham
-stretcher.n.03# camillas
-# mas
-large.a.01# grandes
-rug.n.01# mantas
-# termicas
-# calefaccion
-health_spa.n.01# spa
-booth.n.02# cabinas
-# deberian
-put.v.01# colocar
-# calefaccion
-health_spa.n.01# spa
-booth.n.02# cabinas
-# tambien
-shower.n.04# ducha
-water.n.01# agua
-warm.a.01# caliente
-# mas
-wellbeing.n.01# comodidad
-person.n.01# personas
-major.a.03# mayores
-place.n.03# espacio
-make.v.03# realizar
-treatment.n.01# terapias
-# discacidad
-# ninguna
-put.v.01# poner
-# elevador
-grace.n.06# gracias
-grace.n.06# gracias
-ace.s.01# excelente
-appeal.n.02# encanto
-service.n.01# servicio
-# muchas
-grace.n.06# gracias
-super.s.03# super
-good.a.01# buen
-service.n.01# servicio
-# muchas
-grace.n.06# gracias
-install.v.01# instalar
-water.n.01# agua
-warm.a.01# caliente
-put.v.01# ubicar
-rug.n.01# tapetes
-corporeal.a.01# material
-nonslip.s.01# antideslizante
-departure.n.01# salida
-shower.n.04# ducha
-# escalon
-dwelling.n.01# piso
-prevent.v.01# evitar
-possible.a.01# posible
-# caidas
-set_to_music.v.01# musica
-health_spa.n.01# spa
-ace.s.01# excelente
-# relajacion
-unaccompanied.a.01# solo
-listen.v.01# escucha
-set_to_music.v.01# musica
-swimming_pool.n.01# piscina
-# ninguna
-# ninguna
-favor.n.01# favor
-water.n.01# agua
-warm.a.01# caliente
-shower.v.03# ducha
-environment.n.02# ambiente
-hot.a.01# tibio
-rug.n.01# tapetes
-die.v.01# salir
-shower.n.04# ducha
-entrance.n.01# entrada
-offer.v.02# ofertar
-treatment.n.01# terapias
-# combo
-software.n.01# paquetes
-offer.v.02# ofrecer
-# mas
-assortment.n.01# variedad
-service.n.01# servicios
-# limpezas
-facial.a.01# faciales
-health_spa.n.01# spa
-nail.n.02# uñas
-# mas
-tall.a.01# alto
-audio.n.01# volumen
-set_to_music.v.01# musica
-listen.v.01# escuchar
-person.n.01# personas
-swimming_pool.n.01# piscinas
-# podria
-be.v.01# ser
-# mas
-pleasing.a.01# agradable
-environment.n.02# ambiente
-health_spa.n.01# spa
-# si
-displace.v.03# puede
-perceive.v.01# percibir
-# oleres
-# relantes
-aromatherapy.n.01# aromaterapia
-toilet.n.02# baños
-bad.a.01# mal
-aroma.n.02# olor
-# deberian
-have.v.01# tener
-put.v.01# poner
-clothing.n.01# ropa
-thing.n.08# cosas
-personal.a.01# personales
-toilet.n.02# baños
-smell.v.02# huelen
-ill.r.01# mal
-return.v.01# regresara
-laud.v.01# magnifica
-option.n.02# alternativa
-end.v.02# finalizar
-large.a.01# gran
-defense_intelligence_agency.n.01# dia
-super.s.03# super
-well.r.02# bien
-always.r.01# siempre
-revenge.v.01# vengo
-make.v.03# hago
-massage.n.01# masaje
-super.s.03# super
-large.a.01# gran
-place.n.03# espacio
-while.n.01# momento
-stay.v.01# descansar
-listen.v.01# escuche
-# mas
-set_to_music.v.01# musica
-ace.s.01# excelente
-# muchas
-grace.n.06# gracias
-ace.s.01# excelente
-topographic_point.n.01# sitio
-put.v.01# dejar
-transport.v.02# cargar
-mobile.a.02# celulares
-# mientras
-# tratemiento
-better.v.02# mejorar
-temperature.n.01# temperatura
-water.n.01# agua
-shower.v.03# ducha
-# mas
-heat.v.01# caliente
-# muchas
-grace.n.06# gracias
-# gustaria
-# mas
-# presion
-massage.n.01# masaje
-general.a.01# general
-ace.s.01# excelente
-grace.n.06# gracias
-please.v.01# gusta
-gross.n.02# retorno
-# mañama
-shower.v.03# ducha
-water.n.01# agua
-# mas
-abundant.a.01# abundante
-region.n.01# parte
-put.v.01# pone
-wax.n.01# cera
-stretcher.n.03# camilla
-difficult.a.01# dura
-put.v.01# poner
-# mas
-# blandito
-# instalacion
-privacy.n.02# privacidad
-health_spa.n.01# spa
-be.v.03# haber
-# mas
-# aromateria
-aromatherapy.n.01# aromaterapia
-better.a.01# mejor
-aroma.n.02# aroma
-light.n.01# luz
-# mas
-short.a.03# baja
-fruit.n.01# fruta
-case.n.01# vez
-# aromatica
-have.v.01# tener
-# mas
-aromatherapy.n.01# aromaterapia
-light.n.01# luz
-short.a.03# baja
-fruit.n.01# fruta
-case.n.01# vez
-aromatherapy.n.01# aromaterapia
-ace.s.01# excelente
-advice.n.01# recomendaciones
-# pedi
-massage.n.01# masaje
-# relajacion
-# parecio
-well.r.02# bien
-ace.s.01# excelente
-# ninguna
-ace.s.01# excelente
-aromatherapy.n.01# aromaterapia
-perfume.v.01# aromatizar
-topographic_point.n.01# lugar
-make.v.03# hacen
-massage.n.01# masajes
-toilet.n.02# baños
-bad.a.01# mal
-aroma.n.02# olor
-set_to_music.v.01# musica
-put.v.01# situada
-different.a.01# diferente
-listen.v.01# escuche
-sound.n.04# ruido
-therapist.n.01# terapeutas
-accommodating.a.01# amables
-professional.a.01# profesionales
-search.v.01# procurar
-sound.n.04# ruidos
-external.a.01# externos
-make.v.03# hacer
-aromatherapy.n.01# aromaterapia
-# jessica
-favor.n.01# favor
-water.n.01# agua
-warm.a.01# caliente
-grace.n.06# gracias
-congratulation.n.02# felicitaciones
-julian.a.01# juliana
-ace.s.01# excelente
-# atenta
-relax.v.04# relajada
-# ninguna
-# ninguna
-install.v.01# instalar
-water.n.01# agua
-warm.a.01# caliente
-# dahiana
-ace.s.01# excelente
-please.v.01# gusta
-well.r.02# bien
-# volvere
-fantastic.s.02# fenomenal
-julian.a.01# juliana
-pride.v.01# felicito
-watchfulness.n.02# atencion
-good.a.01# buena
-topographic_point.n.01# lugar
-# comodo
-pleasing.a.01# agradable
-super.s.03# super
-good.a.01# bueno
-service.n.01# servicio
-appearance.n.01# aspectos
-# sandra
-# increible
-massage.n.01# masaje
-displace.v.03# pudo
-be.v.01# ser
-better.r.01# mejor
-julian.a.01# juliana
-good.a.01# buena
-professional.a.01# profesional
-region.n.01# parte
-toilet.n.02# baños
-service.n.01# servicios
-owe.v.01# deben
-better.v.02# mejorar
-net.v.02# rentar
-# tohallas
-include.v.02# incluir
-price.n.04# valor
-entrance.n.01# entrada
-survive.v.01# dure
-# mas
-pride.v.01# felicitar
-massager.n.01# masajista
-accommodating.a.01# atenta
-accommodating.a.01# amable
-professional.a.01# profesionales
-job.n.02# trabajo
-fantastic.s.02# estupendo
-massage.n.01# masaje
-grace.n.06# gracias
-ace.s.01# excelente
-professional.a.01# profesional
-art.n.02# arte
-massage.n.01# masaje
-# comodo
-pole.n.01# palo
-traverse.v.01# atravesado
-hole.n.02# hueco
-expensive.a.01# cara
-stretcher.n.03# camilla
-ace.s.01# excelente
-# antencion
-environment.n.02# ambiente
-fantastic.s.02# fenomenal
-suggestion.n.02# sugerencia
-cover.v.01# cubrir
-eye.n.01# ojos
-fabric.n.01# paño
-hot.a.01# tibio
-washcloth.n.01# toalla
-about.r.02# alrededor
-neck.n.01# cuello
-decidedly.r.01# definitivamente
-ace.s.01# excelente
-find.v.05# creo
-owe.v.01# debe
-have.v.01# tener
-# mas
-person.n.01# personas
-toilet.n.02# baños
-shower.n.04# ducha
-perceive.v.01# siente
-ill.r.01# mal
-aroma.n.02# olor
-region.n.01# parte
-put.v.01# pone
-# rosto
-pleat.n.01# pliegues
-make.v.03# causan
-pain.n.03# dolor
-# menton
-# ninguna
-child.n.01# niñas
-divine.s.06# divinas
-stretcher.n.03# camillas
-# deberian
-# frente
-masturbate.v.02# cascadas
-better.a.01# mejor
-expertness.n.01# experiencia
-lord.n.03# señora
-# adriana
-unsettled.a.01# pendiente
-think.v.03# pienso
-return.v.01# regresar
-health_spa.n.01# spa
-dramatic.s.02# espectacular
-set_to_music.v.01# musica
-# poquito
-# mas
-tall.a.01# alta
-necessitate.v.01# preguntar
-user.n.01# usuario
-# presion
-want.v.02# quiere
-good.a.01# buen
-treatment.n.02# trato
-professional.a.01# profesionales
-stretcher.n.03# camillas
-# deberian
-have.v.01# tener
-hole.n.02# orificio
-stay.v.01# reposar
-appearance.n.01# cara
-# posicion
-entrance.n.01# boca
-down.r.01# abajo
-# sandra
-tenant_farmer.n.01# quintero
-make.v.03# hizo
-ace.s.01# excelente
-job.n.02# trabajo
-good.s.16# seria
-good.a.01# bueno
-have.v.01# tener
-schedule.n.02# horarios
-available.a.01# disponibles
-ace.s.01# excelente
-# adriana
-# jessica
-do.n.02# dos
-person.n.01# personas
-accommodating.a.01# amables
-professional.n.01# profesionales
-# adriana
-# jessica
-watchfulness.n.02# atencion
-professionalism.n.01# profesionalismo
-make.v.03# realizar
-job.n.02# trabajo
-good.a.01# buen
-job.n.02# trabajo
-professionalism.n.01# profesionalismo
-# adriana
-# ambientes
-do.n.02# dos
-child.n.01# chicas
-congratulation.n.02# felicitaciones
-professionalism.n.01# profesionalismo
-good.a.01# buen
-job.n.02# trabajo
-grace.n.06# gracias
-perfect.a.01# perfecto
-grace.n.06# gracias
-watchfulness.n.02# atencion
-professional.a.01# profesionales
-# muchas
-grace.n.06# gracias
-so.r.01# tan
-good.a.01# buena
-watchfulness.n.02# atencion
-perfect.a.01# perfecto
-actually.r.01# realmente
-grateful.a.01# agradecida
-while.n.01# rato
-so.r.01# tan
-pleasing.a.01# agradable
-professional.a.01# profesional
-# continuen
-# asi
-grace.n.06# gracias
-# bien
-pride.v.01# felicitar
-massager.n.01# masajista
-# mas
-# informacion
-region.n.01# parte
-# recepcion
-laos.n.01# laos
-service.n.01# servicios
-q.n.01# q
-offer.v.02# ofrecen
-major.a.03# mayor
-# informacion
-region.n.01# parte
-# recepcion
-give.v.10# dieron
-report.n.01# reporte
-# habia
-health_spa.n.01# spa
-refer.v.02# toco
-learn.v.02# averiguar
-# meseroellas
-accommodating.a.01# atentas
-offer.v.02# ofrecer
-service.n.01# servicios
-remainder.n.01# resto
-personal.a.01# personal
-ace.s.01# excelente
-grace.n.06# gracias
-# mas
-therapist.n.01# terapeutas
-stretcher.n.03# camilla
-# mas
-chiffonier.n.01# comoda
-have.v.01# tener
-coatrack.n.01# perchero
-dining_table.n.01# mesa
-peer.n.01# par
-put.v.01# poner
-clothing.n.01# ropa
-# ambientacion
-musical.a.02# musical
-different.a.01# diferente
-hotel.n.01# hotel
-aroma.n.02# aromas
-aroma.n.02# fragancias
-# cada
-room.n.01# sala
-massage.n.01# masajes
-independent.a.01# independientes
-kind.n.01# tipo
-massage.n.01# masajes
-supply.v.01# suministrar
-clothing.n.01# ropa
-# comoda
-disposable.a.02# desechable
-offer.v.02# ofrecer
-sail.n.01# velas
-# ensendidas
-# toda
-room.n.01# sala
-massage.n.01# masajes
-congratulation.n.02# felicidades
-topographic_point.n.01# lugar
-dramatic.s.02# espectacular
-kind.n.01# tipo
-service.n.01# servicios
-find.v.05# creo
-owe.v.01# deben
-# aprovecharlo
-# mas
-grace.n.06# gracias
-stretcher.n.03# camilla
-# econ
-# descansador
-mind.n.01# cabeza
-hole.n.02# hueco
-better.v.02# mejorar
-stretcher.n.03# camillas
-concentrate.v.02# clava
-nut.n.01# nuez
-temperature.n.01# temperatura
-# agrable
-professional.a.01# profesional
-please.v.01# gustado
-therapist.n.01# terapeuta
-interrupt.v.01# suspendiera
-massage.n.01# masaje
-listen.v.01# atender
-customer.n.01# cliente
-necessitate.v.01# necesito
-# informacion
-# pues
-interfere.v.01# interfiere
-consequence.n.01# efecto
-listen.v.01# atendieron
-super.s.03# super
-well.r.02# bien
-make.v.02# vuelvo
-december.n.01# diciembre
-therapist.n.01# terapeutas
-accommodating.a.01# amables
-# salpicon
-warm.a.01# caliente
-tasty.a.01# delicioso
-put.v.01# poner
-stretcher.n.03# camilla
-# descansador
-make.v.03# hace
-# frio
-temperature.n.01# temperatura
-delay.n.01# retraso
-# husped
-# np
-# cumplio
-schedule.n.02# horario
-stay.v.01# sigan
-# asi
-well.r.02# bien
-person.n.01# personas
-accommodating.a.01# amables
-# salpicon
-warm.a.01# caliente
-delectable.s.01# rico
-delectable.s.01# rico
-aromatherapy.n.01# aromaterapia
-well.r.02# bien
-# senti
-well.r.02# bien
-listen.v.01# atendida
-stay.v.01# sigan
-# asi
-# pedicure
-# manicure
-# pedicure
-# manicure
-ace.s.01# excelente
-service.n.01# servicio
-# promosionar
-# ma
-service.n.01# servicios
-health_spa.n.01# spa
-tube.n.01# canal
-private.a.01# privado
-service.n.01# servicios
-health_spa.n.01# spa
-television.n.01# tv
-# promosionar
-# mas
-health_spa.n.01# spa
-# huespedes
-television.n.01# tv
-tube.n.01# canal
-private.a.01# privado
-state.v.01# decir
-travel.v.01# va
-make.v.03# hacer
-# posicion
-ace.s.01# excelente
-massage.n.01# masaje
-good.a.01# buen
-environment.n.02# ambiente
-congratulation.n.02# felicitaciones
-ace.s.01# excelente
-service.n.01# servicio
-service.n.01# servicio
-massage.n.01# masaje
-# san
-michael.n.01# miguel
-# muchas
-congratulation.n.02# felicitaciones
-personal.a.01# personal
-skilled.a.01# especializado
-stay.v.01# sigan
-# asi
-# mperfecto
-increase.v.02# elevado
-monetary_value.n.01# costo
-sauna.n.01# sauna
-# ninguna
-congratulation.n.02# felicitaciones
-julian.a.01# juliana
-ace.s.01# excelente
-grace.n.06# gracias
-change.v.01# cambiar
-hairpiece.n.01# postizos
-fantastic.s.02# maravilloso
-massage.n.01# masajes
-# tailandes
-ace.s.01# excelente
-watchfulness.n.02# atencion
-ace.s.01# excelente
-service.n.01# servicio
-congratulation.n.02# felicitaciones
-opportunity.n.01# posibilidad
-make.v.03# realizar
-booking.n.02# reservaciones
-agenda.n.01# agenda
-personal.a.01# personal
-hotel.n.01# hotel
-put.v.01# poner
-# mas
-volant.s.01# volantes
-# recepcion
-massage.n.01# masajes
-reach.v.01# llegamos
-# habian
-perfect.a.01# perfecto
-# aramoterapia
-oil.n.01# aceites
-aroma.n.02# esencias
-congratulation.n.02# felicitaciones
-keep.v.01# mantengan
-# asi
-good.a.01# buen
-service.n.01# servicio
-ace.s.01# excelente
-grace.n.06# gracias
-recommend.v.01# recomendado
-ace.s.01# excelente
-ace.s.01# excelente
-watchfulness.n.02# atencion
-good.a.01# buena
-grace.n.06# gracias
-clock.n.01# relojes
-large.a.01# grandes
-region.n.01# parte
-# afuera
-clock.n.01# reloj
-region.n.01# parte
-# afuera
-swimmer.n.02# bañistas
-displace.v.03# puedan
-unsettled.a.01# pendiente
-time.n.02# hora
-departure.n.01# salida
-impermanent.a.01# temporal
-health_spa.n.01# spa
-# pereira
-put.v.01# poner
-# mas
-treatment.n.01# terapias
-# acorde
-pouch.n.02# bolsillo
-# cada
-person.n.01# persona
-survive.v.01# dure
-# mas
-while.n.01# tiempo
-treatment.n.01# terapia
-put.v.01# pone
-mind.n.01# cabeza
-put.v.01# poner
-disposable.a.02# desechable
-universe.n.01# mundo
-put.v.01# ponga
-mind.n.01# cabeza
-bed.n.01# cama
-# proteccion
-# encantaria
-reduce.v.01# bajaran
-monetary_value.n.01# precio
-case.n.01# vez
-massage.n.01# masaje
-remainder.n.01# resto
-well.r.02# bien
-# daniela
-pride.v.01# felicito
-hand.n.01# manos
-# angel
-# angela
-# excelnte
-considerate.a.01# delicada
-patient.n.01# paciente
-ace.s.01# excelentes
-hand.n.01# manos
-# daniela
-# atendio
-# desda
-# recepcion
-accommodating.a.01# atenta
-do.n.02# dos
-# ambles
-ace.s.01# excelente
-job.n.02# trabajo
-# terapeutico
-wholly.r.01# totalmente
-please.v.01# complacida
-congratulation.n.02# felicitaciones
-so.r.01# tan
-ace.s.01# excelente
-service.n.01# servicio
-wellbeing.n.01# comodidad
-grace.n.06# gracias
-heat.v.01# calentar
-# mas
-environment.n.02# ambiente
-# mas
-# vestidores
-means.n.01# camino
-open.s.12# abierto
-swimming_pool.n.01# piscina
-well.r.02# bien
-taste.n.06# gusto
-# comodo
-# fekicidades
-taste.n.06# gusto
-expertness.n.01# experiencia
-relaxant.s.01# relajante
-pride.v.01# felicitar
-so.r.01# tan
-good.a.01# buen
-service.n.01# servicio
-good_humor.n.01# amabilidad
-child.n.01# chicas
-ace.s.01# excelente
-good.a.01# buen
-massage.n.01# masaje
-congratulation.n.02# felicitaciones
-suggestion.n.02# sugerencia
-# aunque
-fantastic.s.02# maravilloso
-# mas
-silence.n.02# silencio
-perturb.v.01# distraer
-massager.n.01# masajista
-ace.s.01# excelente
-# experencia
-grace.n.06# gracias
-# mas
-hotness.n.01# calor
-# calentador
-listen.v.01# escuche
-set_to_music.v.01# musica
-# afuera
-# interumpe
-# relajacion
-# calentador
-health_spa.n.01# spa
-make.v.03# hace
-# frio
-# muchas
-grace.n.06# gracias
-watchfulness.n.02# atencion
-procedure.n.01# procedimiento
-use.v.01# utilizo
-therapist.n.01# terapeuta
-ace.s.01# excelente
-aroma.n.02# olor
-good.a.01# bueno
-# ok
-supplement.v.01# complementar
-rock.n.02# piedras
-# volcanicas
-pride.v.01# felicito
-# daniela
-super.s.03# super
-extra.s.02# especial
-massage.n.01# masaje
-pot.n.09# chocolate
-rock.n.02# piedras
-# mariluz
-ace.s.01# excelente
-massage.n.01# masaje
-pride.v.01# felicitar
-equipment.n.01# equipo
-health_spa.n.01# spa
-ace.s.01# excelente
-watchfulness.n.02# atencion
-congratulation.n.02# felicitaciones
-service.n.01# servicio
-super.s.03# super
-good.a.01# bueno
-prevent.v.01# evitar
-sound.n.04# ruido
-outer.a.01# exterior
-congratulation.n.02# felicitaciones
-super.s.03# super
-tasty.a.01# delicioso
-swimming_pool.n.01# piscina
-# pareja
-prevent.v.01# evitar
-sound.n.04# ruido
-outer.a.01# exterior
-# calefaccion
-# cobija
-# mas
-compact.s.02# gruesa
-remainder.n.01# resto
-ace.s.01# excelente
-grace.n.06# gracias
-congratulation.n.02# felicitaciones
-# gladys
-ace.s.01# excelente
-massager.n.01# masajista
-# unas
-hand.n.01# manos
-bless.v.01# benditas
-deity.n.01# dios
-# podria
-better.v.02# mejorar
-# insonorizacion
-health_spa.n.01# spa
-pleasing.a.01# agradable
-listen.v.01# escuchar
-water.n.01# agua
-sound.n.04# ruido
-# bañitas
-time.n.01# ocasiones
-perturb.v.01# distrae
-general.n.01# general
-ace.s.01# excelente
-expertness.n.01# experiencia
-good.a.01# buen
-massage.n.01# masaje
-ace.s.01# excelente
-professionalism.n.01# profesionalismo
-# cada
-booth.n.02# cabina
-keep.v.12# guardar
-object.n.01# objetos
-personal.a.01# personales
-# mas
-intensity.n.01# fuerza
-hand.n.01# manos
-# desestrezar
-# mas
-customer.n.01# cliente
-massage.n.01# masaje
-mild.a.01# suave
-# frio
-rug.n.01# manta
-# mas
-# comodo
-opportunity.n.01# posibilidad
-have.v.01# tener
-stretcher.n.03# camilla
-# termica
-# mas
-privacy.n.02# privacidad
-massage.n.01# masaje
-# agradecerle
-watchfulness.n.02# atencion
-pride.v.01# felicitare
-job.n.02# trabajo
-wield.v.01# desempeñado
-# mas
-hotness.n.01# calor
-booth.n.02# cabinas
-pride.v.01# felicito
-# daniela
-# mariluz
-large.a.01# gran
-watchfulness.n.02# atencion
-give.v.10# prestan
-ace.s.01# excelente
-service.n.01# servicio
-make.v.03# hace
-perceive.v.01# ver
-# si
-professionalism.n.01# profesionalismo
-time.n.02# hora
-listen.v.01# atender
-customer.n.01# clientes
-travel.v.01# voy
-taste.n.06# gusto
-service.n.01# servicio
-grace.n.06# gracias
-# sevicio
-super.s.03# super
-# profesionalmariluz
-ace.s.01# excelente
-super.s.03# super
-patient.a.01# paciente
-customer.n.01# cliente
-service.n.01# servicio
-perfect.a.01# perfecto
-good.a.01# buen
-massage.n.01# masaje
-# relajo
-back.n.01# espalda
-necessitate.v.01# necesitaba
-gratitude.n.01# agradecimientos
-service.n.01# servicio
-ace.s.01# excelente
-watchfulness.n.02# atencion
-lord.n.03# señor
-# jesucristo
-bless.v.01# bendiga
-congratulation.n.02# felicitaciones
-ace.s.01# excelente
-service.n.01# servicio
-watchfulness.n.02# atencion
-deity.n.01# dios
-bless.v.01# bendiga
-wind.n.01# aire
-condition.v.04# acondicionado
-warm.a.01# caliente
-congratulation.n.02# felicitaciones
-good.a.01# buen
-massage.n.01# masaje
-appeal.n.02# encanto
-congratulation.n.02# felicitaciones
-change.v.01# cambien
-# angie
-good.a.01# buena
-watchfulness.n.02# atencion
-ace.s.01# excelente
-massage.n.01# masaje
-region.n.01# parte
-# angela
-ace.s.01# excelente
-service.n.01# servicio
-accommodating.a.01# amables
-professional.a.01# profesionales
-deity.n.01# dios
-# benfdiga
-job.n.02# labores
-have.v.01# tener
-patience.n.01# paciencia
-grace.n.06# gracias
-good_humor.n.01# amabilidad
-hint.v.01# sugiero
-hide.v.01# tapar
-eye.n.02# vista
-so.r.01# tan
-dramatic.s.02# espectacular
-filter.n.01# filtro
-blue.s.02# azul
-relax.v.04# relaja
-landscape.n.01# paisaje
-plain.s.06# natural
-achieve.v.01# logran
-damage.v.01# dañar
-# conpecto
-plain.s.06# natural
-dramatic.s.02# espectacular
-massage.n.01# masaje
-# angie
-# volvere
-thousand.s.01# mil
-grace.n.06# gracias
-ace.s.01# excelentes
-massage.n.01# masajes
-# recomendaria
-eye.n.02# vista
-stretcher.n.03# camillas
-# hacia
-masturbate.v.02# cascad
-put.v.01# poner
-# adesivos
-# ventanales
-obstruct.v.02# obstruyen
-eye.n.02# vista
-masturbate.v.02# cascada
-remove.v.01# quita
-entrance.n.01# entrada
-beautiful.a.01# bonita
-health_spa.n.01# spa
-# muchas
-congratulation.n.02# felicitaciones
-# existos
-benediction.n.02# bendiciones
-put.v.01# poner
-# calefaccion
-# calefaccion
-# calefaccion
-shower.v.03# ducha
-water.n.01# agua
-warm.a.01# caliente
-interfere.v.01# interfiere
-sound.n.04# ruido
-outer.a.01# exterior
-# deberian
-have.v.01# tener
-option.n.02# opciones
-# bambuterapia
-massage.n.01# masajes
-rock.n.02# piedras
-warm.a.01# calientes
-# orifico
-stretcher.n.03# camilla
-look.v.02# parece
-excessively.r.01# demasiado
-large.a.01# grande
-# torna
-# incomoo
-put.v.01# poner
-mind.n.01# cabeza
-listen.v.01# escucha
-sound.n.04# ruido
-outer.a.01# exterior
-relax.v.04# relajado
-environment.n.02# ambiente
-set_to_music.v.01# musica
-aroma.n.02# aroma
-toilet.n.02# aseo
-ace.s.01# excelente
-good.s.16# seria
-good.s.12# ideal
-listen.v.01# escuchara
-sound.n.04# ruido
-outer.a.01# exterior
-favor.n.01# favor
-# presentarte
-# muchas
-grace.n.06# gracias
-give.v.10# dar
-remove.v.01# tomar
-# despues
-treatment.n.01# terapia
-remainder.n.01# resto
-well.r.02# bien
-# gladis
-# senti
-well.r.02# bien
-supply.v.01# facilitar
-payment.n.01# pago
-card.n.01# tarjetas
-tranquillity.n.02# tranquilidad
-health_spa.n.01# spa
-perceive.v.01# ve
-affect.v.01# afectada
-happen.v.01# pasar
-# varias
-box.n.01# cajas
-remove.v.01# sacar
-card.n.01# tarjeta
-state.v.01# cuenta
-open.s.12# abierta
-give.v.10# dar
-# bebeida
-get_down.v.07# iniciar
-fruit.n.01# frutas
-pride.v.01# felicitar
-therapist.n.01# terapeuta
-acclimatize.v.01# ambientar
-# mas
-audio.n.01# volumen
-set_to_music.v.01# musica
-aroma.n.02# esencias
-# mas
-potent.s.02# fuertes
-aromatherapy.n.01# aromaterapia
-set_to_music.v.01# musica
-environment.n.02# ambiente
-listen.v.01# escuchaba
-sound.n.04# ruido
-external.a.01# externo
-pride.v.01# felicito
-# gladys
-# bermudez
-so.r.01# tan
-ace.s.01# excelente
-job.n.02# trabajo
-ace.s.01# excelente
-job.n.02# labor
-# gladys
-perceive.v.01# veremos
-promptly.r.01# pronto
-congratulation.n.02# felicitaciones
-favorable.a.01# favorable
-ace.s.01# excelente
-# gladys
-# parecio
-well.r.02# bien
-therapist.n.01# terapeuta
-# parecio
-accommodating.a.01# amable
-accommodating.a.01# atentos
-simple.a.01# sencillos
-# bendicion
-# gladys
-grace.n.06# gracias
-# dahiana
-accommodating.a.01# amable
-professional.a.01# profesional
-make.v.03# hacer
-massage.n.01# masajes
-rock.n.02# piedras
-# volcanicas
-ace.s.01# excelente
-therapist.n.01# terapeuta
-give.v.10# dedicada
-expertness.n.01# experiencia
-congratulation.n.02# felicitaciones
-well.r.02# bien
-fantastic.s.02# fabuloso
-# alguna
-# bebeida
-warm.a.01# caliente
-congratulation.n.02# felicitaciones
-service.n.01# servicio
-ace.s.01# excelente
-# si
-opportunity.n.01# oportunidad
-# volveria
-case.n.01# vez
-pride.v.01# felicito
-therapist.n.01# terapeuta
-appeal.n.02# encanto
-massage.n.01# masaje
-job.n.02# trabajo
-well.r.02# bien
-# area
-back.n.01# espalda
-# mas
-suffer.v.06# duele
-hint.v.01# sugiero
-# especificacion
-procedure.n.01# procesos
-congratulation.n.02# felicitaciones
-# ninguna
-ace.s.01# excelente
-ace.s.01# excelente
-service.n.01# servicio
-# volvere
-good.a.01# buena
-watchfulness.n.02# atencion
-beautiful.a.01# hermosa
-accommodating.a.01# amable
-full.a.01# llena
-# sabiduria
-well.r.02# bien
-stay.v.01# sigan
-# asi
-pride.v.01# felicito
-# gladys
-# bermudez
-# dahiana
-# gladys
-enjoyable.s.01# gratificante
-job.n.02# labor
-# dahiana
-own.v.01# quede
-# divinamente
-# frio
-please.v.01# agrada
-topographic_point.n.01# lugar
-treat.v.03# traten
-well.r.02# bien
-offer.v.02# ofrecen
-better.a.01# mejor
-service.n.01# servicio
-# senti
-relax.v.04# relajada
-well.r.02# bien
-ace.s.01# excelente
-# caliad
-person.n.01# personas
-product.n.02# productos
-skin.n.01# piel
-advertise.v.02# promocionar
-# mas
-place.n.03# espacio
-# estadia
-pay.v.01# pagando
-health_spa.n.01# spa
-while.n.01# tiempo
-short.a.01# corto
-enter.v.01# ingresar
-swimming_pool.n.01# piscinas
-thermal.a.01# termales
-well.r.02# bien
-congratulation.n.02# felicitaciones
-tasty.a.01# delicioso
-julian.a.01# juliana
-give.v.10# dar
-# mas
-# promocion
-health_spa.n.01# spa
-operation.n.01# funcionamiento
-# ninguna
-topographic_point.n.01# lugar
-offer.v.02# ofrecieron
-service.n.01# servicio
-# si
-# hubieramos
-try.v.01# buscado
-reach.v.01# obtenido
-follow_through.v.02# implementen
-# mas
-thing.n.08# cosas
-remainder.n.01# resto
-well.r.02# bien
-add.v.01# añadir
-# in
-component.n.03# elemento
-# aromatico
-# inciencio
-aromatherapy.n.01# aromaterapia
-grace.n.06# gracias
-good.a.01# bueno
-general.a.01# general
-# toda
-# seccion
-# todas
-person.n.01# personas
-# profecionales
-thousand.s.01# mil
-congratulation.n.02# felicitaciones
-thousand.s.01# mil
-congratulation.n.02# felicitaciones
-congratulation.n.02# felicitaciones
-ace.s.01# excelentes
-service.n.01# servicio
-congratulation.n.02# felicitaciones
-# mas
-# calorcito
-remainder.n.01# resto
-delectable.s.01# rico
-# relajante
-ace.s.01# excelente
-watchfulness.n.02# atencion
-sound.n.04# ruido
-outer.a.01# exterior
-delectable.s.01# rico
-excessively.r.01# demasiado
-sound.n.04# ruido
-outer.a.01# exterior
-ace.s.01# excelente
-massage.n.01# masaje
-set_to_music.v.01# musica
-# salon
-treatment.n.01# terapias
-# incensio
-aroma.n.02# olores
-displace.v.03# puede
-make.v.03# hacer
-# trasporte
-universe.n.01# universo
-# meditacion
-# gladys
-better.a.01# mejor
-congratulation.n.02# felicitaciones
-# gladys
-# parecio
-professional.a.01# profesional
-# ademas
-accommodating.a.01# amable
-identify.v.01# identifico
-problem.n.02# problema
-# decirle
-get_the_better_of.v.01# supero
-expectation.n.01# expectativas
-# hare
-treatment.n.01# terapia
-well.r.02# bien
-service.n.01# servicio
-decrease.v.01# disminuir
-entrance.n.01# entrada
-light.n.01# luz
-topographic_point.n.01# sitio
-massage.n.01# masajes
-ace.s.01# excelente
-# mas
-hotness.n.01# calor
-delectable.s.01# rico
-person.n.01# persona
-listen.v.01# atiende
-accommodating.a.01# amable
-# calida
-give.v.10# da
-assurance.n.01# confianza
-topographic_point.n.01# lugar
-pride.v.01# felicito
-therapist.n.01# terapeuta
-# atendio
-julian.a.01# juliana
-# calida
-watchfulness.n.02# atencion
-advertise.v.02# promocionar
-while.n.01# momento
-entrance.n.01# ingreso
-washcloth.n.01# toalla
-warm.a.01# caliente
-back.n.01# espalda
-aromatherapy.n.01# aromaterapia
-washcloth.n.01# toalla
-warm.a.01# caliente
-back.n.01# espalda
-aromatherapy.n.01# aromaterapia
-well.r.02# bien
-# felcitaciones
-# dahiana
-well.r.02# bien
-well.r.02# bien
-shower.n.04# chorro
-shower.v.03# ducha
-water.n.01# agua
-# fria
-# senti
-wholly.r.01# completamente
-relax.v.04# relajada
-# calentador
-# calefaccion
-water.n.01# agua
-warm.a.01# caliente
-shower.n.04# ducha
-shower.n.04# chorro
-grace.n.06# gracias
-girl.n.01# señoritas
-listen.v.01# atienden
-use.v.01# usen
-coat.n.01# sacos
-make.v.03# hace
-# frio
-# tambien
-sit.v.01# sientan
-ace.s.01# excelente
-well.r.02# bien
-watchfulness.n.02# atencion
-# lugarla
-wellbeing.n.01# comodidad
-# si
-state.v.01# cuentan
-weather.n.01# clima
-# frio
-therapist.n.01# terapeutas
-# estan
-# abrigadas
-correct.a.01# justo
-favor.n.01# favor
-heat.v.01# calentar
-mud.n.01# lodo
-perceive.v.01# sentir
-# mas
-wellbeing.n.01# comodidad
-# presion
-shower.n.04# duchas
-owe.v.01# debe
-be.v.01# ser
-# masfuertes
-displace.v.03# poder
-remove.v.01# quitar
-mud.n.01# lodo
-cream.n.03# cremas
-coffee.n.01# café
-# facinantes
-sell.v.01# vender
-mud.n.01# lodo
-topographic_point.n.01# sitio
-# mas
-remove.v.02# alejado
-cry.n.01# gritos
-swimmer.n.02# bañistas
-congratulation.n.02# felicitaciones
-please.v.01# gusta
-therapist.n.01# terapeuta
-# eramos
-do.n.02# dos
-# habia
-# si
-# antendsernos
-put.v.01# colocar
-water.n.01# agua
-warm.a.01# caliente
-shower.n.04# ducha
-consequence.n.01# efecto
-# exfoliantes
-put.v.01# colocar
-water.n.01# agua
-warm.a.01# caliente
-shower.n.04# ducha
-consequence.n.01# efecto
-# exfoliantes
-# encataria
-# bambuterapia
-use.v.01# utilizaran
-less.r.01# menos
-hand.n.01# manos
-# mas
-# bambu
-make.v.03# hace
-lack.n.01# falta
-clock.n.01# reloj
-change.v.01# cambiar
-while.n.01# tiempo
-massage.n.01# masaje
-grace.n.06# gracias
-stay.v.01# sigan
-# igual
-travel.v.01# van
-well.r.02# bien
-grace.n.06# gracias
-put.v.01# poner
-fireplace.n.01# chimenea
-# calefaccion
-# bien
-include.v.02# incluir
-software.n.01# paquetes
-service.n.01# servicio
-# menu
-toilet.n.02# baño
-# vestier
-health_spa.n.01# spa
-ace.s.01# excelente
-appearance.n.01# aspectos
-watchfulness.n.02# atencion
-personal.a.01# personal
-good.a.01# buena
-offer.v.02# brindan
-good.a.01# buen
-service.n.01# servicio
-congratulation.n.02# felicitaciones
-ace.s.01# excelente
-person.n.01# persona
-offer.v.02# brindo
-massage.n.01# masaje
-note.n.03# nota
-professional.a.01# profesional
-# dedicacion
-congratulation.n.02# felicitaciones
-congratulation.n.02# felicitaciones
-congratulation.n.02# felicitaciones
-well.r.02# bien
-pass.n.03# pase
-super.s.03# super
-# volvere
-promptly.r.01# pronto
-grace.n.06# gracias
-abundantly.r.01# bastante
-relaxant.s.01# relajante
-tasty.a.01# delicioso
-watchfulness.n.02# atencion
-good.a.01# buena
-miss.v.06# falta
-coffee.n.01# café
-good.s.16# seria
-dramatic.s.02# espectacular
-# peluqueria
-congratulation.n.02# felicitaciones
-thousand.s.01# mil
-grace.n.06# gracias
-# gladys
-benediction.n.02# bendiciones
-# muchas
-grace.n.06# gracias
-pride.v.01# felicito
-force.n.04# personal
-thermal.a.01# termales
-force.n.04# personal
-accommodating.a.01# amable
-accommodating.a.01# servicial
-offer.v.02# ofrecen
-# mucha
-assurance.n.01# confianza
-offer.v.02# brindan
-privacy.n.02# privacidad
-# relanjante
-aroma.n.02# olores
-sound.n.02# sonidos
-good.a.01# buenos
-object.n.03# complementos
-congratulation.n.02# felicitaciones
-retain.v.02# continuar
-# asi
-# muchas
-congratulation.n.02# felicitaciones
-make.v.03# hicieron
-ace.s.01# excelente
-job.n.02# trabajo
-# senti
-relax.v.04# relajada
-chiffonier.n.01# comoda
-good.a.01# buen
-job.n.02# trabajo
-watchfulness.n.02# atencion
-affable.s.01# cordial
-grace.n.06# gracias
-# manicure
-# pedicure
-# muchas
-congratulation.n.02# felicitaciones
-ace.s.01# excelente
-job.n.02# trabajo
-wellbeing.n.01# comodidad
-treatment.n.02# trato
-professional.a.01# profesionales
-job.n.02# trabajo
-good.a.01# buena
-# tencion
-pride.v.01# felicitar
-treatment.n.02# trato
-job.n.02# trabajo
-ace.s.01# excelente
-congratulation.n.02# felicitaciones
-patience.n.01# paciencia
-good_humor.n.01# amabilidad
-unsettled.a.01# pendientes
-grace.n.06# gracias
-check.v.01# revisar
-sound.n.04# ruido
-swimming_pool.n.01# piscinas
-anterior.s.02# anteriores
-congratulation.n.02# felicitaciones
-tasty.a.01# delicioso
-well.r.02# bien
-# gladys
-# bermudez
-target.n.01# diana
-treat.v.03# trataron
-queen.n.03# reina
-grace.n.06# gracias
-thousand.s.01# mil
-grace.n.06# gracias
-watchfulness.n.02# atencion
-chair.n.01# silla
-massage.n.01# masaje
-perplex.v.01# incomoda
-temperature.n.01# temperatura
-tapeworm.n.01# tenia
-nail.n.02# uñas
-long.a.02# largas
-# hacia
-massage.n.01# masaje
-# incomo
-# hacia
-motion.n.03# movimientos
-recur.v.01# repetidos
-seriously.r.01# sinceramente
-congratulation.n.02# felicitaciones
-# muchas
-grace.n.06# gracias
-good.a.01# buena
-therapist.n.01# terapeuta
-treat.v.03# trato
-better.v.02# mejorar
-therapist.n.01# terapeutas
-# hacian
-same.a.02# mismos
-exercise.n.01# ejercicios
-derive.v.02# recibimos
-call.n.01# llamada
-antecedent.a.01# previa
-therapist.n.01# terapeuta
-reach.v.01# llegamos
-while.n.01# minutos
-late.r.01# tarde
-child.n.01# chicas
-derive.v.02# recibieron
-well.r.02# bien
-# diciendonos
-topographic_point.n.01# sitio
-ill.r.01# lamentablemente
-customer.n.01# clientes
-good.a.01# buenos
-hotel.n.01# hoteles
-# sonesta
-never.r.01# nunca
-# habia
-happen.v.01# ocurrido
-like.a.01# similar
-personal.a.01# personal
-cabana.n.01# cabaña
-ace.s.01# excelente
-# construccion
-two.s.01# segundo
-dwelling.n.01# piso
-# permitio
-environment.n.02# ambiente
-# potimo
-health_spa.n.01# spa
-well.r.02# bien
-service.n.01# servicio
-# muchas
-congratulation.n.02# felicitaciones
-air-conditioned.s.01# climatizado
-# gustaria
-listen.v.01# escuchar
-set_to_music.v.01# musica
-rear.n.05# fondo
-sound.n.02# sonido
-animal.s.01# animales
-massage.n.01# masajes
-reductive.s.01# reductores
-congratulation.n.02# felicitaciones
-therapist.n.01# terapeuta
-know.v.01# sabe
-job.n.02# trabajo
-# mucha
-quality.n.01# calidad
-human.a.03# humana
-congratulation.n.02# felicitaciones
-fantastic.s.02# maravillosos
-service.n.01# servicios
-grace.n.06# gracias
-displace.v.03# poder
-use.v.01# usar
-water.n.01# aguas
-thermal.a.01# termales
-# econ
-same.a.02# misma
-fee.n.01# tarifa
-health_spa.n.01# spa
-include.v.02# incluir
-software.n.01# paquete
-increase.v.02# incrementar
-monetary_value.n.01# precio
-massage.n.01# masaje
-please.v.01# gusta
-# todas
-expertness.n.01# experiencias
-# muchas
-grace.n.06# gracias
-person.n.01# personas
-professional.a.01# profesionales
-taste.n.06# gusto
-service.n.01# servicio
-laud.v.01# magnifico
-own.v.01# quedamos
-# satifeschos
-congratulation.n.02# felicitaciones
-congratulation.n.02# felicitaciones
-# muchas
-grace.n.06# gracias
-necessitate.v.01# necesita
-# calefaccion
-make.v.03# hace
-# frio
-congratulation.n.02# felicitaciones
-taste.n.06# gusto
-service.n.01# servicio
-laud.v.01# magnifico
-own.v.01# quedamos
-# satifeschos
-# frio
-comfortable.a.01# confortable
-beautiful.a.01# hermoso
-topographic_point.n.01# sitio
-welcoming.s.01# acogedor
-therapist.n.01# terapeuta
-good.a.01# buena
-water.n.01# agua
-# fria
-room.n.01# cuarto
-# frio
-therapist.n.01# terapeuta
-ace.s.01# excelente
-ace.s.01# excelente
-service.n.01# servicio
-region.n.01# parte
-therapist.n.01# terapeutas
-congratulation.n.02# felicitaciones
-# angui
-professional.a.01# profesionales
-have.v.01# tener
-# mas
-# concentracion
-# musculos
-bodily.a.01# corporales
-facial.a.01# faciales
-ace.s.01# excelentes
-# calidos
-customer.n.01# cliente
-grace.n.06# gracias
-# daniela
-good.a.01# bueno
-make.v.03# hicieron
-possible.a.01# posible
-perceive.v.01# sintiera
-# frio
-well.r.02# bien
-watchfulness.n.02# atencion
-good.a.01# buena
-pack.n.07# mascarilla
-pleasing.a.01# agradable
-accommodating.a.01# amable
-dramatic.s.02# espectacular
-pride.v.01# felicito
-massager.n.01# masajista
-# maximo
-offer.v.02# ofrecer
-beverage.n.01# bebidas
-warm.a.01# calientes
-# muchas
-grace.n.06# gracias
-service.n.01# servicio
-favor.n.01# favor
-befit.v.01# adecuar
-health_spa.n.01# spa
-set_to_music.v.01# musica
-relaxant.s.01# relajante
-# mas
-aromatherapy.n.01# aromaterapia
-set_to_music.v.01# musica
-lack.n.01# falta
-sound.n.02# sonido
-aromatherapy.n.01# aromaterapia
-# mas
-# ambientacion
-set_to_music.v.01# musica
-agreement.n.01# acuerdo
-health_spa.n.01# spa
-potent.s.02# fuerte
-fastidious.a.02# detallista
-hand.n.01# mano
-thousand.s.01# mil
-grace.n.06# gracias
-grace.n.06# gracias
-# consertirme
-less.r.01# menos
-while.n.01# tiempo
-expect.v.03# espera
-massage.n.01# masaje
-# excelnte
-service.n.01# servicio
-# buens
-service.n.01# servicio
-good_humor.n.01# amabilidad
-child.n.01# chicas
-listen.v.01# atendieron
-congratulation.n.02# felicitaciones
-# ambientacion
-sound.n.02# sonido
-listen.v.01# escuche
-# mas
-booth.n.02# cabina
-# parecio
-super.s.03# super
-ace.s.01# excelente
-watchfulness.n.02# atencion
-personal.a.01# personal
-professional.a.01# profesionales
-job.n.02# labor
-congratulation.n.02# felicitaciones
-well.r.02# bien
-# mas
-option.n.02# opciones
-massage.n.01# masajes
-congratulation.n.02# felicitaciones
-good.a.01# buena
-treatment.n.01# terapia
-ace.s.01# excelente
-massage.n.01# masaje
-grace.n.06# gracias
-service.n.01# servicio
-give.v.10# prestado
-necessitate.v.01# preguntar
-kind.n.01# tipo
-massage.n.01# masaje
-want.v.02# quiere
-prefer.v.03# preferimos
-# mas
-potent.s.02# fuertes
-# mas
-mild.a.01# suaves
-well.r.02# bien
-grace.n.06# gracias
-# mas
-wellbeing.n.01# comodidad
-expensive.a.01# cara
-# mas
-# calefaccion
-congratulation.n.02# felicitaciones
-ace.s.01# excelente
-service.n.01# servicio
-good.a.01# buena
-watchfulness.n.02# atencion
-case.n.01# veces
-# desconcentrabamos
-# relajacion
-sound.n.04# ruido
-create.v.02# generando
-suitability.n.01# adecuaciones
-dwelling.n.01# piso
-congratulation.n.02# felicitaciones
-professional.a.01# profesionales
-good.a.01# buen
-service.n.01# servicio
-# incomodo
-hole.n.02# orificio
-stretcher.n.03# camilla
-large.a.01# grande
-stay.v.01# sigan
-# asi
-congratulation.n.02# felicitaciones
-well.r.02# bien
-massage.n.01# masaje
-# frio
-stimulation.n.02# estimulante
-relaxant.s.01# relajante
-# muchas
-grace.n.06# gracias
-sound.n.04# ruido
-# permitio
-# relajarme
-wholly.r.01# completamente
-change.v.01# cambiamos
-booth.n.02# cabinas
-sound.n.04# ruido
-masturbate.v.02# cascadas
-sound.n.04# ruido
-hammer.n.02# martillos
-drill.n.01# taladros
-sound.n.04# ruido
-travel.v.01# va
-# ambientacion
-health_spa.n.01# spa
-# calkefaccion
-tidiness.n.02# acondicionamiento
-topographic_point.n.01# sitio
-while.n.01# momento
-close.v.01# cerrar
-better.v.02# mejorar
-sound.n.04# ruido
-swimmer.n.02# bañistas
-congratulation.n.02# felicitaciones
-# dahiana
-hand.n.01# manos
-ace.s.01# excelente
-listen.v.01# escucha
-sound.n.04# ruido
-people.n.01# gente
-# afuera
-# mas
-audio.n.01# volumen
-set_to_music.v.01# musica
-environmental.a.01# ambiental
-# frio
-better.v.02# mejorar
-topographic_point.n.01# sitio
-# cerrandalo
-# mas
-warm.a.01# caliente
-super.s.03# super
-tasty.a.01# delicioso
-good.a.01# buen
-# terapeutagracias
-# ambientacion
-health_spa.n.01# spa
-sound.n.04# ruido
-# frio
-ace.s.01# excelente
-watchfulness.n.02# atencion
-# muchas
-grace.n.06# gracias
-dramatic.s.02# espectacular
-watchfulness.n.02# atencion
-massage.n.01# masaje
-good.a.01# buena
-better.a.01# mejores
-give.v.10# dado
-# relajante
-# muchas
-grace.n.06# gracias
-delectable.s.01# rico
-child.n.01# niñas
-listen.v.01# atendieron
-ace.s.01# excelentes
-# feilictaciones
-ace.s.01# excelente
-service.n.01# servicio
-unaccompanied.a.01# solo
-pride.v.01# felicitar
-ace.s.01# excelente
-accommodating.a.01# amables
-ace.s.01# excelente
-truth.n.01# verdad
-# queria
-# hacerlo
-imperativeness.n.01# insistencia
-wife.n.01# esposa
-make.v.03# hice
-appeal.n.02# encanto
-ace.s.01# excelente
-# muchas
-grace.n.06# gracias
-ace.s.01# excelente
-delectable.s.01# rico
-grace.n.06# gracias
-watchfulness.n.02# atencion
-# daniela
-ace.s.01# excelente
-ace.s.01# excelente
-service.n.01# servicio
-congratulation.n.02# felicitaciones
-recommend.v.01# recomendado
-topographic_point.n.01# sitio
-therapist.n.01# terapeutas
-# agradecientos
-grace.n.06# gracias
-sound.n.04# ruido
-ace.s.01# excelente
-# calefaccion
-well.r.02# bien
-well.r.02# bien
-ace.s.01# excelente
-# servico
-watchfulness.n.02# atencion
-service.n.01# servicio
-good.a.01# bueno
-ace.s.01# excelente
-perceive.v.01# sentimos
-while.n.01# momento
-# calidez
-personal.a.01# personal
-massage.n.01# masaje
-ace.s.01# excelente
-ace.s.01# excelente
-massage.n.01# masaje
-congratulation.n.02# felicitaciones
-necessitate.v.01# necesita
-heater.n.01# calentador
-necessitate.v.01# necesita
-heater.n.01# calentador
-make.v.03# hace
-# frio
-quality.n.01# calidad
-human.a.03# humana
-ace.s.01# excelente
-super.s.03# super
-extra.s.02# especial
-# jessica
-presently.r.02# hoy
-caprice.n.01# antojo
-# puentos
-massage.n.01# masaje
-foot.n.01# pies
-mind.n.01# cabeza
-pleasure.n.05# disfrute
-relax.v.04# relaje
-complete.a.01# completo
-congratulation.n.02# felicitaciones
-child.n.01# chicas
-ace.s.01# excelente
-watchfulness.n.02# atencion
-aromatherapy.n.01# aromaterapia
-tasty.a.01# deliciosa
-ace.s.01# excelente
-congratulation.n.02# felicitaciones
-# cladys
-# ninguna
-ace.s.01# excelente
-health_spa.n.01# spa
-unaccompanied.a.01# solo
-# sigiero
-have.v.01# tener
-water.n.01# agua
-welcome.a.01# bienvenida
-water.n.01# agua
-welcome.a.01# bienvenida
-set_to_music.v.01# musica
-health_spa.n.01# spa
-set_to_music.v.01# musica
-rear.n.05# fondo
-# muchas
-grace.n.06# gracias
-# excelnte
-concluding.s.01# final
-massage.n.01# masaje
-# yesica
-good.a.01# buena
-grace.n.06# gracias
-congratulation.n.02# felicitaciones
-good.a.01# bueno
-# huesped
-frequent.v.02# frecuenta
-hotel.n.01# hotel
-# adriana
-# amble
-doubt.n.01# duda
-put.v.01# pone
-better.a.01# mejor
-campaign.n.02# empeño
-make.v.03# realizar
-# tabajo
-grace.n.06# gracias
-pain.n.03# dolor
-sword.n.01# espada
-# comun
-# mas
-find.v.05# creemos
-know.v.01# conozco
-topographic_point.n.01# sitios
-make.v.03# creado
-option.n.02# opciones
-concentrate.v.02# enfocadas
-treatment.n.01# tratamiento
-displace.v.03# podido
-increase.v.02# incrementar
-sum.n.01# cantidad
-customer.n.01# clientes
-pleasing.a.01# agradable
-treatment.n.01# terapia
-# adriana
-congratulation.n.02# felicitaciones
-# grcias
-thousand.s.01# mil
-congratulation.n.02# felicitaciones
-watchfulness.n.02# atencion
-# excelnte
-# volvere
-congratulation.n.02# felicitaciones
-good.a.01# buena
-watchfulness.n.02# atencion
-child.n.01# niña
-want.v.02# querida
-# gustaria
-shower.n.04# duchas
-# mas
-# serca
-ace.s.01# excelente
-# gustaira
-aromatherapy.n.01# aromaterapia
-child.n.01# niñas
-well.r.02# bien
-super.s.03# super
-watchfulness.n.02# atencion
-congratulation.n.02# felicitaciones
-appeal.n.02# encanto
-congratulation.n.02# felicitaciones
-receive.v.05# invitar
-user.n.01# usuario
-while.n.01# minutos
-# retrazar
-shift.n.07# turnos
-hint.v.01# sugerir
-clothing.n.01# ropa
-dry.a.01# seca
-note.v.01# citar
-while.n.01# minutos
-fill.v.01# llenar
-counter.n.02# ficha
-# clinica
-better.a.01# mejor
-communication.n.02# comunicación
-# recepcion
-# epa
-change.v.01# cambien
-change.v.01# cambien
-# falto
-environment.n.02# ambiente
-musical.a.02# musical
-wonder.n.02# maravilla
-# senti
-beloved.n.01# cielo
-put.v.01# poner
-set_to_music.v.01# musica
-perplex.v.01# incomoda
-stretcher.n.03# camilla
-region.n.01# parte
-tall.a.01# alta
-neck.n.01# cuello
-make.v.03# hacer
-# mas
-# durito
-grace.n.06# gracias
+0 make.v.03# hacer
+1 # frio
+5 # ambientacion
+7 set_to_music.v.01# musicar
+10 hole.n.02# hueco
+12 # mas
+13 small.a.01# pequeño
+14 make.v.03# hacer
+16 # frio
+17 # calefaccion
+18 advisable.a.01# recomendable
+19 # mucho
+20 congratulation.n.02# felicitación
+21 change.v.01# cambiar
+22 pillow.n.01# almohada
+24 establish.v.01# fundar
+26 # cada
+27 service.n.01# servicio
+29 # ungorro
+32 # emsuciar
+34 hair.n.01# cabello
+35 hand.n.01# mano
+37 mild.a.01# suave
+38 grace.n.06# gracia
+42 hotness.n.01# calor
+45 environment.n.02# ambiente
+46 make.v.03# hacer
+48 # frio
+49 grace.n.06# gracia
+52 schedule.n.02# horario
+54 # mas
+55 early.r.02# temprano
+59 morning.n.01# am
+64 # mas
+65 relax.v.04# relajar
+67 # unico
+70 make.v.03# hacer
+72 # frio
+74 remainder.n.01# resto
+75 super.s.03# super
+76 well.r.02# bien
+78 expertness.n.01# experiencia
+80 child.n.01# chico
+82 accommodating.a.01# amable
+83 congratulation.n.02# felicitación
+84 perceive.v.01# sentir
+86 set_to_music.v.01# musicar
+88 health_spa.n.01# spa
+90 good.a.01# bueno
+92 watchfulness.n.02# atencion
+94 massage.n.01# masaje
+95 displace.v.03# poder
+96 be.v.01# ser
+97 # mas
+98 potent.s.02# fuerte
+100 be.v.01# ser
+101 ace.s.01# excelente
+103 # bien
+104 put.v.01# poner
+105 # calefaccion
+107 favor.n.01# favor
+108 # calefaccion
+111 salt.v.04# salar
+112 put.v.01# poner
+114 radiator.n.02# radiador
+118 utter.v.02# emitir
+119 hotness.n.01# calor
+121 massage.n.01# masaje
+123 price.n.04# valor
+124 # mas
+125 military_personnel.n.01# efectivo
+126 think.v.03# pensar
+129 topographic_point.n.01# sitio
+130 # deberia
+131 person.n.01# ser
+132 # mas
+133 air-conditioned.s.01# climatizar
+136 well.r.02# bien
+137 grace.n.06# gracia
+139 short_story.n.01# cuento
+141 # comidada
+143 sound.n.04# ruido
+146 # remodelacion
+148 intolerable.a.01# insoportable
+149 make.v.03# hacer
+152 # teria
+153 forfeit.v.01# perder
+154 meaning.n.01# sentido
+155 # ninguno
+156 ace.s.01# excelente
+157 massage.n.01# masaje
+158 # mucho
+159 grace.n.06# gracia
+161 accommodating.a.01# amable
+163 good.a.01# bueno
+164 service.n.01# servicio
+166 sound.n.04# ruido
+168 region.n.01# parte
+171 worker.n.01# trabajador
+173 make.v.03# realizar
+175 # remodelacion
+176 set_to_music.v.01# musicar
+177 environmental.a.01# ambiental
+179 # aroterapia
+181 treatment.n.01# terapia
+185 ace.s.01# excelente
+186 ace.s.01# excelente
+187 service.n.01# servicio
+189 quality.n.01# calidad
+190 human.a.03# humano
+191 grace.n.06# gracia
+192 # yesica
+194 # adriana
+195 ace.s.01# excelente
+196 service.n.01# servicio
+197 # ninguno
+198 set_to_music.v.01# musicar
+200 good.a.01# bueno
+202 # esten
+204 reshuffle.n.01# remodelación
+205 new.a.01# nuevo
+206 congratulation.n.02# felicidad
+207 ace.s.01# excelente
+208 watchfulness.n.02# atencion
+210 respect.n.03# respeto
+213 personal.a.01# personal
+214 ace.s.01# excelente
+215 good.a.01# bueno
+216 operation.n.01# manejo
+217 congratulation.n.02# felicitación
+219 person.n.01# persona
+221 accommodating.a.01# amable
+223 # senti
+225 well.r.02# bien
+226 # mucho
+227 grace.n.06# gracia
+228 stay.v.01# seguir
+229 # asi
+231 taste.n.06# gusto
+234 watchfulness.n.02# atencion
+237 accommodating.a.01# amable
+239 good.a.01# bueno
+241 watchfulness.n.02# atencion
+242 congratulation.n.02# felicitación
+244 # senti
+245 super.s.03# super
+246 well.r.02# bien
+247 # muchisimas
+248 grace.n.06# gracia
+251 expertness.n.01# experiencia
+252 good.a.01# bueno
+254 # profecionales
+255 grace.n.06# gracia
+256 congratulation.n.02# felicitación
+257 congratulation.n.02# felicitación
+258 better.v.02# mejorar
+260 # presion
+262 water.n.01# agua
+265 shower.n.04# ducha
+266 ace.s.01# excelente
+267 entrance.n.01# acceso
+270 person.n.01# persona
+272 mobility.n.01# movilidad
+273 reduce.v.01# reducir
+274 congratulation.n.02# felicitación
+275 # volvere
+276 # felcitaciones
+277 ace.s.01# excelente
+278 ace.s.01# excelente
+279 # mucho
+280 grace.n.06# gracia
+281 ace.s.01# excelente
+283 good.a.01# bueno
+284 # mucho
+285 grace.n.06# gracia
+286 super.s.03# super
+288 better.r.01# mejor
+290 professional.a.01# profesional
+292 beloved.n.01# querido
+293 ace.s.01# excelente
+296 good.a.01# bueno
+298 survive.v.01# durar
+299 # mucho
+300 grace.n.06# gracia
+301 well.r.02# bien
+304 well.r.02# bien
+305 job.n.02# trabajo
+306 grace.n.06# gracia
+307 grace.n.06# gracia
+308 # volvere
+310 # maximo
+311 make.v.02# volver
+312 super.s.03# super
+314 # unica
+315 advice.n.01# recomendación
+316 good.s.16# serio
+317 supply.v.01# proveer
+319 negligee.n.01# bata
+320 white.a.01# blanco
+321 pride.v.01# felicitar
+322 grace.n.06# gracia
+323 # dahiana
+324 make.v.03# hacer
+326 ace.s.01# excelente
+327 job.n.02# trabajo
+329 ace.s.01# excelente
+331 # chevere
+333 topographic_point.n.01# sitio
+334 congratulation.n.02# felicitación
+336 well.r.02# bien
+337 # flicitaciones
+339 water.n.01# agua
+340 warm.a.01# caliente
+341 # ayudaria
+343 better.v.02# mejorar
+345 treatment.n.01# terapia
+346 water.n.01# agua
+347 warm.a.01# caliente
+350 accommodating.a.01# amable
+351 ace.s.01# excelente
+352 # gladis
+354 glad.a.01# feliz
+355 set_to_music.v.01# musicar
+357 aromatherapy.n.01# aromaterapia
+358 congratulation.n.02# felicitación
+361 therapist.n.01# terapeuta
+362 # jesica
+365 # tecnica
+367 massage.n.01# masaje
+369 stay.v.01# seguir
+370 # asi
+373 watchfulness.n.02# atencion
+374 so.r.01# tan
+375 good.a.01# bueno
+376 grace.n.06# gracia
+379 well.r.02# bien
+380 grace.n.06# gracia
+381 decidedly.r.01# definitivamente
+383 expertness.n.01# experiencia
+385 pleasing.a.01# agradable
+386 cost.v.01# valer
+388 punishment.n.01# pena
+389 # repetirlo
+390 ace.s.01# excelente
+391 job.n.02# trabajo
+393 perfect.a.01# perfecto
+395 professional.a.01# profesional
+396 use.v.01# emplear
+398 manner.n.01# forma
+400 massage.n.01# masaje
+401 different.a.01# diferente
+404 hand.n.01# mano
+406 bantam.s.01# chico
+409 # atendio
+410 # dahiana
+412 extra.s.02# especial
+415 # dificil
+417 have.v.01# tener
+419 while.n.01# tiempo
+421 # relajacion
+424 sound.n.04# ruido
+426 shower.n.04# ducha
+429 bad.a.01# malo
+432 # poco
+433 # presion
+437 displace.v.03# poder
+438 remove.v.01# retirar
+440 mud.n.01# lodo
+443 topographic_point.n.01# lugar
+447 private.a.01# privar
+448 grace.n.06# gracia
+450 # dahiana
+452 accommodating.a.01# amable
+453 have.v.01# tener
+455 state.v.01# contar
+456 appearance.n.01# aspecto
+458 pillow.n.01# almohada
+460 # bajo
+462 abdomen.n.01# abdomen
+463 # mientras
+466 body.n.01# cuerpo
+468 strengthen.v.01# fortalecer
+470 # xxxxxxx
+472 # mas
+473 washcloth.n.01# toalla
+474 different.a.01# diferente
+477 people.n.01# gente
+478 thousand.s.01# mil
+479 grace.n.06# gracia
+481 delectable.s.01# rico
+483 # implemetar
+485 new.a.01# nuevo
+486 # chocolateriapia
+487 # cafeterapia
+493 increase.n.03# aumento
+495 service.n.01# servicio
+496 # terapeutico
+497 have.v.01# tener
+498 # mas
+499 force.n.04# personal
+500 # terapeutico
+502 be.v.01# ser
+503 listen.v.01# atender
+504 # minimo
+505 while.n.01# minuto
+507 necessitate.v.01# requerir
+509 # procedimineto
+511 aromatherapy.n.01# aromaterapia
+512 use.v.01# utilizar
+514 tool.n.01# instrumento
+516 massage.n.01# masaje
+518 good.a.01# bueno
+519 ace.s.01# excelente
+520 congratulation.n.02# felicidad
+522 benediction.n.02# bendición
+524 large.a.01# gran
+525 service.n.01# servicio
+527 good.a.01# bueno
+529 watchfulness.n.02# atencion
+532 therapist.n.01# terapeuta
+533 make.v.03# hacer
+535 large.a.01# gran
+536 job.n.02# labor
+537 target.n.01# diana
+538 # nunguna
+539 # sandra
+541 well.r.02# bien
+542 # jessica
+545 well.r.02# bien
+546 retain.v.02# continuar
+547 give.v.10# prestar
+548 so.r.01# tan
+549 ace.s.01# excelente
+550 service.n.01# servicio
+551 congratulation.n.02# felicitación
+554 child.n.01# chico
+555 # adrianas
+556 grace.n.06# gracia
+558 perfect.a.01# perfecto
+560 appeal.n.02# encanto
+562 child.n.01# niño
+565 job.n.02# trabajo
+567 use.v.01# aplicar
+568 # deberian
+569 put.v.01# colocar
+570 water.n.01# agua
+571 warm.a.01# caliente
+574 # ducham
+575 stretcher.n.03# camilla
+576 # mas
+577 large.a.01# grande
+578 rug.n.01# manta
+579 # termicas
+580 # calefaccion
+583 health_spa.n.01# spa
+585 booth.n.02# cabina
+586 # deberian
+587 put.v.01# colocar
+588 # calefaccion
+592 health_spa.n.01# spa
+595 booth.n.02# cabina
+596 # tambien
+599 shower.n.04# ducha
+600 water.n.01# agua
+601 warm.a.01# caliente
+602 # mas
+603 wellbeing.n.01# comodidad
+606 person.n.01# persona
+607 major.a.03# mayor
+609 place.n.03# espacio
+611 make.v.03# realizar
+612 treatment.n.01# terapia
+614 # discacidad
+615 # ninguno
+616 put.v.01# poner
+617 # elevador
+618 grace.n.06# gracia
+619 grace.n.06# gracia
+621 ace.s.01# excelente
+623 appeal.n.02# encanto
+625 service.n.01# servicio
+626 # mucho
+627 grace.n.06# gracia
+628 super.s.03# super
+629 good.a.01# bueno
+630 service.n.01# servicio
+631 # mucho
+632 grace.n.06# gracia
+633 install.v.01# instalar
+634 water.n.01# agua
+635 warm.a.01# caliente
+636 put.v.01# ubicar
+637 rug.n.01# tapete
+639 corporeal.a.01# material
+640 nonslip.s.01# antideslizante
+643 departure.n.01# salida
+646 shower.n.04# ducha
+650 # escalon
+654 dwelling.n.01# piso
+656 prevent.v.01# evitar
+657 possible.a.01# posible
+658 # caidas
+660 set_to_music.v.01# musicar
+662 health_spa.n.01# spa
+663 ace.s.01# excelente
+666 # relajacion
+667 unaccompanied.a.01# solo
+670 listen.v.01# escuchar
+672 set_to_music.v.01# musicar
+675 swimming_pool.n.01# piscina
+676 # ninguno
+677 # ninguno
+679 favor.n.01# favor
+680 water.n.01# agua
+681 warm.a.01# caliente
+684 shower.v.03# duchar
+685 environment.n.02# ambiente
+686 hot.a.01# tibio
+688 rug.n.01# tapete
+690 die.v.01# salir
+693 shower.n.04# ducha
+694 entrance.n.01# entrada
+695 offer.v.02# ofertar
+696 treatment.n.01# terapia
+698 # combo
+700 software.n.01# paquete
+701 offer.v.02# ofrecer
+702 # mas
+703 assortment.n.01# variedad
+705 service.n.01# servicio
+707 # limpezas
+708 facial.a.01# facial
+709 health_spa.n.01# spa
+711 nail.n.02# uña
+712 # mas
+713 tall.a.01# alto
+715 audio.n.01# volumen
+718 set_to_music.v.01# musicar
+721 listen.v.01# escuchar
+724 person.n.01# persona
+727 swimming_pool.n.01# piscina
+728 # podria
+729 be.v.01# ser
+730 # mas
+731 pleasing.a.01# agradable
+733 environment.n.02# ambiente
+735 health_spa.n.01# spa
+736 # si
+738 displace.v.03# poder
+739 perceive.v.01# percibir
+740 # oleres
+741 # relantes
+742 aromatherapy.n.01# aromaterapia
+744 toilet.n.02# baño
+746 bad.a.01# mal
+747 aroma.n.02# olor
+748 # deberian
+749 have.v.01# tener
+751 put.v.01# poner
+753 clothing.n.01# ropa
+756 thing.n.08# cosa
+757 personal.a.01# personal
+759 toilet.n.02# baño
+760 smell.v.02# oler
+762 ill.r.01# mal
+763 return.v.01# regresar
+765 laud.v.01# magnificar
+766 option.n.02# alternativa
+768 end.v.02# finalizar
+770 large.a.01# gran
+771 defense_intelligence_agency.n.01# dia
+773 super.s.03# super
+774 well.r.02# bien
+775 always.r.01# siempre
+777 revenge.v.01# vengar
+779 make.v.03# hacer
+781 massage.n.01# masaje
+782 super.s.03# super
+784 large.a.01# gran
+785 place.n.03# espacio
+787 while.n.01# momento
+789 stay.v.01# descansar
+792 listen.v.01# escuchar
+793 # mas
+795 set_to_music.v.01# musicar
+796 ace.s.01# excelente
+798 # mucho
+799 grace.n.06# gracia
+800 ace.s.01# excelente
+801 topographic_point.n.01# sitio
+802 put.v.01# dejar
+803 transport.v.02# cargar
+805 mobile.a.02# celular
+806 # mientras
+811 # tratemiento
+812 better.v.02# mejorar
+814 temperature.n.01# temperatura
+816 water.n.01# agua
+819 shower.v.03# duchar
+820 # mas
+821 heat.v.01# calentar
+822 # mucho
+823 grace.n.06# gracia
+825 # gustaria
+828 # mas
+830 # presion
+833 massage.n.01# masaje
+835 general.a.01# general
+838 ace.s.01# excelente
+839 grace.n.06# gracia
+841 please.v.01# gustar
+842 gross.n.02# retorno
+843 # mañama
+844 shower.v.03# duchar
+846 water.n.01# agua
+847 # mas
+848 abundant.a.01# abundante
+850 region.n.01# parte
+853 put.v.01# poner
+855 wax.n.01# cera
+858 stretcher.n.03# camilla
+861 difficult.a.01# duro
+862 put.v.01# poner
+864 # mas
+865 # blandito
+867 # instalacion
+870 privacy.n.02# privacidad
+872 health_spa.n.01# spa
+873 be.v.03# haber
+874 # mas
+875 # aromateria
+876 aromatherapy.n.01# aromaterapia
+877 better.a.01# mejor
+878 aroma.n.02# aroma
+879 light.n.01# luz
+880 # mas
+881 short.a.03# bajo
+883 fruit.n.01# fruto
+885 case.n.01# vez
+887 # aromatica
+888 have.v.01# tener
+889 # mas
+890 aromatherapy.n.01# aromaterapia
+891 light.n.01# luz
+892 short.a.03# bajo
+894 fruit.n.01# fruto
+896 case.n.01# vez
+898 aromatherapy.n.01# aromaterapia
+901 ace.s.01# excelente
+904 advice.n.01# recomendación
+908 # pedi
+910 massage.n.01# masaje
+912 # relajacion
+914 # parecio
+915 well.r.02# bien
+917 ace.s.01# excelente
+918 # ninguno
+919 ace.s.01# excelente
+920 aromatherapy.n.01# aromaterapia
+921 perfume.v.01# aromatizar
+923 topographic_point.n.01# lugar
+926 make.v.03# hacer
+928 massage.n.01# masaje
+930 toilet.n.02# baño
+933 bad.a.01# mal
+934 aroma.n.02# olor
+936 set_to_music.v.01# musicar
+937 put.v.01# situar
+938 different.a.01# diferente
+943 listen.v.01# escuchar
+945 sound.n.04# ruido
+947 therapist.n.01# terapeuta
+950 accommodating.a.01# amable
+952 professional.a.01# profesional
+953 search.v.01# procurar
+956 sound.n.04# ruido
+957 external.a.01# externo
+959 make.v.03# hacer
+960 aromatherapy.n.01# aromaterapia
+961 # jessica
+963 favor.n.01# favor
+964 water.n.01# agua
+965 warm.a.01# caliente
+966 grace.n.06# gracia
+967 congratulation.n.02# felicitación
+968 julian.a.01# juliano
+969 ace.s.01# excelente
+971 # atentar
+973 relax.v.04# relajar
+974 # ninguno
+975 # ninguno
+976 install.v.01# instalar
+978 water.n.01# agua
+979 warm.a.01# caliente
+980 # dahiana
+981 ace.s.01# excelente
+983 please.v.01# gustar
+986 well.r.02# bien
+987 # volvere
+988 fantastic.s.02# fenomenal
+989 julian.a.01# juliano
+991 pride.v.01# felicitar
+993 watchfulness.n.02# atencion
+996 good.a.01# bueno
+998 topographic_point.n.01# lugar
+1001 # comodo
+1003 pleasing.a.01# agradable
+1004 super.s.03# super
+1005 good.a.01# bueno
+1007 service.n.01# servicio
+1011 appearance.n.01# aspecto
+1012 # sandra
+1014 # increible
+1016 massage.n.01# masaje
+1018 displace.v.03# poder
+1019 be.v.01# ser
+1020 better.r.01# mejor
+1021 julian.a.01# juliano
+1023 good.a.01# bueno
+1025 professional.a.01# profesional
+1027 region.n.01# parte
+1030 toilet.n.02# baño
+1031 service.n.01# servicio
+1032 owe.v.01# deber
+1033 better.v.02# mejorar
+1034 net.v.02# rentar
+1035 # tohallas
+1037 include.v.02# incluir
+1040 price.n.04# valor
+1043 entrance.n.01# entrada
+1045 survive.v.01# durar
+1046 # mas
+1047 pride.v.01# felicitar
+1049 massager.n.01# masajista
+1051 accommodating.a.01# atento
+1052 accommodating.a.01# amable
+1054 professional.a.01# profesional
+1057 job.n.02# trabajo
+1058 fantastic.s.02# estupendo
+1060 massage.n.01# masaje
+1061 grace.n.06# gracia
+1062 ace.s.01# excelente
+1063 professional.a.01# profesional
+1065 art.n.02# arte
+1067 massage.n.01# masaje
+1070 # comodo
+1072 pole.n.01# palo
+1075 traverse.v.01# atravesar
+1078 hole.n.02# hueco
+1081 expensive.a.01# caro
+1084 stretcher.n.03# camilla
+1086 ace.s.01# excelente
+1088 # antencion
+1090 environment.n.02# ambiente
+1091 fantastic.s.02# fenomenal
+1093 suggestion.n.02# sugerencia
+1095 cover.v.01# cubrir
+1097 eye.n.01# ojo
+1099 fabric.n.01# paño
+1100 hot.a.01# tibio
+1103 washcloth.n.01# toalla
+1104 about.r.02# alrededor
+1106 neck.n.01# cuello
+1107 decidedly.r.01# definitivamente
+1108 ace.s.01# excelente
+1109 find.v.05# creer
+1111 owe.v.01# deber
+1112 have.v.01# tener
+1113 # mas
+1114 person.n.01# persona
+1117 toilet.n.02# baño
+1119 shower.n.04# ducha
+1121 perceive.v.01# sentir
+1123 ill.r.01# mal
+1124 aroma.n.02# olor
+1126 region.n.01# parte
+1129 put.v.01# poner
+1131 # rosto
+1133 pleat.n.01# pliegue
+1135 make.v.03# causar
+1136 pain.n.03# dolor
+1139 # menton
+1140 # ninguno
+1142 child.n.01# niño
+1144 divine.s.06# divino
+1146 stretcher.n.03# camilla
+1147 # deberian
+1149 # frente
+1152 masturbate.v.02# cascar
+1154 better.a.01# mejor
+1155 expertness.n.01# experiencia
+1157 lord.n.03# señor
+1158 # adriana
+1161 unsettled.a.01# pendiente
+1165 think.v.03# pensar
+1166 return.v.01# regresar
+1168 health_spa.n.01# spa
+1170 dramatic.s.02# espectacular
+1172 set_to_music.v.01# musicar
+1174 # poquito
+1175 # mas
+1176 tall.a.01# alto
+1177 necessitate.v.01# preguntar
+1179 user.n.01# usuario
+1181 # presion
+1182 want.v.02# querer
+1184 good.a.01# bueno
+1185 treatment.n.02# trato
+1187 professional.a.01# profesional
+1189 stretcher.n.03# camilla
+1190 # deberian
+1191 have.v.01# tener
+1193 hole.n.02# orificio
+1195 stay.v.01# reposar
+1197 appearance.n.01# cara
+1203 # posicion
+1204 entrance.n.01# boca
+1205 down.r.01# abajo
+1206 # sandra
+1207 tenant_farmer.n.01# quintero
+1208 make.v.03# hacer
+1210 ace.s.01# excelente
+1211 job.n.02# trabajo
+1212 good.s.16# serio
+1213 good.a.01# bueno
+1214 have.v.01# tener
+1215 schedule.n.02# horario
+1216 available.a.01# disponible
+1217 ace.s.01# excelente
+1218 # adriana
+1219 # jessica
+1220 do.n.02# do
+1221 person.n.01# persona
+1223 accommodating.a.01# amable
+1225 professional.n.01# profesional
+1226 # adriana
+1229 # jessica
+1232 watchfulness.n.02# atencion
+1235 professionalism.n.01# profesionalismo
+1237 make.v.03# realizar
+1239 job.n.02# trabajo
+1242 good.a.01# bueno
+1243 job.n.02# trabajo
+1245 professionalism.n.01# profesionalismo
+1247 # adriana
+1251 # ambiente
+1253 do.n.02# do
+1254 child.n.01# chico
+1255 congratulation.n.02# felicitación
+1258 professionalism.n.01# profesionalismo
+1260 good.a.01# bueno
+1261 job.n.02# trabajo
+1262 grace.n.06# gracia
+1264 perfect.a.01# perfecto
+1265 grace.n.06# gracia
+1268 watchfulness.n.02# atencion
+1270 professional.a.01# profesional
+1271 # mucho
+1272 grace.n.06# gracia
+1275 so.r.01# tan
+1276 good.a.01# bueno
+1277 watchfulness.n.02# atencion
+1279 perfect.a.01# perfecto
+1280 actually.r.01# realmente
+1281 grateful.a.01# agradecer
+1284 while.n.01# rato
+1285 so.r.01# tan
+1286 pleasing.a.01# agradable
+1288 professional.a.01# profesional
+1289 # continuen
+1290 # asi
+1291 grace.n.06# gracia
+1295 # bien
+1296 pride.v.01# felicitar
+1298 massager.n.01# masajista
+1299 # mas
+1300 # informacion
+1302 region.n.01# parte
+1304 # recepcion
+1306 laos.n.01# laos
+1307 service.n.01# servicio
+1308 q.n.01# q
+1309 offer.v.02# ofrecer
+1310 major.a.03# mayor
+1311 # informacion
+1313 region.n.01# parte
+1315 # recepcion
+1320 give.v.10# dar
+1321 report.n.01# reporte
+1324 # habia
+1325 health_spa.n.01# spa
+1327 refer.v.02# tocar
+1328 learn.v.02# averiguar
+1331 # meseroellas
+1334 accommodating.a.01# atento
+1336 offer.v.02# ofrecer
+1338 service.n.01# servicio
+1340 remainder.n.01# resto
+1343 personal.a.01# personal
+1345 ace.s.01# excelente
+1346 grace.n.06# gracia
+1349 # mas
+1350 therapist.n.01# terapeuta
+1353 stretcher.n.03# camilla
+1355 # mas
+1356 chiffonier.n.01# comoda
+1357 have.v.01# tener
+1359 coatrack.n.01# perchero
+1361 dining_table.n.01# mesa
+1362 peer.n.01# par
+1363 put.v.01# poner
+1365 clothing.n.01# ropa
+1367 # ambientacion
+1368 musical.a.02# musical
+1369 different.a.01# diferente
+1373 hotel.n.01# hotel
+1374 aroma.n.02# aroma
+1376 aroma.n.02# fragancia
+1378 # cada
+1379 room.n.01# sala
+1381 massage.n.01# masaje
+1382 independent.a.01# independiente
+1384 kind.n.01# tipo
+1386 massage.n.01# masaje
+1387 supply.v.01# suministrar
+1390 clothing.n.01# ropa
+1391 # comoda
+1392 disposable.a.02# desechable
+1394 offer.v.02# ofrecer
+1395 sail.n.01# vela
+1396 # ensendidas
+1398 # todo
+1400 room.n.01# sala
+1402 massage.n.01# masaje
+1403 congratulation.n.02# felicidad
+1406 topographic_point.n.01# lugar
+1407 dramatic.s.02# espectacular
+1410 kind.n.01# tipo
+1412 service.n.01# servicio
+1414 find.v.05# creer
+1416 owe.v.01# deber
+1417 # aprovecharlo
+1418 # mas
+1419 grace.n.06# gracia
+1420 stretcher.n.03# camilla
+1421 # econ
+1422 # descansador
+1424 mind.n.01# cabeza
+1425 hole.n.02# hueco
+1426 better.v.02# mejorar
+1427 stretcher.n.03# camilla
+1429 concentrate.v.02# clavar
+1434 nut.n.01# nuez
+1436 temperature.n.01# temperatura
+1438 # agrable
+1440 professional.a.01# profesional
+1443 please.v.01# gustar
+1446 therapist.n.01# terapeuta
+1448 interrupt.v.01# suspender
+1450 massage.n.01# masaje
+1452 listen.v.01# atender
+1454 customer.n.01# cliente
+1456 necessitate.v.01# necesitar
+1457 # informacion
+1458 # pues
+1460 interfere.v.01# interferir
+1463 consequence.n.01# efecto
+1465 listen.v.01# atender
+1466 super.s.03# super
+1467 well.r.02# bien
+1468 make.v.02# volver
+1470 december.n.01# diciembre
+1472 therapist.n.01# terapeuta
+1474 accommodating.a.01# amable
+1475 # salpicon
+1476 warm.a.01# caliente
+1477 tasty.a.01# delicioso
+1478 put.v.01# poner
+1479 stretcher.n.03# camilla
+1481 # descansador
+1482 make.v.03# hacer
+1486 # frio
+1488 temperature.n.01# temperatura
+1490 delay.n.01# retraso
+1493 # husped
+1494 # np
+1495 # cumplio
+1497 schedule.n.02# horario
+1499 stay.v.01# seguir
+1500 # asi
+1502 well.r.02# bien
+1504 person.n.01# persona
+1506 accommodating.a.01# amable
+1509 # salpicon
+1510 warm.a.01# caliente
+1512 delectable.s.01# rico
+1515 delectable.s.01# rico
+1516 aromatherapy.n.01# aromaterapia
+1518 well.r.02# bien
+1520 # senti
+1522 well.r.02# bien
+1523 listen.v.01# atender
+1524 stay.v.01# seguir
+1525 # asi
+1526 # pedicure
+1528 # manicure
+1529 # pedicure
+1531 # manicure
+1532 ace.s.01# excelente
+1534 service.n.01# servicio
+1535 # promosionar
+1536 # ma
+1538 service.n.01# servicio
+1540 health_spa.n.01# spa
+1543 tube.n.01# canal
+1544 private.a.01# privar
+1546 service.n.01# servicio
+1548 health_spa.n.01# spa
+1550 television.n.01# tv
+1551 # promosionar
+1552 # mas
+1554 health_spa.n.01# spa
+1557 # huespedes
+1560 television.n.01# tv
+1562 tube.n.01# canal
+1563 private.a.01# privar
+1564 state.v.01# decir
+1566 travel.v.01# ir
+1567 make.v.03# hacer
+1569 # posicion
+1570 ace.s.01# excelente
+1571 massage.n.01# masaje
+1572 good.a.01# bueno
+1573 environment.n.02# ambiente
+1574 congratulation.n.02# felicitación
+1575 ace.s.01# excelente
+1576 service.n.01# servicio
+1579 service.n.01# servicio
+1581 massage.n.01# masaje
+1582 # san
+1583 michael.n.01# miguel
+1584 # mucho
+1585 congratulation.n.02# felicitación
+1587 personal.a.01# personal
+1588 skilled.a.01# especializar
+1590 stay.v.01# seguir
+1591 # asi
+1593 # mperfecto
+1595 increase.v.02# elevar
+1597 monetary_value.n.01# costo
+1599 sauna.n.01# sauna
+1600 # ninguno
+1601 congratulation.n.02# felicitación
+1602 julian.a.01# juliano
+1603 ace.s.01# excelente
+1604 grace.n.06# gracia
+1605 change.v.01# cambiar
+1607 hairpiece.n.01# postizo
+1608 fantastic.s.02# maravilloso
+1609 massage.n.01# masaje
+1610 # tailandes
+1611 ace.s.01# excelente
+1612 watchfulness.n.02# atencion
+1613 ace.s.01# excelente
+1614 service.n.01# servicio
+1615 congratulation.n.02# felicitación
+1617 opportunity.n.01# posibilidad
+1619 make.v.03# realizar
+1620 booking.n.02# reservación
+1622 agenda.n.01# agenda
+1625 personal.a.01# personal
+1627 hotel.n.01# hotel
+1628 put.v.01# poner
+1629 # mas
+1630 volant.s.01# volante
+1632 # recepcion
+1635 massage.n.01# masaje
+1637 reach.v.01# llegar
+1639 # habian
+1640 perfect.a.01# perfecto
+1641 # aramoterapia
+1642 oil.n.01# aceite
+1644 aroma.n.02# esencia
+1645 congratulation.n.02# felicitación
+1648 keep.v.01# mantener
+1649 # asi
+1651 good.a.01# bueno
+1652 service.n.01# servicio
+1653 ace.s.01# excelente
+1654 grace.n.06# gracia
+1655 recommend.v.01# recomendar
+1656 ace.s.01# excelente
+1659 ace.s.01# excelente
+1660 watchfulness.n.02# atencion
+1662 good.a.01# bueno
+1663 grace.n.06# gracia
+1664 clock.n.01# reloj
+1665 large.a.01# grande
+1668 region.n.01# parte
+1670 # afuera
+1671 clock.n.01# reloj
+1674 region.n.01# parte
+1675 # afuera
+1679 swimmer.n.02# bañista
+1680 displace.v.03# poder
+1682 unsettled.a.01# pendiente
+1685 time.n.02# hora
+1687 departure.n.01# salida
+1689 impermanent.a.01# temporal
+1690 health_spa.n.01# spa
+1692 # pereira
+1693 put.v.01# poner
+1694 # mas
+1695 treatment.n.01# terapia
+1696 # acorde
+1698 pouch.n.02# bolsillo
+1700 # cada
+1701 person.n.01# persona
+1703 survive.v.01# durar
+1704 # mas
+1705 while.n.01# tiempo
+1707 treatment.n.01# terapia
+1710 put.v.01# poner
+1712 mind.n.01# cabeza
+1713 put.v.01# poner
+1715 disposable.a.02# desechable
+1720 universe.n.01# mundo
+1722 put.v.01# poner
+1724 mind.n.01# cabeza
+1727 bed.n.01# cama
+1729 # proteccion
+1731 # encantaria
+1734 reduce.v.01# bajar
+1736 monetary_value.n.01# precio
+1740 case.n.01# vez
+1744 massage.n.01# masaje
+1746 remainder.n.01# resto
+1749 well.r.02# bien
+1750 # daniela
+1752 pride.v.01# felicitar
+1754 hand.n.01# mano
+1756 # angel
+1757 # angela
+1758 # excelnte
+1760 considerate.a.01# delicado
+1761 patient.n.01# paciente
+1763 ace.s.01# excelente
+1764 hand.n.01# mano
+1765 # daniela
+1767 # atendio
+1768 # desda
+1769 # recepcion
+1773 accommodating.a.01# atento
+1775 do.n.02# do
+1777 # amblar
+1778 ace.s.01# excelente
+1779 job.n.02# trabajo
+1780 # terapeutico
+1781 wholly.r.01# totalmente
+1782 please.v.01# complacer
+1783 congratulation.n.02# felicitación
+1785 so.r.01# tan
+1786 ace.s.01# excelente
+1787 service.n.01# servicio
+1789 wellbeing.n.01# comodidad
+1790 grace.n.06# gracia
+1791 heat.v.01# calentar
+1794 # mas
+1796 environment.n.02# ambiente
+1797 # mas
+1798 # vestidor
+1799 means.n.01# camino
+1800 open.s.12# abrir
+1803 swimming_pool.n.01# piscina
+1807 well.r.02# bien
+1809 taste.n.06# gusto
+1813 # comodo
+1814 # fekicidades
+1816 taste.n.06# gusto
+1818 expertness.n.01# experiencia
+1819 relaxant.s.01# relajante
+1820 pride.v.01# felicitar
+1822 so.r.01# tan
+1823 good.a.01# bueno
+1824 service.n.01# servicio
+1825 good_humor.n.01# amabilidad
+1828 child.n.01# chico
+1831 ace.s.01# excelente
+1833 good.a.01# bueno
+1834 massage.n.01# masaje
+1835 congratulation.n.02# felicitación
+1836 suggestion.n.02# sugerencia
+1837 # aunque
+1840 fantastic.s.02# maravilloso
+1843 # mas
+1845 silence.n.02# silencio
+1848 perturb.v.01# distraer
+1850 massager.n.01# masajista
+1851 ace.s.01# excelente
+1852 # experencia
+1853 grace.n.06# gracia
+1854 # mas
+1855 hotness.n.01# calor
+1857 # calentador
+1861 listen.v.01# escuchar
+1863 set_to_music.v.01# musicar
+1865 # afuera
+1867 # interumpe
+1869 # relajacion
+1871 # calentador
+1874 health_spa.n.01# spa
+1875 make.v.03# hacer
+1877 # frio
+1878 # mucho
+1879 grace.n.06# gracia
+1882 watchfulness.n.02# atencion
+1885 procedure.n.01# procedimiento
+1888 use.v.01# utilizar
+1890 therapist.n.01# terapeuta
+1891 ace.s.01# excelente
+1892 aroma.n.02# olor
+1894 good.a.01# bueno
+1896 # ok
+1897 supplement.v.01# complementar
+1898 rock.n.02# piedra
+1899 # volcanicas
+1901 pride.v.01# felicitar
+1903 # daniela
+1904 super.s.03# super
+1905 extra.s.02# especial
+1906 massage.n.01# masaje
+1908 pot.n.09# chocolate
+1910 rock.n.02# piedra
+1911 # mariluz
+1912 ace.s.01# excelente
+1913 massage.n.01# masaje
+1914 pride.v.01# felicitar
+1916 equipment.n.01# equipo
+1918 health_spa.n.01# spa
+1920 ace.s.01# excelente
+1921 watchfulness.n.02# atencion
+1922 congratulation.n.02# felicitación
+1925 service.n.01# servicio
+1926 super.s.03# super
+1927 good.a.01# bueno
+1928 prevent.v.01# evitar
+1930 sound.n.04# ruido
+1931 outer.a.01# exterior
+1932 congratulation.n.02# felicitación
+1933 super.s.03# super
+1934 tasty.a.01# delicioso
+1936 swimming_pool.n.01# piscina
+1938 # parejo
+1939 prevent.v.01# evitar
+1941 sound.n.04# ruido
+1942 outer.a.01# exterior
+1943 # calefaccion
+1945 # cobija
+1948 # mas
+1949 compact.s.02# grueso
+1951 remainder.n.01# resto
+1952 ace.s.01# excelente
+1953 grace.n.06# gracia
+1954 congratulation.n.02# felicitación
+1955 # gladys
+1956 ace.s.01# excelente
+1957 massager.n.01# masajista
+1959 # uno
+1960 hand.n.01# mano
+1961 bless.v.01# bendecir
+1963 deity.n.01# dios
+1965 # podria
+1966 better.v.02# mejorar
+1968 # insonorizacion
+1970 health_spa.n.01# spa
+1972 pleasing.a.01# agradable
+1973 listen.v.01# escuchar
+1975 water.n.01# agua
+1978 sound.n.04# ruido
+1981 # bañitas
+1983 time.n.01# ocasión
+1984 perturb.v.01# distraer
+1988 general.n.01# general
+1989 ace.s.01# excelente
+1990 expertness.n.01# experiencia
+1991 good.a.01# bueno
+1992 massage.n.01# masaje
+1994 ace.s.01# excelente
+1995 professionalism.n.01# profesionalismo
+1998 # cada
+1999 booth.n.02# cabina
+2003 keep.v.12# guardar
+2005 object.n.01# objeto
+2006 personal.a.01# personal
+2007 # mas
+2008 intensity.n.01# fuerza
+2011 hand.n.01# mano
+2013 # desestrezar
+2014 # mas
+2016 customer.n.01# cliente
+2017 massage.n.01# masaje
+2019 mild.a.01# suave
+2022 # frio
+2025 rug.n.01# manta
+2028 # mas
+2029 # comodo
+2032 opportunity.n.01# posibilidad
+2034 have.v.01# tener
+2036 stretcher.n.03# camilla
+2037 # termica
+2041 # mas
+2043 privacy.n.02# privacidad
+2046 massage.n.01# masaje
+2047 # agradecerle
+2050 watchfulness.n.02# atencion
+2052 pride.v.01# felicitar
+2055 job.n.02# trabajo
+2056 wield.v.01# desempeñar
+2057 # mas
+2058 hotness.n.01# calor
+2061 booth.n.02# cabina
+2062 pride.v.01# felicitar
+2064 # daniela
+2066 # mariluz
+2069 large.a.01# gran
+2070 watchfulness.n.02# atencion
+2071 give.v.10# prestar
+2073 ace.s.01# excelente
+2074 service.n.01# servicio
+2077 make.v.03# hacer
+2078 perceive.v.01# ver
+2079 # si
+2080 professionalism.n.01# profesionalismo
+2083 time.n.02# hora
+2085 listen.v.01# atender
+2087 customer.n.01# cliente
+2092 travel.v.01# ir
+2095 taste.n.06# gusto
+2098 service.n.01# servicio
+2099 grace.n.06# gracia
+2101 # sevicio
+2102 super.s.03# super
+2103 # profesionalmariluz
+2104 ace.s.01# excelente
+2105 super.s.03# super
+2106 patient.a.01# paciente
+2109 customer.n.01# cliente
+2112 service.n.01# servicio
+2113 perfect.a.01# perfecto
+2115 good.a.01# bueno
+2116 massage.n.01# masaje
+2118 # relajo
+2120 back.n.01# espalda
+2123 necessitate.v.01# necesitar
+2124 gratitude.n.01# agradecimiento
+2127 service.n.01# servicio
+2129 ace.s.01# excelente
+2130 watchfulness.n.02# atencion
+2132 lord.n.03# señor
+2133 # jesucristo
+2135 bless.v.01# bendecir
+2136 congratulation.n.02# felicitación
+2139 ace.s.01# excelente
+2140 service.n.01# servicio
+2142 watchfulness.n.02# atencion
+2143 deity.n.01# dios
+2145 bless.v.01# bendecir
+2146 wind.n.01# aire
+2147 condition.v.04# acondicionar
+2148 warm.a.01# caliente
+2149 congratulation.n.02# felicitación
+2151 good.a.01# bueno
+2152 massage.n.01# masaje
+2154 appeal.n.02# encanto
+2155 congratulation.n.02# felicitación
+2157 change.v.01# cambiar
+2158 # angie
+2160 good.a.01# bueno
+2161 watchfulness.n.02# atencion
+2162 ace.s.01# excelente
+2163 massage.n.01# masaje
+2165 region.n.01# parte
+2167 # angela
+2168 ace.s.01# excelente
+2169 service.n.01# servicio
+2171 accommodating.a.01# amable
+2174 professional.a.01# profesional
+2176 deity.n.01# dios
+2178 # benfdiga
+2181 job.n.02# labor
+2183 have.v.01# tener
+2184 patience.n.01# paciencia
+2185 grace.n.06# gracia
+2188 good_humor.n.01# amabilidad
+2190 hint.v.01# sugerir
+2192 hide.v.01# tapar
+2194 eye.n.02# vista
+2195 so.r.01# tan
+2196 dramatic.s.02# espectacular
+2201 filter.n.01# filtro
+2202 blue.s.02# azul
+2206 relax.v.04# relajar
+2209 landscape.n.01# paisaje
+2210 plain.s.06# natural
+2216 achieve.v.01# lograr
+2218 damage.v.01# dañar
+2220 # conpecto
+2221 plain.s.06# natural
+2224 dramatic.s.02# espectacular
+2226 massage.n.01# masaje
+2228 # angie
+2229 # volvere
+2230 thousand.s.01# mil
+2231 grace.n.06# gracia
+2232 ace.s.01# excelente
+2233 massage.n.01# masaje
+2234 # recomendaria
+2237 eye.n.02# vista
+2240 stretcher.n.03# camilla
+2242 # hacia
+2244 masturbate.v.02# cascar
+2246 put.v.01# poner
+2247 # adesivos
+2250 # ventanal
+2253 obstruct.v.02# obstruir
+2255 eye.n.02# vista
+2258 masturbate.v.02# cascar
+2260 remove.v.01# quitar
+2262 entrance.n.01# entrada
+2264 beautiful.a.01# bonito
+2266 health_spa.n.01# spa
+2267 # mucho
+2268 congratulation.n.02# felicitación
+2269 # existos
+2271 benediction.n.02# bendición
+2272 put.v.01# poner
+2273 # calefaccion
+2274 # calefaccion
+2275 # calefaccion
+2276 shower.v.03# duchar
+2278 water.n.01# agua
+2279 warm.a.01# caliente
+2280 interfere.v.01# interferir
+2283 sound.n.04# ruido
+2285 outer.a.01# exterior
+2286 # deberian
+2287 have.v.01# tener
+2289 option.n.02# opción
+2291 # bambuterapia
+2293 massage.n.01# masaje
+2295 rock.n.02# piedra
+2296 warm.a.01# caliente
+2298 # orificar
+2301 stretcher.n.03# camilla
+2303 look.v.02# parecer
+2304 excessively.r.01# demasiado
+2305 large.a.01# grande
+2308 # torna
+2309 # incomoo
+2311 put.v.01# poner
+2313 mind.n.01# cabeza
+2315 listen.v.01# escuchar
+2318 sound.n.04# ruido
+2320 outer.a.01# exterior
+2322 relax.v.04# relajar
+2324 environment.n.02# ambiente
+2327 set_to_music.v.01# musicar
+2329 aroma.n.02# aroma
+2332 toilet.n.02# aseo
+2333 ace.s.01# excelente
+2334 good.s.16# serio
+2335 good.s.12# ideal
+2339 listen.v.01# escuchar
+2341 sound.n.04# ruido
+2342 outer.a.01# exterior
+2343 favor.n.01# favor
+2344 # presentarte
+2345 # mucho
+2346 grace.n.06# gracia
+2347 give.v.10# dar
+2350 remove.v.01# tomar
+2351 # despues
+2354 treatment.n.01# terapia
+2356 remainder.n.01# resto
+2359 well.r.02# bien
+2360 # gladis
+2362 # senti
+2364 well.r.02# bien
+2365 supply.v.01# facilitar
+2367 payment.n.01# pago
+2369 card.n.01# tarjeta
+2371 tranquillity.n.02# tranquilidad
+2373 health_spa.n.01# spa
+2375 perceive.v.01# ver
+2376 affect.v.01# afectar
+2381 happen.v.01# pasar
+2383 # varios
+2384 box.n.01# caja
+2385 remove.v.01# sacar
+2387 card.n.01# tarjeta
+2390 state.v.01# contar
+2391 open.s.12# abrir
+2392 give.v.10# dar
+2394 # bebeida
+2397 get_down.v.07# iniciar
+2399 fruit.n.01# fruto
+2400 pride.v.01# felicitar
+2403 therapist.n.01# terapeuta
+2404 acclimatize.v.01# ambientar
+2406 # mas
+2407 audio.n.01# volumen
+2409 set_to_music.v.01# musicar
+2412 aroma.n.02# esencia
+2413 # mas
+2414 potent.s.02# fuerte
+2415 aromatherapy.n.01# aromaterapia
+2417 set_to_music.v.01# musicar
+2418 environment.n.02# ambiente
+2421 listen.v.01# escuchar
+2424 sound.n.04# ruido
+2425 external.a.01# externo
+2426 pride.v.01# felicitar
+2428 # gladys
+2429 # bermudez
+2431 so.r.01# tan
+2432 ace.s.01# excelente
+2433 job.n.02# trabajo
+2434 ace.s.01# excelente
+2435 job.n.02# labor
+2436 # gladys
+2438 perceive.v.01# ver
+2439 promptly.r.01# pronto
+2440 congratulation.n.02# felicitación
+2443 favorable.a.01# favorable
+2445 ace.s.01# excelente
+2446 # gladys
+2449 # parecio
+2451 well.r.02# bien
+2453 therapist.n.01# terapeuta
+2455 # parecio
+2457 accommodating.a.01# amable
+2458 accommodating.a.01# atento
+2459 simple.a.01# sencillo
+2461 # bendicion
+2462 # gladys
+2463 grace.n.06# gracia
+2464 # dahiana
+2466 accommodating.a.01# amable
+2468 professional.a.01# profesional
+2469 make.v.03# hacer
+2470 massage.n.01# masaje
+2472 rock.n.02# piedra
+2473 # volcanicas
+2475 ace.s.01# excelente
+2478 therapist.n.01# terapeuta
+2479 give.v.10# dedicar
+2482 expertness.n.01# experiencia
+2483 congratulation.n.02# felicitación
+2486 well.r.02# bien
+2488 fantastic.s.02# fabuloso
+2489 # alguno
+2490 # bebeida
+2491 warm.a.01# caliente
+2492 congratulation.n.02# felicitación
+2495 service.n.01# servicio
+2497 ace.s.01# excelente
+2498 # si
+2501 opportunity.n.01# oportunidad
+2502 # volveria
+2504 case.n.01# vez
+2505 pride.v.01# felicitar
+2508 therapist.n.01# terapeuta
+2510 appeal.n.02# encanto
+2512 massage.n.01# masaje
+2514 job.n.02# trabajo
+2516 well.r.02# bien
+2518 # area
+2521 back.n.01# espalda
+2526 # mas
+2528 suffer.v.06# doler
+2529 hint.v.01# sugerir
+2530 # especificacion
+2533 procedure.n.01# proceso
+2534 congratulation.n.02# felicitación
+2535 # ninguno
+2537 ace.s.01# excelente
+2538 ace.s.01# excelente
+2540 service.n.01# servicio
+2541 # volvere
+2543 good.a.01# bueno
+2544 watchfulness.n.02# atencion
+2545 beautiful.a.01# hermoso
+2547 accommodating.a.01# amable
+2549 full.a.01# lleno
+2551 # sabiduria
+2554 well.r.02# bien
+2555 stay.v.01# seguir
+2556 # asi
+2558 pride.v.01# felicitar
+2559 # gladys
+2560 # bermudez
+2561 # dahiana
+2562 # gladys
+2564 enjoyable.s.01# gratificante
+2566 job.n.02# labor
+2567 # dahiana
+2568 own.v.01# quedar
+2569 # divinamente
+2573 # frio
+2575 please.v.01# agradar
+2577 topographic_point.n.01# lugar
+2580 treat.v.03# tratar
+2583 well.r.02# bien
+2586 offer.v.02# ofrecer
+2588 better.a.01# mejor
+2589 service.n.01# servicio
+2592 # senti
+2594 relax.v.04# relajar
+2597 well.r.02# bien
+2598 ace.s.01# excelente
+2599 # caliad
+2601 person.n.01# persona
+2603 product.n.02# producto
+2606 skin.n.01# piel
+2607 advertise.v.02# promocionar
+2608 # mas
+2610 place.n.03# espacio
+2613 # estadia
+2615 pay.v.01# pagar
+2617 health_spa.n.01# spa
+2620 while.n.01# tiempo
+2621 short.a.01# corto
+2623 enter.v.01# ingresar
+2626 swimming_pool.n.01# piscina
+2627 thermal.a.01# termal
+2631 well.r.02# bien
+2632 congratulation.n.02# felicitación
+2635 tasty.a.01# delicioso
+2636 julian.a.01# juliano
+2637 give.v.10# dar
+2638 # mas
+2639 # promocion
+2641 health_spa.n.01# spa
+2644 operation.n.01# funcionamiento
+2646 # ninguno
+2647 topographic_point.n.01# lugar
+2649 offer.v.02# ofrecer
+2651 service.n.01# servicio
+2655 # si
+2659 # hubieramos
+2660 try.v.01# buscar
+2664 reach.v.01# obtener
+2666 follow_through.v.02# implementar
+2667 # mas
+2668 thing.n.08# cosa
+2670 remainder.n.01# resto
+2673 well.r.02# bien
+2674 add.v.01# añadir
+2675 # in
+2676 component.n.03# elemento
+2677 # aromatico
+2679 # inciencio
+2681 aromatherapy.n.01# aromaterapia
+2682 grace.n.06# gracia
+2685 good.a.01# bueno
+2687 general.a.01# general
+2688 # todo
+2690 # seccion
+2691 # todo
+2693 person.n.01# persona
+2696 # profecionales
+2697 thousand.s.01# mil
+2698 congratulation.n.02# felicitación
+2699 thousand.s.01# mil
+2700 congratulation.n.02# felicitación
+2701 congratulation.n.02# felicitación
+2702 ace.s.01# excelente
+2703 service.n.01# servicio
+2704 congratulation.n.02# felicitación
+2705 # mas
+2706 # calorcito
+2708 remainder.n.01# resto
+2711 delectable.s.01# rico
+2712 # relajante
+2713 ace.s.01# excelente
+2714 watchfulness.n.02# atencion
+2716 sound.n.04# ruido
+2717 outer.a.01# exterior
+2720 delectable.s.01# rico
+2721 excessively.r.01# demasiado
+2722 sound.n.04# ruido
+2723 outer.a.01# exterior
+2724 ace.s.01# excelente
+2725 massage.n.01# masaje
+2726 set_to_music.v.01# musicar
+2731 # salon
+2733 treatment.n.01# terapia
+2737 # incensio
+2739 aroma.n.02# olor
+2741 displace.v.03# poder
+2742 make.v.03# hacer
+2746 # trasporte
+2749 universe.n.01# universo
+2753 # meditacion
+2754 # gladys
+2756 better.a.01# mejor
+2757 congratulation.n.02# felicitación
+2758 # gladys
+2760 # parecio
+2762 professional.a.01# profesional
+2763 # adema
+2765 accommodating.a.01# amable
+2766 identify.v.01# identificar
+2768 problem.n.02# problema
+2770 # decirle
+2771 get_the_better_of.v.01# superar
+2773 expectation.n.01# expectativa
+2776 # hare
+2778 treatment.n.01# terapia
+2782 well.r.02# bien
+2784 service.n.01# servicio
+2785 decrease.v.01# disminuir
+2787 entrance.n.01# entrada
+2790 light.n.01# luz
+2793 topographic_point.n.01# sitio
+2796 massage.n.01# masaje
+2797 ace.s.01# excelente
+2798 # mas
+2799 hotness.n.01# calor
+2802 delectable.s.01# rico
+2804 person.n.01# persona
+2807 listen.v.01# atender
+2809 accommodating.a.01# amable
+2811 # calida
+2812 give.v.10# dar
+2813 assurance.n.01# confianza
+2815 topographic_point.n.01# lugar
+2816 pride.v.01# felicitar
+2818 therapist.n.01# terapeuta
+2821 # atendio
+2823 julian.a.01# juliano
+2825 # calida
+2828 watchfulness.n.02# atencion
+2829 advertise.v.02# promocionar
+2831 while.n.01# momento
+2833 entrance.n.01# ingreso
+2835 washcloth.n.01# toalla
+2836 warm.a.01# caliente
+2839 back.n.01# espalda
+2841 aromatherapy.n.01# aromaterapia
+2843 washcloth.n.01# toalla
+2844 warm.a.01# caliente
+2847 back.n.01# espalda
+2849 aromatherapy.n.01# aromaterapia
+2852 well.r.02# bien
+2853 # felcitaciones
+2854 # dahiana
+2858 well.r.02# bien
+2861 well.r.02# bien
+2863 shower.n.04# chorro
+2866 shower.v.03# duchar
+2868 water.n.01# agua
+2869 # fria
+2871 # senti
+2872 wholly.r.01# completamente
+2873 relax.v.04# relajar
+2875 # calentador
+2876 # calefaccion
+2877 water.n.01# agua
+2878 warm.a.01# caliente
+2881 shower.n.04# ducha
+2883 shower.n.04# chorro
+2884 grace.n.06# gracia
+2887 girl.n.01# señorito
+2889 listen.v.01# atender
+2890 use.v.01# usar
+2891 coat.n.01# saco
+2893 make.v.03# hacer
+2895 # frio
+2899 # tambien
+2901 sit.v.01# sentar
+2902 ace.s.01# excelente
+2904 well.r.02# bien
+2906 watchfulness.n.02# atencion
+2908 # lugarla
+2909 wellbeing.n.01# comodidad
+2911 # si
+2915 state.v.01# contar
+2918 weather.n.01# clima
+2921 # frio
+2924 therapist.n.01# terapeuta
+2926 # estan
+2927 # abrigada
+2930 correct.a.01# justo
+2931 favor.n.01# favor
+2932 heat.v.01# calentar
+2934 mud.n.01# lodo
+2936 perceive.v.01# sentir
+2937 # mas
+2938 wellbeing.n.01# comodidad
+2941 # presion
+2944 shower.n.04# ducha
+2945 owe.v.01# deber
+2946 be.v.01# ser
+2947 # masfuertes
+2949 displace.v.03# poder
+2950 remove.v.01# quitar
+2952 mud.n.01# lodo
+2954 cream.n.03# crema
+2957 coffee.n.01# café
+2958 # facinantes
+2959 sell.v.01# vender
+2961 mud.n.01# lodo
+2963 topographic_point.n.01# sitio
+2964 # mas
+2965 remove.v.02# alejar
+2968 cry.n.01# grito
+2971 swimmer.n.02# bañista
+2972 congratulation.n.02# felicitación
+2974 please.v.01# gustar
+2976 therapist.n.01# terapeuta
+2979 # erar
+2980 do.n.02# do
+2983 # habia
+2984 # si
+2988 # antendsernos
+2989 put.v.01# colocar
+2990 water.n.01# agua
+2991 warm.a.01# caliente
+2994 shower.n.04# ducha
+2996 consequence.n.01# efecto
+2999 # exfoliante
+3000 put.v.01# colocar
+3001 water.n.01# agua
+3002 warm.a.01# caliente
+3005 shower.n.04# ducha
+3007 consequence.n.01# efecto
+3010 # exfoliante
+3012 # encataria
+3016 # bambuterapia
+3018 use.v.01# utilizar
+3019 less.r.01# menos
+3021 hand.n.01# mano
+3023 # mas
+3025 # bambu
+3026 make.v.03# hacer
+3027 lack.n.01# falta
+3029 clock.n.01# reloj
+3031 change.v.01# cambiar
+3033 while.n.01# tiempo
+3035 massage.n.01# masaje
+3036 grace.n.06# gracia
+3037 stay.v.01# seguir
+3038 # igual
+3039 travel.v.01# ir
+3041 well.r.02# bien
+3042 grace.n.06# gracia
+3045 put.v.01# poner
+3046 fireplace.n.01# chimenea
+3048 # calefaccion
+3051 # bien
+3052 include.v.02# incluir
+3053 software.n.01# paquete
+3055 service.n.01# servicio
+3058 # menu
+3060 toilet.n.02# baño
+3062 # vestier
+3065 health_spa.n.01# spa
+3068 ace.s.01# excelente
+3072 appearance.n.01# aspecto
+3074 watchfulness.n.02# atencion
+3076 personal.a.01# personal
+3079 good.a.01# bueno
+3080 offer.v.02# brindar
+3083 good.a.01# bueno
+3084 service.n.01# servicio
+3085 congratulation.n.02# felicitación
+3086 ace.s.01# excelente
+3088 person.n.01# persona
+3092 offer.v.02# brindar
+3094 massage.n.01# masaje
+3097 note.n.03# nota
+3099 professional.a.01# profesional
+3102 # dedicacion
+3103 congratulation.n.02# felicitación
+3104 congratulation.n.02# felicitación
+3105 congratulation.n.02# felicitación
+3108 well.r.02# bien
+3110 pass.n.03# pase
+3111 super.s.03# super
+3112 # volvere
+3113 promptly.r.01# pronto
+3114 grace.n.06# gracia
+3115 abundantly.r.01# bastante
+3116 relaxant.s.01# relajante
+3119 tasty.a.01# delicioso
+3121 watchfulness.n.02# atencion
+3123 good.a.01# bueno
+3126 miss.v.06# faltar
+3128 coffee.n.01# café
+3129 good.s.16# serio
+3130 dramatic.s.02# espectacular
+3133 # peluqueria
+3134 congratulation.n.02# felicitación
+3135 thousand.s.01# mil
+3136 grace.n.06# gracia
+3137 # gladys
+3138 benediction.n.02# bendición
+3139 # mucho
+3140 grace.n.06# gracia
+3142 pride.v.01# felicitar
+3144 force.n.04# personal
+3147 thermal.a.01# termal
+3149 force.n.04# personal
+3151 accommodating.a.01# amable
+3152 accommodating.a.01# servicial
+3153 offer.v.02# ofrecer
+3154 # mucho
+3155 assurance.n.01# confianza
+3156 offer.v.02# brindar
+3157 privacy.n.02# privacidad
+3159 # relanjante
+3160 aroma.n.02# olor
+3162 sound.n.02# sonido
+3165 good.a.01# bueno
+3166 object.n.03# complemento
+3167 congratulation.n.02# felicitación
+3168 retain.v.02# continuar
+3169 # asi
+3170 # mucho
+3171 congratulation.n.02# felicitación
+3172 make.v.03# hacer
+3174 ace.s.01# excelente
+3175 job.n.02# trabajo
+3177 # senti
+3179 relax.v.04# relajar
+3182 chiffonier.n.01# comoda
+3185 good.a.01# bueno
+3186 job.n.02# trabajo
+3188 watchfulness.n.02# atencion
+3190 affable.s.01# cordial
+3191 grace.n.06# gracia
+3192 # manicure
+3194 # pedicure
+3195 # mucho
+3196 congratulation.n.02# felicitación
+3197 ace.s.01# excelente
+3198 job.n.02# trabajo
+3199 wellbeing.n.01# comodidad
+3200 treatment.n.02# trato
+3202 professional.a.01# profesional
+3205 job.n.02# trabajo
+3207 good.a.01# bueno
+3208 # tencion
+3209 pride.v.01# felicitar
+3212 treatment.n.02# trato
+3215 job.n.02# trabajo
+3216 ace.s.01# excelente
+3217 congratulation.n.02# felicitación
+3220 patience.n.01# paciencia
+3221 good_humor.n.01# amabilidad
+3223 unsettled.a.01# pendiente
+3224 grace.n.06# gracia
+3225 check.v.01# revisar
+3227 sound.n.04# ruido
+3230 swimming_pool.n.01# piscina
+3231 anterior.s.02# anterior
+3232 congratulation.n.02# felicitación
+3233 tasty.a.01# delicioso
+3237 well.r.02# bien
+3238 # gladys
+3239 # bermudez
+3241 target.n.01# diana
+3243 treat.v.03# tratar
+3245 queen.n.03# reina
+3246 grace.n.06# gracia
+3247 thousand.s.01# mil
+3248 grace.n.06# gracia
+3251 watchfulness.n.02# atencion
+3253 chair.n.01# silla
+3255 massage.n.01# masaje
+3259 perplex.v.01# incomodar
+3261 temperature.n.01# temperatura
+3262 tapeworm.n.01# tenia
+3264 nail.n.02# uña
+3265 long.a.02# largo
+3268 # hacia
+3270 massage.n.01# masaje
+3273 # incomo
+3275 # hacia
+3277 motion.n.03# movimiento
+3278 recur.v.01# repetir
+3279 seriously.r.01# sinceramente
+3280 congratulation.n.02# felicitación
+3281 # mucho
+3282 grace.n.06# gracia
+3284 good.a.01# bueno
+3286 therapist.n.01# terapeuta
+3289 treat.v.03# tratar
+3291 better.v.02# mejorar
+3293 therapist.n.01# terapeuta
+3295 # hacian
+3297 same.a.02# mismo
+3298 exercise.n.01# ejercicio
+3300 derive.v.02# recibir
+3302 call.n.01# llamada
+3303 antecedent.a.01# previo
+3306 therapist.n.01# terapeuta
+3307 reach.v.01# llegar
+3309 while.n.01# minuto
+3310 late.r.01# tarde
+3313 child.n.01# chico
+3316 derive.v.02# recibir
+3317 well.r.02# bien
+3318 # diciendonos
+3326 topographic_point.n.01# sitio
+3327 ill.r.01# lamentablemente
+3329 customer.n.01# cliente
+3332 good.a.01# bueno
+3333 hotel.n.01# hotel
+3336 # sonesta
+3338 never.r.01# nunca
+3340 # habia
+3341 happen.v.01# ocurrir
+3343 like.a.01# similar
+3345 personal.a.01# personal
+3348 cabana.n.01# cabaña
+3350 ace.s.01# excelente
+3352 # construccion
+3354 two.s.01# 2
+3355 dwelling.n.01# piso
+3357 # permitio
+3359 environment.n.02# ambiente
+3360 # potimo
+3362 health_spa.n.01# spa
+3364 well.r.02# bien
+3366 service.n.01# servicio
+3367 # mucho
+3368 congratulation.n.02# felicitación
+3369 air-conditioned.s.01# climatizar
+3371 # gustaria
+3372 listen.v.01# escuchar
+3373 set_to_music.v.01# musicar
+3375 rear.n.05# fondo
+3377 sound.n.02# sonido
+3379 animal.s.01# animal
+3381 massage.n.01# masaje
+3382 reductive.s.01# reductor
+3383 congratulation.n.02# felicitación
+3386 therapist.n.01# terapeuta
+3387 know.v.01# saber
+3390 job.n.02# trabajo
+3392 # mucho
+3393 quality.n.01# calidad
+3394 human.a.03# humano
+3395 congratulation.n.02# felicitación
+3396 fantastic.s.02# maravilloso
+3397 service.n.01# servicio
+3398 grace.n.06# gracia
+3399 displace.v.03# poder
+3400 use.v.01# usar
+3402 water.n.01# agua
+3403 thermal.a.01# termal
+3404 # econ
+3406 same.a.02# mismo
+3407 fee.n.01# tarifa
+3409 health_spa.n.01# spa
+3411 include.v.02# incluir
+3414 software.n.01# paquete
+3417 increase.v.02# incrementar
+3420 monetary_value.n.01# precio
+3422 massage.n.01# masaje
+3424 please.v.01# gustar
+3425 # todo
+3427 expertness.n.01# experiencia
+3428 # mucho
+3429 grace.n.06# gracia
+3430 person.n.01# persona
+3432 professional.a.01# profesional
+3434 taste.n.06# gusto
+3437 service.n.01# servicio
+3439 laud.v.01# magnificar
+3440 own.v.01# quedar
+3442 # satifeschos
+3443 congratulation.n.02# felicitación
+3444 congratulation.n.02# felicitación
+3445 # mucho
+3446 grace.n.06# gracia
+3448 necessitate.v.01# necesitar
+3449 # calefaccion
+3450 make.v.03# hacer
+3452 # frio
+3453 congratulation.n.02# felicitación
+3457 taste.n.06# gusto
+3460 service.n.01# servicio
+3462 laud.v.01# magnificar
+3463 own.v.01# quedar
+3465 # satifeschos
+3468 # frio
+3471 comfortable.a.01# confortable
+3473 beautiful.a.01# hermoso
+3475 topographic_point.n.01# sitio
+3476 welcoming.s.01# acogedor
+3478 therapist.n.01# terapeuta
+3480 good.a.01# bueno
+3481 water.n.01# agua
+3482 # fria
+3483 room.n.01# cuarto
+3485 # frio
+3486 therapist.n.01# terapeuta
+3487 ace.s.01# excelente
+3488 ace.s.01# excelente
+3489 service.n.01# servicio
+3491 region.n.01# parte
+3494 therapist.n.01# terapeuta
+3495 congratulation.n.02# felicitación
+3496 # angui
+3498 professional.a.01# profesional
+3499 have.v.01# tener
+3500 # mas
+3501 # concentracion
+3504 # musculos
+3505 bodily.a.01# corporal
+3507 facial.a.01# facial
+3509 ace.s.01# excelente
+3512 # calidos
+3515 customer.n.01# cliente
+3516 grace.n.06# gracia
+3517 # daniela
+3519 good.a.01# bueno
+3520 make.v.03# hacer
+3523 possible.a.01# posible
+3527 perceive.v.01# sentir
+3528 # frio
+3530 well.r.02# bien
+3532 watchfulness.n.02# atencion
+3535 good.a.01# bueno
+3536 pack.n.07# mascarilla
+3538 pleasing.a.01# agradable
+3540 accommodating.a.01# amable
+3541 dramatic.s.02# espectacular
+3542 pride.v.01# felicitar
+3545 massager.n.01# masajista
+3548 # maximo
+3549 offer.v.02# ofrecer
+3550 beverage.n.01# bebida
+3551 warm.a.01# caliente
+3552 # mucho
+3553 grace.n.06# gracia
+3556 service.n.01# servicio
+3558 favor.n.01# favor
+3559 befit.v.01# adecuar
+3561 health_spa.n.01# spa
+3563 set_to_music.v.01# musicar
+3564 relaxant.s.01# relajante
+3565 # mas
+3566 aromatherapy.n.01# aromaterapia
+3568 set_to_music.v.01# musicar
+3569 lack.n.01# falta
+3570 sound.n.02# sonido
+3572 aromatherapy.n.01# aromaterapia
+3573 # mas
+3574 # ambientacion
+3578 set_to_music.v.01# musicar
+3580 agreement.n.01# acuerdo
+3582 health_spa.n.01# spa
+3584 potent.s.02# fuerte
+3586 fastidious.a.02# detallista
+3587 hand.n.01# mano
+3588 thousand.s.01# mil
+3589 grace.n.06# gracia
+3590 grace.n.06# gracia
+3592 # consertirme
+3593 less.r.01# menos
+3594 while.n.01# tiempo
+3596 expect.v.03# esperar
+3599 massage.n.01# masaje
+3600 # excelnte
+3601 service.n.01# servicio
+3603 # buens
+3604 service.n.01# servicio
+3606 good_humor.n.01# amabilidad
+3609 child.n.01# chico
+3612 listen.v.01# atender
+3613 congratulation.n.02# felicitación
+3614 # ambientacion
+3617 sound.n.02# sonido
+3620 listen.v.01# escuchar
+3621 # mas
+3624 booth.n.02# cabina
+3626 # parecio
+3627 super.s.03# super
+3628 ace.s.01# excelente
+3630 watchfulness.n.02# atencion
+3634 personal.a.01# personal
+3637 professional.a.01# profesional
+3640 job.n.02# labor
+3641 congratulation.n.02# felicitación
+3644 well.r.02# bien
+3645 # mas
+3646 option.n.02# opción
+3648 massage.n.01# masaje
+3649 congratulation.n.02# felicitación
+3651 good.a.01# bueno
+3653 treatment.n.01# terapia
+3654 ace.s.01# excelente
+3655 massage.n.01# masaje
+3656 grace.n.06# gracia
+3659 service.n.01# servicio
+3660 give.v.10# prestar
+3661 necessitate.v.01# preguntar
+3663 kind.n.01# tipo
+3665 massage.n.01# masaje
+3666 want.v.02# querer
+3670 prefer.v.03# preferir
+3671 # mas
+3672 potent.s.02# fuerte
+3675 # mas
+3676 mild.a.01# suave
+3679 well.r.02# bien
+3680 grace.n.06# gracia
+3681 # mas
+3682 wellbeing.n.01# comodidad
+3685 expensive.a.01# caro
+3687 # mas
+3688 # calefaccion
+3689 congratulation.n.02# felicitación
+3690 ace.s.01# excelente
+3691 service.n.01# servicio
+3694 good.a.01# bueno
+3695 watchfulness.n.02# atencion
+3697 case.n.01# vez
+3699 # desconcentrabamos
+3702 # relajacion
+3705 sound.n.04# ruido
+3708 create.v.02# generar
+3710 suitability.n.01# adecuación
+3712 dwelling.n.01# piso
+3714 congratulation.n.02# felicitación
+3717 professional.a.01# profesional
+3720 good.a.01# bueno
+3721 service.n.01# servicio
+3725 # incomodo
+3727 hole.n.02# orificio
+3730 stretcher.n.03# camilla
+3732 large.a.01# grande
+3735 stay.v.01# seguir
+3736 # asi
+3737 congratulation.n.02# felicitación
+3739 well.r.02# bien
+3741 massage.n.01# masaje
+3742 # frio
+3744 stimulation.n.02# estimulante
+3746 relaxant.s.01# relajante
+3747 # mucho
+3748 grace.n.06# gracia
+3750 sound.n.04# ruido
+3753 # permitio
+3754 # relajarme
+3755 wholly.r.01# completamente
+3756 change.v.01# cambiar
+3757 booth.n.02# cabina
+3760 sound.n.04# ruido
+3763 masturbate.v.02# cascar
+3766 sound.n.04# ruido
+3769 hammer.n.02# martillo
+3771 drill.n.01# taladro
+3773 sound.n.04# ruido
+3774 travel.v.01# ir
+3779 # ambientacion
+3781 health_spa.n.01# spa
+3782 # calkefaccion
+3784 tidiness.n.02# acondicionamiento
+3787 topographic_point.n.01# sitio
+3790 while.n.01# momento
+3792 close.v.01# cerrar
+3793 better.v.02# mejorar
+3795 sound.n.04# ruido
+3798 swimmer.n.02# bañista
+3799 congratulation.n.02# felicitación
+3801 # dahiana
+3804 hand.n.01# mano
+3805 ace.s.01# excelente
+3807 listen.v.01# escuchar
+3809 sound.n.04# ruido
+3812 people.n.01# gente
+3814 # afuera
+3818 # mas
+3819 audio.n.01# volumen
+3822 set_to_music.v.01# musicar
+3823 environmental.a.01# ambiental
+3825 # frio
+3826 better.v.02# mejorar
+3827 topographic_point.n.01# sitio
+3828 # cerrandalo
+3832 # mas
+3833 warm.a.01# caliente
+3834 super.s.03# super
+3835 tasty.a.01# delicioso
+3836 good.a.01# bueno
+3837 # terapeutagracias
+3840 # ambientacion
+3842 health_spa.n.01# spa
+3845 sound.n.04# ruido
+3849 # frio
+3850 ace.s.01# excelente
+3851 watchfulness.n.02# atencion
+3852 # mucho
+3853 grace.n.06# gracia
+3854 dramatic.s.02# espectacular
+3856 watchfulness.n.02# atencion
+3859 massage.n.01# masaje
+3862 good.a.01# bueno
+3866 better.a.01# mejor
+3869 give.v.10# dar
+3871 # relajante
+3872 # mucho
+3873 grace.n.06# gracia
+3875 delectable.s.01# rico
+3877 child.n.01# niño
+3880 listen.v.01# atender
+3882 ace.s.01# excelente
+3883 # feilictaciones
+3884 ace.s.01# excelente
+3885 service.n.01# servicio
+3886 unaccompanied.a.01# solo
+3887 pride.v.01# felicitar
+3888 ace.s.01# excelente
+3891 accommodating.a.01# amable
+3892 ace.s.01# excelente
+3894 truth.n.01# verdad
+3896 # queria
+3897 # hacerlo
+3900 imperativeness.n.01# insistencia
+3903 wife.n.01# esposo
+3905 make.v.03# hacer
+3908 appeal.n.02# encanto
+3909 ace.s.01# excelente
+3911 # mucho
+3912 grace.n.06# gracia
+3914 ace.s.01# excelente
+3917 delectable.s.01# rico
+3918 grace.n.06# gracia
+3920 watchfulness.n.02# atencion
+3922 # daniela
+3924 ace.s.01# excelente
+3925 ace.s.01# excelente
+3926 service.n.01# servicio
+3927 congratulation.n.02# felicitación
+3928 recommend.v.01# recomendar
+3930 topographic_point.n.01# sitio
+3933 therapist.n.01# terapeuta
+3934 # agradecientos
+3935 grace.n.06# gracia
+3937 sound.n.04# ruido
+3938 ace.s.01# excelente
+3940 # calefaccion
+3942 well.r.02# bien
+3944 well.r.02# bien
+3945 ace.s.01# excelente
+3946 # servico
+3948 watchfulness.n.02# atencion
+3949 service.n.01# servicio
+3951 good.a.01# bueno
+3952 ace.s.01# excelente
+3955 perceive.v.01# sentir
+3958 while.n.01# momento
+3960 # calidez
+3962 personal.a.01# personal
+3965 massage.n.01# masaje
+3967 ace.s.01# excelente
+3968 ace.s.01# excelente
+3969 massage.n.01# masaje
+3970 congratulation.n.02# felicitación
+3972 necessitate.v.01# necesitar
+3974 heater.n.01# calentador
+3976 necessitate.v.01# necesitar
+3978 heater.n.01# calentador
+3980 make.v.03# hacer
+3982 # frio
+3985 quality.n.01# calidad
+3986 human.a.03# humano
+3987 ace.s.01# excelente
+3989 super.s.03# super
+3990 extra.s.02# especial
+3991 # jessica
+3992 presently.r.02# hoy
+3995 caprice.n.01# antojo
+3997 # puentos
+4001 massage.n.01# masaje
+4003 foot.n.01# pie
+4006 mind.n.01# cabeza
+4008 pleasure.n.05# disfrute
+4012 relax.v.04# relajar
+4014 complete.a.01# completo
+4015 congratulation.n.02# felicitación
+4018 child.n.01# chico
+4019 ace.s.01# excelente
+4020 watchfulness.n.02# atencion
+4022 aromatherapy.n.01# aromaterapia
+4023 tasty.a.01# delicioso
+4024 ace.s.01# excelente
+4025 congratulation.n.02# felicitación
+4027 # cladys
+4028 # ninguno
+4029 ace.s.01# excelente
+4030 health_spa.n.01# spa
+4031 unaccompanied.a.01# solo
+4032 # sigiero
+4033 have.v.01# tener
+4034 water.n.01# agua
+4036 welcome.a.01# bienvenido
+4037 water.n.01# agua
+4038 welcome.a.01# bienvenido
+4039 set_to_music.v.01# musicar
+4041 health_spa.n.01# spa
+4042 set_to_music.v.01# musicar
+4044 rear.n.05# fondo
+4045 # mucho
+4046 grace.n.06# gracia
+4049 # excelnte
+4052 concluding.s.01# final
+4054 massage.n.01# masaje
+4055 # yesica
+4058 good.a.01# bueno
+4059 grace.n.06# gracia
+4060 congratulation.n.02# felicitación
+4063 good.a.01# bueno
+4065 # huesped
+4067 frequent.v.02# frecuentar
+4069 hotel.n.01# hotel
+4070 # adriana
+4073 # amblar
+4076 doubt.n.01# duda
+4077 put.v.01# poner
+4079 better.a.01# mejor
+4080 campaign.n.02# empeño
+4082 make.v.03# realizar
+4084 # tabajo
+4085 grace.n.06# gracia
+4088 pain.n.03# dolor
+4090 sword.n.01# espada
+4094 # comun
+4095 # mas
+4098 find.v.05# creer
+4099 know.v.01# conocer
+4100 topographic_point.n.01# sitio
+4103 make.v.03# crear
+4104 option.n.02# opción
+4105 concentrate.v.02# enfocar
+4108 treatment.n.01# tratamiento
+4111 displace.v.03# poder
+4112 increase.v.02# incrementar
+4114 sum.n.01# cantidad
+4116 customer.n.01# cliente
+4118 pleasing.a.01# agradable
+4120 treatment.n.01# terapia
+4121 # adriana
+4122 congratulation.n.02# felicitación
+4123 # grcias
+4124 thousand.s.01# mil
+4125 congratulation.n.02# felicitación
+4127 watchfulness.n.02# atencion
+4128 # excelnte
+4129 # volvere
+4130 congratulation.n.02# felicitación
+4132 good.a.01# bueno
+4133 watchfulness.n.02# atencion
+4136 child.n.01# niño
+4138 want.v.02# querer
+4140 # gustaria
+4143 shower.n.04# ducha
+4145 # mas
+4146 # serca
+4148 ace.s.01# excelente
+4151 # gustaira
+4153 aromatherapy.n.01# aromaterapia
+4155 child.n.01# niño
+4157 well.r.02# bien
+4158 super.s.03# super
+4160 watchfulness.n.02# atencion
+4161 congratulation.n.02# felicitación
+4163 appeal.n.02# encanto
+4164 congratulation.n.02# felicitación
+4165 receive.v.05# invitar
+4167 user.n.01# usuario
+4169 while.n.01# minuto
+4173 # retrazar
+4175 shift.n.07# turno
+4176 hint.v.01# sugerir
+4178 clothing.n.01# ropa
+4179 dry.a.01# seco
+4180 note.v.01# citar
+4182 while.n.01# minuto
+4185 fill.v.01# llenar
+4187 counter.n.02# ficha
+4188 # clinica
+4189 better.a.01# mejor
+4190 communication.n.02# comunicación
+4193 # recepcion
+4196 # epa
+4199 change.v.01# cambiar
+4202 change.v.01# cambiar
+4203 # falto
+4204 environment.n.02# ambiente
+4205 musical.a.02# musical
+4207 wonder.n.02# maravilla
+4209 # senti
+4213 beloved.n.01# cielo
+4214 put.v.01# poner
+4215 set_to_music.v.01# musicar
+4217 perplex.v.01# incomodar
+4219 stretcher.n.03# camilla
+4223 region.n.01# parte
+4224 tall.a.01# alto
+4226 neck.n.01# cuello
+4227 make.v.03# hacer
+4230 # mas
+4231 # durito
+4232 grace.n.06# gracia

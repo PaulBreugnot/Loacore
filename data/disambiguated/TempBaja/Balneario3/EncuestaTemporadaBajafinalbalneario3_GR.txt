@@ -1,8 +1,8 @@
-billiards.n.01# billar
-transportation.n.02# transporte
-game.n.01# juegos
-dining_table.n.01# mesa
-game.n.01# juegos
-dining_table.n.01# mesa
-sweep.v.06# barra
-liquor.n.01# trago
+0 billiards.n.01# billar
+1 transportation.n.02# transporte
+2 game.n.01# juego
+4 dining_table.n.01# mesa
+5 game.n.01# juego
+7 dining_table.n.01# mesa
+8 sweep.v.06# barrer
+10 liquor.n.01# trago

@@ -95,7 +95,6 @@ def lemmatize(indexed_tokens, lemmas_dict):
         word = re.findall(r'\d+ (.+)', indexed_token)[0]
         lemma = lemmas_dict.get(word)
         if lemma is not None:
-            #print(indexed_token, ' , ', index + lemma)
             lemmatize_indexed_tokens.append(index + lemma)
     return lemmatize_indexed_tokens
 

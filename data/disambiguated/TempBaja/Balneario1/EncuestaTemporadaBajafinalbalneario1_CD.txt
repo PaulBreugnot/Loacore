@@ -1,107 +1,107 @@
-entrance.n.01# entrada
-box_office.n.02# taquilla
-road.n.01# carretera
-distance.n.01# distancia
-toilet.n.02# servicio
-# cafeteria
-monetary_value.n.01# precios
-temperature.n.01# temperatura
-water.n.01# agua
-heat.v.01# caliento
-restaurant.n.01# restaurante
-lunch.n.01# comida
-regular.a.01# regular
-monetary_value.n.01# precios
-toilet.n.02# servicio
-restaurant.n.01# restaurante
-monetary_value.n.01# costo
-restaurant.n.01# restaurante
-# cafeteria
-expensive.a.01# caro
-set_to_music.v.01# musica
-noise.n.01# ruido
-restaurant.n.01# restaurante
-expensive.a.01# costoso
-sneak_thief.n.01# chorizos
-rock.n.01# piedras
-road.n.01# caminos
-sludge.n.02# lama
-masturbate.v.02# cascada
-entrance.n.01# acceso
-monetary_value.n.01# costo
-restaurant.n.01# restaurante
-monetary_value.n.01# precios
-monetary_value.n.01# costos
-monetary_value.n.01# costos
-lunch.n.01# comida
-# codto
-# fel
-restaurant.n.01# restaurante
-monetary_value.n.01# costo
-restaurant.n.01# restaurante
-monetary_value.n.01# precios
-input.n.04# insumos
-# guardaropa
-toilet.n.02# servicio
-monetary_value.n.01# costos
-# guias
-lunch.n.01# almuerzo
-monetary_value.n.01# costos
-input.n.04# insumos
-monetary_value.n.01# costos
-input.n.04# insumos
-sanitariness.n.01# higiene
-ski_cap.n.01# gorros
-toilet.n.02# baño
-personal.a.01# personal
-restaurant.n.01# restaurante
-monetary_value.n.01# precios
-lunch.n.01# almuerzos
-# parqueadero
-wetness.n.01# humedad
-# vestidores
-restaurant.n.01# restaurante
-# metodo
-monetary_value.n.01# costos
-input.n.04# insumos
-box_office.n.02# taquilla
-use.v.01# empleada
-# atendio
-bad.a.01# mal
-use.v.01# utilizando
-bad.a.01# malas
-word.n.01# palabras
-monetary_value.n.01# precios
-lunch.n.01# comida
-lunch.n.01# almuerzo
-bad.a.01# mala
-# preparacion
-# cafe
-# pindana
-bad.a.01# mala
-watchfulness.n.02# atencion
-bad.a.01# mala
-# preparcion
-# cafe
-# informacion
-# orientacion
-monetary_value.n.01# costo
-input.n.04# insumos
-flavor.n.03# sabor
-lunch.n.01# comida
-monetary_value.n.01# costo
-input.n.04# insumos
-monetary_value.n.01# costo
-input.n.04# insumos
-# allmuerzo
-# maluco
-lunch.n.01# comida
-bad.a.01# mal
-flavor.n.03# sabor
-monetary_value.n.01# costo
-restaurant.n.01# restaurante
-monetary_value.n.01# costos
-monetary_value.n.01# precios
-monetary_value.n.01# precios
-monetary_value.n.01# costos
-input.n.04# insumos
+0 entrance.n.01# entrada
+1 box_office.n.02# taquilla
+2 road.n.01# carretera
+3 distance.n.01# distancia
+4 toilet.n.02# servicio
+5 # cafeteria
+7 monetary_value.n.01# precio
+9 temperature.n.01# temperatura
+11 water.n.01# agua
+13 heat.v.01# calentar
+15 restaurant.n.01# restaurante
+17 lunch.n.01# comida
+18 regular.a.01# regular
+20 monetary_value.n.01# precio
+21 toilet.n.02# servicio
+23 restaurant.n.01# restaurante
+25 monetary_value.n.01# costo
+27 restaurant.n.01# restaurante
+28 # cafeteria
+30 expensive.a.01# caro
+31 set_to_music.v.01# musicar
+33 noise.n.01# ruido
+35 restaurant.n.01# restaurante
+37 expensive.a.01# costoso
+38 sneak_thief.n.01# chorizo
+39 rock.n.01# piedra
+41 road.n.01# camino
+43 sludge.n.02# lama
+46 masturbate.v.02# cascar
+48 entrance.n.01# acceso
+50 monetary_value.n.01# costo
+52 restaurant.n.01# restaurante
+54 monetary_value.n.01# precio
+56 monetary_value.n.01# costo
+58 monetary_value.n.01# costo
+61 lunch.n.01# comida
+63 # codto
+64 # fel
+65 restaurant.n.01# restaurante
+66 monetary_value.n.01# costo
+68 restaurant.n.01# restaurante
+70 monetary_value.n.01# precio
+73 input.n.04# insumo
+75 # guardaropa
+77 toilet.n.02# servicio
+79 monetary_value.n.01# costo
+80 # guias
+82 lunch.n.01# almuerzo
+84 monetary_value.n.01# costo
+87 input.n.04# insumo
+89 monetary_value.n.01# costo
+92 input.n.04# insumo
+94 sanitariness.n.01# higiene
+96 ski_cap.n.01# gorro
+98 toilet.n.02# baño
+100 personal.a.01# personal
+103 restaurant.n.01# restaurante
+105 monetary_value.n.01# precio
+108 lunch.n.01# almuerzo
+110 # parqueadero
+112 wetness.n.01# humedad
+115 # vestidor
+117 restaurant.n.01# restaurante
+119 # metodo
+121 monetary_value.n.01# costo
+124 input.n.04# insumo
+126 box_office.n.02# taquilla
+128 use.v.01# emplear
+130 # atendio
+131 bad.a.01# mal
+132 use.v.01# utilizar
+133 bad.a.01# malo
+134 word.n.01# palabra
+136 monetary_value.n.01# precio
+139 lunch.n.01# comida
+141 lunch.n.01# almuerzo
+142 bad.a.01# malo
+143 # preparacion
+145 # cafe
+146 # pindana
+147 bad.a.01# malo
+148 watchfulness.n.02# atencion
+150 bad.a.01# malo
+151 # preparcion
+153 # cafe
+154 # informacion
+156 # orientacion
+157 monetary_value.n.01# costo
+160 input.n.04# insumo
+162 flavor.n.03# sabor
+165 lunch.n.01# comida
+167 monetary_value.n.01# costo
+170 input.n.04# insumo
+172 monetary_value.n.01# costo
+175 input.n.04# insumo
+177 # allmuerzo
+179 # maluco
+181 lunch.n.01# comida
+182 bad.a.01# mal
+183 flavor.n.03# sabor
+185 monetary_value.n.01# costo
+187 restaurant.n.01# restaurante
+189 monetary_value.n.01# costo
+191 monetary_value.n.01# precio
+193 monetary_value.n.01# precio
+195 monetary_value.n.01# costo
+197 input.n.04# insumo

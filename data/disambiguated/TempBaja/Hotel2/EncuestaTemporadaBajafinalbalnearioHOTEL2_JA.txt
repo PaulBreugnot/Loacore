@@ -1,17 +1,17 @@
-treatment.n.02# manejo
-# imformaciones
-internet.n.01# internet
-# neceita
-# trasporte
-service.n.01# servicios
-person.n.01# personas
-digest.v.03# sufren
-# invobilidad
-watchfulness.n.02# atencion
-customer.n.01# cliente
-# toballas
-road.n.01# ruta
-# servicuo
-hotel.n.01# hotel
-monetary_value.n.01# costos
-high.a.02# altos
+2 treatment.n.02# manejo
+5 # imformaciones
+7 internet.n.01# internet
+8 # neceita
+10 # trasporte
+11 service.n.01# servicio
+13 person.n.01# persona
+15 digest.v.03# sufrir
+17 # invobilidad
+19 watchfulness.n.02# atencion
+21 customer.n.01# cliente
+22 # toballas
+23 road.n.01# ruta
+26 # servicuo
+28 hotel.n.01# hotel
+29 monetary_value.n.01# costo
+30 high.a.02# alto

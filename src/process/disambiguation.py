@@ -7,24 +7,24 @@ from nltk.corpus import wordnet as wn
 
 def main():
 
-    load_disambiguated_dict("_ENCUESTA_ENERO_2018_.txt")
-
     # Awesome freeling tools
     tk, sp, morfo, sen, wsd, tagger = init_analyzers()
 
     for dirpath, dirnames, filenames in os.walk('../../data/tokenized/processed/'):
         for filename in filenames:
-            tokens = open(os.path.join(dirpath, filename), encoding='utf-8').read()
-            #disambiguated_tokens = disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger)
-            #write_disambiguated_tokens(disambiguated_tokens, dirpath, filename)
+            indexed_tokens_string = open(os.path.join(dirpath, filename), encoding='utf-8').read()
+            indexed_tokens = re.findall(r'\d+ \w+', indexed_tokens_string, re.MULTILINE)
+            disambiguated_tokens = disambiguate_tokens(indexed_tokens, tk, sp, morfo, sen, wsd, tagger)
+            write_disambiguated_tokens(disambiguated_tokens, dirpath, filename)
 
 
-def disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger):
+def disambiguate_tokens(indexed_tokens, tk, sp, morfo, sen, wsd, tagger):
 
     disambiguated_tokens = []
+    print(indexed_tokens)
     # The file contains not ordered tokens, in the same order as in the original file
-    # The tk.tokenize() function just convert them to the appropriate freeling format
-    lw = tk.tokenize(tokens)
+    lw = [freeling.word(re.findall(r'\d+ (\w+)', token)[0]) for token in indexed_tokens]
+    text_offsets = [re.findall(r'(\d+ )\w+', token)[0] for token in indexed_tokens]
     # split list of words in sentences, return list of sentences
     # Actually, one sentence here
     ls = sp.split(lw)
@@ -39,9 +39,9 @@ def disambiguate_tokens(tokens, tk, sp, morfo, sen, wsd, tagger):
         for index in range(len(ls[0])):
             rank = ls[0][index].get_senses()
             if len(rank) > 0:
-                disambiguated_tokens.append(wn.of2ss(rank[0][0]).name() + "# " + lw[index].get_form())
+                disambiguated_tokens.append(text_offsets[index] + wn.of2ss(rank[0][0]).name() + "# " + ls[0][index].get_lemma())
             else:
-                disambiguated_tokens.append("# " + lw[index].get_form())
+                disambiguated_tokens.append(text_offsets[index] + "# " + ls[0][index].get_lemma())
     return disambiguated_tokens
 
 
@@ -55,7 +55,7 @@ def write_disambiguated_tokens(tokens, dirpath, filename):
 def maco_options(lang,lpath) :
     # For more options : https://talp-upc.gitbooks.io/freeling-tutorial/content/code/example01.py.html
     # create options holder
-    opt = freeling.maco_options(lang);
+    opt = freeling.maco_options(lang)
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
@@ -107,14 +107,12 @@ def load_disambiguated_dict(file_name):
                 disambiguated_file = open(os.path.join(dirpath, filename), encoding='utf-8')
                 disambiguated_string = disambiguated_file.read()
                 print(disambiguated_string)
-                lemmas = re.findall(r'^\w+\.\w\.\d+\s*\#\s*(\w+)\s*', disambiguated_string, re.MULTILINE)
-                disambiguated_synset = re.findall(r'^(\w+\.\w\.\d+)\s*\#.+\s*', disambiguated_string, re.MULTILINE)
+                text_offsets = re.findall(r'^(\d+) \w+\.\w\.\d+\s*\#\s*\w+\s*', disambiguated_string, re.MULTILINE)
+                disambiguated_synset = re.findall(r'^\d+ (\w+\.\w\.\d+)\s*\#.+\s*', disambiguated_string, re.MULTILINE)
                 disambiguated_dict = dict()
-                for index in range(len(lemmas)):
-                    print(lemmas[index], " : ", disambiguated_dict.get(lemmas[index]))
-                    disambiguated_dict.update([(lemmas[index], disambiguated_synset[index])])
-                print(lemmas)
-                print(disambiguated_synset)
+                for index in range(len(text_offsets)):
+                    disambiguated_dict.update([(text_offsets[index], disambiguated_synset[index])])
+                    #print(text_offsets[index], " : ", disambiguated_dict.get(text_offsets[index]))
 
 
 if __name__ == "__main__":

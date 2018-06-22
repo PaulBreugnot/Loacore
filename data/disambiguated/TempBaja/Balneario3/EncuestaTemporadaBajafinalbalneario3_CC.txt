@@ -1,75 +1,75 @@
-landscape.n.01# paisaje
-water.n.01# agua
-masturbate.v.02# cascada
-water.n.01# agua
-hot.a.01# caliente
-water.n.01# agua
-water.n.01# agua
-universe.n.01# naturaleza
-masturbate.v.02# cascada
-water.n.01# agua
-masturbate.v.02# cascada
-swimming_pool.n.01# piscina
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-water.n.01# agua
-water.n.01# agua
-universe.n.01# naturaleza
-masturbate.v.02# cascada
-watchfulness.n.02# atencion
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-water.n.01# agua
-environment.n.02# ambiente
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-water.n.01# agua
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-water.n.01# agua
-water.n.01# agua
-water.n.01# agua
-water.n.01# agua
-water.n.01# agua
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-water.n.01# agua
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-water.n.01# agua
-environment.n.02# ambiente
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-conformity.n.02# conformidad
-water.n.01# agua
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-water.n.01# agua
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-universe.n.01# naturaleza
-# renovacion
-landscape.n.01# paisaje
-meal.n.01# comida
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-water.n.01# agua
-water.n.01# agua
-landscape.n.01# paisaje
-landscape.n.01# paisaje
-masturbate.v.02# cascada
-masturbate.v.02# cascada
-waterfall.n.01# cascada
-masturbate.v.02# cascada
-water.n.01# agua
-water.n.01# agua
-masturbate.v.02# cascada
-water.n.01# agua
+0 landscape.n.01# paisaje
+1 water.n.01# agua
+2 masturbate.v.02# cascar
+3 water.n.01# agua
+4 hot.a.01# caliente
+7 water.n.01# agua
+10 water.n.01# agua
+12 universe.n.01# naturaleza
+14 masturbate.v.02# cascar
+17 water.n.01# agua
+18 masturbate.v.02# cascar
+19 swimming_pool.n.01# piscina
+20 landscape.n.01# paisaje
+21 masturbate.v.02# cascar
+23 landscape.n.01# paisaje
+26 masturbate.v.02# cascar
+28 masturbate.v.02# cascar
+31 water.n.01# agua
+33 water.n.01# agua
+34 universe.n.01# naturaleza
+36 masturbate.v.02# cascar
+39 watchfulness.n.02# atencion
+42 masturbate.v.02# cascar
+45 landscape.n.01# paisaje
+47 water.n.01# agua
+49 environment.n.02# ambiente
+51 landscape.n.01# paisaje
+53 landscape.n.01# paisaje
+58 water.n.01# agua
+60 masturbate.v.02# cascar
+63 landscape.n.01# paisaje
+65 masturbate.v.02# cascar
+69 masturbate.v.02# cascar
+72 water.n.01# agua
+77 water.n.01# agua
+79 water.n.01# agua
+86 water.n.01# agua
+88 water.n.01# agua
+92 landscape.n.01# paisaje
+94 masturbate.v.02# cascar
+97 masturbate.v.02# cascar
+100 water.n.01# agua
+102 masturbate.v.02# cascar
+106 masturbate.v.02# cascar
+108 landscape.n.01# paisaje
+111 masturbate.v.02# cascar
+113 water.n.01# agua
+115 environment.n.02# ambiente
+122 landscape.n.01# paisaje
+125 landscape.n.01# paisaje
+132 conformity.n.02# conformidad
+134 water.n.01# agua
+137 masturbate.v.02# cascar
+140 masturbate.v.02# cascar
+145 water.n.01# agua
+147 masturbate.v.02# cascar
+149 masturbate.v.02# cascar
+152 universe.n.01# naturaleza
+154 # renovacion
+157 landscape.n.01# paisaje
+161 meal.n.01# comida
+167 landscape.n.01# paisaje
+172 masturbate.v.02# cascar
+175 water.n.01# agua
+177 water.n.01# agua
+180 landscape.n.01# paisaje
+184 landscape.n.01# paisaje
+186 masturbate.v.02# cascar
+188 masturbate.v.02# cascar
+190 waterfall.n.01# cascada
+192 masturbate.v.02# cascar
+195 water.n.01# agua
+201 water.n.01# agua
+204 masturbate.v.02# cascar
+206 water.n.01# agua

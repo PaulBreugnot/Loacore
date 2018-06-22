@@ -1,89 +1,89 @@
-# parqueadero
-entrance.n.01# ingreso
-nutriment.n.01# alimentos
-# promocion
-# lamusica
-# mas
-assurance.n.01# seguridad
-consume.v.02# tomar
-# picsina
-road.n.01# ruta
-# trasporte
-employee.n.01# empleados
-ill.r.01# mal
-aim.v.01# educados
-lunch.n.01# almuerzo
-# frio
-# trasporte
-expensive.a.01# caro
-monetary_value.n.01# precios
-tall.a.01# altos
-time.n.05# tiempo
-monetary_value.n.01# costo
-lunch.n.01# comida
-entrance.n.01# ingreso
-pet.n.01# mascotas
-serve.v.10# sirven
-lunch.n.01# comidas
-expensive.a.01# costoso
-expensive.a.01# caro
-# donderumbear
-expensive.a.01# caro
-topographic_point.n.01# sitios
-# resvalosos
-entrance.n.01# entrada
-toilet.n.02# baños
-expensive.a.01# costoso
-consume.v.02# tomen
-# picsina
-monetary_value.n.01# costo
-transport.v.02# transporte
-look.v.01# ver
-eat.v.02# comiendo
-inside.r.02# dentro
-# pcsinad
-entrance.n.01# entrada
-nutriment.n.01# alimentos
-distance.n.01# distancia
-bear.v.05# dio
-lunch.n.01# almuerzo
-shower.n.01# duchas
-private.a.01# privadas
-lunch.n.01# comida
-shower.n.01# duchas
-private.a.01# privadas
-full.a.01# lleno
-# estableciiento
-toilet.n.02# baños
-# cochinad
-# mas
-# picsinas
-talk.v.02# dichas
-private.a.01# privadas
-monetary_value.n.01# precios
-# haer
-line.n.01# fila
-# revicion
-bag.n.01# bolsos
-lunch.n.01# comida
-monetary_value.n.01# precio
-entrance.n.01# entradas
-# eztra
-lunch.n.01# comida
-toilet.n.02# servicio
-# loslocker
-game.n.01# juegos
-# didacticos
-expensive.a.01# caro
-restaurant.n.01# restaurante
-# pisp
-wetness.n.01# humedad
-monetary_value.n.01# precios
-monetary_value.n.01# costo
-expensive.a.01# costoso
-lunch.n.01# comida
-# poquitas
-option.n.01# opciones
-expensive.a.01# caro
-# frio
-farther.r.02# lejos
+1 # parqueadero
+2 entrance.n.01# ingreso
+4 nutriment.n.01# alimento
+5 # promocion
+6 # lamusica
+7 # mas
+8 assurance.n.01# seguridad
+10 consume.v.02# tomar
+12 # picsina
+13 road.n.01# ruta
+15 # trasporte
+17 employee.n.01# empleado
+18 ill.r.01# mal
+19 aim.v.01# educar
+21 lunch.n.01# almuerzo
+26 # frio
+27 # trasporte
+29 expensive.a.01# caro
+32 monetary_value.n.01# precio
+34 tall.a.01# alto
+36 time.n.05# tiempo
+37 monetary_value.n.01# costo
+39 lunch.n.01# comida
+41 entrance.n.01# ingreso
+43 pet.n.01# mascota
+45 serve.v.10# servir
+47 lunch.n.01# comida
+48 expensive.a.01# costoso
+50 expensive.a.01# caro
+53 # donderumbear
+55 expensive.a.01# caro
+57 topographic_point.n.01# sitio
+58 # resvalosos
+60 entrance.n.01# entrada
+63 toilet.n.02# baño
+65 expensive.a.01# costoso
+68 consume.v.02# tomar
+71 # picsina
+74 monetary_value.n.01# costo
+76 transport.v.02# transportar
+77 look.v.01# ver
+78 eat.v.02# comer
+79 inside.r.02# dentro
+82 # pcsinad
+84 entrance.n.01# entrada
+86 nutriment.n.01# alimento
+88 distance.n.01# distancia
+93 bear.v.05# dar
+94 lunch.n.01# almuerzo
+95 shower.n.01# ducha
+96 private.a.01# privar
+98 lunch.n.01# comida
+99 shower.n.01# ducha
+100 private.a.01# privar
+102 full.a.01# lleno
+104 # estableciiento
+106 toilet.n.02# baño
+108 # cochinad
+109 # mas
+110 # picsinas
+112 talk.v.02# decir
+113 private.a.01# privar
+115 monetary_value.n.01# precio
+117 # haer
+118 line.n.01# fila
+121 # revicion
+124 bag.n.01# bolso
+126 lunch.n.01# comida
+128 monetary_value.n.01# precio
+130 entrance.n.01# entrada
+131 # eztra
+133 lunch.n.01# comida
+135 toilet.n.02# servicio
+137 # loslocker
+141 game.n.01# juego
+142 # didacticos
+144 expensive.a.01# caro
+146 restaurant.n.01# restaurante
+148 # pisp
+151 wetness.n.01# humedad
+153 monetary_value.n.01# precio
+155 monetary_value.n.01# costo
+157 expensive.a.01# costoso
+159 lunch.n.01# comida
+160 # poquitas
+161 option.n.01# opción
+163 expensive.a.01# caro
+165 # frio
+167 farther.r.02# lejos

@@ -1,24 +1,24 @@
-monetary_value.n.01# precios
-shop.n.01# tiendas
-monetary_value.n.01# costo
-input.n.04# insumos
-district.n.01# zona
-respite.n.02# descanso
-restaurant.n.01# restaurante
-personal.a.01# personal
-sanitariness.n.01# higiene
-toilet.n.01# baños
-monetary_value.n.01# costos
-# retaurante
-monetary_value.n.01# precios
-monetary_value.n.01# costos
-tarry.v.02# tardan
-serve.v.10# servir
-# ña
-meal.n.01# comida
-juice.n.01# jugo
-# azucar
-# diabeticos
-effusion.n.01# acceso
-# cuanto
-# informacion
+1 monetary_value.n.01# precio
+3 shop.n.01# tienda
+5 monetary_value.n.01# costo
+8 input.n.04# insumo
+9 district.n.01# zona
+11 respite.n.02# descanso
+13 restaurant.n.01# restaurante
+15 personal.a.01# personal
+17 sanitariness.n.01# higiene
+20 toilet.n.01# baño
+22 monetary_value.n.01# costo
+24 # retaurante
+27 monetary_value.n.01# precio
+29 monetary_value.n.01# costo
+30 tarry.v.02# tardar
+33 serve.v.10# servir
+34 # ña
+35 meal.n.01# comida
+36 juice.n.01# jugo
+38 # azucar
+40 # diabeticos
+42 effusion.n.01# acceso
+44 # cuanto
+46 # informacion
