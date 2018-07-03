@@ -2,9 +2,9 @@ import sqlite3 as sql
 
 
 def main():
-    #add_file('test.txt')
+    #add_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
     print(list_files())
-    load_file(6)
+    #load_file(7)
 
 
 def add_file(file_path):

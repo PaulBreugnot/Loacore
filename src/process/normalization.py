@@ -8,7 +8,7 @@ def main():
         for name in filenames:
             raw_text = open(os.path.join(dirpath, name), encoding='windows-1252')
 
-            normalized_string = normalize(raw_text.read())
+            normalized_string = '\n'.join(normalize(raw_text.read()))
             write_normalized_text(normalized_string, dirpath, name)
 
 
@@ -20,8 +20,8 @@ def write_normalized_text(normalized_string, dirpath, filename):
 
 def normalize(text):
     normalized_string = text.lower()
-    alphanumeric_chars = re.findall(r'[\w\s]', normalized_string)
-    return ''.join(alphanumeric_chars)
+    reviews = re.findall(r'.+', normalized_string, re.MULTILINE)
+    return reviews
 
 
 if __name__ == "__main__":
