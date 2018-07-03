@@ -25,7 +25,7 @@ class Review:
 
 
 def main():
-    add_reviews_from_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
+    #add_reviews_from_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
     #print(list_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
     load_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
     print(count_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
@@ -39,7 +39,6 @@ def load_reviews(file_path):
               "FROM Review JOIN File ON Review.ID_File = File.ID_File WHERE File_Path = '" + file_path + "'")
     results = c.fetchall()
     for result in results:
-        #print(file_path + " : " + str(result[1]))
         reviews.append(Review(result[0], result[1], result[2], result[3]))
     return reviews
 
