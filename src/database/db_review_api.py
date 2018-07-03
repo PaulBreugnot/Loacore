@@ -3,28 +3,52 @@ import src.database.db_file_api as file_api
 import src.process.normalization as norm
 
 
+class Review:
+
+    def __init__(self, id_review, id_file, file_index, review):
+        self.id_review = id_review
+        self.id_file = id_file
+        self.file_index = file_index
+        self.review = review
+
+    def get_id_review(self):
+        return self.id_review
+
+    def get_id_file(self):
+        return self.id_file
+
+    def get_file_index(self):
+        return self.file_index
+
+    def get_review(self):
+        return self.review
+
+
 def main():
     add_reviews_from_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    print(list_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
+    #print(list_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
+    load_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
+    print(count_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
 
 
-def add_review(id_file, file_index, review):
+def load_reviews(file_path):
+    reviews = []
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("INSERT INTO Review (ID_File, File_Index, Review) "
-              "VALUES (" + str(id_file) + ", " + str(file_index) + ", '" + review + "');")
-    conn.commit()
-    conn.close()
+    c.execute("SELECT ID_Review, Review.ID_File, File_Index, Review "
+              "FROM Review JOIN File ON Review.ID_File = File.ID_File WHERE File_Path = '" + file_path + "'")
+    results = c.fetchall()
+    for result in results:
+        #print(file_path + " : " + str(result[1]))
+        reviews.append(Review(result[0], result[1], result[2], result[3]))
+    return reviews
 
 
-def list_reviews(file_path):
+def count_reviews(file_path):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("SELECT File_Index, Review FROM Review JOIN File WHERE File_Path = '" + file_path + "'")
-    result = c.fetchall()
-    conn.close()
-
-    return result
+    c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File WHERE File_Path = '" + file_path + "'")
+    return c.fetchone()[0]
 
 
 def add_reviews_from_file(file_path):
@@ -42,7 +66,8 @@ def add_reviews_from_file(file_path):
         print(e)
         return
 
-    raw_text = file_api.load_file(id_file).read()
+    print(id_file)
+    raw_text = file_api.load_file(id_file).load().read()
     reviews = norm.normalize(raw_text)
 
     sql_reviews = []

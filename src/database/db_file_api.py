@@ -1,9 +1,41 @@
 import sqlite3 as sql
 
 
+class File:
+
+    def __init__(self, id_file, file_path, load_reviews=False):
+        self.id_file = id_file
+        self.file_path = file_path
+        self.reviews = []
+        if load_reviews:
+            self.load_reviews()
+
+    def get_id_file(self):
+        return self.id_file
+
+    def get_file_path(self):
+        return self.file_path
+
+    def get_reviews(self):
+        return self.reviews
+
+    def load_reviews(self):
+        import src.database.db_review_api as review_api
+        self.reviews = review_api.load_reviews(self.file_path)
+
+    def load(self):
+        return open(self.file_path, encoding='windows-1252')
+
+
 def main():
     #add_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    print(list_files())
+    files = load_files(load_reviews=True)
+    for file in files:
+        print(file.get_id_file())
+        print(file.get_file_path())
+        for review in file.get_reviews():
+            print(file.get_file_path())
+            print(review.get_review())
     #load_file(7)
 
 
@@ -25,24 +57,27 @@ def remove_file(file_path):
     conn.close()
 
 
-def list_files():
+def load_file(id_file, load_reviews=False):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute('SELECT * FROM File')
-    result = c.fetchall()
+    c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
+    result = c.fetchone()
     conn.close()
 
-    return result
+    return File(result[0], result[1], load_reviews)
 
 
-def load_file(id_file):
+def load_files(load_reviews=False):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("SELECT File_Path FROM File WHERE ID_File = " + str(id_file))
-    path = c.fetchone()[0]
-    conn.close()
+    c.execute("SELECT ID_File, File_Path FROM File")
 
-    return open(path, encoding='windows-1252')
+    files = []
+    results = c.fetchall()
+    for result in results:
+        files.append(File(result[0], result[1], load_reviews))
+    conn.close()
+    return files
 
 
 def process(file_path):
