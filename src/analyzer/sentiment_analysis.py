@@ -181,9 +181,11 @@ class WordPolarity:
 
 
 def main():
+    print([swn.senti_synset(synset.name()).pos_score() for synset in wn.synsets('servicio', lang='spa')])
+    print([swn.senti_synset(synset.name()).neg_score() for synset in wn.synsets('servicio', lang='spa')])
     #print_polarity_table(select='disambiguated')
     #plot_polarity_pie_charts(select='disambiguated')
-    save_polarity_pie_charts()
+    #save_polarity_pie_charts()
 
 
 def print_polarity_table(select='none'):
