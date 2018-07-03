@@ -20,8 +20,7 @@ def add_review(id_file, file_index, review):
 def list_reviews(file_path):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("SELECT * FROM Review")
-    #c.execute("SELECT * FROM Review JOIN File WHERE File_Path = '" + file_path + "'")
+    c.execute("SELECT File_Index, Review FROM Review JOIN File WHERE File_Path = '" + file_path + "'")
     result = c.fetchall()
     conn.close()
 
