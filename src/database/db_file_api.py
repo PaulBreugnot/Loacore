@@ -2,7 +2,9 @@ import sqlite3 as sql
 
 
 def main():
-    list_files()
+    #add_file('test.txt')
+    print(list_files())
+    load_file(6)
 
 
 def add_file(file_path):
@@ -27,9 +29,20 @@ def list_files():
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute('SELECT * FROM File')
-    print(c.fetchall())
-
+    result = c.fetchall()
     conn.close()
+
+    return result
+
+
+def load_file(id_file):
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    c.execute("SELECT File_Path FROM File WHERE ID_File = " + str(id_file))
+    path = c.fetchone()[0]
+    conn.close()
+
+    return open(path, encoding='windows-1252')
 
 
 def process(file_path):
