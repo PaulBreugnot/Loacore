@@ -28,7 +28,7 @@ class File:
 
 class Review:
 
-    def __init__(self, id_review, id_file, file_index, review):
+    def __init__(self, id_review, id_file, file_index, review, load_sentences=False):
         self.id_review = id_review
         self.id_file = id_file
         self.file_index = file_index
@@ -45,3 +45,35 @@ class Review:
 
     def get_review(self):
         return self.review
+
+    def load_sentences(self):
+        '''
+
+        :return: nothing
+        Load review's sentences from database
+        '''
+
+
+class Sentence:
+
+    def __init__(self, id_sentence, id_review, review_index, id_dep_tree, sentence):
+        self.id_sentence = id_sentence
+        self.id_review = id_review
+        self.review_index = review_index
+        self.id_dep_tree = id_dep_tree
+        self.sentence = sentence
+
+    def get_id_sentence(self):
+        return self.id_sentence
+
+    def get_id_review(self):
+        return self.id_review
+
+    def get_review_index(self):
+        return self.review_index
+
+    def get_id_dep_tree(self):
+        return self.id_dep_tree
+
+    def get_sentence(self):
+        return self.sentence
