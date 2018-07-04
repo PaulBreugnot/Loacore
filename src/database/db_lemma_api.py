@@ -19,9 +19,9 @@ def load_lemmas_in_words(words):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     for word in words:
-        c.execute("SELECT Lemma FROM Lemma WHERE ID_Lemma = '" + str(word.get_id_lemma()) + "'")
-        result = c.fetchone()
-        if result is not None:
+        if word.get_id_lemma() is not None:
+            c.execute("SELECT Lemma FROM Lemma WHERE ID_Lemma = '" + str(word.get_id_lemma()) + "'")
+            result = c.fetchone()
             word.set_lemma(result[0])
 
     conn.close()
