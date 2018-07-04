@@ -33,7 +33,14 @@ def add_sentences_from_reviews(reviews):
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
                   "VALUES (?, ?)", (review.get_id_review(), str(review_index)))
             review_index += 1
-            #TODO : insert Words
+            c.execute("SELECT last_insert_rowid()")
+            id_sentence = c.fetchone()[0]
+            sql_words = []
+            sentence_index = 0
+            for word in sentence:
+                sql_words.append((id_sentence, sentence_index, word.get_form()))
+                sentence_index += 1
+            c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
 
     conn.commit()
     conn.close()

@@ -80,3 +80,53 @@ class Sentence:
 
     def get_sentence(self):
         return self.sentence
+
+
+class Word:
+
+    def __init__(self, id_word, id_sentence, word, sentence_index, id_lemma, id_synset, PoS_tag):
+        self.id_word = id_word
+        self.id_sentence = id_sentence
+        self.word = word
+        self.sentence_index = sentence_index
+        self.id_lemma = id_lemma
+        self.id_synset = id_synset
+        self.PoS_tag = PoS_tag
+
+    def __init__(self, id_word, id_sentence, word, sentence_index):
+        self.__init__(id_word, id_sentence, word, sentence_index, None, None, None)
+
+    def set_id_lemma(self, id_lemma):
+        self.id_lemma = id_lemma
+
+    def set_id_synset(self, id_synset):
+        self.id_synset = id_synset
+
+    def set_PoS_tag(self, PoS_tag):
+        self.PoS_tag = PoS_tag
+
+    def get_id_word(self):
+        return self.id_word
+
+    def get_id_sentence(self):
+        return self.id_sentence
+
+    def get_word(self):
+        return self.word
+
+    def get_sentence_index(self):
+        return self.sentence_index
+
+    def get_id_lemma(self):
+        return self.id_lemma
+
+    def get_id_synset(self):
+        return self.id_synset
+
+    #TODO : load lemma, load synset
+
+    def freeling_word(self):
+        # TODO : consistent initialization according to the use of freeling modules
+        from ressources.pyfreeling import word
+        return word(self.word)
+
