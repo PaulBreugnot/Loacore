@@ -3,15 +3,18 @@ import ressources.pyfreeling as freeling
 from src.database.classes import Sentence
 
 
-def load_sentences(id_review):
-    sentences = []
-    conn = sql.connect('../../data/database/reviews.db')
-    c = conn.cursor()
-    c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree, Sentence FROM Sentence"
-              "WHERE ID_Sentence = " + str(id_review))
-    results = c.fetchall()
-    for result in results:
-        sentences.append(Sentence(result[0], result[1], result[2], result[3]))
+def load_sentences(id_reviews):
+    for id_review in id_reviews:
+        sentences = []
+        conn = sql.connect('../../data/database/reviews.db')
+        c = conn.cursor()
+        c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree, Sentence FROM Sentence "
+                  "WHERE ID_Sentence = " + str(id_review))
+        results = c.fetchall()
+        for result in results:
+            sentences.append(Sentence(result[0], result[1], result[2], result[3]))
+
+    conn.close()
     return sentences
 
 
