@@ -1,34 +1,14 @@
 import sqlite3 as sql
 import src.database.db_file_api as file_api
 import src.process.normalization as norm
+from src.database.classes import Review
 
 
-class Review:
-
-    def __init__(self, id_review, id_file, file_index, review):
-        self.id_review = id_review
-        self.id_file = id_file
-        self.file_index = file_index
-        self.review = review
-
-    def get_id_review(self):
-        return self.id_review
-
-    def get_id_file(self):
-        return self.id_file
-
-    def get_file_index(self):
-        return self.file_index
-
-    def get_review(self):
-        return self.review
-
-
-def main():
+#def main():
     #add_reviews_from_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
     #print(list_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
-    load_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    print(count_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
+    #load_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
+    #print(count_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
 
 
 def load_reviews(file_path):
@@ -80,6 +60,3 @@ def add_reviews_from_file(file_path):
     conn.commit()
     conn.close()
 
-
-if __name__ == "__main__":
-    main()

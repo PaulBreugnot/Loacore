@@ -1,32 +1,10 @@
 import sqlite3 as sql
+from src.database.classes import File
 
 
-class File:
-
-    def __init__(self, id_file, file_path, load_reviews=False):
-        self.id_file = id_file
-        self.file_path = file_path
-        self.reviews = []
-        if load_reviews:
-            self.load_reviews()
-
-    def get_id_file(self):
-        return self.id_file
-
-    def get_file_path(self):
-        return self.file_path
-
-    def get_reviews(self):
-        return self.reviews
-
-    def load_reviews(self):
-        import src.database.db_review_api as review_api
-        self.reviews = review_api.load_reviews(self.file_path)
-
-    def load(self):
-        return open(self.file_path, encoding='windows-1252')
 
 
+'''
 def main():
     #add_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
     files = load_files(load_reviews=True)
@@ -37,6 +15,7 @@ def main():
             print(file.get_file_path())
             print(review.get_review())
     #load_file(7)
+'''
 
 
 def add_file(file_path):
@@ -88,6 +67,3 @@ def process(file_path):
     This function will made all the possible processes applicable to the file, feeding the complete database.
     '''
 
-
-if __name__ == "__main__":
-    main()
