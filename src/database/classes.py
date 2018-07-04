@@ -33,6 +33,9 @@ class Review:
         self.id_file = id_file
         self.file_index = file_index
         self.review = review
+        self.sentences = []
+        if load_sentences:
+            self.load_sentences()
 
     def get_id_review(self):
         return self.id_review
@@ -46,12 +49,12 @@ class Review:
     def get_review(self):
         return self.review
 
-    def load_sentences(self):
-        '''
+    def get_sentences(self):
+        return self.sentences
 
-        :return: nothing
-        Load review's sentences from database
-        '''
+    def load_sentences(self):
+        import src.database.db_sentence_api as sentence_api
+        self.sentences = sentence_api.load_sentences(self.id_review)
 
 
 class Sentence:
