@@ -2,20 +2,32 @@ import sqlite3 as sql
 from src.database.classes import File
 
 
+def load_files_by_id_files(id_files, load_reviews=False):
+    files = []
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    for id_file in id_files:
+        c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
+        result = c.fetchone()
+        if result is not None:
+            files.append(File(result[0], result[1]))
+
+    conn.close()
+
+    return files
 
 
-'''
-def main():
-    #add_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    files = load_files(load_reviews=True)
-    for file in files:
-        print(file.get_id_file())
-        print(file.get_file_path())
-        for review in file.get_reviews():
-            print(file.get_file_path())
-            print(review.get_review())
-    #load_file(7)
-'''
+def load_files(load_reviews=False):
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    c.execute("SELECT ID_File, File_Path FROM File")
+
+    files = []
+    results = c.fetchall()
+    for result in results:
+        files.append(File(result[0], result[1], load_reviews))
+    conn.close()
+    return files
 
 
 def add_file(file_path):

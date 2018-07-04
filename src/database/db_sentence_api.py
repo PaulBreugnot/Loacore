@@ -3,19 +3,46 @@ import ressources.pyfreeling as freeling
 from src.database.classes import Sentence
 
 
-def load_sentences(id_reviews):
-    for id_review in id_reviews:
+def load_sentences_list_by_ids(id_sentences):
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    for id_sentence in id_sentences:
         sentences = []
-        conn = sql.connect('../../data/database/reviews.db')
-        c = conn.cursor()
-        c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree, Sentence FROM Sentence "
-                  "WHERE ID_Sentence = " + str(id_review))
-        results = c.fetchall()
-        for result in results:
+        c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
+                  "WHERE ID_Sentence = " + str(id_sentence))
+        result = c.fetchone()
+        if result is not None:
             sentences.append(Sentence(result[0], result[1], result[2], result[3]))
 
     conn.close()
     return sentences
+
+
+def load_sentences_list_by_id_review(id_review):
+    sentences = []
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
+              "WHERE ID_Review = " + str(id_review))
+    results = c.fetchall()
+    for result in results:
+        sentences.append(Sentence(result[0], result[1], result[2], result[3]))
+
+    conn.close()
+    return sentences
+
+
+def load_sentences_in_reviews(reviews):
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+    for review in reviews:
+        review_sentences = []
+        c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
+                  "WHERE ID_Review = " + str(review.id_review))
+        results = c.fetchall()
+        for result in results:
+            review_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
+        review.set_sentences(review_sentences)
 
 
 def add_sentences_from_reviews(reviews):

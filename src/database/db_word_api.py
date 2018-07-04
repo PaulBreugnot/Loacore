@@ -1,5 +1,5 @@
 import sqlite3 as sql
-import src.database.classes.Word as Word
+from src.database.classes import Word
 
 
 def load_words_list_by_ids(id_words, load_lemmas=True, load_synsets=True):

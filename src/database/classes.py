@@ -18,9 +18,18 @@ class File:
     def get_reviews(self):
         return self.reviews
 
+    def set_reviews(self, reviews):
+        self.reviews = reviews
+
     def load_reviews(self):
+        """
+        This method should only be used to load the sentences of an isolated Review.
+        Otherwise, please use method src.database.db_review_api.load_reviews_in_files()
+        :return: loaded reviews
+        """
         import src.database.db_review_api as review_api
-        self.reviews = review_api.load_reviews(self.file_path)
+        self.reviews = review_api.load_reviews_by_id_file(self.id_file)
+        return self.get_reviews()
 
     def load(self):
         return open(self.file_path, encoding='windows-1252')
@@ -53,8 +62,14 @@ class Review:
         return self.sentences
 
     def load_sentences(self):
+        """
+        This method should only be used to load the sentences of an isolated Review.
+        Otherwise, please use method src.database.db_sentence_api.load_sentences_in_reviews()
+        :return: loaded sentences
+        """
         import src.database.db_sentence_api as sentence_api
-        self.sentences = sentence_api.load_sentences(self.id_review)
+        self.sentences = sentence_api.load_sentences_list_by_id_review(self.id_review)
+        return self.get_sentences()
 
 
 class Sentence:
@@ -111,9 +126,6 @@ class Word:
         self.id_synset = id_synset
         self.synset = None
         self.PoS_tag = PoS_tag
-
-    def __init__(self, id_word, id_sentence, word, sentence_index):
-        self.__init__(id_word, id_sentence, word, sentence_index, None, None, None)
 
     def set_id_lemma(self, id_lemma):
         self.id_lemma = id_lemma
