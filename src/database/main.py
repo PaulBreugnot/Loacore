@@ -24,7 +24,12 @@ def test_load_db():
             for sentence in review.sentences:
                 print("    Sentence : ")
                 for word in sentence.words:
-                    print("        " + word.word + " : " + word.lemma)
+                    print("        Word : " + word.word + " : " + word.lemma)
+                    print("            Lemma : " + word.lemma)
+                    if word.synset is not None:
+                        print("            Synset : " + word.synset.synset_name)
+                    else:
+                        print("            Synset : None")
 
 
 def test_lemmas():
@@ -39,5 +44,5 @@ def test_synsets():
 
 #add_files_to_database()
 #test_lemmas()
-test_synsets()
-#test_load_db()
+#test_synsets()
+test_load_db()

@@ -9,11 +9,11 @@ def load_synsets_list(id_synsets):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     for id_synset in id_synsets:
-        c.execute("SELECT ID_Synset, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score "
+        c.execute("SELECT ID_Synset, ID_Word, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score "
                   "FROM Synset WHERE ID_Synset = " + str(id_synset))
         result = c.fetchone()
         if result is not None:
-            synsets.append(Synset(result[0], result[1], result[2], result[4], result[5]))
+            synsets.append(Synset(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
 
     return synsets
 
@@ -23,14 +23,15 @@ def load_synsets_in_words(words):
     c = conn.cursor()
     for word in words:
         if word.id_synset is not None:
-            c.execute("SELECT ID_Synset, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score "
+            c.execute("SELECT ID_Synset, ID_Word, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score "
                       "FROM Synset WHERE ID_Synset = " + str(word.id_synset))
             result = c.fetchone()
-            word.set_synset(Synset(result[0], result[1], result[2], result[4], result[5]))
+            word.synset = Synset(result[0], result[1], result[2], result[3], result[4], result[5], result[6])
 
     conn.close()
 
-def add_synsets_to_sentences(sentences):
+
+def add_synsets_to_sentences(sentences, print_synsets = False):
     """
     Disambiguation.
     This function will perform a Freeling process to disambiguate words of the sentences according to their context
@@ -47,14 +48,12 @@ def add_synsets_to_sentences(sentences):
 
     morfo, tagger, sen, wsd = init_freeling()
 
-    print(len(freeling_sentences))
     # perform morphosyntactic analysis and disambiguation
     freeling_sentences = morfo.analyze(freeling_sentences)
     freeling_sentences = tagger.analyze(freeling_sentences)
     # annotate and disambiguate senses
     freeling_sentences = sen.analyze(freeling_sentences)
     freeling_sentences = wsd.analyze(freeling_sentences)
-    print(len(freeling_sentences))
 
     # Copy freeling results into our Words
     for s in range(len(sentences)):
@@ -63,9 +62,35 @@ def add_synsets_to_sentences(sentences):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
             if len(rank) > 0:
-                print("Word : " + word.word)
-                print("Synset code : " + rank[0][0])
-                print("Synset name : " + wn.of2ss(rank[0][0]).name())
+                word.synset = Synset(None, word.id_word, rank[0][0], wn.of2ss(rank[0][0]).name(), None, None, None)
+                if print_synsets:
+                    print("Word : " + word.word)
+                    print("Synset code : " + rank[0][0])
+                    print("Synset name : " + wn.of2ss(rank[0][0]).name())
+
+    # Add synsets to database
+
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    for sentence in sentences:
+        for word in sentence.words:
+            synset = word.synset
+
+            if synset is not None:
+                # Add synset
+                c.execute("INSERT INTO Synset (ID_Word, Synset_Code, Synset_Name) "
+                          "VALUES (" + str(word.id_word) + ", '" + synset.synset_code + "', '" + synset.synset_name + "')")
+
+                # Get back id of last inserted review
+                c.execute("SELECT last_insert_rowid()")
+                id_synset = c.fetchone()[0]
+
+                # Update Word table
+                c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
+
+    conn.commit()
+    conn.close()
 
 
 def my_maco_options(lang,lpath) :

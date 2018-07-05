@@ -123,8 +123,9 @@ class Word:
 
 class Synset:
 
-    def __init__(self, id_synset, synset_code, synset_name, pos_score, neg_score, obj_score):
+    def __init__(self, id_synset, id_word, synset_code, synset_name, pos_score, neg_score, obj_score):
         self.id_synset = id_synset
+        self.id_word = id_word
         self.synset_code = synset_code
         self.synset_name = synset_name
         self.pos_score = pos_score
