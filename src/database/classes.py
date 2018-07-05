@@ -108,6 +108,13 @@ class Sentence:
         self.words = db_word_api.load_words_list_by_id_sentence(self.id_sentence)
         return self.get_words()
 
+    def freeling_sentence(self):
+        from ressources.pyfreeling import sentence as freeling_sentence
+        fr_words = [word.freeling_word() for word in self.words]
+        fr_sentence = freeling_sentence(fr_words)
+        return fr_sentence
+
+
 
 class Word:
 
@@ -117,7 +124,7 @@ class Word:
         self.sentence_index = sentence_index
         self.word = word
         self.id_lemma = id_lemma
-        self.lemma = ''
+        self.lemma = None
         self.id_synset = id_synset
         self.synset = None
         self.PoS_tag = PoS_tag
@@ -183,8 +190,20 @@ class Word:
 
     def freeling_word(self):
         # TODO : consistent initialization according to the use of freeling modules
-        from ressources.pyfreeling import word
-        return word(self.word)
+        from ressources.pyfreeling import word as freeling_word
+        from ressources.pyfreeling import analysis as freeling_analysis
+        fr_word = freeling_word()
+        fr_word.set_form(self.word)
+
+        fr_analysis = freeling_analysis()
+        if self.lemma is not None:
+            fr_analysis.set_lemma(self.lemma)
+        if self.synset is not None:
+            fr_analysis.set_senses([self.synset.get_synset_code()])
+
+        fr_word.set_analysis(fr_analysis)
+
+        return fr_word
 
 
 class Synset:
