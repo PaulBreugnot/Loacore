@@ -81,6 +81,7 @@ class Word:
         self.id_synset = id_synset
         self.synset = None
         self.PoS_tag = PoS_tag
+        self.freeling_word = None
 
     def load_lemma(self):
         """
@@ -109,14 +110,14 @@ class Word:
         fr_word = freeling_word_class()
         fr_word.set_form(self.word)
 
-        fr_analysis = freeling_analysis()
+        """
         if self.lemma is not None:
+            fr_analysis = freeling_analysis()
             fr_analysis.set_lemma(self.lemma)
-        if self.synset is not None:
-            fr_analysis.set_senses([self.synset.get_synset_code()])
+            fr_word.set_analysis(fr_analysis)
+        """
 
-        fr_word.set_analysis(fr_analysis)
-
+        self.freeling_word = fr_word
         return fr_word
 
 

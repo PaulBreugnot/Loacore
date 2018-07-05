@@ -1,5 +1,7 @@
 import os
 import src.database.db_file_api as file_api
+import src.database.db_sentence_api as sentence_api
+import src.database.db_lemma_api as lemma_api
 
 
 def add_files_to_database():
@@ -23,4 +25,11 @@ def test_load_db():
                 for word in sentence.words:
                     print("        " + word.word + " ")
 
-test_load_db()
+
+def test_lemmas():
+    sentences = sentence_api.load_sentences()
+    lemma_api.add_lemmas_to_sentences(sentences)
+
+
+test_lemmas()
+#test_load_db()

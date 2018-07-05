@@ -53,6 +53,24 @@ def load_sentences_in_reviews(reviews):
     return loaded_sentences
 
 
+def load_sentences():
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    loaded_sentences = []
+
+    c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence")
+    results = c.fetchall()
+    for result in results:
+        loaded_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
+
+    # Load Words
+    import src.database.db_word_api as word_api
+    word_api.load_words_in_sentences(loaded_sentences)
+
+    return loaded_sentences
+
+
 def add_sentences_from_reviews(reviews):
     """
     Performs the first Freeling processes applied to each normalize review, contained as a string in Review object.

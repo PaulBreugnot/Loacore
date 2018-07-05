@@ -29,6 +29,7 @@ def load_lemmas_in_words(words):
 
 def add_lemmas_to_sentences(sentences):
     """
+    Lemmatization.
     This function will perform a Freeling process to add Lemmas to words.
     However, the argument is actually a sentence to better fit Freeling usage.
     Our Sentence will be converted to a Freeling Sentence before processing.
@@ -36,14 +37,44 @@ def add_lemmas_to_sentences(sentences):
     :return:
     """
 
-    freeling_sentences = [sentence.freeling_sentence() for sentence in sentences]
+    freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
     morfo = init_freeling()
 
     freeling_sentences = morfo.analyze(freeling_sentences)
 
+    # Copy freeling results into our Words
+    for s in range(len(sentences)):
+        sentence = sentences[s]
+        for w in range(len(sentence.words)):
+            word = sentence.words[w]
+            word.lemma = freeling_sentences[s][w].get_lemma()
 
-def my_maco_options(lang,lpath) :
+    for sentence in sentences:
+        for word in sentence.words:
+            print(word.word + " : " + word.lemma)
+
+    # Add lemmas to database
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    for sentence in sentences:
+        for word in sentence.words:
+            # Add Lemma to Lemma Table
+            c.execute("INSERT INTO Lemma (Lemma) VALUES ('" + word.lemma + "')")
+
+            # Get back id of last inserted review
+            c.execute("SELECT last_insert_rowid()")
+            id_lemma = c.fetchone()[0]
+
+            # Update Word table
+            c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
+
+    conn.commit()
+    conn.close()
+
+
+def my_maco_options(lang, lpath):
 
     # create options holder
     opt = freeling.maco_options(lang)
@@ -75,7 +106,7 @@ def init_freeling():
                              False,  # AffixAnalysis,
                              False,  # CompoundAnalysis,
                              False,  # RetokContractions,
-                             True,  # MultiwordsDetection,
+                             False,  # MultiwordsDetection,
                              False,  # NERecognition,
                              False,  # QuantitiesDetection,
                              False)  # ProbabilityAssignment
