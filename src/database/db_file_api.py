@@ -81,11 +81,17 @@ def add_files(file_paths):
     import src.database.db_sentence_api as sentence_api
     sentence_api.add_sentences_from_reviews(reviews)
 
-    # Lemmatization
-    import src.database.db_lemma_api as lemma_api
+    # Reload sentences with words
     import src.database.db_sentence_api as sentence_api
     sentences = sentence_api.load_sentences()
+
+    # Lemmatization
+    import src.database.db_lemma_api as lemma_api
     lemma_api.add_lemmas_to_sentences(sentences)
+
+    # Disambiguation
+    import src.database.db_synset_api as synset_api
+    synset_api.add_synsets_to_sentences(sentences)
 
 
 def remove_file(file_path):
