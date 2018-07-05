@@ -59,7 +59,7 @@ def load_sentences():
     loaded_sentences = []
 
     c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree "
-              "FROM Sentence ORDER BY (ID_Sentence, ID_Review)")
+              "FROM Sentence ORDER BY ID_Review, Review_Index")
     results = c.fetchall()
     for result in results:
         loaded_sentences.append(Sentence(result[0], result[1], result[2], result[3]))

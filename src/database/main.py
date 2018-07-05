@@ -2,6 +2,7 @@ import os
 import src.database.db_file_api as file_api
 import src.database.db_sentence_api as sentence_api
 import src.database.db_lemma_api as lemma_api
+import src.database.db_synset_api as synset_api
 
 
 def add_files_to_database():
@@ -30,6 +31,13 @@ def test_lemmas():
     sentences = sentence_api.load_sentences()
     lemma_api.add_lemmas_to_sentences(sentences)
 
+
+def test_synsets():
+    sentences = sentence_api.load_sentences()
+    synset_api.add_synsets_to_sentences(sentences)
+
+
 #add_files_to_database()
 #test_lemmas()
-test_load_db()
+test_synsets()
+#test_load_db()

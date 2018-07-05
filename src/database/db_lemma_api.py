@@ -47,14 +47,28 @@ def add_lemmas_to_sentences(sentences):
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
+        len_words = len(sentence.words)
+
+        len_freeling = len(freeling_sentences[s])
+        if len_words != len_freeling:
+            print(len(sentence.words))
+            print([word.word for word in sentence.words])
+            print(len(freeling_sentences[s]))
+            print([word.get_form() for word in freeling_sentences[s]])
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             word.lemma = freeling_sentences[s][w].get_lemma()
+            if len_words != len_freeling:
+                print(len(sentence.words))
+                print([word.word for word in sentence.words])
+                print(len(freeling_sentences[s]))
+                print([word.get_form() for word in freeling_sentences[s]])
 
     for sentence in sentences:
         for word in sentence.words:
             print(word.word + " : " + word.lemma)
 
+    """
     # Add lemmas to database
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
@@ -73,7 +87,7 @@ def add_lemmas_to_sentences(sentences):
 
     conn.commit()
     conn.close()
-
+    """
 
 # Freeling options
 
