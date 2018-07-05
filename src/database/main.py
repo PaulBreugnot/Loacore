@@ -30,6 +30,6 @@ def test_lemmas():
     sentences = sentence_api.load_sentences()
     lemma_api.add_lemmas_to_sentences(sentences)
 
-
+#add_files_to_database()
 #test_lemmas()
 test_load_db()

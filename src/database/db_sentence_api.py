@@ -93,7 +93,6 @@ def add_sentences_from_reviews(reviews):
         review_index = 0
         for sentence in sentences:
 
-            print("(" + str(review.id_review) + ", " + str(review_index) + ")")
             # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
                       "VALUES (?, ?)", (review.id_review, str(review_index)))
@@ -103,7 +102,8 @@ def add_sentences_from_reviews(reviews):
             id_sentence = c.fetchone()[0]
 
             # Keep trace of added sentences
-            added_sentences.append(Sentence(id_sentence, review.id_review, review_index, None))
+            added_sentence = Sentence(id_sentence, review.id_review, review_index, None)
+            added_sentences.append(added_sentence)
 
             review_index += 1
 
@@ -111,7 +111,7 @@ def add_sentences_from_reviews(reviews):
             sql_words = []
             sentence_index = 0
             for word in sentence:
-                sql_words.append((id_sentence, sentence_index, word.word))
+                sql_words.append((id_sentence, sentence_index, word.get_form()))
                 sentence_index += 1
             c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
 

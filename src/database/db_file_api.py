@@ -55,7 +55,7 @@ def add_files(file_paths):
     c = conn.cursor()
 
     # Add files
-    added_files = []
+    files = []
     for file_path in file_paths:
         c.execute("INSERT INTO File (File_Path) VALUES ('" + file_path + "');")
 
@@ -64,21 +64,27 @@ def add_files(file_paths):
         id_file = c.fetchone()[0]
 
         # Keep trace of added Files
-        added_files.append(File(id_file, file_path))
+        files.append(File(id_file, file_path))
 
     conn.commit()
     conn.close()
 
+    # ********************************************* RAW DATA ********************************************************* #
+
     # Add all reviews from all files
     import src.database.db_review_api as review_api
-    added_reviews = review_api.add_reviews_from_files(added_files)
+    reviews = review_api.add_reviews_from_files(files)
 
-    # Add all sentences and all words from all reviews
+    # ********************************************* FREELING ********************************************************* #
+
+    # Tokenization + Add all sentences and all words from all reviews
     import src.database.db_sentence_api as sentence_api
-    sentences = sentence_api.add_sentences_from_reviews(added_reviews)
+    sentence_api.add_sentences_from_reviews(reviews)
 
-    #Lemmatization
+    # Lemmatization
     import src.database.db_lemma_api as lemma_api
+    import src.database.db_sentence_api as sentence_api
+    sentences = sentence_api.load_sentences()
     lemma_api.add_lemmas_to_sentences(sentences)
 
 
