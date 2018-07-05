@@ -2,7 +2,7 @@ import sqlite3 as sql
 from src.database.classes import File
 
 
-def load_files_by_id_files(id_files, load_reviews=False):
+def load_files_by_id_files(id_files):
     files = []
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
@@ -17,7 +17,7 @@ def load_files_by_id_files(id_files, load_reviews=False):
     return files
 
 
-def load_files(load_reviews=False):
+def load_files():
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute("SELECT ID_File, File_Path FROM File")
@@ -25,18 +25,57 @@ def load_files(load_reviews=False):
     files = []
     results = c.fetchall()
     for result in results:
-        files.append(File(result[0], result[1], load_reviews))
+        files.append(File(result[0], result[1]))
     conn.close()
     return files
 
 
-def add_file(file_path):
+def load_database():
+
+    # Load Files
+    files = load_files()
+
+    # Load Reviews
+    import src.database.db_review_api as review_api
+    reviews = review_api.load_reviews_in_files(files)
+
+    # Load Sentences
+    import src.database.db_sentence_api as sentence_api
+    sentences = sentence_api.load_sentences_in_reviews(reviews)
+
+    # Load Words
+    import src.database.db_word_api as word_api
+    word_api.load_words_in_sentences(sentences)
+
+    return files
+
+
+def add_files(file_paths):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("INSERT INTO File (File_Path) VALUES ('" + file_path + "');")
+
+    # Add files
+    added_files = []
+    for file_path in file_paths:
+        c.execute("INSERT INTO File (File_Path) VALUES ('" + file_path + "');")
+
+        # Get back id of last inserted file
+        c.execute("SELECT last_insert_rowid()")
+        id_file = c.fetchone()[0]
+
+        # Keep trace of added Files
+        added_files.append(File(id_file, file_path))
 
     conn.commit()
     conn.close()
+
+    # Add all reviews from all files
+    import src.database.db_review_api as review_api
+    added_reviews = review_api.add_reviews_from_files(added_files)
+
+    # Add all sentences and all words from all reviews
+    import src.database.db_sentence_api as sentence_api
+    sentence_api.add_sentences_from_reviews(added_reviews)
 
 
 def remove_file(file_path):
@@ -48,17 +87,17 @@ def remove_file(file_path):
     conn.close()
 
 
-def load_file(id_file, load_reviews=False):
+def load_file(id_file):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
     result = c.fetchone()
     conn.close()
 
-    return File(result[0], result[1], load_reviews)
+    return File(result[0], result[1])
 
 
-def load_files(load_reviews=False):
+def load_files():
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute("SELECT ID_File, File_Path FROM File")
@@ -66,7 +105,7 @@ def load_files(load_reviews=False):
     files = []
     results = c.fetchall()
     for result in results:
-        files.append(File(result[0], result[1], load_reviews))
+        files.append(File(result[0], result[1]))
     conn.close()
     return files
 

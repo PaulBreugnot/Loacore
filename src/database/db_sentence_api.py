@@ -35,6 +35,9 @@ def load_sentences_list_by_id_review(id_review):
 def load_sentences_in_reviews(reviews):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
+
+    loaded_sentences = []
+
     for review in reviews:
         review_sentences = []
         c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
@@ -43,6 +46,11 @@ def load_sentences_in_reviews(reviews):
         for result in results:
             review_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
         review.set_sentences(review_sentences)
+        loaded_sentences += review_sentences
+
+    conn.close()
+
+    return loaded_sentences
 
 
 def add_sentences_from_reviews(reviews):
@@ -67,17 +75,19 @@ def add_sentences_from_reviews(reviews):
         review_index = 0
         for sentence in sentences:
 
-            # Keep trace of added sentences
-            added_sentences.append(sentence)
-
+            print("(" + str(review.get_id_review()) + ", " + str(review_index) + ")")
             # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
                       "VALUES (?, ?)", (review.get_id_review(), str(review_index)))
-            review_index += 1
 
             # Get back id of last inserted sentence
             c.execute("SELECT last_insert_rowid()")
             id_sentence = c.fetchone()[0]
+
+            # Keep trace of added sentences
+            added_sentences.append(Sentence(id_sentence, review.get_id_review(), review_index, None))
+
+            review_index += 1
 
             # Add words
             sql_words = []

@@ -52,13 +52,13 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
     for sentence in sentences:
         sentence_words = []
         c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag "
-                  "FROM Word"
+                  "FROM Word "
                   "WHERE ID_Sentence = " + str(sentence.get_id_sentence()))
         results = c.fetchall()
         for result in results:
             sentence_words.append(Word(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
         sentence.set_words(sentence_words)
-        words.append(sentence_words)
+        words += sentence_words
 
     if load_lemmas:
         import src.database.db_lemma_api as db_lemma_api

@@ -2,12 +2,10 @@
 
 class File:
 
-    def __init__(self, id_file, file_path, load_reviews=False):
+    def __init__(self, id_file, file_path):
         self.id_file = id_file
         self.file_path = file_path
         self.reviews = []
-        if load_reviews:
-            self.load_reviews()
 
     def get_id_file(self):
         return self.id_file
@@ -37,14 +35,12 @@ class File:
 
 class Review:
 
-    def __init__(self, id_review, id_file, file_index, review, load_sentences=False):
+    def __init__(self, id_review, id_file, file_index, review):
         self.id_review = id_review
         self.id_file = id_file
         self.file_index = file_index
         self.review = review
         self.sentences = []
-        if load_sentences:
-            self.load_sentences()
 
     def get_id_review(self):
         return self.id_review
@@ -57,6 +53,9 @@ class Review:
 
     def get_review(self):
         return self.review
+
+    def set_sentences(self, sentences):
+        self.sentences = sentences
 
     def get_sentences(self):
         return self.sentences
@@ -74,12 +73,11 @@ class Review:
 
 class Sentence:
 
-    def __init__(self, id_sentence, id_review, review_index, id_dep_tree, sentence):
+    def __init__(self, id_sentence, id_review, review_index, id_dep_tree):
         self.id_sentence = id_sentence
         self.id_review = id_review
         self.review_index = review_index
         self.id_dep_tree = id_dep_tree
-        self.sentence = sentence
         self.words = []
 
     def get_id_sentence(self):
@@ -93,9 +91,6 @@ class Sentence:
 
     def get_id_dep_tree(self):
         return self.id_dep_tree
-
-    def get_sentence(self):
-        return self.sentence
 
     def set_words(self, words):
         self.words = words
