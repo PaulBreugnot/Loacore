@@ -131,3 +131,22 @@ class Synset:
         self.pos_score = pos_score
         self.neg_score = neg_score
         self.obj_score = obj_score
+
+
+class DepTree:
+
+    def __init__(self, id_dep_tree, id_dep_tree_node, id_sentence):
+        self.id_dep_tree = id_dep_tree
+        self.id_dep_tree_node = id_dep_tree_node
+        self.id_sentence = id_sentence
+        self.root = None
+
+
+class DepTreeNode:
+
+    def __init__(self, id_dep_tree_node, id_dep_tree, id_word, label):
+        self.id_dep_tree_node = id_dep_tree_node
+        self.id_dep_tree = id_dep_tree
+        self.id_word = id_word
+        self.label = label
+        self.childrens = []
