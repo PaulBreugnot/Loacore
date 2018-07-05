@@ -8,7 +8,7 @@ def load_words_list_by_ids(id_words, load_lemmas=True, load_synsets=True):
     c = conn.cursor()
     for id_word in id_words:
         c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag FROM Word "
-                  "WHERE ID_Word = " + str(id_word))
+                  "WHERE ID_Word = " + str(id_word) + " ORDER BY Sentence_Index")
         result = c.fetchone()
         if result is not None:
             words.append(Word(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
@@ -29,7 +29,7 @@ def load_words_list_by_id_sentence(id_sentence, load_lemmas=True, load_synsets=T
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag FROM Word "
-              "WHERE ID_Sentence = " + str(id_sentence))
+              "WHERE ID_Sentence = " + str(id_sentence) + " ORDER BY Sentence_Index")
     results = c.fetchall()
     for result in results:
         words.append(Word(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
@@ -53,7 +53,7 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
         sentence_words = []
         c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag "
                   "FROM Word "
-                  "WHERE ID_Sentence = " + str(sentence.id_sentence))
+                  "WHERE ID_Sentence = " + str(sentence.id_sentence) + " ORDER BY Sentence_Index")
         results = c.fetchall()
         for result in results:
             sentence_words.append(Word(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))

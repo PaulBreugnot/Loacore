@@ -9,7 +9,7 @@ def load_sentences_list_by_ids(id_sentences):
     for id_sentence in id_sentences:
         sentences = []
         c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
-                  "WHERE ID_Sentence = " + str(id_sentence))
+                  "WHERE ID_Sentence = " + str(id_sentence) + " ORDER BY Review_Index")
         result = c.fetchone()
         if result is not None:
             sentences.append(Sentence(result[0], result[1], result[2], result[3]))
@@ -23,7 +23,7 @@ def load_sentences_list_by_id_review(id_review):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
     c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
-              "WHERE ID_Review = " + str(id_review))
+              "WHERE ID_Review = " + str(id_review) + " ORDER BY Review_Index")
     results = c.fetchall()
     for result in results:
         sentences.append(Sentence(result[0], result[1], result[2], result[3]))
@@ -41,7 +41,7 @@ def load_sentences_in_reviews(reviews):
     for review in reviews:
         review_sentences = []
         c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
-                  "WHERE ID_Review = " + str(review.id_review))
+                  "WHERE ID_Review = " + str(review.id_review) + " ORDER BY Review_Index")
         results = c.fetchall()
         for result in results:
             review_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
@@ -58,7 +58,8 @@ def load_sentences():
 
     loaded_sentences = []
 
-    c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree FROM Sentence")
+    c.execute("SELECT ID_Sentence, ID_Review, Review_Index, ID_Dep_Tree "
+              "FROM Sentence ORDER BY (ID_Sentence, ID_Review)")
     results = c.fetchall()
     for result in results:
         loaded_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
