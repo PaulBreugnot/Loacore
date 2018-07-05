@@ -38,11 +38,11 @@ def load_reviews_in_files(files):
     for file in files:
         file_reviews = []
         c.execute("SELECT ID_Review, ID_File, File_Index, Review "
-                  "FROM Review WHERE ID_File = " + str(file.get_id_file()))
+                  "FROM Review WHERE ID_File = " + str(file.id_file))
         results = c.fetchall()
         for result in results:
             file_reviews.append(Review(result[0], result[1], result[2], result[3]))
-        file.set_reviews(file_reviews)
+        file.reviews = file_reviews
         loaded_reviews += file_reviews
 
     conn.close()
@@ -67,10 +67,6 @@ def add_reviews_from_files(files):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
 
-    # Tuple array used in prepared SQL statement
-    sql_reviews = []
-
-    # Returned Review array
     added_reviews = []
 
     for file in files:
@@ -84,7 +80,7 @@ def add_reviews_from_files(files):
         # Add reviews
         file_index = 0
         for review in reviews:
-            sql_review = (file.get_id_file(), file_index, review)
+            sql_review = (file.id_file, file_index, review)
 
             c.execute("INSERT INTO Review (ID_File, File_Index, Review) "
                       "VALUES (?, ?, ?)", sql_review)
@@ -94,7 +90,7 @@ def add_reviews_from_files(files):
             id_review = c.fetchone()[0]
 
             # Keep trace of added reviews
-            added_reviews.append(Review(id_review, file.get_id_file(), file_index, review))
+            added_reviews.append(Review(id_review, file.id_file, file_index, review))
 
             file_index += 1
 

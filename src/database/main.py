@@ -15,14 +15,12 @@ def test_load_db():
     files = file_api.load_database()
 
     for file in files:
-        for review in file.get_reviews():
+        for review in file.reviews:
             print("Review : ")
-            print(str(review.get_id_review()) + " : " + review.get_review())
-            for sentence in review.get_sentences():
+            print(str(review.id_review) + " : " + review.review)
+            for sentence in review.sentences:
                 print("    Sentence : ")
-                for word in sentence.get_words():
-                    print("        " + word.get_word() + " ")
+                for word in sentence.words:
+                    print("        " + word.word + " ")
 
-
-
-
+test_load_db()

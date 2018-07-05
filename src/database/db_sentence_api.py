@@ -45,7 +45,7 @@ def load_sentences_in_reviews(reviews):
         results = c.fetchall()
         for result in results:
             review_sentences.append(Sentence(result[0], result[1], result[2], result[3]))
-        review.set_sentences(review_sentences)
+        review.sentences = review_sentences
         loaded_sentences += review_sentences
 
     conn.close()
@@ -68,24 +68,24 @@ def add_sentences_from_reviews(reviews):
 
     added_sentences = []
     for review in reviews:
-        raw_review = review.get_review()
+        raw_review = review.review
         tokens = tk.tokenize(raw_review)
         sentences = sp.split(tokens)
 
         review_index = 0
         for sentence in sentences:
 
-            print("(" + str(review.get_id_review()) + ", " + str(review_index) + ")")
+            print("(" + str(review.id_review) + ", " + str(review_index) + ")")
             # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
-                      "VALUES (?, ?)", (review.get_id_review(), str(review_index)))
+                      "VALUES (?, ?)", (review.id_review, str(review_index)))
 
             # Get back id of last inserted sentence
             c.execute("SELECT last_insert_rowid()")
             id_sentence = c.fetchone()[0]
 
             # Keep trace of added sentences
-            added_sentences.append(Sentence(id_sentence, review.get_id_review(), review_index, None))
+            added_sentences.append(Sentence(id_sentence, review.id_review, review_index, None))
 
             review_index += 1
 
@@ -93,7 +93,7 @@ def add_sentences_from_reviews(reviews):
             sql_words = []
             sentence_index = 0
             for word in sentence:
-                sql_words.append((id_sentence, sentence_index, word.get_form()))
+                sql_words.append((id_sentence, sentence_index, word.word))
                 sentence_index += 1
             c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
 
@@ -110,6 +110,7 @@ def init_freeling():
     ipath = "/usr/local"
     # path to language data
     lpath = ipath + "/share/freeling/" + lang + "/"
+
     tk = freeling.tokenizer(lpath + "tokenizer.dat");
     sp = freeling.splitter(lpath + "splitter.dat");
 

@@ -7,18 +7,6 @@ class File:
         self.file_path = file_path
         self.reviews = []
 
-    def get_id_file(self):
-        return self.id_file
-
-    def get_file_path(self):
-        return self.file_path
-
-    def get_reviews(self):
-        return self.reviews
-
-    def set_reviews(self, reviews):
-        self.reviews = reviews
-
     def load_reviews(self):
         """
         This method should only be used to load the sentences of an isolated Review.
@@ -42,24 +30,6 @@ class Review:
         self.review = review
         self.sentences = []
 
-    def get_id_review(self):
-        return self.id_review
-
-    def get_id_file(self):
-        return self.id_file
-
-    def get_file_index(self):
-        return self.file_index
-
-    def get_review(self):
-        return self.review
-
-    def set_sentences(self, sentences):
-        self.sentences = sentences
-
-    def get_sentences(self):
-        return self.sentences
-
     def load_sentences(self):
         """
         This method should only be used to load the sentences of an isolated Review.
@@ -79,24 +49,7 @@ class Sentence:
         self.review_index = review_index
         self.id_dep_tree = id_dep_tree
         self.words = []
-
-    def get_id_sentence(self):
-        return self.id_sentence
-
-    def get_id_review(self):
-        return self.id_review
-
-    def get_review_index(self):
-        return self.review_index
-
-    def get_id_dep_tree(self):
-        return self.id_dep_tree
-
-    def set_words(self, words):
-        self.words = words
-
-    def get_words(self):
-        return self.words
+        self.freeling_sentence = None
 
     def load_words(self):
         """
@@ -108,12 +61,12 @@ class Sentence:
         self.words = db_word_api.load_words_list_by_id_sentence(self.id_sentence)
         return self.get_words()
 
-    def freeling_sentence(self):
-        from ressources.pyfreeling import sentence as freeling_sentence
-        fr_words = [word.freeling_word() for word in self.words]
-        fr_sentence = freeling_sentence(fr_words)
-        return fr_sentence
-
+    def compute_freeling_sentence(self):
+        from ressources.pyfreeling import sentence as freeling_sentence_class
+        fr_words = [word.compute_freeling_word() for word in self.words]
+        fr_sentence = freeling_sentence_class(fr_words)
+        self.freeling_sentence = fr_sentence
+        return self.freeling_sentence
 
 
 class Word:
@@ -128,45 +81,6 @@ class Word:
         self.id_synset = id_synset
         self.synset = None
         self.PoS_tag = PoS_tag
-
-    def set_id_lemma(self, id_lemma):
-        self.id_lemma = id_lemma
-
-    def set_lemma(self, lemma):
-        self.lemma = lemma
-
-    def set_id_synset(self, id_synset):
-        self.id_synset = id_synset
-
-    def set_synset(self, synset):
-        self.synset = synset
-
-    def set_PoS_tag(self, PoS_tag):
-        self.PoS_tag = PoS_tag
-
-    def get_id_word(self):
-        return self.id_word
-
-    def get_id_sentence(self):
-        return self.id_sentence
-
-    def get_sentence_index(self):
-        return self.sentence_index
-
-    def get_word(self):
-        return self.word
-
-    def get_id_lemma(self):
-        return self.id_lemma
-
-    def get_lemma(self):
-        return self.lemma
-
-    def get_id_synset(self):
-        return self.id_synset
-
-    def get_synset(self):
-        return self.synset
 
     def load_lemma(self):
         """
@@ -188,11 +102,11 @@ class Word:
         self.synset = db_synset_api.load_synsets([self.id_synset])[0]
         return self.get_synset()
 
-    def freeling_word(self):
+    def compute_freeling_word(self):
         # TODO : consistent initialization according to the use of freeling modules
-        from ressources.pyfreeling import word as freeling_word
+        from ressources.pyfreeling import word as freeling_word_class
         from ressources.pyfreeling import analysis as freeling_analysis
-        fr_word = freeling_word()
+        fr_word = freeling_word_class()
         fr_word.set_form(self.word)
 
         fr_analysis = freeling_analysis()
@@ -215,30 +129,3 @@ class Synset:
         self.pos_score = pos_score
         self.neg_score = neg_score
         self.obj_score = obj_score
-
-    def get_id_synset(self):
-        return self.id_synset
-
-    def get_synset_code(self):
-        """
-        :return:  synset as represented in Freeling
-        """
-        return self.synset_code
-
-    def get_synset_name(self):
-        """
-        :return: synset as represented in NLTK, WordNet and SentiWordNet
-        """
-        return self.synset_name
-
-    """
-    Scores coming from SentiWordNet
-    """
-    def get_pos_score(self):
-        return self.pos_score
-
-    def get_neg_score(self):
-        return self.neg_score
-
-    def get_obj_score(self):
-        return self.obj_score
