@@ -4,13 +4,6 @@ import src.process.normalization as norm
 from src.database.classes import Review
 
 
-#def main():
-    #add_reviews_from_file('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    #print(list_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
-    #load_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt')
-    #print(count_reviews('../../data/raw/TempAlta/Enero_2018/_ENCUESTA_ENERO_2018_.txt'))
-
-
 def load_reviews_list_by_ids(id_reviews):
     reviews = []
     conn = sql.connect('../../data/database/reviews.db')
@@ -55,37 +48,37 @@ def load_reviews_in_files(files):
 def count_reviews(file_path):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File WHERE File_Path = '" + file_path + "'")
+    c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File "
+              "WHERE File_Path = '" + file_path + "'")
     return c.fetchone()[0]
 
 
-def add_reviews_from_file(file_path):
+def add_reviews_from_files(files):
+    """
+    Load files from file system, normalize and add reviews to database.
+    :param files: list of files from which reviews must be added
+    :return: added reviews
+    """
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("SELECT ID_File FROM File WHERE File_Path = '" + file_path + "'")
-    try:
-        result = c.fetchone()
-        if result is not None:
-            id_file = result[0]
-        else:
-            raise ValueError("File " + file_path + " does not belong to database.")
-    except ValueError as e:
-        print('\n')
-        print(e)
-        return
-
-    print(id_file)
-    raw_text = file_api.load_file(id_file).load().read()
-    reviews = norm.normalize(raw_text)
-
     sql_reviews = []
-    file_index = 0
-    for review in reviews:
-        sql_reviews.append((id_file, file_index, review))
-        file_index += 1
+    for file in files:
+        c.execute("SELECT ID_File FROM File WHERE ID_File = " + file.get_id_file())
+
+        raw_text = file_api.load_file(file.get_id_file()).load().read()
+
+        # Normalization
+        reviews = norm.normalize(raw_text)
+
+        file_index = 0
+        for review in reviews:
+            sql_reviews.append((file.get_id_file(), file_index, review))
+            file_index += 1
 
     c.executemany("INSERT INTO Review (ID_File, File_Index, Review) "
                   "VALUES (?, ?, ?)", sql_reviews)
     conn.commit()
     conn.close()
+
+    return sql_reviews
 

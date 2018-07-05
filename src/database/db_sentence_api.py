@@ -46,25 +46,40 @@ def load_sentences_in_reviews(reviews):
 
 
 def add_sentences_from_reviews(reviews):
+    """
+    Performs the first Freeling processes applied to each normalize review, contained as a string in Review object.
+    Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.
+    A representation of the Sentences and their Words (tokens) are then added to corresponding tables.
+    :param reviews: reviews to process and add to database
+    :return: added_sentences
+    """
     tk, sp = init_freeling()
 
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
 
+    added_sentences = []
     for review in reviews:
         raw_review = review.get_review()
         tokens = tk.tokenize(raw_review)
         sentences = sp.split(tokens)
 
         review_index = 0
-        sql_sentences = []
         for sentence in sentences:
-            sql_sentences.append((review.get_id_review(), str(review_index)))
+
+            # Keep trace of added sentences
+            added_sentences.append(sentence)
+
+            # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
-                  "VALUES (?, ?)", (review.get_id_review(), str(review_index)))
+                      "VALUES (?, ?)", (review.get_id_review(), str(review_index)))
             review_index += 1
+
+            # Get back id of last inserted sentence
             c.execute("SELECT last_insert_rowid()")
             id_sentence = c.fetchone()[0]
+
+            # Add words
             sql_words = []
             sentence_index = 0
             for word in sentence:
@@ -74,6 +89,8 @@ def add_sentences_from_reviews(reviews):
 
     conn.commit()
     conn.close()
+
+    return added_sentences
 
 
 def init_freeling():
