@@ -13,7 +13,6 @@ def load_files_by_id_files(id_files):
             files.append(File(result[0], result[1]))
 
     conn.close()
-
     return files
 
 
@@ -26,6 +25,7 @@ def load_files():
     results = c.fetchall()
     for result in results:
         files.append(File(result[0], result[1]))
+
     conn.close()
     return files
 
@@ -75,7 +75,11 @@ def add_files(file_paths):
 
     # Add all sentences and all words from all reviews
     import src.database.db_sentence_api as sentence_api
-    sentence_api.add_sentences_from_reviews(added_reviews)
+    sentences = sentence_api.add_sentences_from_reviews(added_reviews)
+
+    #Lemmatization
+    import src.database.db_lemma_api as lemma_api
+    lemma_api.add_lemmas_to_sentences(sentences)
 
 
 def remove_file(file_path):
@@ -87,34 +91,4 @@ def remove_file(file_path):
     conn.close()
 
 
-def load_file(id_file):
-    conn = sql.connect('../../data/database/reviews.db')
-    c = conn.cursor()
-    c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
-    result = c.fetchone()
-    conn.close()
-
-    return File(result[0], result[1])
-
-
-def load_files():
-    conn = sql.connect('../../data/database/reviews.db')
-    c = conn.cursor()
-    c.execute("SELECT ID_File, File_Path FROM File")
-
-    files = []
-    results = c.fetchall()
-    for result in results:
-        files.append(File(result[0], result[1]))
-    conn.close()
-    return files
-
-
-def process(file_path):
-    '''
-
-    :param file_path: file to process and store in db
-    :return: nothing
-    This function will made all the possible processes applicable to the file, feeding the complete database.
-    '''
 

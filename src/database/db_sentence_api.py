@@ -49,7 +49,6 @@ def load_sentences_in_reviews(reviews):
         loaded_sentences += review_sentences
 
     conn.close()
-
     return loaded_sentences
 
 
@@ -68,6 +67,7 @@ def load_sentences():
     import src.database.db_word_api as word_api
     word_api.load_words_in_sentences(loaded_sentences)
 
+    conn.close()
     return loaded_sentences
 
 

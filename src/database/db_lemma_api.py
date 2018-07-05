@@ -1,6 +1,7 @@
 import sqlite3 as sql
 import ressources.pyfreeling as freeling
 
+
 def load_lemmas_list(id_lemmas):
     lemmas = []
     conn = sql.connect('../../data/database/reviews.db')
@@ -22,7 +23,7 @@ def load_lemmas_in_words(words):
         if word.id_lemma is not None:
             c.execute("SELECT Lemma FROM Lemma WHERE ID_Lemma = '" + str(word.id_lemma) + "'")
             result = c.fetchone()
-            word.set_lemma(result[0])
+            word.lemma = result[0]
 
     conn.close()
 
@@ -61,7 +62,7 @@ def add_lemmas_to_sentences(sentences):
     for sentence in sentences:
         for word in sentence.words:
             # Add Lemma to Lemma Table
-            c.execute("INSERT INTO Lemma (Lemma) VALUES ('" + word.lemma + "')")
+            c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES ('" + word.lemma + ", " + word.id_word + "')")
 
             # Get back id of last inserted review
             c.execute("SELECT last_insert_rowid()")
@@ -73,6 +74,8 @@ def add_lemmas_to_sentences(sentences):
     conn.commit()
     conn.close()
 
+
+# Freeling options
 
 def my_maco_options(lang, lpath):
 

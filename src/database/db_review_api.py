@@ -14,6 +14,7 @@ def load_reviews_list_by_ids(id_reviews):
         if result is not None:
             reviews.append(Review(result[0], result[1], result[2], result[3]))
 
+    conn.close()
     return reviews
 
 
@@ -26,6 +27,8 @@ def load_reviews_by_id_file(id_file):
     results = c.fetchall()
     for result in results:
         reviews.append(Review(result[0], result[1], result[2], result[3]))
+
+    conn.close()
     return reviews
 
 
@@ -46,7 +49,6 @@ def load_reviews_in_files(files):
         loaded_reviews += file_reviews
 
     conn.close()
-
     return loaded_reviews
 
 
@@ -55,6 +57,8 @@ def count_reviews(file_path):
     c = conn.cursor()
     c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File "
               "WHERE File_Path = '" + file_path + "'")
+
+    conn.close()
     return c.fetchone()[0]
 
 

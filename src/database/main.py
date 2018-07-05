@@ -23,7 +23,7 @@ def test_load_db():
             for sentence in review.sentences:
                 print("    Sentence : ")
                 for word in sentence.words:
-                    print("        " + word.word + " ")
+                    print("        " + word.word + " : " + word.lemma)
 
 
 def test_lemmas():
@@ -31,5 +31,5 @@ def test_lemmas():
     lemma_api.add_lemmas_to_sentences(sentences)
 
 
-test_lemmas()
-#test_load_db()
+#test_lemmas()
+test_load_db()
