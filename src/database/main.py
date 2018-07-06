@@ -3,6 +3,8 @@ import src.database.db_file_api as file_api
 import src.database.db_sentence_api as sentence_api
 import src.database.db_lemma_api as lemma_api
 import src.database.db_synset_api as synset_api
+import src.database.db_deptree_api as deptree_api
+import src.database.db_word_api as word_api
 
 
 def add_files_to_database():
@@ -42,7 +44,16 @@ def test_synsets():
     synset_api.add_synsets_to_sentences(sentences)
 
 
+def test_dep_tree():
+    sentences = sentence_api.load_sentences()
+    print([word.word for word in sentences[172].words])
+    #deptree_api.add_dep_tree_from_sentences([sentences[172]], print_result=False)
+    deptree_api.load_dep_tree_in_sentences([sentences[172]])
+    word_api.load_words_in_dep_trees([sentences[172].dep_tree])
+    sentences[172].dep_tree.print_dep_tree()
+
 #add_files_to_database()
 #test_lemmas()
 #test_synsets()
-test_load_db()
+#test_load_db()
+test_dep_tree()

@@ -68,3 +68,22 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
         db_synset_api.load_synsets_in_words(words)
 
     conn.close()
+
+
+def load_words_in_dep_trees(dep_trees):
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    for dep_tree in dep_trees:
+
+        rec_children(c, dep_tree.root)
+
+
+def rec_children(c, node):
+    c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag "
+              "FROM Word WHERE ID_Word = " + str(node.id_word))
+    result = c.fetchone()
+    node.word = Word(result[0], result[1], result[2], result[3], result[4], result[5], result[6])
+
+    for node in node.children:
+        rec_children(c, node)

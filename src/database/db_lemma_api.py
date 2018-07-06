@@ -62,7 +62,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas = False):
             # Add Lemma to Lemma Table
             c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES ('" + word.lemma + "', " + str(word.id_word) + ")")
 
-            # Get back id of last inserted review
+            # Get back id of last inserted lemma
             c.execute("SELECT last_insert_rowid()")
             id_lemma = c.fetchone()[0]
 

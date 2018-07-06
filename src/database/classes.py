@@ -1,4 +1,4 @@
-
+from ressources.pyfreeling import depnode
 
 class File:
 
@@ -49,6 +49,7 @@ class Sentence:
         self.review_index = review_index
         self.id_dep_tree = id_dep_tree
         self.words = []
+        self.dep_tree = None
         self.freeling_sentence = None
 
     def load_words(self):
@@ -141,12 +142,26 @@ class DepTree:
         self.id_sentence = id_sentence
         self.root = None
 
+    def print_dep_tree(self):
+        self.print_node(self.root, "")
+
+    def print_node(self, node, offset):
+        if node.word is None:
+            print(offset, "ID_Word : " + node.id_word + "Label : " + node.label)
+        else:
+            print(offset, node.word.word, ' (', node.label, ', ', node.word.PoS_tag, ', ',
+                  node.word.lemma, ')')
+        for child in node.children:
+            self.print_node(child, offset + '    ')
+
 
 class DepTreeNode:
 
-    def __init__(self, id_dep_tree_node, id_dep_tree, id_word, label):
+    def __init__(self, id_dep_tree_node, id_dep_tree, id_word, label, root):
         self.id_dep_tree_node = id_dep_tree_node
         self.id_dep_tree = id_dep_tree
         self.id_word = id_word
+        self.word = None
         self.label = label
-        self.childrens = []
+        self.root = root
+        self.children = []
