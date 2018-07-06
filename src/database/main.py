@@ -46,9 +46,13 @@ def test_synsets():
 
 def test_dep_tree():
     sentences = sentence_api.load_sentences()
-    print([word.word for word in sentences[172].words])
-    #deptree_api.add_dep_tree_from_sentences([sentences[172]], print_result=False)
-    deptree_api.load_dep_tree_in_sentences([sentences[172]])
+    '''
+    deptree_api.add_dep_tree_from_sentences([sentences[172]], print_result=False)
+    deptree_api.load_dep_tree_in_sentences(sentences)
+    word_api.load_words_in_dep_trees([sentences[172].dep_tree])
+    '''
+    deptree_api.add_dep_tree_from_sentences(sentences, print_result=False)
+    deptree_api.load_dep_tree_in_sentences(sentences)
     word_api.load_words_in_dep_trees([sentences[172].dep_tree])
     sentences[172].dep_tree.print_dep_tree()
 

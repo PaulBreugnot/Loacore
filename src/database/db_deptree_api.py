@@ -54,27 +54,36 @@ def rec_children_select(cursor, node):
 
 def add_dep_tree_from_sentences(sentences, print_result=False):
 
+    print("Loading Freeling Modules...")
     morfo, tagger, sen, wsd, parser = init_freeling()
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
+    print("Morphosyntactic analysis and tagging...")
     # perform morphosyntactic analysis and disambiguation
     freeling_sentences = morfo.analyze(freeling_sentences)
     freeling_sentences = tagger.analyze(freeling_sentences)
 
+    print("Disambiguation...")
     # annotate and disambiguate senses
     freeling_sentences = sen.analyze(freeling_sentences)
     freeling_sentences = wsd.analyze(freeling_sentences)
 
+    print("Dependency tree parsing...")
     # parse sentences
     freeling_sentences = parser.analyze(freeling_sentences)
 
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
 
-
-    # Copy freeling results into our Words
+    progress = 0
+    end = len(sentences)
     for s in range(len(sentences)):
+        progress += 1
+        if progress == end:
+            print(str(progress) + " / " + str(end) + " sentences added.")
+        else:
+            print(str(progress) + " / " + str(end) + " sentences added.", end='\r')
         sentence = sentences[s]
 
         # Add dep_tree to database
@@ -88,20 +97,23 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         id_dep_tree = c.fetchone()[0]
         dep_tree.id_dep_tree = id_dep_tree
 
-        # Add PoS_tag to words and map freeling node id to their db id
-        node_db_id_map = {}
-        test_map = {}
+        # Database process
         root = None
+        if len(sentence.words) != len(freeling_sentences[s]):
+            print("ERROR!!!!!")
+            return
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
             if len(rank) > 0:
-                #word.PoS_tag = freeling_sentences[s][w].get_tag()
+                word.PoS_tag = freeling_sentences[s][w].get_tag()
                 if print_result:
                     print("Word : " + word.word)
                     print(freeling_sentences[s][w].get_tag())
                     print(dt.get_node_by_pos(w).get_word().get_form())
                     print(dt.get_node_by_pos(w).get_label())
+
+            # We use the get_node_by_pos function to map the tree to our sentence
             node = dt.get_node_by_pos(w)
 
             dep_tree_node = DepTreeNode(None, id_dep_tree, word.id_word, node.get_label(), 0)
@@ -126,6 +138,11 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
             # Use the freeling set_node_id function to store our db node id in the freeling node
             node.set_node_id(str(id_dep_tree_node))
 
+            # Add PoS_tag to Word
+            if word.PoS_tag is not None:
+                c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag +
+                          "' WHERE ID_Word = " + str(word.id_word))
+
         # Add dep_tree root to database
         dep_tree.root = root
         c.execute("UPDATE Dep_Tree SET ID_Dep_Tree_Node = " + str(root.id_dep_tree_node) + " "
@@ -136,6 +153,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         rec_children(c, root_node)
 
     conn.commit()
+    print("Commit end.")
     conn.close()
 
 
