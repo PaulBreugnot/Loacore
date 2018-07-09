@@ -54,6 +54,16 @@ def rec_children_select(cursor, node):
 
 def add_dep_tree_from_sentences(sentences, print_result=False):
 
+    """
+    This function generates the dependency trees of the specified sentences and add the results to the database.
+    Sentences are firstly converted into "raw" Freeling sentences (without any analysis) and then all the necessary
+    Freeling processes are performed.
+    The PoS_tag of words are also computed and added to the database in this function.
+    :param sentences: Sentences to process
+    :param print_result: Show analysis results
+    :return: nothing
+    """
+
     print("Loading Freeling Modules...")
     morfo, tagger, sen, wsd, parser = init_freeling()
 
@@ -99,9 +109,6 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
         # Database process
         root = None
-        if len(sentence.words) != len(freeling_sentences[s]):
-            print("ERROR!!!!!")
-            return
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
@@ -109,9 +116,8 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
                 word.PoS_tag = freeling_sentences[s][w].get_tag()
                 if print_result:
                     print("Word : " + word.word)
-                    print(freeling_sentences[s][w].get_tag())
-                    print(dt.get_node_by_pos(w).get_word().get_form())
-                    print(dt.get_node_by_pos(w).get_label())
+                    print("PoS_tag : " + freeling_sentences[s][w].get_tag())
+                    print("Label : " + dt.get_node_by_pos(w).get_label())
 
             # We use the get_node_by_pos function to map the tree to our sentence
             node = dt.get_node_by_pos(w)
@@ -140,8 +146,8 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
             # Add PoS_tag to Word
             if word.PoS_tag is not None:
-                c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag +
-                          "' WHERE ID_Word = " + str(word.id_word))
+                c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag + "' "
+                          "WHERE ID_Word = " + str(word.id_word))
 
         # Add dep_tree root to database
         dep_tree.root = root
