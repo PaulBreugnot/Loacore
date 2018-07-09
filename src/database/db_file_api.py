@@ -47,6 +47,10 @@ def load_database():
     import src.database.db_word_api as word_api
     word_api.load_words_in_sentences(sentences)
 
+    # Load DepTrees
+    import src.database.db_deptree_api as deptree_api
+    deptree_api.load_dep_tree_in_sentences(sentences)
+
     return files
 
 
@@ -93,11 +97,19 @@ def add_files(file_paths):
     import src.database.db_synset_api as synset_api
     synset_api.add_synsets_to_sentences(sentences)
 
+    # Synset polarities
+    synset_api.add_polarity_to_synsets()
+
+    # Dep tree
+    import src.database.db_deptree_api as deptree_api
+    deptree_api.add_dep_tree_from_sentences(sentences)
+
 
 def remove_file(file_path):
     conn = sql.connect('../../data/database/reviews.db')
     c = conn.cursor()
-    c.execute("DELETE FROM File WHERE File_Path = '" + file_path + "';")
+    c.execute("PRAGMA foreign_keys = on")
+    c.execute("DELETE FROM File WHERE File_Path = '" + file_path + "'")
 
     conn.commit()
     conn.close()
