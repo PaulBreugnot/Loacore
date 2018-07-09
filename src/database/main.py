@@ -60,4 +60,5 @@ def test_dep_tree():
 #test_lemmas()
 #test_synsets()
 #test_load_db()
-test_dep_tree()
+#test_dep_tree()
+synset_api.add_polarity_to_synsets()

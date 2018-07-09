@@ -31,6 +31,20 @@ def load_synsets_in_words(words):
     conn.close()
 
 
+def load_synsets():
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    synsets = []
+    c.execute("SELECT ID_Synset, ID_Word, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score FROM Synset")
+    results = c.fetchall()
+    for result in results:
+        synsets.append(Synset(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
+
+    conn.close()
+    return synsets
+
+
 def add_synsets_to_sentences(sentences, print_synsets = False):
     """
     Disambiguation.
@@ -88,6 +102,33 @@ def add_synsets_to_sentences(sentences, print_synsets = False):
 
                 # Update Word table
                 c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
+
+    conn.commit()
+    conn.close()
+
+
+def add_polarity_to_synsets():
+    from nltk.corpus import sentiwordnet as swn
+    """
+    This no argument fonction add the positive/negative/objective polarity of all the synsets currently in the table
+    Synset, from the SentiWordNet corpus.
+    :return:
+    """
+    conn = sql.connect('../../data/database/reviews.db')
+    c = conn.cursor()
+
+    synsets = load_synsets()
+
+    for synset in synsets:
+        synset.pos_score = swn.senti_synset(synset.synset_name).pos_score()
+        if synset.pos_score is not None:
+            # There is an entry in the SentiWordNet database for our synset
+            synset.neg_score = swn.senti_synset(synset.synset_name).neg_score()
+            synset.obj_score = 1 - (synset.pos_score + synset.neg_score)
+
+            c.execute("UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
+                      "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(synset.obj_score) + ") "
+                      "WHERE Id_Synset = " + str(synset.id_synset))
 
     conn.commit()
     conn.close()
