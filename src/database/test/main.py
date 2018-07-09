@@ -58,9 +58,16 @@ def test_dep_tree():
     sentences[172].dep_tree.print_dep_tree()
 
 
-file_load.clean_db()
-add_files_to_database()
+def test_analysis():
+    import src.database.analysis.sentiment_analysis as sentiment_analysis
+    files = file_load.load_database(load_deptrees=False)
+    sentiment_analysis.print_polarity_table(sentiment_analysis.compute_files_polarity(files))
+
+
+#file_load.clean_db()
+#add_files_to_database()
 #test_lemmas()
 #test_synsets()
-test_load_db()
+#test_load_db()
 #test_dep_tree()
+test_analysis()

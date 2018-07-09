@@ -31,26 +31,30 @@ def load_files():
     return files
 
 
-def load_database():
+def load_database(load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True):
 
     # Load Files
     files = load_files()
 
-    # Load Reviews
-    import src.database.load.review_load as review_load
-    reviews = review_load.load_reviews_in_files(files)
+    if load_reviews:
+        # Load Reviews
+        import src.database.load.review_load as review_load
+        reviews = review_load.load_reviews_in_files(files)
 
-    # Load Sentences
-    import src.database.load.sentence_load as sentence_load
-    sentences = sentence_load.load_sentences_in_reviews(reviews)
+        if load_sentences:
+            # Load Sentences
+            import src.database.load.sentence_load as sentence_load
+            sentences = sentence_load.load_sentences_in_reviews(reviews)
 
-    # Load Words
-    import src.database.load.word_load as word_load
-    word_load.load_words_in_sentences(sentences)
+            if load_words:
+                # Load Words
+                import src.database.load.word_load as word_load
+                word_load.load_words_in_sentences(sentences)
 
-    # Load DepTrees
-    import src.database.load.deptree_load as deptree_load
-    deptree_load.load_dep_tree_in_sentences(sentences)
+                if load_deptrees:
+                    # Load DepTrees
+                    import src.database.load.deptree_load as deptree_load
+                    deptree_load.load_dep_tree_in_sentences(sentences)
 
     return files
 
