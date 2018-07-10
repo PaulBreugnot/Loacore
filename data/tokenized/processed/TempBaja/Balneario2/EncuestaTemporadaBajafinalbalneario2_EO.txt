@@ -1,7 +1,0 @@
-4 agua
-7 asufre
-10 baile
-5 huela
-8 pista
-0 teleferico
-1 toboganvy

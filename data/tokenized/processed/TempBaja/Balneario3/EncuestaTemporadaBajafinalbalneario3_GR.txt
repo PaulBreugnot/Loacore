@@ -1,8 +1,0 @@
-8 barra
-0 billar
-2 juegos
-5 juegos
-4 mesa
-7 mesa
-10 trago
-1 transporte

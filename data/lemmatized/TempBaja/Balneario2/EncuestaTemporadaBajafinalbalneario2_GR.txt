@@ -1,9 +1,0 @@
-2 agua
-10 carretera
-15 entrada
-3 escalera
-19 hospedaje
-5 juego
-0 juguete
-16 mas
-12 paraguas

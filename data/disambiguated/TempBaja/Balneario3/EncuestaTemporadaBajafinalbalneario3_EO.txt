@@ -1,3 +1,0 @@
-0 game.n.01# juego
-2 dining_table.n.01# mesa
-3 # calbalgata

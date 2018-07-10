@@ -1,6 +1,0 @@
-3 ajedrez
-2 juego
-4 juego
-6 mesa
-9 privacidad
-0 zona
