@@ -121,7 +121,7 @@ class Word:
 
 class Synset:
 
-    def __init__(self, id_synset, id_word, synset_code, synset_name, pos_score, neg_score, obj_score):
+    def __init__(self, id_synset, id_word, synset_code, synset_name, neg_score, pos_score, obj_score):
         self.id_synset = id_synset
         self.id_word = id_word
         self.synset_code = synset_code
@@ -139,8 +139,10 @@ class DepTree:
         self.id_sentence = id_sentence
         self.root = None
 
-    def print_dep_tree(self):
-        self.print_node(self.root, "")
+    def print_dep_tree(self, root=None):
+        if root is None:
+            root = self.root
+        self.print_node(root, "")
 
     def print_node(self, node, offset):
         if node.word is None:

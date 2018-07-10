@@ -31,10 +31,13 @@ def load_files():
     return files
 
 
-def load_database(load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True):
+def load_database(load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True, id_files = []):
 
     # Load Files
-    files = load_files()
+    if len(id_files) == 0:
+        files = load_files()
+    else:
+        files = load_files_by_id_files(id_files)
 
     if load_reviews:
         # Load Reviews
@@ -55,6 +58,7 @@ def load_database(load_reviews=True, load_sentences=True, load_words=True, load_
                     # Load DepTrees
                     import src.database.load.deptree_load as deptree_load
                     deptree_load.load_dep_tree_in_sentences(sentences)
+                    word_load.load_words_in_dep_trees([sentence.dep_tree for sentence in sentences])
 
     return files
 
