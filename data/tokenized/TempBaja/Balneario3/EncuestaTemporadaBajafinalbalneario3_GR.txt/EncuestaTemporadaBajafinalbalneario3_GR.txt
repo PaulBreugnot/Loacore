@@ -1,0 +1,11 @@
+ID_Word	token35537	barra
+35529	billar
+35532	de
+35535	de
+35538	de
+35531	juegos
+35534	juegos
+35533	mesa
+35536	mesa
+35539	trago
+35530	transporte

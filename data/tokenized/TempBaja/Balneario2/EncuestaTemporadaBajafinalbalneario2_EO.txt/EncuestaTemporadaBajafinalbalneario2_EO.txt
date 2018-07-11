@@ -1,0 +1,11 @@
+ID_Word	token34616	a
+34614	agua
+34617	asufre
+34620	baile
+34619	de
+34613	el
+34615	huela
+34618	pista
+34612	que
+34610	teleferico
+34611	toboganvy

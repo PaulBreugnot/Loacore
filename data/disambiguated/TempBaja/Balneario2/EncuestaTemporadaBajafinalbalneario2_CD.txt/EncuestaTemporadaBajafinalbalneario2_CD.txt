@@ -1,0 +1,171 @@
+ID_Word	ID_Synset	Synset
+35129	None	None	# ,
+35066	None	None	# a
+35085	None	None	# a
+35040	None	None	# alguno
+35080	None	None	# alguno
+35028	34088	nutriment.n.01	# alimento
+35110	34130	nutriment.n.01	# alimento
+35045	34096	breakfast.n.01	# almorzar
+35118	34134	breakfast.n.01	# almorzar
+35058	34103	tall.a.01	# alto
+35087	34119	bathtub.n.01	# baño
+35132	34142	bathtub.n.01	# baño
+35150	34148	bag.n.01	# bolso
+35053	34100	expensive.a.01	# caro
+35074	34113	expensive.a.01	# caro
+35079	34116	expensive.a.01	# caro
+35170	34157	expensive.a.01	# caro
+35189	34165	expensive.a.01	# caro
+35134	None	None	# 
+35063	34106	meal.n.01	# comedir
+35122	34137	meal.n.01	# comedir
+35152	34149	meal.n.01	# comedir
+35159	34152	meal.n.01	# comedir
+35185	34163	meal.n.01	# comedir
+35071	34110	meal.n.01	# comedir
+35102	34127	eat.v.02	# comer
+35068	None	None	# comer
+35061	34105	monetary_value.n.01	# costo
+35098	34124	monetary_value.n.01	# costo
+35181	34161	monetary_value.n.01	# costo
+35072	34111	expensive.a.01	# costoso
+35089	34121	expensive.a.01	# costoso
+35183	34162	expensive.a.01	# costoso
+35027	None	None	# de
+35038	None	None	# de
+35104	None	None	# de
+35109	None	None	# de
+35148	None	None	# de
+35162	None	None	# de
+35171	None	None	# de+el
+35103	34128	inside.r.02	# dentro
+35138	34144	talk.v.02	# decir
+35168	None	None	# 
+35117	34133	give.v.10	# dar
+35112	34131	distance.n.03	# distancia
+35077	None	None	# 
+35119	34135	shower.n.04	# ducha
+35123	34138	shower.n.04	# ducha
+35043	34095	teach.v.01	# educar
+35024	None	None	# el
+35044	None	None	# el
+35059	None	None	# el
+35064	None	None	# el
+35097	None	None	# el
+35127	None	None	# el
+35153	None	None	# el
+35160	None	None	# el
+35173	None	None	# el
+35190	None	None	# el
+35041	34093	employee.n.01	# empleado
+35035	None	None	# en
+35093	None	None	# en
+35084	34118	entrance.n.01	# entrada
+35108	34129	entrance.n.01	# entrada
+35156	34151	entrance.n.01	# entrada
+35048	34097	be.v.01	# estar
+35128	None	None	# 
+35157	None	None	# 
+35144	34147	line.n.01	# fila
+35050	None	None	# 
+35191	None	None	# 
+35143	None	None	# 
+35076	34115	be.v.03	# haber
+35166	34155	be.v.03	# haber
+35177	34159	moisture.n.01	# humedad
+35130	None	None	# 
+35026	34087	income.n.01	# ingresar
+35065	34107	income.n.01	# ingresar
+35167	34156	game.n.01	# juego
+35062	None	None	# el
+35083	None	None	# el
+35094	None	None	# el
+35107	None	None	# el
+35111	None	None	# el
+35121	None	None	# el
+35146	None	None	# el
+35151	None	None	# el
+35158	None	None	# el
+35176	None	None	# el
+35184	None	None	# el
+35030	None	None	# 
+35070	None	None	# el
+35105	None	None	# el
+35137	None	None	# el
+35155	None	None	# el
+35193	34166	farther.r.02	# lejos
+35116	None	None	# le
+35126	34141	full.a.01	# llenar
+35078	None	None	# el
+35169	None	None	# el
+35180	None	None	# el
+35182	None	None	# el
+35188	None	None	# el
+35192	None	None	# el
+35055	None	None	# el
+35086	None	None	# el
+35131	None	None	# el
+35140	None	None	# el
+35149	None	None	# el
+35178	None	None	# el
+35163	None	None	# 
+35042	34094	ill.r.01	# mal
+35031	None	None	# mas
+35135	None	None	# mas
+35067	34108	pet.n.01	# mascota
+35049	34098	well.r.07	# muy
+35052	34099	well.r.07	# muy
+35057	34102	well.r.07	# muy
+35073	34112	well.r.07	# muy
+35088	34120	well.r.07	# muy
+35125	34140	well.r.07	# muy
+35133	34143	well.r.07	# muy
+35096	None	None	# nada
+35099	None	None	# nada
+35033	34090	not.r.01	# no
+35075	34114	not.r.01	# no
+35091	34122	not.r.01	# no
+35114	34132	not.r.01	# no
+35165	34154	not.r.01	# no
+35187	34164	option.n.02	# opción
+35142	None	None	# para
+35025	34086	parking_lot.n.01	# 
+35106	None	None	# 
+35036	None	None	# 
+35095	None	None	# 
+35136	None	None	# 
+35174	None	None	# 
+35186	None	None	# 
+35046	None	None	# por
+35154	34150	price.n.02	# preciar
+35056	34101	price.n.02	# precio
+35141	34146	price.n.02	# precio
+35179	34160	price.n.02	# precio
+35120	34136	private.a.01	# privado
+35124	34139	private.a.01	# privado
+35139	34145	private.a.01	# privado
+35029	None	None	# 
+35047	None	None	# que
+35090	None	None	# que
+35113	None	None	# que
+35164	None	None	# que
+35172	34158	restaurant.n.01	# restaurante
+35082	None	None	# 
+35147	None	None	# 
+35037	34092	road.n.01	# ruta
+35115	None	None	# se
+35032	34089	assurance.n.01	# seguridad
+35161	34153	service.n.01	# servicio
+35069	34109	serve.v.10	# servir
+35081	34117	topographic_point.n.01	# sitio
+35060	34104	weather.n.01	# tiempo
+35054	None	None	# todo
+35034	34091	choose.v.01	# tomar
+35092	34123	choose.v.01	# tomar
+35100	34125	conveyance.n.03	# transportar
+35039	None	None	# trasporte
+35051	None	None	# trasporte
+35101	34126	perceive.v.01	# ver
+35145	None	None	# y
+35175	None	None	# y

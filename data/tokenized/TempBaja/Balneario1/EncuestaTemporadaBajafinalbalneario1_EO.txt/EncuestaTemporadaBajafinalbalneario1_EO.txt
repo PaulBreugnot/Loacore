@@ -1,0 +1,3 @@
+ID_Word	token36542	escalar
+36543	la
+36544	montana

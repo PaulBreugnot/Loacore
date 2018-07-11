@@ -1,0 +1,5 @@
+ID_Word	token36205	asados
+36202	comida
+36206	sauna
+36203	tipica
+36204	y

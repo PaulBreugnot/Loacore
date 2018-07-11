@@ -1,0 +1,5 @@
+ID_Word	ID_Synset	Synset
+35543	None	None	# 
+35541	None	None	# de
+35540	34303	game.n.01	# juego
+35542	34304	dining_table.n.01	# mesa

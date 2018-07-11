@@ -1,0 +1,4 @@
+ID_Word	token36220	construccion
+36219	la
+36217	que
+36218	terminen

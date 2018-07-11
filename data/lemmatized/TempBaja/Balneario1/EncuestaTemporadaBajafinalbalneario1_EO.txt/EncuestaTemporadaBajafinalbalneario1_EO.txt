@@ -1,0 +1,4 @@
+ID_Word	ID_Lemma	Lemma
+36542	71151	escalar
+36543	71152	el
+36544	71153	montano

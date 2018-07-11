@@ -1,0 +1,12 @@
+ID_Word	ID_Synset	Synset
+34616	None	None	# a
+34614	33927	water.n.01	# agua
+34617	None	None	# 
+34620	33930	dancing.n.01	# bailar
+34619	None	None	# de
+34613	None	None	# el
+34615	33928	smell.v.02	# oler
+34618	33929	racetrack.n.01	# pista
+34612	None	None	# que
+34610	None	None	# 
+34611	None	None	# 

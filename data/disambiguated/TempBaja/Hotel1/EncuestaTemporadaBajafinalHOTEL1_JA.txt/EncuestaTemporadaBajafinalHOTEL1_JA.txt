@@ -1,0 +1,5 @@
+ID_Word	ID_Synset	Synset
+36220	None	None	# 
+36219	None	None	# el
+36217	None	None	# que
+36218	34651	discontinue.v.01	# terminar

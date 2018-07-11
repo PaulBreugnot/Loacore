@@ -1,0 +1,10 @@
+ID_Word	token36210	ajedrez
+36208	de
+36212	de
+36209	juegos
+36211	juegos
+36213	mesa
+36216	privacidad
+36214	relajacion
+36215	y
+36207	zona

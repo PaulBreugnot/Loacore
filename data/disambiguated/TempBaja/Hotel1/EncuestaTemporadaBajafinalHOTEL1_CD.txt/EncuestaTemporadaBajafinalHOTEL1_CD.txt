@@ -1,0 +1,377 @@
+ID_Word	ID_Synset	Synset
+35870	None	None	# a
+35971	None	None	# a
+36012	None	None	# a
+36043	None	None	# a
+36086	None	None	# a
+35949	34522	entrance.n.01	# acceso
+36011	34553	entrance.n.01	# acceso
+36045	34568	chord.n.02	# acorde
+36044	None	None	# 
+35906	34500	pleasing.a.01	# agradable
+35866	34478	water.n.01	# agua
+35901	34497	water.n.01	# agua
+36051	34572	water.n.01	# agua
+36104	None	None	# alguno
+35842	34468	breakfast.n.01	# almorzar
+35947	34521	tall.a.01	# alta
+36091	34591	adjacent.s.01	# anexar
+35965	34531	narrow.a.01	# angostar
+35915	34503	shrub.n.01	# arbusto
+35869	34480	watchfulness.n.02	# 
+36017	34556	watchfulness.n.02	# 
+36095	34595	watchfulness.n.02	# 
+36157	34622	watchfulness.n.02	# 
+36178	34631	attentional.a.01	# 
+36025	34560	serve.v.10	# atender
+35859	34476	help.v.01	# ayudar
+35904	34499	short.a.03	# baja
+36156	34621	short.a.03	# baja
+36097	34597	negligee.n.01	# bata
+35834	34464	bathtub.n.01	# baño
+35997	34546	net_income.n.01	# beneficio
+35896	34495	watchband.n.01	# brazalete
+36094	34594	good.a.01	# bueno
+35945	None	None	# 
+36148	None	None	# 
+36052	34573	warm.a.01	# calentar
+35911	None	None	# 
+35909	34501	road.n.01	# caminar
+35943	34519	road.n.01	# caminar
+35937	34516	tent.n.01	# carpa
+35880	34486	road.n.01	# carretera
+35964	34530	road.n.01	# carretera
+35832	None	None	# 
+36201	34641	shower.n.04	# cascada
+35985	None	None	# 
+36179	34632	customer.n.01	# cliente
+36185	34633	weather.n.01	# clima
+36155	None	None	# 
+35973	34535	meal.n.01	# comedir
+35975	34536	meal.n.01	# comedir
+36034	34565	meal.n.01	# comedir
+36039	34567	meal.n.01	# comedir
+36066	34580	meal.n.01	# comedir
+35841	None	None	# con
+35860	None	None	# con
+35914	None	None	# con
+36046	None	None	# con
+36041	None	None	# 
+36080	None	None	# 
+36121	None	None	# 
+36183	None	None	# 
+36124	34607	monetary_value.n.01	# costo
+36063	34579	room.n.01	# 4
+35846	None	None	# de
+35850	None	None	# de
+35868	None	None	# de
+35891	None	None	# de
+35983	None	None	# de
+35990	None	None	# de
+36019	None	None	# de
+36076	None	None	# de
+36083	None	None	# de
+36108	None	None	# de
+36125	None	None	# de
+36130	None	None	# de
+36153	None	None	# de
+36199	None	None	# de
+35865	None	None	# de+el
+35900	None	None	# de+el
+35863	None	None	# demasiado
+36118	34606	delay.n.01	# demora
+35976	None	None	# desde
+36136	None	None	# desde
+36177	34630	handiness.n.02	# disponibilidad
+36054	34574	shower.n.04	# ducha
+35848	None	None	# el
+35877	None	None	# el
+35908	None	None	# el
+35942	None	None	# el
+35944	None	None	# el
+35948	None	None	# el
+35953	None	None	# el
+35981	None	None	# el
+36004	None	None	# el
+36035	None	None	# el
+36047	None	None	# el
+36061	None	None	# el
+36072	None	None	# el
+36074	None	None	# el
+36081	None	None	# el
+36084	None	None	# el
+36115	None	None	# el
+36123	None	None	# el
+36128	None	None	# el
+36133	None	None	# el
+36145	None	None	# el
+36147	None	None	# el
+36151	None	None	# el
+36159	None	None	# el
+36163	None	None	# el
+36180	None	None	# el
+36184	None	None	# el
+36186	None	None	# el
+36197	None	None	# el
+36059	34577	elevator.n.01	# elevador
+35962	34529	employee.n.01	# empleado
+35829	None	None	# en
+35876	None	None	# en
+35907	None	None	# en
+35931	None	None	# en
+35941	None	None	# en
+35952	None	None	# en
+36060	None	None	# en
+36103	None	None	# en
+36114	None	None	# en
+36119	None	None	# en
+36158	None	None	# en
+36166	None	None	# en
+36048	34569	environment.n.02	# entornar
+35967	34532	entrance.n.01	# entrada
+36132	34610	entrance.n.01	# entrada
+35852	34473	entrance.n.01	# entrada
+35956	34526	be.v.01	# ser
+35980	34537	listen.v.01	# escuchar
+36196	34639	listen.v.01	# escuchar
+36005	34548	place.n.03	# espaciar
+35887	34490	be.v.01	# estar
+36075	34585	state.n.02	# estado
+35912	None	None	# 
+35856	None	None	# excluyente
+35854	None	None	# 
+35918	34506	ease.n.01	# facilidad
+35845	34470	lack.n.01	# falta
+35867	34479	lack.n.01	# falta
+35925	34509	miss.v.06	# falta
+35969	34533	miss.v.06	# falta
+36096	34596	miss.v.06	# faltar
+36165	34626	phi.n.01	# fi
+35830	34463	booklet.n.01	# folleto
+36181	None	None	# 
+36187	None	None	# 
+36162	34625	function.v.01	# funcionar
+36002	34547	people.n.01	# gente
+36193	34638	thick.a.01	# gruesa
+35978	None	None	# 
+36099	None	None	# 
+36168	None	None	# 
+36078	34586	room.n.01	# habitación
+36138	34612	room.n.01	# habitación
+35960	None	None	# hacia
+35827	34462	be.v.03	# haber
+35875	34483	be.v.03	# haber
+35917	34505	be.v.03	# haber
+35929	34512	be.v.03	# haber
+36058	34576	be.v.03	# haber
+36101	34599	be.v.03	# haber
+36176	34629	be.v.03	# haber
+35838	34467	be.v.03	# haber
+35936	34515	be.v.03	# haber
+35889	34492	schedule.n.02	# horario
+36062	34578	hotel.n.01	# hotel
+36073	34584	hotel.n.01	# hotel
+36085	34588	hotel.n.01	# hotel
+36000	None	None	# 
+35843	34469	include.v.01	# incluir
+36169	34627	inconvenience.n.03	# inconveniente
+35849	34472	increase.n.03	# incrementar
+35828	None	None	# 
+35926	34510	framework.n.03	# infraestructura
+35951	34524	revoke.v.02	# invertir
+36056	None	None	# 
+35831	None	None	# el
+35844	None	None	# el
+35892	None	None	# el
+35898	None	None	# el
+35963	None	None	# el
+35966	None	None	# el
+35972	None	None	# el
+35974	None	None	# el
+35977	None	None	# el
+35984	None	None	# el
+36016	None	None	# el
+36030	None	None	# el
+36033	None	None	# el
+36038	None	None	# el
+36040	None	None	# el
+36053	None	None	# el
+36079	None	None	# el
+36087	None	None	# el
+36098	None	None	# el
+36111	None	None	# el
+36117	None	None	# el
+36120	None	None	# el
+36131	None	None	# el
+36154	None	None	# el
+36167	None	None	# el
+36182	None	None	# el
+36200	None	None	# el
+35851	None	None	# el
+35910	None	None	# el
+35922	None	None	# el
+35932	None	None	# el
+36077	None	None	# el
+36089	None	None	# el
+36137	None	None	# el
+36143	None	None	# el
+36188	None	None	# el
+35858	None	None	# le
+35924	None	None	# le
+35968	None	None	# le
+36110	None	None	# 
+36150	34619	farther.r.02	# lejos
+35957	None	None	# el
+36023	None	None	# el
+36027	None	None	# el
+35833	None	None	# el
+35883	None	None	# el
+35895	None	None	# el
+35961	None	None	# el
+35995	None	None	# el
+35999	None	None	# el
+36020	None	None	# el
+36126	None	None	# el
+36171	None	None	# el
+35954	34525	topographic_point.n.01	# lugar
+36029	34562	ill.r.01	# mal
+35959	34528	maltreatment.n.01	# maltratar
+35862	34477	ma.n.01	# mama
+35903	None	None	# mas
+35905	None	None	# mas
+36172	34628	massage.n.01	# masaje
+35921	34508	major.a.03	# mayor
+36116	None	None	# 
+35933	34514	dining_table.n.01	# mesa
+36021	34557	waiter.n.01	# mesero
+35996	34545	indulgence.n.03	# mimo
+35958	34527	like.a.02	# mismo
+35885	34489	wet.a.01	# mojar
+35940	None	None	# 
+36070	None	None	# mucho
+36174	None	None	# mucho
+36067	34581	well.r.07	# muy
+36192	34637	well.r.07	# muy
+35872	34481	necessity.n.02	# necesidad
+36055	None	None	# ni
+35826	34461	not.r.01	# no
+35857	34475	not.r.01	# no
+35874	34482	not.r.01	# no
+35916	34504	not.r.01	# no
+35928	34511	not.r.01	# no
+35939	34518	not.r.01	# no
+35950	34523	not.r.01	# no
+35987	34539	not.r.01	# no
+35993	34543	not.r.01	# no
+36022	34558	not.r.01	# no
+36049	34570	not.r.01	# no
+36057	34575	not.r.01	# no
+36092	34592	not.r.01	# no
+36100	34598	not.r.01	# no
+36139	34613	not.r.01	# no
+36161	34624	not.r.01	# no
+36190	34635	not.r.01	# no
+36042	None	None	# nova
+35919	None	None	# para
+36170	None	None	# para
+36149	34618	parking_lot.n.01	# 
+36109	34604	parking_lot.n.01	# parquear
+35839	None	None	# 
+35938	34517	hand.n.01	# pata
+35882	34487	pave.v.01	# pavimentar
+36032	34564	small.a.01	# pequeño
+36007	34550	small.a.01	# pequeño
+35840	None	None	# pero
+35855	None	None	# pero
+35920	34507	person.n.01	# persona
+35893	34494	swimming_pool.n.01	# piscina
+36015	34555	swimming_pool.n.01	# piscina
+36031	34563	swimming_pool.n.01	# piscina
+36088	34589	swimming_pool.n.01	# piscina
+36090	34590	swimming_pool.n.01	# piscina
+36144	34616	swimming_pool.n.01	# piscina
+35879	34485	dwelling.n.01	# pisar
+35884	34488	dwelling.n.01	# piso
+36112	None	None	# poco
+35886	None	None	# porque
+36173	None	None	# porque
+35836	34466	price.n.02	# preciar
+36129	34609	price.n.02	# preciar
+36146	34617	price.n.02	# preciar
+36152	34620	price.n.02	# preciar
+35864	None	None	# 
+35878	34484	one.s.01	# 1
+35847	34471	ad.n.01	# publicidad
+36141	34614	displace.v.03	# poder
+35837	None	None	# que
+35897	None	None	# que
+35927	None	None	# que
+35935	None	None	# que
+35986	None	None	# que
+35992	None	None	# que
+35998	None	None	# que
+36008	None	None	# que
+36135	None	None	# que
+36024	34559	want.v.02	# querer
+36068	34582	even.a.03	# regular
+35888	34491	slippery.a.01	# resbaladizo
+36106	34602	restaurant.n.01	# restaurante
+36160	34623	restaurant.n.01	# restaurante
+35890	34493	restrict.v.03	# restringir
+35970	34534	relish.n.03	# sabor
+35979	None	None	# se
+36140	None	None	# se
+36195	None	None	# se
+35902	34498	be.v.01	# sea
+35989	34541	service.n.01	# servicio
+36036	34566	service.n.01	# servicio
+35881	None	None	# sin
+36064	None	None	# sin
+36069	None	None	# sin
+35853	34474	topographic_point.n.01	# sitiar
+36014	34554	unaccompanied.a.01	# solo
+36009	34551	entirely.r.02	# solo
+35930	34513	umbrella.n.01	# sombrilla
+36191	34636	be.v.01	# ser
+35982	34538	sound.n.02	# sonido
+36198	34640	sound.n.02	# sonido
+35861	None	None	# su
+35871	None	None	# su
+35835	34465	dirty.a.01	# sucio
+36006	34549	so.r.01	# tan
+36001	None	None	# tanto
+35913	34502	hide.v.01	# tapar
+35899	34496	temperature.n.01	# temperatura
+35946	34520	temperature.n.01	# temperatura
+35988	34540	give_birth.v.01	# tener
+36050	34571	give_birth.v.01	# tener
+35994	34544	give_birth.v.01	# tener
+36093	34593	give_birth.v.01	# tener
+35991	34542	towel.n.01	# toalla
+35955	None	None	# todo
+36127	34608	beverage.n.01	# trago
+36102	34600	tranquillity.n.02	# tranquilidad
+36028	34561	treat.v.03	# tratar
+36082	34587	way.n.07	# trayecto
+36010	34552	give_birth.v.01	# tener
+36013	None	None	# unir
+36018	None	None	# unir
+36134	34611	courage.n.01	# valor
+36071	34583	assortment.n.01	# variedad
+36113	34605	assortment.n.01	# variedad
+36175	None	None	# 
+36189	34634	window.n.01	# ventana
+36065	None	None	# ventilador
+36142	34615	perceive.v.01	# ver
+35873	None	None	# 
+35923	None	None	# 
+36164	None	None	# 
+35894	None	None	# y
+35934	None	None	# y
+36003	None	None	# y
+36026	None	None	# y
+36037	None	None	# y
+36122	None	None	# y
+36194	None	None	# y
+36107	34603	district.n.01	# zona
+36105	34601	district.n.01	# zona

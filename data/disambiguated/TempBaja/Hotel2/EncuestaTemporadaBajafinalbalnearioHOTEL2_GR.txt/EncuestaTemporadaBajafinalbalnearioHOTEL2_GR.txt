@@ -1,0 +1,1 @@
+ID_Word	ID_Synset	Synset

@@ -1,0 +1,673 @@
+ID_Word	ID_Synset	Synset
+43704	None	None	# "
+43753	None	None	# "
+43909	None	None	# ,
+43733	38275	one.s.01	# 
+43748	38282	fifteen.n.01	# 
+43746	38281	two.n.01	# 
+43660	38241	four.s.01	# 
+43747	None	None	# :
+43722	None	None	# ;
+43494	None	None	# a
+43550	None	None	# a
+43575	None	None	# a
+43583	None	None	# a
+43588	None	None	# a
+43731	None	None	# a
+43744	None	None	# a
+43785	None	None	# a
+43811	None	None	# a
+43794	38305	fix.v.12	# acondicionar
+43982	38390	match.v.01	# acordar
+43587	None	None	# acorde
+43828	38319	action.n.02	# actividad
+43810	38310	agreement.n.01	# acordar
+43664	38244	auxiliary.s.01	# adicional
+43903	38352	auxiliary.s.01	# adicional
+43560	None	None	# 
+43698	38261	director.n.01	# administrador
+43508	38178	water.n.01	# agua
+43759	38287	water.n.01	# agua
+43774	38293	water.n.01	# agua
+44137	38466	water.n.01	# agua
+43703	None	None	# 
+43793	38304	wind.n.01	# aire
+43691	None	None	# a+el
+43708	None	None	# a+el
+43618	None	None	# 
+43651	None	None	# 
+43848	None	None	# 
+44061	None	None	# 
+44070	None	None	# 
+44080	38441	nutriment.n.01	# alimento
+43734	38276	morning.n.01	# 
+43815	38313	environmental.a.01	# ambiental
+43868	38337	environment.n.02	# ambientar
+43971	38386	environment.n.02	# ambientar
+44114	None	None	# 
+43967	38385	friendly.a.01	# amigable
+43573	None	None	# 
+43699	None	None	# 
+43849	38327	support.n.07	# apoyar
+43679	None	None	# 
+43784	None	None	# 
+43876	38341	toilet.n.02	# asear
+43927	38362	take_in.v.01	# asilar
+43581	38209	watchfulness.n.02	# 
+43616	38224	watchfulness.n.02	# 
+43673	38250	watchfulness.n.02	# 
+43681	38252	watchfulness.n.02	# 
+43882	38343	watchfulness.n.02	# 
+44042	38420	watchfulness.n.02	# 
+43669	38247	care.n.01	# atención
+43635	38234	ad.n.01	# aviso
+43585	38212	short.a.03	# bajar
+44006	38403	barroom.n.01	# bar
+43834	38321	cheap.a.01	# barato
+43517	38183	bathtub.n.01	# bañar
+43663	38243	bathtub.n.01	# bañar
+44123	38461	bathtub.n.01	# bañar
+43514	38181	bathtub.n.01	# baño
+44030	38415	bathtub.n.01	# baño
+43598	38216	finely.r.03	# bien
+44065	38432	finely.r.03	# bien
+44095	38448	finely.r.03	# bien
+44131	38463	commodity.n.01	# bien
+43994	38395	bag.n.01	# bolsa
+43851	38328	button.n.01	# botonar
+43530	38188	joke.n.01	# broma
+43617	38225	good.a.01	# bueno
+44072	38437	buffer.n.04	# buffer
+43579	None	None	# 
+44047	38422	hair.n.01	# cabellar
+43890	38347	coffee.n.01	# café
+44124	None	None	# 
+43706	38264	quality.n.01	# calidad
+44107	38454	quality.n.01	# calidad
+43760	38288	warm.a.01	# calentar
+43485	38170	road.n.01	# camino
+43821	38316	camping.n.01	# camping
+44045	38421	brush.n.02	# cepillar
+43493	38174	about.r.07	# cerca
+44135	38465	shower.n.04	# chorro
+44035	None	None	# 
+44106	38453	customer.n.01	# cliente
+43766	38290	gain.v.08	# cobrar
+44117	None	None	# 
+43923	None	None	# 
+43535	38189	restaurant.n.01	# comedor
+43884	38344	restaurant.n.01	# comedor
+43946	38373	meal.n.01	# comedir
+43800	None	None	# 
+43543	38193	meal.n.01	# comedir
+43944	38371	meal.n.01	# comedir
+44016	38407	meal.n.01	# comedir
+43593	None	None	# comer
+43808	None	None	# 
+44062	38430	complete.a.01	# completar
+43654	38239	complete.a.01	# completar
+44000	38400	complete.a.01	# completar
+43486	None	None	# con
+43641	None	None	# con
+43657	None	None	# con
+43725	None	None	# con
+43968	None	None	# con
+44029	None	None	# con
+44049	None	None	# con
+44101	None	None	# con
+44121	None	None	# con
+43724	38272	state.v.01	# contar
+43574	38206	examination.n.01	# control
+43640	38236	agreement.n.03	# convenio
+43500	None	None	# 
+43603	None	None	# 
+44083	None	None	# 
+44100	38451	chat_up.v.01	# coquetear
+43714	38267	monetary_value.n.01	# costo
+43591	38214	find.v.05	# crear
+43908	38355	give.v.10	# dar
+43499	None	None	# de
+43507	None	None	# de
+43531	None	None	# de
+43609	None	None	# de
+43621	None	None	# de
+43644	None	None	# de
+43659	None	None	# de
+43676	None	None	# de
+43710	None	None	# de
+43715	None	None	# de
+43735	None	None	# de
+43740	None	None	# de
+43757	None	None	# de
+43773	None	None	# de
+43799	None	None	# de
+43809	None	None	# de
+43816	None	None	# de
+43820	None	None	# de
+43847	None	None	# de
+43850	None	None	# de
+43854	None	None	# de
+43871	None	None	# de
+43937	None	None	# de
+43950	None	None	# de
+43955	None	None	# de
+44020	None	None	# de
+44046	None	None	# de
+44059	None	None	# de
+44079	None	None	# de
+44104	None	None	# de
+44108	None	None	# de
+44116	None	None	# de
+44136	None	None	# de
+44140	None	None	# de
+44068	38434	owe.v.01	# debe
+43719	None	None	# 
+43723	None	None	# 
+43922	None	None	# 
+44139	None	None	# 
+43674	None	None	# de+el
+43687	None	None	# de+el
+43693	None	None	# de+el
+43717	None	None	# de+el
+43883	None	None	# de+el
+44024	38411	excessively.r.01	# demasiado
+44149	None	None	# 
+44009	None	None	# desde
+43549	38196	different.a.01	# diferente
+43790	38302	disabled.s.01	# discapacitado
+44017	38408	cabaret.n.01	# discoteca
+44081	38442	cabaret.n.01	# discoteca
+43537	38190	handiness.n.02	# disponibilidad
+43917	38358	different.a.01	# distinto
+43695	None	None	# donde
+43932	38366	sleep.v.01	# dormir
+43611	38222	shower.n.04	# ducha
+44019	38409	shower.n.04	# ducha
+43990	38393	shower.n.04	# ducha
+44050	38424	shower.n.04	# ducha
+43630	None	None	# 
+44133	None	None	# 
+43482	None	None	# el
+43534	None	None	# el
+43539	None	None	# el
+43554	None	None	# el
+43562	None	None	# el
+43567	None	None	# el
+43697	None	None	# el
+43713	None	None	# el
+43767	None	None	# el
+43791	None	None	# el
+43797	None	None	# el
+43830	None	None	# el
+43845	None	None	# el
+43867	None	None	# el
+43869	None	None	# el
+43895	None	None	# el
+43928	None	None	# el
+43961	None	None	# el
+43969	None	None	# el
+43980	None	None	# el
+43996	None	None	# el
+44010	None	None	# el
+44066	None	None	# el
+43518	None	None	# en
+43524	None	None	# en
+43533	None	None	# en
+43538	None	None	# en
+43547	None	None	# en
+43561	None	None	# en
+43612	None	None	# en
+43632	None	None	# en
+43646	None	None	# en
+43655	None	None	# en
+43684	None	None	# en
+43701	None	None	# en
+43707	None	None	# en
+43727	None	None	# en
+43761	None	None	# en
+43804	None	None	# en
+43844	None	None	# en
+43877	None	None	# en
+43892	None	None	# en
+43911	None	None	# en
+43942	None	None	# en
+43973	None	None	# en
+43979	None	None	# en
+43991	None	None	# en
+44002	None	None	# en
+44014	None	None	# en
+44032	None	None	# en
+44036	None	None	# en
+44084	None	None	# en
+44110	None	None	# en
+44125	None	None	# en
+44146	None	None	# en
+44151	None	None	# en
+43689	38256	detect.v.01	# encontrar
+43604	None	None	# entrar
+43595	38215	be.v.01	# ser
+43864	38335	be.v.01	# ser
+43920	38359	be.v.01	# ser
+43998	38398	be.v.01	# ser
+44023	38410	be.v.01	# ser
+43887	None	None	# 
+43671	38249	particular.s.01	# especial
+43594	None	None	# este
+44130	None	None	# este
+43631	38231	be.v.01	# estar
+43696	38260	be.v.01	# estar
+43552	38197	establish.v.01	# establecer
+44092	None	None	# 
+43904	None	None	# este
+43642	None	None	# este
+44064	38431	be.v.01	# estar
+44039	38417	event.n.01	# evento
+43596	None	None	# 
+44120	38460	familiar.a.01	# familiar
+43509	None	None	# 
+43775	None	None	# 
+44138	None	None	# 
+43743	38280	be.v.01	# ir
+43897	None	None	# 
+43532	None	None	# 
+43636	38235	appeal.n.02	# gancho
+43600	38217	expense.n.01	# gasto
+43666	38246	grace.n.02	# gracia
+43842	38325	grace.n.02	# gracia
+43874	38340	large.a.01	# grande
+44028	38414	group.n.01	# grupo
+44022	None	None	# 
+43526	None	None	# 
+43614	None	None	# 
+43648	None	None	# 
+43729	None	None	# 
+43763	None	None	# 
+43806	None	None	# 
+43919	None	None	# 
+43975	None	None	# 
+44034	None	None	# 
+44126	None	None	# 
+43521	38184	room.n.01	# habitación
+43656	38240	room.n.01	# habitación
+43787	38300	room.n.01	# habitación
+43886	38345	room.n.01	# habitación
+43936	38368	room.n.01	# habitación
+43993	38394	room.n.01	# habitación
+44026	38413	room.n.01	# habitación
+44048	38423	room.n.01	# habitación
+44119	38459	room.n.01	# habitación
+43490	38171	make.v.03	# hacer
+43827	38318	make.v.03	# hacer
+43557	38199	hammock.n.02	# hamaca
+43702	None	None	# 
+44076	38440	be.v.03	# haber
+43781	38298	ice.n.01	# helar
+44008	38404	history.n.02	# historia
+43750	38283	date.n.03	# hora
+43548	38195	schedule.n.02	# horario
+43634	38233	schedule.n.02	# horario
+43683	38253	cordial_reception.n.01	# hospitalidad
+43540	38191	hotel.n.01	# hotel
+43555	38198	hotel.n.01	# hotel
+43718	38269	hotel.n.01	# hotel
+43965	38384	hotel.n.01	# hotel
+43736	38277	presently.r.02	# hoy
+43576	None	None	# 
+43529	38187	include.v.01	# incluir
+44055	38428	include.v.01	# incluir
+44069	38435	include.v.01	# incluir
+43653	38238	include.v.01	# incluir
+44086	None	None	# 
+43788	38301	facility.n.01	# instalación
+44112	38456	facility.n.01	# instalación
+43711	38266	world_wide_web.n.01	# internet
+43599	None	None	# 
+43772	None	None	# 
+43914	None	None	# 
+43495	None	None	# el
+43525	None	None	# el
+43589	None	None	# el
+43607	None	None	# el
+43613	None	None	# el
+43647	None	None	# el
+43650	None	None	# el
+43672	None	None	# el
+43728	None	None	# el
+43732	None	None	# el
+43762	None	None	# el
+43805	None	None	# el
+43812	None	None	# el
+43893	None	None	# el
+43912	None	None	# el
+43918	None	None	# el
+43974	None	None	# el
+44007	None	None	# el
+44018	None	None	# el
+44021	None	None	# el
+44033	None	None	# el
+44037	None	None	# el
+44085	None	None	# el
+43520	None	None	# el
+43678	None	None	# el
+43745	None	None	# el
+43786	None	None	# el
+43858	None	None	# el
+43872	None	None	# el
+43935	None	None	# el
+43943	None	None	# el
+43988	None	None	# el
+43992	None	None	# el
+44003	None	None	# el
+44015	None	None	# el
+44102	None	None	# el
+44111	None	None	# el
+44118	None	None	# el
+44141	None	None	# el
+43938	None	None	# laso
+43580	38208	injure.v.01	# lastimar
+43862	38333	limitation.n.05	# limitación
+43840	38324	clean.a.01	# limpia
+43730	38274	name.v.01	# llamar
+43565	None	None	# el
+43865	None	None	# el
+43957	None	None	# el
+44127	None	None	# el
+44143	None	None	# el
+43551	None	None	# el
+43625	None	None	# el
+43878	None	None	# el
+44090	None	None	# el
+44105	None	None	# el
+44152	None	None	# el
+43705	38263	bad.a.01	# malo
+43577	38207	ill-bred.s.01	# maleducado
+43855	38330	baggage.n.01	# maleta
+43633	38232	care.n.06	# mantenimiento
+43487	None	None	# mas
+43497	None	None	# mas
+43515	None	None	# mas
+43536	None	None	# mas
+43658	None	None	# mas
+43751	None	None	# mas
+43782	None	None	# mas
+43807	None	None	# mas
+43833	None	None	# mas
+43839	None	None	# mas
+43875	None	None	# mas
+43885	None	None	# mas
+43940	None	None	# mas
+43966	None	None	# mas
+44012	None	None	# mas
+44057	None	None	# mas
+43989	None	None	# 
+43571	38205	major.a.03	# mayor
+44082	38443	major.a.03	# mayor
+43970	None	None	# 
+43559	38200	better.a.01	# mejor
+43721	38271	better.a.01	# mejor
+43755	38285	better.a.01	# mejor
+43779	38296	better.r.01	# mejor
+43881	38342	better.a.01	# mejor
+43945	38372	better.r.01	# mejor
+43948	38374	better.a.01	# mejor
+43953	38377	better.a.01	# mejor
+44041	38419	better.r.01	# mejor
+43513	38180	better.v.02	# mejorar
+43602	38219	better.v.02	# mejorar
+43615	38223	better.v.02	# mejorar
+43619	38226	better.v.02	# mejorar
+43680	38251	better.v.02	# mejorar
+43522	None	None	# 
+43831	None	None	# 
+43846	None	None	# 
+43981	None	None	# 
+44060	None	None	# 
+43566	38202	deserve.v.01	# merecer
+43726	38273	dining_table.n.01	# mesa
+44004	38402	dining_table.n.01	# mesa
+43665	38245	thousand.s.01	# mil
+43483	38168	like.a.02	# mismo
+43866	38336	like.a.02	# mismo
+44128	38462	like.a.02	# mismo
+43841	None	None	# mucho
+43523	38185	furniture.n.01	# moblar
+43582	38210	set_to_music.v.01	# musicar
+43670	38248	well.r.07	# muy
+43999	38399	well.r.07	# muy
+43590	38213	universe.n.01	# naturaleza
+43685	None	None	# 
+43972	38387	refrigerator.n.01	# nevera
+43976	38388	refrigerator.n.01	# nevera
+44031	None	None	# 
+43512	38179	child.n.01	# niño
+43626	38229	child.n.01	# niño
+43765	38289	not.r.01	# no
+43863	38334	not.r.01	# no
+43930	38364	not.r.01	# no
+44075	38439	not.r.01	# no
+44098	38450	not.r.01	# no
+43716	38268	night.n.01	# noche
+44040	38418	nocturnal.a.01	# nocturno
+43690	38257	again.r.01	# 
+43915	38357	never.r.02	# nunca
+43628	None	None	# o
+43771	None	None	# o
+44044	None	None	# o
+44145	38467	offer.v.02	# ofertar
+43608	38220	position.n.06	# oficina
+43542	38192	offer.v.02	# ofrecer
+43959	38380	offer.v.02	# ofrecer
+44078	None	None	# 
+43498	38176	option.n.02	# opción
+43978	38389	option.n.02	# opción
+43934	38367	form.v.01	# organizar
+44077	None	None	# otro
+44122	None	None	# otro
+43601	38218	payment.n.01	# pago
+43870	38338	landscape.n.01	# paisaje
+43489	None	None	# para
+43511	None	None	# para
+43541	None	None	# para
+43624	None	None	# para
+43712	None	None	# para
+43737	None	None	# para
+43789	None	None	# para
+43852	None	None	# para
+43857	None	None	# para
+43986	None	None	# para
+44027	None	None	# para
+44093	None	None	# para
+44099	None	None	# para
+44001	38401	umbrella.n.01	# parasol
+44103	38452	boyfriend.n.01	# pareja
+43823	38317	parking_lot.n.01	# parque
+43627	38230	walk.n.04	# pasear
+43814	38312	walk.n.04	# pasear
+44043	None	None	# peineta
+44025	38412	small.a.01	# pequeño
+43638	None	None	# 
+43504	38177	perfect.a.01	# perfecto
+43891	38348	permanently.r.01	# 
+43795	38306	let.v.01	# permitir
+43675	None	None	# 
+43783	38299	personal.a.01	# personal
+43661	38242	person.n.01	# persona
+43859	38331	person.n.01	# persona
+43568	None	None	# 
+44088	38445	evaluate.v.02	# pensar
+43496	38175	swimming_pool.n.01	# piscina
+43770	38292	swimming_pool.n.01	# piscina
+43835	38322	swimming_pool.n.01	# piscina
+44038	38416	swimming_pool.n.01	# piscina
+43516	38182	swimming_pool.n.01	# piscina
+43873	38339	swimming_pool.n.01	# piscina
+44142	None	None	# 
+43913	None	None	# 
+43527	38186	plan.n.01	# plan
+43896	38349	plan.n.01	# plan
+44053	38427	plan.n.01	# plan
+44067	38433	plan.n.01	# plan
+43995	38396	chew_the_fat.v.01	# platicar
+44153	38470	dish.n.02	# plato
+43838	None	None	# poco
+43553	None	None	# por
+43667	None	None	# por
+43778	None	None	# 
+43572	None	None	# 
+44094	38447	give.v.10	# prestar
+43836	38323	major.a.01	# principal
+44011	38405	principle.n.03	# principiar
+43739	38278	problem.n.02	# problema
+44113	38457	plan.n.01	# programa
+43817	38314	promptly.r.01	# pronto
+43506	None	None	# 
+43931	38365	displace.v.03	# poder
+43907	38354	displace.v.03	# poder
+43776	38294	displace.v.03	# poder
+43802	38308	displace.v.03	# poder
+43592	None	None	# que
+43649	None	None	# que
+43764	None	None	# que
+43796	None	None	# que
+43825	None	None	# que
+43826	None	None	# que
+43829	None	None	# que
+43860	None	None	# que
+43898	None	None	# que
+43926	None	None	# que
+43933	None	None	# que
+43958	None	None	# que
+43983	None	None	# que
+44074	None	None	# que
+44089	None	None	# que
+44144	None	None	# que
+43856	None	None	# 
+43605	None	None	# 
+43894	None	None	# 
+43570	38204	derive.v.02	# recibir
+43963	38383	derive.v.02	# recibir
+43491	38172	tour.v.01	# recorrer
+43502	None	None	# 
+43510	None	None	# 
+43623	None	None	# 
+43792	38303	refrigerator.n.01	# refrigerador
+44052	38426	refrigerator.n.01	# refrigerador
+44087	38444	necessitate.v.01	# requerir
+43758	None	None	# 
+43622	38228	restaurant.n.01	# restaurante
+43688	38255	restaurant.n.01	# restaurante
+43951	38376	restaurant.n.01	# restaurante
+43956	38379	restaurant.n.01	# restaurante
+43929	38363	sound.n.04	# ruido
+43629	None	None	# 
+43544	38194	healthy.a.01	# saludable
+43492	38173	sanitary.a.01	# sanitario
+43564	None	None	# se
+43652	None	None	# se
+43801	None	None	# se
+43906	None	None	# se
+43832	38320	be.v.01	# sea
+43960	38381	be.v.01	# sea
+44132	38464	trail.n.02	# sendero
+43720	38270	be.v.01	# ser
+43777	38295	be.v.01	# ser
+43546	None	None	# 
+43484	38169	service.n.01	# servicio
+43569	38203	service.n.01	# servicio
+43620	38227	service.n.01	# servicio
+43686	38254	service.n.01	# servicio
+43692	38258	service.n.01	# servicio
+43756	38286	service.n.01	# servicio
+43780	38297	service.n.01	# servicio
+43798	38307	service.n.01	# servicio
+43905	38353	service.n.01	# servicio
+43949	38375	service.n.01	# servicio
+43954	38378	service.n.01	# servicio
+43962	38382	service.n.01	# servicio
+43997	38397	service.n.01	# servicio
+44109	38455	service.n.01	# servicio
+43643	38237	service.n.01	# servicio
+44097	38449	service.n.01	# servicio
+43985	None	None	# 
+43709	38265	signal.n.01	# señal
+43488	None	None	# 
+44134	None	None	# 
+43563	38201	topographic_point.n.01	# sitiar
+44096	None	None	# 
+43900	38350	necessitate.v.01	# solicitar
+43910	38356	umbrella.n.01	# sombrilla
+43610	38221	watering_place.n.01	# 
+43668	None	None	# su
+43752	38284	night.n.01	# tardar
+43813	38311	fee.n.01	# tarifa
+43700	38262	television.n.01	# 
+43741	38279	television.n.01	# 
+43902	38351	television.n.01	# televisor
+43861	38332	give_birth.v.01	# tener
+43803	38309	give_birth.v.01	# tener
+43889	38346	give_birth.v.01	# tener
+44051	38425	give_birth.v.01	# tener
+43984	38391	give_birth.v.01	# tener
+43921	38360	dangerous.s.02	# terrible
+43694	38259	red_wine.n.01	# tintar
+43768	38291	red_wine.n.01	# tintar
+44071	38436	kind.n.01	# tipo
+43888	None	None	# 
+43519	None	None	# todo
+43677	None	None	# todo
+43503	None	None	# todo
+43528	None	None	# todo
+43597	None	None	# todo
+43916	None	None	# todo
+44054	None	None	# todo
+44063	None	None	# todo
+44129	None	None	# todo
+44091	38446	employee.n.01	# trabajador
+43987	38392	raise.v.02	# traer
+44147	38468	tranquillity.n.02	# tranquilidad
+43853	38329	motion.n.06	# trasladar
+43645	None	None	# 
+43556	None	None	# uno
+43662	None	None	# uno
+43738	None	None	# uno
+43754	None	None	# uno
+43822	None	None	# uno
+43837	None	None	# uno
+43901	None	None	# uno
+43924	None	None	# uno
+43952	None	None	# uno
+43964	None	None	# uno
+44005	None	None	# uno
+43505	None	None	# unir
+43558	None	None	# unir
+43749	None	None	# unir
+43769	None	None	# unir
+43818	None	None	# unir
+43899	None	None	# unir
+43977	None	None	# vario
+43843	38326	assortment.n.01	# variedad
+43941	38370	assortment.n.01	# variedad
+44013	38406	assortment.n.01	# variedad
+44058	38429	assortment.n.01	# variedad
+44115	38458	assortment.n.01	# variedad
+44150	38469	assortment.n.01	# variedad
+43879	None	None	# 
+43925	38361	glass.n.01	# vidriar
+43939	38369	old.a.02	# viejo
+43584	38211	book.n.02	# volumen
+43501	None	None	# y
+43545	None	None	# y
+43578	None	None	# y
+43586	None	None	# y
+43606	None	None	# y
+43637	None	None	# y
+43639	None	None	# y
+43682	None	None	# y
+43742	None	None	# y
+43824	None	None	# y
+43880	None	None	# y
+43947	None	None	# y
+44056	None	None	# y
+44148	None	None	# y
+44073	38438	already.r.01	# ya
+43819	38315	district.n.01	# zona

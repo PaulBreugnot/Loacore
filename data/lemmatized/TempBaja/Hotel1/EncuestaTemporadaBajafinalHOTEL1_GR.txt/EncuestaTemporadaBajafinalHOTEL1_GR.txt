@@ -1,0 +1,6 @@
+ID_Word	ID_Lemma	Lemma
+36205	70814	asado
+36202	70811	comedir
+36206	70815	sauna
+36203	70812	
+36204	70813	y

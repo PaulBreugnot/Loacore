@@ -1,0 +1,60 @@
+ID_Word	ID_Synset	Synset
+35013	None	None	# 
+34968	None	None	# 
+35002	None	None	# 
+35012	34081	beverage.n.01	# beber
+35023	34085	meal.n.01	# comedir
+35006	None	None	# 
+35017	None	None	# con
+34998	34074	monetary_value.n.01	# costo
+34969	None	None	# de
+34983	None	None	# de
+35009	34078	shower.n.04	# ducha
+34972	None	None	# el
+34979	None	None	# el
+34995	None	None	# el
+34997	None	None	# el
+35007	None	None	# el
+34978	None	None	# en
+34994	34072	large.a.01	# grande
+35016	34083	garden.n.01	# jardín
+34967	None	None	# el
+35005	None	None	# el
+35022	None	None	# el
+34977	34065	smooth.a.01	# liso
+34966	None	None	# 
+34988	None	None	# 
+35021	None	None	# 
+34965	None	None	# el
+34970	None	None	# el
+34974	None	None	# el
+34981	None	None	# el
+34985	None	None	# el
+34987	None	None	# el
+35001	None	None	# el
+35015	None	None	# el
+35020	None	None	# el
+34993	None	None	# mas
+35018	None	None	# mas
+35014	34082	better.v.02	# mejorar
+34971	34061	waiter.n.01	# mesero
+34976	34064	well.r.07	# muy
+34989	34069	not.r.01	# no
+35011	34080	not.r.01	# no
+35000	None	None	# para
+34986	34068	umbrella.n.01	# parasol
+34996	34073	parking_lot.n.01	# 
+34975	34063	dwelling.n.01	# piso
+34973	34062	price.n.02	# preciar
+34982	34066	price.n.02	# precio
+35010	34079	private.a.01	# privado
+34991	None	None	# que
+34980	None	None	# 
+34984	34067	restaurant.n.01	# restaurante
+34999	34075	road.n.01	# ruta
+34992	34071	be.v.01	# sea
+34990	34070	choose.v.01	# tomar
+35003	34076	conveyance.n.03	# transportar
+35008	34077	conveyance.n.03	# transportar
+35019	34084	assortment.n.01	# variedad
+35004	None	None	# y

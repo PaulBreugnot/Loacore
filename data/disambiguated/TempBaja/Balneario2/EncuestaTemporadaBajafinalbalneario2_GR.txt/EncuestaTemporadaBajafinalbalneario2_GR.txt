@@ -1,0 +1,21 @@
+ID_Word	ID_Synset	Synset
+34947	34054	water.n.01	# agua
+34955	34057	road.n.01	# carretera
+34946	None	None	# de
+34951	None	None	# 
+34962	None	None	# 
+34963	None	None	# el
+34949	None	None	# 
+34958	None	None	# en
+34960	34059	entrance.n.01	# entrada
+34948	34055	step.n.04	# escalera
+34964	34060	hostel.n.01	# hospedaje
+34950	34056	game.n.01	# juego
+34945	34053	plaything.n.01	# juguete
+34959	None	None	# 
+34954	None	None	# el
+34961	None	None	# mas
+34953	None	None	# 
+34957	34058	umbrella.n.01	# paraguas
+34952	None	None	# que
+34956	None	None	# y

@@ -1,0 +1,584 @@
+ID_Word	ID_Synset	Synset
+37124	None	None	# ,
+37128	None	None	# ,
+37130	None	None	# ,
+37281	35160	one.s.01	# 
+37308	35174	eleven.s.01	# 
+37411	35221	twenty.s.01	# 
+37621	None	None	# 
+37228	None	None	# a
+37396	None	None	# a
+37496	None	None	# a
+37514	None	None	# a
+37372	35203	switch.v.03	# abandonar
+37362	35199	fit.a.01	# adecuar
+37354	None	None	# 
+37127	35083	water.n.01	# agua
+37048	None	None	# a+el
+37355	None	None	# a+el
+37398	None	None	# a+el
+37440	None	None	# a+el
+37442	None	None	# a+el
+37560	None	None	# a+el
+37218	None	None	# alguno
+37222	None	None	# alguno
+37092	35065	nutriment.n.01	# alimento
+37434	35230	alternating.a.01	# alternar
+37481	None	None	# 
+37423	35227	fit.a.01	# apropiar
+37489	35260	better.v.02	# arreglar
+37300	None	None	# 
+37083	35062	toilet.n.02	# asear
+37458	35243	toilet.n.02	# asear
+37241	35139	watchfulness.n.02	# 
+37250	35145	watchfulness.n.02	# 
+37267	35155	watchfulness.n.02	# 
+37350	35194	watchfulness.n.02	# 
+37597	35318	attractiveness.n.02	# atracción
+37559	35294	help.v.01	# ayudar
+37166	35100	short.a.03	# baja
+37383	35210	descend.v.01	# bajar
+37061	35050	depository_financial_institution.n.01	# banco
+37086	35063	tray.n.01	# bandeja
+37137	35088	bathtub.n.01	# bañar
+37175	35106	bathtub.n.01	# bañar
+37076	35058	bathtub.n.01	# baño
+37154	35097	toast.v.02	# beber
+37549	35290	arm.n.01	# brazo
+37165	35099	bus.n.01	# bus
+37334	None	None	# 
+37274	None	None	# 
+37470	35250	callosity.n.01	# callosidad
+37146	35093	pickup.n.01	# camioneta
+37244	35141	ability.n.02	# capacidad
+37572	35301	ability.n.02	# capacidad
+37068	35053	appearance.n.01	# cara
+37095	35067	expensive.a.01	# caro
+37064	35051	shower.n.04	# cascada
+37603	35322	shower.n.04	# cascada
+37073	35056	sneak_thief.n.01	# chorizo
+37378	35206	customer.n.01	# cliente
+37607	35326	gain.v.08	# cobrar
+37156	35098	car.n.01	# coche
+37343	35191	car.n.01	# coche
+37149	35094	collaborate.v.01	# colaborar
+37337	35187	vertex.n.02	# colmar
+37404	35218	vertex.n.02	# colmar
+37455	35241	put.v.01	# colocar
+37188	35115	eat.v.02	# comer
+37397	35215	eat.v.02	# comer
+37276	35158	meal.n.01	# comedir
+37449	35238	eat.v.02	# comer
+37201	35121	buy.v.01	# comprar
+37205	None	None	# con
+37234	None	None	# con
+37312	None	None	# con
+37524	None	None	# con
+37437	35233	driver.n.01	# conductor
+37365	35200	driver.n.01	# conductor
+37394	35213	driver.n.01	# conductor
+37420	35225	react.v.01	# contestar
+37243	35140	oversee.v.01	# controlar
+37204	35122	amity.n.01	# cordialidad
+37103	35072	thing.n.08	# cosa
+37144	35092	expensive.a.01	# costoso
+37150	None	None	# cuando
+37116	35078	state.v.01	# contar
+37233	35134	carry_through.v.01	# cumplir
+37430	35228	give.v.10	# dar
+37050	None	None	# de
+37056	None	None	# de
+37062	None	None	# de
+37084	None	None	# de
+37090	None	None	# de
+37098	None	None	# de
+37126	None	None	# de
+37136	None	None	# de
+37174	None	None	# de
+37184	None	None	# de
+37208	None	None	# de
+37237	None	None	# de
+37247	None	None	# de
+37254	None	None	# de
+37272	None	None	# de
+37280	None	None	# de
+37293	None	None	# de
+37309	None	None	# de
+37316	None	None	# de
+37327	None	None	# de
+37346	None	None	# de
+37351	None	None	# de
+37375	None	None	# de
+37390	None	None	# de
+37410	None	None	# de
+37416	None	None	# de
+37421	None	None	# de
+37444	None	None	# de
+37463	None	None	# de
+37465	None	None	# de
+37479	None	None	# de
+37483	None	None	# de
+37499	None	None	# de
+37522	None	None	# de
+37537	None	None	# de
+37544	None	None	# de
+37617	None	None	# de
+37380	35208	owe.v.01	# debe
+37507	35271	owe.v.01	# debe
+37488	35259	owe.v.01	# deber
+37176	None	None	# 
+37297	35168	put.v.01	# dejar
+37453	35239	put.v.01	# dejar
+37080	None	None	# de+el
+37270	None	None	# de+el
+37357	None	None	# de+el
+37278	35159	postpone.v.01	# demorar
+37476	35253	deplorable.s.01	# deplorable
+37570	35300	deplorable.s.01	# deplorable
+37238	35136	deduction.n.02	# descontar
+37431	None	None	# desde
+37160	None	None	# 
+37167	35101	idle.a.01	# desocupar
+37439	None	None	# 
+37260	35151	refund.v.01	# devolver
+37599	35319	talk.v.02	# decir
+37158	None	None	# 
+37257	35149	talk.v.02	# decir
+37446	35236	talk.v.02	# decir
+37551	35291	talk.v.02	# decir
+37262	35152	money.n.01	# dinero
+37122	35080	disabled.s.01	# discapacitado
+37246	35142	handiness.n.02	# disponibilidad
+37097	35069	attitude.n.01	# disposición
+37133	35086	entertainment.n.01	# diversión
+37317	35178	age.n.03	# edad
+37172	None	None	# 
+37054	None	None	# el
+37072	None	None	# el
+37078	None	None	# el
+37108	None	None	# el
+37117	None	None	# el
+37134	None	None	# el
+37159	None	None	# el
+37164	None	None	# el
+37235	None	None	# el
+37261	None	None	# el
+37286	None	None	# el
+37305	None	None	# el
+37336	None	None	# el
+37373	None	None	# el
+37377	None	None	# el
+37403	None	None	# el
+37432	None	None	# el
+37528	None	None	# el
+37548	None	None	# el
+37545	35289	pregnancy.n.01	# embarazar
+37255	35148	employee.n.01	# empleado
+37042	None	None	# en
+37115	None	None	# en
+37155	None	None	# en
+37189	None	None	# en
+37217	None	None	# en
+37285	None	None	# en
+37367	None	None	# en
+37471	None	None	# en
+37509	None	None	# en
+37542	None	None	# en
+37606	35325	ignite.v.01	# encender
+37199	None	None	# 
+37310	None	None	# 
+37070	35054	entrance.n.01	# entrada
+37339	35188	entrance.n.01	# entrada
+37492	35262	entrance.n.01	# entrada
+37511	35273	entrance.n.01	# entrada
+37142	35090	entrance.n.01	# entrada
+37290	35164	delivery.n.01	# entrega
+37047	35046	record.v.01	# entrar
+37216	35126	baggage.n.01	# equipaje
+37284	35162	err.v.01	# equivocar
+37335	35186	be.v.01	# ser
+37360	35198	be.v.01	# ser
+37460	35245	be.v.01	# ser
+37475	35252	be.v.01	# ser
+37519	35277	be.v.01	# ser
+37569	35299	be.v.01	# ser
+37576	35304	be.v.01	# ser
+37584	35310	be.v.01	# ser
+37586	35312	be.v.01	# ser
+37611	35330	be.v.01	# ser
+37474	None	None	# ese
+37381	35209	ask.v.04	# esperar
+37408	35220	ask.v.04	# esperar
+37574	35303	be.v.01	# estar
+37448	35237	be.v.01	# estar
+37543	35288	state.n.02	# estado
+37311	35175	be.v.01	# estar
+37093	None	None	# 
+37563	None	None	# 
+37040	35043	be.v.01	# estar
+37181	35110	be.v.01	# estar
+37508	35272	be.v.01	# estar
+37506	None	None	# este
+37517	None	None	# este
+37605	35324	be.v.01	# estar
+37500	35267	evaluate.v.02	# evaluar
+37620	35334	exist.v.01	# existir
+37265	None	None	# 
+37462	35246	lack.n.01	# falta
+37478	35254	lack.n.01	# falta
+37521	35278	lack.n.01	# falta
+37454	35240	favor.n.01	# favor
+37291	None	None	# 
+37575	None	None	# 
+37295	35166	gain.v.08	# gana
+37468	35249	people.n.01	# gente
+37502	35268	people.n.01	# gente
+37135	35087	ski_cap.n.01	# gorro
+37173	35105	ski_cap.n.01	# gorro
+37253	35147	unpleasant.a.01	# grosero
+37081	None	None	# 
+37555	None	None	# 
+37588	None	None	# 
+37591	None	None	# 
+37441	None	None	# 
+37200	35120	make.v.03	# hacer
+37407	35219	make.v.03	# hacer
+37151	35095	be.v.03	# haber
+37466	35248	sanitariness.n.01	# higiene
+37480	35255	sanitariness.n.01	# higiene
+37314	35176	son.n.01	# hijo
+37443	35234	man.n.01	# hombre
+37045	None	None	# 
+37282	35161	date.n.03	# hora
+37498	35266	date.n.03	# hora
+37329	None	None	# 
+37307	35173	presently.r.02	# hoy
+37568	35298	impression.n.01	# impresión
+37577	None	None	# 
+37612	None	None	# 
+37540	35287	enter.v.01	# ingresar
+37356	35196	income.n.01	# ingresar
+37573	35302	install.v.01	# instalar
+37566	None	None	# 
+37057	None	None	# el
+37069	None	None	# el
+37145	None	None	# el
+37273	None	None	# el
+37275	None	None	# el
+37289	None	None	# el
+37302	None	None	# el
+37333	None	None	# el
+37349	None	None	# el
+37352	None	None	# el
+37361	None	None	# el
+37467	None	None	# el
+37472	None	None	# el
+37477	None	None	# el
+37491	None	None	# el
+37497	None	None	# el
+37501	None	None	# el
+37510	None	None	# el
+37515	None	None	# el
+37535	None	None	# el
+37571	None	None	# el
+37051	None	None	# el
+37063	None	None	# el
+37085	None	None	# el
+37099	None	None	# el
+37120	None	None	# el
+37141	None	None	# el
+37168	None	None	# el
+37185	None	None	# el
+37190	None	None	# el
+37206	None	None	# el
+37229	None	None	# el
+37424	None	None	# el
+37525	None	None	# el
+37596	None	None	# el
+37602	None	None	# el
+37615	None	None	# el
+37484	35257	cleaning.n.01	# limpieza
+37332	35185	arrive.v.01	# llegar
+37325	35183	transport.v.02	# llevar
+37107	35074	transport.v.02	# llevar
+37554	None	None	# el
+37044	None	None	# el
+37060	None	None	# el
+37075	None	None	# el
+37088	None	None	# el
+37091	None	None	# el
+37209	None	None	# el
+37299	None	None	# el
+37364	None	None	# el
+37393	None	None	# el
+37414	None	None	# el
+37452	None	None	# el
+37557	None	None	# el
+37358	None	None	# 
+37494	35264	bad.a.01	# mal
+37264	35154	bad.a.01	# malo
+37294	35165	bad.a.01	# malo
+37422	35226	manner.n.01	# manera
+37055	None	None	# 
+37066	None	None	# mas
+37102	None	None	# mas
+37162	None	None	# mas
+37203	None	None	# mas
+37279	None	None	# mas
+37326	None	None	# mas
+37387	None	None	# mas
+37409	None	None	# mas
+37565	None	None	# mas
+37541	None	None	# 
+37527	35281	major.a.03	# mayor
+37112	None	None	# me
+37195	None	None	# me
+37401	None	None	# me
+37485	None	None	# me
+37531	None	None	# me
+37546	None	None	# me
+37096	35068	better.r.01	# mejor
+37259	35150	better.r.01	# mejor
+37341	35190	better.a.01	# mejor
+37490	35261	better.r.01	# mejor
+37249	35144	improvement.n.02	# mejora
+37053	35048	better.v.02	# mejorar
+37071	35055	better.v.02	# mejorar
+37074	35057	better.v.02	# mejorar
+37077	35059	better.v.02	# mejorar
+37082	35061	better.v.02	# mejorar
+37087	35064	better.v.02	# mejorar
+37240	35138	better.v.02	# mejorar
+37610	35329	note.v.01	# mencionar
+37315	35177	less.a.01	# menor
+37100	35070	dining_table.n.01	# mesa
+37248	35143	dining_table.n.01	# mesa
+37567	None	None	# mi
+37616	35331	thousand.n.01	# mil
+37412	35222	while.n.01	# minuto
+37313	None	None	# mi
+37319	None	None	# mi
+37399	35216	like.a.02	# mismo
+37227	35131	perplex.v.01	# molestar
+37340	35189	a_lot.r.01	# mucho
+37129	35084	furniture.n.01	# moblar
+37052	35047	woman.n.01	# mujer
+37094	35066	well.r.07	# muy
+37143	35091	well.r.07	# muy
+37170	35103	well.r.07	# muy
+37263	35153	well.r.07	# muy
+37493	35263	well.r.07	# muy
+37353	35195	child.n.01	# niño
+37152	35096	child.n.01	# niño
+37046	35045	not.r.01	# no
+37111	35076	not.r.01	# no
+37180	35109	not.r.01	# no
+37187	35114	not.r.01	# no
+37231	35133	not.r.01	# no
+37296	35167	not.r.01	# no
+37322	35180	not.r.01	# no
+37331	35184	not.r.01	# no
+37359	35197	not.r.01	# no
+37371	35202	not.r.01	# no
+37379	35207	not.r.01	# no
+37419	35224	not.r.01	# no
+37435	35231	not.r.01	# no
+37513	35274	not.r.01	# no
+37538	35285	not.r.01	# no
+37562	35296	not.r.01	# no
+37579	35305	not.r.01	# no
+37583	35309	not.r.01	# no
+37600	35320	not.r.01	# no
+37604	35323	not.r.01	# no
+37609	35328	not.r.01	# no
+37482	35256	standard.n.01	# norma
+37406	None	None	# no
+37427	None	None	# no
+37429	None	None	# no
+37104	None	None	# o
+37105	35073	object.n.01	# objeto
+37139	None	None	# obligatorio
+37178	35108	obligatory.a.01	# obligatorio
+37219	35127	opportunity.n.01	# ocasión
+37239	35137	offer.v.02	# ofrecer
+37456	35242	arrangement.n.03	# orden
+37464	35247	arrangement.n.03	# orden
+37303	35170	arrangement.n.03	# organización
+37589	35314	urine.n.01	# orinar
+37106	None	None	# para
+37119	None	None	# para
+37179	None	None	# para
+37220	None	None	# para
+37342	None	None	# para
+37382	None	None	# para
+37438	None	None	# para
+37614	None	None	# para
+37402	35217	look.v.02	# parecer
+37486	35258	look.v.02	# parecer
+37593	35315	boyfriend.n.01	# pareja
+37433	35229	parking_lot.n.01	# 
+37561	35295	parking_lot.n.01	# 
+37269	35156	region.n.01	# parte
+37287	35163	necessitate.v.01	# pedido
+37587	35313	dangerous.a.01	# peligroso
+37183	35112	hair.n.01	# pelo
+37041	35044	unsettled.a.01	# pendiente
+37564	35297	unsettled.a.01	# pendiente
+37459	35244	continuous.a.01	# permanente
+37366	None	None	# 
+37230	35132	person.n.01	# persona
+37271	35157	force.n.04	# personal
+37582	35308	force.n.04	# personal
+37121	35079	person.n.01	# persona
+37526	35280	person.n.01	# persona
+37618	35332	person.n.01	# persona
+37266	None	None	# 
+37392	None	None	# 
+37473	35251	swimming_pool.n.01	# piscina
+37131	35085	swimming_pool.n.01	# piscina
+37169	35102	swimming_pool.n.01	# piscina
+37186	35113	swimming_pool.n.01	# piscina
+37191	35116	swimming_pool.n.01	# piscina
+37236	35135	plan.n.01	# plan
+37539	35286	displace.v.03	# poder
+37197	None	None	# por
+37268	None	None	# por
+37301	None	None	# porque
+37550	None	None	# porque
+37418	None	None	# 
+37123	35081	price.n.02	# precio
+37223	35129	clothing.n.01	# prenda
+37089	None	None	# 
+37067	35052	ad.n.01	# publicidad
+37198	35119	ad.n.01	# publicidad
+37213	35124	displace.v.03	# poder
+37058	35049	orifice.n.01	# puerta
+37157	None	None	# pues
+37043	None	None	# que
+37110	None	None	# que
+37211	None	None	# que
+37226	None	None	# que
+37256	None	None	# que
+37258	None	None	# que
+37348	None	None	# que
+37363	None	None	# que
+37385	None	None	# que
+37405	None	None	# que
+37426	None	None	# que
+37428	None	None	# que
+37447	None	None	# que
+37451	None	None	# que
+37487	None	None	# que
+37530	None	None	# que
+37552	None	None	# que
+37558	None	None	# que
+37578	None	None	# que
+37598	None	None	# que
+37613	None	None	# que
+37196	None	None	# quejar
+37533	None	None	# quien
+37469	None	None	# quintar
+37388	None	None	# 
+37536	None	None	# 
+37622	35335	shower.n.02	# regadera
+37523	35279	respect.n.03	# respetar
+37252	35146	reaction.n.03	# respuesta
+37532	35283	check.v.01	# revisar
+37347	35193	wheel.n.01	# rodar
+37182	35111	remove.v.01	# sacar
+37221	35128	remove.v.01	# sacar
+37386	35211	salt.v.04	# salar
+37516	35275	departure.n.01	# salida
+37585	35311	healthy.a.01	# saludable
+37547	None	None	# 
+37232	None	None	# se
+37277	None	None	# se
+37283	None	None	# se
+37445	35235	assurance.n.01	# seguridad
+37177	35107	be.v.01	# ser
+37306	35172	service.n.01	# servicio
+37495	35265	service.n.01	# servicio
+37389	None	None	# 
+37595	35317	sex.n.02	# sexo
+37529	35282	mister.n.01	# señor
+37415	35223	mister.n.01	# señor
+37207	35123	girl.n.01	# señorito
+37163	None	None	# si
+37345	35192	chair.n.01	# silla
+37224	None	None	# sin
+37079	35060	arrangement.n.03	# sistema
+37369	35201	topographic_point.n.01	# sitiar
+37374	35204	topographic_point.n.01	# sitiar
+37214	35125	necessitate.v.01	# solicitar
+37504	35269	unaccompanied.a.01	# solo
+37619	35333	unaccompanied.a.01	# solo
+37215	None	None	# su
+37368	None	None	# su
+37395	35214	increase.v.02	# subir
+37113	None	None	# 
+37298	35169	increase.v.02	# subir
+37171	35104	dirty.a.01	# sucio
+37320	35179	father-in-law.n.01	# suegro
+37581	35307	sufficient.a.01	# suficiente
+37304	35171	supply.v.01	# suministrar
+37608	35327	fee.n.01	# tarifa
+37400	None	None	# 
+37125	35082	temperature.n.01	# temperatura
+37323	35181	give_birth.v.01	# tener
+37101	35071	give_birth.v.01	# tener
+37114	35077	give_birth.v.01	# tener
+37225	35130	give_birth.v.01	# tener
+37580	35306	give_birth.v.01	# tener
+37436	35232	tapeworm.n.01	# tenia
+37534	35284	tapeworm.n.01	# tenia
+37594	35316	give_birth.v.01	# tener
+37192	35117	thermal.a.01	# termal
+37147	None	None	# 
+37202	None	None	# tiquete
+37505	35270	turnstile.n.01	# torniquete
+37376	35205	occupation.n.01	# trabajar
+37425	None	None	# transportación
+37109	35075	conveyance.n.03	# transportar
+37324	35182	conveyance.n.03	# transportar
+37391	35212	conveyance.n.03	# transportar
+37118	None	None	# trasporte
+37518	35276	disturbance.n.03	# tumulto
+37194	35118	car.n.01	# turismo
+37321	None	None	# o
+37503	None	None	# uno
+37328	None	None	# unir
+37338	None	None	# unir
+37461	None	None	# unir
+37520	None	None	# unir
+37592	None	None	# unir
+37148	None	None	# 
+37212	None	None	# unir
+37138	35089	use.v.01	# utilizar
+37049	None	None	# 
+37210	None	None	# 
+37601	35321	perceive.v.01	# ver
+37556	35293	perceive.v.01	# ver
+37059	None	None	# y
+37065	None	None	# y
+37132	None	None	# y
+37140	None	None	# y
+37153	None	None	# y
+37161	None	None	# y
+37193	None	None	# y
+37242	None	None	# y
+37245	None	None	# y
+37251	None	None	# y
+37288	None	None	# y
+37292	None	None	# y
+37318	None	None	# y
+37330	None	None	# y
+37344	None	None	# y
+37370	None	None	# y
+37384	None	None	# y
+37413	None	None	# y
+37450	None	None	# y
+37457	None	None	# y
+37512	None	None	# y
+37590	None	None	# y
+37553	35292	already.r.01	# ya
+37417	None	None	# 
