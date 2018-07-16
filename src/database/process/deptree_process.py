@@ -6,15 +6,21 @@ from src.database.classes.classes import DepTreeNode
 
 
 def add_dep_tree_from_sentences(sentences, print_result=False):
-
     """
-    This function generates the dependency trees of the specified sentences and add the results to the database.
+    Generates the dependency trees of the specified :class:`Sentence` s and add the results to the
+    database.\n
     Sentences are firstly converted into "raw" Freeling sentences (without any analysis) and then all the necessary
-    Freeling processes are performed.
-    The PoS_tag of words are also computed and added to the database in this function.
-    :param sentences: Sentences to process
-    :param print_result: Show analysis results
-    :return: nothing
+    Freeling processes are performed.\n
+    The PoS_tag of words are also computed and added to the database in this function.\n
+
+    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+
+    .. note:: This process can be quite long. (at least a few minutes)
+
+    :param sentences: :class:`Sentence` s to process
+    :type sentences: :obj:`list` of :class:`Sentence`
+    :param print_result: Print PoS_tags and labels associated to each :class:`Word`
+    :type print_result: boolean
     """
 
     print("Loading Freeling Modules...")

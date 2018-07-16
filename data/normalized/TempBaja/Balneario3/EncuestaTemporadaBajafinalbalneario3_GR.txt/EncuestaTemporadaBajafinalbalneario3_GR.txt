@@ -1,0 +1,5 @@
+0	billar
+1	transporte
+2	juegos de mesa
+3	juegos de mesa
+4	barra de trago

@@ -6,12 +6,19 @@ from src.database.classes.classes import Sentence
 
 def add_sentences_from_reviews(reviews):
     """
-    Performs the first Freeling processes applied to each normalize review, contained as a string in Review object.
-    Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.
+
+    Performs the first Freeling process applied to each normalized review.\n
+    Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.\n
     A representation of the Sentences and their Words (tokens) are then added to corresponding tables.
-    :param reviews: reviews to process and add to database
-    :return: added_sentences
+
+    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+
+    :param reviews: :class:`Review` s to process
+    :type reviews: :obj:`list` of :class:`Review`
+    :return: added :class:`Sentence` s
+    :rtype: :obj:`list` of :class:`Sentence`
     """
+
     tk, sp = init_freeling()
 
     conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))

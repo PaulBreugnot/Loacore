@@ -3,14 +3,19 @@ import sqlite3 as sql
 import ressources.pyfreeling as freeling
 
 
-def add_lemmas_to_sentences(sentences, print_lemmas = False):
+def add_lemmas_to_sentences(sentences, print_lemmas=False):
     """
-    Lemmatization.
-    This function will perform a Freeling process to add Lemmas to words.
-    However, the argument is actually a sentence to better fit Freeling usage.
-    Our Sentence will be converted to a Freeling Sentence before processing.
-    :param sentences: A list of src.database.classes.Sentence
-    :return:
+
+    Performs a Freeling process to add lemmas to :class:`Word` s.\n
+    However, the argument is actually a sentence to better fit Freeling usage.\n
+    Our :class:`Sentence` s will be converted to a Freeling Sentences before processing.
+
+    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+
+    :param sentences: :class:`Sentence` s to process
+    :type sentences: :obj:`list` of :class:`Sentence`
+    :param print_lemmas: If True, print lemmatization results
+    :type print_lemmas: boolean
     """
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]

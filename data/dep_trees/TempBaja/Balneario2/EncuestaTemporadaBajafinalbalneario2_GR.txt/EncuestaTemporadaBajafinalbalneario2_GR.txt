@@ -1,0 +1,45 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : juguetes de agua
++-------------------------------------------------------------------------------------------
+juguetes (sentence, NCMP000, juguete)
+    de (sp, None, de)
+        agua (sn, NCCS000, agua)
+
++-------------------------------------------------------------------------------------------
+| File Index : 1
+| Sentence : escaleras electricas
++-------------------------------------------------------------------------------------------
+escaleras (sentence, NCFP000, escalera)
+    electricas (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 2
+| Sentence : juegos didacticos
++-------------------------------------------------------------------------------------------
+juegos (sentence, NCMP000, juego)
+    didacticos (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 3
+| Sentence : que padimentaran la carretera y paraguas en ka entrada
++-------------------------------------------------------------------------------------------
+padimentaran (sentence, None, )
+    que (conj, None, que)
+    carretera (cd, NCFS000, carretera)
+        la (spec, None, el)
+        y (coord, None, y)
+        paraguas (sn, NCMN000, paraguas)
+    en (cc, None, en)
+        ka (sn, None, )
+            entrada (s.a, NCFS000, entrada)
+
++-------------------------------------------------------------------------------------------
+| File Index : 4
+| Sentence : mas economico el hospedaje
++-------------------------------------------------------------------------------------------
+economico (sentence, None, )
+    mas (coord, None, mas)
+    hospedaje (sn, NCMS000, hospedaje)
+        el (spec, None, el)
+

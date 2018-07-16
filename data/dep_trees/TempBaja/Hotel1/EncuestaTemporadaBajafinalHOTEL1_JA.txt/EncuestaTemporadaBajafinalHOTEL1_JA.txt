@@ -1,0 +1,9 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : que terminen la construccion
++-------------------------------------------------------------------------------------------
+terminen (sentence, VMSP3P0, terminar)
+    que (conj, None, que)
+    construccion (cd, None, )
+        la (spec, None, el)
+

@@ -1,0 +1,66 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : en el manejo de las imformaciones en internet
++-------------------------------------------------------------------------------------------
+en (sentence, None, en)
+    manejo (sn, NCMS000, manejar)
+        el (spec, None, el)
+        de (sp, None, de)
+            imformaciones (sn, None, )
+                las (spec, None, el)
+                en (sp, None, en)
+                    internet (sn, NCCN000, internet)
+
++-------------------------------------------------------------------------------------------
+| File Index : 1
+| Sentence : neceita un trasporte
++-------------------------------------------------------------------------------------------
+neceita (sentence, None, )
+    trasporte (cd, None, trasporte)
+        un (spec, None, uno)
+
++-------------------------------------------------------------------------------------------
+| File Index : 2
+| Sentence : servicios para personas que sufren de invobilidad
++-------------------------------------------------------------------------------------------
+servicios (sentence, NCMP000, servicio)
+    para (sp, None, para)
+        personas (sn, NCFP000, persona)
+    sufren (S, VMIP3P0, sufrir)
+        que (suj, None, que)
+        de (cc, None, de)
+            invobilidad (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 3
+| Sentence : la atencion al cliente
++-------------------------------------------------------------------------------------------
+atencion (sentence, NCFS000, )
+    la (spec, None, el)
+    al (sp, None, a+el)
+        cliente (sn, NCCS000, cliente)
+
++-------------------------------------------------------------------------------------------
+| File Index : 4
+| Sentence : toballas
++-------------------------------------------------------------------------------------------
+toballas (sentence, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 5
+| Sentence : ruta para el servicuo del hotel
++-------------------------------------------------------------------------------------------
+ruta (sentence, NCFS000, ruta)
+    para (sp, None, para)
+        servicuo (sn, None, )
+            el (spec, None, el)
+            del (sp, None, de+el)
+                hotel (sn, NCMS000, hotel)
+
++-------------------------------------------------------------------------------------------
+| File Index : 6
+| Sentence : costos altos
++-------------------------------------------------------------------------------------------
+costos (sentence, NCMP000, costo)
+    altos (s.a, AQ0MP00, alto)
+

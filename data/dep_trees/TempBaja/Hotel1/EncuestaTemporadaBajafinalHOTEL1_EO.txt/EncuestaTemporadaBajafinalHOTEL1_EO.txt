@@ -1,0 +1,20 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : zona de juegos ajedrez juegos de mesa
++-------------------------------------------------------------------------------------------
+zona (sentence, NCFS000, zona)
+    de (sp, None, de)
+        juegos (sn, NCMP000, juego)
+            ajedrez (s.a, NCMS000, ajedrez)
+            juegos (s.a, NCMP000, juego)
+    de (sp, None, de)
+        mesa (sn, NCFS000, mesa)
+
++-------------------------------------------------------------------------------------------
+| File Index : 1
+| Sentence : relajacion y privacidad
++-------------------------------------------------------------------------------------------
+relajacion (sentence, None, )
+    y (coord, None, y)
+    privacidad (grup.nom, NCFS000, privacidad)
+

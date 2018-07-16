@@ -4,6 +4,28 @@ from src.database.classes.classes import File
 
 
 def add_files(file_paths):
+    """
+    This function performs the full process on all the file_paths specified, and add the results to the corresponding
+    tables.
+
+    :param file_paths: Paths used to load files
+    :type file_paths: :obj:`list` of :obj:`path-like object`
+
+    :Example:
+
+    Process and load file from the relative directory *data/raw/*
+
+    .. code-block:: python
+
+       file_paths = []
+       for dirpath, dirnames, filenames in os.walk(os.path.join('data', 'raw')):
+           for name in filenames:
+               file_paths.append(os.path.join(dirpath, name))
+
+       file_process.add_files(file_paths)
+
+    """
+
     conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
     c = conn.cursor()
 

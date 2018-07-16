@@ -1,0 +1,1202 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : el mismo servicio
++-------------------------------------------------------------------------------------------
+servicio (sentence, NCMS000, servicio)
+    el (spec, None, el)
+        mismo (d, AQ0MS00, mismo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 1
+| Sentence : caminos con mas señalizacion para hacer recorridos
++-------------------------------------------------------------------------------------------
+caminos (sentence, NCMP000, camino)
+    con (sp, None, con)
+        mas (coord, None, mas)
+        señalizacion (sn, None, )
+            para (sp, None, para)
+                recorridos (S, VMP00PM, recorrer)
+                    hacer (infinitiu, VMN0000, hacer)
+
++-------------------------------------------------------------------------------------------
+| File Index : 2
+| Sentence : sanitario cerca a la piscina
++-------------------------------------------------------------------------------------------
+sanitario (sentence, AQ0MS00, sanitario)
+    cerca (sadv, RG, cerca)
+    a (sp, None, a)
+        piscina (sn, NCFS000, piscina)
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 3
+| Sentence : mas opciones de coomida y recreacion
++-------------------------------------------------------------------------------------------
+opciones (sentence, NCFP000, opción)
+    mas (coord, None, mas)
+    de (sp, None, de)
+        coomida (sn, None, )
+            y (coord, None, y)
+            recreacion (grup.nom, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 4
+| Sentence : todo perfecto
++-------------------------------------------------------------------------------------------
+perfecto (sentence, AQ0MS00, perfecto)
+    todo (spec, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 5
+| Sentence : una psicina de agua fria recreacion para niños
++-------------------------------------------------------------------------------------------
+psicina (sentence, None, )
+    una (spec, None, unir)
+    de (sp, None, de)
+        agua (sn, NCCS000, agua)
+            fria (s.a, None, )
+    recreacion (sn, None, )
+        para (sp, None, para)
+            niños (sn, NCMP000, niño)
+
++-------------------------------------------------------------------------------------------
+| File Index : 6
+| Sentence : mejorar baños
++-------------------------------------------------------------------------------------------
+mejorar (sentence, VMN0000, mejorar)
+    baños (cd, NCMP000, baño)
+
++-------------------------------------------------------------------------------------------
+| File Index : 7
+| Sentence : mas piscinas
++-------------------------------------------------------------------------------------------
+piscinas (sentence, NCFP000, piscina)
+    mas (coord, None, mas)
+
++-------------------------------------------------------------------------------------------
+| File Index : 8
+| Sentence : baño en todas las habitaciones
++-------------------------------------------------------------------------------------------
+baño (sentence, NCMS000, bañar)
+    en (sp, None, en)
+        habitaciones (sn, NCFP000, habitación)
+            las (spec, None, el)
+                todas (d, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 9
+| Sentence : mejorr muebles en la habitacion
++-------------------------------------------------------------------------------------------
+mejorr (sentence, None, )
+    muebles (cd, NCMP000, moblar)
+    en (cc, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 10
+| Sentence : plan todo incluido
++-------------------------------------------------------------------------------------------
+plan (sentence, NCMS000, plan)
+    incluido (S, VMP00SM, incluir)
+        todo (suj, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 11
+| Sentence : broma de furtas en el comedor
++-------------------------------------------------------------------------------------------
+broma (sentence, NCFS000, broma)
+    de (sp, None, de)
+        furtas (sn, None, )
+    en (sp, None, en)
+        comedor (sn, NCMS000, comedor)
+            el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 12
+| Sentence : mas disponibilidad en el hotel para ofrecer comidas saludables y sercios en horarios diferentes a los establecidos por el hotel
++-------------------------------------------------------------------------------------------
+disponibilidad (sentence, NCFS000, disponibilidad)
+    mas (coord, None, mas)
+    en (sp, None, en)
+        hotel (sn, NCMS000, hotel)
+            el (spec, None, el)
+            para (sp, None, para)
+                ofrecer (S, VMN0000, ofrecer)
+                    comidas (cd, NCFP000, comedir)
+                        saludables (s.a, AQ0CP00, saludable)
+                        y (coord, None, y)
+                        sercios (grup.nom, None, )
+                            en (sp, None, en)
+                                horarios (sn, NCMP000, horario)
+                                    diferentes (s.a, AQ0CP00, diferente)
+                                        a (sp, None, a)
+                                            establecidos (sn, VMP00PM, establecer)
+                                                los (spec, None, el)
+                                                por (cag, None, por)
+                                                    hotel (sn, NCMS000, hotel)
+                                                        el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 13
+| Sentence : un hamaca
++-------------------------------------------------------------------------------------------
+hamaca (sentence, NCFS000, hamaca)
+    un (spec, None, uno)
+
++-------------------------------------------------------------------------------------------
+| File Index : 14
+| Sentence : una mejor administracion en el sitio se lo merece
++-------------------------------------------------------------------------------------------
+merece (sentence, VMIP3S0, merecer)
+    administracion (suj, None, )
+        una (spec, None, unir)
+        mejor (s.a, AQ0CS00, mejor)
+        en (sp, None, en)
+            sitio (sn, NCMS000, sitiar)
+                el (spec, None, el)
+    se (pass, None, se)
+    lo (cd, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 15
+| Sentence : el pesimo servicio recibido
++-------------------------------------------------------------------------------------------
+servicio (sentence, NCMS000, servicio)
+    el (spec, None, el)
+    pesimo (s.a, None, )
+    recibido (S, VMP00SM, recibir)
+
++-------------------------------------------------------------------------------------------
+| File Index : 16
+| Sentence : mayor precion anbiental
++-------------------------------------------------------------------------------------------
+precion (sentence, None, )
+    mayor (s.a, AQ0CS00, mayor)
+    anbiental (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 17
+| Sentence : control a huspedes maleducados y bullosos
++-------------------------------------------------------------------------------------------
+control (sentence, NCMS000, control)
+    a (sp, None, a)
+        huspedes (sn, None, )
+            maleducados (s.a, AQ0MP00, maleducado)
+                y (coord, None, y)
+                bullosos (grup.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 18
+| Sentence : lastima atencion
++-------------------------------------------------------------------------------------------
+lastima (sentence, VMIP3S0, lastimar)
+    atencion (cd, NCFS000, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 19
+| Sentence : musica a volumen bajo y acorde a la naturaleza
++-------------------------------------------------------------------------------------------
+musica (sentence, VMIP3S0, musicar)
+    a (cd, None, a)
+        volumen (sn, NCMS000, volumen)
+            bajo (s.a, AQ0MS00, bajar)
+                y (coord, None, y)
+                acorde (grup.a, None, acorde)
+        a (sp, None, a)
+            naturaleza (sn, NCFS000, naturaleza)
+                la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 20
+| Sentence : creo que como esta es excelnte
++-------------------------------------------------------------------------------------------
+creo (sentence, VMIP1S0, crear)
+    es (cd, VSIP3S0, ser)
+        que (conj, None, que)
+        como (conj, None, comer)
+        esta (suj, None, este)
+        excelnte (cc, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 21
+| Sentence : todo bien
++-------------------------------------------------------------------------------------------
+todo (sentence, None, todo)
+    bien (sadv, RG, bien)
+
++-------------------------------------------------------------------------------------------
+| File Index : 22
+| Sentence : invitacion gastos pagos
++-------------------------------------------------------------------------------------------
+invitacion (sentence, None, )
+    gastos (sn, NCMP000, gasto)
+        pagos (s.a, NCMP000, pago)
+
++-------------------------------------------------------------------------------------------
+| File Index : 23
+| Sentence : mejorar coordinacion entre recepcion y la oficina de spa
++-------------------------------------------------------------------------------------------
+mejorar (sentence, VMN0000, mejorar)
+    coordinacion (cd, None, )
+        entre (sp, None, entrar)
+            recepcion (sn, None, )
+                y (coord, None, y)
+                oficina (sn, NCFS000, oficina)
+                    la (spec, None, el)
+                    de (sp, None, de)
+                        spa (sn, NCFS000, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 24
+| Sentence : ducha en la habitacion
++-------------------------------------------------------------------------------------------
+ducha (sentence, NCFS000, ducha)
+    en (sp, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 25
+| Sentence : mejorar atencion buena alimentacion
++-------------------------------------------------------------------------------------------
+mejorar (sentence, VMN0000, mejorar)
+    atencion (cd, NCFS000, )
+        buena (s.a, AQ0FS00, bueno)
+        alimentacion (grup.nom, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 26
+| Sentence : mejorar servicio de restaurante
++-------------------------------------------------------------------------------------------
+mejorar (sentence, VMN0000, mejorar)
+    servicio (cd, NCMS000, servicio)
+        de (sp, None, de)
+            restaurante (sn, NCMS000, restaurante)
+
++-------------------------------------------------------------------------------------------
+| File Index : 27
+| Sentence : recreacion para los niños
++-------------------------------------------------------------------------------------------
+recreacion (sentence, None, )
+    para (sp, None, para)
+        niños (sn, NCMP000, niño)
+            los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 28
+| Sentence : paseo o rutra ecologica estaba en mantenimiento
++-------------------------------------------------------------------------------------------
+estaba (sentence, VMII3S0, estar)
+    paseo (suj, NCMS000, pasear)
+        o (coord, None, o)
+        rutra (grup.nom, None, )
+            ecologica (s.a, None, )
+    en (atr, None, en)
+        mantenimiento (sn, NCMS000, mantenimiento)
+
++-------------------------------------------------------------------------------------------
+| File Index : 29
+| Sentence : horarios avisos ganchos y percehros y convenio con estos servicios de trasnporte en la habitacion
++-------------------------------------------------------------------------------------------
+horarios (sentence, NCMP000, horario)
+    avisos (s.a, NCMP000, aviso)
+    ganchos (grup.nom, NCMP000, gancho)
+        y (coord, None, y)
+        percehros (grup.nom, None, )
+    y (coord, None, y)
+    convenio (grup.nom, NCMS000, convenio)
+        con (sp, None, con)
+            servicios (sn, NCMP000, servicio)
+                estos (spec, None, este)
+                de (sp, None, de)
+                    trasnporte (sn, None, )
+                        en (sp, None, en)
+                            habitacion (sn, None, )
+                                la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 30
+| Sentence : que la alimentacion se incluya completo
++-------------------------------------------------------------------------------------------
+incluya (sentence, VMSP3S0, incluir)
+    que (conj, None, que)
+    alimentacion (suj, None, )
+        la (spec, None, el)
+    se (pass, None, se)
+    completo (cpred, AQ0MS00, completar)
+
++-------------------------------------------------------------------------------------------
+| File Index : 31
+| Sentence : en habitaciones con mas de 4 personas un baño adicional
++-------------------------------------------------------------------------------------------
+baño (sentence, NCMS000, bañar)
+    en (sp, None, en)
+        habitaciones (sn, NCFP000, habitación)
+            con (sp, None, con)
+        mas (coord, None, mas)
+        de (sp, None, de)
+            personas (sn, NCFP000, persona)
+                4 (s.a, AQ0CS00, )
+    un (spec, None, uno)
+    adicional (s.a, AQ0CS00, adicional)
+
++-------------------------------------------------------------------------------------------
+| File Index : 32
+| Sentence : mil gracias por sus atenciones muy especiales la atencion del perosnal de todas las areas
++-------------------------------------------------------------------------------------------
+gracias (sentence, NCFP000, gracia)
+    mil (s.a, AQ0CP00, mil)
+    por (sp, None, por)
+        atenciones (sn, NCFP000, atención)
+            sus (spec, None, su)
+            especiales (s.a, AQ0CP00, especial)
+                muy (spec, RG, muy)
+    atencion (S, NCFS000, )
+        la (spec, None, el)
+        del (sp, None, de+el)
+            perosnal (sn, None, )
+                de (sp, None, de)
+                    areas (sn, None, )
+                        las (spec, None, el)
+                            todas (d, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 33
+| Sentence : mejorar atencion y hospitalidad en nel servicio del restaurante
++-------------------------------------------------------------------------------------------
+mejorar (sentence, VMN0000, mejorar)
+    atencion (cd, NCFS000, )
+        y (coord, None, y)
+        hospitalidad (grup.nom, NCFS000, hospitalidad)
+    en (cc, None, en)
+        nel (sn, None, )
+            servicio (s.a, NCMS000, servicio)
+                del (sp, None, de+el)
+                    restaurante (sn, NCMS000, restaurante)
+
++-------------------------------------------------------------------------------------------
+| File Index : 34
+| Sentence : encontrar nuevamente al servicio del tinto donde estaba el administrador anterio
++-------------------------------------------------------------------------------------------
+encontrar (sentence, VMN0000, encontrar)
+    nuevamente (cc, RG, )
+    al (cc, None, a+el)
+        servicio (sn, NCMS000, servicio)
+    del (cc, None, de+el)
+        tinto (sn, NCMS000, tintar)
+            estaba (S, VMII3S0, estar)
+                donde (cc, None, donde)
+                administrador (suj, NCMS000, administrador)
+                    el (spec, None, el)
+                anterio (suj, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 35
+| Sentence : television en hambas ahabitaciones
++-------------------------------------------------------------------------------------------
+television (sentence, NCFS000, )
+    en (sp, None, en)
+        hambas (sn, None, )
+            ahabitaciones (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 36
+| Sentence : " mala calidad en al señal de internet para el costo de noche del hotel deberia ser mejor ; deberia contar con mesa en la habitacion llamamos a la 1 am de hoy para un problema de television y fueron a las 2 : 15 una hora mas tarde "
++-------------------------------------------------------------------------------------------
+llamamos (sentence, VMIP1P0, llamar)
+    " (f, None, ")
+    contar (infinitiu, VMN0000, contar)
+        calidad (cd, NCFS000, calidad)
+            mala (s.a, AQ0FS00, malo)
+            en (sp, None, en)
+                al (sp, None, a+el)
+                señal (sn, NCFS000, señal)
+                    de (sp, None, de)
+                        internet (sn, NCCN000, internet)
+                    para (sp, None, para)
+                        costo (sn, NCMS000, costo)
+                            el (spec, None, el)
+                            de (sp, None, de)
+                                noche (sn, NCFS000, noche)
+                            del (sp, None, de+el)
+                                hotel (sn, NCMS000, hotel)
+                                    deberia (s.a, None, )
+                            ser (S, VSN0000, ser)
+                                mejor (atr, AQ0CS00, mejor)
+            ; (f, None, ;)
+        deberia (suj, None, )
+        con (creg, None, con)
+            mesa (sn, NCFS000, mesa)
+        en (cc, None, en)
+            habitacion (sn, None, )
+                la (spec, None, el)
+    a (cd, None, a)
+        am (sn, NCMN000, )
+            la (spec, None, el)
+            1 (s.a, AQ0CS00, )
+            de (sp, None, de)
+                hoy (sadv, RG, hoy)
+    para (cc, None, para)
+        problema (sn, NCMS000, problema)
+            un (spec, None, uno)
+            de (sp, None, de)
+                television (sn, NCFS000, )
+    y (coord, None, y)
+    fueron (S, VSIS3P0, ir)
+        a (atr, None, a)
+            2 (sn, NCMS000, )
+                las (spec, None, el)
+                15 (sn, NCFS000, )
+                    : (f, None, :)
+                    hora (grup.nom, NCFS000, hora)
+                        una (spec, None, unir)
+                    mas (coord, None, mas)
+                    tarde (grup.nom, NCFS000, tardar)
+    " (f, None, ")
+
++-------------------------------------------------------------------------------------------
+| File Index : 37
+| Sentence : un mejor servicio de restauarante
++-------------------------------------------------------------------------------------------
+servicio (sentence, NCMS000, servicio)
+    un (spec, None, uno)
+    mejor (s.a, AQ0CS00, mejor)
+    de (sp, None, de)
+        restauarante (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 38
+| Sentence : agua caliente en la habitacion
++-------------------------------------------------------------------------------------------
+agua (sentence, NCCS000, agua)
+    caliente (s.a, AQ0CS00, calentar)
+    en (sp, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 39
+| Sentence : que no cobre el tinto
++-------------------------------------------------------------------------------------------
+cobre (sentence, VMSP3S0, cobrar)
+    que (conj, None, que)
+    no (mod, RN, no)
+    tinto (cd, NCMS000, tintar)
+        el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 41
+| Sentence : una piscina o jacuzzi de agua fria puede ser poseta
++-------------------------------------------------------------------------------------------
+ser (sentence, VSN0000, ser)
+    piscina (suj, NCFS000, piscina)
+        una (spec, None, unir)
+        o (coord, None, o)
+        jacuzzi (grup.nom, None, )
+        de (sp, None, de)
+            agua (sn, NCCS000, agua)
+                fria (s.a, None, )
+    puede (v, VMIP3S0, poder)
+    poseta (atr, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 42
+| Sentence : mejor servicio hielo mas personal
++-------------------------------------------------------------------------------------------
+servicio (sentence, NCMS000, servicio)
+    mejor (spec, RG, mejor)
+    hielo (s.a, NCMS000, helar)
+    mas (coord, None, mas)
+    personal (s.a, AQ0CS00, personal)
+
++-------------------------------------------------------------------------------------------
+| File Index : 43
+| Sentence : asecensor a las habitaciones instalaciones para discapacitados
++-------------------------------------------------------------------------------------------
+asecensor (sentence, None, )
+    a (sp, None, a)
+        habitaciones (sn, NCFP000, habitación)
+            las (spec, None, el)
+            instalaciones (s.a, NCFP000, instalación)
+    para (sp, None, para)
+        discapacitados (sn, AQ0MP00, discapacitado)
+
++-------------------------------------------------------------------------------------------
+| File Index : 44
+| Sentence : el refrigerador
++-------------------------------------------------------------------------------------------
+refrigerador (sentence, NCMS000, refrigerador)
+    el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 45
+| Sentence : aire acondicionado
++-------------------------------------------------------------------------------------------
+aire (sentence, NCMS000, aire)
+    acondicionado (S, VMP00SM, acondicionar)
+
++-------------------------------------------------------------------------------------------
+| File Index : 46
+| Sentence : permitir que el servicio de comidads se puede tener en la habitacion
++-------------------------------------------------------------------------------------------
+tener (sentence, VMN0000, tener)
+    permitir (infinitiu, VMN0000, permitir)
+    que (conj, None, que)
+    servicio (suj, NCMS000, servicio)
+        el (spec, None, el)
+        de (sp, None, de)
+            comidads (sn, None, )
+    se (pass, None, se)
+    puede (v, VMIP3S0, poder)
+    en (cc, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 47
+| Sentence : mas comodida de acuerdo a la tarifa
++-------------------------------------------------------------------------------------------
+comodida (sentence, None, )
+    mas (coord, None, mas)
+    de (sp, None, de)
+        acuerdo (sn, NCMS000, acordar)
+    a (sp, None, a)
+        tarifa (sn, NCFS000, tarifa)
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 48
+| Sentence : paseo ambiental
++-------------------------------------------------------------------------------------------
+paseo (sentence, NCMS000, pasear)
+    ambiental (s.a, AQ0CS00, ambiental)
+
++-------------------------------------------------------------------------------------------
+| File Index : 49
+| Sentence : de pronto una zona de camping un parque y que que hagan actividades
++-------------------------------------------------------------------------------------------
+hagan (sentence, VMSP3P0, hacer)
+    de (sp, None, de)
+        pronto (sadv, RG, pronto)
+        zona (sn, NCFS000, zona)
+            una (spec, None, unir)
+            de (sp, None, de)
+                camping (sn, NCMS000, camping)
+            parque (sn, NCMS000, parque)
+                un (spec, None, uno)
+                y (coord, None, y)
+    que (conj, None, que)
+    que (conj, None, que)
+    actividades (cd, NCFP000, actividad)
+
++-------------------------------------------------------------------------------------------
+| File Index : 50
+| Sentence : que el menu sea mas barato
++-------------------------------------------------------------------------------------------
+sea (sentence, VSSP1S0, sea)
+    que (conj, None, que)
+    el (spec, None, el)
+    menu (suj, None, )
+    mas (coord, None, mas)
+    barato (atr, AQ0MS00, barato)
+
++-------------------------------------------------------------------------------------------
+| File Index : 51
+| Sentence : piscina principal un poco mas limpia
++-------------------------------------------------------------------------------------------
+piscina (sentence, NCFS000, piscina)
+    principal (s.a, AQ0CS00, principal)
+    poco (sn, None, poco)
+        un (spec, None, uno)
+        mas (coord, None, mas)
+        limpia (grup.a, AQ0FS00, limpia)
+
++-------------------------------------------------------------------------------------------
+| File Index : 52
+| Sentence : muchas gracias
++-------------------------------------------------------------------------------------------
+gracias (sentence, NCFP000, gracia)
+    muchas (spec, None, mucho)
+
++-------------------------------------------------------------------------------------------
+| File Index : 53
+| Sentence : variedad en el menu de alimentacion apoyo de botones para traslado de maletas
++-------------------------------------------------------------------------------------------
+variedad (sentence, NCFS000, variedad)
+    en (sp, None, en)
+    apoyo (sn, NCMS000, apoyar)
+        el (spec, None, el)
+            de (s, None, de)
+                menu (interjeccio, None, )
+                alimentacion (sn, None, )
+        de (sp, None, de)
+            botones (sn, NCMP000, botonar)
+                para (sp, None, para)
+                    traslado (sn, NCMS000, trasladar)
+                        de (sp, None, de)
+                            maletas (sn, NCFP000, maleta)
+
++-------------------------------------------------------------------------------------------
+| File Index : 54
+| Sentence : ramplas para las personas que tenemos limitaciones no es lo mismo el ambiente el paisaje de las piscinas grandes
++-------------------------------------------------------------------------------------------
+es (sentence, VSIP3S0, ser)
+    ramplas (suj, None, )
+        para (sp, None, para)
+            personas (sn, NCFP000, persona)
+                las (spec, None, el)
+                tenemos (S, VMIP1P0, tener)
+                    que (cd, None, que)
+                    limitaciones (cd, NCFP000, limitación)
+    no (mod, RN, no)
+    mismo (atr, AQ0MS00, mismo)
+        lo (spec, None, el)
+    ambiente (suj, NCMS000, ambientar)
+        el (spec, None, el)
+    paisaje (atr, NCMS000, paisaje)
+        el (spec, None, el)
+        de (sp, None, de)
+            piscinas (sn, NCFP000, piscina)
+                las (spec, None, el)
+                grandes (s.a, AQ0CP00, grande)
+
++-------------------------------------------------------------------------------------------
+| File Index : 55
+| Sentence : mas aseo en los vestieres y mejor atencion del comedor
++-------------------------------------------------------------------------------------------
+aseo (sentence, NCMS000, asear)
+    mas (coord, None, mas)
+    en (sp, None, en)
+        vestieres (sn, None, )
+            los (spec, None, el)
+            y (coord, None, y)
+            atencion (sn, NCFS000, )
+                mejor (s.a, AQ0CS00, mejor)
+                del (sp, None, de+el)
+                    comedor (sn, NCMS000, comedor)
+
++-------------------------------------------------------------------------------------------
+| File Index : 56
+| Sentence : mas habitaciones
++-------------------------------------------------------------------------------------------
+habitaciones (sentence, NCFP000, habitación)
+    mas (coord, None, mas)
+
++-------------------------------------------------------------------------------------------
+| File Index : 57
+| Sentence : escelente toatencion
++-------------------------------------------------------------------------------------------
+toatencion (sentence, None, )
+    escelente (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 58
+| Sentence : tener café permanentemente en la recepcion
++-------------------------------------------------------------------------------------------
+tener (sentence, VMN0000, tener)
+    café (cd, NCMS000, café)
+        permanentemente (sadv, RG, )
+    en (cc, None, en)
+        recepcion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 59
+| Sentence : el plan full que uno solicita un televisor adicional este servicio se pueda dar , sombrillas en la pisicnas
++-------------------------------------------------------------------------------------------
+dar (sentence, VMN0000, dar)
+    plan (suj, NCMS000, plan)
+        el (spec, None, el)
+        full (s.a, None, )
+        solicita (S, VMIP3S0, solicitar)
+            que (suj, None, que)
+            uno (suj, None, unir)
+            televisor (cd, NCMS000, televisor)
+                un (spec, None, uno)
+                adicional (s.a, AQ0CS00, adicional)
+    servicio (suj, NCMS000, servicio)
+        este (spec, None, este)
+    se (pass, None, se)
+    pueda (v, VMSP3S0, poder)
+    sombrillas (sn, NCFP000, sombrilla)
+        , (f, None, ,)
+    en (cc, None, en)
+        pisicnas (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 60
+| Sentence : jamoas nunca todo distinto
++-------------------------------------------------------------------------------------------
+distinto (sentence, AQ0MS00, distinto)
+    nunca (spec, RG, nunca)
+        jamoas (sn, None, )
+    todo (spec, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 61
+| Sentence : la habitacion es terrible deberian colocarle un vidrio que asile el ruido no pudimos dormir
++-------------------------------------------------------------------------------------------
+es (sentence, VSIP3S0, ser)
+    habitacion (suj, None, )
+        la (spec, None, el)
+    terrible (atr, AQ0CS00, terrible)
+    deberian (suj, None, )
+        colocarle (cd, None, )
+            vidrio (cd, NCMS000, vidriar)
+                un (spec, None, uno)
+                asile (S, VMSP3S0, asilar)
+                    que (suj, None, que)
+                    ruido (cd, NCMS000, ruido)
+                        el (spec, None, el)
+                    dormir (cd, VMN0000, dormir)
+                        no (mod, RN, no)
+                        pudimos (v, VMIS1P0, poder)
+
++-------------------------------------------------------------------------------------------
+| File Index : 62
+| Sentence : que organicen las habitaciones de lasa vieja
++-------------------------------------------------------------------------------------------
+organicen (sentence, VMSP3P0, organizar)
+    que (conj, None, que)
+    habitaciones (cd, NCFP000, habitación)
+        las (spec, None, el)
+        de (sp, None, de)
+            lasa (s.a, None, laso)
+                vieja (s.a, AQ0FS00, viejo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 63
+| Sentence : mas variedad en las comidas
++-------------------------------------------------------------------------------------------
+variedad (sentence, NCFS000, variedad)
+    mas (coord, None, mas)
+    en (sp, None, en)
+        comidas (sn, NCFP000, comedir)
+            las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 64
+| Sentence : mejor comida y mejor servicio de restaurante
++-------------------------------------------------------------------------------------------
+comida (sentence, NCFS000, comedir)
+    mejor (sadv, RG, mejor)
+    y (coord, None, y)
+    servicio (sn, NCMS000, servicio)
+        mejor (s.a, AQ0CS00, mejor)
+        de (sp, None, de)
+            restaurante (sn, NCMS000, restaurante)
+
++-------------------------------------------------------------------------------------------
+| File Index : 65
+| Sentence : un mejor servicio de restaurante
++-------------------------------------------------------------------------------------------
+servicio (sentence, NCMS000, servicio)
+    un (spec, None, uno)
+    mejor (s.a, AQ0CS00, mejor)
+    de (sp, None, de)
+        restaurante (sn, NCMS000, restaurante)
+
++-------------------------------------------------------------------------------------------
+| File Index : 66
+| Sentence : lo que ofrecieron sea el servicio recibido
++-------------------------------------------------------------------------------------------
+ofrecieron (sentence, VMIS3P0, ofrecer)
+    lo (spec, None, el)
+    que (suj, None, que)
+    sea (cd, VSSP1S0, sea)
+        servicio (atr, NCMS000, servicio)
+            el (spec, None, el)
+            recibido (S, VMP00SM, recibir)
+
++-------------------------------------------------------------------------------------------
+| File Index : 67
+| Sentence : un hotel mas amigable con el mdeio ambiente
++-------------------------------------------------------------------------------------------
+hotel (sentence, NCMS000, hotel)
+    un (spec, None, uno)
+    mas (coord, None, mas)
+    amigable (s.a, AQ0CS00, amigable)
+    con (sp, None, con)
+        ambiente (sn, NCMS000, ambientar)
+            el (spec, None, el)
+            mdeio (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 68
+| Sentence : nevera en la habitacion
++-------------------------------------------------------------------------------------------
+nevera (sentence, NCFS000, nevera)
+    en (sp, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 69
+| Sentence : nevera
++-------------------------------------------------------------------------------------------
+nevera (sentence, NCFS000, nevera)
+
++-------------------------------------------------------------------------------------------
+| File Index : 70
+| Sentence : varias opciones en el menu acordado
++-------------------------------------------------------------------------------------------
+opciones (sentence, NCFP000, opción)
+    varias (spec, None, vario)
+    en (sp, None, en)
+    acordado (S, VMP00SM, acordar)
+        el (spec, None, el)
+        menu (interjeccio, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 71
+| Sentence : que tenga servico para traer las mascostas
++-------------------------------------------------------------------------------------------
+tenga (sentence, VMSP3S0, tener)
+    que (conj, None, que)
+    servico (cd, None, )
+        para (sp, None, para)
+            traer (S, VMN0000, traer)
+                mascostas (cd, None, )
+                    las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 72
+| Sentence : duchas en las habitaciones
++-------------------------------------------------------------------------------------------
+duchas (sentence, NCFP000, ducha)
+    en (sp, None, en)
+        habitaciones (sn, NCFP000, habitación)
+            las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 73
+| Sentence : bolsas platicas
++-------------------------------------------------------------------------------------------
+platicas (sentence, VMIP2S0, platicar)
+    bolsas (cd, NCFP000, bolsa)
+
++-------------------------------------------------------------------------------------------
+| File Index : 74
+| Sentence : el servicio es muy completo
++-------------------------------------------------------------------------------------------
+es (sentence, VSIP3S0, ser)
+    servicio (suj, NCMS000, servicio)
+        el (spec, None, el)
+    completo (atr, AQ0MS00, completar)
+        muy (spec, RG, muy)
+
++-------------------------------------------------------------------------------------------
+| File Index : 75
+| Sentence : parasoles en las mesas un bar
++-------------------------------------------------------------------------------------------
+parasoles (sentence, NCMP000, parasol)
+    en (sp, None, en)
+        mesas (sn, NCFP000, mesa)
+            las (spec, None, el)
+    bar (sn, NCMS000, bar)
+        un (spec, None, uno)
+
++-------------------------------------------------------------------------------------------
+| File Index : 76
+| Sentence : la historia desde el principio
++-------------------------------------------------------------------------------------------
+historia (sentence, NCFS000, historia)
+    la (spec, None, el)
+    desde (sp, None, desde)
+        principio (sn, NCMS000, principiar)
+            el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 77
+| Sentence : mas variedad en las comidas
++-------------------------------------------------------------------------------------------
+variedad (sentence, NCFS000, variedad)
+    mas (coord, None, mas)
+    en (sp, None, en)
+        comidas (sn, NCFP000, comedir)
+            las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 78
+| Sentence : discoteca
++-------------------------------------------------------------------------------------------
+discoteca (sentence, NCFS000, discoteca)
+
++-------------------------------------------------------------------------------------------
+| File Index : 79
+| Sentence : la ducha de la habitacioin es demasiado pequeña
++-------------------------------------------------------------------------------------------
+es (sentence, VSIP3S0, ser)
+    ducha (suj, NCFS000, ducha)
+        la (spec, None, el)
+        de (sp, None, de)
+            habitacioin (sn, None, )
+                la (spec, None, el)
+    pequeña (atr, AQ0FS00, pequeño)
+        demasiado (spec, RG, demasiado)
+
++-------------------------------------------------------------------------------------------
+| File Index : 80
+| Sentence : habitaciones para grupos con baños
++-------------------------------------------------------------------------------------------
+habitaciones (sentence, NCFP000, habitación)
+    para (sp, None, para)
+        grupos (sn, NCMP000, grupo)
+            con (sp, None, con)
+                baños (sn, NCMP000, baño)
+
++-------------------------------------------------------------------------------------------
+| File Index : 81
+| Sentence : nhevera en la habitacion
++-------------------------------------------------------------------------------------------
+nhevera (sentence, None, )
+    en (cc, None, en)
+        habitacion (sn, None, )
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 82
+| Sentence : citofono en la piscina
++-------------------------------------------------------------------------------------------
+citofono (sentence, None, )
+    en (sp, None, en)
+        piscina (sn, NCFS000, piscina)
+            la (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 83
+| Sentence : eventos nocturnos
++-------------------------------------------------------------------------------------------
+eventos (sentence, NCMP000, evento)
+    nocturnos (s.a, AQ0MP00, nocturno)
+
++-------------------------------------------------------------------------------------------
+| File Index : 84
+| Sentence : mejor atencion
++-------------------------------------------------------------------------------------------
+atencion (sentence, NCFS000, )
+    mejor (spec, RG, mejor)
+
++-------------------------------------------------------------------------------------------
+| File Index : 85
+| Sentence : peinetas o cepillo de cabello
++-------------------------------------------------------------------------------------------
+peinetas (sentence, None, peineta)
+    o (coord, None, o)
+    cepillo (grup.nom, NCMS000, cepillar)
+    de (sp, None, de)
+        cabello (sn, NCMS000, cabellar)
+
++-------------------------------------------------------------------------------------------
+| File Index : 86
+| Sentence : habitaciones con duchas
++-------------------------------------------------------------------------------------------
+habitaciones (sentence, NCFP000, habitación)
+    con (sp, None, con)
+        duchas (sn, NCFP000, ducha)
+
++-------------------------------------------------------------------------------------------
+| File Index : 87
+| Sentence : tener refrigerador
++-------------------------------------------------------------------------------------------
+tener (sentence, VMN0000, tener)
+    refrigerador (cd, NCMS000, refrigerador)
+
++-------------------------------------------------------------------------------------------
+| File Index : 88
+| Sentence : plan todo incluido y mas variedad de menu
++-------------------------------------------------------------------------------------------
+plan (sentence, NCMS000, plan)
+    incluido (S, VMP00SM, incluir)
+        todo (suj, None, todo)
+    y (coord, None, y)
+    mas (coord, None, mas)
+    variedad (sn, NCFS000, variedad)
+        de (sp, None, de)
+            menu (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 89
+| Sentence : alimentacion completa
++-------------------------------------------------------------------------------------------
+alimentacion (sentence, None, )
+    completa (s.a, AQ0FS00, completar)
+
++-------------------------------------------------------------------------------------------
+| File Index : 90
+| Sentence : todo estuvo bien
++-------------------------------------------------------------------------------------------
+estuvo (sentence, VMIS3S0, estar)
+    todo (suj, None, todo)
+    bien (atr, RG, bien)
+
++-------------------------------------------------------------------------------------------
+| File Index : 91
+| Sentence : el plan debe incluir alimentacion tipo buffer ya que no hay otra opcion de alimentos
++-------------------------------------------------------------------------------------------
+incluir (sentence, VMN0000, incluir)
+    plan (suj, NCMS000, plan)
+        el (spec, None, el)
+    debe (v, VMIP3S0, debe)
+    alimentacion (cd, None, )
+    tipo (suj, NCMS000, tipo)
+        buffer (s.a, NCMS000, buffer)
+    ya (cc, RG, ya)
+    hay (S, VMIP3S0, haber)
+        que (conj, None, que)
+        no (mod, RN, no)
+        opcion (cd, None, )
+            otra (spec, None, otro)
+            de (sp, None, de)
+                alimentos (sn, NCMP000, alimento)
+
++-------------------------------------------------------------------------------------------
+| File Index : 92
+| Sentence : discoteca
++-------------------------------------------------------------------------------------------
+discoteca (sentence, NCFS000, discoteca)
+
++-------------------------------------------------------------------------------------------
+| File Index : 93
+| Sentence : mayor coordinacion en la informacion requerida
++-------------------------------------------------------------------------------------------
+coordinacion (sentence, None, )
+    mayor (s.a, AQ0CS00, mayor)
+    en (sp, None, en)
+        informacion (sn, None, )
+            la (spec, None, el)
+            requerida (S, VMP00SF, requerir)
+
++-------------------------------------------------------------------------------------------
+| File Index : 94
+| Sentence : pienso que los trabajadores estan para prestar bien sius servicios no para coquetear con las parejas de los clientes
++-------------------------------------------------------------------------------------------
+pienso (sentence, VMIP1S0, pensar)
+    estan (cd, None, )
+        que (conj, None, que)
+        trabajadores (suj, NCMP000, trabajador)
+            los (spec, None, el)
+        para (cc, None, para)
+            prestar (S, VMN0000, prestar)
+                bien (cc, RG, bien)
+                sius (cd, None, )
+                servicios (cd, NCMP000, servicio)
+                para (cc, None, para)
+                    no (neg, RN, no)
+                    coquetear (S, VMN0000, coquetear)
+                        con (cc, None, con)
+                            parejas (sn, NCFP000, pareja)
+                                las (spec, None, el)
+                                de (sp, None, de)
+                                    clientes (sn, NCCP000, cliente)
+                                        los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 95
+| Sentence : calidad de servicio en las instalaciones
++-------------------------------------------------------------------------------------------
+calidad (sentence, NCFS000, calidad)
+    de (sp, None, de)
+        servicio (sn, NCMS000, servicio)
+    en (sp, None, en)
+        instalaciones (sn, NCFP000, instalación)
+            las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 96
+| Sentence : programas ambietales
++-------------------------------------------------------------------------------------------
+programas (sentence, NCMP000, programa)
+    ambietales (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 97
+| Sentence : variedad de cocteles
++-------------------------------------------------------------------------------------------
+variedad (sentence, NCFS000, variedad)
+    de (sp, None, de)
+        cocteles (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 98
+| Sentence : las habitaciones familiares con otro baño
++-------------------------------------------------------------------------------------------
+habitaciones (sentence, NCFP000, habitación)
+    las (spec, None, el)
+    familiares (s.a, AQ0CP00, familiar)
+    con (sp, None, con)
+        baño (sn, NCMS000, bañar)
+            otro (spec, None, otro)
+
++-------------------------------------------------------------------------------------------
+| File Index : 99
+| Sentence : calefaccion en habitacion
++-------------------------------------------------------------------------------------------
+calefaccion (sentence, None, )
+    en (sp, None, en)
+        habitacion (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 100
+| Sentence : lo mismo
++-------------------------------------------------------------------------------------------
+mismo (sentence, AQ0MS00, mismo)
+    lo (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 101
+| Sentence : todo esta bien
++-------------------------------------------------------------------------------------------
+bien (sentence, NCMS000, bien)
+    esta (spec, None, este)
+        todo (d, None, todo)
+
++-------------------------------------------------------------------------------------------
+| File Index : 102
+| Sentence : senderos ecologicops
++-------------------------------------------------------------------------------------------
+senderos (sentence, NCMP000, sendero)
+    ecologicops (s.a, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 103
+| Sentence : sistencia
++-------------------------------------------------------------------------------------------
+sistencia (sentence, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 104
+| Sentence : chorros de agua fria debtro de las piscnas
++-------------------------------------------------------------------------------------------
+chorros (sentence, NCMP000, chorro)
+    de (sp, None, de)
+        agua (sn, NCCS000, agua)
+            fria (s.a, None, )
+    debtro (sn, None, )
+        de (sp, None, de)
+            piscnas (sn, None, )
+                las (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 105
+| Sentence : lo que ofertan en tranquilidad y desacanso
++-------------------------------------------------------------------------------------------
+ofertan (sentence, VMIP3P0, ofertar)
+    lo (spec, None, el)
+    que (suj, None, que)
+    en (cc, None, en)
+        tranquilidad (sn, NCFS000, tranquilidad)
+            y (coord, None, y)
+            desacanso (grup.nom, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 106
+| Sentence : variedad en los platos
++-------------------------------------------------------------------------------------------
+variedad (sentence, NCFS000, variedad)
+    en (sp, None, en)
+        platos (sn, NCMP000, plato)
+            los (spec, None, el)
+

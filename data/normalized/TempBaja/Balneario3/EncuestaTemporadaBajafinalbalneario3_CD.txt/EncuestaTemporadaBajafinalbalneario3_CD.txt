@@ -1,0 +1,36 @@
+0	la musica
+1	comida
+2	la comida
+3	el mismo menu
+4	los costos de la comida
+5	los precios
+6	precios
+7	las escaleras
+8	pindana
+9	el acceso
+10	los precios
+11	el servicio de la cafeteria
+12	la subida
+13	vestieres
+14	los precios
+15	los precios
+16	los precios
+17	la comida
+18	el almuerzo
+19	los precios
+20	el acceso
+21	el ingreso de alimentos
+22	los precios
+23	el precio
+24	los precios
+25	los precios
+26	la entrada
+27	el mal servicio
+28	el ingreso
+29	techo en el sendero
+30	los precios
+31	la atencion de mi cafesito
+32	la comida
+33	taquilla
+34	el costo del restaurante
+35	la atencion

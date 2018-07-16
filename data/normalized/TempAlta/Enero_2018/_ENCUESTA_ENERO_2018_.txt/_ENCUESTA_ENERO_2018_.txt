@@ -1,0 +1,572 @@
+0	mejorar via 
+1	permitir entrada y salida 
+2	privilegiar a las personas con discapacidad fisica 
+3	mas informacion 
+4	las vias
+5	mas cordiales en la taquilla 
+6	conservar el lugar 
+7	sombrillas en las mesas 
+8	conectadores para celular 
+9	tener un turco
+10	mas mesas 
+11	las vias 
+12	mas informacion
+13	ampliar piscinas
+14	privilegiar a las personas con discapicad fisica 
+15	muy poca zona abierta un dispensador de agua 
+16	mas informacion
+17	privilegiar a las personas con discapacidad
+18	un cajero automatico y mas informacion 
+19	mejorar piscinas ampliarlas 
+20	hacer un chorro de agua caliente fuera de las piscinas
+21	todo esta muy costoso 
+22	todo esta muy costoso
+23	muy costoso todo el café es agua si es zona cafetera
+24	muy mal servicio muy mala atension preocuparse mas por el bienestar de las personas 
+25	mejorar el area del restaurante
+26	paimentar calles 
+27	muy mal servicio 
+28	muy poca informacion
+29	muy pococ personal para el cliente 
+30	muy mal servicio todo muy costoso 
+31	muy costoso todo 
+32	muy mal servicio
+33	la entrada
+34	los precios mas bajos
+35	todo esta perfecto 
+36	muy pequeno el restaurante  las mesas y sillas muy incomadas mas paraguas mejorar los precios de la cafeteria 
+37	transporte no tan lejos 
+38	el restaurante mas mas amplio y mas cerca del parqueadero 
+39	habilitar mas casillas
+40	muy demorado todo 
+41	muy poco personal para temporada alta mejorar las casillas 
+42	mejorar el precio de los alimentos 
+43	precios 
+44	precios muy altos mejorar
+45	mas jardin mas sendero 
+46	paquetes familiares 
+47	mas seguridad en los parqueaderos mejorar la entrada le hace falta quioscos el adquiler de candados mas facil y un puesto de salud 
+48	muy demorada la entrada 
+49	el ingreso de alimientos y mejorar los precios poque estan muy altos 
+50	muy de moda 
+51	mas rapides la musica 
+52	el parqueadero no tan lejos 
+53	mucha demora 
+54	la tarifa muy alta mejorar los precios 
+55	muy demorados 
+56	que no cambien la ruta por no tener transporte 
+57	transporte 
+58	el servicio 
+59	todo muy bien
+60	beneficios para las personas discapacitadas 
+61	todo muy bien
+62	mas informacion 
+63	la via 
+64	todo muy bien
+65	mas taquillas 
+66	todo muy bien
+67	la via
+68	todo muy bien
+69	todo muy bien
+70	prioridad para las personas que sufren de diabetis 
+71	todo muy bien
+72	la via, carpas 
+73	todo muy bien
+74	los precios 
+75	todo esta bueno
+76	la entrada mejorar
+77	un tope para entrar 
+78	mas grande la taquilla
+79	todo esta bien
+80	rebajas esta muy alto para la gente de bajos recursos 
+81	mejorar las piscinas 
+82	mas pendientes de los clientes mas personal 
+83	la atencion de los vigilantes mejorar el personal el trato 
+84	la atencion mejorar mucho 
+85	no cobrar por la entrada tan alta 
+86	transporte y mejores combos precios muy altos en el guarda ropa 
+87	si hay una persona que viene solo de acompañante no cobrar todo el valor la taquilla muy demorada 
+88	precios 
+89	mejorar la atencion 
+90	todo esta bien 
+91	mas informacion 
+92	asi esta bien
+93	en el paquete todo incluido precios no tan elevados 
+94	poca publicidad
+95	mas corta la ruta
+96	todo muy bien
+97	todo muy bien 
+98	la via
+99	todo muy bien 
+100	todo muy bien 
+101	atencion
+102	todo muy bien 
+103	todo muy bien
+104	mas parqueadreos precios 
+105	mejorar la entrada
+106	la via
+107	sombrillas en las mesas
+108	prioridad para los adultos 
+109	mas atencion a las personas 
+110	mas lockers
+111	todo muy bien
+112	precios 
+113	todo muy bien
+114	todo muy bien
+115	todo muy bien
+116	todo bien
+117	todo muy bien 
+118	todo muy bien 
+119	todo muy bien 
+120	precios 
+121	todo muy bien 
+122	todo bien
+123	todo muy bien
+124	precios 
+125	todo muy bien
+126	todo muy bien 
+127	todo muy bien 
+128	carpas y mas agilidad 
+129	precios
+130	todo muy bien
+131	precios
+132	la via
+133	todo muy bien 
+134	paimentar calle 
+135	muy mal servicio de banos y vestieres sucios y empolvados 
+136	todo esta bien
+137	muy mal servicio en porteria
+138	muy poca informacion en taquilla 
+139	todo muy costos muy mal servicio 
+140	no le parece bien que le cobren a un nino a precio de un adulto 
+141	deberian tener medio de trasporte 
+142	todo esta bien
+143	todo muy alto los precios 
+144	todo
+145	limite de personas
+146	muy mal servicio no hay informacion 
+147	todo esta bien variar la comida 
+148	todo esta bien
+149	tener transporte tener ruta 
+150	ingreso muy lento muy mal servicio
+151	todo esta bien
+152	todo esta bien
+153	mas informacion organizar carpas de la entrada
+154	tener señalizacion acompañamiento de personal limite de personas
+155	gurda ropa mas cabinas
+156	muy mala atencion mejorar todo
+157	muy mal servicio
+158	mejorar las comidas
+159	mejorar la comida muy mala preparacion orlando galindo
+160	todo esta bien
+161	todo esta bien
+162	no esta seguro el cable de la lampara de la piscina pindana
+163	todo esta bien
+164	un medio de trasporte mas continuo (caminata) no cobrar deberia ser del  mismo paquete de la entrada 
+165	todo esta bien 
+166	todo esta bien 
+167	servico publico convenio con termales 
+168	mejorar comida 
+169	mas obsiones de comida mejorar la calidad de comida muy mala presentacion 
+170	mejorar todo muy mal servicio 
+171	donde meter sombrillas
+172	todo esta bien 
+173	la entrada
+174	todo esta bien 
+175	precios muy alto no pensar en llenarse siempre ustedes
+176	todo perfecto
+177	precios mejorar la comida 
+178	el sendero 
+179	mas cosas para relajar
+180	mas  limpieza en los baños 
+181	precios muy altos 
+182	muy caro y no hay mejoria 
+183	mas piscinas y mucha gente 
+184	todo esta bien 
+185	muy demorado el restaurante 
+186	mejorar la comida 
+187	mejorar el servicio de comida es pesimo 
+188	hasta ahora bien todo me gusta 
+189	la comida 
+190	limite de publico
+191	todo esta bien 
+192	precios del alojamiento 
+193	los precios en los niños
+194	que con la cinta de entrada esten el casillero y las llaves incluidas
+195	ampliar mas
+196	el gurda ropa
+197	todo esta bien
+198	todo muy bien 
+199	mas piscinas para niñas 
+200	las vias 
+201	todo muy bien
+202	todo muy bien
+203	tener para soles
+204	todo muy bien
+205	los precios
+206	todo muy bien 
+207	la via 
+208	la via el servicio efectivo 
+209	piscina de agua fria
+210	todo muy bien 
+211	todo muy bien
+212	todo bien 
+213	todo muy bien
+214	la via
+215	privilegiar a las personas con discapacidad
+216	precios
+217	dejar salir
+218	precios 
+219	precios
+220	todo muy bien
+221	precios
+222	seguridad en la cascada
+223	mas piscinas
+224	todo muy bien
+225	acceso a alas personas discapacitadas
+226	todo muy bien
+227	las vias, mas claridad de la informacion, mas atencion a las mesas
+228	precios
+229	agua fria
+230	todo muy bien
+231	precios
+232	precios mas economicos, aseo en general, mas orden y vigilancia
+233	precios de taquilla
+234	precios y mas personal
+235	todo muy bien
+236	mejorar los precios
+237	los precios
+238	mejorar mesas, precios
+239	mas beneficios para adultos
+240	todo muy bien
+241	mejorar la comida, aumentar el pesonal , prioridad a los mayores, no consumir alimentos en las piscinas,
+242	prioridad a los discapacitados
+243	la via
+244	mas agilidad en la taquilla
+245	la via , los precios, las mesas
+246	todo muy bien
+247	todo esta bien
+248	todo muy bien
+249	todo muy bien
+250	precios , mas higiene
+251	todo bien , que halla un vehiculo ara la gente invalida
+252	la via
+253	todo muy bn
+254	la via
+255	mejorar la calidad del café
+256	todo muy bien
+257	la via
+258	todo muy bien
+259	mas agilidad, mas guias
+260	todo muy bien
+261	el menu, la via
+262	todo muy bien
+263	todo muy bien
+264	mejorar los precios
+265	prioridad para los adultos
+266	beneficios para discapacitados
+267	todo muy bien
+268	tengan en cuenta los adultos
+269	precios
+270	via
+271	todo muy bien
+272	la comida no muy buena , hay q mejorar
+273	precios
+274	precios, todo muy caro
+275	los precios, mas economicos para los niños
+276	de resto todo bien
+277	la atencion de los comedores
+278	la entrada, sombrillas
+279	los precios, los pisos del vestier , las piscinas ampliarlas
+280	tod esta muy bien, muchas gracias
+281	precios
+282	muy retirado
+283	todo bien
+284	mas carpa , mas azufre
+285	precios
+286	todo esta bien
+287	todo esta bien
+288	todo esta bien
+289	todo esta bien
+290	mala atencion muy poco personal
+291	todo
+292	la comida muy mal presentada muy mal sercio al cliente 
+293	todo esta bien
+294	muy mal servicio al cliente
+295	muy mal servicio para ser un sitio tan recomendado y visitado tiene que estar en las mejores condiciones y prestar un servicio exelente
+296	todo esta bien
+297	piscina de agua fria
+298	ampliar las piscinas
+299	todo muy bien
+300	todo bien
+301	todo muy bien
+302	la via
+303	mejorar infraestructura 
+304	prohibir que fumen 
+305	todo muy bien
+306	ingreso de alimientos
+307	todo muy bien
+308	todo muy bien
+309	falta de informacion y mas control
+310	mas personal
+311	mas personal mas mesas 
+312	mas espacios
+313	las piedras de las cascadas muy peligrosas 
+314	poco personal 
+315	mas logistica en la entrada una piscina natural 
+316	mas logistica
+317	todo muy bien
+318	los precios zonas con techo 
+319	todo muy bien
+320	precios
+321	muy mal servicio no hay personal para informacion muy pocas personas de servicio para tanta gente 
+322	todo esta bien no esta con la musica
+323	mas informacion
+324	todo esta bien
+325	muy mal servicio
+326	todo
+327	muy alto el precios de las cosas
+328	muy mal servicio, no hay informacion , muy altos los precios
+329	todo
+330	todo esta muy bien asi
+331	mas personal
+332	arreglar la via es hora de mejorar las piscinas mas grandes mas jardin y determinar numeros de personas
+333	mejorar la atencion al cliente
+334	todo esta bien
+335	mas cajas de pago
+336	todo
+337	muy mal servicio de comida 
+338	todo adaptar ma carpas y sillas mesas tener un tope de personas 
+339	mal servicio 
+340	mas precios
+341	servicio al cliente 
+342	todo esta bien
+343	bien todo
+344	mal servicio al cliente y mas surtido de comida 
+345	informacion al cliente 
+346	todo
+347	mejorar carta de comida
+348	mas mesas, carpas
+349	muy pocas sillas
+350	mas orden en todo, mas lockers,mesas y carpas
+351	mas chorros de agua fria
+352	todo
+353	todo
+354	restaurante super pequeño para tanta persona
+355	todo
+356	todo, nunca cumplen lo de las encuestas
+357	todo mal servicio
+358	todo mal servicio
+359	todo
+360	todo
+361	todo muy mal servicio
+362	todo mal servicio
+363	mas comodidad
+364	mejorar las instalaciones 
+365	mejorar mucho el parqueadero, tener algun detalle
+366	mas taquillas
+367	mas comodidad
+368	todo esta bien fila preferencial para las personas con discapacidad 
+369	mejorar la comida tener mejores privilegios en los precios y mas tomas para conectar celulares
+370	las piscinas muy pequeñas mas pendientes de la gente al ingresar a las piscinas 
+371	mas piscinas y las temperaturas de las piscinas y limitar la entrada 
+372	todo esta muy bien
+373	que la porcion de la comida sea mejor y mejores planes 
+374	mas vias 
+375	mas espacio
+376	que dejen ingresar alimentos 
+377	mas taquillas mas restaurantes y mejorar la rapidez 
+378	los precios de todo las piscinas son muy pequeñas mejoren las taquillas y mas orden 
+379	muy demorado el restaurante
+380	mucha demora en la comida
+381	vestier
+382	no dejar entrar tanta gente
+383	la calidad de la comida mas agilidad en las taquillas y mas restaurantes
+384	los precios muy altos 
+385	carros para los mayores 
+386	pocas cajas mejorar parqueadero falta orden agilizar mas las filas 
+387	mejorar taquilla
+388	precios
+389	todo esta bien
+390	todo muy bien
+391	precios,orden
+392	piscina fria
+393	precios
+394	mas informacion
+395	precios
+396	precios,menu economico
+397	una piscina fria
+398	mas piscinas
+399	agua fria
+400	numero de mesa
+401	todo muy bien
+402	precios
+403	todo muy bien
+404	mas sillas
+405	mas organización
+406	controlar la capacidad de carga
+407	todo muy bien
+408	estrategias diferentes
+409	no haber tantos requisitos
+410	alimentacion
+411	zonas verdes
+412	precios
+413	todo bien
+414	todo
+415	falta de informacion
+416	el ingreso fuera mas rapido, mas baños
+417	servicio de transporte
+418	falta de informacion
+419	mantener los baños secos
+420	mas agua fria , cascada
+421	la entrada
+422	todo muy bien
+423	precios
+424	precios
+425	todo bien
+426	todo
+427	todo
+428	mejorar comida
+429	precios
+430	precios
+431	informacion
+432	todo
+433	todo
+434	todo
+435	pocas piscinas para cantidad de personas
+436	todo
+437	todo
+438	todo muy bien
+439	todo  
+440	flechas de informacion
+441	mas informacion
+442	todo bien 
+443	todo bien
+444	precios mas comodos
+445	mas baños mas meseros 
+446	mas personal 
+447	ampliar las instalaciones 
+448	adecuar el servicio
+449	mas personal
+450	todo
+451	precios
+452	todo bien
+453	todo esta bien
+454	todo esta bien 
+455	todo esta bien
+456	todo esta bien
+457	todo esta bien
+458	informacion en parqueadero
+459	ubicación mesas 
+460	piscinas muy pequeñas
+461	observacion mesas 
+462	todo
+463	mas personas para el servicio
+464	todo
+465	todo esta bien 
+466	la atencion
+467	todo esta bien
+468	todos
+469	todo esta bien
+470	los `precios
+471	mas orden cultura
+472	todo esta bien
+473	mas mesas
+474	tarifa
+475	piscinas menos calientes
+476	las mesas
+477	ventas por internet
+478	precios
+479	ingreso
+480	costos altos
+481	el espacio
+482	precios
+483	mesas
+484	mejorar las piscinas
+485	mas chorros de agua fria
+486	espejos largos 
+487	mejorar la nomina
+488	la atencion, parasoles, todo muy lleno
+489	todo esta bien
+490	mejor instalacion, precios
+491	limite de personas
+492	tobogan
+493	todo muy bien
+494	precios
+495	todo
+496	todo bien
+497	los precios
+498	todo esta bien
+499	todo esta bien
+500	mas informacion
+501	via
+502	vias, renovacion cada año
+503	precios
+504	mejor emocion en el restaurante-emocionar mas todo
+505	mejorar parqueadero precios
+506	los precios
+507	la comunicación
+508	ruta de acceso
+509	alojamiento
+510	hospedaje
+511	estaderos cubiertos 
+512	personas con movilidad reducida
+513	las personas que no pueden caminar
+514	un limite de acceso
+515	no prohibir la entrada despues de haber pagado
+516	para niños 
+517	carreteras
+518	remodelacion-pabimentacion
+519	mejorar la comida
+520	poner wifi en las habitaciones
+521	sillas , mesas
+522	ampliar mas el parqueadero
+523	disponiblidad de mesas, jabon en el lavamanos, seguro en puertas de los vestieres
+524	no vuelve
+525	mas publicidad en el esterior 
+526	puerta de los baños
+527	la demora
+528	mesas y sillas
+529	mesas  sillas y  sombrillas tener acceso a las personas de pasadia 
+530	mesas y sillas y sombrillas en las mesas
+531	variacion de comida
+532	costos de comida 
+533	bajar precios de alojamiento 
+534	distraer a los niñpos
+535	vigilantes
+536	mini farmacia charlas de alimentacion y informacion
+537	calefaccion a los cuartos 
+538	mas variedad en el desayuno 
+539	precio y descuento 
+540	frio en la habitacion y calefaccion
+541	sillas asoliadoras y un lugar para acostarse
+542	un bar en la entrada para el recibimiento 
+543	no tener preferencias por los huspedes que tienen que caminar bastante
+544	amabilidad de los vigilantes con los turistas
+545	espacio para tener perros lavanderia de ropa para huspedes y baño turco natural
+546	acceso a recepcion y ser mas amables 
+547	indicaciones para llegar
+548	los cuartos mas vairdada la comida mas personal y la demora en el restaurante 
+549	mas opciones en la carta de almuerzos y para los niños
+550	luces al parqueadero
+551	publicidad
+552	que no pongan musica
+553	parqueadero para visitantes
+554	mas publicidad
+555	tener mas actividades
+556	implemetar el agroturismo
+557	call center 
+558	desayuno el chocolate y el postre
+559	en el sendero tener mas instructor para rumbo terapia
+560	un lugar para niños y jabon de baño
+561	sombrillas en las mesas
+562	tener algo para las personas incapcitadas
+563	tenderos para la ropa ropa 
+564	acceso en el balneario
+565	tener espacio para los adultos mayores las subida y los vestieres
+566	mantenimiento de habitaciones 
+567	no cobrar lo de la ruta ecologica
+568	no hay servicio a la piscina de alimentos 
+569	la publicidad
+570	tener transporte
+571	horario de piscinas

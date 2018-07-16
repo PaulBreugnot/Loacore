@@ -1,0 +1,98 @@
++-------------------------------------------------------------------------------------------
+| File Index : 0
+| Sentence : los precios
++-------------------------------------------------------------------------------------------
+precios (sentence, NCMP000, precio)
+    los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 1
+| Sentence : las tiendas el costo de los insumos
++-------------------------------------------------------------------------------------------
+tiendas (sentence, NCFP000, tender)
+    las (spec, None, el)
+    costo (sn, NCMS000, costo)
+        el (spec, None, el)
+        de (sp, None, de)
+            insumos (sn, NCMP000, insumo)
+                los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 2
+| Sentence : zona de descanso
++-------------------------------------------------------------------------------------------
+zona (sentence, NCFS000, zona)
+    de (sp, None, de)
+        descanso (sn, NCMS000, descansar)
+
++-------------------------------------------------------------------------------------------
+| File Index : 3
+| Sentence : el restaurante el personal
++-------------------------------------------------------------------------------------------
+restaurante (sentence, NCMS000, restaurante)
+    el (spec, None, el)
+    personal (sn, NCMS000, personal)
+        el (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 4
+| Sentence : el higiene de los baños
++-------------------------------------------------------------------------------------------
+higiene (sentence, NCFS000, higiene)
+    el (spec, None, el)
+    de (sp, None, de)
+        baños (sn, NCMP000, baño)
+            los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 5
+| Sentence : los costos
++-------------------------------------------------------------------------------------------
+costos (sentence, NCMP000, costo)
+    los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 6
+| Sentence : el retaurante por los precios
++-------------------------------------------------------------------------------------------
+retaurante (sentence, None, )
+    el (spec, None, el)
+    por (sp, None, por)
+        precios (sn, NCMP000, precio)
+            los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 7
+| Sentence : los costos
++-------------------------------------------------------------------------------------------
+costos (sentence, NCMP000, costo)
+    los (spec, None, el)
+
++-------------------------------------------------------------------------------------------
+| File Index : 8
+| Sentence : tardan mucho en servir ña comida , jugo sin azucar para diabeticos
++-------------------------------------------------------------------------------------------
+tardan (sentence, VMIP3P0, tardar)
+    mucho (cc, RG, mucho)
+    en (creg, None, en)
+        servir (S, VMN0000, servir)
+            comida (cd, NCFS000, comedir)
+                ña (s.a, None, )
+                jugo (sn, NCMS000, jugo)
+                    , (f, None, ,)
+                    sin (sp, None, sin)
+                        azucar (S, None, )
+                            para (cc, None, para)
+                                diabeticos (sn, None, )
+
++-------------------------------------------------------------------------------------------
+| File Index : 9
+| Sentence : el acceso en cuanto a informacion
++-------------------------------------------------------------------------------------------
+acceso (sentence, NCMS000, acceso)
+    el (spec, None, el)
+    en (sp, None, en)
+        cuanto (sadv, None, cuanto)
+    a (sp, None, a)
+        informacion (sn, None, )
+

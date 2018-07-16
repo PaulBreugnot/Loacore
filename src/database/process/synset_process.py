@@ -5,17 +5,21 @@ from nltk.corpus import wordnet as wn
 from src.database.classes.classes import Synset
 
 
-def add_synsets_to_sentences(sentences, print_synsets = False):
+def add_synsets_to_sentences(sentences, print_synsets=False):
     """
-    Disambiguation.
-    This function will perform a Freeling process to disambiguate words of the sentences according to their context
-    (UKB algorithm) linking them to a unique synset (if possible).
-    Our Sentence will be converted to a Freeling Sentence before processing.
-    Notice that even if we may have computed the Lemma for example, Freeling Sentences generated from our sentences are
-    "raw sentences", without any analysis linked to their Words. So we make all the freeling process since the
-    beginning every time (except tokenization and sentence splitting) to avoid any confusion.
-    :param sentences: A list of src.database.classes.Sentence
-    :return:
+    Performs a Freeling process to disambiguate words of the sentences according to their context
+    (UKB algorithm) linking them to a unique synset (if possible).\n
+    Our :class:`Sentence` s are converted to Freeling Sentences before processing.\n
+    Notice that even if we may have already computed the Lemmas for example, Freeling Sentences generated from our
+    :class:`Sentence` s are "raw sentences", without any analysis linked to their Words. So we make all the Freeling
+    process from scratch every time, except *tokenization* and *sentence splitting*, to avoid any confusion.
+
+    .. note:: This function should be used only inside the file_process.add_files() function.
+
+    :param sentences: :class:`Sentence` s to process
+    :type sentences: :obj:`list` of :class:`Sentence`
+    :param print_synsets: If True, print disambiguation results
+    :type print_synsets: boolean
     """
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
@@ -68,13 +72,16 @@ def add_synsets_to_sentences(sentences, print_synsets = False):
 
 
 def add_polarity_to_synsets():
+    """
+    Adds the positive/negative/objective polarities of all the synsets currently in the table
+    Synset, from the SentiWordNet corpus.
+
+    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+
+    """
+
     from nltk.corpus import sentiwordnet as swn
     from src.database.load import synset_load
-    """
-    This no argument fonction add the positive/negative/objective polarity of all the synsets currently in the table
-    Synset, from the SentiWordNet corpus.
-    :return:
-    """
     conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
     c = conn.cursor()
 

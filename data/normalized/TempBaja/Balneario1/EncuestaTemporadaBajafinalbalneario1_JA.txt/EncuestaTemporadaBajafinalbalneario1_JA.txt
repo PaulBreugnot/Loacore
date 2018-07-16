@@ -1,0 +1,10 @@
+0	los precios 
+1	las tiendas el costo de los insumos
+2	zona de descanso
+3	el restaurante el personal
+4	el higiene de los baños
+5	los costos
+6	el retaurante por los precios
+7	los costos
+8	tardan mucho en servir ña comida, jugo sin azucar para diabeticos
+9	el acceso en cuanto a informacion

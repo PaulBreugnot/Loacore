@@ -1,25 +1,44 @@
 class File:
+    """
+    :ivar id_file: ID_File used in File table
+    :vartype id_file: int
+    :ivar file_path: Path used to load file from file system.
+    :vartype file_path: path-like object
+    :ivar reviews: File reviews
+    :vartype reviews: :obj:`list` of :class:`Review`
+
+    """
 
     def __init__(self, id_file, file_path):
         self.id_file = id_file
         self.file_path = file_path
         self.reviews = []
 
-    def load_reviews(self):
+    def load(self, encoding='windows-1252'):
         """
-        This method should only be used to load the sentences of an isolated Review.
-        Otherwise, please use method src.database.db_review_api.load_reviews_in_files()
-        :return: loaded reviews
-        """
-        import src.database.load.review_load as review_api
-        self.reviews = review_api.load_reviews_by_id_file(self.id_file)
-        return self.get_reviews()
+        Load file from file system using :attr:`file_path` and specified encoding.
 
-    def load(self):
-        return open(self.file_path, encoding='windows-1252')
+        :param encoding:
+            Source file encoding. Default is set to *windows-1252*, the encoding obtained from .txt conversion in Excel.
+        :return: file object
+        """
+
+        return open(self.file_path, encoding)
 
 
 class Review:
+    """
+    :ivar id_review: ID_Review used id Review table
+    :vartype id_review: int
+    :ivar id_file: SQL reference to the corresponding File
+    :vartype id_file: int
+    :ivar file_index: Index of the Review in referenced File
+    :vartype file_index: int
+    :ivar review: Review represented as a string
+    :vartype review: string
+    :ivar sentences: Review Sentences
+    :vartype sentences: :obj:`list` of :class:`Sentence`
+    """
 
     def __init__(self, id_review, id_file, file_index, review):
         self.id_review = id_review
@@ -28,18 +47,25 @@ class Review:
         self.review = review
         self.sentences = []
 
-    def load_sentences(self):
-        """
-        This method should only be used to load the sentences of an isolated Review.
-        Otherwise, please use method src.database.db_sentence_api.load_sentences_in_reviews()
-        :return: loaded sentences
-        """
-        import src.database.load.sentence_load as sentence_api
-        self.sentences = sentence_api.load_sentences_list_by_id_review(self.id_review)
-        return self.get_sentences()
-
 
 class Sentence:
+
+    """
+    :ivar id_sentence: ID_Sentence used in Sentence table
+    :vartype id_sentence: int
+    :ivar id_review: SQL reference to the corresponding Review
+    :vartype id_review: int
+    :ivar review_index: Index of the Sentence in referenced Review
+    :vartype review_index: int
+    :ivar id_dep_tree: SQL reference to a possibly associated DepTree
+    :vartype id_dep_tree: int
+    :ivar words: Sentence Words
+    :vartype words: :obj:`list` of :class:`Word`
+    :ivar dep_tree: Possibly associated DepTree
+    :vartype dep_tree: :class:`DepTree`
+    :ivar freeling_sentence: result of :meth:`compute_freeling_sentence()` when called
+    :vartype freeling_sentence: :class:`pyfreeling.sentence`
+    """
 
     def __init__(self, id_sentence, id_review, review_index, id_dep_tree):
         self.id_sentence = id_sentence
@@ -50,17 +76,40 @@ class Sentence:
         self.dep_tree = None
         self.freeling_sentence = None
 
-    def load_words(self):
+    def print_sentence(self, print_sentence=True):
         """
-        This method should only be used to load the words of an isolated Sentence.
-        Otherwise, please use method src.database.db_word_api.load_words_in_sentences()
-        :return: loaded words
+
+        Convenient way of printing sentences from their word list attribute.
+
+        :param print_sentence:
+            Can be set to False to compute and return the string corresponding to the sentence, without
+            printing it.
+        :return: String representation of the sentence
+        :rtype: string
         """
-        import src.database.load.word_load as db_word_api
-        self.words = db_word_api.load_words_list_by_id_sentence(self.id_sentence)
-        return self.get_words()
+        sentence_str =' '.join([w.word for w in self.words])
+        if print_sentence:
+            print(sentence_str)
+        return sentence_str
 
     def compute_freeling_sentence(self):
+        """
+        Generates a basic :class:`pyfreeling.sentence` instance, converting :attr:`words` as :class:`pyfreeling.word` .
+        \nThis function is used to process :class:`Sentence` with Freeling.
+
+        :Example:
+        Load :class:`Sentence` s from database and convert them into Freeling Sentences.
+
+        .. code-block :: python
+
+            import src.database.load.sentence_load as sentence_load
+            sentences = sentence_load.load_sentences()
+            freeling_sentences = [s.compute_freeling_sentence() for s in sentences]
+
+        :return: generated Freeling Sentence instance
+        :rtype: :class:`pyfreeling.sentence`
+        """
+
         from ressources.pyfreeling import sentence as freeling_sentence_class
         fr_words = [word.compute_freeling_word() for word in self.words]
         fr_sentence = freeling_sentence_class(fr_words)
@@ -69,6 +118,28 @@ class Sentence:
 
 
 class Word:
+    """
+    :ivar id_word: ID_Word used in Word table
+    :vartype id_word: int
+    :ivar id_sentence: SQL reference to the corresponding Sentence
+    :vartype id_sentence: int
+    :ivar sentence_index: Index of the Word in referenced Sentence
+    :vartype sentence_index: int
+    :ivar word: Word form
+    :vartype word: string
+    :ivar id_lemma: SQL references to the corresponding Lemma (Table Lemma)
+    :vartype id_lemma: int
+    :ivar lemma: Possibly associated Lemma
+    :vartype lemma: string
+    :ivar id_synset: SQL references to corresponding Synset
+    :vartype id_synset: int
+    :ivar synset: Possibly associated Synset
+    :vartype synset: :class:`Synset`
+    :ivar PoS_tag: Possibly associated Part-of-Speech tag
+    :vartype PoS_tag: string
+    :ivar freeling_word: result of :meth:`compute_freeling_word()` when called
+    :vartype freeling_word: :class:`pyfreeling.word`
+    """
 
     def __init__(self, id_word, id_sentence, sentence_index, word, id_lemma, id_synset, PoS_tag):
         self.id_word = id_word
@@ -82,44 +153,42 @@ class Word:
         self.PoS_tag = PoS_tag
         self.freeling_word = None
 
-    def load_lemma(self):
-        """
-        This method should only be used to load the lemma of an isolated Word.
-        Otherwise, please use method src.database.db_lemma_api.load_lemmas_in_words()
-        :return: loaded Lemma
-        """
-        import src.database.load.lemma_load as db_lemma_api
-        self.lemma = db_lemma_api.load_lemmas_list([self.id_lemma])[0]
-        return self.get_lemma()
-
-    def load_synset(self):
-        """
-        This method should only be used to load the synset of an isolated Word.
-        Otherwise, please use method src.database.db_synset_api.load_synsets_in_words()
-        :return: loaded Synset
-        """
-        import src.database.load.synset_load as db_synset_api
-        self.synset = db_synset_api.load_synsets([self.id_synset])[0]
-        return self.get_synset()
-
     def compute_freeling_word(self):
-        # TODO : consistent initialization according to the use of freeling modules
+        """
+        Generates a basic :class:`pyfreeling.word` instance, generated by only the word form, even if some analysis
+        could have already been realized.\n
+        Moreover, only :func:`src.classes.classes.File.load_sentence()` (that itself uses this function) should be used,
+        because all Freeling analysis work with :class:`pyfreeling.sentence` instances.
+        """
+
         from ressources.pyfreeling import word as freeling_word_class
         fr_word = freeling_word_class()
         fr_word.set_form(self.word)
-
-        """
-        if self.lemma is not None:
-            fr_analysis = freeling_analysis()
-            fr_analysis.set_lemma(self.lemma)
-            fr_word.set_analysis(fr_analysis)
-        """
 
         self.freeling_word = fr_word
         return fr_word
 
 
 class Synset:
+    """
+    :ivar id_synset: ID_Synset used in Synset table
+    :vartype id_synset: int
+    :ivar id_word: SQL reference to the corresponding Word
+    :vartype id_word: int
+    :ivar synset_code: Synset as represented in Freeling (ex : 01123148-a)
+    :vartype synset_code: string
+    :ivar synset_name: Synset as represent in WordNet and SentiWordNet (ex : good.a.01)
+    :vartype synset_name: string
+    :ivar neg_score: Negative polarity from SentiWordNet.
+    :vartype neg_score: float
+    :ivar pos_score: Positive polarity from SentiWordNet.
+    :vartype pos_score: float
+    :ivar obj_score: Objective polarity from SentiWordNet.
+    :vartype obj_score: float
+
+    .. note:: neg_score + pos_score + obj_score = 1
+
+    """
 
     def __init__(self, id_synset, id_word, synset_code, synset_name, neg_score, pos_score, obj_score):
         self.id_synset = id_synset
@@ -132,6 +201,16 @@ class Synset:
 
 
 class DepTree:
+    """
+    :ivar id_dep_tree: Id_Dep_Tree used in DepTree table
+    :vartype id_dep_tree: int
+    :ivar id_dep_tree_node: SQL reference to root node (Dep_Tree_Node table)
+    :vartype id_dep_tree_node: int
+    :ivar id_sentence: SQL reference to the corresponding Sentence
+    :vartype id_sentence: int
+    :ivar root: Root node
+    :vartype root: :class:`DepTreeNode`
+    """
 
     def __init__(self, id_dep_tree, id_dep_tree_node, id_sentence):
         self.id_dep_tree = id_dep_tree
@@ -139,23 +218,53 @@ class DepTree:
         self.id_sentence = id_sentence
         self.root = None
 
-    def print_dep_tree(self, root=None):
+    def print_dep_tree(self, root=None, print_dep_tree=True):
+        """
+        :param root: If set, node from which to start to print the tree. self.root otherwise.
+        :type root: :class:`DepTreeNode`
+        :param print_dep_tree:
+            Can be set to False to compute and return the string corresponding to the tree, without
+            printing it.
+        :type print_dep_tree: boolean
+        :return: String representation of DepTree instance
+        :rtype: string
+        """
+        dep_tree_str = []
         if root is None:
             root = self.root
-        self.print_node(root, "")
+        self.print_node(dep_tree_str, root, "")
+        dep_tree_str = '\n'.join(dep_tree_str)
+        if print_dep_tree:
+            print(dep_tree_str)
+        return dep_tree_str
 
-    def print_node(self, node, offset):
+    def print_node(self, dep_tree_str, node, offset):
         if node.word is None:
-            print(offset, "ID_Word : " + node.id_word + "Label : " + node.label)
+            dep_tree_str.append(offset + "ID_Word : " + str(node.id_word) + "Label : " + str(node.label))
         else:
-            print(offset, node.word.word, ' (', node.label, ', ', node.word.PoS_tag, ', ',
-                  node.word.lemma, ')')
+            dep_tree_str.append(offset + node.word.word + ' (' + str(node.label) + ', ' + str(node.word.PoS_tag) + ', '
+                + node.word.lemma + ')')
         for child in node.children:
-            self.print_node(child, offset + '    ')
+            self.print_node(dep_tree_str, child, offset + '    ')
 
 
 class DepTreeNode:
-
+    """
+    :ivar id_dep_tree_node: ID_Dep_Tree_Node used in Dep_Tree_Node table
+    :vartype id_dep_tree_node: int
+    :ivar id_dep_tree: SQL reference to the corresponding DepTree
+    :vartype id_dep_tree: int
+    :ivar id_word: SQL reference to corresponding id_word
+    :vartype id_word: int
+    :ivar word: Possibly loaded associated word
+    :vartype word: :class:`Word`
+    :ivar label: Node dependency label. See annex for details.
+    :vartype label: string
+    :ivar root: True if and only if this is the root of the corresponding DepTree
+    :vartype root: boolean
+    :ivar children: Node children
+    :vartype children: :obj:`list` of :class:`DepTreeNode`
+    """
     def __init__(self, id_dep_tree_node, id_dep_tree, id_word, label, root):
         self.id_dep_tree_node = id_dep_tree_node
         self.id_dep_tree = id_dep_tree

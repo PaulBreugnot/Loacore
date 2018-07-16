@@ -6,9 +6,17 @@ from src.database.classes.classes import Review
 
 def add_reviews_from_files(files):
     """
-    Load files from file system, normalize and add reviews to database.
-    :param files: list of files from which reviews must be added
-    :return: added reviews
+
+    Load argument files from file system and normalize their content.\n
+    Compute Reviews objects and add them to the database.
+
+    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+
+    :param files: :class:`File` s to process
+    :type files: :obj:`list` of :class:`File`
+    :return: added :class:`Review` s
+    :rtype: :obj:`list` of :class:`Review`
+
     """
     conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
     c = conn.cursor()
@@ -47,6 +55,18 @@ def add_reviews_from_files(files):
 
 
 def normalize(text):
+    """
+
+    Performs raw text normalization.
+
+    - Convertion to lower case
+    - Review splitting using python regular expressions : each new line correspond to a new review
+
+    :param text: text to process
+    :type text: string
+    :return: reviews
+    :rtype: :obj:`list` of :obj:`string`
+    """
     normalized_string = text.lower()
     reviews = re.findall(r'.+', normalized_string, re.MULTILINE)
     return reviews

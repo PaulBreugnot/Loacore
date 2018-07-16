@@ -1,0 +1,61 @@
+0	no hay informacion en folletos
+1	la carrtera
+2	los baños sucios
+3	precio 
+4	que haya pasadia pero con almuerzo incluido
+5	la falta de publicidad
+6	el incremento de las entradas
+7	sitio exlusivo pero excluyente no le ayudaron con su mama demasiada presion del agua falta de atencion a su necesidad vestier no hay en el primer piso 
+8	carretera sin pavimentar
+9	los pisos mojados porque estaban resbaladizos
+10	horario restringido de la piscina y los brazaletes
+11	que la temperatura del agua sea mas baja mas agradable
+12	en el camino las camaras estan tapadas con arbustos no hay facilidad para personas mayores
+13	las vias
+14	le falta infraestructura 
+15	que no hay sombrilla en las mesas y que haya carpa pata no mojatse en el camino
+16	el cafe
+17	temperatura alta
+18	el acceso
+19	no invierten en el lugar todo es lo mismo maltrato hacia los empleados
+20	la carretera angosta
+21	la entrada
+22	le falta sabor a la comida 
+23	la comida
+24	desde la habitacion se escuchaba el sonido de la cascafa
+25	que no tenga servicio de toallas
+26	que no tienen los mimos beneficios que los huespedes
+27	tanta gente y el espacio tan pequeño
+28	que solo tuvieran acceso a una sola piscina
+29	la atencion uno de los meseros no lo quiso atender y lo trataron mal
+30	la piscina pequeña
+31	la comida
+32	el servicio y la comida
+33	la construccion nova a aer acorde con el entorno
+34	no tiene agua caliente la ducha ni jabon no hay elevador en el hotel cuartos sin ventilador comida muy regular sin mucha variedad
+35	el hotel el estado de las habitaciones
+36	la construccion
+37	el trayecto de el hotel a la piscina  las piscinas anexas no tienen buena atencion
+38	faltaron batas 
+39	la habitacion
+40	no hay tranquilidad en algunas zonas
+41	restaurante
+42	zona de parqueo
+43	lejania
+44	la poca variedad en el menu
+45	la demora en la construccion y el costo de los tragos
+46	el precio de la entrada
+47	el valor
+48	que desde las habitaciones no se pueden ver las piscinas
+49	el precio
+50	el cafe
+51	parqueadero lejos
+52	el precio de la comid
+53	baja atencion en el restaurante no funciona el wi fi en la habitacion 
+54	inconvenientes para los masajes porque muchas vecesno hay disponibilidad 
+55	atencional cliente
+56	el frio
+57	la construccion
+58	el clima
+59	el frio
+60	las ventanas no son muy gruesas y se escuchaba el sonido de la cascada
