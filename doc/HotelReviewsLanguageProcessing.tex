@@ -80,15 +80,20 @@
 \item[] \sphinxstylestrong{For now}, only a Linux installation in the default folder \sphinxstyleemphasis{/usr/local} is supported, but this should be fixed in next improvements.
 \end{DUlineblock}
 
+\begin{DUlineblock}{0em}
+\item[] This project also use an embedded sqlite3 database to store results : \sphinxurl{https://docs.python.org/3/library/sqlite3.html}
+\item[] The corresponding Python package should already be installed in your Python3 distribution.
+\end{DUlineblock}
+
 
 \chapter{Classes}
 \label{\detokenize{index:classes}}
 
 \section{File}
-\label{\detokenize{index:file}}\index{File (class in src.database.classes.classes)}
+\label{\detokenize{index:file}}\index{File (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.File}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{File}}}{\emph{id\_file}, \emph{file\_path}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.File}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{File}}}{\emph{id\_file}, \emph{file\_path}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_file}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_File used in File table
@@ -97,15 +102,15 @@
 \sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxstyleliteralemphasis{\sphinxupquote{path-like object}}) \textendash{} Path used to load file from file system.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:src.database.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} File reviews
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} File reviews
 
 \end{itemize}
 
 \end{description}\end{quote}
-\index{load() (src.database.classes.classes.File method)}
+\index{load() (loacore.classes.classes.File method)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.File.load}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{load}}}{\emph{encoding='windows-1252'}}{}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.File.load}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{load}}}{\emph{encoding='windows-1252'}}{}
 Load file from file system using \sphinxcode{\sphinxupquote{file\_path}} and specified encoding.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -124,10 +129,10 @@ file object
 
 
 \section{Review}
-\label{\detokenize{index:review}}\index{Review (class in src.database.classes.classes)}
+\label{\detokenize{index:review}}\index{Review (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Review}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{Review}}}{\emph{id\_review}, \emph{id\_file}, \emph{file\_index}, \emph{review}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Review}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{Review}}}{\emph{id\_review}, \emph{id\_file}, \emph{file\_index}, \emph{review}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_review}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_Review used id Review table
@@ -142,7 +147,7 @@ file object
 \sphinxstyleliteralstrong{\sphinxupquote{review}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Review represented as a string
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{sentences}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:src.database.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}}) \textendash{} Review Sentences
+\sphinxstyleliteralstrong{\sphinxupquote{sentences}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:loacore.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}}) \textendash{} Review Sentences
 
 \end{itemize}
 
@@ -153,10 +158,10 @@ file object
 
 
 \section{Sentence}
-\label{\detokenize{index:sentence}}\index{Sentence (class in src.database.classes.classes)}
+\label{\detokenize{index:sentence}}\index{Sentence (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{Sentence}}}{\emph{id\_sentence}, \emph{id\_review}, \emph{review\_index}, \emph{id\_dep\_tree}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{Sentence}}}{\emph{id\_sentence}, \emph{id\_review}, \emph{review\_index}, \emph{id\_dep\_tree}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_sentence}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_Sentence used in Sentence table
@@ -171,40 +176,38 @@ file object
 \sphinxstyleliteralstrong{\sphinxupquote{id\_dep\_tree}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} SQL reference to a possibly associated DepTree
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{words}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:src.database.classes.classes.Word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Word}}}}}) \textendash{} Sentence Words
+\sphinxstyleliteralstrong{\sphinxupquote{words}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:loacore.classes.classes.Word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Word}}}}}) \textendash{} Sentence Words
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{dep\_tree}} ({\hyperref[\detokenize{index:src.database.classes.classes.DepTree}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTree}}}}}) \textendash{} Possibly associated DepTree
+\sphinxstyleliteralstrong{\sphinxupquote{dep\_tree}} ({\hyperref[\detokenize{index:loacore.classes.classes.DepTree}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTree}}}}}) \textendash{} Possibly associated DepTree
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{freeling\_sentence}} (\sphinxcode{\sphinxupquote{pyfreeling.sentence}}) \textendash{} result of {\hyperref[\detokenize{index:src.database.classes.classes.Sentence.compute_freeling_sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{compute\_freeling\_sentence()}}}}} when called
+\sphinxstyleliteralstrong{\sphinxupquote{freeling\_sentence}} (\sphinxcode{\sphinxupquote{pyfreeling.sentence}}) \textendash{} result of {\hyperref[\detokenize{index:loacore.classes.classes.Sentence.compute_freeling_sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{compute\_freeling\_sentence()}}}}} when called
 
 \end{itemize}
 
 \end{description}\end{quote}
-\index{compute\_freeling\_sentence() (src.database.classes.classes.Sentence method)}
+\index{compute\_freeling\_sentence() (loacore.classes.classes.Sentence method)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Sentence.compute_freeling_sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{compute\_freeling\_sentence}}}{}{}~\begin{quote}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Sentence.compute_freeling_sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{compute\_freeling\_sentence}}}{}{}~\begin{quote}
 
 Generates a basic \sphinxcode{\sphinxupquote{pyfreeling.sentence}} instance, converting \sphinxcode{\sphinxupquote{words}} as \sphinxcode{\sphinxupquote{pyfreeling.word}} .
 \end{quote}
 
-This function is used to process {\hyperref[\detokenize{index:src.database.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}} with Freeling.
+This function is used to process {\hyperref[\detokenize{index:loacore.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}} with Freeling.
 \begin{quote}
 \begin{quote}\begin{description}
 \item[{Example}] \leavevmode
-\end{description}\end{quote}
-
-Load {\hyperref[\detokenize{index:src.database.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}} s from database and convert them into Freeling Sentences.
+Load {\hyperref[\detokenize{index:loacore.classes.classes.Sentence}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Sentence}}}}} s from database and convert them into Freeling Sentences.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{k+kn}{import} \PYG{n+nn}{src.database.load.sentence\PYGZus{}load} \PYG{k+kn}{as} \PYG{n+nn}{sentence\PYGZus{}load}
-\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences}\PYG{p}{(}\PYG{p}{)}
-\PYG{n}{freeling\PYGZus{}sentences} \PYG{o}{=} \PYG{p}{[}\PYG{n}{s}\PYG{o}{.}\PYG{n}{compute\PYGZus{}freeling\PYGZus{}sentence}\PYG{p}{(}\PYG{p}{)} \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{sentences}\PYG{p}{]}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences}\PYG{p}{(}\PYG{p}{)}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{freeling\PYGZus{}sentences} \PYG{o}{=} \PYG{p}{[}\PYG{n}{s}\PYG{o}{.}\PYG{n}{compute\PYGZus{}freeling\PYGZus{}sentence}\PYG{p}{(}\PYG{p}{)} \PYG{k}{for} \PYG{n}{s} \PYG{o+ow}{in} \PYG{n}{sentences}\PYG{p}{]}
 \end{sphinxVerbatim}
-\begin{quote}\begin{description}
+
 \item[{return}] \leavevmode
 generated Freeling Sentence instance
 
@@ -216,10 +219,10 @@ generated Freeling Sentence instance
 
 \end{fulllineitems}
 
-\index{print\_sentence() (src.database.classes.classes.Sentence method)}
+\index{print\_sentence() (loacore.classes.classes.Sentence method)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Sentence.print_sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{print\_sentence}}}{\emph{print\_sentence=True}}{}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Sentence.print_sentence}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{print\_sentence}}}{\emph{print\_sentence=True}}{}
 Convenient way of printing sentences from their word list attribute.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -242,10 +245,10 @@ string
 
 
 \section{Word}
-\label{\detokenize{index:word}}\index{Word (class in src.database.classes.classes)}
+\label{\detokenize{index:word}}\index{Word (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Word}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{Word}}}{\emph{id\_word}, \emph{id\_sentence}, \emph{sentence\_index}, \emph{word}, \emph{id\_lemma}, \emph{id\_synset}, \emph{PoS\_tag}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Word}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{Word}}}{\emph{id\_word}, \emph{id\_sentence}, \emph{sentence\_index}, \emph{word}, \emph{id\_lemma}, \emph{id\_synset}, \emph{PoS\_tag}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_word}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_Word used in Word table
@@ -269,25 +272,25 @@ string
 \sphinxstyleliteralstrong{\sphinxupquote{id\_synset}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} SQL references to corresponding Synset
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{synset}} ({\hyperref[\detokenize{index:src.database.classes.classes.Synset}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Synset}}}}}) \textendash{} Possibly associated Synset
+\sphinxstyleliteralstrong{\sphinxupquote{synset}} ({\hyperref[\detokenize{index:loacore.classes.classes.Synset}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Synset}}}}}) \textendash{} Possibly associated Synset
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{PoS\_tag}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Possibly associated Part-of-Speech tag
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{freeling\_word}} (\sphinxcode{\sphinxupquote{pyfreeling.word}}) \textendash{} result of {\hyperref[\detokenize{index:src.database.classes.classes.Word.compute_freeling_word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{compute\_freeling\_word()}}}}} when called
+\sphinxstyleliteralstrong{\sphinxupquote{freeling\_word}} (\sphinxcode{\sphinxupquote{pyfreeling.word}}) \textendash{} result of {\hyperref[\detokenize{index:loacore.classes.classes.Word.compute_freeling_word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{compute\_freeling\_word()}}}}} when called
 
 \end{itemize}
 
 \end{description}\end{quote}
-\index{compute\_freeling\_word() (src.database.classes.classes.Word method)}
+\index{compute\_freeling\_word() (loacore.classes.classes.Word method)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Word.compute_freeling_word}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{compute\_freeling\_word}}}{}{}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Word.compute_freeling_word}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{compute\_freeling\_word}}}{}{}
 Generates a basic \sphinxcode{\sphinxupquote{pyfreeling.word}} instance, generated by only the word form, even if some analysis
 could have already been realized.
 
-Moreover, only \sphinxcode{\sphinxupquote{src.classes.classes.File.load\_sentence()}} (that itself uses this function) should be used,
+Moreover, only \sphinxcode{\sphinxupquote{loacore.classes.classes.File.load\_sentence()}} (that itself uses this function) should be used,
 because all Freeling analysis work with \sphinxcode{\sphinxupquote{pyfreeling.sentence}} instances.
 
 \end{fulllineitems}
@@ -298,10 +301,10 @@ because all Freeling analysis work with \sphinxcode{\sphinxupquote{pyfreeling.se
 
 
 \section{Synset}
-\label{\detokenize{index:synset}}\index{Synset (class in src.database.classes.classes)}
+\label{\detokenize{index:synset}}\index{Synset (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.Synset}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{Synset}}}{\emph{id\_synset}, \emph{id\_word}, \emph{synset\_code}, \emph{synset\_name}, \emph{neg\_score}, \emph{pos\_score}, \emph{obj\_score}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.Synset}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{Synset}}}{\emph{id\_synset}, \emph{id\_word}, \emph{synset\_code}, \emph{synset\_name}, \emph{neg\_score}, \emph{pos\_score}, \emph{obj\_score}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_synset}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_Synset used in Synset table
@@ -337,10 +340,10 @@ neg\_score + pos\_score + obj\_score = 1
 
 
 \section{DepTree}
-\label{\detokenize{index:deptree}}\index{DepTree (class in src.database.classes.classes)}
+\label{\detokenize{index:deptree}}\index{DepTree (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.DepTree}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{DepTree}}}{\emph{id\_dep\_tree}, \emph{id\_dep\_tree\_node}, \emph{id\_sentence}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.DepTree}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{DepTree}}}{\emph{id\_dep\_tree}, \emph{id\_dep\_tree\_node}, \emph{id\_sentence}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_dep\_tree}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Id\_Dep\_Tree used in DepTree table
@@ -352,18 +355,18 @@ neg\_score + pos\_score + obj\_score = 1
 \sphinxstyleliteralstrong{\sphinxupquote{id\_sentence}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} SQL reference to the corresponding Sentence
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{root}} ({\hyperref[\detokenize{index:src.database.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} Root node
+\sphinxstyleliteralstrong{\sphinxupquote{root}} ({\hyperref[\detokenize{index:loacore.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} Root node
 
 \end{itemize}
 
 \end{description}\end{quote}
-\index{print\_dep\_tree() (src.database.classes.classes.DepTree method)}
+\index{print\_dep\_tree() (loacore.classes.classes.DepTree method)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.DepTree.print_dep_tree}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{print\_dep\_tree}}}{\emph{root=None}, \emph{print\_dep\_tree=True}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.DepTree.print_dep_tree}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{print\_dep\_tree}}}{\emph{root=None}, \emph{print\_dep\_tree=True}}{}~\begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{root}} ({\hyperref[\detokenize{index:src.database.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} If set, node from which to start to print the tree. self.root otherwise.
+\sphinxstyleliteralstrong{\sphinxupquote{root}} ({\hyperref[\detokenize{index:loacore.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} If set, node from which to start to print the tree. self.root otherwise.
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{print\_dep\_tree}} (\sphinxstyleliteralemphasis{\sphinxupquote{boolean}}) \textendash{} Can be set to False to compute and return the string corresponding to the tree, without
@@ -387,10 +390,10 @@ string
 
 
 \section{DepTreeNode}
-\label{\detokenize{index:deptreenode}}\index{DepTreeNode (class in src.database.classes.classes)}
+\label{\detokenize{index:deptreenode}}\index{DepTreeNode (class in loacore.classes.classes)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.classes.classes.DepTreeNode}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{src.database.classes.classes.}}\sphinxbfcode{\sphinxupquote{DepTreeNode}}}{\emph{id\_dep\_tree\_node}, \emph{id\_dep\_tree}, \emph{id\_word}, \emph{label}, \emph{root}}{}~\begin{quote}\begin{description}
+\phantomsection\label{\detokenize{index:loacore.classes.classes.DepTreeNode}}\pysiglinewithargsret{\sphinxbfcode{\sphinxupquote{class }}\sphinxcode{\sphinxupquote{loacore.classes.classes.}}\sphinxbfcode{\sphinxupquote{DepTreeNode}}}{\emph{id\_dep\_tree\_node}, \emph{id\_dep\_tree}, \emph{id\_word}, \emph{label}, \emph{root}}{}~\begin{quote}\begin{description}
 \item[{Variables}] \leavevmode\begin{itemize}
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{id\_dep\_tree\_node}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} ID\_Dep\_Tree\_Node used in Dep\_Tree\_Node table
@@ -402,7 +405,7 @@ string
 \sphinxstyleliteralstrong{\sphinxupquote{id\_word}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} SQL reference to corresponding id\_word
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{word}} ({\hyperref[\detokenize{index:src.database.classes.classes.Word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Word}}}}}) \textendash{} Possibly loaded associated word
+\sphinxstyleliteralstrong{\sphinxupquote{word}} ({\hyperref[\detokenize{index:loacore.classes.classes.Word}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Word}}}}}) \textendash{} Possibly loaded associated word
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{label}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Node dependency label. See annex for details.
@@ -411,7 +414,7 @@ string
 \sphinxstyleliteralstrong{\sphinxupquote{root}} (\sphinxstyleliteralemphasis{\sphinxupquote{boolean}}) \textendash{} True if and only if this is the root of the corresponding DepTree
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{children}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:src.database.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} Node children
+\sphinxstyleliteralstrong{\sphinxupquote{children}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{index:loacore.classes.classes.DepTreeNode}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{DepTreeNode}}}}}) \textendash{} Node children
 
 \end{itemize}
 
@@ -438,10 +441,10 @@ Normalization : conversion to UTF-8 and lower case
 Review splitting : the file text is splitted into reviews
 
 \end{itemize}
-\phantomsection\label{\detokenize{index:module-src.database.process.review_process}}\index{src.database.process.review\_process (module)}\index{add\_reviews\_from\_files() (in module src.database.process.review\_process)}
+\phantomsection\label{\detokenize{index:module-loacore.process.review_process}}\index{loacore.process.review\_process (module)}\index{add\_reviews\_from\_files() (in module loacore.process.review\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.review_process.add_reviews_from_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.review\_process.}}\sphinxbfcode{\sphinxupquote{add\_reviews\_from\_files}}}{\emph{files}}{}
+\phantomsection\label{\detokenize{index:loacore.process.review_process.add_reviews_from_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.review\_process.}}\sphinxbfcode{\sphinxupquote{add\_reviews\_from\_files}}}{\emph{files}}{}
 Load argument files from file system and normalize their content.
 
 Compute Reviews objects and add them to the database.
@@ -463,10 +466,10 @@ added \sphinxcode{\sphinxupquote{Review}} s
 
 \end{fulllineitems}
 
-\index{normalize() (in module src.database.process.review\_process)}
+\index{normalize() (in module loacore.process.review\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.review_process.normalize}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.review\_process.}}\sphinxbfcode{\sphinxupquote{normalize}}}{\emph{text}}{}
+\phantomsection\label{\detokenize{index:loacore.process.review_process.normalize}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.review\_process.}}\sphinxbfcode{\sphinxupquote{normalize}}}{\emph{text}}{}
 Performs raw text normalization.
 \begin{itemize}
 \item {} 
@@ -496,10 +499,10 @@ reviews
 \label{\detokenize{index:freeling-processes}}
 
 \subsection{tokenization}
-\label{\detokenize{index:module-src.database.process.sentence_process}}\label{\detokenize{index:tokenization}}\index{src.database.process.sentence\_process (module)}\index{add\_sentences\_from\_reviews() (in module src.database.process.sentence\_process)}
+\label{\detokenize{index:module-loacore.process.sentence_process}}\label{\detokenize{index:tokenization}}\index{loacore.process.sentence\_process (module)}\index{add\_sentences\_from\_reviews() (in module loacore.process.sentence\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.sentence_process.add_sentences_from_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.sentence\_process.}}\sphinxbfcode{\sphinxupquote{add\_sentences\_from\_reviews}}}{\emph{reviews}}{}
+\phantomsection\label{\detokenize{index:loacore.process.sentence_process.add_sentences_from_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.sentence\_process.}}\sphinxbfcode{\sphinxupquote{add\_sentences\_from\_reviews}}}{\emph{reviews}}{}
 Performs the first Freeling process applied to each normalized review.
 
 Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.
@@ -526,10 +529,10 @@ added \sphinxcode{\sphinxupquote{Sentence}} s
 
 
 \subsection{lemmatization}
-\label{\detokenize{index:module-src.database.process.lemma_process}}\label{\detokenize{index:lemmatization}}\index{src.database.process.lemma\_process (module)}\index{add\_lemmas\_to\_sentences() (in module src.database.process.lemma\_process)}
+\label{\detokenize{index:module-loacore.process.lemma_process}}\label{\detokenize{index:lemmatization}}\index{loacore.process.lemma\_process (module)}\index{add\_lemmas\_to\_sentences() (in module loacore.process.lemma\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.lemma_process.add_lemmas_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.lemma\_process.}}\sphinxbfcode{\sphinxupquote{add\_lemmas\_to\_sentences}}}{\emph{sentences}, \emph{print\_lemmas=False}}{}
+\phantomsection\label{\detokenize{index:loacore.process.lemma_process.add_lemmas_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.lemma\_process.}}\sphinxbfcode{\sphinxupquote{add\_lemmas\_to\_sentences}}}{\emph{sentences}, \emph{print\_lemmas=False}}{}
 Performs a Freeling process to add lemmas to \sphinxcode{\sphinxupquote{Word}} s.
 
 However, the argument is actually a sentence to better fit Freeling usage.
@@ -556,10 +559,10 @@ This function should be used only inside the \sphinxcode{\sphinxupquote{file\_pr
 
 
 \subsection{disambiguation}
-\label{\detokenize{index:module-src.database.process.synset_process}}\label{\detokenize{index:disambiguation}}\index{src.database.process.synset\_process (module)}\index{add\_polarity\_to\_synsets() (in module src.database.process.synset\_process)}
+\label{\detokenize{index:module-loacore.process.synset_process}}\label{\detokenize{index:disambiguation}}\index{loacore.process.synset\_process (module)}\index{add\_polarity\_to\_synsets() (in module loacore.process.synset\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.synset_process.add_polarity_to_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_polarity\_to\_synsets}}}{}{}
+\phantomsection\label{\detokenize{index:loacore.process.synset_process.add_polarity_to_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_polarity\_to\_synsets}}}{}{}
 Adds the positive/negative/objective polarities of all the synsets currently in the table
 Synset, from the SentiWordNet corpus.
 
@@ -569,10 +572,10 @@ This function should be used only inside the \sphinxcode{\sphinxupquote{file\_pr
 
 \end{fulllineitems}
 
-\index{add\_synsets\_to\_sentences() (in module src.database.process.synset\_process)}
+\index{add\_synsets\_to\_sentences() (in module loacore.process.synset\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.synset_process.add_synsets_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_synsets\_to\_sentences}}}{\emph{sentences}, \emph{print\_synsets=False}}{}
+\phantomsection\label{\detokenize{index:loacore.process.synset_process.add_synsets_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_synsets\_to\_sentences}}}{\emph{sentences}, \emph{print\_synsets=False}}{}
 Performs a Freeling process to disambiguate words of the sentences according to their context
 (UKB algorithm) linking them to a unique synset (if possible).
 
@@ -602,10 +605,10 @@ This function should be used only inside the file\_process.add\_files() function
 
 
 \subsection{dependency tree generation}
-\label{\detokenize{index:module-src.database.process.deptree_process}}\label{\detokenize{index:dependency-tree-generation}}\index{src.database.process.deptree\_process (module)}\index{add\_dep\_tree\_from\_sentences() (in module src.database.process.deptree\_process)}
+\label{\detokenize{index:module-loacore.process.deptree_process}}\label{\detokenize{index:dependency-tree-generation}}\index{loacore.process.deptree\_process (module)}\index{add\_dep\_tree\_from\_sentences() (in module loacore.process.deptree\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.deptree_process.add_dep_tree_from_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.deptree\_process.}}\sphinxbfcode{\sphinxupquote{add\_dep\_tree\_from\_sentences}}}{\emph{sentences}, \emph{print\_result=False}}{}
+\phantomsection\label{\detokenize{index:loacore.process.deptree_process.add_dep_tree_from_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.deptree\_process.}}\sphinxbfcode{\sphinxupquote{add\_dep\_tree\_from\_sentences}}}{\emph{sentences}, \emph{print\_result=False}}{}
 Generates the dependency trees of the specified \sphinxcode{\sphinxupquote{Sentence}} s and add the results to the
 database.
 
@@ -638,10 +641,10 @@ This process can be quite long. (at least a few minutes)
 
 
 \section{Feed database}
-\label{\detokenize{index:module-src.database.process.file_process}}\label{\detokenize{index:feed-database}}\index{src.database.process.file\_process (module)}\index{add\_files() (in module src.database.process.file\_process)}
+\label{\detokenize{index:module-loacore.process.file_process}}\label{\detokenize{index:feed-database}}\index{loacore.process.file\_process (module)}\index{add\_files() (in module loacore.process.file\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.process.file_process.add_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.process.file\_process.}}\sphinxbfcode{\sphinxupquote{add\_files}}}{\emph{file\_paths}}{}
+\phantomsection\label{\detokenize{index:loacore.process.file_process.add_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.file\_process.}}\sphinxbfcode{\sphinxupquote{add\_files}}}{\emph{file\_paths}}{}
 This function performs the full process on all the file\_paths specified, and add the results to the corresponding
 tables.
 \begin{quote}\begin{description}
@@ -671,19 +674,19 @@ Process and load file from the relative directory \sphinxstyleemphasis{data/raw/
 \label{\detokenize{index:load-data-from-database-load-package}}
 
 \section{Load Files}
-\label{\detokenize{index:module-src.database.load.file_load}}\label{\detokenize{index:load-files}}\index{src.database.load.file\_load (module)}\index{clean\_db() (in module src.database.load.file\_load)}
+\label{\detokenize{index:module-loacore.load.file_load}}\label{\detokenize{index:load-files}}\index{loacore.load.file\_load (module)}\index{clean\_db() (in module loacore.load.file\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.file_load.clean_db}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.file\_load.}}\sphinxbfcode{\sphinxupquote{clean\_db}}}{}{}
+\phantomsection\label{\detokenize{index:loacore.load.file_load.clean_db}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{clean\_db}}}{}{}
 Remove all files from database. Implemented references will also engender the deletion of all files
 dependencies in database : all the tables will be emptied.
 
 \end{fulllineitems}
 
-\index{load\_database() (in module src.database.load.file\_load)}
+\index{load\_database() (in module loacore.load.file\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.file_load.load_database}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.file\_load.}}\sphinxbfcode{\sphinxupquote{load\_database}}}{\emph{id\_files={[}{]}}, \emph{load\_reviews=True}, \emph{load\_sentences=True}, \emph{load\_words=True}, \emph{load\_deptrees=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.file_load.load_database}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{load\_database}}}{\emph{id\_files={[}{]}}, \emph{load\_reviews=True}, \emph{load\_sentences=True}, \emph{load\_words=True}, \emph{load\_deptrees=True}}{}
 Load the complete database as a \sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{File}} , with all the dependencies specified in parameters
 loaded in them.
 \begin{quote}\begin{description}
@@ -723,7 +726,7 @@ Load files 1,2,3 with only their \sphinxcode{\sphinxupquote{id\_file}} and \sphi
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{files} \PYG{o}{=} \PYG{n}{file\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}database}\PYG{p}{(}\PYG{n}{id\PYGZus{}files}\PYG{o}{=}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{]}\PYG{p}{,} \PYG{n}{load\PYGZus{}reviews}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{p}{[}\PYG{n}{f}\PYG{o}{.}\PYG{n}{file\PYGZus{}path} \PYG{k}{for} \PYG{n}{f} \PYG{o+ow}{in} \PYG{n}{files}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+go}{[\PYGZsq{}../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2\PYGZus{}EO.txt\PYGZsq{},}
@@ -736,7 +739,7 @@ Load the first 10 files without \sphinxcode{\sphinxupquote{DepTree}} s.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{files} \PYG{o}{=} \PYG{n}{load\PYGZus{}database}\PYG{p}{(}\PYG{n}{id\PYGZus{}files}\PYG{o}{=}\PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{11}\PYG{p}{)}\PYG{p}{,} \PYG{n}{load\PYGZus{}deptrees}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{files}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]}\PYG{o}{.}\PYG{n}{reviews}\PYG{p}{[}\PYG{l+m+mi}{8}\PYG{p}{]}\PYG{o}{.}\PYG{n}{review}\PYG{p}{)}
 \PYG{g+go}{que sea mas grande el parqueadero}
@@ -747,7 +750,7 @@ Load the complete database.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{files} \PYG{o}{=} \PYG{n}{load\PYGZus{}database}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{files}\PYG{p}{)}\PYG{p}{)}
 \PYG{g+go}{33}
@@ -757,10 +760,10 @@ Load the complete database.
 
 \end{fulllineitems}
 
-\index{remove\_files() (in module src.database.load.file\_load)}
+\index{remove\_files() (in module loacore.load.file\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.file_load.remove_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.file\_load.}}\sphinxbfcode{\sphinxupquote{remove\_files}}}{\emph{files}}{}
+\phantomsection\label{\detokenize{index:loacore.load.file_load.remove_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{remove\_files}}}{\emph{files}}{}
 Remove specified files from database. Implemented references will also engender the deletion of all files
 dependencies in database.
 \begin{quote}\begin{description}
@@ -774,10 +777,10 @@ dependencies in database.
 
 
 \section{Load Reviews}
-\label{\detokenize{index:module-src.database.load.review_load}}\label{\detokenize{index:load-reviews}}\index{src.database.load.review\_load (module)}\index{load\_reviews() (in module src.database.load.review\_load)}
+\label{\detokenize{index:module-loacore.load.review_load}}\label{\detokenize{index:load-reviews}}\index{loacore.load.review\_load (module)}\index{load\_reviews() (in module loacore.load.review\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.review_load.load_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews}}}{\emph{id\_reviews={[}{]}}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
+\phantomsection\label{\detokenize{index:loacore.load.review_load.load_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews}}}{\emph{id\_reviews={[}{]}}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
 Load \sphinxcode{\sphinxupquote{Review}} s from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -806,7 +809,7 @@ Load all reviews with sentences and words
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{review\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{review\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{review\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{review\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{reviews} \PYG{o}{=} \PYG{n}{review\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}reviews}\PYG{p}{(}\PYG{n}{load\PYGZus{}sentences}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{load\PYGZus{}words}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{reviews}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{sentences}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{print\PYGZus{}sentence}\PYG{p}{(}\PYG{n}{print\PYGZus{}sentence}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+go}{\PYGZsq{}teleferico\PYGZsq{}}
@@ -816,10 +819,10 @@ Load all reviews with sentences and words
 
 \end{fulllineitems}
 
-\index{load\_reviews\_by\_id\_files() (in module src.database.load.review\_load)}
+\index{load\_reviews\_by\_id\_files() (in module loacore.load.review\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.review_load.load_reviews_by_id_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews\_by\_id\_files}}}{\emph{id\_files}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
+\phantomsection\label{\detokenize{index:loacore.load.review_load.load_reviews_by_id_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews\_by\_id\_files}}}{\emph{id\_files}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
 Load \sphinxcode{\sphinxupquote{Review}} s of files specified by their ids.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -848,7 +851,7 @@ Load reviews from the first file as “raw” reviews, without \sphinxcode{\sphi
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{review\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{review\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{review\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{review\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{reviews} \PYG{o}{=} \PYG{n}{review\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}reviews\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{reviews}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{review}\PYG{p}{)}
 \PYG{g+go}{teleferico}
@@ -858,10 +861,10 @@ Load reviews from the first file as “raw” reviews, without \sphinxcode{\sphi
 
 \end{fulllineitems}
 
-\index{load\_reviews\_in\_files() (in module src.database.load.review\_load)}
+\index{load\_reviews\_in\_files() (in module loacore.load.review\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.review_load.load_reviews_in_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews\_in\_files}}}{\emph{files}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
+\phantomsection\label{\detokenize{index:loacore.load.review_load.load_reviews_in_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.review\_load.}}\sphinxbfcode{\sphinxupquote{load\_reviews\_in\_files}}}{\emph{files}, \emph{load\_sentences=False}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
 Load \sphinxcode{\sphinxupquote{Review}} s into corresponding \sphinxstyleemphasis{files}, setting up their attribute \sphinxcode{\sphinxupquote{reviews}}.
 
 Also return all the loaded reviews.
@@ -899,10 +902,10 @@ Loaded reviews
 
 
 \section{Load Sentences}
-\label{\detokenize{index:module-src.database.load.sentence_load}}\label{\detokenize{index:load-sentences}}\index{src.database.load.sentence\_load (module)}\index{load\_sentences() (in module src.database.load.sentence\_load)}
+\label{\detokenize{index:module-loacore.load.sentence_load}}\label{\detokenize{index:load-sentences}}\index{loacore.load.sentence\_load (module)}\index{load\_sentences() (in module loacore.load.sentence\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.sentence_load.load_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences}}}{\emph{id\_sentences={[}{]}}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
+\phantomsection\label{\detokenize{index:loacore.load.sentence_load.load_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences}}}{\emph{id\_sentences={[}{]}}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
 Load sentences from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -928,7 +931,7 @@ Load sentences 1,2 and their words.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{p}{,} \PYG{n}{load\PYGZus{}words}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{print\PYGZus{}sentence}\PYG{p}{(}\PYG{n}{print\PYGZus{}sentence}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+go}{\PYGZsq{}teleferico\PYGZsq{}}
@@ -940,10 +943,10 @@ Load sentences 1,2 and their words.
 
 \end{fulllineitems}
 
-\index{load\_sentences\_by\_id\_files() (in module src.database.load.sentence\_load)}
+\index{load\_sentences\_by\_id\_files() (in module loacore.load.sentence\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.sentence_load.load_sentences_by_id_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences\_by\_id\_files}}}{\emph{id\_files}, \emph{load\_words=True}, \emph{load\_deptrees=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.sentence_load.load_sentences_by_id_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences\_by\_id\_files}}}{\emph{id\_files}, \emph{load\_words=True}, \emph{load\_deptrees=True}}{}
 Ids of files from which sentences should be loaded.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -971,7 +974,7 @@ Load all the sentences from file 1.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{print\PYGZus{}sentence}\PYG{p}{(}\PYG{n}{print\PYGZus{}sentence}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+go}{\PYGZsq{}teleferico\PYGZsq{}}
@@ -979,10 +982,10 @@ Load all the sentences from file 1.
 
 \end{fulllineitems}
 
-\index{load\_sentences\_in\_reviews() (in module src.database.load.sentence\_load)}
+\index{load\_sentences\_in\_reviews() (in module loacore.load.sentence\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.sentence_load.load_sentences_in_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences\_in\_reviews}}}{\emph{reviews}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
+\phantomsection\label{\detokenize{index:loacore.load.sentence_load.load_sentences_in_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.sentence\_load.}}\sphinxbfcode{\sphinxupquote{load\_sentences\_in\_reviews}}}{\emph{reviews}, \emph{load\_words=False}, \emph{load\_deptrees=False}}{}
 Load \sphinxcode{\sphinxupquote{Sentence}} s into corresponding \sphinxstyleemphasis{reviews}, setting up their attribute \sphinxcode{\sphinxupquote{sentences}}.
 
 Also return all the loaded sentences.
@@ -1018,10 +1021,10 @@ Loaded sentences
 
 
 \section{Load Words}
-\label{\detokenize{index:module-src.database.load.word_load}}\label{\detokenize{index:load-words}}\index{src.database.load.word\_load (module)}\index{load\_words() (in module src.database.load.word\_load)}
+\label{\detokenize{index:module-loacore.load.word_load}}\label{\detokenize{index:load-words}}\index{loacore.load.word\_load (module)}\index{load\_words() (in module loacore.load.word\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.word_load.load_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words}}}{\emph{id\_words={[}{]}}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.word_load.load_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words}}}{\emph{id\_words={[}{]}}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
 Load \sphinxcode{\sphinxupquote{Word}} s from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -1047,7 +1050,7 @@ Load all words and their lemmas, synsets.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{word\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{word\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{word\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{word\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{words} \PYG{o}{=} \PYG{n}{word\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}words}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{p}{[}\PYG{n}{w}\PYG{o}{.}\PYG{n}{word} \PYG{k}{for} \PYG{n}{w} \PYG{o+ow}{in} \PYG{n}{words}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{11}\PYG{p}{]}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+go}{[\PYGZsq{}teleferico\PYGZsq{}, \PYGZsq{}toboganvy\PYGZsq{}, \PYGZsq{}que\PYGZsq{}, \PYGZsq{}el\PYGZsq{}, \PYGZsq{}agua\PYGZsq{}, \PYGZsq{}huela\PYGZsq{}, \PYGZsq{}a\PYGZsq{}, \PYGZsq{}asufre\PYGZsq{}, \PYGZsq{}pista\PYGZsq{}, \PYGZsq{}de\PYGZsq{}, \PYGZsq{}baile\PYGZsq{}]}
@@ -1059,10 +1062,10 @@ Load all words and their lemmas, synsets.
 
 \end{fulllineitems}
 
-\index{load\_words\_in\_dep\_trees() (in module src.database.load.word\_load)}
+\index{load\_words\_in\_dep\_trees() (in module loacore.load.word\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.word_load.load_words_in_dep_trees}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words\_in\_dep\_trees}}}{\emph{dep\_trees}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.word_load.load_words_in_dep_trees}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words\_in\_dep\_trees}}}{\emph{dep\_trees}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
 Load \sphinxcode{\sphinxupquote{Word}} s into corresponding \sphinxstyleemphasis{dep\_trees}, setting up the attribute \sphinxcode{\sphinxupquote{word}} of each node.
 
 \begin{sphinxadmonition}{note}{Note:}
@@ -1087,10 +1090,10 @@ In most of the cases, those functions should be used instead to load dep\_trees 
 
 \end{fulllineitems}
 
-\index{load\_words\_in\_sentences() (in module src.database.load.word\_load)}
+\index{load\_words\_in\_sentences() (in module loacore.load.word\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.word_load.load_words_in_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words\_in\_sentences}}}{\emph{sentences}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.word_load.load_words_in_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.word\_load.}}\sphinxbfcode{\sphinxupquote{load\_words\_in\_sentences}}}{\emph{sentences}, \emph{load\_lemmas=True}, \emph{load\_synsets=True}}{}
 Load \sphinxcode{\sphinxupquote{Word}} s into corresponding \sphinxstyleemphasis{sentences}, setting up their attribute \sphinxcode{\sphinxupquote{words}}.
 
 Also return all the loaded words.
@@ -1126,10 +1129,10 @@ loaded words
 
 
 \section{Load Synsets}
-\label{\detokenize{index:module-src.database.load.synset_load}}\label{\detokenize{index:load-synsets}}\index{src.database.load.synset\_load (module)}\index{load\_synsets() (in module src.database.load.synset\_load)}
+\label{\detokenize{index:module-loacore.load.synset_load}}\label{\detokenize{index:load-synsets}}\index{loacore.load.synset\_load (module)}\index{load\_synsets() (in module loacore.load.synset\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.synset_load.load_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets}}}{\emph{id\_synsets={[}{]}}}{}
+\phantomsection\label{\detokenize{index:loacore.load.synset_load.load_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets}}}{\emph{id\_synsets={[}{]}}}{}
 Load \sphinxcode{\sphinxupquote{Synset}} s from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1148,7 +1151,7 @@ Load all synsets from database.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{synset\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{synset\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{synset\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{synset\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{synsets} \PYG{o}{=} \PYG{n}{synset\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}synsets}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{synsets}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{o}{.}\PYG{n}{synset\PYGZus{}code}\PYG{p}{)}
 \PYG{g+go}{14845743\PYGZhy{}n}
@@ -1158,10 +1161,10 @@ Load all synsets from database.
 
 \end{fulllineitems}
 
-\index{load\_synsets\_in\_words() (in module src.database.load.synset\_load)}
+\index{load\_synsets\_in\_words() (in module loacore.load.synset\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.synset_load.load_synsets_in_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets\_in\_words}}}{\emph{words}}{}
+\phantomsection\label{\detokenize{index:loacore.load.synset_load.load_synsets_in_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets\_in\_words}}}{\emph{words}}{}
 Load \sphinxcode{\sphinxupquote{Synset}} s into corresponding \sphinxstyleemphasis{words}, setting up their attribute \sphinxcode{\sphinxupquote{synset}}.
 
 Also return all the loaded synsets.
@@ -1188,10 +1191,10 @@ loaded synsets
 
 
 \section{Load Lemmas}
-\label{\detokenize{index:module-src.database.load.lemma_load}}\label{\detokenize{index:load-lemmas}}\index{src.database.load.lemma\_load (module)}\index{load\_lemmas() (in module src.database.load.lemma\_load)}
+\label{\detokenize{index:module-loacore.load.lemma_load}}\label{\detokenize{index:load-lemmas}}\index{loacore.load.lemma\_load (module)}\index{load\_lemmas() (in module loacore.load.lemma\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.lemma_load.load_lemmas}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.lemma\_load.}}\sphinxbfcode{\sphinxupquote{load\_lemmas}}}{\emph{id\_lemmas={[}{]}}}{}
+\phantomsection\label{\detokenize{index:loacore.load.lemma_load.load_lemmas}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.lemma\_load.}}\sphinxbfcode{\sphinxupquote{load\_lemmas}}}{\emph{id\_lemmas={[}{]}}}{}
 Load lemmas from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1210,7 +1213,7 @@ Load all lemmas from database.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{lemma\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{lemma\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{lemma\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{lemma\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{lemmas} \PYG{o}{=} \PYG{n}{lemma\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}lemmas}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{lemmas}\PYG{p}{)}\PYG{p}{)}
 \PYG{g+go}{103827}
@@ -1220,10 +1223,10 @@ Load all lemmas from database.
 
 \end{fulllineitems}
 
-\index{load\_lemmas\_in\_words() (in module src.database.load.lemma\_load)}
+\index{load\_lemmas\_in\_words() (in module loacore.load.lemma\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.lemma_load.load_lemmas_in_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.lemma\_load.}}\sphinxbfcode{\sphinxupquote{load\_lemmas\_in\_words}}}{\emph{words}}{}
+\phantomsection\label{\detokenize{index:loacore.load.lemma_load.load_lemmas_in_words}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.lemma\_load.}}\sphinxbfcode{\sphinxupquote{load\_lemmas\_in\_words}}}{\emph{words}}{}
 Load lemmas into corresponding \sphinxstyleemphasis{words}, setting up their attribute \sphinxcode{\sphinxupquote{lemma}}.
 
 Also return all the loaded lemmas.
@@ -1250,10 +1253,10 @@ loaded lemmas
 
 
 \section{Load DepTrees}
-\label{\detokenize{index:module-src.database.load.deptree_load}}\label{\detokenize{index:load-deptrees}}\index{src.database.load.deptree\_load (module)}\index{load\_dep\_tree\_in\_sentences() (in module src.database.load.deptree\_load)}
+\label{\detokenize{index:module-loacore.load.deptree_load}}\label{\detokenize{index:load-deptrees}}\index{loacore.load.deptree\_load (module)}\index{load\_dep\_tree\_in\_sentences() (in module loacore.load.deptree\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.deptree_load.load_dep_tree_in_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.deptree\_load.}}\sphinxbfcode{\sphinxupquote{load\_dep\_tree\_in\_sentences}}}{\emph{sentences}, \emph{load\_words=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.deptree_load.load_dep_tree_in_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.deptree\_load.}}\sphinxbfcode{\sphinxupquote{load\_dep\_tree\_in\_sentences}}}{\emph{sentences}, \emph{load\_words=True}}{}
 Load \sphinxcode{\sphinxupquote{DepTree}} s into corresponding \sphinxstyleemphasis{sentences}, setting up their attribute \sphinxcode{\sphinxupquote{dep\_tree}}.
 
 Also return all the loaded deptrees.
@@ -1283,10 +1286,10 @@ loaded deptrees
 
 \end{fulllineitems}
 
-\index{load\_dep\_trees() (in module src.database.load.deptree\_load)}
+\index{load\_dep\_trees() (in module loacore.load.deptree\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.load.deptree_load.load_dep_trees}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.load.deptree\_load.}}\sphinxbfcode{\sphinxupquote{load\_dep\_trees}}}{\emph{id\_dep\_trees={[}{]}}, \emph{load\_words=True}}{}
+\phantomsection\label{\detokenize{index:loacore.load.deptree_load.load_dep_trees}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.deptree\_load.}}\sphinxbfcode{\sphinxupquote{load\_dep\_trees}}}{\emph{id\_dep\_trees={[}{]}}, \emph{load\_words=True}}{}
 Load \sphinxcode{\sphinxupquote{DepTree}} s from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -1311,7 +1314,7 @@ Load all deptrees from database : can take a few moments.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{deptree\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{deptree\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{deptree\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{deptree\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{deptrees} \PYG{o}{=} \PYG{n}{deptree\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}dep\PYGZus{}trees}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{deptree\PYGZus{}str} \PYG{o}{=} \PYG{n}{deptrees}\PYG{p}{[}\PYG{l+m+mi}{500}\PYG{p}{]}\PYG{o}{.}\PYG{n}{print\PYGZus{}dep\PYGZus{}tree}\PYG{p}{(}\PYG{p}{)}
 \PYG{g+go}{instalaciones (sentence, NCFP000, instalación)}
@@ -1337,10 +1340,10 @@ Load all deptrees from database : can take a few moments.
 \label{\detokenize{index:analyse-data-analysis-package}}
 
 \section{Sentiment Analysis}
-\label{\detokenize{index:module-src.database.analysis.sentiment_analysis}}\label{\detokenize{index:sentiment-analysis}}\index{src.database.analysis.sentiment\_analysis (module)}\index{compute\_files\_polarity() (in module src.database.analysis.sentiment\_analysis)}
+\label{\detokenize{index:module-loacore.analysis.sentiment_analysis}}\label{\detokenize{index:sentiment-analysis}}\index{loacore.analysis.sentiment\_analysis (module)}\index{compute\_files\_polarity() (in module loacore.analysis.sentiment\_analysis)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.analysis.sentiment_analysis.compute_files_polarity}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.analysis.sentiment\_analysis.}}\sphinxbfcode{\sphinxupquote{compute\_files\_polarity}}}{\emph{files}}{}
+\phantomsection\label{\detokenize{index:loacore.analysis.sentiment_analysis.compute_files_polarity}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.analysis.sentiment\_analysis.}}\sphinxbfcode{\sphinxupquote{compute\_files\_polarity}}}{\emph{files}}{}
 Perform the easiest sentiment analysis possible : a normalized sum of the positive/negative/objective polarities
 available in all synsets of each file.
 
@@ -1363,8 +1366,8 @@ Load all files and compute basic polarities
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{sentiment\PYGZus{}analysis} \PYG{k}{as} \PYG{n+nn}{sentiment\PYGZus{}analysis}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{sentiment\PYGZus{}analysis} \PYG{k}{as} \PYG{n+nn}{sentiment\PYGZus{}analysis}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{file\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}database}\PYG{p}{(}\PYG{n}{load\PYGZus{}deptrees}\PYG{o}{=}\PYG{k+kc}{False}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{polarities} \PYG{o}{=} \PYG{n}{sentiment\PYGZus{}analysis}\PYG{o}{.}\PYG{n}{compute\PYGZus{}files\PYGZus{}polarity}\PYG{p}{(}\PYG{n}{files}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentiment\PYGZus{}analysis}\PYG{o}{.}\PYG{n}{print\PYGZus{}polarity\PYGZus{}table}\PYG{p}{(}\PYG{n}{polarities}\PYG{p}{)}
@@ -1383,10 +1386,10 @@ Load all files and compute basic polarities
 
 \end{fulllineitems}
 
-\index{print\_polarity\_table() (in module src.database.analysis.sentiment\_analysis)}
+\index{print\_polarity\_table() (in module loacore.analysis.sentiment\_analysis)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.analysis.sentiment_analysis.print_polarity_table}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.analysis.sentiment\_analysis.}}\sphinxbfcode{\sphinxupquote{print\_polarity\_table}}}{\emph{file\_score\_dict}}{}
+\phantomsection\label{\detokenize{index:loacore.analysis.sentiment_analysis.print_polarity_table}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.analysis.sentiment\_analysis.}}\sphinxbfcode{\sphinxupquote{print\_polarity\_table}}}{\emph{file\_score\_dict}}{}
 Print a table with columns File path, Positive Score, Negative Score and Objective Score.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -1399,13 +1402,13 @@ Print a table with columns File path, Positive Score, Negative Score and Objecti
 
 
 \section{Pattern Recognition}
-\label{\detokenize{index:module-src.database.analysis.pattern_recognition}}\label{\detokenize{index:pattern-recognition}}\index{src.database.analysis.pattern\_recognition (module)}
+\label{\detokenize{index:module-loacore.analysis.pattern_recognition}}\label{\detokenize{index:pattern-recognition}}\index{loacore.analysis.pattern\_recognition (module)}
 Patterns recognitions are realized on the dependency trees computed with Freeling. This means that \sphinxstyleemphasis{parent-child}
 structures will be matched, what \sphinxstylestrong{don’t necessarily correspond to adjacent words in the original sentence}.
-\index{general\_pattern\_recognition() (in module src.database.analysis.pattern\_recognition)}
+\index{general\_pattern\_recognition() (in module loacore.analysis.pattern\_recognition)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.analysis.pattern_recognition.general_pattern_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{general\_pattern\_recognition}}}{\emph{sentences}, \emph{pattern}, \emph{types}}{}
+\phantomsection\label{\detokenize{index:loacore.analysis.pattern_recognition.general_pattern_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{general\_pattern\_recognition}}}{\emph{sentences}, \emph{pattern}, \emph{types}}{}
 Recognize a general pattern, compound of PoS\_tags and dependency labels, in the DepTrees associated to specified
 sentences.
 \begin{quote}\begin{description}
@@ -1440,9 +1443,9 @@ Find all the Verb(PoS\_tag)/complement(label) patterns in file 28(\_PQRS.txt).
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{28}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{general\PYGZus{}pattern\PYGZus{}recognition}\PYG{p}{(}\PYG{n}{sentences}\PYG{p}{,} \PYG{p}{[}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{V}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{ci}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{p}{,} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{PoS\PYGZus{}tag}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{label}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns\PYGZus{}str} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{print\PYGZus{}patterns}\PYG{p}{(}\PYG{n}{patterns}\PYG{p}{,} \PYG{n}{PoS\PYGZus{}tag\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{label\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+go}{( parece : VMIP3S0 : sentence, me : None : ci )}
@@ -1464,10 +1467,10 @@ Find all the Verb(PoS\_tag)/complement(label) patterns in file 28(\_PQRS.txt).
 
 \end{fulllineitems}
 
-\index{label\_patterns\_recognition() (in module src.database.analysis.pattern\_recognition)}
+\index{label\_patterns\_recognition() (in module loacore.analysis.pattern\_recognition)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.analysis.pattern_recognition.label_patterns_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{label\_patterns\_recognition}}}{\emph{sentences}, \emph{pattern}}{}
+\phantomsection\label{\detokenize{index:loacore.analysis.pattern_recognition.label_patterns_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{label\_patterns\_recognition}}}{\emph{sentences}, \emph{pattern}}{}
 Recognize a dependency label pattern in the DepTrees associated to specified sentences.
 
 Labels used for Spanish can be found there :
@@ -1507,9 +1510,9 @@ Find all node to which a verbal modifier is applied in file 28 (\_PQRS.txt).
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{28}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{label\PYGZus{}patterns\PYGZus{}recognition}\PYG{p}{(}\PYG{n}{sentences}\PYG{p}{,} \PYG{p}{[}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{*}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{mod}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns\PYGZus{}str} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{print\PYGZus{}patterns}\PYG{p}{(}\PYG{n}{patterns}\PYG{p}{,} \PYG{n}{label\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+go}{( bajar : ao, ya : mod )}
@@ -1530,9 +1533,9 @@ This function can also be used to recognize unigram patterns.
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{28}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{label\PYGZus{}patterns\PYGZus{}recognition}\PYG{p}{(}\PYG{n}{sentences}\PYG{p}{,} \PYG{p}{[}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{suj}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns\PYGZus{}str} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{print\PYGZus{}patterns}\PYG{p}{(}\PYG{n}{patterns}\PYG{p}{,} \PYG{n}{PoS\PYGZus{}tag\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{label\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+go}{( colmo : NCMS000 : suj )}
@@ -1544,16 +1547,17 @@ This function can also be used to recognize unigram patterns.
 \PYG{g+go}{( turista : NCCS000 : suj )}
 \PYG{g+go}{( ella : None : suj )}
 \PYG{g+go}{( que : None : suj )}
+\PYG{g+gp}{...}
 \end{sphinxVerbatim}
 \end{quote}
 \end{sphinxadmonition}
 
 \end{fulllineitems}
 
-\index{pos\_tag\_patterns\_recognition() (in module src.database.analysis.pattern\_recognition)}
+\index{pos\_tag\_patterns\_recognition() (in module loacore.analysis.pattern\_recognition)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{index:src.database.analysis.pattern_recognition.pos_tag_patterns_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{src.database.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{pos\_tag\_patterns\_recognition}}}{\emph{sentences}, \emph{pattern}}{}
+\phantomsection\label{\detokenize{index:loacore.analysis.pattern_recognition.pos_tag_patterns_recognition}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.analysis.pattern\_recognition.}}\sphinxbfcode{\sphinxupquote{pos\_tag\_patterns\_recognition}}}{\emph{sentences}, \emph{pattern}}{}
 Recognize a PoS\_tag pattern in the DepTrees associated to specified sentences.
 
 PoS\_tags corresponding to each language can be found there :
@@ -1588,9 +1592,9 @@ Find all Noun/Adjective patterns in file 28 (\_PQRS.txt).
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{28}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{pos\PYGZus{}tag\PYGZus{}patterns\PYGZus{}recognition}\PYG{p}{(}\PYG{n}{sentences}\PYG{p}{,} \PYG{p}{[}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{N}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{A}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns\PYGZus{}str} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{print\PYGZus{}patterns}\PYG{p}{(}\PYG{n}{patterns}\PYG{p}{,} \PYG{n}{PoS\PYGZus{}tag\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+go}{( manera : NCFS000, grosera : AQ0FS00 )}
@@ -1609,13 +1613,13 @@ Find all Noun/Adjective patterns in file 28 (\_PQRS.txt).
 This function can also be used to recognize unigram patterns.
 \begin{quote}
 
-\sphinxstylestrong{Example :} Find all the nodes with dependency label ‘suj’ in file 28 (\_PQRS.txt)
+\sphinxstylestrong{Example :} Find all verbs in file 28 (\_PQRS.txt)
 
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{sentence\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{sentence\PYGZus{}load}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{sentences} \PYG{o}{=} \PYG{n}{sentence\PYGZus{}load}\PYG{o}{.}\PYG{n}{load\PYGZus{}sentences\PYGZus{}by\PYGZus{}id\PYGZus{}files}\PYG{p}{(}\PYG{p}{[}\PYG{l+m+mi}{28}\PYG{p}{]}\PYG{p}{)}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{src}\PYG{n+nn}{.}\PYG{n+nn}{database}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{analysis}\PYG{n+nn}{.}\PYG{n+nn}{pattern\PYGZus{}recognition} \PYG{k}{as} \PYG{n+nn}{pattern\PYGZus{}recognition}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{pos\PYGZus{}tag\PYGZus{}patterns\PYGZus{}recognition}\PYG{p}{(}\PYG{n}{sentences}\PYG{p}{,} \PYG{p}{[}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{V}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{patterns\PYGZus{}str} \PYG{o}{=} \PYG{n}{pattern\PYGZus{}recognition}\PYG{o}{.}\PYG{n}{print\PYGZus{}patterns}\PYG{p}{(}\PYG{n}{patterns}\PYG{p}{,} \PYG{n}{PoS\PYGZus{}tag\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{,} \PYG{n}{label\PYGZus{}display}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{)}
 \PYG{g+go}{( parece : VMIP3S0 : sentence )}
@@ -1641,22 +1645,22 @@ This function can also be used to recognize unigram patterns.
 \renewcommand{\indexname}{Python Module Index}
 \begin{sphinxtheindex}
 \def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
-\bigletter{s}
-\item {\sphinxstyleindexentry{src.database.analysis.pattern\_recognition}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.analysis.pattern_recognition}}
-\item {\sphinxstyleindexentry{src.database.analysis.sentiment\_analysis}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.analysis.sentiment_analysis}}
-\item {\sphinxstyleindexentry{src.database.load.deptree\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.deptree_load}}
-\item {\sphinxstyleindexentry{src.database.load.file\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.file_load}}
-\item {\sphinxstyleindexentry{src.database.load.lemma\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.lemma_load}}
-\item {\sphinxstyleindexentry{src.database.load.review\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.review_load}}
-\item {\sphinxstyleindexentry{src.database.load.sentence\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.sentence_load}}
-\item {\sphinxstyleindexentry{src.database.load.synset\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.synset_load}}
-\item {\sphinxstyleindexentry{src.database.load.word\_load}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.load.word_load}}
-\item {\sphinxstyleindexentry{src.database.process.deptree\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.deptree_process}}
-\item {\sphinxstyleindexentry{src.database.process.file\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.file_process}}
-\item {\sphinxstyleindexentry{src.database.process.lemma\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.lemma_process}}
-\item {\sphinxstyleindexentry{src.database.process.review\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.review_process}}
-\item {\sphinxstyleindexentry{src.database.process.sentence\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.sentence_process}}
-\item {\sphinxstyleindexentry{src.database.process.synset\_process}}\sphinxstyleindexpageref{index:\detokenize{module-src.database.process.synset_process}}
+\bigletter{l}
+\item {\sphinxstyleindexentry{loacore.analysis.pattern\_recognition}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.analysis.pattern_recognition}}
+\item {\sphinxstyleindexentry{loacore.analysis.sentiment\_analysis}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.analysis.sentiment_analysis}}
+\item {\sphinxstyleindexentry{loacore.load.deptree\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.deptree_load}}
+\item {\sphinxstyleindexentry{loacore.load.file\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.file_load}}
+\item {\sphinxstyleindexentry{loacore.load.lemma\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.lemma_load}}
+\item {\sphinxstyleindexentry{loacore.load.review\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.review_load}}
+\item {\sphinxstyleindexentry{loacore.load.sentence\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.sentence_load}}
+\item {\sphinxstyleindexentry{loacore.load.synset\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.synset_load}}
+\item {\sphinxstyleindexentry{loacore.load.word\_load}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.load.word_load}}
+\item {\sphinxstyleindexentry{loacore.process.deptree\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.deptree_process}}
+\item {\sphinxstyleindexentry{loacore.process.file\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.file_process}}
+\item {\sphinxstyleindexentry{loacore.process.lemma\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.lemma_process}}
+\item {\sphinxstyleindexentry{loacore.process.review\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.review_process}}
+\item {\sphinxstyleindexentry{loacore.process.sentence\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.sentence_process}}
+\item {\sphinxstyleindexentry{loacore.process.synset\_process}}\sphinxstyleindexpageref{index:\detokenize{module-loacore.process.synset_process}}
 \end{sphinxtheindex}
 
 \renewcommand{\indexname}{Index}

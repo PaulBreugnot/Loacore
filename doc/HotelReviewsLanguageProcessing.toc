@@ -20,7 +20,7 @@
 \contentsline {chapter}{\numberline {4}Load data from database : \sphinxstyleemphasis {load} package}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Load Files}{11}{section.4.1}
 \contentsline {section}{\numberline {4.2}Load Reviews}{12}{section.4.2}
-\contentsline {section}{\numberline {4.3}Load Sentences}{14}{section.4.3}
+\contentsline {section}{\numberline {4.3}Load Sentences}{13}{section.4.3}
 \contentsline {section}{\numberline {4.4}Load Words}{15}{section.4.4}
 \contentsline {section}{\numberline {4.5}Load Synsets}{16}{section.4.5}
 \contentsline {section}{\numberline {4.6}Load Lemmas}{17}{section.4.6}

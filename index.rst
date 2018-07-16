@@ -18,42 +18,45 @@ Requirements
 | Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation.
 | **For now**, only a Linux installation in the default folder */usr/local* is supported, but this should be fixed in next improvements.
 
+| This project also use an embedded sqlite3 database to store results : https://docs.python.org/3/library/sqlite3.html
+| The corresponding Python package should already be installed in your Python3 distribution.
+
 Classes
 =======
 
 File
 ----
-.. autoclass:: src.database.classes.classes.File
+.. autoclass:: loacore.classes.classes.File
     :members:
 
 Review
 ------
-.. autoclass:: src.database.classes.classes.Review
+.. autoclass:: loacore.classes.classes.Review
     :members:
 
 Sentence
 --------
-.. autoclass:: src.database.classes.classes.Sentence
+.. autoclass:: loacore.classes.classes.Sentence
     :members:
 
 Word
 ----
-.. autoclass:: src.database.classes.classes.Word
+.. autoclass:: loacore.classes.classes.Word
     :members:
 
 Synset
 ------
-.. autoclass:: src.database.classes.classes.Synset
+.. autoclass:: loacore.classes.classes.Synset
     :members:
 
 DepTree
 -------
-.. autoclass:: src.database.classes.classes.DepTree
+.. autoclass:: loacore.classes.classes.DepTree
     :members:
 
 DepTreeNode
 -----------
-.. autoclass:: src.database.classes.classes.DepTreeNode
+.. autoclass:: loacore.classes.classes.DepTreeNode
     :members:
 
 
@@ -70,7 +73,7 @@ Normalization and review splitting
 - Normalization : conversion to UTF-8 and lower case
 - Review splitting : the file text is splitted into reviews
 
-.. automodule:: src.database.process.review_process
+.. automodule:: loacore.process.review_process
     :members:
 
 Freeling Processes
@@ -79,30 +82,30 @@ Freeling Processes
 tokenization
 ............
 
-.. automodule:: src.database.process.sentence_process
+.. automodule:: loacore.process.sentence_process
     :members:
 
 lemmatization
 .............
 
-.. automodule:: src.database.process.lemma_process
+.. automodule:: loacore.process.lemma_process
     :members:
 
 disambiguation
 ..............
 
-.. automodule:: src.database.process.synset_process
+.. automodule:: loacore.process.synset_process
     :members:
 
 dependency tree generation
 ..........................
 
-.. automodule:: src.database.process.deptree_process
+.. automodule:: loacore.process.deptree_process
     :members:
 
 Feed database
 -------------
-.. automodule:: src.database.process.file_process
+.. automodule:: loacore.process.file_process
     :members:
 
 
@@ -111,37 +114,37 @@ Load data from database : *load* package
 
 Load Files
 ----------
-.. automodule:: src.database.load.file_load
+.. automodule:: loacore.load.file_load
     :members:
 
 Load Reviews
 ------------
-.. automodule:: src.database.load.review_load
+.. automodule:: loacore.load.review_load
     :members:
 
 Load Sentences
 --------------
-.. automodule:: src.database.load.sentence_load
+.. automodule:: loacore.load.sentence_load
     :members:
 
 Load Words
 ----------
-.. automodule:: src.database.load.word_load
+.. automodule:: loacore.load.word_load
     :members:
 
 Load Synsets
 ------------
-.. automodule:: src.database.load.synset_load
+.. automodule:: loacore.load.synset_load
     :members:
 
 Load Lemmas
 -----------
-.. automodule:: src.database.load.lemma_load
+.. automodule:: loacore.load.lemma_load
     :members:
 
 Load DepTrees
 -------------
-.. automodule:: src.database.load.deptree_load
+.. automodule:: loacore.load.deptree_load
     :members:
 
 
@@ -150,11 +153,11 @@ Analyse data : *analysis* package
 
 Sentiment Analysis
 ------------------
-.. automodule:: src.database.analysis.sentiment_analysis
+.. automodule:: loacore.analysis.sentiment_analysis
     :members:
 
 Pattern Recognition
 -------------------
-.. automodule:: src.database.analysis.pattern_recognition
+.. automodule:: loacore.analysis.pattern_recognition
     :members:
 

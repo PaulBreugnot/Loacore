@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.11)  16 JUL 2018 11:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.11)  16 JUL 2018 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -845,84 +845,62 @@ Chapter 1.
 
 ]
 Chapter 2.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 91.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 96.
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 91.
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 93.
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 96.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 98.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <10> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 94.
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--159
-[]\T1/ptm/m/it/10 id_sentence\T1/ptm/m/n/10 , \T1/ptm/m/it/10 id_review\T1/ptm/
-m/n/10 , \T1/ptm/m/it/10 re-view_index\T1/ptm/m/n/10 ,
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 99.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 []\T1/pcr/b/n/10 freeling_sentence \T1/ptm/m/n/10 (\T1/pcr/m/n/10 pyfreeling.se
 ntence\T1/ptm/m/n/10 ) ^^U re-sult of
  []
 
 LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 203.
-
-Underfull \hbox (badness 10000) in paragraph at lines 248--248
-[]\T1/ptm/m/it/10 id_word\T1/ptm/m/n/10 , \T1/ptm/m/it/10 id_sentence\T1/ptm/m/
-n/10 , \T1/ptm/m/it/10 sen-tence_index\T1/ptm/m/n/10 , \T1/ptm/m/it/10 word\T1/
-ptm/m/n/10 ,
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 206.
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 307--307
+[]\T1/ptm/m/it/10 id_synset\T1/ptm/m/n/10 , \T1/ptm/m/it/10 id_word\T1/ptm/m/n/
+10 , \T1/ptm/m/it/10 synset_code\T1/ptm/m/n/10 , \T1/ptm/m/it/10 synset_name\T1
+/ptm/m/n/10 ,
  []
 
-[4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
-[]\T1/ptm/m/it/10 id_dep_tree_node\T1/ptm/m/n/10 , \T1/ptm/m/it/10 id_dep_tree\
-T1/ptm/m/n/10 ,
- []
-
-[6]
+[5] [6]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sphinxstyleemphasis' on input line 424.
+(hyperref)                removing `\sphinxstyleemphasis' on input line 427.
 
 LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/it' tried instead on input line 424.
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 427.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 424.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 427.
 [7
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--575
+Underfull \hbox (badness 10000) in paragraph at lines 578--578
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
- []
-
-
-Overfull \hbox (8.24385pt too wide) in paragraph at lines 575--575
-\T1/ptm/m/it/10 print_synsets=False\T1/pcr/m/n/10 ) 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 608--608
+Underfull \hbox (badness 10000) in paragraph at lines 611--611
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
  []
 
-
-Overfull \hbox (26.3239pt too wide) in paragraph at lines 608--608
-\T1/ptm/m/it/10 print_result=False\T1/pcr/m/n/10 ) 
- []
-
-LaTeX Font Info:    Try loading font information for TS1+pcr on input line 659.
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 662.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
@@ -932,156 +910,91 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 Chapter 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sphinxstyleemphasis' on input line 670.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-[]\T1/ptm/m/it/10 id_files=[]\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_reviews=True
-\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 686--686
-\T1/ptm/m/it/10 load_sentences=True\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_words=
-True\T1/ptm/m/n/10 ,
- []
+(hyperref)                removing `\sphinxstyleemphasis' on input line 673.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 780--780
+Underfull \hbox (badness 10000) in paragraph at lines 783--783
 []\T1/ptm/m/it/10 id_reviews=[]\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_sentences=
 False\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--822
-[]\T1/ptm/m/it/10 id_files\T1/ptm/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
+[]\T1/ptm/m/it/10 id_files\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_sentences=False
+\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--822
-\T1/ptm/m/it/10 load_sentences=False\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 822--822
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
 \T1/ptm/m/it/10 load_words=False\T1/ptm/m/n/10 ,
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 864--864
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 []\T1/ptm/m/it/10 files\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_sentences=False\T1
 /ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 864--864
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 \T1/ptm/m/it/10 load_words=False\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--905
+Underfull \hbox (badness 10000) in paragraph at lines 908--908
 []\T1/ptm/m/it/10 id_sentences=[]\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_words=Fa
 lse\T1/ptm/m/n/10 ,
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 946--946
-[]\T1/ptm/m/it/10 id_files\T1/ptm/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 949--949
+[]\T1/ptm/m/it/10 id_files\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_words=True\T1/p
+tm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--946
-\T1/ptm/m/it/10 load_words=True\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 985--985
-[]\T1/ptm/m/it/10 reviews\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 985--985
-\T1/ptm/m/it/10 load_words=False\T1/ptm/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/ptm/m/it/10 reviews\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_words=False\T1/p
+tm/m/n/10 ,
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 1024--1024
-[]\T1/ptm/m/it/10 id_words=[]\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_lemmas=True\
-T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1065
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1068
 []\T1/ptm/m/it/10 dep_trees\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_lemmas=True\T1
 /ptm/m/n/10 ,
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1093
+
+Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 , \T1/ptm/m/it/10 load_lemmas=True\T1
 /ptm/m/n/10 ,
  []
 
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 1256--1256
-[]\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
- []
-
-[17] [18]
+[15] [16] [17] [18]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sphinxstyleemphasis' on input line 1336.
+(hyperref)                removing `\sphinxstyleemphasis' on input line 1339.
 
 [19
 
 ]
-Overfull \hbox (16.06445pt too wide) in paragraph at lines 1408--1408
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1411
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1408--1408
-\T1/ptm/m/it/10 pat-
+Underfull \hbox (badness 10000) in paragraph at lines 1411--1411
+\T1/ptm/m/it/10 pat-tern\T1/ptm/m/n/10 ,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1408--1408
-\T1/ptm/m/it/10 tern\T1/ptm/m/n/10 ,
- []
-
-
-Overfull \hbox (1.79468pt too wide) in paragraph at lines 1408--1408
-\T1/ptm/m/it/10 types\T1/pcr/m/n/10 ) 
- []
-
-[20]
-Overfull \hbox (10.06445pt too wide) in paragraph at lines 1470--1470
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 1560--1560
 []\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1470
-\T1/ptm/m/it/10 pat-
- []
-
-[21]
-Overfull \hbox (22.06445pt too wide) in paragraph at lines 1556--1556
-[]\T1/ptm/m/it/10 sentences\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1556--1556
-\T1/ptm/m/it/10 pat-
- []
-
-
-Overfull \hbox (3.35474pt too wide) in paragraph at lines 1556--1556
-\T1/ptm/m/it/10 tern\T1/pcr/m/n/10 ) 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1559--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1563--1565
 []\T1/ptm/m/n/10 PoS_tags cor-re-spond-ing to each lan-guage can be found there
  : [][]$https : / / talp-[]upc . gitbooks . io /
  []
@@ -1089,18 +1002,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1559--1561
 [22] [23] [24
 
 ]
-Overfull \hbox (18.6225pt too wide) in paragraph at lines 1645--1646
-[]\T1/pcr/m/n/10 src.database.analysis.pattern_recognition\T1/ptm/m/n/10 ,
- []
-
-
-Overfull \hbox (12.6225pt too wide) in paragraph at lines 1646--1647
-[]\T1/pcr/m/n/10 src.database.analysis.sentiment_analysis\T1/ptm/m/n/10 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
-[]\T1/pcr/m/n/10 src.database.process.sentence_process\T1/ptm/m/n/10 ,
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
+[]\T1/pcr/m/n/10 loacore.analysis.pattern_recognition\T1/ptm/m/n/10 ,
  []
 
 [25
@@ -1108,25 +1011,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 1658--1659
 
 ]
 No file HotelReviewsLanguageProcessing.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1664.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1664.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1668.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1668.
 (./HotelReviewsLanguageProcessing.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1664.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1664.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1668.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1668.
 
 Package rerunfilecheck Info: File `HotelReviewsLanguageProcessing.out' has not 
 changed.
 (rerunfilecheck)             Checksum: 654E330991FCEC91F5BE8407859FF5FD;3136.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1664.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1668.
  ) 
 Here is how much of TeX's memory you used:
  13502 strings out of 492649
- 189375 string characters out of 6135778
+ 189085 string characters out of 6135778
  377954 words of memory out of 5000000
  16974 multiletter control sequences out of 15000+600000
  59558 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,12n,45p,1062b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,45p,1062b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pf
@@ -1137,10 +1040,10 @@ helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on HotelReviewsLanguageProcessing.pdf (29 pages, 187055 bytes).
+Output written on HotelReviewsLanguageProcessing.pdf (29 pages, 187033 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
+ 419 PDF objects out of 1000 (max. 8388607)
+ 367 compressed objects within 4 object streams
  104 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 
