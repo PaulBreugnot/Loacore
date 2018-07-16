@@ -142,7 +142,7 @@ def my_maco_options(lang,lpath) :
     # necessary to set file for modules that will not be used.
     opt.UserMapFile = ""
     opt.ProbabilityFile = lpath + "probabilitats.dat"
-    opt.DictionaryFile = lpath + "dicc.loacore"
+    opt.DictionaryFile = lpath + "dicc.src"
     opt.PunctuationFile = lpath + "../common/punct.dat"
     return opt
 

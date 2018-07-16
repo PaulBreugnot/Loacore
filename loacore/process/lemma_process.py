@@ -62,7 +62,7 @@ def my_maco_options(lang, lpath):
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
-    opt.DictionaryFile = lpath + "dicc.loacore"
+    opt.DictionaryFile = lpath + "dicc.src"
     opt.PunctuationFile = lpath + "../common/punct.dat"
     return opt
 

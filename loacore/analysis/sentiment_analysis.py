@@ -1,7 +1,7 @@
 from prettytable import PrettyTable
 
 
-def compute_files_polarity(files):
+def compute_simple_files_polarity(files):
     """
 
     Perform the easiest sentiment analysis possible : a normalized sum of the positive/negative/objective polarities
@@ -11,7 +11,7 @@ def compute_files_polarity(files):
 
     :param files: Files to process
     :type files: :obj:`list` of :class:`File`
-    :return: IdFile/Scores dictionnary
+    :return: IdFile/Scores dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
     :Example:
     Load all files and compute basic polarities
@@ -51,6 +51,144 @@ def compute_files_polarity(files):
         if total > 0:
             file_score_dict[file.id_file] = \
                 (file.file_path, file_pos_score / total, file_neg_score / total, file_obj_score / total)
+
+    return file_score_dict
+
+
+def compute_extreme_files_polarity(files, pessimistic=False):
+    """
+
+    Performs *extreme* file polarity computation : only the most pessimistic or optimistic sense
+    (according to pessimistic argument) is considered. Those values tend to show how the disambiguation process is
+    important, due to the huge difference between pessimistic and optimistic scores.\n
+    Also notice that this function is an interesting example of how other processes could be applied to data already
+    computed in database. Here, the computed scores of disambiguated synsets are not used, and their are computed from
+    the re-computed possible senses thanks to freeling.\n
+    Check source code for more detailed explanations about this example.\n
+    \n
+    Return a dictionnary that map id_files to a polarity tuple. A polarity tuple is a tuple of length 3, with this
+    form : (positive_score, negative_score, objective_score)
+
+    :param files: Files to process
+    :type files: :obj:`list` of :obj:`files`
+    :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
+    :type pessimistic: boolean
+    :return: IdFile/Scores dictionary
+    :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
+
+    """
+
+    import ressources.pyfreeling as freeling
+    from nltk.corpus import wordnet as wn
+    from nltk.corpus import sentiwordnet as swn
+
+    def my_maco_options(lang, lpath):
+        # create options holder
+        opt = freeling.maco_options(lang)
+
+        # Provide files for morphological submodules. Note that it is not
+        # necessary to set file for modules that will not be used.
+        opt.DictionaryFile = lpath + "dicc.src"
+        opt.PunctuationFile = lpath + "../common/punct.dat"
+        return opt
+
+    def init_freeling():
+
+        freeling.util_init_locale("default")
+
+        lang = "es"
+        ipath = "/usr/local"
+        # path to language data
+        lpath = ipath + "/share/freeling/" + lang + "/"
+
+        # create the analyzer with the required set of maco_options
+        morfo = freeling.maco(my_maco_options(lang, lpath))
+        #  then, (de)activate required modules
+        morfo.set_active_options(False,  # UserMap
+                                 False,  # NumbersDetection,
+                                 True,  # PunctuationDetection,
+                                 False,  # DatesDetection,
+                                 True,  # DictionarySearch,
+                                 False,  # AffixAnalysis,
+                                 False,  # CompoundAnalysis,
+                                 False,  # RetokContractions,
+                                 False,  # MultiwordsDetection,
+                                 False,  # NERecognition,
+                                 False,  # QuantitiesDetection,
+                                 False)  # ProbabilityAssignment
+
+        return morfo
+
+    def pessimistic_score(synsets):
+        selected_synset = None
+        max_score = 0
+        for synset in synsets:
+            # Convert freeling sense to a synset name
+            synset_name = synset.name()
+            # Get score from SentiWordNet
+            neg_score = swn.senti_synset(synset_name).neg_score()
+            if neg_score > max_score:
+                max_score = neg_score
+                selected_synset = synset_name
+        if selected_synset is not None:
+            return (swn.senti_synset(selected_synset).pos_score(),
+                    swn.senti_synset(selected_synset).neg_score(),
+                    swn.senti_synset(selected_synset).pos_score())
+        else:
+            return 0, 0, 0
+
+    def optimistic_score(synsets):
+        selected_synset = None
+        max_score = 0
+        for synset in synsets:
+            # Convert freeling sense to a synset name
+            synset_name = synset.name()
+            # Get score from SentiWordNet
+            pos_score = swn.senti_synset(synset_name).pos_score()
+            if pos_score > max_score:
+                max_score = pos_score
+                selected_synset = synset_name
+        if selected_synset is not None:
+            return (swn.senti_synset(selected_synset).pos_score(),
+                    swn.senti_synset(selected_synset).neg_score(),
+                    swn.senti_synset(selected_synset).pos_score())
+        else:
+            return 0, 0, 0
+
+    morfo = init_freeling()
+
+    file_score_dict = {}
+    for file in files:
+        file_pos_score = 0
+        file_neg_score = 0
+        file_obj_score = 0
+
+        # Convert Sentences in Freeling Sentences
+        freeling_sentences = []
+        for review in file.reviews:
+            freeling_sentences += [s.compute_freeling_sentence() for s in review.sentences]
+
+        # Freeling analysis : lemmatization
+        freeling_sentences = morfo.analyze(freeling_sentences)
+
+        # Score computation
+        for s in freeling_sentences:
+            for w in s:
+                if not w.get_lemma() == '':
+                    # Possible synsets are computed using nltk and WordNet
+                    if pessimistic:
+                        score = pessimistic_score(wn.synsets(w.get_lemma(), lang='spa'))
+                    else:
+                        score = optimistic_score(wn.synsets(w.get_lemma(), lang='spa'))
+
+                    file_pos_score += score[0]
+                    file_neg_score += score[1]
+                    file_obj_score += score[2]
+
+        total = file_pos_score + file_neg_score + file_obj_score
+        if total > 0:
+            file_score_dict[file.id_file] = \
+                (file_pos_score / total, file_neg_score / total, file_obj_score / total)
 
     return file_score_dict
 

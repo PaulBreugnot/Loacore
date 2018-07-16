@@ -81,7 +81,7 @@ def add_polarity_to_synsets():
     """
 
     from nltk.corpus import sentiwordnet as swn
-    from loacore.database.load import synset_load
+    from loacore.load import synset_load
     conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
     c = conn.cursor()
 
@@ -107,15 +107,15 @@ def add_polarity_to_synsets():
 def my_maco_options(lang, lpath):
 
     # create options holder
-    opt = freeling.maco_options(lang);
+    opt = freeling.maco_options(lang)
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
-    opt.UserMapFile = "";
-    opt.ProbabilityFile = lpath + "probabilitats.dat";
-    opt.DictionaryFile = lpath + "dicc.loacore";
-    opt.PunctuationFile = lpath + "../common/punct.dat";
-    return opt;
+    opt.UserMapFile = ""
+    opt.ProbabilityFile = lpath + "probabilitats.dat"
+    opt.DictionaryFile = lpath + "dicc.src"
+    opt.PunctuationFile = lpath + "../common/punct.dat"
+    return opt
 
 
 def init_freeling():

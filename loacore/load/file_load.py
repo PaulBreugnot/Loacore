@@ -37,7 +37,7 @@ def _load_files():
     return files
 
 
-def load_database(id_files=[], load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True,):
+def load_database(id_files=[], load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True):
     """
     Load the complete database as a :obj:`list` of :class:`File` , with all the dependencies specified in parameters
     loaded in them.
