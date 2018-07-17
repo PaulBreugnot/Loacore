@@ -3,13 +3,15 @@ import sqlite3 as sql
 from loacore.classes.classes import File
 
 
-def add_files(file_paths):
+def add_files(file_paths, encoding='windows-1252'):
     """
     This function performs the full process on all the file_paths specified, and add the results to the corresponding
     tables.
 
     :param file_paths: Paths used to load files
     :type file_paths: :obj:`list` of :obj:`path-like object`
+    :param encoding: Files encoding.
+    :type encoding: String
 
     :Example:
 
@@ -48,7 +50,7 @@ def add_files(file_paths):
 
     # Add all reviews from all files
     import loacore.process.review_process as review_process
-    reviews = review_process.add_reviews_from_files(files)
+    reviews = review_process.add_reviews_from_files(files, encoding=encoding)
 
     # ********************************************* FREELING ********************************************************* #
 

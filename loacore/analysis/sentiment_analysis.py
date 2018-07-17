@@ -1,12 +1,10 @@
-from prettytable import PrettyTable
-
 
 def compute_simple_files_polarity(files):
     """
 
     Perform the easiest sentiment analysis possible : a normalized sum of the positive/negative/objective polarities
     available in all synsets of each file.\n
-    Return a dictionnary that map file_paths to a polarity tuple. A polarity tuple is a tuple of length 3, with this
+    Return a dictionnary that map id_files to a polarity tuple. A polarity tuple is a tuple of length 3, with this
     form : (positive_score, negative_score, objective_score)
 
     :param files: Files to process
@@ -14,24 +12,27 @@ def compute_simple_files_polarity(files):
     :return: IdFile/Scores dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
     :Example:
-    Load all files and compute basic polarities
+        Load all files, compute basic polarities, and show results with :func:`utils.print_polarity_table`.
 
-    >>> import loacore.load.file_load as file_load
-    >>> import loacore.analysis.sentiment_analysis as sentiment_analysis
-    >>> file_load.load_database(load_deptrees=False)
-    >>> polarities = sentiment_analysis.compute_files_polarity(files)
-    >>> sentiment_analysis.print_polarity_table(polarities)
-    +---------------------------------------------------------------------------------------------------+-----------+...
-    |                                                File                                               | Pos_Score |...
-    +---------------------------------------------------------------------------------------------------+-----------+...
-    |           ../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_EO.txt          |   0.000   |...
-    |           ../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_CC.txt          |   0.069   |...
-    |           ../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_GR.txt          |   0.000   |...
-    |           ../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_JA.txt          |   0.060   |...
-    |           ../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_CD.txt          |   0.080   |...
-    |           ../../data/raw/TempBaja/Balneario3/EncuestaTemporadaBajafinalbalneario3_JA.txt          |   0.055   |...
-    |           ../../data/raw/TempBaja/Balneario3/EncuestaTemporadaBajafinalbalneario3_CD.txt          |   0.019   |...
-    ...
+        >>> import loacore.load.file_load as file_load
+        >>> import loacore.analysis.sentiment_analysis as sentiment_analysis
+        >>> files = file_load.load_database(load_deptrees=False)
+        >>> polarities = sentiment_analysis.compute_simple_files_polarity(files)
+        >>> from loacore.utils import plot_polarities
+        >>> plot_polarities.print_polarity_table(polarities)
+        +-----------------------------------------------------+-----------+-----------+-----------+
+        |                         File                        | Pos_Score | Neg_Score | Obj_Score |
+        +-----------------------------------------------------+-----------+-----------+-----------+
+        |     EncuestaTemporadaBajafinalbalneario2_EO.txt     |   0.000   |   0.000   |   1.000   |
+        |     EncuestaTemporadaBajafinalbalneario2_CC.txt     |   0.069   |   0.016   |   0.915   |
+        |     EncuestaTemporadaBajafinalbalneario2_GR.txt     |   0.000   |   0.000   |   1.000   |
+        |     EncuestaTemporadaBajafinalbalneario2_JA.txt     |   0.060   |   0.065   |   0.875   |
+        |     EncuestaTemporadaBajafinalbalneario2_CD.txt     |   0.080   |   0.057   |   0.863   |
+        |     EncuestaTemporadaBajafinalbalneario3_JA.txt     |   0.055   |   0.023   |   0.922   |
+        |     EncuestaTemporadaBajafinalbalneario3_CD.txt     |   0.019   |   0.022   |   0.958   |
+        |     EncuestaTemporadaBajafinalbalneario3_CC.txt     |   0.044   |   0.003   |   0.953   |
+        |     EncuestaTemporadaBajafinalbalneario3_GR.txt     |   0.036   |   0.000   |   0.964   |
+        ...
 
     """
 
@@ -50,7 +51,7 @@ def compute_simple_files_polarity(files):
         total = file_pos_score + file_neg_score + file_obj_score
         if total > 0:
             file_score_dict[file.id_file] = \
-                (file.file_path, file_pos_score / total, file_neg_score / total, file_obj_score / total)
+                (file_pos_score / total, file_neg_score / total, file_obj_score / total)
 
     return file_score_dict
 
@@ -75,6 +76,18 @@ def compute_extreme_files_polarity(files, pessimistic=False):
     :type pessimistic: boolean
     :return: IdFile/Scores dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
+
+    :Example:
+        Compute optimistic and pessimistic polarities and save them as .pdf files using the GUI.
+
+        >>> import loacore.load.file_load as file_load
+        >>> import loacore.analysis.sentiment_analysis as sentiment_analysis
+        >>> from loacore.utils import plot_polarities
+        >>> files = file_load.load_database(load_deptrees=False)
+        >>> polarities = sentiment_analysis.compute_extreme_files_polarity(files)
+        >>> plot_polarities.save_polarity_pie_charts(polarities)
+        >>> polarities = sentiment_analysis.compute_extreme_files_polarity(files, pessimistic=True)
+        >>> plot_polarities.save_polarity_pie_charts(polarities)
 
     """
 
@@ -193,17 +206,3 @@ def compute_extreme_files_polarity(files, pessimistic=False):
     return file_score_dict
 
 
-def print_polarity_table(file_score_dict):
-    """
-
-    Print a table with columns File path, Positive Score, Negative Score and Objective Score.
-
-    :param file_score_dict: A :obj:`dict` that maps file_paths to a score tuple.
-    :type file_score_dict: :obj:`dict` of :obj:`int` : :obj:`tuple`
-    """
-
-    table = PrettyTable(['File', 'Pos_Score', 'Neg_Score', 'Obj_Score'])
-    for file in file_score_dict.keys():
-        table.add_row([file_score_dict[file][0], "%.3f" % file_score_dict[file][1], "%.3f" % file_score_dict[file][2],
-                       "%.3f" % file_score_dict[file][3]])
-    print(table)

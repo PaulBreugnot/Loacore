@@ -4,7 +4,7 @@ import sqlite3 as sql
 from loacore.classes.classes import Review
 
 
-def add_reviews_from_files(files):
+def add_reviews_from_files(files, encoding):
     """
 
     Load argument files from file system and normalize their content.\n
@@ -14,6 +14,8 @@ def add_reviews_from_files(files):
 
     :param files: :class:`File` s to process
     :type files: :obj:`list` of :class:`File`
+    :param encoding: Encoding used to load files.
+    :type encoding: String
     :return: added :class:`Review` s
     :rtype: :obj:`list` of :class:`Review`
 
@@ -26,7 +28,7 @@ def add_reviews_from_files(files):
     for file in files:
 
         # Load review as a string
-        raw_text = file.load().read()
+        raw_text = file.load(encoding=encoding).read()
 
         # Normalization and review splitting
         reviews = normalize(raw_text)
