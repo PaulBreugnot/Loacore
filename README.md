@@ -1,23 +1,17 @@
-title: Loacore : Language and Opinion Analyzer for Comments and Reviews’s
-  documentation! — Loacore : Language and Opinion Analyzer for Comments
-  and Reviews documentation
-viewport: width=device-width, initial-scale=0.9, maximum-scale=0.9
+Loacore : Language and Opinion Analyzer for Comments and Reviews’s documentation![¶](#loacore-language-and-opinion-analyzer-for-comments-and-reviews-s-documentation "Permalink to this headline"){.headerlink} {#loacore-language-and-opinion-analyzer-for-comments-and-reviewss-documentation}
+===============================================================================================================================================================================================================
 
-Loacore : Language and Opinion Analyzer for Comments and Reviews’s documentation!<a href="#loacore-language-and-opinion-analyzer-for-comments-and-reviews-s-documentation" class="headerlink" title="Permalink to this headline">¶</a>
-======================================================================================================================================================================================================================================
+Requirements[¶](#requirements "Permalink to this headline"){.headerlink} {#requirements}
+========================================================================
 
-Requirements<a href="#requirements" class="headerlink" title="Permalink to this headline">¶</a>
-===============================================================================================
-
-Freeling<a href="#freeling" class="headerlink" title="Permalink to this headline">¶</a>
----------------------------------------------------------------------------------------
+Freeling[¶](#freeling "Permalink to this headline"){.headerlink} {#freeling}
+----------------------------------------------------------------
 
 This project uses an external program, called Freeling, to process
-language :
-<a href="http://nlp.lsi.upc.edu/freeling/" class="uri reference external">http://nlp.lsi.upc.edu/freeling/</a>
+language : <http://nlp.lsi.upc.edu/freeling/>
 
 Check this page to install Freeling on your computer :
-<a href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html" class="uri reference external">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html</a>
+<https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html>
 
 Notice that to use Python API, Freeling needs to be installed from
 source with the dedicated options as described in documentation.
@@ -26,29 +20,26 @@ source with the dedicated options as described in documentation.
 */usr/local* is supported, but this should be fixed in next
 improvements.
 
-Database<a href="#database" class="headerlink" title="Permalink to this headline">¶</a>
----------------------------------------------------------------------------------------
+Database[¶](#database "Permalink to this headline"){.headerlink} {#database}
+----------------------------------------------------------------
 
 The embedded database used to store results is an sqlite database,
 managed with the sqlite3 Python database API :
-<a href="https://docs.python.org/3/library/sqlite3.html" class="uri reference external">https://docs.python.org/3/library/sqlite3.html</a>
+<https://docs.python.org/3/library/sqlite3.html>
 
 The corresponding Python package should already be installed in your
 Python3 distribution.
 
-Utils<a href="#utils" class="headerlink" title="Permalink to this headline">¶</a>
----------------------------------------------------------------------------------
+Utils[¶](#utils "Permalink to this headline"){.headerlink} {#utils}
+----------------------------------------------------------
 
 Package `utils` uses a few graphical modules to show results.
 
--   PrettyTable :
-    <a href="https://pypi.org/project/PrettyTable/" class="uri reference external">https://pypi.org/project/PrettyTable/</a>
+-   PrettyTable : <https://pypi.org/project/PrettyTable/>
 
--   Matplotlib :
-    <a href="https://matplotlib.org/users/installing.html#linux" class="uri reference external">https://matplotlib.org/users/installing.html#linux</a>
+-   Matplotlib : <https://matplotlib.org/users/installing.html#linux>
 
--   Tkinter :
-    <a href="https://wiki.python.org/moin/TkInter" class="uri reference external">https://wiki.python.org/moin/TkInter</a>
+-   Tkinter : <https://wiki.python.org/moin/TkInter>
 
     Module used to generate gui to save pdf for example.
 
@@ -56,13 +47,13 @@ Package `utils` uses a few graphical modules to show results.
     Linux distributions you might need to install *tk* package through
     your package manager.
 
-Classes<a href="#classes" class="headerlink" title="Permalink to this headline">¶</a>
-=====================================================================================
+Classes[¶](#classes "Permalink to this headline"){.headerlink} {#classes}
+==============================================================
 
-File<a href="#file" class="headerlink" title="Permalink to this headline">¶</a>
--------------------------------------------------------------------------------
+File[¶](#file "Permalink to this headline"){.headerlink} {#file}
+--------------------------------------------------------
 
- *class* `loacore.classes.classes.``File`<span class="sig-paren">(</span>*id\_file*, *file\_path*<span class="sig-paren">)</span><a href="#loacore.classes.classes.File" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``File`<span class="sig-paren">(</span>*id\_file*, *file\_path*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.File "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -77,7 +68,7 @@ File<a href="#file" class="headerlink" title="Permalink to this headline">¶</a>
     </tbody>
     </table>
 
-     `load`<span class="sig-paren">(</span>*encoding='windows-1252'*<span class="sig-paren">)</span><a href="#loacore.classes.classes.File.load" class="headerlink" title="Permalink to this definition">¶</a>
+     `load`<span class="sig-paren">(</span>*encoding='windows-1252'*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.File.load "Permalink to this definition"){.headerlink}
 
     :   Load file from file system using `file_path` and specified
         encoding.
@@ -87,10 +78,10 @@ File<a href="#file" class="headerlink" title="Permalink to this headline">¶</a>
         | Parameters: | **encoding** – Source file encoding. Default is set to *windows-1252*, the encoding obtained from .txt conversion in Excel. |
         | Returns:    | file object                                                                                                                 |
 
-Review<a href="#review" class="headerlink" title="Permalink to this headline">¶</a>
------------------------------------------------------------------------------------
+Review[¶](#review "Permalink to this headline"){.headerlink} {#review}
+------------------------------------------------------------
 
- *class* `loacore.classes.classes.``Review`<span class="sig-paren">(</span>*id\_review*, *id\_file*, *file\_index*, *review*<span class="sig-paren">)</span><a href="#loacore.classes.classes.Review" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``Review`<span class="sig-paren">(</span>*id\_review*, *id\_file*, *file\_index*, *review*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.Review "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -107,10 +98,10 @@ Review<a href="#review" class="headerlink" title="Permalink to this headline">¶
     </tbody>
     </table>
 
-Sentence<a href="#sentence" class="headerlink" title="Permalink to this headline">¶</a>
----------------------------------------------------------------------------------------
+Sentence[¶](#sentence "Permalink to this headline"){.headerlink} {#sentence}
+----------------------------------------------------------------
 
- *class* `loacore.classes.classes.``Sentence`<span class="sig-paren">(</span>*id\_sentence*, *id\_review*, *review\_index*, *id\_dep\_tree*<span class="sig-paren">)</span><a href="#loacore.classes.classes.Sentence" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``Sentence`<span class="sig-paren">(</span>*id\_sentence*, *id\_review*, *review\_index*, *id\_dep\_tree*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.Sentence "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -129,14 +120,14 @@ Sentence<a href="#sentence" class="headerlink" title="Permalink to this headline
     </tbody>
     </table>
 
-     `compute_freeling_sentence`<span class="sig-paren">(</span><span class="sig-paren">)</span><a href="#loacore.classes.classes.Sentence.compute_freeling_sentence" class="headerlink" title="Permalink to this definition">¶</a>
+     `compute_freeling_sentence`<span class="sig-paren">(</span><span class="sig-paren">)</span>[¶](#loacore.classes.classes.Sentence.compute_freeling_sentence "Permalink to this definition"){.headerlink}
 
     :   Generates a basic `pyfreeling.sentence` instance, converting
         > `words` as `pyfreeling.word` .
 
         This function is used to process
-        <a href="#loacore.classes.classes.Sentence" class="reference internal" title="loacore.classes.classes.Sentence"><code class="sourceCode python">Sentence</code></a>
-        with Freeling.
+        [`Sentence`](#loacore.classes.classes.Sentence "loacore.classes.classes.Sentence"){.reference
+        .internal} with Freeling.
 
         > <table>
         > <tbody>
@@ -162,7 +153,7 @@ Sentence<a href="#sentence" class="headerlink" title="Permalink to this headline
         > </tbody>
         > </table>
         >
-     `print_sentence`<span class="sig-paren">(</span>*print\_sentence=True*<span class="sig-paren">)</span><a href="#loacore.classes.classes.Sentence.print_sentence" class="headerlink" title="Permalink to this definition">¶</a>
+     `print_sentence`<span class="sig-paren">(</span>*print\_sentence=True*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.Sentence.print_sentence "Permalink to this definition"){.headerlink}
 
     :   Convenient way of printing sentences from their word list
         attribute.
@@ -173,10 +164,10 @@ Sentence<a href="#sentence" class="headerlink" title="Permalink to this headline
         | Returns:     | String representation of the sentence                                                                                          |
         | Return type: | string                                                                                                                         |
 
-Word<a href="#word" class="headerlink" title="Permalink to this headline">¶</a>
--------------------------------------------------------------------------------
+Word[¶](#word "Permalink to this headline"){.headerlink} {#word}
+--------------------------------------------------------
 
- *class* `loacore.classes.classes.``Word`<span class="sig-paren">(</span>*id\_word*, *id\_sentence*, *sentence\_index*, *word*, *id\_lemma*, *id\_synset*, *PoS\_tag*<span class="sig-paren">)</span><a href="#loacore.classes.classes.Word" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``Word`<span class="sig-paren">(</span>*id\_word*, *id\_sentence*, *sentence\_index*, *word*, *id\_lemma*, *id\_synset*, *PoS\_tag*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.Word "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -198,7 +189,7 @@ Word<a href="#word" class="headerlink" title="Permalink to this headline">¶</a>
     </tbody>
     </table>
 
-     `compute_freeling_word`<span class="sig-paren">(</span><span class="sig-paren">)</span><a href="#loacore.classes.classes.Word.compute_freeling_word" class="headerlink" title="Permalink to this definition">¶</a>
+     `compute_freeling_word`<span class="sig-paren">(</span><span class="sig-paren">)</span>[¶](#loacore.classes.classes.Word.compute_freeling_word "Permalink to this definition"){.headerlink}
 
     :   Generates a basic `pyfreeling.word` instance, generated by only
         the word form, even if some analysis could have already been
@@ -208,10 +199,10 @@ Word<a href="#word" class="headerlink" title="Permalink to this headline">¶</a>
         (that itself uses this function) should be used, because all
         Freeling analysis work with `pyfreeling.sentence` instances.
 
-Synset<a href="#synset" class="headerlink" title="Permalink to this headline">¶</a>
------------------------------------------------------------------------------------
+Synset[¶](#synset "Permalink to this headline"){.headerlink} {#synset}
+------------------------------------------------------------
 
- *class* `loacore.classes.classes.``Synset`<span class="sig-paren">(</span>*id\_synset*, *id\_word*, *synset\_code*, *synset\_name*, *neg\_score*, *pos\_score*, *obj\_score*<span class="sig-paren">)</span><a href="#loacore.classes.classes.Synset" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``Synset`<span class="sig-paren">(</span>*id\_synset*, *id\_word*, *synset\_code*, *synset\_name*, *neg\_score*, *pos\_score*, *obj\_score*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.Synset "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -234,10 +225,10 @@ Synset<a href="#synset" class="headerlink" title="Permalink to this headline">¶
 
     neg\_score + pos\_score + obj\_score = 1
 
-DepTree<a href="#deptree" class="headerlink" title="Permalink to this headline">¶</a>
--------------------------------------------------------------------------------------
+DepTree[¶](#deptree "Permalink to this headline"){.headerlink} {#deptree}
+--------------------------------------------------------------
 
- *class* `loacore.classes.classes.``DepTree`<span class="sig-paren">(</span>*id\_dep\_tree*, *id\_dep\_tree\_node*, *id\_sentence*<span class="sig-paren">)</span><a href="#loacore.classes.classes.DepTree" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``DepTree`<span class="sig-paren">(</span>*id\_dep\_tree*, *id\_dep\_tree\_node*, *id\_sentence*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.DepTree "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -253,7 +244,7 @@ DepTree<a href="#deptree" class="headerlink" title="Permalink to this headline">
     </tbody>
     </table>
 
-     `print_dep_tree`<span class="sig-paren">(</span>*root=None*, *print\_dep\_tree=True*<span class="sig-paren">)</span><a href="#loacore.classes.classes.DepTree.print_dep_tree" class="headerlink" title="Permalink to this definition">¶</a>
+     `print_dep_tree`<span class="sig-paren">(</span>*root=None*, *print\_dep\_tree=True*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.DepTree.print_dep_tree "Permalink to this definition"){.headerlink}
 
     :   <table>
         <tbody>
@@ -275,10 +266,10 @@ DepTree<a href="#deptree" class="headerlink" title="Permalink to this headline">
         </tbody>
         </table>
 
-DepTreeNode<a href="#deptreenode" class="headerlink" title="Permalink to this headline">¶</a>
----------------------------------------------------------------------------------------------
+DepTreeNode[¶](#deptreenode "Permalink to this headline"){.headerlink} {#deptreenode}
+----------------------------------------------------------------------
 
- *class* `loacore.classes.classes.``DepTreeNode`<span class="sig-paren">(</span>*id\_dep\_tree\_node*, *id\_dep\_tree*, *id\_word*, *label*, *root*<span class="sig-paren">)</span><a href="#loacore.classes.classes.DepTreeNode" class="headerlink" title="Permalink to this definition">¶</a>
+ *class* `loacore.classes.classes.``DepTreeNode`<span class="sig-paren">(</span>*id\_dep\_tree\_node*, *id\_dep\_tree*, *id\_word*, *label*, *root*<span class="sig-paren">)</span>[¶](#loacore.classes.classes.DepTreeNode "Permalink to this definition"){.headerlink}
 
 :   <table>
     <tbody>
@@ -297,24 +288,24 @@ DepTreeNode<a href="#deptreenode" class="headerlink" title="Permalink to this he
     </tbody>
     </table>
 
-Feeding database : *process* package<a href="#feeding-database-process-package" class="headerlink" title="Permalink to this headline">¶</a>
-===========================================================================================================================================
+Feeding database : *process* package[¶](#feeding-database-process-package "Permalink to this headline"){.headerlink} {#feeding-database-process-package}
+====================================================================================================================
 
 This package contains all the necessary modules to perform the process
 of new files. Notice that all the processes are automatically handled by
 the `file_process.add_files()` function.
 
-Raw Processes<a href="#raw-processes" class="headerlink" title="Permalink to this headline">¶</a>
--------------------------------------------------------------------------------------------------
+Raw Processes[¶](#raw-processes "Permalink to this headline"){.headerlink} {#raw-processes}
+--------------------------------------------------------------------------
 
-### Normalization and review splitting<a href="#normalization-and-review-splitting" class="headerlink" title="Permalink to this headline">¶</a>
+### Normalization and review splitting[¶](#normalization-and-review-splitting "Permalink to this headline"){.headerlink} {#normalization-and-review-splitting}
 
 -   Normalization : conversion to UTF-8 and lower case
 -   Review splitting : the file text is splitted into reviews
 
 <span id="module-loacore.process.review_process" class="target"></span>
 
- `loacore.process.review_process.``add_reviews_from_files`<span class="sig-paren">(</span>*files*, *encoding*<span class="sig-paren">)</span><a href="#loacore.process.review_process.add_reviews_from_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.review_process.``add_reviews_from_files`<span class="sig-paren">(</span>*files*, *encoding*<span class="sig-paren">)</span>[¶](#loacore.process.review_process.add_reviews_from_files "Permalink to this definition"){.headerlink}
 
 :   Load argument files from file system and normalize their content.
 
@@ -347,7 +338,7 @@ Raw Processes<a href="#raw-processes" class="headerlink" title="Permalink to thi
 
 <!-- -->
 
- `loacore.process.review_process.``normalize`<span class="sig-paren">(</span>*text*<span class="sig-paren">)</span><a href="#loacore.process.review_process.normalize" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.review_process.``normalize`<span class="sig-paren">(</span>*text*<span class="sig-paren">)</span>[¶](#loacore.process.review_process.normalize "Permalink to this definition"){.headerlink}
 
 :   Performs raw text normalization.
 
@@ -361,14 +352,14 @@ Raw Processes<a href="#raw-processes" class="headerlink" title="Permalink to thi
     | Returns:     | reviews                               |
     | Return type: | `list` of `string`                    |
 
-Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permalink to this headline">¶</a>
------------------------------------------------------------------------------------------------------------
+Freeling Processes[¶](#freeling-processes "Permalink to this headline"){.headerlink} {#freeling-processes}
+------------------------------------------------------------------------------------
 
 <span id="tokenization"></span>
 
-### tokenization<a href="#module-loacore.process.sentence_process" class="headerlink" title="Permalink to this headline">¶</a>
+### tokenization[¶](#module-loacore.process.sentence_process "Permalink to this headline"){.headerlink} {#tokenization}
 
- `loacore.process.sentence_process.``add_sentences_from_reviews`<span class="sig-paren">(</span>*reviews*<span class="sig-paren">)</span><a href="#loacore.process.sentence_process.add_sentences_from_reviews" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.sentence_process.``add_sentences_from_reviews`<span class="sig-paren">(</span>*reviews*<span class="sig-paren">)</span>[¶](#loacore.process.sentence_process.add_sentences_from_reviews "Permalink to this definition"){.headerlink}
 
 :   Performs the first Freeling process applied to each normalized
     review.
@@ -392,9 +383,9 @@ Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permal
 
 <span id="lemmatization"></span>
 
-### lemmatization<a href="#module-loacore.process.lemma_process" class="headerlink" title="Permalink to this headline">¶</a>
+### lemmatization[¶](#module-loacore.process.lemma_process "Permalink to this headline"){.headerlink} {#lemmatization}
 
- `loacore.process.lemma_process.``add_lemmas_to_sentences`<span class="sig-paren">(</span>*sentences*, *print\_lemmas=False*<span class="sig-paren">)</span><a href="#loacore.process.lemma_process.add_lemmas_to_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.lemma_process.``add_lemmas_to_sentences`<span class="sig-paren">(</span>*sentences*, *print\_lemmas=False*<span class="sig-paren">)</span>[¶](#loacore.process.lemma_process.add_lemmas_to_sentences "Permalink to this definition"){.headerlink}
 
 :   Performs a Freeling process to add lemmas to `Word` s.
 
@@ -423,9 +414,9 @@ Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permal
 
 <span id="disambiguation"></span>
 
-### disambiguation<a href="#module-loacore.process.synset_process" class="headerlink" title="Permalink to this headline">¶</a>
+### disambiguation[¶](#module-loacore.process.synset_process "Permalink to this headline"){.headerlink} {#disambiguation}
 
- `loacore.process.synset_process.``add_polarity_to_synsets`<span class="sig-paren">(</span><span class="sig-paren">)</span><a href="#loacore.process.synset_process.add_polarity_to_synsets" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.synset_process.``add_polarity_to_synsets`<span class="sig-paren">(</span><span class="sig-paren">)</span>[¶](#loacore.process.synset_process.add_polarity_to_synsets "Permalink to this definition"){.headerlink}
 
 :   Adds the positive/negative/objective polarities of all the synsets
     currently in the table Synset, from the SentiWordNet corpus.
@@ -437,7 +428,7 @@ Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permal
 
 <!-- -->
 
- `loacore.process.synset_process.``add_synsets_to_sentences`<span class="sig-paren">(</span>*sentences*, *print\_synsets=False*<span class="sig-paren">)</span><a href="#loacore.process.synset_process.add_synsets_to_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.synset_process.``add_synsets_to_sentences`<span class="sig-paren">(</span>*sentences*, *print\_synsets=False*<span class="sig-paren">)</span>[¶](#loacore.process.synset_process.add_synsets_to_sentences "Permalink to this definition"){.headerlink}
 
 :   Performs a Freeling process to disambiguate words of the sentences
     according to their context (UKB algorithm) linking them to a unique
@@ -471,9 +462,9 @@ Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permal
 
 <span id="dependency-tree-generation"></span>
 
-### dependency tree generation<a href="#module-loacore.process.deptree_process" class="headerlink" title="Permalink to this headline">¶</a>
+### dependency tree generation[¶](#module-loacore.process.deptree_process "Permalink to this headline"){.headerlink} {#dependency-tree-generation}
 
- `loacore.process.deptree_process.``add_dep_tree_from_sentences`<span class="sig-paren">(</span>*sentences*, *print\_result=False*<span class="sig-paren">)</span><a href="#loacore.process.deptree_process.add_dep_tree_from_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.deptree_process.``add_dep_tree_from_sentences`<span class="sig-paren">(</span>*sentences*, *print\_result=False*<span class="sig-paren">)</span>[¶](#loacore.process.deptree_process.add_dep_tree_from_sentences "Permalink to this definition"){.headerlink}
 
 :   Generates the dependency trees of the specified `Sentence` s and add
     the results to the database.
@@ -508,10 +499,10 @@ Freeling Processes<a href="#freeling-processes" class="headerlink" title="Permal
 
 <span id="feed-database"></span>
 
-Feed database<a href="#module-loacore.process.file_process" class="headerlink" title="Permalink to this headline">¶</a>
------------------------------------------------------------------------------------------------------------------------
+Feed database[¶](#module-loacore.process.file_process "Permalink to this headline"){.headerlink} {#feed-database}
+------------------------------------------------------------------------------------------------
 
- `loacore.process.file_process.``add_files`<span class="sig-paren">(</span>*file\_paths*, *encoding='windows-1252'*<span class="sig-paren">)</span><a href="#loacore.process.file_process.add_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.process.file_process.``add_files`<span class="sig-paren">(</span>*file\_paths*, *encoding='windows-1252'*<span class="sig-paren">)</span>[¶](#loacore.process.file_process.add_files "Permalink to this definition"){.headerlink}
 
 :   This function performs the full process on all the file\_paths
     specified, and add the results to the corresponding tables.
@@ -541,15 +532,15 @@ Feed database<a href="#module-loacore.process.file_process" class="headerlink" t
 
         file_process.add_files(file_paths)
 
-Load data from database : *load* package<a href="#load-data-from-database-load-package" class="headerlink" title="Permalink to this headline">¶</a>
-===================================================================================================================================================
+Load data from database : *load* package[¶](#load-data-from-database-load-package "Permalink to this headline"){.headerlink} {#load-data-from-database-load-package}
+============================================================================================================================
 
 <span id="load-files"></span>
 
-Load Files<a href="#module-loacore.load.file_load" class="headerlink" title="Permalink to this headline">¶</a>
---------------------------------------------------------------------------------------------------------------
+Load Files[¶](#module-loacore.load.file_load "Permalink to this headline"){.headerlink} {#load-files}
+---------------------------------------------------------------------------------------
 
- `loacore.load.file_load.``clean_db`<span class="sig-paren">(</span><span class="sig-paren">)</span><a href="#loacore.load.file_load.clean_db" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.file_load.``clean_db`<span class="sig-paren">(</span><span class="sig-paren">)</span>[¶](#loacore.load.file_load.clean_db "Permalink to this definition"){.headerlink}
 
 :   Remove all files from database. Implemented references will also
     engender the deletion of all files dependencies in database : all
@@ -557,7 +548,7 @@ Load Files<a href="#module-loacore.load.file_load" class="headerlink" title="Per
 
 <!-- -->
 
- `loacore.load.file_load.``load_database`<span class="sig-paren">(</span>*id\_files=\[\]*, *load\_reviews=True*, *load\_sentences=True*, *load\_words=True*, *load\_deptrees=True*<span class="sig-paren">)</span><a href="#loacore.load.file_load.load_database" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.file_load.``load_database`<span class="sig-paren">(</span>*id\_files=\[\]*, *load\_reviews=True*, *load\_sentences=True*, *load\_words=True*, *load\_deptrees=True*<span class="sig-paren">)</span>[¶](#loacore.load.file_load.load_database "Permalink to this definition"){.headerlink}
 
 :   Load the complete database as a `list` of `File` , with all the
     dependencies specified in parameters loaded in them.
@@ -636,7 +627,7 @@ Load Files<a href="#module-loacore.load.file_load" class="headerlink" title="Per
 
 <!-- -->
 
- `loacore.load.file_load.``remove_files`<span class="sig-paren">(</span>*files*<span class="sig-paren">)</span><a href="#loacore.load.file_load.remove_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.file_load.``remove_files`<span class="sig-paren">(</span>*files*<span class="sig-paren">)</span>[¶](#loacore.load.file_load.remove_files "Permalink to this definition"){.headerlink}
 
 :   Remove specified files from database. Implemented references will
     also engender the deletion of all files dependencies in database.
@@ -647,10 +638,10 @@ Load Files<a href="#module-loacore.load.file_load" class="headerlink" title="Per
 
 <span id="load-reviews"></span>
 
-Load Reviews<a href="#module-loacore.load.review_load" class="headerlink" title="Permalink to this headline">¶</a>
-------------------------------------------------------------------------------------------------------------------
+Load Reviews[¶](#module-loacore.load.review_load "Permalink to this headline"){.headerlink} {#load-reviews}
+-------------------------------------------------------------------------------------------
 
- `loacore.load.review_load.``load_reviews`<span class="sig-paren">(</span>*id\_reviews=\[\]*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span><a href="#loacore.load.review_load.load_reviews" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.review_load.``load_reviews`<span class="sig-paren">(</span>*id\_reviews=\[\]*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span>[¶](#loacore.load.review_load.load_reviews "Permalink to this definition"){.headerlink}
 
 :   Load `Review` s from database.
 
@@ -690,7 +681,7 @@ Load Reviews<a href="#module-loacore.load.review_load" class="headerlink" title=
 
 <!-- -->
 
- `loacore.load.review_load.``load_reviews_by_id_files`<span class="sig-paren">(</span>*id\_files*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span><a href="#loacore.load.review_load.load_reviews_by_id_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.review_load.``load_reviews_by_id_files`<span class="sig-paren">(</span>*id\_files*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span>[¶](#loacore.load.review_load.load_reviews_by_id_files "Permalink to this definition"){.headerlink}
 
 :   Load `Review` s of files specified by their ids.
 
@@ -730,7 +721,7 @@ Load Reviews<a href="#module-loacore.load.review_load" class="headerlink" title=
 
 <!-- -->
 
- `loacore.load.review_load.``load_reviews_in_files`<span class="sig-paren">(</span>*files*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span><a href="#loacore.load.review_load.load_reviews_in_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.review_load.``load_reviews_in_files`<span class="sig-paren">(</span>*files*, *load\_sentences=False*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span>[¶](#loacore.load.review_load.load_reviews_in_files "Permalink to this definition"){.headerlink}
 
 :   Load `Review` s into corresponding *files*, setting up their
     attribute `reviews`.
@@ -767,10 +758,10 @@ Load Reviews<a href="#module-loacore.load.review_load" class="headerlink" title=
 
 <span id="load-sentences"></span>
 
-Load Sentences<a href="#module-loacore.load.sentence_load" class="headerlink" title="Permalink to this headline">¶</a>
-----------------------------------------------------------------------------------------------------------------------
+Load Sentences[¶](#module-loacore.load.sentence_load "Permalink to this headline"){.headerlink} {#load-sentences}
+-----------------------------------------------------------------------------------------------
 
- `loacore.load.sentence_load.``load_sentences`<span class="sig-paren">(</span>*id\_sentences=\[\]*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span><a href="#loacore.load.sentence_load.load_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.sentence_load.``load_sentences`<span class="sig-paren">(</span>*id\_sentences=\[\]*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span>[¶](#loacore.load.sentence_load.load_sentences "Permalink to this definition"){.headerlink}
 
 :   Load sentences from database.
 
@@ -811,7 +802,7 @@ Load Sentences<a href="#module-loacore.load.sentence_load" class="headerlink" ti
 
 <!-- -->
 
- `loacore.load.sentence_load.``load_sentences_by_id_files`<span class="sig-paren">(</span>*id\_files*, *load\_words=True*, *load\_deptrees=True*<span class="sig-paren">)</span><a href="#loacore.load.sentence_load.load_sentences_by_id_files" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.sentence_load.``load_sentences_by_id_files`<span class="sig-paren">(</span>*id\_files*, *load\_words=True*, *load\_deptrees=True*<span class="sig-paren">)</span>[¶](#loacore.load.sentence_load.load_sentences_by_id_files "Permalink to this definition"){.headerlink}
 
 :   Ids of files from which sentences should be loaded.
 
@@ -849,7 +840,7 @@ Load Sentences<a href="#module-loacore.load.sentence_load" class="headerlink" ti
 
 <!-- -->
 
- `loacore.load.sentence_load.``load_sentences_in_reviews`<span class="sig-paren">(</span>*reviews*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span><a href="#loacore.load.sentence_load.load_sentences_in_reviews" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.sentence_load.``load_sentences_in_reviews`<span class="sig-paren">(</span>*reviews*, *load\_words=False*, *load\_deptrees=False*<span class="sig-paren">)</span>[¶](#loacore.load.sentence_load.load_sentences_in_reviews "Permalink to this definition"){.headerlink}
 
 :   Load `Sentence` s into corresponding *reviews*, setting up their
     attribute `sentences`.
@@ -886,10 +877,10 @@ Load Sentences<a href="#module-loacore.load.sentence_load" class="headerlink" ti
 
 <span id="load-words"></span>
 
-Load Words<a href="#module-loacore.load.word_load" class="headerlink" title="Permalink to this headline">¶</a>
---------------------------------------------------------------------------------------------------------------
+Load Words[¶](#module-loacore.load.word_load "Permalink to this headline"){.headerlink} {#load-words}
+---------------------------------------------------------------------------------------
 
- `loacore.load.word_load.``load_words`<span class="sig-paren">(</span>*id\_words=\[\]*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span><a href="#loacore.load.word_load.load_words" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.word_load.``load_words`<span class="sig-paren">(</span>*id\_words=\[\]*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span>[¶](#loacore.load.word_load.load_words "Permalink to this definition"){.headerlink}
 
 :   Load `Word` s from database.
 
@@ -930,7 +921,7 @@ Load Words<a href="#module-loacore.load.word_load" class="headerlink" title="Per
 
 <!-- -->
 
- `loacore.load.word_load.``load_words_in_dep_trees`<span class="sig-paren">(</span>*dep\_trees*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span><a href="#loacore.load.word_load.load_words_in_dep_trees" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.word_load.``load_words_in_dep_trees`<span class="sig-paren">(</span>*dep\_trees*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span>[¶](#loacore.load.word_load.load_words_in_dep_trees "Permalink to this definition"){.headerlink}
 
 :   Load `Word` s into corresponding *dep\_trees*, setting up the
     attribute `word` of each node.
@@ -958,7 +949,7 @@ Load Words<a href="#module-loacore.load.word_load" class="headerlink" title="Per
 
 <!-- -->
 
- `loacore.load.word_load.``load_words_in_sentences`<span class="sig-paren">(</span>*sentences*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span><a href="#loacore.load.word_load.load_words_in_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.word_load.``load_words_in_sentences`<span class="sig-paren">(</span>*sentences*, *load\_lemmas=True*, *load\_synsets=True*<span class="sig-paren">)</span>[¶](#loacore.load.word_load.load_words_in_sentences "Permalink to this definition"){.headerlink}
 
 :   Load `Word` s into corresponding *sentences*, setting up their
     attribute `words`.
@@ -995,10 +986,10 @@ Load Words<a href="#module-loacore.load.word_load" class="headerlink" title="Per
 
 <span id="load-synsets"></span>
 
-Load Synsets<a href="#module-loacore.load.synset_load" class="headerlink" title="Permalink to this headline">¶</a>
-------------------------------------------------------------------------------------------------------------------
+Load Synsets[¶](#module-loacore.load.synset_load "Permalink to this headline"){.headerlink} {#load-synsets}
+-------------------------------------------------------------------------------------------
 
- `loacore.load.synset_load.``load_synsets`<span class="sig-paren">(</span>*id\_synsets=\[\]*<span class="sig-paren">)</span><a href="#loacore.load.synset_load.load_synsets" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.synset_load.``load_synsets`<span class="sig-paren">(</span>*id\_synsets=\[\]*<span class="sig-paren">)</span>[¶](#loacore.load.synset_load.load_synsets "Permalink to this definition"){.headerlink}
 
 :   Load `Synset` s from database.
 
@@ -1020,7 +1011,7 @@ Load Synsets<a href="#module-loacore.load.synset_load" class="headerlink" title=
 
 <!-- -->
 
- `loacore.load.synset_load.``load_synsets_in_words`<span class="sig-paren">(</span>*words*<span class="sig-paren">)</span><a href="#loacore.load.synset_load.load_synsets_in_words" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.synset_load.``load_synsets_in_words`<span class="sig-paren">(</span>*words*<span class="sig-paren">)</span>[¶](#loacore.load.synset_load.load_synsets_in_words "Permalink to this definition"){.headerlink}
 
 :   Load `Synset` s into corresponding *words*, setting up their
     attribute `synset`.
@@ -1043,10 +1034,10 @@ Load Synsets<a href="#module-loacore.load.synset_load" class="headerlink" title=
 
 <span id="load-lemmas"></span>
 
-Load Lemmas<a href="#module-loacore.load.lemma_load" class="headerlink" title="Permalink to this headline">¶</a>
-----------------------------------------------------------------------------------------------------------------
+Load Lemmas[¶](#module-loacore.load.lemma_load "Permalink to this headline"){.headerlink} {#load-lemmas}
+-----------------------------------------------------------------------------------------
 
- `loacore.load.lemma_load.``load_lemmas`<span class="sig-paren">(</span>*id\_lemmas=\[\]*<span class="sig-paren">)</span><a href="#loacore.load.lemma_load.load_lemmas" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.lemma_load.``load_lemmas`<span class="sig-paren">(</span>*id\_lemmas=\[\]*<span class="sig-paren">)</span>[¶](#loacore.load.lemma_load.load_lemmas "Permalink to this definition"){.headerlink}
 
 :   Load lemmas from database.
 
@@ -1068,7 +1059,7 @@ Load Lemmas<a href="#module-loacore.load.lemma_load" class="headerlink" title="P
 
 <!-- -->
 
- `loacore.load.lemma_load.``load_lemmas_in_words`<span class="sig-paren">(</span>*words*<span class="sig-paren">)</span><a href="#loacore.load.lemma_load.load_lemmas_in_words" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.lemma_load.``load_lemmas_in_words`<span class="sig-paren">(</span>*words*<span class="sig-paren">)</span>[¶](#loacore.load.lemma_load.load_lemmas_in_words "Permalink to this definition"){.headerlink}
 
 :   Load lemmas into corresponding *words*, setting up their attribute
     `lemma`.
@@ -1091,10 +1082,10 @@ Load Lemmas<a href="#module-loacore.load.lemma_load" class="headerlink" title="P
 
 <span id="load-deptrees"></span>
 
-Load DepTrees<a href="#module-loacore.load.deptree_load" class="headerlink" title="Permalink to this headline">¶</a>
---------------------------------------------------------------------------------------------------------------------
+Load DepTrees[¶](#module-loacore.load.deptree_load "Permalink to this headline"){.headerlink} {#load-deptrees}
+---------------------------------------------------------------------------------------------
 
- `loacore.load.deptree_load.``load_dep_tree_in_sentences`<span class="sig-paren">(</span>*sentences*, *load\_words=True*<span class="sig-paren">)</span><a href="#loacore.load.deptree_load.load_dep_tree_in_sentences" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.deptree_load.``load_dep_tree_in_sentences`<span class="sig-paren">(</span>*sentences*, *load\_words=True*<span class="sig-paren">)</span>[¶](#loacore.load.deptree_load.load_dep_tree_in_sentences "Permalink to this definition"){.headerlink}
 
 :   Load `DepTree` s into corresponding *sentences*, setting up their
     attribute `dep_tree`.
@@ -1130,7 +1121,7 @@ Load DepTrees<a href="#module-loacore.load.deptree_load" class="headerlink" titl
 
 <!-- -->
 
- `loacore.load.deptree_load.``load_dep_trees`<span class="sig-paren">(</span>*id\_dep\_trees=\[\]*, *load\_words=True*<span class="sig-paren">)</span><a href="#loacore.load.deptree_load.load_dep_trees" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.load.deptree_load.``load_dep_trees`<span class="sig-paren">(</span>*id\_dep\_trees=\[\]*, *load\_words=True*<span class="sig-paren">)</span>[¶](#loacore.load.deptree_load.load_dep_trees "Permalink to this definition"){.headerlink}
 
 :   Load `DepTree` s from database.
 
@@ -1177,15 +1168,15 @@ Load DepTrees<a href="#module-loacore.load.deptree_load" class="headerlink" titl
                 servicio (sn, NCMS000, servicio)
                     el (spec, None, el)
 
-Analyse data : *analysis* package<a href="#analyse-data-analysis-package" class="headerlink" title="Permalink to this headline">¶</a>
-=====================================================================================================================================
+Analyse data : *analysis* package[¶](#analyse-data-analysis-package "Permalink to this headline"){.headerlink} {#analyse-data-analysis-package}
+==============================================================================================================
 
 <span id="sentiment-analysis"></span>
 
-Sentiment Analysis<a href="#module-loacore.analysis.sentiment_analysis" class="headerlink" title="Permalink to this headline">¶</a>
------------------------------------------------------------------------------------------------------------------------------------
+Sentiment Analysis[¶](#module-loacore.analysis.sentiment_analysis "Permalink to this headline"){.headerlink} {#sentiment-analysis}
+------------------------------------------------------------------------------------------------------------
 
- `loacore.analysis.sentiment_analysis.``compute_extreme_files_polarity`<span class="sig-paren">(</span>*files*, *pessimistic=False*<span class="sig-paren">)</span><a href="#loacore.analysis.sentiment_analysis.compute_extreme_files_polarity" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.analysis.sentiment_analysis.``compute_extreme_files_polarity`<span class="sig-paren">(</span>*files*, *pessimistic=False*<span class="sig-paren">)</span>[¶](#loacore.analysis.sentiment_analysis.compute_extreme_files_polarity "Permalink to this definition"){.headerlink}
 
 :   Performs *extreme* file polarity computation : only the most
     pessimistic or optimistic sense (according to pessimistic argument)
@@ -1243,7 +1234,7 @@ Sentiment Analysis<a href="#module-loacore.analysis.sentiment_analysis" class="h
 
 <!-- -->
 
- `loacore.analysis.sentiment_analysis.``compute_simple_files_polarity`<span class="sig-paren">(</span>*files*<span class="sig-paren">)</span><a href="#loacore.analysis.sentiment_analysis.compute_simple_files_polarity" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.analysis.sentiment_analysis.``compute_simple_files_polarity`<span class="sig-paren">(</span>*files*<span class="sig-paren">)</span>[¶](#loacore.analysis.sentiment_analysis.compute_simple_files_polarity "Permalink to this definition"){.headerlink}
 
 :   Perform the easiest sentiment analysis possible : a normalized sum
     of the positive/negative/objective polarities available in all
@@ -1299,15 +1290,15 @@ Sentiment Analysis<a href="#module-loacore.analysis.sentiment_analysis" class="h
 
 <span id="pattern-recognition"></span>
 
-Pattern Recognition<a href="#module-loacore.analysis.pattern_recognition" class="headerlink" title="Permalink to this headline">¶</a>
--------------------------------------------------------------------------------------------------------------------------------------
+Pattern Recognition[¶](#module-loacore.analysis.pattern_recognition "Permalink to this headline"){.headerlink} {#pattern-recognition}
+--------------------------------------------------------------------------------------------------------------
 
 Patterns recognitions are realized on the dependency trees computed with
 Freeling. This means that *parent-child* structures will be matched,
 what **don’t necessarily correspond to adjacent words in the original
 sentence**.
 
- `loacore.analysis.pattern_recognition.``general_pattern_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*, *types*<span class="sig-paren">)</span><a href="#loacore.analysis.pattern_recognition.general_pattern_recognition" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.analysis.pattern_recognition.``general_pattern_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*, *types*<span class="sig-paren">)</span>[¶](#loacore.analysis.pattern_recognition.general_pattern_recognition "Permalink to this definition"){.headerlink}
 
 :   Recognize a general pattern, compound of PoS\_tags and dependency
     labels, in the DepTrees associated to specified sentences.
@@ -1362,16 +1353,16 @@ sentence**.
 
 <!-- -->
 
- `loacore.analysis.pattern_recognition.``label_patterns_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*<span class="sig-paren">)</span><a href="#loacore.analysis.pattern_recognition.label_patterns_recognition" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.analysis.pattern_recognition.``label_patterns_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*<span class="sig-paren">)</span>[¶](#loacore.analysis.pattern_recognition.label_patterns_recognition "Permalink to this definition"){.headerlink}
 
 :   Recognize a dependency label pattern in the DepTrees associated to
     specified sentences.
 
     Labels used for Spanish can be found there :
 
-    > -   <a href="http://clic.ub.edu/corpus/webfm_send/20" class="uri reference external">http://clic.ub.edu/corpus/webfm_send/20</a>
-    > -   <a href="http://clic.ub.edu/corpus/webfm_send/18" class="uri reference external">http://clic.ub.edu/corpus/webfm_send/18</a>
-    > -   <a href="http://clic.ub.edu/corpus/webfm_send/49" class="uri reference external">http://clic.ub.edu/corpus/webfm_send/49</a>
+    > -   <http://clic.ub.edu/corpus/webfm_send/20>
+    > -   <http://clic.ub.edu/corpus/webfm_send/18>
+    > -   <http://clic.ub.edu/corpus/webfm_send/49>
 
     <table>
     <tbody>
@@ -1438,13 +1429,13 @@ sentence**.
 
 <!-- -->
 
- `loacore.analysis.pattern_recognition.``pos_tag_patterns_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*<span class="sig-paren">)</span><a href="#loacore.analysis.pattern_recognition.pos_tag_patterns_recognition" class="headerlink" title="Permalink to this definition">¶</a>
+ `loacore.analysis.pattern_recognition.``pos_tag_patterns_recognition`<span class="sig-paren">(</span>*sentences*, *pattern*<span class="sig-paren">)</span>[¶](#loacore.analysis.pattern_recognition.pos_tag_patterns_recognition "Permalink to this definition"){.headerlink}
 
 :   Recognize a PoS\_tag pattern in the DepTrees associated to specified
     sentences.
 
     PoS\_tags corresponding to each language can be found there :
-    <a href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/tagsets.html" class="uri reference external">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/tagsets.html</a>
+    <https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/tagsets.html>
 
     <table>
     <tbody>
@@ -1516,51 +1507,75 @@ sentence**.
     >     ( poner : VMN0000 : S )
     >     ...
 
-### [Table Of Contents](#)
+### [Table Of Contents](#) {#table-of-contents}
 
--   <a href="#" class="reference internal">Loacore : Language and Opinion Analyzer for Comments and Reviews’s documentation!</a>
--   <a href="#requirements" class="reference internal">Requirements</a>
-    -   <a href="#freeling" class="reference internal">Freeling</a>
-    -   <a href="#database" class="reference internal">Database</a>
-    -   <a href="#utils" class="reference internal">Utils</a>
--   <a href="#classes" class="reference internal">Classes</a>
-    -   <a href="#file" class="reference internal">File</a>
-    -   <a href="#review" class="reference internal">Review</a>
-    -   <a href="#sentence" class="reference internal">Sentence</a>
-    -   <a href="#word" class="reference internal">Word</a>
-    -   <a href="#synset" class="reference internal">Synset</a>
-    -   <a href="#deptree" class="reference internal">DepTree</a>
-    -   <a href="#deptreenode" class="reference internal">DepTreeNode</a>
--   <a href="#feeding-database-process-package" class="reference internal">Feeding database : <em>process</em> package</a>
-    -   <a href="#raw-processes" class="reference internal">Raw Processes</a>
-        -   <a href="#normalization-and-review-splitting" class="reference internal">Normalization and review splitting</a>
-    -   <a href="#freeling-processes" class="reference internal">Freeling Processes</a>
-        -   <a href="#module-loacore.process.sentence_process" class="reference internal">tokenization</a>
-        -   <a href="#module-loacore.process.lemma_process" class="reference internal">lemmatization</a>
-        -   <a href="#module-loacore.process.synset_process" class="reference internal">disambiguation</a>
-        -   <a href="#module-loacore.process.deptree_process" class="reference internal">dependency tree generation</a>
-    -   <a href="#module-loacore.process.file_process" class="reference internal">Feed database</a>
--   <a href="#load-data-from-database-load-package" class="reference internal">Load data from database : <em>load</em> package</a>
-    -   <a href="#module-loacore.load.file_load" class="reference internal">Load Files</a>
-    -   <a href="#module-loacore.load.review_load" class="reference internal">Load Reviews</a>
-    -   <a href="#module-loacore.load.sentence_load" class="reference internal">Load Sentences</a>
-    -   <a href="#module-loacore.load.word_load" class="reference internal">Load Words</a>
-    -   <a href="#module-loacore.load.synset_load" class="reference internal">Load Synsets</a>
-    -   <a href="#module-loacore.load.lemma_load" class="reference internal">Load Lemmas</a>
-    -   <a href="#module-loacore.load.deptree_load" class="reference internal">Load DepTrees</a>
--   <a href="#analyse-data-analysis-package" class="reference internal">Analyse data : <em>analysis</em> package</a>
-    -   <a href="#module-loacore.analysis.sentiment_analysis" class="reference internal">Sentiment Analysis</a>
-    -   <a href="#module-loacore.analysis.pattern_recognition" class="reference internal">Pattern Recognition</a>
+-   [Loacore : Language and Opinion Analyzer for Comments and Reviews’s
+    documentation!](#){.reference .internal}
+-   [Requirements](#requirements){.reference .internal}
+    -   [Freeling](#freeling){.reference .internal}
+    -   [Database](#database){.reference .internal}
+    -   [Utils](#utils){.reference .internal}
+-   [Classes](#classes){.reference .internal}
+    -   [File](#file){.reference .internal}
+    -   [Review](#review){.reference .internal}
+    -   [Sentence](#sentence){.reference .internal}
+    -   [Word](#word){.reference .internal}
+    -   [Synset](#synset){.reference .internal}
+    -   [DepTree](#deptree){.reference .internal}
+    -   [DepTreeNode](#deptreenode){.reference .internal}
+-   [Feeding database : *process*
+    package](#feeding-database-process-package){.reference .internal}
+    -   [Raw Processes](#raw-processes){.reference .internal}
+        -   [Normalization and review
+            splitting](#normalization-and-review-splitting){.reference
+            .internal}
+    -   [Freeling Processes](#freeling-processes){.reference .internal}
+        -   [tokenization](#module-loacore.process.sentence_process){.reference
+            .internal}
+        -   [lemmatization](#module-loacore.process.lemma_process){.reference
+            .internal}
+        -   [disambiguation](#module-loacore.process.synset_process){.reference
+            .internal}
+        -   [dependency tree
+            generation](#module-loacore.process.deptree_process){.reference
+            .internal}
+    -   [Feed database](#module-loacore.process.file_process){.reference
+        .internal}
+-   [Load data from database : *load*
+    package](#load-data-from-database-load-package){.reference
+    .internal}
+    -   [Load Files](#module-loacore.load.file_load){.reference
+        .internal}
+    -   [Load Reviews](#module-loacore.load.review_load){.reference
+        .internal}
+    -   [Load Sentences](#module-loacore.load.sentence_load){.reference
+        .internal}
+    -   [Load Words](#module-loacore.load.word_load){.reference
+        .internal}
+    -   [Load Synsets](#module-loacore.load.synset_load){.reference
+        .internal}
+    -   [Load Lemmas](#module-loacore.load.lemma_load){.reference
+        .internal}
+    -   [Load DepTrees](#module-loacore.load.deptree_load){.reference
+        .internal}
+-   [Analyse data : *analysis*
+    package](#analyse-data-analysis-package){.reference .internal}
+    -   [Sentiment
+        Analysis](#module-loacore.analysis.sentiment_analysis){.reference
+        .internal}
+    -   [Pattern
+        Recognition](#module-loacore.analysis.pattern_recognition){.reference
+        .internal}
 
-### Related Topics
+### Related Topics {#related-topics}
 
 -   [Documentation overview](#)
 
-### This Page
+### This Page {#this-page}
 
 -   [Show Source](_sources/index.rst.txt)
 
-### Quick search
+### Quick search {#quick-search}
 
 ©2018, Universidad Tecnológica de Pereira. \| Powered by [Sphinx
 1.7.5](http://sphinx-doc.org/) & [Alabaster
