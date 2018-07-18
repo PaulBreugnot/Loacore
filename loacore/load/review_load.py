@@ -48,7 +48,7 @@ def load_reviews(id_reviews=[], load_sentences=False, load_words=False, load_dep
 
     if load_sentences:
         # Load Sentences
-        import loacore.database.load.sentence_load as sentence_load
+        import loacore.load.sentence_load as sentence_load
         sentence_load.load_sentences_in_reviews(reviews, load_words=load_words, load_deptrees=load_deptrees)
 
     return reviews
@@ -141,7 +141,7 @@ def load_reviews_in_files(files, load_sentences=False, load_words=False, load_de
 
     if load_sentences:
         # Load Sentences
-        import loacore.database.load.sentence_load as sentence_load
+        import loacore.load.sentence_load as sentence_load
         sentence_load.load_sentences_in_reviews(reviews, load_words=load_words, load_deptrees=load_deptrees)
 
     return reviews

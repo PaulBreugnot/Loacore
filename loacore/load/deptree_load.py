@@ -80,7 +80,7 @@ def load_dep_trees(id_dep_trees=[], load_words=True):
             dep_trees.append(dep_tree)
 
     if load_words:
-        import loacore.database.load.word_load as word_load
+        import loacore.load.word_load as word_load
         word_load.load_words_in_dep_trees(dep_trees)
 
     conn.close()
@@ -137,7 +137,7 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
             dep_trees.append(dep_tree)
 
     if load_words:
-        import loacore.database.load.word_load as word_load
+        import loacore.load.word_load as word_load
         word_load.load_words_in_dep_trees([sentence.dep_tree for sentence in sentences])
 
     conn.close()

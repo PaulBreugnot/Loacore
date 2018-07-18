@@ -66,10 +66,10 @@ def add_sentences_from_reviews(reviews):
 def init_freeling():
     freeling.util_init_locale("default");
 
-    lang = "es"
-    ipath = "/usr/local"
+    import loacore
+    lang = loacore.lang
     # path to language data
-    lpath = ipath + "/share/freeling/" + lang + "/"
+    lpath = loacore.LANG_PATH
 
     tk = freeling.tokenizer(lpath + "tokenizer.dat");
     sp = freeling.splitter(lpath + "splitter.dat");

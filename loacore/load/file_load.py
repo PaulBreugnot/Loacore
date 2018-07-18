@@ -57,7 +57,7 @@ def load_database(id_files=[], load_reviews=True, load_sentences=True, load_word
     :Example:
         Load files 1,2,3 with only their :attr:`id_file` and :attr:`id_path`.
 
-        >>> import loacore.database.load.file_load as file_load
+        >>> import loacore.load.file_load as file_load
         >>> files = file_load.load_database(id_files=[1, 2, 3], load_reviews=False)
         >>> print([f.file_path for f in files])
         ['../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_EO.txt',

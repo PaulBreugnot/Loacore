@@ -109,10 +109,10 @@ def compute_extreme_files_polarity(files, pessimistic=False):
 
         freeling.util_init_locale("default")
 
-        lang = "es"
-        ipath = "/usr/local"
+        import loacore
+        lang = loacore.lang
         # path to language data
-        lpath = ipath + "/share/freeling/" + lang + "/"
+        lpath = loacore.LANG_PATH
 
         # create the analyzer with the required set of maco_options
         morfo = freeling.maco(my_maco_options(lang, lpath))
@@ -206,3 +206,60 @@ def compute_extreme_files_polarity(files, pessimistic=False):
     return file_score_dict
 
 
+def compute_pattern_files_polarity(files, check_adj_pattern=True):
+
+    def verb_pattern_rec(node, score):
+        # node is a verb
+        return score
+
+    def resolve_adj_rule(parent_node, child):
+        # child is the adj applied to parent_node
+        # returns true if we need to invert parent_node polarity
+        if parent_node.word.synset is not None and child.word.synset is not None:
+            if (parent_node.word.synset.pos_score > parent_node.word.synset.neg_score
+                    and child.word.synset.pos_score < child.word.synset.neg_score):
+                # AdjN + NounP
+                # Noun needs to be considered negative
+                return True
+            return False
+        return False
+
+    def check_adj_pattern(node, pos_score, neg_score):
+        for child in node.children:
+            if child.word.PoS_tag is not None:
+                if child.word.PoS_tag[0] == 'A':
+                    # An adjective is applied to parent_node
+                    if resolve_adj_rule(node, child):
+                        print(node.word.word, " : ", child.word.word)
+                        # if at least one negative adjective is applied to a positive node, its polarity is inverted
+                        return neg_score, pos_score
+        # Nothing is changed
+        return pos_score, neg_score
+
+    def children_rec(parent_node):
+        if parent_node.word.synset is not None:
+            node_pos_score = parent_node.word.synset.pos_score
+            node_neg_score = parent_node.word.synset.neg_score
+        else:
+            node_pos_score = 0
+            node_neg_score = 0
+
+        if check_adj_pattern:
+            node_pos_score, node_neg_score = check_adj_pattern(parent_node, node_pos_score, node_neg_score)
+
+        for child in parent_node.children:
+            child_score = children_rec(child)
+            node_pos_score += child_score[0]
+            node_neg_score += child_score[1]
+
+        return node_pos_score, node_neg_score
+
+    for file in files:
+        for review in file.reviews:
+            for sentence in review.sentences:
+                dep_tree = sentence.dep_tree
+                test_score = 0
+                for word in sentence.words:
+                    if word.synset is not None:
+                        test_score += word.synset.pos_score
+                print(children_rec(dep_tree.root)[0], " : ", test_score)
