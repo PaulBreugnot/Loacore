@@ -20,7 +20,7 @@ def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
     :Example:
         Load sentences 1,2 and their words.
 
-        >>> import loacore.database.load.sentence_load as sentence_load
+        >>> import loacore.load.sentence_load as sentence_load
         >>> sentences = sentence_load.load_sentences([1,2], load_words=True)
         >>> sentences[0].print_sentence(print_sentence=False)
         'teleferico'
@@ -48,11 +48,11 @@ def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
             sentences.append(Sentence(result[0], result[1], result[2], result[3]))
 
     if load_words:
-        import loacore.database.load.word_load as word_load
+        import loacore.load.word_load as word_load
         word_load.load_words_in_sentences(sentences)
 
     if load_deptrees:
-        import loacore.database.load.deptree_load as deptree_load
+        import loacore.load.deptree_load as deptree_load
         deptree_load.load_dep_tree_in_sentences(sentences)
 
     conn.close()
@@ -96,11 +96,11 @@ def load_sentences_by_id_files(id_files, load_words=True, load_deptrees=True):
     conn.close()
 
     if load_words:
-        import loacore.database.load.word_load as word_load
+        import loacore.load.word_load as word_load
         word_load.load_words_in_sentences(sentences)
 
     if load_deptrees:
-        import loacore.database.load.deptree_load as deptree_load
+        import loacore.load.deptree_load as deptree_load
         deptree_load.load_dep_tree_in_sentences(sentences)
 
     return sentences
@@ -144,11 +144,11 @@ def load_sentences_in_reviews(reviews, load_words=False, load_deptrees=False):
     conn.close()
 
     if load_words:
-        import loacore.database.load.word_load as word_load
+        import loacore.load.word_load as word_load
         word_load.load_words_in_sentences(loaded_sentences)
 
     if load_deptrees:
-        import loacore.database.load.deptree_load as deptree_load
+        import loacore.load.deptree_load as deptree_load
         deptree_load.load_dep_tree_in_sentences(loaded_sentences)
 
     return loaded_sentences

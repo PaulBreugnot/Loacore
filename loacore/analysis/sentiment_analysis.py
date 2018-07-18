@@ -56,7 +56,7 @@ def compute_simple_files_polarity(files):
     return file_score_dict
 
 
-def compute_extreme_files_polarity(files, pessimistic=False):
+def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang="es", swn_lang="spa"):
     """
 
     Performs *extreme* file polarity computation : only the most pessimistic or optimistic sense
@@ -74,6 +74,11 @@ def compute_extreme_files_polarity(files, pessimistic=False):
     :type files: :obj:`list` of :obj:`files`
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
     :type pessimistic: boolean
+    :param lang:
+        Specify language used by Freeling. Default : 'es'.\n
+        Possible values : 'as', 'ca', 'cs', 'cy', 'de', 'en', 'es', 'fr', 'gl', 'hr', 'it', 'nb', 'pt', 'ru', 'sl')\n
+        See https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html for more details.
+    :type lang: String
     :return: IdFile/Scores dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
 
@@ -90,6 +95,9 @@ def compute_extreme_files_polarity(files, pessimistic=False):
         >>> plot_polarities.save_polarity_pie_charts(polarities)
 
     """
+
+    from loacore import set_lang
+    set_lang(lang)
 
     import ressources.pyfreeling as freeling
     from nltk.corpus import wordnet as wn
@@ -190,9 +198,9 @@ def compute_extreme_files_polarity(files, pessimistic=False):
                 if not w.get_lemma() == '':
                     # Possible synsets are computed using nltk and WordNet
                     if pessimistic:
-                        score = pessimistic_score(wn.synsets(w.get_lemma(), lang='spa'))
+                        score = pessimistic_score(wn.synsets(w.get_lemma(), lang=swn_lang))
                     else:
-                        score = optimistic_score(wn.synsets(w.get_lemma(), lang='spa'))
+                        score = optimistic_score(wn.synsets(w.get_lemma(), lang=swn_lang))
 
                     file_pos_score += score[0]
                     file_neg_score += score[1]
@@ -227,7 +235,7 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True):
     def check_adj_pattern(node, pos_score, neg_score):
         for child in node.children:
             if child.word.PoS_tag is not None:
-                if child.word.PoS_tag[0] == 'A':
+                if child.word.PoS_tag[:2] == 'JJ':
                     # An adjective is applied to parent_node
                     if resolve_adj_rule(node, child):
                         print(node.word.word, " : ", child.word.word)
@@ -262,4 +270,6 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True):
                 for word in sentence.words:
                     if word.synset is not None:
                         test_score += word.synset.pos_score
-                print(children_rec(dep_tree.root)[0], " : ", test_score)
+
+                if not children_rec(dep_tree.root)[0] == test_score:
+                    print(children_rec(dep_tree.root)[0], " : ", test_score)

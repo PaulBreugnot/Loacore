@@ -1,17 +1,19 @@
 import os
-import loacore.database.process.file_process as file_process
-import loacore.database.load.file_load as file_load
-import loacore.database.load.sentence_load as sentence_api
-import loacore.database.load.lemma_load as lemma_api
-import loacore.database.load.synset_load as synset_api
-import loacore.database.load.deptree_load as deptree_api
-import loacore.database.load.word_load as word_api
+import loacore.process.file_process as file_process
+import loacore.load.file_load as file_load
+import loacore.load.sentence_load as sentence_api
+import loacore.load.lemma_load as lemma_api
+import loacore.load.synset_load as synset_api
+import loacore.load.deptree_load as deptree_api
+import loacore.load.word_load as word_api
 
 
 def add_files_to_database():
     file_paths = []
-    for dirpath, dirnames, filenames in os.walk(os.path.join('..', '..', 'data', 'raw')):
+    from loacore import DATA_PATH
+    for dirpath, dirnames, filenames in os.walk(os.path.join(DATA_PATH, 'raw', 'TempAlta')):
         for name in filenames:
+            print(name)
             file_paths.append(os.path.join(dirpath, name))
 
     file_process.add_files(file_paths)
@@ -141,12 +143,13 @@ def test_general_pattern():
             print(node.word.word, " : ", node.word.PoS_tag, " : ", node.label, end=", ")
         print(pattern[-1].word.word, " : ", pattern[-1].word.PoS_tag, " : ", pattern[-1].label, " )")
 
-#file_load.clean_db()
-#add_files_to_database()
+
+file_load.clean_db()
+add_files_to_database()
 #test_lemmas()
 #test_synsets()
 #test_load_db()
-test_dep_tree()
+#test_dep_tree()
 #test_analysis()
 #test_verb_pattern()
 #test_label_pattern()

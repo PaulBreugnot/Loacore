@@ -1,6 +1,7 @@
 import os
 import re
 import sqlite3 as sql
+from loacore import DB_PATH
 from loacore.classes.classes import Review
 
 
@@ -20,7 +21,8 @@ def add_reviews_from_files(files, encoding):
     :rtype: :obj:`list` of :class:`Review`
 
     """
-    conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
+
+    conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     added_reviews = []

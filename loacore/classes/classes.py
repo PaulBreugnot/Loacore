@@ -22,8 +22,7 @@ class File:
             Source file encoding. Default is set to *windows-1252*, the encoding obtained from .txt conversion in Excel.
         :return: file object
         """
-
-        return open(self.file_path, encoding)
+        return open(self.file_path, encoding=encoding)
 
 
 class Review:

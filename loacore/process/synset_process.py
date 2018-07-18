@@ -1,5 +1,6 @@
 import os
 import sqlite3 as sql
+from loacore import DB_PATH
 import ressources.pyfreeling as freeling
 from nltk.corpus import wordnet as wn
 from loacore.classes.classes import Synset
@@ -40,7 +41,10 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
             if len(rank) > 0:
-                word.synset = Synset(None, word.id_word, rank[0][0], wn.of2ss(rank[0][0]).name(), None, None, None)
+                if not rank[0][0][0] == '8':
+                    # ignore synsets offsets 8.......-.
+                    # they are odd synsets that WordNet can't find...
+                    word.synset = Synset(None, word.id_word, rank[0][0], wn.of2ss(rank[0][0]).name(), None, None, None)
                 if print_synsets:
                     print("Word : " + word.word)
                     print("Synset code : " + rank[0][0])
@@ -48,7 +52,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
     # Add synsets to database
 
-    conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
+    conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     for sentence in sentences:
@@ -58,7 +62,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
             if synset is not None:
                 # Add synset
                 c.execute("INSERT INTO Synset (ID_Word, Synset_Code, Synset_Name) "
-                          "VALUES (" + str(word.id_word) + ", '" + synset.synset_code + "', '" + synset.synset_name + "')")
+                          "VALUES (?, ?, ?)", (word.id_word, synset.synset_code, synset.synset_name))
 
                 # Get back id of last inserted review
                 c.execute("SELECT last_insert_rowid()")
@@ -82,7 +86,8 @@ def add_polarity_to_synsets():
 
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
-    conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
+
+    conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     synsets = synset_load.load_synsets()

@@ -1,6 +1,7 @@
 import os
 import sqlite3 as sql
 import ressources.pyfreeling as freeling
+from loacore import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
 
@@ -22,7 +23,6 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
     :param print_result: Print PoS_tags and labels associated to each :class:`Word`
     :type print_result: boolean
     """
-
     print("Loading Freeling Modules...")
     morfo, tagger, sen, wsd, parser = init_freeling()
 
@@ -42,7 +42,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
     # parse sentences
     freeling_sentences = parser.analyze(freeling_sentences)
 
-    conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
+    conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     progress = 0
@@ -59,7 +59,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         dt = freeling_sentences[s].get_dep_tree()
         dep_tree = DepTree(None, None, sentence.id_sentence)
 
-        c.execute("INSERT INTO Dep_Tree (ID_Sentence) VALUES (" + str(dep_tree.id_sentence) + ")")
+        c.execute("INSERT INTO Dep_Tree (ID_Sentence) VALUES (?)", [dep_tree.id_sentence])
 
         # Get back id_dep_tree
         c.execute("SELECT last_insert_rowid()")
@@ -68,6 +68,11 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
         # Database process
         root = None
+        if not len(sentence.words) == len(freeling_sentences[s]):
+            print("/!\\ Warning, sentence offset error /!\\")
+            sentence.print(sentence)
+            print([w.get_form() for w in freeling_sentences[s]])
+
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
@@ -88,11 +93,11 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
             # Add DepTreeNode to database
             c.execute("INSERT INTO Dep_Tree_Node (ID_Dep_Tree, ID_Word, Label, root) "
-                      "VALUES ("
-                      "" + str(dep_tree_node.id_dep_tree) + ", "
-                      "" + str(dep_tree_node.id_word) + ", "
-                      "'" + dep_tree_node.label + "', "
-                      "" + str(dep_tree_node.root) + ")")
+                      "VALUES (?, ?, ?, ?)",
+                      (dep_tree_node.id_dep_tree,
+                       dep_tree_node.id_word,
+                       dep_tree_node.label,
+                       dep_tree_node.root))
 
             # Get back id_dep_tree_node
             c.execute("SELECT last_insert_rowid()")
@@ -126,14 +131,13 @@ def rec_children(c, node):
     for ch in range(0, node.num_children()):
         child = node.nth_child(ch)
         c.execute("INSERT INTO Dep_Tree_Node_Children (ID_Parent_Node, ID_Child_Node) "
-                  "VALUES (" + str(node.get_node_id()) + ", "
-                  + str(child.get_node_id()) + ")")
+                  "VALUES (?, ?)", (int(node.get_node_id()), int(child.get_node_id())))
         rec_children(c, child)
 
 
 # ********************************************* Freeling Options****************************************************** #
 
-def my_maco_options(lang,lpath) :
+def my_maco_options(lang, lpath):
 
     # create options holder
     opt = freeling.maco_options(lang)
@@ -155,6 +159,7 @@ def init_freeling():
     lang = loacore.lang
     # path to language data
     lpath = loacore.LANG_PATH
+    print(lpath)
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

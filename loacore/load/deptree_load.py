@@ -112,12 +112,12 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
 
     dep_trees = []
     for sentence in sentences:
-
         c.execute("SELECT ID_Dep_Tree, ID_Dep_Tree_Node, ID_Sentence FROM Dep_Tree "
                   "WHERE ID_Sentence = " + str(sentence.id_sentence))
 
         result = c.fetchone()
         if result is not None:
+
             dep_tree = DepTree(result[0], result[1], result[2])
 
             # Select root
@@ -126,6 +126,7 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
                       "AND root = 1")
 
             result = c.fetchone()
+
             if result is not None:
                 # Set root
                 dep_tree.root = DepTreeNode(result[0], result[1], result[2], result[3], 1)

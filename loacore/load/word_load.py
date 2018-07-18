@@ -136,7 +136,6 @@ def load_words_in_dep_trees(dep_trees, load_lemmas=True, load_synsets=True):
 
     words = []
     for dep_tree in dep_trees:
-
         rec_children(c, dep_tree.root, words)
 
     if load_lemmas:

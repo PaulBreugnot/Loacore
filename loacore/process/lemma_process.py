@@ -1,5 +1,6 @@
 import os
 import sqlite3 as sql
+from loacore import DB_PATH
 import ressources.pyfreeling as freeling
 
 
@@ -34,13 +35,13 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
                 print(word.word + " : " + word.lemma)
 
     # Add lemmas to database
-    conn = sql.connect(os.path.join('..', '..', 'data', 'database', 'reviews.db'))
+    conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     for sentence in sentences:
         for word in sentence.words:
             # Add Lemma to Lemma Table
-            c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES ('" + word.lemma + "', " + str(word.id_word) + ")")
+            c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES (?, ?)", (word.lemma, word.id_word))
 
             # Get back id of last inserted lemma
             c.execute("SELECT last_insert_rowid()")
