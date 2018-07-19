@@ -35,15 +35,18 @@ class Review:
     :vartype file_index: int
     :ivar review: Review represented as a string
     :vartype review: string
+    :ivar polarity: review polarity: 0 or 1
+    :vartype polarity: int
     :ivar sentences: Review Sentences
     :vartype sentences: :obj:`list` of :class:`Sentence`
     """
 
-    def __init__(self, id_review, id_file, file_index, review):
+    def __init__(self, id_review, id_file, file_index, review, polarity=None):
         self.id_review = id_review
         self.id_file = id_file
         self.file_index = file_index
         self.review = review
+        self.polarity = polarity
         self.sentences = []
 
 
@@ -64,6 +67,7 @@ class Sentence:
     :vartype dep_tree: :class:`DepTree`
     :ivar freeling_sentence: result of :meth:`compute_freeling_sentence()` when called
     :vartype freeling_sentence: :class:`pyfreeling.sentence`
+
     """
 
     def __init__(self, id_sentence, id_review, review_index, id_dep_tree):
