@@ -97,7 +97,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang="es",
     """
 
     from loacore import set_lang
-    set_lang(lang)
+    set_lang(freeling_lang)
 
     import ressources.pyfreeling as freeling
     from nltk.corpus import wordnet as wn
@@ -214,11 +214,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang="es",
     return file_score_dict
 
 
-def compute_pattern_files_polarity(files, check_adj_pattern=True):
-
-    def verb_pattern_rec(node, score):
-        # node is a verb
-        return score
+def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_pattern=True):
 
     def resolve_adj_rule(parent_node, child):
         # child is the adj applied to parent_node
@@ -234,17 +230,39 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True):
 
     def check_adj_pattern(node, pos_score, neg_score):
         for child in node.children:
-            if child.word.PoS_tag is not None:
-                if child.word.PoS_tag[:2] == 'JJ':
+            if child.word.PoS_tag is not None and child.word.PoS_tag[:2] == 'JJ':
                     # An adjective is applied to parent_node
                     if resolve_adj_rule(node, child):
-                        print(node.word.word, " : ", child.word.word)
+                        print("ADJ : ", node.word.word, " : ", child.word.word)
                         # if at least one negative adjective is applied to a positive node, its polarity is inverted
                         return neg_score, pos_score
         # Nothing is changed
         return pos_score, neg_score
 
-    def children_rec(parent_node):
+    def resolve_cc_rule(parent_node, child_pos_score, child_neg_score):
+        # child is the adj applied to parent_node
+        # returns true if we need to invert parent_node polarity
+        if parent_node.word.synset is not None:
+            if (parent_node.word.synset.pos_score < parent_node.word.synset.neg_score
+                    and child_pos_score > child_neg_score):
+                # VerbN + ComplementP
+                # Complement needs to be considered negative
+                return True
+            return False
+        return False
+
+    def check_cc_pattern(node, child, child_pos_score, child_neg_score, CC_to_print):
+        if child.label == 'OBJ':
+                # An complement is applied to parent_node
+                if resolve_cc_rule(node, child_pos_score, child_neg_score):
+                    # print(node.word.word)
+                    CC_to_print.append(node)
+                    print("CC : ", node.word.word, " : ", child.word.word)
+                    return child_neg_score, child_pos_score
+        # Nothing is changed
+        return child_pos_score, child_neg_score
+
+    def children_rec(parent_node, CC_to_print):
         if parent_node.word.synset is not None:
             node_pos_score = parent_node.word.synset.pos_score
             node_neg_score = parent_node.word.synset.neg_score
@@ -253,10 +271,19 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True):
             node_neg_score = 0
 
         if check_adj_pattern:
-            node_pos_score, node_neg_score = check_adj_pattern(parent_node, node_pos_score, node_neg_score)
+            # Here, we potentially need to invert the Noun parent polarity
+            if parent_node.word.PoS_tag is not None and parent_node.word.PoS_tag[0] == 'N':
+                node_pos_score, node_neg_score = check_adj_pattern(parent_node, node_pos_score, node_neg_score)
+
+        # print(parent_node.word.word)
+        # print(" ", [n.word.word for n in parent_node.children])
 
         for child in parent_node.children:
-            child_score = children_rec(child)
+            child_score = children_rec(child, CC_to_print)
+            if check_cc_pattern:
+                # Here, we potentially need to invert the Complement child tree polarity
+                if parent_node.word.PoS_tag is not None and parent_node.word.PoS_tag[0] == 'V':
+                    child_score = check_cc_pattern(parent_node, child, child_score[0], child_score[1], CC_to_print)
             node_pos_score += child_score[0]
             node_neg_score += child_score[1]
 
@@ -271,5 +298,14 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True):
                     if word.synset is not None:
                         test_score += word.synset.pos_score
 
-                if not children_rec(dep_tree.root)[0] == test_score:
-                    print(children_rec(dep_tree.root)[0], " : ", test_score)
+                CC_to_print = []
+
+                sentence.print_sentence()
+                pos_score, neg_score = children_rec(dep_tree.root, CC_to_print)
+                for node in CC_to_print:
+                     print("ROOT NODE : ", node.word.word)
+                     dep_tree.print_dep_tree(root=node)
+
+                if not pos_score == test_score:
+                    print(pos_score, " : ", test_score)
+                    print('')
