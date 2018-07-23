@@ -114,6 +114,20 @@ def load_database(id_files=[], load_reviews=True, load_sentences=True, load_word
     return files
 
 
+def get_id_files_by_file_paths(file_paths_re):
+    import re
+
+    id_files = []
+    files = load_database(id_files=[], load_reviews=False, load_sentences=False, load_words=False, load_deptrees=False)
+    for file_path_re in file_paths_re:
+        for file in files:
+            regexp = "r'" + file_path_re + "'"
+            if re.fullmatch(regexp, file.file_path) is not None:
+                id_files.append(file.id_file)
+
+    return list(set(id_files))
+
+
 def remove_files(files):
     """
     Remove specified files from database. Implemented references will also engender the deletion of all files
@@ -136,10 +150,19 @@ def clean_db():
     Remove all files from database. Implemented references will also engender the deletion of all files
     dependencies in database : all the tables will be emptied.
     """
+    print("Cleaning all database...")
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
     c.execute("DELETE FROM File")
+    c.execute("DELETE FROM Review")
+    c.execute("DELETE FROM Sentence")
+    c.execute("DELETE FROM Word")
+    c.execute("DELETE FROM Synset")
+    c.execute("DELETE FROM Lemma")
+    c.execute("DELETE FROM Dep_Tree")
+    c.execute("DELETE FROM Dep_Tree_Node")
+    c.execute("DELETE FROM Dep_Tree_Node_Children")
     conn.commit()
     conn.close()
 
