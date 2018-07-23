@@ -33,12 +33,13 @@ def add_reviews_from_files(files, encoding):
         raw_text = file.load(encoding=encoding).read()
 
         # Normalization and review splitting
-        reviews = normalize(raw_text)
+        str_reviews = normalize(raw_text)
+        reviews = extract_polarity(str_reviews)
 
         # Add reviews
         file_index = 0
         for review in reviews:
-            sql_review = (file.id_file, file_index, review)
+            sql_review = (file.id_file, file_index, review.review)
 
             c.execute("INSERT INTO Review (ID_File, File_Index, Review) "
                       "VALUES (?, ?, ?)", sql_review)
@@ -47,8 +48,12 @@ def add_reviews_from_files(files, encoding):
             c.execute("SELECT last_insert_rowid()")
             id_review = c.fetchone()[0]
 
+            review.id_review = id_review
+            review.id_file = file.id_file
+            review.file_index = file_index
+
             # Keep trace of added reviews
-            added_reviews.append(Review(id_review, file.id_file, file_index, review))
+            added_reviews.append(review)
 
             file_index += 1
 
@@ -73,4 +78,16 @@ def normalize(text):
     """
     normalized_string = text.lower()
     reviews = re.findall(r'.+', normalized_string, re.MULTILINE)
+    return reviews
+
+
+def extract_polarity(str_reviews):
+    reviews = []
+    for review_str in str_reviews:
+        polarity = re.findall(r'.+\t(\d)', review_str)
+        if len(polarity) > 0:
+            sentence = re.findall(r'(.+)\t\d', review_str)
+            reviews.append(Review(None, None, None, sentence[0], polarity=int(polarity[0])))
+        else:
+            reviews.append(Review(None, None, None, review_str, None))
     return reviews
