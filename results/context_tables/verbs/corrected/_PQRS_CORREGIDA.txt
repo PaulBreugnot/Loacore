@@ -1,0 +1,154 @@
++--------------+-----------------------------------------------------+--------------------+------------+------------+------------+
+|     Verb     |                       context                       |       synset       | Polarity + | Polarity - | Polarity = |
++--------------+-----------------------------------------------------+--------------------+------------+------------+------------+
+|   parecer    |                 parece el colmo ...                 |     look.v.02      |    0.0     |    0.0     |    1.0     |
+|   promover   |         ... sitio que promueven a diario ...        |    promote.v.01    |   0.125    |    0.0     |   0.875    |
+|   atender    |       ... del restaurante atiendan de una ...       |     serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   atender    |           ... señora que atiende en la ...          |     serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   atender    |         ... la entrada atiende de manera ...        |     serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    venir     |         ... el turista viniera con pases ...        |    arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |        ... o limosna deberían de orientar ...       |      owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   orientar   |    ... deberían de orientar capacitaciones en ...   |    orient.v.02     |    0.0     |    0.0     |    1.0     |
+|  contratar   |       ... cliente y contratar personal idóneo       |     hire.v.01      |    0.0     |    0.0     |    1.0     |
+|  argumentar  |  ... trabajadora julieth argumentando que ella ...  |     argue.v.01     |    0.0     |    0.0     |    1.0     |
+|     era      |         ... que ella era la supervisora ...         |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |            ... que le puedo poner la ...            |   displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    poner     |           ... le puedo poner la queja ...           |      put.v.01      |    0.0     |    0.0     |    1.0     |
+|    querer    |          ... a quien quiera que señora ...          |     want.v.02      |   0.125    |   0.125    |    0.75    |
+|  solicitar   |                 solicitó ser más ...                |  necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|     ser      |             solicitó ser más amables ...            |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|   cumplir    |          ... cliente , cumplir con las ...          | carry_through.v.01 |    0.0     |    0.0     |    1.0     |
+|  establecer  |      ... alimentos y establecer un horario ...      |   establish.v.01   |    0.0     |    0.0     |    1.0     |
+|   sugerir    |                sugiere cuando se ...                |     hint.v.01      |    0.5     |    0.0     |    0.5     |
+|      ir      |             ... cuando se va a subir ...            |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|    subir     |        ... va a subir vehículos informar ...        |   increase.v.02    |    0.0     |    0.0     |    1.0     |
+|   informar   |       ... subir vehículos informar que hay ...      |    inform.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |         ... informar que hay que revisar ...        |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|   revisar    |          ... hay que revisar todas las ...          |     check.v.01     |    0.5     |    0.0     |    0.5     |
+|   recibir    |            ... que nos recibió en la ...            |    derive.v.02     |    0.0     |    0.0     |    1.0     |
+|    dejar     |           ... arriba no dejó bajar las ...          |      put.v.01      |    0.0     |    0.0     |    1.0     |
+|    bajar     |          ... no dejó bajar las maletas ...          |    descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    poder     |            ... que tampoco podía revisar            |   displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   revisar    |              ... tampoco podía revisar              |     check.v.01     |    0.5     |    0.0     |    0.5     |
+|   agradar    |               agradó muchísimo el ...               |    please.v.01     |   0.625    |    0.0     |   0.375    |
+|  presentar   |            ... que se presentó es la ...            |    express.v.01    |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... se presentó es la siguiente ...         |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    estar     |      ... la siguiente estábamos sentados en ...     |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    sentar    |     ... siguiente estábamos sentados en las ...     |      sit.v.01      |    0.0     |    0.0     |    1.0     |
+|    pedir     |        ... se nos pidió retirarnos porque ...       |  necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|  necesitar   |   ... retirarnos porque necesitaban el espacio ...  |  necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+| considerando |      ... desayunos , considerando que debe ...      |   think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|     debe     |     ... considerando que debe existir mejor ...     |      owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   existir    |        ... que debe existir mejor espacio ...       |     exist.v.01     |    0.0     |    0.0     |    1.0     |
+|    venir     |      ... mejor atención vinimos en comitiva ...     |    arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    querer    |                  manifestar una ...                 |     want.v.02      |   0.125    |   0.125    |    0.75    |
+|  manifestar  |           manifestar una felicitación ...           |    express.v.01    |    0.0     |    0.0     |    1.0     |
+|   recibir    |       ... y servicio recibido por daniela ...       |    derive.v.02     |    0.0     |    0.0     |    1.0     |
+|   atender    |         ... marulanda nos atendió de una ...        |     serve.v.10     |    0.0     |    0.0     |    1.0     |
+| comprometer  |       ... muy especial comprometida con la ...      |     give.v.18      |   0.125    |    0.0     |   0.875    |
+|    pensar    |        ... empresa , pensando siempre en ...        |     think.v.01     |    0.0     |    0.0     |    1.0     |
+|     era      |           ... la comida era acorde en ...           |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |      ... de vista es extremadamente costosa ...     |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|   prestar    |         ... la atención prestada 5 años ...         |     give.v.10      |    0.0     |    0.0     |    1.0     |
+|      ir      |       ... años atrás fue mejor organizada ...       |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|  organizar   |       ... fue mejor organizada teniendo en ...      |     form.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |     ... mejor organizada teniendo en cuenta ...     |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    contar    |       ... teniendo en cuenta que entonces ...       |     state.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... y ahora fuimos grupo de ...           |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|    querer    |         ... personas no quiere decir que ...        |     want.v.02      |   0.125    |   0.125    |    0.75    |
+|    decir     |            ... no quiere decir que la ...           |     talk.v.02      |    0.0     |    0.0     |    1.0     |
+|    haber     |          ... la atención haya sido mala ...         |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... atención haya sido mala el ...         |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |          ... el personal fue muy amable ...         |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |       ... amable pero fue anteriormente y ...       |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    seguir    |       ... sugerencia nos sigan bajando el ...       |     stay.v.01      |    0.0     |    0.0     |    1.0     |
+|    bajar     |        ... nos sigan bajando el estándar ...        |    descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... sus servicios tengan en cuenta ...       |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    contar    |        ... tengan en cuenta este detalle ...        |     state.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... la alimentación es un factor ...        |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    visita    |          ... que les visita teniendo en ...         |     visit.v.03     |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... les visita teniendo en cuenta ...        |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    dejar     |        ... ustedes no dejan entrar ningún ...       |      put.v.01      |    0.0     |    0.0     |    1.0     |
+|    entrar    |         ... no dejan entrar ningún tipo ...         |    record.v.01     |    0.0     |    0.0     |    1.0     |
+|     dar      |                     ... se le dé                    |     give.v.10      |    0.0     |    0.0     |    1.0     |
+|   realizar   |          las 2:50 realizamos la compra ...          |     make.v.03      |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... la cual tenía la duración ...          |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   estimar    |          ... la duración estimada de 20 ...         |  appreciate.v.01   |   0.125    |   0.125    |    0.75    |
+|    haber     |       ... después no habían hecho entrega ...       |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|    hacer     |          ... no habían hecho entrega lo ...         |     make.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... lo cual es una falta ...            |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|   comprar    |        ... , luego compramos 6 empanadas ...        |      buy.v.01      |    0.0     |    0.0     |    1.0     |
+|   empanada   |       ... compramos 6 empanadas las cuales ...      |     bread.v.01     |    0.0     |    0.0     |    1.0     |
+|    estar     |        ... las cuales estaban vinagres y ...        |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    hacer     |            ... y al hacer el reclamo ...            |     make.v.03      |    0.0     |    0.0     |    1.0     |
+|    decir     |           ... reclamo nos dicen que es ...          |     talk.v.02      |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... dicen que es normal que ...           |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|     oler     |           ... normal que huelan así ¿ ...           |     smell.v.02     |    0.0     |    0.0     |    1.0     |
+|  intoxicar   |         ... si nos intoxicamos quien nos ...        |     elate.v.01     |    0.5     |    0.0     |    0.5     |
+|      ir      |           ... quien nos va a responder ...          |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|  responder   |           ... va a responder ? notamos ...          |     react.v.01     |    0.0     |    0.0     |    1.0     |
+|    notar     |          ... responder ? notamos que no ...         |     note.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... que no fuimos los únicos ...          |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|    quejar    |            ... que se quejaron de las ...           |     groan.v.01     |    0.0     |   0.875    |   0.125    |
+|    llamar    |           ... , luego llamamos a otros ...          |     raise.v.07     |   0.125    |    0.0     |   0.875    |
+|    contar    |          ... y le contamos la situación ...         |     state.v.01     |    0.0     |    0.0     |    1.0     |
+|     dar      |           ... cual nos dio razón luego ...          |     give.v.10      |    0.0     |    0.0     |    1.0     |
+|   realizar   |        ... tarde nos realizaron el camino ...       |     make.v.03      |    0.0     |    0.0     |    1.0     |
+|    salir     |           las empanadas salió algo muy ...          |      die.v.01      |    0.0     |    0.0     |    1.0     |
+|    llamar    |            ... fredy lo llamé el día ...            |     raise.v.07     |   0.125    |    0.0     |   0.875    |
+|     ver      |          ... después de ver los videos ...          |   perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|   informar   |             ... , me informó que ya ...             |    inform.v.01     |    0.0     |    0.0     |    1.0     |
+|  encontrar   |           ... que ya encontró el reloj ...          |    detect.v.01     |    0.0     |    0.0     |    1.0     |
+|      ha      |         ... comida se ha encontrado una ...         |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|  encontrar   |        ... se ha encontrado una cucaracha ...       |    detect.v.01     |    0.0     |    0.0     |    1.0     |
+|  presentar   |         ... no se presentaron al momento ...        |    express.v.01    |    0.0     |    0.0     |    1.0     |
+|      ha      |           ... , se ha dejado evidencia ...          |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|    dejar     |          ... se ha dejado evidencia con ...         |      put.v.01      |    0.0     |    0.0     |    1.0     |
+|   ocurrir    |                  ... de lo ocurrido                 |    happen.v.01     |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... la ensalada tenía sabor a ...          |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    tener     |            ... el pollo tenía sabor a ...           |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   cambiar    |      ... mi sugerencia cambiar proveedor de ...     |    change.v.01     |    0.0     |    0.0     |    1.0     |
+|   cambiar    |       ... de desinfección cambiar chef el ...       |    change.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |                  cobrar tarifa ...                  |      owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    cobrar    |             cobrar tarifa diferente ...             |     gain.v.08      |    0.0     |    0.0     |    1.0     |
+|   utilizar   |      ... que no utilizan las instalaciones ...      |      use.v.01      |    0.0     |    0.0     |    1.0     |
+|    entrar    |           ... derecho a entrar ya que ...           |    record.v.01     |    0.0     |    0.0     |    1.0     |
+|   utilizar   |         ... ya que utilizarían los baños ...        |      use.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... baños si es necesarios , ...          |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |        ... necesarios , tengan en cuenta ...        |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    contar    |           ... tengan en cuenta que esa ...          |     state.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |        ... persona también va a consumir ...        |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|   consumir   |           ... va a consumir bebidas y ...           |      eat.v.02      |    0.0     |    0.0     |    1.0     |
+|    poder     |    ... y alimentos pueden utilizar diferentes ...   |   displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   utilizar   | ... alimentos pueden utilizar diferentes brazaletes |      use.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |        ... tintos se hacían los conchudos ...       |     make.v.03      |    0.0     |    0.0     |    1.0     |
+|   prestar    |       ... portería que presta el servicio ...       |     give.v.10      |    0.0     |    0.0     |    1.0     |
+| transportar  |      ... carro que transporta personas con ...      |   transport.v.02   |    0.0     |    0.0     |    1.0     |
+|   dirigir    |          ... diferentes se dirigió a mí ...         |    impart.v.03     |    0.0     |    0.0     |    1.0     |
+|     debe     |      ... comportamiento que debe tener como ...     |      owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |       ... que debe tener como funcionaria ...       |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... y restaurante es déspota , ...         |      be.v.01       |    0.25    |   0.125    |   0.625    |
+| desinteresar |        ... déspota , desinteresada y poco ...       |  altruistic.a.01   |   0.875    |    0.0     |   0.125    |
+|     dar      |       ... amable no dan buena orientación ...       |     give.v.10      |    0.0     |    0.0     |    1.0     |
+|  contestar   |   ... orientación ni contestan con amabilidad ...   |     react.v.01     |    0.0     |    0.0     |    1.0     |
+|   plantear   |        ... las preguntas planteadas , muy ...       |    present.v.05    |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... los empleados tengan una mejor ...       |  give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|              |       ... momento de ausentarse del punto ...       |     miss.v.08      |   0.125    |    0.25    |   0.625    |
+|    tomar     |          ... turnen para tomar su break ...         |    choose.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |      ... que siempre haya datáfono cargado ...      |      be.v.03       |    0.0     |    0.0     |    1.0     |
+|    cargar    |       ... haya datáfono cargado para todos ...      |   transport.v.02   |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... las instalaciones son excelentes        |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|    llamar    |                  llamó en marzo ...                 |     raise.v.07     |   0.125    |    0.0     |   0.875    |
+|    estar     |           ... de viejitos estuvo 7pm y ...          |      be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |        ... viejitos uno va relajarse que ...        |    travel.v.01     |    0.0     |    0.0     |    1.0     |
+|              |          ... uno va relajarse que mucho ...         |    loosen.v.07     |    0.0     |    0.0     |    1.0     |
+|    queja     |             ... gente se queja ya le ...            |     groan.v.01     |    0.0     |   0.875    |   0.125    |
+|     dar      |             ... ya le da una pereza ...             |     give.v.10      |    0.0     |    0.0     |    1.0     |
+|    volver    |         ... una pereza volver en volumen ...        |     make.v.02      |    0.0     |    0.0     |    1.0     |
+|   esperar    |                      se nos ...                     |      ask.v.04      |   0.125    |    0.0     |   0.875    |
+|  reintegrar  |            se nos reintegre el dinero ...           |    refund.v.01     |    0.0     |    0.0     |    1.0     |
+|    hablar    |        ... cliente porque hablan de unos ...        |     speak.v.03     |    0.0     |    0.0     |    1.0     |
+|   brindar    |             ... que no brindan de la ...            |     offer.v.02     |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |       ... que se ofrece gracias esperamos ...       |     offer.v.02     |    0.0     |    0.0     |    1.0     |
+|   esperar    |      ... ofrece gracias esperamos su respuesta      |      ask.v.04      |   0.125    |    0.0     |   0.875    |
++--------------+-----------------------------------------------------+--------------------+------------+------------+------------+

@@ -9,14 +9,37 @@ import loacore.load.word_load as word_api
 
 
 def add_files_to_database():
-    file_paths = []
     from loacore import DATA_PATH
-    for dirpath, dirnames, filenames in os.walk(os.path.join(DATA_PATH, 'raw', 'TempAlta')):
+    file_paths = []
+
+    # for dirpath, dirnames, filenames in os.walk(os.path.join(DATA_PATH, 'raw', 'TempAlta')):
+    #     for name in filenames:
+    #         print(name)
+    #         file_paths.append(os.path.join(dirpath, name))
+    #
+    # for dirpath, dirnames, filenames in os.walk(os.path.join(DATA_PATH, 'raw', 'TempBaja')):
+    #     for name in filenames:
+    #         print(name)
+    #         file_paths.append(os.path.join(dirpath, name))
+    #
+    # file_process.add_files(file_paths, lang='es')
+    # file_paths.clear()
+
+    for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(DATA_PATH, 'raw', 'uci'))):
         for name in filenames:
             print(name)
             file_paths.append(os.path.join(dirpath, name))
 
-    file_process.add_files(file_paths)
+    file_process.add_files(file_paths, encoding='utf8', lang='en')
+    file_paths.clear()
+
+    for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(DATA_PATH, 'raw', 'corrected'))):
+        for name in filenames:
+            print(name)
+            file_paths.append(os.path.join(dirpath, name))
+
+    file_process.add_files(file_paths, encoding='UTF-16LE', lang='es')
+    file_paths.clear()
 
 
 def test_load_db():

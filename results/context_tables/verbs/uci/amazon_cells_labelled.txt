@@ -1,0 +1,1039 @@
++-------------+-------------------------------------------------------+------------------------+------------+------------+------------+
+|     Verb    |                        context                        |         synset         | Polarity + | Polarity - | Polarity = |
++-------------+-------------------------------------------------------+------------------------+------------+------------+------------+
+|      be     |                  there is no way ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     plug    |                ... me to plug it in ...               |       plug.v.04        |    0.0     |    0.0     |    1.0     |
+|      go     |                ... unless i go by a ...               |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     tie     |                     to charger ...                    |      connect.v.01      |    0.0     |    0.0     |    1.0     |
+|     last    |      ... for conversations lasting more than ...      |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                     mic is great .                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                   have to jiggle ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    jiggle   |              have to jiggle the plug ...              |      jiggle.v.01       |    0.0     |    0.0     |    1.0     |
+|     get     |               ... plug to get it to ...               |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     line    |              ... it to line up right ...              |       trace.v.02       |    0.0     |    0.0     |    1.0     |
+|     get     |           ... right to get decent volume ...          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     have    |               you have several dozen ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   imagine   |             ... , then imagine the fun ...            |      imagine.v.01      |    0.0     |    0.5     |    0.5     |
+|     send    |             ... fun of sending each of ...            |        air.v.03        |    0.0     |    0.0     |    1.0     |
+|      be     |                 you are razr owner ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                ... you must have this !               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     say     |                     to say , i ...                    |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|    waste    |              ... , i wasted my money ...              |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|      be     |              ... sound quality is great .             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                 was very impressed ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |           was very impressed when going ...           |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|      go     |         ... impressed when going from the ...         |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    extend   |             ... to the extended battery .             |        run.v.03        |    0.0     |    0.0     |    1.0     |
+|      be     |             the two were seperated by ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    start    |             ... ft i started to notice ...            |     get_down.v.07      |    0.0     |    0.0     |    1.0     |
+|    notice   |       ... started to notice excessive static ...      |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|    garble   |         ... static and garbled sound from ...         |      falsify.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                 design is very odd ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |               ... clip " is not very ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  recommend  |                 recommend for any ...                 |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     have    |               ... one who has a blue ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    advise   |                 advise everyone do ...                |      propose.v.01      |    0.0     |    0.0     |    1.0     |
+|      do     |             advise everyone do not be ...             |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                 ... do not be fooled !                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     fool    |                  ... not be fooled !                  |      fritter.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |                      great ! ...                      |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    click    |                 clicks into place ...                 |       click.v.02       |    0.0     |    0.0     |    1.0     |
+|     make    |           ... way that makes you wonder ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    wonder   |           ... makes you wonder how long ...           |      wonder.v.02       |    0.0     |    0.0     |    1.0     |
+|     last    |               ... mechanism would last .              |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|      go     |                  went on motorola ...                 |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    follow   |      ... website and followed all directions ...      |      succeed.v.02      |    0.0     |    0.0     |    1.0     |
+|     get     |              ... could not get it to ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     pair    |                 ... it to pair again .                |       match.v.03       |    0.0     |    0.0     |    1.0     |
+|     buy     |                   bought this to ...                  |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     use     |              ... this to use with my ...              |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    kindle   |            ... with my kindle fire and ...            |      arouse.v.01       |    0.25    |    0.25    |    0.5     |
+|     love    |             ... and absolutely loved it !             |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |              commercials are the most ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   mislead   |               ... the most misleading .               |     misinform.v.01     |    0.0     |    0.25    |    0.75    |
+|     have    |                    have yet to ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     run     |              ... yet to run this new ...              |       tend.v.01        |    0.5     |   0.125    |   0.375    |
+|    charge   |              ... days without charging .              |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|     buy     |                   bought it for ...                   |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |             ... and she had a problem ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     own     |                  owned this phone ...                 |        own.v.01        |    0.0     |    0.0     |    1.0     |
+|     say     |             ... and can say that it's ...             |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|     have    |                  ... phone i've had .                 |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    think    |               didn't think that the ...               |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|   provide   |     ... the instructions provided were helpful ...    |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |     ... instructions provided were helpful to ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hear    |                couldnt hear me talk ...               |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|     talk    |               ... hear me talk and i ...              |       talk.v.02        |    0.0     |    0.0     |    1.0     |
+|     have    |               ... and i had to pull ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     pull    |              ... had to pull out the ...              |      attract.v.01      |    0.0     |    0.0     |    1.0     |
+|     hold    |                     hold charge .                     |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|      be     |                    is a simple ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |               ... phone to use , but ...              |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |           ... the breakage is unacceptible .          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                product is ideal for ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |         ... whose ears are very sensitive ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                   is unusable in ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     move    |               ... in a moving car at ...              |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     have    |                   have two more ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    leave    |            ... more years left in this ...            |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|     hate    |             ... and i hate this phone ...             |       hate.v.01        |    0.0     |    0.75    |    0.25    |
+|      be     |           ... ac charger are included to ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   include   |          ... charger are included to make ...         |      include.v.01      |    0.0     |    0.0     |    1.0     |
+|     make    |           ... included to make sure you ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     run     |              ... you never run out of ...             |       tend.v.01        |    0.5     |   0.125    |   0.375    |
+|  recommend  |                ... . highy recommended                |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     need    |                   need at least ...                   |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|     get     |              ... mins to get to your ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |              ... battery life is short .              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                    has kept up ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     keep    |                  has kept up very ...                 |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |                 case is great and ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |           ... great and works fine with ...           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |                    has a great ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |             ... the pics are nice and ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                 was not impressed ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |             was not impressed by this ...             |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|    price    |                 headset priced right .                |       price.v.01       |    0.0     |    0.0     |    1.0     |
+|     hear    |               only hear garbage for ...               |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |                    has all the ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     want    |                  ... features i want                  |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|      be     |            ... right mind is gonna buy ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     buy     |           ... is gonna buy this battery ...           |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|    argue    |                arguing with verizon ...               |       argue.v.02       |    0.0     |    0.0     |    1.0     |
+|    regard   |       ... with verizon regarding the dropped ...      |        see.v.05        |   0.125    |    0.0     |   0.875    |
+|     drop    |         ... regarding the dropped calls we ...        |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|    return   |          ... calls we returned the phones ...         |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|     seem    |                case seems well made ...               |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     make    |                 ... seems well made .                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|  disappoint |                    with battery ...                   |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     turn    |            ... and doesn't turn on like ...           |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|      do     |            protection and does not make ...           |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     make    |            ... does not make phone too ...            |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     turn    |         ... keyboard actually turns a pda ...         |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|      be     |               phone is pretty sturdy ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... i've never had any large ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     love    |                  love this thing ...                  |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |                about it is fine and ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  disappoint |                     disappointed .                    |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     drop    |              even dropped this phone ...              |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... and it was submerged for ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   submerge  |            ... it was submerged for 15 ...            |     submerge.v.02      |    0.0     |    0.0     |    1.0     |
+|     work    |               ... it still works great !              |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |                   have been very ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                have been very happy ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |              ... 510 and have had no ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |           ... and have had no complaints ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    regard   |           ... any one regarding my sound ...          |        see.v.05        |   0.125    |    0.0     |   0.875    |
+|      be     |                 ... and off are bad .                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    forget   |            you can forget microsoft 's ...            |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|  recommend  |          really recommend this faceplates ...         |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     look    |            ... since it looks very nice ...           |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |              headphones were a great ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     find    |               ... a great find - and ...              |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|    think    |              ... and i think they are ...             |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|      be     |           ... think they are perhaps the ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     make    |           ... purchase i've made in the ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     buy     |                    a different ...                    |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |                    have to hold ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     hold    |               have to hold the phone ...              |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|     hear    |           ... party to hear you clearly ...           |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |             ... mp3 player is that the ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     let     |            ... cover that let you pause ...           |        let.v.01        |    0.0     |    0.0     |    1.0     |
+|     lock    |           ... skip songs lock out after ...           |      engage.v.10       |    0.0     |    0.0     |    1.0     |
+|   activate  |             ... after i activated it , ...            |       trip.v.04        |    0.0     |    0.0     |    1.0     |
+|     die     |                 ... it suddenly died .                |        die.v.01        |    0.0     |    0.0     |    1.0     |
+|     feel    |               feels more comfortable ...              |       feel.v.01        |   0.125    |    0.25    |   0.625    |
+|     wear    |           ... because i wear glasses and ...          |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|     get     |              ... and that gets in the ...             |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                 device is great in ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |          ... series which is fairly quiet ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... , i have trouble hearing ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     hear    |         ... have trouble hearing what the ...         |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... other person is saying .             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     say     |                 ... person is saying .                |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|     dock    |                docking station for ...                |       dock.v.05        |    0.0     |    0.0     |    1.0     |
+|      be     |                   is a beautiful ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                    this product ...                   |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      do     |                      not buy ...                      |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     buy     |             not buy for d807...wrongly ...            |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|  advertise  |     ... for d807...wrongly advertised for d807 ...    |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|      be     |                     is a great ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                  love this phone ...                  |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |               ... , it is very handy ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |              ... handy and has a lot ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   purchase  |                 purchased this and ...                |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... days it was no longer ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     wear    |                  wear it everyday ...                 |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|     hold    |              ... and it holds up very ...             |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|   package   |                 packaged , arrived ...                |        box.v.01        |    0.0     |    0.0     |    1.0     |
+|    arrive   |             packaged , arrived on time ...            |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|     work    |            ... , and works as intended ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    intend   |                ... works as intended .                |       mean.v.03        |    0.0     |    0.0     |    1.0     |
+|     run     |             battery runs down quickly ...             |       tend.v.01        |    0.5     |   0.125    |   0.375    |
+|     work    |                item worked great , ...                |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    break    |              ... but it broke after 6 ...             |      unwrap.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                headsets are easy to ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |            ... easy to use and everyone ...           |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     love    |             ... and everyone loves them .             |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     work    |                  phone works great .                  |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |               ... the headsets is poor .              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                 was excellent and ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |        ... excellent and works better than ...        |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |             ... and boy was it cheaper ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     load    |                  phone loads super !                  |       load.v.01        |    0.0     |    0.0     |    1.0     |
+|      do     |               ... this one does , i ...               |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|    expect   |                ... , i expect it to ...               |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|     work    |             ... it to work far better ...             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      do     |                 ... this thing does .                 |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     make    |                    very sturdy ...                    |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |                      great ! ...                      |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     bud     |                 ear buds only play ...                |        bud.v.01        |    0.0     |    0.0     |    1.0     |
+|     play    |            ... buds only play music in ...            |        act.v.03        |    0.0     |    0.0     |    1.0     |
+|    order    |                  order from them ...                  |       rate.v.01        |   0.125    |    0.25    |   0.625    |
+|     plan    |                  you plan to use ...                  |       plan.v.02        |    0.0     |    0.0     |    1.0     |
+|     use     |              ... plan to use this in ...              |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    forget   |             ... a car forget about it ...             |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|     find    |                 found this product ...                |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... product to be waaay too ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     find    |                 i've found so far ...                 |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|     try     |            ... .... i've tried 2 other ...            |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |             ... this one has the best ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     ease    |             ... well as ease of using ...             |       still.v.03       |    0.0     |    0.0     |    1.0     |
+|     use     |                  ... ease of using .                  |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|  disappoint |             very disappointed with my ...             |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|  integrate  |                  seamlessly with ...                  |     integrate.v.01     |    0.0     |    0.0     |    1.0     |
+|    beware   |                    beware , you ...                   |      beware.v.01       |    0.5     |    0.0     |    0.5     |
+|    flush    |          ... you could flush money right ...          |       blush.v.01       |    0.0     |   0.125    |   0.875    |
+|      be     |                price was very good ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |               ... all it was a good ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   receive   |               received my supposedly ...              |    experience.v.03     |    0.0     |    0.0     |    1.0     |
+|      be     |           ... apparently there was not a ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |             ... , also has cool styles ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     use     |           ... i'm not using it correctly ...          |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    think    |              ... i don't think is the ...             |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|      be     |            ... don't think is the case ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                    love my 350 ...                    |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |          ... bluetooth headset is great , ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... the reception is very good ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... ear piece is a comfortable ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     rate    |             ... , although rated at an ...            |       rate.v.01        |   0.125    |    0.25    |   0.625    |
+|    render   |        ... megapixels , renders images that ...       |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|     fall    |          ... images that fall well below ...          |     decrease.v.01      |    0.0     |    0.0     |    1.0     |
+|      do     |              ... and it does not work ...             |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |                  ... does not work .                  |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... both end is excellent , ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |               ... , i use headset to ...              |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     call    |            ... headset to call my wife ...            |      predict.v.01      |    0.0     |    0.0     |    1.0     |
+|     ask     |              ... wife and ask my wife ...             |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|     use     |             ... wife to use headset to ...            |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     call    |              ... headset to call me ! ...             |      predict.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                 phone is slim and ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... the display is beautiful .            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    think    |             ... but i think thats its ...             |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|    embed    |       ... its battery embedded sleek stylish ...      |      implant.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                 keyboard is a nice ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     get     |                   got this phone ...                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                is very comfortable ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                     has been a ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                 has been a winner ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |          setup couldn't have been simpler ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |            ... couldn't have been simpler .           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     try     |              tried several different ...              |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... jabra one is the first ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     find    |            ... one i've found that fits ...           |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|     fit     |             ... found that fits my ear ...            |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|     get     |               not get strong enough ...               |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    please   |                very pleased with my ...               |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|     get     |                      the job ...                      |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      do     |                     the job done .                    |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |              the service was very bad ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                    did not work ...                   |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |                 did not work in my ...                |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |               ... plug i am very up ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     set     |              ... very up set with the ...             |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |               only had my bluetooth ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |               bt headset was such a ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                    is so small ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   realize   |           ... don't even realize that it ...          |       gain.v.08        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... that it is there after ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     get     |            ... while of getting used to ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     use     |             ... of getting used to it ...             |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|  accompany  |              accompanied software is ...              |      company.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |      accompanied software is almost brilliant ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |                   works great & ...                   |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... great & was packaged nicely ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   package   |            ... & was packaged nicely to ...           |        box.v.01        |    0.0     |    0.0     |    1.0     |
+|    avoid    |           ... nicely to avoid any damage ...          |       debar.v.02       |    0.0     |    0.0     |    1.0     |
+|  recommend  |               i definitly recommend ! !               |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|      be     |                 -- be very careful ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     fail    |              ... earbud headsets failed .             |       fail.v.01        |    0.0     |   0.125    |   0.875    |
+|     work    |           headset works just peachy-keen ...          |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... house i was getting dropped ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     get     |         ... i was getting dropped coverage ...        |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     drop    |     ... was getting dropped coverage upstairs ...     |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |              recognition is tremendous !              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  experience |            ... , i experienced 5 drops ...            |       feel.v.01        |   0.125    |    0.25    |   0.625    |
+|      be     |                ... and it was in an ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |              ... area that had 5 bars ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                   was not happy ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  disappoint |                     disappointed .                    |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     take    |               phone takes forever to ...              |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|    charge   |            ... forever to charge like 2 ...           |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|     get     |                   got this phone ...                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      do     |                    ... glad i did .                   |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |               reception is very very ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    state    |                 stated as included ...                |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|   include   |            stated as included from the ...            |      include.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |        ... the description are not included ...       |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   include   |                 ... are not included .                |      include.v.01      |    0.0     |    0.0     |    1.0     |
+|      go     |           ... screen just went black all ...          |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                   was hoping for ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hope    |                was hoping for more ...                |       hope.v.01        |   0.125    |   0.125    |    0.75    |
+|      be     |                 quality is poor , ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                 had absolutely no ...                 |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     link    |           ... this headset linking to my ...          |     associate.v.01     |    0.0     |    0.0     |    1.0     |
+|     know    |                  know that sounds ...                 |  sleep_together.v.01   |   0.375    |   0.125    |    0.5     |
+|    sound    |              know that sounds funny , ...             |       sound.v.02       |    0.0     |    0.0     |    1.0     |
+|     seem    |           ... me it seemed like sketchy ...           |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |               ... this one works great .              |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     buy     |                  bought $5 wired ...                  |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     wire    |          bought $5 wired headphones that ...          |       cable.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                 phone is very fast ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     send    |           ... fast with sending any kind ...          |        air.v.03        |    0.0     |    0.0     |    1.0     |
+|    browse   |       ... and web browsing is significantly ...       |      browse.v.03       |    0.0     |    0.5     |    0.5     |
+|      be     |      ... web browsing is significantly faster ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                ... phones i have used .               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     use     |                   ... i have used .                   |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    build    |               quality build , unlike ...              |     construct.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |               item is fantastic and ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |          ... fantastic and works perfectly !          |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     love    |               i just love the colors ...              |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |                   is just superb ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                 i can do is whine ...                 |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |               ... can do is whine on ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      go     |               ... here it goes . the ...              |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     use     |              ... more i use the thing ...             |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     like    |                  ... less i like it .                 |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|      be     |                  is essentially a ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |         ... tool that does not communicate ...        |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+| communicate |               ... does not communicate .              |    communicate.v.02    |    0.0     |   0.125    |   0.875    |
+|     work    |               ... ; it work the same ...              |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     get     |               ... one i got with the ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|   maintain  |            still maintain that monkeys ...            |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+|     make    |      ... monkeys shouldn't make headphones , ...      |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     copy    |             ... dna to copy the design ...            |      imitate.v.01      |   0.375    |    0.0     |   0.625    |
+|     work    |                 ... its not working .                 |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... of it is very sharp ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... the screen is nice and ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hate    |                thing i hate is the ...                |       hate.v.01        |    0.0     |    0.75    |    0.25    |
+|      be     |               ... i hate is the mode ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     set     |             ... the mode set button at ...            |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    thank    |                      you for ...                      |       thank.v.01       |    0.0     |    0.0     |    1.0     |
+|    waste    |              you for wasting my money ...             |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|      be     |                 can that be ? the ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              ... audio quality is poor .              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... and tips are really great ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    offer    |            file browser offers all the ...            |       offer.v.01       |    0.0     |    0.0     |    1.0     |
+|     need    |           ... that one needs . handsfree ...          |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|      be     |               ... . handsfree is great .              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   connect   |                 connected my wife ...                 |     associate.v.01     |    0.0     |    0.0     |    1.0     |
+|     work    |              ... and it worked like a ...             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... the phone was in my ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     put     |                   put the latest ...                  |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|     like    |              ... it now likes to slow ...             |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|     slow    |               ... likes to slow to a ...              |    decelerate.v.01     |    0.0     |    0.0     |    1.0     |
+|     lock    |            ... crawl and lock up every ...            |      engage.v.10       |    0.0     |    0.0     |    1.0     |
+|  recognize  |             only recognizes the phone ...             |    acknowledge.v.06    |    0.0     |    0.0     |    1.0     |
+|     buzz    |           ... a loud buzzing to override ...          |       buzz.v.01        |    0.0     |    0.0     |    1.0     |
+|   override  |          ... buzzing to override all your ...         |     overrule.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |             ... this phone is for you ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     buy     |                  buy this product ...                 |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |                had this bluetoooth ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     fit     |               ... way it fits on the ...              |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |             sound quality is good and ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... and functionality is awesome .          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                  have this phone ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |               ... and it is a thorn ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    abhor    |                ... i really abhor it .                |       abhor.v.01       |    0.0     |    0.25    |    0.75    |
+|     have    |            recently had problems where ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     stay    |          ... could not stay connected for ...         |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|   connect   |          ... not stay connected for more ...          |     associate.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |        ... minutes before being disconnected .        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  disconnect |            ... before being disconnected .            |    disconnect.v.02     |    0.0     |    0.0     |    1.0     |
+|    check    |              when i check voice mail ...              |       match.v.01       |   0.375    |    0.0     |   0.625    |
+|     turn    |          ... keypad backlight turns off a ...         |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|     lose    |                  ... then i'm lost .                  |       lose.v.05        |    0.0     |   0.125    |   0.875    |
+|     die     |               replacement died in a ...               |        die.v.01        |    0.0     |    0.0     |    1.0     |
+|     buy     |                  ... phone to buy . .                 |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |              they have been extremely ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |           they have been extremely nice ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                 have had problems ...                 |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |               have had problems wit ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     hit     |        ... problems wit hit dropping signal ...       |       reach.v.01       |    0.0     |    0.0     |    1.0     |
+|     drop    |          ... wit hit dropping signal and ...          |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|   impress   |                      impressed .                      |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|    notice   |             ... i hardly notice it is ...             |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                ... notice it is there .               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                   love how thin ...                   |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |                    ... thin it is .                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |               color is even prettier ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    think    |            ... than i thought it would ...            |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|      be     |               ... it would be , and ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |       ... the graphics are incredibly sharp ...       |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    think    |               ... all i think it was ...              |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|      be     |              ... think it was a good ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     make    |                 makes very strange ...                |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     tick    |       ... very strange ticking noises before ...      |       tick.v.02        |    0.0     |    0.0     |    1.0     |
+|     end     |            ... before it ends the call ...            |        end.v.01        |    0.0     |    0.0     |    1.0     |
+|     last    |                    lasts only a ...                   |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|   impress   |            ... , very impressed - h500 ...            |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|      be     |             ... camera , being a part ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |          ... phone , is reasonably good7 ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                    had this for ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |            ... and it has worked great ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     work    |            ... it has worked great for ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|   transmit  |                    transmit audio .                   |        air.v.03        |    0.0     |    0.0     |    1.0     |
+|      be     |                   are sending it ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     send    |                are sending it back ...                |        air.v.03        |    0.0     |    0.0     |    1.0     |
+|      do     |                   did not bother ...                  |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|    bother   |           did not bother contacting the ...           |       annoy.v.01       |    0.0     |    0.0     |    1.0     |
+|   contact   |       ... not bother contacting the company ...       |       touch.v.05       |    0.0     |    0.0     |    1.0     |
+|    learn    |            ... but i learned the lesson ...           |       teach.v.01       |    0.5     |    0.0     |    0.5     |
+|     have    |          ... should not have bought this ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     buy     |           ... not have bought this form ...           |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     hate    |                 you hate earbugs , ...                |       hate.v.01        |    0.0     |    0.75    |    0.25    |
+|    avoid    |           ... earbugs , avoid this phone ...          |       debar.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                range is very decent ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              ... , i've been able to ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     roam    |             ... able to roam around my ...            |       roll.v.12        |   0.125    |   0.375    |    0.5     |
+|     live    |            ... in the living room with ...            |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|  recommend  |             would highly recommend this .             |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|  recommend  |                 would recommend this .                |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     feel    |               ... , it felt like it ...               |       feel.v.01        |   0.125    |    0.25    |   0.625    |
+|    crack    |            ... it would crack with use ...            |       crack.v.01       |    0.0     |    0.0     |    1.0     |
+|  embarrass  |            kind of embarrassing to use ...            |     obstruct.v.01      |    0.0     |    0.0     |    1.0     |
+|     use     |         ... embarrassing to use because of ...        |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     look    |            ... how it looks and mostly ...            |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|  embarrass  |    ... mostly it's embarrassing how child-like ...    |     obstruct.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                  ... the company is .                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    expect   |            ... , i'd expected a better ...            |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|     have    |         ... that i have never experienced ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|  experience |          ... have never experienced before .          |       feel.v.01        |   0.125    |    0.25    |   0.625    |
+|      be     |                 are certainly very ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... and functionality is decent .           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |          ... this one is very lightweight ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  disappoint |                  a bit disappointed .                 |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     have    |                   have had this ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |                have had this phone ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     tell    |               ... i will tell you , ...               |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|    order    |                  ordered this for ...                 |       rate.v.01        |   0.125    |    0.25    |   0.625    |
+|    think    |              ... but i think it only ...              |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|     work    |             ... it only worked once ( ...             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     use     |               ... i first used it ) ...               |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |           battery is completely useless ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    waste    |                    waste your $ ...                   |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|    please   |                 pleased with this ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|  recommend  |             ... . i recommend you this ...            |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|      be     |                  was very excited ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    excite   |              was very excited to get ...              |     stimulate.v.06     |    0.25    |   0.375    |   0.375    |
+|     get     |          ... excited to get this headset ...          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    think    |            ... because i thought it was ...           |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|      be     |           ... thought it was really cute ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                      not make ...                     |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     make    |                 not make the same ...                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |               phone was unusable and ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |            ... unusable and was not new ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   provide   |            ... ear gels provided , and ...            |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|    defeat   |                defeats the purpose ...                | get_the_better_of.v.01 |    0.0     |    0.0     |    1.0     |
+|     work    |               ... and they work great !               |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |               is excrutiatingly slow ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                is very comfortable ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     wear    |          ... comfortable to wear as well ...          |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|      be     |            ... , which is probably the ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |           ... aspect about using a case ...           |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     fit     |                    fits like a ...                    |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |             ... glove and is strong , ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |             ... phone i have ever had ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |                  ... have ever had .                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    appear   |          ... attractive and appears to be ...         |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... appears to be of good ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                    love all the ...                   |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     have    |                product had a strong ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |        ... smell that was unbearable after ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    cause    |             ... while and caused me to ...            |      induce.v.02       |    0.0     |    0.0     |    1.0     |
+|    return   |                  ... me to return it                  |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|     look    |                cable looks so thin ...                |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                  ... , it is scary .                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |                for using with your ...                |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |                     had this a ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     work    |         ... but it's worked flawlessly so ...         |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                 life is real good ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    return   |                      8 hours ...                      |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|    waste    |                  waste your money ...                 |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|     love    |                    this headset ...                   |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|    drain    |           ... will it drain your player ...           |       drain.v.03       |    0.0     |    0.0     |    1.0     |
+|     fry     |             ... also potentially fry it .             |        fry.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |                      perfectly !                      |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     give    |                   - i'm giving up .                   |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|     give    |                     gave it 5 ...                     |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|    avoid    |                      this one ...                     |       debar.v.02       |    0.0     |    0.0     |    1.0     |
+|     work    |                   plug works great .                  |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    waste    |                  wasted my little ...                 |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|      be     |               of all is the rotating ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    rotate   |           ... is the rotating feature , ...           |      revolve.v.01      |    0.0     |    0.0     |    1.0     |
+|     love    |                love this bluetooth ...                |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     wear    |               ... it doesn't wear well .              |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|      be     |                 am very impressed ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |            am very impressed with this ...            |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|     get     |                   got it because ...                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |            ... because it was so small ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  recommend  |           wouldn't recommend buying this ...          |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     buy     |       wouldn't recommend buying this product ...      |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |                  item is great , ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    instal   |             ... great , installed it , ...            |      install.v.01      |    0.0     |    0.0     |    1.0     |
+|     let     |              ... it , let it charged ...              |        let.v.01        |    0.0     |    0.0     |    1.0     |
+|    charge   |           ... let it charged up overnite ...          |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|     have    |            ... and it has been working ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |            ... it has been working good ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |          ... has been working good every ...          |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     buy     |                        buy it .                       |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      do     |                    not purchase ...                   |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|   purchase  |              not purchase this phone ...              |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... the handset is excellent .            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                   is hands down ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                  ... i've ever had .                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    attack   |           ... my cat attacked the phone ...           |      attack.v.01       |    0.0     |    0.0     |    1.0     |
+|   scratch   |       ... phone he scratched the protective ...       |      scratch.v.07      |    0.0     |    0.0     |    1.0     |
+|   destroy   |        ... instead of destroying the screen ...       |      destroy.v.02      |    0.0     |    0.5     |    0.5     |
+|      be     |           ... works and was priced right ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    price    |               ... and was priced right .              |       price.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                 service was terrible .                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     send    |                      it back ...                      |        air.v.03        |    0.0     |    0.0     |    1.0     |
+|     know    |                   i know that i ...                   |  sleep_together.v.01   |   0.375    |   0.125    |    0.5     |
+|     make    |               ... that i made a wise ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    invent   |           shouldve invented this sooner ...           |      invent.v.01       |    0.0     |    0.0     |    1.0     |
+|     work    |                   worked on the ...                   |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |      ... the device was certainly engineered ...      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   engineer  |         ... was certainly engineered in a ...         |    mastermind.v.01     |    0.0     |    0.0     |    1.0     |
+|     feel    |           ... the construction feels good .           |       feel.v.01        |   0.125    |    0.25    |   0.625    |
+|   receive   |                received it quickly ...                |    experience.v.03     |    0.0     |    0.0     |    1.0     |
+|     work    |              ... and it works great ! ...             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |                    been working ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                 been working great ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |                  been working great .                 |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|   complain  |             many people complained , i ...            |     complain.v.01      |    0.0     |    0.75    |    0.25    |
+|     find    |             ... , i found this headset ...            |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... 's microphone was very weak ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hold    |         ... from tracfone holds the charge ...        |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|      do     |                    do not care ...                    |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     care    |               do not care about the ...               |      manage.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                     is a good ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     get     |             ... and it got here really ...            |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |            instruction manual is lacking .            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     lack    |                ... manual is lacking .                |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|     fit     |             ... enough to fit into my ...             |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|     dock    |      ... alarm clock docking station without ...      |       dock.v.05        |    0.0     |    0.0     |    1.0     |
+|    remove   |       ... station without removing the case ...       |      remove.v.01       |    0.0     |    0.0     |    1.0     |
+|     hold    |               now holds charge like ...               |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|      do     |              ... like it did when it ...              |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                 ... when it was new .                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              battery is unreliable as ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |          ... sound quality is quite poor ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   compare   |          ... quite poor compared with the ...         |      compare.v.01      |    0.0     |   0.125    |   0.875    |
+|     wire    |          ... my previous wired headset ( ...          |       cable.v.01       |    0.0     |    0.0     |    1.0     |
+|     plug    |             ... ( that plugged into an ...            |       plug.v.04        |    0.0     |    0.0     |    1.0     |
+|     have    |                   have gotten a ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     get     |                 have gotten a lot ...                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                  is definitely a ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |              ... a must have if your ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      do     |           ... your state does not allow ...           |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|    allow    |           ... does not allow cell phone ...           |        let.v.01        |    0.0     |    0.0     |    1.0     |
+|    drive    |               ... usage while driving .               |        tug.v.02        |    0.0     |    0.0     |    1.0     |
+|     want    |                   want my money ...                   |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|     love    |                  love this device ...                 |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |                    am also very ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    order    |                ordered this product ...               |       rate.v.01        |   0.125    |    0.25    |   0.625    |
+|      be     |           ... first and was unhappy with ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |               ngage is still lacking ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     lack    |          ... is still lacking in earbuds ...          |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|      be     |                    was able to ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |            ... able to do voice dialing ...           |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     dial    |            ... do voice dialing in the ...            |       dial.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |                   have 2-3 bars ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                ... when i am home , ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     cant    |             ... but you cant not hear ...             |       cant.v.01        |    0.0     |    0.0     |    1.0     |
+|     hear    |              ... cant not hear anything .             |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |               riingtones are not the ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... and neither are the games ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                 plug did not work ...                 |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |             ... did not work very well ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     suck    |                        sucks .                        |      absorb.v.04       |    0.0     |    0.0     |    1.0     |
+|      be     |              battery is working well ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |             battery is working well as ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     come    |          ... original that came with the ...          |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                reception is excellent !               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     fit     |                fits comfortably in ...                |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |             ... the sound is clear and ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     last    |           ... the charge lasts a couple ...           |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|     have    |             ... you don't have to mess ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |            ... since you have the sound ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     last    |              . long lasting battery ( ...             |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|     have    |           ... you don't have to recharge ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   recharge  |             ... have to recharge it as ...            |     recharge.v.02      |    0.0     |    0.0     |    1.0     |
+|      be     |                 there is a problem ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  disappoint |                    disappointing .                    |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|      be     |                 was an inexpensive ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |        ... would still have expected better ...       |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    expect   |       ... still have expected better quality ...      |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|      be     |               is practically useless ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |            ... useless and did not add ...            |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     add     |              ... did not add any kind ...             |        add.v.01        |    0.0     |    0.0     |    1.0     |
+|     buy     |                ... after i bought it .                |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |                     not happy ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    break    |          ... junk that broke after being ...          |      unwrap.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... broke after being on my ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |               battery works great in ...              |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     drop    |                  dropped my phone ...                 |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|     say     |                ... i can say , even ...               |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... my phone is still great ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                  is terrible and ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |          little device has transformed my ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|  transform  |    ... device has transformed my organizational ...   |     translate.v.02     |    0.0     |    0.0     |    1.0     |
+|     make    |          ... capability and made my life ...          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                   was sitting in ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     sit     |                 was sitting in my ...                 |       ride.v.01        |    0.0     |    0.0     |    1.0     |
+|     lose    |             ... the headset lost signal .             |       lose.v.05        |    0.0     |   0.125    |   0.875    |
+|      be     |                      jerks on ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |            ... . . works as advertised ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|  advertise  |               ... works as advertised .               |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|      be     |             ... los angeles is horrible .             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           loudspeaker option is great , ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... the lights is very ... ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    appeal   |                ... very ... appealing .               |      attract.v.02      |   0.625    |    0.0     |   0.375    |
+|    think    |           ... that i think could improve ...          |       think.v.02       |   0.125    |    0.0     |   0.875    |
+|   improve   |           ... think could improve is the ...          |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|      be     |           ... could improve is the sound ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     suck    |            ... the reception sucks , i ...            |      absorb.v.04       |    0.0     |    0.0     |    1.0     |
+|     have    |               ... , i have never had ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |            ... have never had more than ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     get     |              phone gets extremely hot ...             |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |            microphone also works well , ...           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    accord   |           ... but ( according to people ...           |      accord.v.02       |   0.125    |    0.0     |   0.875    |
+|     have    |             ... people i have called ) ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     call    |               ... i have called ) it ...              |      predict.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |            ... your phone is dropped , ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     drop    |            ... phone is dropped , this ...            |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |             ... this case is not going ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      go     |              ... is not going to save ...             |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     save    |               ... going to save it , ...              |      deliver.v.08      |    0.0     |    0.25    |    0.75    |
+|     drop    |        ... specially when dropped face down ...       |       spend.v.02       |    0.0     |    0.0     |    1.0     |
+|     face    |              ... when dropped face down .             |       front.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                     is light , ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |               ... easy to use , and ...               |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |              ... , and has very clear ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |               definitely was not as ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                   had ordered a ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    order    |               had ordered a motorola ...              |       rate.v.01        |   0.125    |    0.25    |   0.625    |
+|     get     |               ... cable , got a very ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    finish   |         ... very well finished and working ...        |        end.v.01        |    0.0     |    0.0     |    1.0     |
+|     work    |           ... finished and working product .          |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     love    |                     this phone ...                    |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|      be     |                  was looking for ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     look    |                was looking for this ...               |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     get     |               ... that i've got it i ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |              ... i couldn't be happier .              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                  be drivng along ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    start    |         ... my headset starts ringing for ...         |     get_down.v.07      |    0.0     |    0.0     |    1.0     |
+|     ring    |         ... headset starts ringing for no ...         |     surround.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |                  is excellent and ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... and camera is as good ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                 life is also great ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... i've ever had .... only ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |              ... .... only had it for ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     work    |               ... . it worked for a ...               |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    start    |       ... while then started having problems ...      |     get_down.v.07      |    0.0     |    0.0     |    1.0     |
+|     have    |        ... then started having problems in ...        |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                 is so embarassing ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hurt    |               ... my ears hurt if i ...               |       hurt.v.05        |    0.0     |   0.625    |   0.375    |
+|     try     |                ... if i try to push ...               |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|     push    |              ... try to push the ear ...              |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|   protect   |                     the phone ...                     |      protect.v.01      |    0.0     |    0.75    |    0.25    |
+|      be     |                     is a very ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   operate   |            ... life that operates on a ...            |     function.v.01      |    0.0     |    0.0     |    1.0     |
+|     suck    |                   technology sucks .                  |      absorb.v.04       |    0.0     |    0.0     |    1.0     |
+|     take    |            can even take self portraits ...           |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|     have    |             ... as others have mentioned .            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   mention   |              ... others have mentioned .              |       note.v.01        |    0.0     |    0.0     |    1.0     |
+|     try     |                  trying many many ...                 |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |            ... gadgets this is the one ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |             ... that finally works well .             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     work    |                  worked very well ...                 |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     ship    |             company shipped my product ...            |     transport.v.04     |    0.0     |    0.0     |    1.0     |
+|     work    |                ... and it works well .                |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     want    |                    what i wanted .                    |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|      be     |          picture resolution is far below ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |  ... comparably-priced phones are offering today ...  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    offer    |            ... phones are offering today .            |       offer.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                     is a great ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... , i am very satisfied ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   satisfy   |           ... am very satisfied with the ...          |       meet.v.04        |   0.125    |    0.0     |   0.875    |
+|  recommend  |             highly recommend these and ...            |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|  encourage  |         ... these and encourage people to ...         |      promote.v.01      |   0.125    |    0.0     |   0.875    |
+|     give    |             ... people to give them a ...             |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|     try     |                    ... them a try .                   |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|    expect   |                  than you'd expect .                  |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|     use     |                   all earpieces ...                   |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    leave    |           ... earpieces , left or right ...           |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|     stay    |              ... will not stay on my ...              |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|    sound    |                  good reasonably ...                  |       sound.v.02       |    0.0     |    0.0     |    1.0     |
+|    price    |        good reasonably priced and effective ...       |       price.v.01       |    0.0     |    0.0     |    1.0     |
+|     wait    |                 waiting ...... i'm ...                |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|     work    |             ... item would work well . ...            |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    please   |                 pleased with this ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    waste    |                  waste your money ...                 |       waste.v.01       |   0.125    |    0.0     |   0.875    |
+|     love    |              especially love the long ...             |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     have    |             ... stupid to have to keep ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     keep    |            ... have to keep buying new ...            |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+|     buy     |          ... to keep buying new chargers ...          |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     come    |               ... new phone comes out .               |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|     come    |                   came over from ...                  |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|     have    |        ... because cingulair has nicer cell ...       |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    notice   |            ... thing i noticed was the ...            |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |            ... i noticed was the really ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                   be looking for ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     look    |                  be looking for a ...                 |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|  recommend  |            highly recommend this device ...           |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|      be     |                 era is awesome too ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   receive   |                  received a white ...                 |    experience.v.03     |    0.0     |    0.0     |    1.0     |
+|    color    |          ... a white colored battery that ...         |       color.v.01       |    0.0     |    0.0     |    1.0     |
+|      go     |          ... battery that goes dead after ...         |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     use     |         ... hoursthe original used to last ...        |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     last    |              ... used to last a week ...              |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|     last    |          ... but still lasts longer than ...          |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|      go     |        ... the battery went completely dead ...       |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     have    |                 have used several ...                 |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     use     |              have used several phone ...              |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |              ... this one is the best ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                    is the first ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... phone i've had that has ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |              ... had that has been so ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |            ... that has been so cheaply ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     make    |                 ... so cheaply made .                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |                    is not clear ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |           ... , sound is very distorted ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   distort   |           ... is very distorted and you ...           |      falsify.v.01      |    0.0     |    0.0     |    1.0     |
+|     have    |              ... and you have to yell ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     yell    |             ... have to yell when you ...             |       shout.v.02       |    0.0     |    0.0     |    1.0     |
+|     talk    |                  ... when you talk .                  |       talk.v.02        |    0.0     |    0.0     |    1.0     |
+|    break    |             plastic breaks really easy ...            |      unwrap.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                    is good too ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     make    |                   make the same ...                   |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      do     |                  ... mistake i did .                  |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|    forget   |                and i forgot to also ...               |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|   mention   |           ... to also mention the weird ...           |       note.v.01        |    0.0     |    0.0     |    1.0     |
+|     have    |             ... effect it has on your ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     use     |                   using it with ...                   |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     fit     |                 ... and it fits fine .                |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|    break    |               ... my unit broke ) . ...               |      unwrap.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                 , i am psyched to ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... psyched to have a phone ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |             ... phone which has all my ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     get     |          ... in and gets great reception ...          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     like    |                  ... , she like it .                  |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|      be     |            ... 's appearance is that it ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     look    |          ... it really looks rather bland ...         |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     have    |             sanyo has survived dozens ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   survive   |            sanyo has survived dozens of ...           |      survive.v.01      |    0.0     |    0.0     |    1.0     |
+|     find    |                   finds my cell ...                   |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|    enter    |              ... when i enter the car ...             |      insert.v.01       |    0.0     |    0.0     |    1.0     |
+|  recommend  |            highly recommend this modest ...           |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|    price    |       ... this modest priced cellular phone ...       |       price.v.01       |    0.0     |    0.0     |    1.0     |
+|      do     |                 it does get better ...                |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     get     |            it does get better reception ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     have    |              ... phone i've had before .              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     warn    |                       - stay ...                      |       warn.v.01        |    0.0     |    0.5     |    0.5     |
+|     stay    |                     - stay away .                     |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|     wish    |                    wish i could ...                   |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|    return   |            ... i could return the unit ...            |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|     get     |              ... unit and get back my ...             |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |                device works great ! ...               |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     use     |                    used to talk ...                   |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     talk    |                 used to talk on it ...                |       talk.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |       ... battery would be literally drained ...      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    drain    |         ... be literally drained and dying ...        |       drain.v.03       |    0.0     |    0.0     |    1.0     |
+|     die     |                ... drained and dying .                |        die.v.01        |    0.0     |    0.0     |    1.0     |
+|     find    |                you don't find it , ...                |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|     come    |            ... the unit comes with one ...            |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|  recommend  |          ... would not recommend this to ...          |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|  displease  |                      displeased .                     |     displease.v.01     |    0.0     |    0.25    |    0.75    |
+|     have    |                might have gotten a ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     get     |             might have gotten a defect ...            |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     risk    |            ... would not risk buying it ...           |      gamble.v.01       |    0.5     |   0.125    |   0.375    |
+|     buy     |            ... not risk buying it again ...           |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|    build    |           ... of the built quality alone ...          |     construct.v.01     |    0.0     |    0.0     |    1.0     |
+|     make    |                   made this case ...                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |          ... small and is very difficult ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   install   |               ... difficult to install .              |      install.v.01      |    0.0     |    0.0     |    1.0     |
+|   restore   |                      my phone ...                     |      repair.v.01       |    0.0     |   0.125    |   0.875    |
+|     like    |         ... phone to like new performance ...         |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|  recommend  |           would recommend purchasing the ...          |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|   purchase  |        would recommend purchasing the jabra ...       |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     work    |         ... 2 which works flawlessly with ...         |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      go     |                  ... q , go figure .                  |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    search   |               searched the internet ...               |      search.v.01       |    0.0     |    0.0     |    1.0     |
+|     find    |              ... , and found this one ...             |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |               ... one to be the best ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                      not fit ...                      |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     fit     |                       not fit .                       |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                screen size is big , ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    light    |            ... key pad lit well enough ...            |      ignite.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |        ... camera quality is excellent for ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     say     |              ... i can say about this ...             |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|     find    |             glad i found this product ...             |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... amazon it is hard to ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     find    |               ... hard to find , it ...               |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|    price    |                ... wasn't high priced .               |       price.v.01       |    0.0     |    0.0     |    1.0     |
+|     work    |                     and it works .                    |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     get     |           ... i now get great reception ...           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |             ... but performance is great .            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    charge   |            even fully charged it before ...           |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|      go     |              ... before i went to bed ...             |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     turn    |            ... bed and turned off blue ...            |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|    notice   |           ... wi-fi and noticed that it ...           |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|     have    |                ... it only had 20 % ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    leave    |                ... 20 % left in the ...               |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|     have    |               also had problems with ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     read    |          ... the phone reading the memory ...         |       read.v.01        |    0.0     |    0.0     |    1.0     |
+|     turn    |              ... i always turn it on ...              |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|     wear    |              good when wearing a hat ...              |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|     make    |                 well made and fits ...                |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     fit     |           ... made and fits my surefire ...           |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|  recommend  |              would recommend these to ...             |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     get     |                  get the software ...                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |            ... software to work with my ...           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|  disappoint |                          ! .                          |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     work    |                 battery works great !                 |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|  disappoint |            disappointed in accessoryone ...           |    disappoint.v.01     |    0.0     |    0.25    |    0.75    |
+|     find    |               find this inexcusable ...               |      detect.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |        ... will probably be returning this ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    return   |        ... probably be returning this phone ...       |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|    change   |          ... and perhaps changing carriers .          |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|     look    |                     great and ...                     |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |               great and is strong . ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                  have had tmobile ...                 |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     have    |              have had tmobile service ...             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |             ... and i am pretty happy ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |         update procedure is difficult and ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hate    |             ... . i hate anything that ...            |       hate.v.01        |    0.0     |    0.75    |    0.25    |
+|      go     |            ... anything that goes in my ...           |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                delivery was on time ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |                     easy to use .                     |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    switch   |             volume switch rocketed out ...            |      switch.v.03       |    0.0     |    0.0     |    1.0     |
+|    rocket   |           volume switch rocketed out of ...           |      rocket.v.01       |    0.0     |    0.0     |    1.0     |
+|     hold    |                   holds a charge ...                  |       hold.v.11        |    0.0     |    0.0     |    1.0     |
+|      be     |        ... time , is reasonably comfortable ...       |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|             | ... comfortable under long-wearing conditions and ... |      durable.s.02      |    0.0     |    0.0     |    1.0     |
+|      be     |              ... of sound is tremendous .             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    return   |                  like to return it .                  |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |           keyboard is really worthwhile ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |        ... usefulness and is sturdy enough ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    expect   |          ... i don't expect any problems ...          |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|      be     |           ... however , are difficult to ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  understand |      ... difficult to understand even though ...      |    understand.v.01     |   0.375    |    0.0     |   0.625    |
+|      be     |             ... pricing plans are simple .            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    charge   |                charging overnight , ...               |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|     work    |            ... these batteries work great .           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    regret   |                   won't regret it !                   |      repent.v.02       |    0.0     |    0.5     |    0.5     |
+|     love    |                  love this phone ...                  |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     know    |            ... to actually know you are ...           |  sleep_together.v.01   |   0.375    |   0.125    |    0.5     |
+|      be     |            ... know you are receiving a ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   receive   |            ... you are receiving a call ...           |    experience.v.03     |    0.0     |    0.0     |    1.0     |
+|      be     |               ... a call is a rather ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |            ... this phone is pitiful in ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   exchange  |                i exchanged for the ...                |      change.v.06       |   0.125    |    0.0     |   0.875    |
+|     have    |             ... even that had the same ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |          ... the phone being either stuck ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    stick    |           ... being either stuck at max ...           |      perplex.v.01      |   0.125    |    0.25    |   0.625    |
+|      be     |                  is super charged ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    charge   |              is super charged up for ...              |      agitate.v.02      |    0.0     |    0.25    |    0.75    |
+|    excel    |             ... , and excels in those ...             |       excel.v.01       |    0.0     |    0.25    |    0.75    |
+|  recommend  |        would definitely recommend the jabra ...       |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|      be     |           ... those who are looking for ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     look    |          ... who are looking for comfort ...          |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     have    |                   had verizon 2 ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     like    |         ... and really liked their service ...        |       wish.v.02        |   0.125    |    0.0     |   0.875    |
+|      be     |                   was the wrong ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   describe  |                     as described .                    |      report.v.01       |    0.0     |    0.0     |    1.0     |
+|     save    |                     your money ...                    |      deliver.v.08      |    0.0     |    0.25    |    0.75    |
+|     have    |            ... .... i've had this item ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   satisfy   |                     im satisfied .                    |       meet.v.04        |   0.125    |    0.0     |   0.875    |
+|    cancel   |          bose noise cancelling is amazing ...         |      delete.v.01       |    0.0     |   0.125    |   0.875    |
+|      be     |         ... noise cancelling is amazing , ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    amaze    |         ... cancelling is amazing , which ...         |      perplex.v.01      |   0.125    |    0.25    |   0.625    |
+|      be     |           ... , which is very important ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              battery is an excellent ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                would have given no ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     give    |              would have given no star ...             |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|      be     |                  ... if i was able .                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     wear    |                  wear glasses and ...                 |       tire.v.02        |    0.25    |    0.0     |    0.75    |
+|     fit     |             ... and it fits fine with ...             |       equip.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... the device is unacceptable . ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              ... unless you are in a ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hear    |             ... you almost hear nothing .             |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|  recommend  |           would not recommend this item ...           |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|    arrive   |            holster that arrived did not ...           |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|      do     |           ... that arrived did not match ...          |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|    match    |            ... did not match the photo ...            |       match.v.01       |   0.375    |    0.0     |   0.625    |
+|     note    |          ... earlier review noted , plug ...          |       note.v.01        |    0.0     |    0.0     |    1.0     |
+|    happen   |               ... and nothing happens .               |      happen.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... phone charm is adorable and ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    catch    |                ... very eye catching .                |      capture.v.02      |    0.5     |    0.0     |    0.5     |
+|     know    |                 never know if you ...                 |  sleep_together.v.01   |   0.375    |   0.125    |    0.5     |
+|     push    |             ... if you pushed it hard ...             |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|     want    |            ... function you want or not ...           |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|      be     |                 sound is clear and ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     talk    |              ... people i talk to on ...              |       talk.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |              ... on it are amazed at ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    amaze    |              ... it are amazed at the ...             |      perplex.v.01      |   0.125    |    0.25    |   0.625    |
+|     get     |                  got the aluminum ...                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     work    |           ... and it worked really well ...           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |             ... -- it has protected my ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   protect   |          ... it has protected my handheld ...         |      protect.v.01      |    0.0     |    0.75    |    0.25    |
+|     make    |                   ... , well made .                   |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |               phone tools are a must ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                   ... a must have .                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                 am very impressed ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |             am very impressed with the ...            |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|      do     |            ... that motorola did on the ...           |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|   receive   |                 received my orders ...                |    experience.v.03     |    0.0     |    0.0     |    1.0     |
+|      be     |            ... , everything was in good ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |           ... in good working order and ...           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... , i am very excited ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    excite   |            ... am very excited to have ...            |     stimulate.v.06     |    0.25    |   0.375    |   0.375    |
+|     have    |          ... excited to have this source ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      be     |                phone is sturdy and ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                  am not impressed ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |             am not impressed with this ...            |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|  recommend  |         ... would not recommend this item ...         |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|      be     |           only complaint is the standard ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |            ... sound volume is a little ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     turn    |             ... even when turned up to ...            |   change_state.v.01    |    0.0     |    0.0     |    1.0     |
+|     have    |          ... amazon for having the things ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     need    |              ... things i need for a ...              |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|     end     |                  ended up sliding ...                 |        end.v.01        |    0.0     |    0.0     |    1.0     |
+|    slide    |               ended up sliding it on ...              |       slide.v.03       |    0.0     |    0.0     |    1.0     |
+|     have    |                     had to go ...                     |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      go     |                   had to go to a ...                  |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     buy     |             ... store and bought a new ...            |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |          ... phone which is working great ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     work    |              ... which is working great .             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     work    |                      great ! ...                      |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     have    |                  , had to switch ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    switch   |             ... had to switch 3 times ...             |      switch.v.03       |    0.0     |    0.0     |    1.0     |
+|      be     |             noise shield is incrediable .             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     keep    |                       up the ...                      |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+|    refuse   |                  refuse to refund ...                 |      refuse.v.02       |    0.0     |    0.0     |    1.0     |
+|    refund   |            refuse to refund or replace ...            |      refund.v.01       |    0.0     |    0.0     |    1.0     |
+|   replace   |                ... refund or replace .                |     supplant.v.01      |    0.0     |    0.0     |    1.0     |
+|   activate  |       ... to accidentally activate them with ...      |       trip.v.04        |    0.0     |    0.0     |    1.0     |
+|    touch    |        ... you accidentally touch the phone ...       |       refer.v.02       |    0.0     |    0.0     |    1.0     |
+|    listen   |               ... face while listening .              |      listen.v.02       |    0.0     |    0.0     |    1.0     |
+|    throw    |             i basically threw my money ...            |       hold.v.03        |   0.125    |    0.0     |   0.875    |
+|     take    |                  it took was one ...                  |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|      be     |                it took was one drop ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |              ... and it was cracked . ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    crack    |               ... it was cracked . i ...              |       crack.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... . i am not impressed ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   impress   |             ... am not impressed and i ...            |      affect.v.05       |   0.125    |   0.125    |    0.75    |
+|      be     |             ... and i am not laughing ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    laugh    |                 ... am not laughing .                 |       laugh.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |                  range is good - ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    leave    |              ... ago i left my phone ...              |      forget.v.04       |    0.0     |    0.0     |    1.0     |
+|     get     |               ... trunk , got a call ...              |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    carry    |         ... , and carried the conversation ...        |     transport.v.02     |    0.0     |    0.0     |    1.0     |
+|     look    |        ... , impressive looking , practical ...       |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|   channel   |             eargels channel the sound ...             |      impart.v.03       |    0.0     |    0.0     |    1.0     |
+|     seem    |            ... ear and seem to increase ...           |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|   increase  |           ... seem to increase the sound ...          |     increase.v.02      |    0.0     |    0.0     |    1.0     |
+|     have    |            ... new ones have ever quite ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     work    |            ... ever quite worked properly .           |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |                     am glad i ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   purchase  |               ... glad i purchased it .               |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     miss    |               missed numerous calls ...               |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|      be     |              my phone is defective , ...              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hear    |           ... people cannot hear me when ...          |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|     use     |                 ... when i use this .                 |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     buy     |                  buy this product ...                 |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     suck    |                       , most ...                      |      absorb.v.04       |    0.0     |    0.0     |    1.0     |
+|      do     |            ... the stuff does not work ...            |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |             ... does not work with my ...             |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|    shift    |                   shifting , no ...                   |      switch.v.03       |    0.0     |    0.0     |    1.0     |
+|    bubble   |               ... , no bubbling , no ...              |      ripple.v.02       |    0.0     |    0.0     |    1.0     |
+|     peel    |               ... , no peeling , not ...              |      undress.v.01      |    0.0     |    0.0     |    1.0     |
+|      be     |           ... i couldn't be more happier ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     use     |             software ever used .... if ...            |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     give    |             ... i could give this zero ...            |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|     star    |            ... this zero stars i would ...            |       star.v.01        |    0.0     |    0.0     |    1.0     |
+|     try     |                      to make ...                      |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|     make    |                   to make a call ...                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|      be     |            ... on these is an exercise ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                  case is a flimsy ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |            ... plastic and has no front ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     own     |                    own a jabra ...                    |        own.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |           ... earset and was very happy ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                ... on this is better .                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     love    |                  love the camera ...                  |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|    thank    |                      you for ...                      |       thank.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |            seller is very understanding ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  understand |       ... is very understanding and patient ...       |    understand.v.01     |   0.375    |    0.0     |   0.625    |
+|     buy     |         ... would definitely buy from them ...        |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|     give    |                   give wirefly 1 ...                  |       give.v.18        |   0.125    |    0.0     |   0.875    |
+|   contact   |           ... i will contact cingular / ...           |       touch.v.05       |    0.0     |    0.0     |    1.0     |
+|    inform   |              ... ; and inform them of ...             |      inform.v.01       |    0.0     |    0.0     |    1.0     |
+|  aggravate  |                     aggravating !                     |      worsen.v.02       |    0.0     |    0.25    |    0.75    |
+|     have    |                have purchased these ...               |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   purchase  |              have purchased these for ...             |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|    enjoy    |          ... and all enjoy their clarity ...          |       love.v.02        |    1.0     |    0.0     |    0.0     |
+|     ease    |              ... clarity and ease of use              |       still.v.03       |    0.0     |    0.0     |    1.0     |
+|      do     |             ... and so does this cheap ...            |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     work    |                 of it works , just ...                |       shape.v.02       |    0.0     |    0.0     |    1.0     |
+|     buy     |                ... just don't buy it .                |        buy.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |           ... 's insert was poorly super ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     glue    |          ... poorly super glued and slid ...          |       glue.v.01        |    0.0     |    0.0     |    1.0     |
+|    slide    |                ... glued and slid off .               |       slide.v.03       |    0.0     |    0.0     |    1.0     |
+|    please   |                     dont waste ...                    |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   satisfy   |         ... i'm quite satisfied with this ...         |       meet.v.04        |   0.125    |    0.0     |   0.875    |
+|      be     |                you are looking for ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     look    |               you are looking for a ...               |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     keep    |        ... motorola headset keep looking , ...        |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+|     look    |          ... headset keep looking , this ...          |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|   continue  |           plantronincs continues to use ...           |      proceed.v.02      |    0.0     |    0.0     |    1.0     |
+|     use     |           ... continues to use the same ...           |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     flaw    |         ... the same flawed charger design ...        |       flaw.v.01        |    0.0     |    0.0     |    1.0     |
+|      be     |                it was new packaged ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   package   |          ... was new packaged nice works ...          |        box.v.01        |    0.0     |    0.0     |    1.0     |
+|     come    |              ... and it came in less ...              |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|    expect   |              ... then i expected ! ! ...              |      expect.v.03       |    0.0     |    0.25    |    0.75    |
+|      be     |           experience was terrible ..... ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |            ... ..... this was my fourth ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |             ... while it was much more ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     hate    |               ... which i hated ! ! ...               |       hate.v.01        |    0.0     |    0.75    |    0.25    |
+|      be     |                     am very happy                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     have    |                   had no trouble ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    access   |       ... no trouble accessing the internet ...       |      access.v.01       |    0.0     |    0.0     |    1.0     |
+|   download  |      ... internet , downloading ringtones or ...      |     download.v.01      |    0.0     |    0.0     |    1.0     |
+|   perform   |         ... ringtones or performing any of ...        |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     hear    |             ... barely ever hear on it ...            |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|      be     |          ... it and am constantly saying ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     say     |          ... am constantly saying " what ...          |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |        battery life is highly unacceptable ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      be     |                 company is a joke ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      do     |                does everything the ...                |      perform.v.01      |    0.0     |    0.0     |    1.0     |
+|     say     |         ... the description said it would ...         |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|    happen   |             to this happening on every ...            |      happen.v.01       |    0.0     |    0.0     |    1.0     |
+|      be     |              ... call i was forced to ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    force    |              ... i was forced to stop ...             |       push.v.01        |    0.0     |    0.0     |    1.0     |
+|     stop    |           ... forced to stop using this ...           |        end.v.01        |    0.0     |    0.0     |    1.0     |
+|     use     |           ... to stop using this headset ...          |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|     work    |                  works great with ...                 |       shape.v.02       |    0.0     |    0.0     |    1.0     |
++-------------+-------------------------------------------------------+------------------------+------------+------------+------------+

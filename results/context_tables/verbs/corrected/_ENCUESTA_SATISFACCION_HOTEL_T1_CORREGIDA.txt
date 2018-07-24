@@ -1,0 +1,967 @@
++--------------+--------------------------------------------------------+---------------------+------------+------------+------------+
+|     Verb     |                        context                         |        synset       | Polarity + | Polarity - | Polarity = |
++--------------+--------------------------------------------------------+---------------------+------------+------------+------------+
+|     ser      |              atención es especial del ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |              ... de 2016 fue muy mala ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   saludar    |              ... , no saludan no dan ...               |      toast.v.02     |    0.0     |    0.0     |    1.0     |
+|     dar      |        ... saludan no dan mucha información ...        |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|  justificar  |              ... no se justificó , la ...              |    apologize.v.02   |    0.0     |    0.0     |    1.0     |
+|    estar     |             ... la bañera está mala no ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |            ... mala no hay donde poner ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    poner     |            ... hay donde poner el jabón ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |              ... el desayuno fue pobre .               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |               desayuno fue huevo que ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |           ... huevo que falta de respeto ...           |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    poder     |             ... verdad no puede ver tv ...             |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|     ver      |             ... no puede ver tv nadie ...              |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|   indicar    |          ... nadie me indicó como hacerlo ...          |    indicate.v.02    |    0.0     |    0.0     |    1.0     |
+|    poder     |          ... y no pudimos almorzar nadie ...           |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   almorzar   |         ... no pudimos almorzar nadie dio ...          |      lunch.v.01     |    0.0     |    0.0     |    1.0     |
+|     dar      |        ... almorzar nadie dio información , ...        |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    estar     |      ... , todo está deteriorado desmejorado ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  deteriorar  |     ... todo está deteriorado desmejorado feo ...      |      slip.v.04      |    0.0     |    0.5     |    0.5     |
+|  desmejorar  |      ... está deteriorado desmejorado feo la ...       |      flaw.v.01      |    0.0     |    0.0     |    1.0     |
+|    creer     |             ... la verdad creí que era ...             |      find.v.05      |   0.125    |    0.0     |   0.875    |
+|     era      |             ... creí que era un lugar ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    traer     |             ... bonito para traer a mi ...             |      bring.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |                 ... y no fue así y ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   parecer    |               ... y me parece que no ...               |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... que no hay control por ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|  contratar   |                      recreadores                       |      hire.v.01      |    0.0     |    0.0     |    1.0     |
+|   mantener   |                      el buen ...                       |      keep.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |                  estuvo bueno gracias                  |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |           ... la recepción es muy buena ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    deber     |                     de mejorar ...                     |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |               de mejorar la atención ...               |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |              ... se uso es muy bonito ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |              ... que se pueda recomendar               |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|  recomendar  |                ... se pueda recomendar                 |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|   referir    |               ... y me refiero a la ...                |      refer.v.02     |    0.0     |    0.0     |    1.0     |
+|     ser      |               ... ducha ya es importante               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |               ... ya que es muy alto ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |             ... se le puede añadir uno ...             |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    añadir    |            ... le puede añadir uno para ...            |       add.v.01      |    0.0     |    0.0     |    1.0     |
+|    evitar    |           ... uno para evitar caídas de ...            |     prevent.v.01    |    0.25    |    0.0     |    0.75    |
+|     caer     |          ... para evitar caídas de última ...          |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    seguir    |                   sigan así muy ...                    |      stay.v.01      |    0.0     |    0.0     |    1.0     |
+|   parecer    |           ... de res parecía copete muy ...            |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... simple y tener sombrillas para ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |                 es higiénico tener ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |         es higiénico tener tapetes sucios ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    romper    |          ... y toallas rotas , entregaron ...          |     damage.v.01     |    0.0     |    0.75    |    0.25    |
+|   entregar   |        ... rotas , entregaron la habitación ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   desasear   |     ... la habitación desaseada con telarañas ...      |     untidy.a.01     |   0.125    |   0.625    |    0.25    |
+|    falta     |          ... pelos les falta variedad en ...           |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|     ser      |           ... el desayuno sería mejor en ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    deber     |                     ofrecer el ...                     |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |                  ofrecer el plan ...                   |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|   incluir    |          ... plan todo incluido comida , ...           |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... comida , son cliente viejo ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    gustar    |            ... no me gusto los cambios ...             |     please.v.01     |   0.625    |    0.0     |   0.375    |
+|    haber     |             ... cambios que han efectuado              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   efectuar   |                 ... que han efectuado                  |    transport.v.02   |    0.0     |    0.0     |    1.0     |
+|    cerrar    |               cierren los balnearios ...               |      close.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |       ... huéspedes no deberían dejar entrar ...       |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    dejar     |         ... no deberían dejar entrar tanta ...         |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    entrar    |       ... deberían dejar entrar tanta gente ...        |     record.v.01     |    0.0     |    0.0     |    1.0     |
+|   adecuar    |                      duchas a ...                      |      befit.v.01     |   0.375    |    0.0     |   0.625    |
+|    tener     |               habitación no tenía ducha                |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   regular    |              regular la alimentación ...               |    regulate.v.02    |    0.0     |    0.0     |    1.0     |
+|  encontrar   |       ... alimentación no encontré salsa de ...        |     detect.v.01     |    0.0     |    0.0     |    1.0     |
+|    servir    |              ... demora y sirvieron frio               |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|     oler     |            habitaciones huelen a cloro ...             |      smell.v.02     |    0.0     |    0.0     |    1.0     |
+|      ir      |                      ... no se ve                      |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|    variar    |             ... menú más variado en la ...             |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|    tener     |             ... todo no tenga que ser ...              |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |               ... tenga que ser a la ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    servir    |           ... maluca mal servida 1 hora ...            |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   esperar    |       ... hora para esperar unas salchipapas ...       |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|    tener     |       ... gente descortés tuvimos que salir ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    salir     |          ... tuvimos que salir del hotel ...           |       die.v.01      |    0.0     |    0.0     |    1.0     |
+|     era      |       ... para alimentarnos era mejor cuando ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     era      |              ... mejor cuando era buffet               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   ofrecer    |                       en el ...                        |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|  considerar  |                       que en ...                       |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|    deber     |         ... los baños deberían haber alfo ...          |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    colgar    |          ... alfo para colgar los trajes ...           |      hang.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... nombre steven es muy grosero ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |           ... huéspedes no tiene el don ...            |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    saber     |               ... y no sabe nada de ...                |      know.v.01      |    0.0     |    0.0     |    1.0     |
+|   prestar    |            ... nada de prestar un servicio             |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    pasar     |                       2 días ...                       |     happen.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... el desayuno fue igual sin ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |      ... ninguna variación falta opciones en ...       |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|  sorprender  |           ... y me sorprendió que hasta ...            |     perplex.v.01    |   0.125    |    0.25    |   0.625    |
+|    cobrar    |            ... tinto lo cobran y falta ...             |      gain.v.08      |    0.0     |    0.0     |    1.0     |
+|    falta     |        ... cobran y falta mesero permanente ...        |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|      ir      |        ... de servicios fue decepcionante y ...        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     dar      |            ... hora de dar solución con ...            |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    servir    |           ... un margarita servido en la ...           |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   advertir   |        ... usual no advirtieron tampoco que ...        |     inform.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |            ... que no había servicio a ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|  solicitar   |           ... y al solicitar servicios a ...           |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|      ir      |        ... la habitación fueron groseros y ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    decir     |            ... formas de decir las osas ...            |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|      ir      |            ... osas no fue la correcta ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |          ... la correcta tendrían que ser ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... tendrían que ser que ser ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |           ... ser que ser más cordiales ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|              |          ... cordiales de referirse a los ...          |      refer.v.02     |    0.0     |    0.0     |    1.0     |
+|    estar     |         ... día 15/10/2016 estaba fría ya ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  preguntar   |        ... ya al preguntar nos contestaron ...         |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|  contestar   |       ... preguntar nos contestaron que fue ...        |      react.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |        ... contestaron que fue decisión del ...        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     debe     |            ... cosas no debe suceder y ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   suceder    |            ... no debe suceder y menos ...             |     happen.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |            ... del cocteles fue más de ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |              ... una hora es inconcebible              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    fuera     |            ... si yo fuera el encargado ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   alquilar   |            ... no se alquilaría a nadie ...            |      lease.v.03     |    0.0     |    0.0     |    1.0     |
+|   resumir    |           ... a nadie resumiendo es una ...            |     abridge.v.01    |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... nadie resumiendo es una falta ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   hospedar   |           ... respeto que hospeden gente ahí           |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... pilas no había donde poner ...           |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    poner     |           ... había donde poner las toallas            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... del autoservicio es un poco ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    venir     |             ... , como vinimos con una ...             |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|   parecer    |         ... turismo nos pareció costoso el ...         |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|    tener     |            ... pero al tener atención y ...            |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   cambiar    |            ... y servicio cambie de opinión            |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                cocktails consumidos ...                |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   consumir   |           cocktails consumidos con piña ...            |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|   colocar    |            ... con piña colocada y muy ...             |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   preparar   |          ... muy mal preparada al decirle ...          |      make.v.15      |    0.0     |    0.0     |    1.0     |
+|    decir     |             ... al mesero dijo que no ...              |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|    hacer     |             ... que no hacer nada que ...              |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|   preparar   |             ... si la preparaban en el ...             |      make.v.15      |    0.0     |    0.0     |    1.0     |
+|   limpiar    |                      la lama ...                       |      clean.v.01     |    0.0     |   0.125    |   0.875    |
+|    haber     |              ... lama que hay en piso ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     caer     |             ... piso donde cae el agua ...             |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|     ver      |        ... la piscina vimos varias personas ...        |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|   deslizar   |        ... varias personas deslizar por la ...         |      slide.v.03     |    0.0     |    0.0     |    1.0     |
+|    faltar    |           la habitación faltan más baños ...           |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    alojar    |           ... de personas alojadas y más ...           |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+|      ir      |      ... el restaurante fueron muy regulares ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |                    más personal ...                    |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|   mejorar    |                   la iluminación ...                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   mejorar    |                    servicio de ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    falta     |         ... por internet falta armonía en ...          |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    hacer     |                     un segundo ...                     |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    hacer     |          ... hotel y hacer más publicidad ...          |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|  considerar  |                       más la ...                       |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|    poder     |         ... muy regular podrían mejorar el ...         |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   mejorar    |        ... regular podrían mejorar el sitio ...        |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   colocar    |                piso antideslizante ...                 |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   colocar    |          ... ducha para colocar el jabón ...           |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     debe     |            ... 6 personas debe tener 2 ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... personas debe tener 2 baños ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |            ... no lo ofrecen gratis en ...             |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|  encontrar   |      ... habitación se encuentre bolsas para ...       |     detect.v.01     |    0.0     |    0.0     |    1.0     |
+|   revisar    |                       los baños                        |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|     ser      |           ... la piscina es muy pequeño ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |           ... pequeño no tenía energía y ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|  dificultar  |           ... noche se dificulta su uso ...            |    obstruct.v.01    |    0.0     |    0.0     |    1.0     |
+|    deber     |             ... su uso deben tener más ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |           ... uso deben tener más tacos ...            |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |            ... tacos y mejorar condiciones             |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|      ha      |         ... del desayuno ha disminuido la ...          |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|  disminuir   |       ... desayuno ha disminuido la piscina ...        |     consume.v.05    |    0.0     |    0.0     |    1.0     |
+|   requerir   |    ... del huéspedes requiere mejorar ambientación     |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|   mejorar    |      ... huéspedes requiere mejorar ambientación       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    falta     |      ... alimentación les falta más variedad ...       |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    deber     |         ... , atención debería tener menú ...          |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... atención debería tener menú en ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |              desayuno es un desastre ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    dañar     |       ... desastre y dañan esta experiencia ...        |     damage.v.01     |    0.0     |    0.75    |    0.25    |
+|   prestar    |       ... bonita ojala presten los servicios ...       |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    deber     |                     mejorar el ...                     |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                  mejorar el menú ...                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     debe     |            ... de desayuno debe ser más ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... desayuno debe ser más amplio ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     era      |            ... amplio como era antes ya ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     debe     |           ... así que debe mejorar este ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |         ... que debe mejorar este aspecto ...          |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |             ... aspecto o ser como era ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     era      |            ... ser como era antes maíz ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    gustar    |           ... no me gusta deben mejorado ...           |     please.v.01     |   0.625    |    0.0     |   0.375    |
+|    deber     |           ... me gusta deben mejorado y ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |          ... gusta deben mejorado y tengo ...          |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    tener     |     ... mejorado y tengo muchas reclamaciones ...      |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   cambiar    |        ... ya que cambian las experiencias ...         |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|    cerrar    |           ... que para cerrar la puerta ...            |      close.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |                hay adecuación para ...                 |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... y no hay menú variedad ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|  considerar  |        ... variedad y considerar ampliar y ...         |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|   ampliar    |           ... y considerar ampliar y en ...            |       run.v.03      |    0.0     |    0.0     |    1.0     |
+|    haber     |                 ... spa no había cupo                  |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    cobrar    |            ... gusto que cobraran el tinto             |      gain.v.08      |    0.0     |    0.0     |    1.0     |
+|  necesitar   |        ... el autoservicio necesita ser más ...        |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|     ser      |         ... autoservicio necesita ser más ágil         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    gastar    |                    menos papel ...                     |      spend.v.02     |    0.0     |    0.0     |    1.0     |
+|    compra    |                 ... cuando uno compra                  |       buy.v.01      |    0.0     |    0.0     |    1.0     |
+|    falta     |                  falta mucho aseo ...                  |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    estar     |           ... las baños están llenos de ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     dar      |              ... lama y da mucho que ...               |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    pensar    |                  ... mucho que pensar                  |      think.v.01     |    0.0     |    0.0     |    1.0     |
+|     usar     |                   usar bolsas de ...                   |       use.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... vestier no es muy ecológico             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  desmejorar  |          pisos muy desmejorados el lugar ...           |      flaw.v.01      |    0.0     |    0.0     |    1.0     |
+|   terminar   |      ... bueno ojala terminen la remodelación ...      |       end.v.02      |    0.0     |    0.0     |    1.0     |
+|   parecer    |                 parece terrible el ...                 |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|   demorar    |            ... carta se demoran 1 hora ...             |    postpone.v.01    |    0.0     |    0.0     |    1.0     |
+|    servir    |        ... hora para servir deberían hacer ...         |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    deber     |         ... para servir deberían hacer un ...          |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |         ... servir deberían hacer un plato ...         |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |              ... día y es una demora ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   devolver   |         ... demora para devolver el dinero ...         |     return.v.01     |    0.0     |    0.0     |    1.0     |
+|    gustar    |              ... no me gusta la nueva ...              |     please.v.01     |   0.625    |    0.0     |   0.375    |
+|    venir     |           ... mi hermano viene de italia ...           |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    venir     |           ... italia y veníamos con toda ...           |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... que le hace muy peligrosa ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    haber     |                     que hacer ...                      |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    hacer     |                 que hacer ducha y ...                  |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|   revisar    |             ... ducha y revisar la tv ...              |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|     baja     |               ... tv se baja el volumen                |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    poner     |                  albornoces para ...                   |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                   mejorar el web ...                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   realizar   |     ... para extranjeros realizar reservas fue ...     |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|      ir      |      ... realizar reservas fue muy complicado ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  complicar   |            ... fue muy complicado ingresar             |     complex.a.01    |    0.0     |    0.0     |    1.0     |
+|   ingresar   |              ... muy complicado ingresar               |     pull_in.v.03    |   0.125    |    0.0     |   0.875    |
+|    tener     |      ... el restaurante tiene debilidades en ...       |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... baños no es suficientes es ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |          ... es suficientes es mejor otro ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    venir     |              ... no todo ven el mismo ...              |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|     ser      |      ... del personal es altamente calificado ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  calificar   |      ... es altamente calificado para atender ...      |     qualify.v.01    |   0.625    |    0.0     |   0.375    |
+|   atender    |       ... calificado para atender el público ...       |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   requerir   |        ... público otro requiere tener más ...         |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    tener     |       ... otro requiere tener más entrenamiento        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|      ir      |                estadía fue muy positiva                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   colocar    |                  parlantes música ...                  |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   regular    |        manteles sucios regular la atención ...         |    regulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    acabar    |              ... y se acabo el hielo ...               |      kill.v.01      |    0.0     |    0.5     |    0.5     |
+|    servir    |         ... hielo y sirvieron los licores ...          |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... muy buenas tiene que mejorar ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |           ... tiene que mejorar mucho la ...           |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |            ... comida para ser un lugar ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |            ... la comida tiene que ser ...             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... tiene que ser mucho mejor              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |         ... al precio es muy insuficiente ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |          ... carta no es actualizada hay ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  actualizar  |         ... no es actualizada hay comidas ...          |     realize.v.03    |   0.125    |    0.0     |   0.875    |
+|    haber     |         ... es actualizada hay comidas que ...         |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   comedir    |         ... actualizada hay comidas que no ...         |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|    poder     |           ... no se pueden pedir porque ...            |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    pedir     |           ... se pueden pedir porque no ...            |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    haber     |                   ... porque no hay                    |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   explicar   |                me explicaron que la ...                |      tell.v.03      |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... habitaciones no tenían ducha es ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |        ... tenían ducha es una oportunidad ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  adicionar   |   ... una oportunidad adicionar duchas excelente ...   |       add.v.01      |    0.0     |    0.0     |    1.0     |
+|    deber     |              baños deben mejorar son ...               |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |         baños deben mejorar son demasiados ...         |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |     ... deben mejorar son demasiados pequeños ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ver      |              ... y falta vista en la ...               |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|     ser      |                por fa es difícil la ...                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    dejar     |           ... lado no dejaron dormir el ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    dormir    |           ... no dejaron dormir el baño ...            |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|   disponer   |          ... el baño dispuesto para esta ...           |     arrange.v.01    |   0.125    |    0.0     |   0.875    |
+|     era      |               ... el área era en la ...                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... jacuzzi no es bueno es ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... es bueno es incomodo y ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |               ... incomodo y es abierto                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    abrir     |                    ... y es abierto                    |      open.v.01      |    0.0     |    0.0     |    1.0     |
+|    servir    |          ... sifón no sirve la protección ...          |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|  ocasionar   |            ... lo cual ocasiono que un ...             |     produce.v.03    |    0.0     |    0.0     |    1.0     |
+|   lastimar   |            ... años se lastimaran levemente            |     injure.v.01     |    0.0     |    0.5     |    0.5     |
+|   sugerir    |         el restaurante sugiero prohibir el ...         |      hint.v.01      |    0.5     |    0.0     |    0.5     |
+|   prohibir   |    ... restaurante sugiero prohibir el consumo ...     |     prevent.v.01    |    0.25    |    0.0     |    0.75    |
+| incrementar  |                  el mantenimiento ...                  |    increase.v.02    |    0.0     |    0.0     |    1.0     |
+|    falta     |          ... mal estado falta desagüe en ...           |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    tapar     |       ... el lavamanos tapados las cortinas ...        |      hide.v.01      |    0.0     |   0.125    |   0.875    |
+|    estado    |             ... muy mal estado y falta ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |         ... estado y falta recipiente para ...         |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|     ser      |                  conveniente que ...                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   ofrecer    |       conveniente que ofrecieran planes con ...        |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|    tener     |                    que limpiar ...                     |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   limpiar    |              que limpiar las cuartos ...               |      clean.v.01     |    0.0     |   0.125    |   0.875    |
+|    quedar    |             ... vida me quedare en un ...              |       own.v.01      |    0.0     |    0.0     |    1.0     |
+|     era      |          ... hotel que era tan asqueroso ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    morir     |         ... asqueroso bichos muertos en el ...         |       die.v.01      |    0.0     |    0.0     |    1.0     |
+|    ducha     |           ... el piso ducha rota cortina ...           |     shower.v.03     |    0.0     |    0.0     |    1.0     |
+|   destruir   |         ... rota cortina destruida y vasos ...         |      move.v.15      |    0.0     |    0.0     |    1.0     |
+|    tener     |                    una persona ...                     |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   regular    |      ... persona que regule algunas acciones ...       |    regulate.v.02    |    0.0     |    0.0     |    1.0     |
+|     ser      |             único problema es la falta ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    espera    |               ... hora de espera gracias               |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|   cambiar    |                     los tomas ...                      |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|   resistir   |           ... unos que resistan un mayor ...           |     resist.v.02     |    0.0     |    0.0     |    1.0     |
+|  recalentar  |         ... estos se recalientan cuando se ...         |    overheat.v.02    |    0.0     |   0.125    |   0.875    |
+|   conectar   |         ... cuando se conecta cargadores y ...         |    associate.v.01   |    0.0     |    0.0     |    1.0     |
+|    hacer     |         restaurante le hace falta variedad ...         |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    haber     |               ... no la habían cambiado                |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   cambiar    |                 ... la habían cambiado                 |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|    poder     |             comida puede mejorar muchísimo             |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   mejorar    |             comida puede mejorar muchísimo             |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    faltar    |                   poner secador ...                    |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    poner     |                  poner secador de ...                  |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |                      un lugar ...                      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    volver    |            ... lugar maravilloso volveremos            |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                    la atención ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    hacer     |        ... restaurante y hacer rampla para ...         |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    salir     |                       a las ...                        |       die.v.01      |    0.0     |    0.0     |    1.0     |
+|    avisar    |               nos avisaron que había ...               |     inform.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... avisaron que había wifi y ...            |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    poder     |             ... en cuarto podría ser mejor             |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|     ser      |              ... cuarto podría ser mejor               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   manejar    |         ... capitán no maneja servicio al ...          |     oversee.v.01    |    0.0     |    0.0     |    1.0     |
+|     debe     |            ... pésimo no debe estar en ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |             ... no debe estar en hotel ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |           ... hotel no había hielo para ...            |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    poder     |                      tener un ...                      |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    tener     |                     tener un baño                      |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|  recomendar  |                recomendaría a todo ...                 |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|    faltar    |                     armario en ...                     |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    colgar    |        ... habitaciones para colgar ropa mínimo        |      hang.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                        el wifi                         |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   colocar    |                colocar basurera en ...                 |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    sacar     |                      de nuevo ...                      |     remove.v.01     |    0.0     |    0.0     |    1.0     |
+|   cambiar    |        ... y agradable cambiar el desayuno ...         |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... desayuno siempre es lo mismo            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |                clientes frecuentes ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    sentir    |      ... verdad nos sentimos molestos porque ...       |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|    venir     |           ... cada año venimos y varias ...            |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... veces y es la primera ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    estar     |          ... comida no estaba incluida , ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   incluir    |          ... no estaba incluida , vinimos ...          |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|    venir     |           ... incluida , vinimos en plan ...           |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|   parecer    |             ... y nos pareció todo muy ...             |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|   revisar    |                      la ducha ...                      |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|     saca     |           ... ducha que saca agua fuera ...            |     remove.v.01     |    0.0     |    0.0     |    1.0     |
+|    crear     |             ... terapia , creo que se ...              |      find.v.05      |   0.125    |    0.0     |   0.875    |
+|    deber     |          ... que se deberían generar más ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   generar    |        ... se deberían generar más espacios ...        |     create.v.02     |    0.0     |    0.0     |    1.0     |
+|    dejar     |           ... bienestar , dejar un rato ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |       ... chorizos santarrosanos son deliciosos        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    deber     |    habitaciones familiares deberían contar con ...     |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    contar    |       ... familiares deberían contar con dos ...       |      state.v.01     |    0.0     |    0.0     |    1.0     |
+|    decir     |                   dijeron que no ...                   |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... que no había ducha en ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|      ir      |         ... la atención fue buena excepto ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     debe     |          ... desayuno se debe mejorar el ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |           ... se debe mejorar el sentido ...           |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |              ... restaurante no es bueno               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |         ... la alimentación fue bueno pero ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   demorar    |             ... pero muy demorado y no ...             |    postpone.v.01    |    0.0     |    0.0     |    1.0     |
+|    tener     |             ... y no tienen orden para ...             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    servir    |            ... orden para servir y las ...             |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    servir    |         ... no las sirvieron cuando terminamos         |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   terminar   |            ... sirvieron cuando terminamos             |       end.v.02      |    0.0     |    0.0     |    1.0     |
+|      ir      |                ve deteriorada para ...                 |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|  deteriorar  |               ve deteriorada para el ...               |      slip.v.04      |    0.0     |    0.5     |    0.5     |
+|    lindar    |            ... bien muy linda la gente ...             |      reach.v.06     |    0.0     |    0.0     |    1.0     |
+|    haber     |        ... la noche había gente consumiendo ...        |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   consumir   |         ... había gente consumiendo mariguana          |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|   reducir    |    habitación demasiado reducida incomoda para ...     |     consume.v.05    |    0.0     |    0.0     |    1.0     |
+|  incomodar   |      ... demasiado reducida incomoda para el ...       |     perplex.v.01    |   0.125    |    0.25    |   0.625    |
+|    haber     |             ... y no hay donde guardar ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   guardar    |         ... hay donde guardar las maletas ...          |      keep.v.18      |    0.0     |    0.0     |    1.0     |
+|   reducir    |              ... lo que reduce más el ...              |     consume.v.05    |    0.0     |    0.0     |    1.0     |
+|    haber     |                ... y no hay ducha , ...                |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     dar      |         ... ducha , dar mejor información ...          |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... lo que hay que llevar ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    llevar    |              ... hay que llevar a la ...               |    transport.v.02   |    0.0     |    0.0     |    1.0     |
+|    tener     |           ... convenio que tienen con la ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   comprar    |          ... ya que compre entradas para ...           |       buy.v.01      |    0.0     |    0.0     |    1.0     |
+|    poder     |           ... y no puede ingresar porque ...           |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   ingresar   |          ... no puede ingresar porque se ...           |     pull_in.v.03    |   0.125    |    0.0     |   0.875    |
+|  encontrar   |          ... porque se encontraba lleno y ...          |     detect.v.01     |    0.0     |    0.0     |    1.0     |
+|    negar     |              ... y nos negaron el ingreso              |     forbid.v.01     |    0.0     |    0.0     |    1.0     |
+|   atender    |              chica que atiende en la ...               |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|   atender    |      ... taquilla no atiende correctamente a ...       |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    trata     |       ... visitantes los trata con grosería ...        |      treat.v.03     |    0.0     |   0.125    |   0.875    |
+|  considerar  |          ... a yesica considero que para ...           |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|     ser      |              ... este trabajo ser amable               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    volver    |                     a incluir ...                      |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|   incluir    |               a incluir la alimentación                |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|  continuar   |                       con el ...                       |    continue.v.03    |    0.0     |    0.0     |    1.0     |
+|     ser      |      ... plan familiar es demasiado incomodo ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   entender   |       ... tenerlo se entiende la incomodidad ...       |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|   prestar    |        ... del servicio prestado con tanto ...         |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|     ser      |               ... tiempo de ser clientes               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |                 cliente frecuente ...                  |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    estar     |             ... y no estoy de acuerdo ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |        ... la tarifa puede revisar cuantas ...         |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|   revisar    |       ... tarifa puede revisar cuantas veces ...       |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|    haber     |         ... cuantas veces hemos estado en ...          |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    estado    |           ... veces hemos estado en termales           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |                fue excelente buenísimo                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    hacer     |         las noches hacer alguna actividad ...          |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    tener     |          cada que tenemos oportunidad de ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    venir     |        ... oportunidad de venir lo hacemos ...         |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... venir lo hacemos y siempre ...           |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... y siempre es grata nuestra ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   parecer    |              parece importante volver ...              |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|    volver    |        parece importante volver al sistema ...         |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|   incluir    |            ... de todo incluido , antes ...            |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|   reserva    |       ... antes se reserva con alimentación ...        |     reserve.v.04    |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... para huéspedes es más cómodo ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    llamar    |          ... igualmente al llamar y hacer ...          |      raise.v.07     |   0.125    |    0.0     |   0.875    |
+|    hacer     |           ... llamar y hacer la reserva ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|     era      |          ... la información era que solo ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |          ... que solo había para cabañas ...           |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    llegar    |          ... y al llegar están ofreciendo ...          |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    estar     |          ... al llegar están ofreciendo a ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   ofrecer    |         ... llegar están ofreciendo a otro ...         |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|   suponer    |              ... que se supone es que ...              |     assume.v.01     |    0.0     |   0.375    |   0.625    |
+|     ser      |              ... se supone es que al ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   reservar   |           ... que al reservar sí habían ...            |     reserve.v.04    |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... reservar sí habían y para ...            |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... casa finca es muy buen ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   implicar   |     ... porque no implica desplazamientos como ...     |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    llamar    |                  llamo al cliente ...                  |      raise.v.07     |   0.125    |    0.0     |   0.875    |
+|    hacer     |           ... y no hizo ninguna observación            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    pensar    |            regular no pienso en volver ...             |      think.v.01     |    0.0     |    0.0     |    1.0     |
+|    volver    |       ... pienso en volver tener supervisor ...        |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... en volver tener supervisor en ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   escuchar   |          ... área que escuche al cliente ...           |     listen.v.01     |    0.0     |    0.0     |    1.0     |
+|   trabajar   |          ... disponible y trabajar más en ...          |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|    falta     |             ... , les falta sazón pan ...              |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|   congelar   |      ... la mantequilla congelada y necesitan ...      |      cool.v.01      |    0.0     |    0.0     |    1.0     |
+|  necesitar   |        ... congelada y necesitan muchas mejoras        |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|   cambiar    |                    la alfombra ...                     |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|   mejorar    |             ... por piso mejorar los baños             |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |          recomendación es la iluminación ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   revisar    |                      tema de ...                       |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|    falta     |            ... el baño falta poner algo ...            |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    poner     |           ... baño falta poner algo para ...           |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   colocar    |            ... algo para colocar elementos             |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... inconveniente que tuvimos fue la ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|      ir      |         ... que tuvimos fue la habitación ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |       ... habitación que es demasiado húmeda ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    entrar    |         ... desde que entramos la humedad ...          |     record.v.01     |    0.0     |    0.0     |    1.0     |
+|   respirar   |            ... humedad se respira en el ...            |     breathe.v.01    |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                      la señal ...                      |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    deber     |         ... de tv debimos comprar acetaminofén         |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   comprar    |          ... tv debimos comprar acetaminofén           |       buy.v.01      |    0.0     |    0.0     |    1.0     |
+|    dotar     |                     los baños ...                      |     supply.v.01     |    0.0     |    0.0     |    1.0     |
+|    avisar    |           los baños avisar cuando están ...            |     inform.v.01     |    0.0     |    0.0     |    1.0     |
+|    estar     |        ... avisar cuando están en mantenimiento        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |                 señalización como ...                  |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|     ser      |          señalización como es posible que ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    cerrar    |        ... de seguridad cierre las puertas ...         |      close.v.01     |    0.0     |    0.0     |    1.0     |
+|   adecuar    |         ... un aviso adecuado dejando los ...          |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|    dejar     |      ... aviso adecuado dejando los huéspedes ...      |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    llegar    |              ... de cómo llegar a la ...               |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    tocar     |          ... habitación nos tocó por los ...           |      refer.v.02     |    0.0     |    0.0     |    1.0     |
+|    medir     |          ... los propios medido y después ...          |     measure.v.04    |    0.0     |    0.0     |    1.0     |
+|    buscar    |         ... largo rato buscar como llegar ...          |       try.v.01      |    0.0     |    0.0     |    1.0     |
+|    llegar    |            ... buscar como llegar a la ...             |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|   manejar    |                      la misma ...                      |     oversee.v.01    |    0.0     |    0.0     |    1.0     |
+|    haber     |      ... los empleados hubo impertinencia con ...      |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    llamar    |                llamaron a medellín ...                 |      raise.v.07     |   0.125    |    0.0     |   0.875    |
+|   ofrecer    |           ... medellín a ofrecer la cena ...           |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|    decir     |           ... especial y dijimos que sí ...            |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|    llegar    |         ... sí cuando llegamos nadie sabia ...         |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    bajar     |          ... nadie sabia bajamos a comer ...           |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    comer     |            ... bajamos a comer otra vez ...            |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|    decir     |              ... q no dijeron que la ...               |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|     era      |              ... la comida era a las ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    llegar    |               ... 7 y llegamos y que ...               |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|     era      |                ... que no era a las ...                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    deber     |             ... las 8 deben de ponerse ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|              |          ... deben de ponerse de acuerdo ...           |     become.v.01     |    0.0     |    0.0     |    1.0     |
+|    tocar     |          ... acuerdo nos toco esperar la ...           |      refer.v.02     |    0.0     |    0.0     |    1.0     |
+|   esperar    |           ... nos toco esperar la comida ...           |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|    tener     |            ... hora y teníamos frio el ...             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|  desmejorar  |        ... de toallas desmejorado era mejor ...        |      flaw.v.01      |    0.0     |    0.0     |    1.0     |
+|     era      |      ... toallas desmejorado era mejor cuando ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    estar     |       ... mejor cuando estaba pendientes del ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   cambiar    |           ... se les cambiaba la toalla ...            |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|    sentir    |           ... para no sentir frio cuando ...           |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|    salar     |             ... cuando se sale de las ...              |      salt.v.04      |    0.0     |    0.0     |    1.0     |
+|     debe     |           ... piscina se debe estar más ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |          ... se debe estar más pendientes ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  desmejorar  |         ... del hotel desmejorado mucho el ...         |      flaw.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |                 está la habitación ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   requerir   |          ... huésped la requiere haces la ...          |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    lavar     |                      lama en ...                       |      clean.v.01     |    0.0     |   0.125    |   0.875    |
+|  solicitar   |                       a los ...                        |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    estar     |         ... huéspedes cuando estén en las ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    entrar    |             ... piscinas no entrar comida              |     record.v.01     |    0.0     |    0.0     |    1.0     |
+|    faltar    |                    toallas los ...                     |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    estar     |         ... los colchones estaban raros y ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     dar      |             ... raros y dar porción de ...             |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    poner     |                     duchas en ...                      |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|  recomendar  |                 recomendar no dar ...                  |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|     dar      |       recomendar no dar bebidas alcohólicas ...        |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    poner     |          ... piscinas y poner una música ...           |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   revisar    |                     no muestra ...                     |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|   mostrar    |                no muestra imagen y ...                 |     express.v.01    |    0.0     |    0.0     |    1.0     |
+|   explicar   |             ... y no explica que tiene ...             |      tell.v.03      |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... explica que tiene el cuarto ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mostrar    |          ... y no muestra otras opciones ...           |     express.v.01    |    0.0     |    0.0     |    1.0     |
+|    estar     |          ... el lavamanos estaba mojado y ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    mojar     |        ... lavamanos estaba mojado y tenía ...         |       wet.a.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |            ... mojado y tenía mal olor ...             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   arreglar   |                 ... mal olor arreglar                  |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    deber     |             cuartos deberían tener más ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |         cuartos deberían tener más iluminación         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   generar    |                      un plan ...                       |     create.v.02     |    0.0     |    0.0     |    1.0     |
+|  depositar   |        ... mucha basura depositada de forma ...        |       put.v.01      |    0.0     |    0.0     |    1.0     |
+| desorganizar |               ... de forma desorganizada               |     untidy.a.01     |   0.125    |   0.625    |    0.25    |
+|    deber     |            deberían tener medicamentos ...             |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |          deberían tener medicamentos como ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                    la atención ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |              ... los no somos extranjeros              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    contar    |            ... baño no contaba con agua ...            |      state.v.01     |    0.0     |    0.0     |    1.0     |
+|  solucionar  |        ... no se soluciono durante nuestra ...         |     decide.v.02     |    0.0     |    0.0     |    1.0     |
+|    tener     |                  tenemos baños en ...                  |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... y no hay donde colocar ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   colocar    |         ... hay donde colocar los objetos ...          |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                     la comida ...                      |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    pintar    |                   la habitación ...                    |     picture.v.02    |    0.0     |    0.0     |    1.0     |
+|   observar   |        ... habitación se observa humedad en ...        |      note.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |        las habitaciones tengan nevera para ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    sonar     |           ... piscinas solo sonó salsa y ...           |      sound.v.02     |    0.0     |    0.0     |    1.0     |
+|     ser      |                ... y no es para un ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |                       3 días ...                       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    hacer     |         ... la cabaña hace falta servicio ...          |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    hacer     |            ... el baño hace falta tener ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    falta     |           ... baño hace falta tener los ...            |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    tener     |           ... hace falta tener los vasos ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|      ir      |             ... servicio general fue bueno             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   prohibir   |                  consumir comida ...                   |     prevent.v.01    |    0.25    |    0.0     |    0.75    |
+|   consumir   |                 consumir comida y ...                  |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|   vigilar    |          ... las piscinas vigilar que los ...          |     oversee.v.01    |    0.0     |    0.0     |    1.0     |
+|   arrojar    |       ... visitantes no arrojen basuras para ...       |     discard.v.01    |    0.0     |    0.0     |    1.0     |
+|  conservar   |        ... basuras para conservar el medio ...         |      keep.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |                 estuvo de pasadía ...                  |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... de pasadía es mi lugar ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    vengar    |              ... lo menos vengo 1 vez ...              |     revenge.v.01    |    0.0     |    0.5     |    0.5     |
+|    deber     |           ... como no debo bajar escalas ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    bajar     |           ... no debo bajar escalas les ...            |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|   sugerir    |         ... escalas les sugiero vestier en ...         |      hint.v.01      |    0.5     |    0.0     |    0.5     |
+|     ser      |          ... 5 personas sería bueno tener ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |             ... sería bueno tener 2 baños              |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    colgar    |     ... percheros para colgar toallas mojadas ...      |      hang.v.01      |    0.0     |    0.0     |    1.0     |
+|    mojada    |         ... colgar toallas mojadas y chaquetas         |       wet.a.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                    la alimentación                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |          ... las habitaciones es de suma ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   arreglar   |                arreglar el desagüe ...                 |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |             ... agua esto es antihigiénico             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |            ... solo que sería bueno que ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ver      |             ... no se vieran los tubos ...             |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|   parecer    |          ... resto nos pareció súper especial          |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|    parar     |               que no paren el masaje ...               |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   atender    |           ... masaje para atender a los ...            |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    querer    |   ... administración muy querida colaboradora y ...    |      want.v.02      |   0.125    |   0.125    |    0.75    |
+|  necesitar   |          ... siempre se necesitan en una ...           |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|   revisar    |                    servicio tv ...                     |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|  funcionar   |                   ... tv no funciona                   |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|   cuidado    |                   cuidado con la ...                   |      treat.v.03     |    0.0     |   0.125    |   0.875    |
+|    estar     |                       con mi ...                       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    estar     |           ... y le están pidiendo copia ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    pedir     |          ... le están pidiendo copia del ...           |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    haber     |        ... que extranjero hemos viajado por ...        |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    viajar    |       ... extranjero hemos viajado por todos ...       |     travel.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |              ... y no es correcto que ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   impedir    |           ... que nos impidan la entrada ...           |     prevent.v.01    |    0.25    |    0.0     |    0.75    |
+|   informar   |            ... , favor informar en internet            |     inform.v.01     |    0.0     |    0.0     |    1.0     |
+|   colocar    |   ... amable recomendación colocar pasamanos en ...    |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     sea      |                  ... que no sea liso                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |        televisores son demasiados pequeños ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |                incidente fue con la ...                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      | ... de contratación fue desinformado desorganizado ... |       be.v.01       |    0.25    |   0.125    |   0.625    |
+| desorganizar |      ... fue desinformado desorganizado y nos ...      |     untidy.a.01     |   0.125    |   0.625    |    0.25    |
+|  presentar   |          ... y nos presentaron una imagen ...          |     express.v.01    |    0.0     |    0.0     |    1.0     |
+|   cumplir    |      ... que no cumple nuestras expectativas ...       |  carry_through.v.01 |    0.0     |    0.0     |    1.0     |
+|      ir      |               ... el hotel fue excelente               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    echar     |            ... no le echan chicharrón y ...            |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    deber     |          ... lamoso no deberían cobrar el ...          |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    cobrar    |          ... no deberían cobrar el tinto ...           |      gain.v.08      |    0.0     |    0.0     |    1.0     |
+|   hospedar   |                 ... que se hospeda ahí                 |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+|    falta     |                     cambiar puerta                     |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|   cambiar    |                     cambiar puerta                     |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... del desayuno sería bueno que ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    fuera     |            ... bueno que fuera algo más ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   colocar    |                 colocar secador de ...                 |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    haber     |                   hay servicio a ...                   |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    llegar    |               ... wifi no llega a mi ...               |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|  encontrar   |       las habitaciones encontramos arañas y ...        |     detect.v.01     |    0.0     |    0.0     |    1.0     |
+|    sentir    |         ... telarañas se sentía mucho olor ...         |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|  considerar  |                       que la ...                       |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... del termal es muy buena ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     dar      |      ... excelente y da tranquilidad conforta ...      |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|  confortar   |         ... da tranquilidad conforta y lo ...          |     comfort.v.01    |    0.5     |    0.0     |    0.5     |
+|      ir      |               ... no malo fue la las ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poner     |                      luces en ...                      |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |        ... noche y sería bueno calefacción ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |              ... mala no hay room service              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   mostrar    |             ... que nos mostraron , el ...             |     express.v.01    |    0.0     |    0.0     |    1.0     |
+|   guardar    |              ... olor a guardado y la ...              |      keep.v.18      |    0.0     |    0.0     |    1.0     |
+|    quedar    |            ... no nos quedaron ganas de ...            |       own.v.01      |    0.0     |    0.0     |    1.0     |
+|    volver    |                  ... ganas de volver                   |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|    pagar     |          extranjeros no pagan el impuesto ...          |       pay.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |            ... que se hizo del impuesto ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|      ir      |            ... impuesto no fue del 100 ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |              ... 100 % hubo cobros de ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |        ... que se ofrecieron como gratuitos ...        |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... café y hubo demora al ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   entregar   |            ... al a entregar la habitación             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |               ... la comida es muy alto                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    volver    |                 bueno todo volveremos                  |      make.v.02      |    0.0     |    0.0     |    1.0     |
+|     ser      |                        la 2 ...                        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    venir     |             ... vez que venimos y todo ...             |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |                ... y todo fue excelente                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                      el tema ...                       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   mejorar    |                     las camas ...                      |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    poner     |             ... duros y poner mantas y ...             |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |          ... habitación pues hace mucho frío           |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |                 wifi es muy lento ...                  |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    servir    |              ... casi no sirve y unas ...              |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    tener     |             ... las camas tenía olor a ...             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|              |                  ... hora de ducharse                  |     shower.v.03     |    0.0     |    0.0     |    1.0     |
+|    deber     |        ... la cabaña deberían tener vidrios ...        |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |       ... cabaña deberían tener vidrios anti ...       |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    hacer     |            ... la cascada hace mucho ruido             |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    haber     |            ... de ayer hubo mucha gente ...            |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... servicio no fue bueno por ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... el baño es muy pequeño ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |           ... pequeño y había una gotera ...           |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     ser      |                vez ser más atentos ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   atender    |           ... ya que atendieron a otras ...            |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    llegar    |      ... personas que llegaron mucho después ...       |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|   agregar    |     ... nosotros y agregar leche deslactosada ...      |       add.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... la entera hace mucho daño ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... 204 no hay ducha este ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... ducha este hace poco fácil ...           |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|      ir      |              ... estadía para ir a la ...              |     travel.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |                ... la todo es destapado                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   destapar   |                 ... todo es destapado                  |     uncover.v.02    |    0.0     |    0.0     |    1.0     |
+|    deber     |                  debería darse el ...                  |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|              |              debería darse el consumo ...              |     stretch.v.04    |    0.0     |    0.0     |    1.0     |
+|    evitar    |          ... piscina así evitaron accidentes           |     prevent.v.01    |    0.25    |    0.0     |    0.75    |
+|     caer     |                    internet se cae                     |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    haber     |               no había agua caliente ...               |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    estar     |           ... la ducha está taqueado 211 ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  funcionar   |               ... sanitario no funciona                |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|     baja     |              ... 308 no baja bien el ...               |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|     debe     |           contacto se debe realizar con ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   realizar   |          ... se debe realizar con alguien ...          |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... para no tener inconvenientes de ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    deber     |          ... de información debido a que ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    deber     |     ... turistas no deben manejar información ...      |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   manejar    |        ... no deben manejar información de ...         |     oversee.v.01    |    0.0     |    0.0     |    1.0     |
+|  funcionar   |         ... de agua funciona solo después ...          |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|    abrir     |           ... después de abrir la llave ...            |      open.v.01      |    0.0     |    0.0     |    1.0     |
+| desperdiciar |       ... tiempo este desperdicia mucha agua ...       |      waste.v.01     |   0.125    |    0.0     |   0.875    |
+|     ser      |         ... agua por sería bueno arreglar ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   arreglar   |             ... sería bueno arreglar esto              |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   cambiar    |                cambiar proveedor de ...                |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|     era      |             ... el anterior era excelente              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |                pero falta ducha en ...                 |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    estar     |                   más pendientes ...                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    llegar    |             ... que cuando llega uno a ...             |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    estar     |      ... la habitación están desprogramados y ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |              ... y no pueden ver las ...               |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|     ver      |           ... no pueden ver las noticias ...           |    perceive.v.01    |   0.375    |    0.0     |   0.625    |
+|  compensar   |           ... precio no compensa con el ...            |   compensate.v.02   |    0.0     |    0.0     |    1.0     |
+|    tener     |       ... habitaciones y tener más variedad ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    haber     |                     venido en ...                      |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    venir     |                  venido en varias ...                  |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |        ... ocasiones y sería bueno incluir ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   incluir    |         ... sería bueno incluir el masaje ...          |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|    llegar    |        ... porque cuando llegamos las niñas ...        |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... hotel no tenían información de ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    pesar     |            ... cupones a pesar de haber ...            |      count.v.02     |    0.0     |    0.0     |    1.0     |
+|    haber     |             ... pesar de haber sido ya ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... de haber sido ya cobrados              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    cobrar    |                  ... sido ya cobrados                  |      gain.v.08      |    0.0     |    0.0     |    1.0     |
+|    deber     |                   de implementar ...                   |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+| implementar  |            de implementar nuevamente el ...            | follow_through.v.02 |    0.0     |    0.0     |    1.0     |
+|     era      |            ... ya que era muy exquisito ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... comida no es la mejor ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   comedir    |       ... la alimentación comidas rápidas y ...        |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... del spa es pésimo teníamos ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |          ... es pésimo teníamos terapia a ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   atender    |            ... y no atendieron y fuimos ...            |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|      ir      |          ... atendieron y fuimos a hacer ...           |     travel.v.01     |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... fuimos a hacer un llamada ...            |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|    llegar    |            ... llamada y llegamos a las ...            |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|   atender    |           ... no nos atendieron muy déspotas           |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    deber     |        los baños debería tener ventilación ...         |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |       ... baños debería tener ventilación o ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                  mejorar las parejas                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    poder     |                  pudimos abrir la ...                  |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    abrir     |               pudimos abrir la caja ...                |      open.v.01      |    0.0     |    0.0     |    1.0     |
+|    tener     |         habitación 211 tiene problemas en ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   incluir    |                    servicio de ...                     |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |      ... instalación me ofrecieron un cuarto ...       |      offer.v.02     |    0.0     |    0.0     |    1.0     |
+|    tener     |               ... que no tenía el tv ...               |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    tocar     |        ... desprogramado me tocó cambiar de ...        |      refer.v.02     |    0.0     |    0.0     |    1.0     |
+|   cambiar    |           ... me tocó cambiar de habitación            |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|   limpiar    |        ... camarera no limpio la habitación ...        |      clean.v.01     |    0.0     |   0.125    |   0.875    |
+|    estar     |       ... la piscina estuvo en mantenimiento ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   informar   |                  ... y no informaron                   |     inform.v.01     |    0.0     |    0.0     |    1.0     |
+|    dejar     |    ... mantenimiento no dejar ingresar pasadía ...     |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   ingresar   |          ... no dejar ingresar pasadía es ...          |     pull_in.v.03    |   0.125    |    0.0     |   0.875    |
+|     ser      |        ... ingresar pasadía es muy incomodo ...        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    deber     |          ... muy incomodo deberían ir al ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |         ... incomodo deberían ir al balneario          |     travel.v.01     |    0.0     |    0.0     |    1.0     |
+|   lastimar   |                       que en ...                       |     injure.v.01     |    0.0     |    0.5     |    0.5     |
+|    haber     |             ... habitaciones no haya ducha             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    deber     |       y adecuaciones deberían realizarse en ...        |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|              |   ... adecuaciones deberían realizarse en época ...    |     happen.v.04     |    0.0     |   0.125    |   0.875    |
+|     ser      |                   bueno mejorar ...                    |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |            bueno mejorar la iluminación ...            |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |               ... ya que es oscura y ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |           ... el bombillo es ahorrador y ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    crear     |           ... ahorrador y creemos que el ...           |      find.v.05      |   0.125    |    0.0     |   0.875    |
+|     ser      |           ... el personal es muy amable ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |                   fue oportuno y ...                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    falta     |                      ducha en ...                      |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|     dar      |                  nos den tinto y ...                   |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    salir     |            ... muy incomodo salir de la ...            |       die.v.01      |    0.0     |    0.0     |    1.0     |
+|    avenir    |         ... piscina par avenir a recepción ...         |    reconcile.v.03   |    0.0     |    0.0     |    1.0     |
+|    pedir     |        ... recepción a pedir tinto mejorar ...         |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|   mejorar    |          ... pedir tinto mejorar un poco ...           |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |             ... sin ducha es mortal la ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    alojar    |           ... 7 personas alojadas en un ...            |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+|    estar     |              ... ya que está lamoso y ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poder     |          ... lamoso y puede ser peligroso ...          |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... y puede ser peligroso par ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  considerar  |                     que todas ...                      |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|    tener     |           ... las habitaciones tengan ducha            |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     ser      |                   importante la ...                    |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |              tener habitaciones para ...               |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... discapacitadas y tener cinta de ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                      el desayuno                       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   agilizar   |                     tiempos de ...                     |   accelerate.v.01   |    0.0     |    0.0     |    1.0     |
+|    estar     |             ... cuando se está en los ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                    el servicio ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    falta     |            ... cliente me falta que no ...             |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|    tener     |          ... que no tuvieron room service ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    deber     |         ... room service deben equipar las ...         |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   equipar    |     ... service deben equipar las habitaciones ...     |      equip.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |           ... con nevera deben de poner ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    poner     |            ... deben de poner todo tipo ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                 colchones agilidad ...                 |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   ampliar    |                     el tiempo ...                      |       run.v.03      |    0.0     |    0.0     |    1.0     |
+|     dar      |                   facilidad para ...                   |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|  solucionar  |      facilidad para solucionar problemas del ...       |     decide.v.02     |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... la atención es demorada y ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   demorar    |           ... atención es demorada y las ...           |    postpone.v.01    |    0.0     |    0.0     |    1.0     |
+|   atender    |          ... que nos atendieron no tenían ...          |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... atendieron no tenían claro el ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   realizar   |        ... el pedido realizado por nosotros ...        |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|   entregar   |         ... nosotros , entregando mal los ...          |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... habitación 104 hubo cucarachas           |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    deber     |    habitaciones familiares deberían contar dos ...     |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|    contar    |        ... familiares deberían contar dos baños        |      state.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |             esta región es famosa por ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   parecer    |     ... chorizos me parece importante incluir ...      |      look.v.02      |    0.0     |    0.0     |    1.0     |
+|   incluir    |        ... parece importante incluir en el ...         |     include.v.01    |    0.0     |    0.0     |    1.0     |
+| seleccionar  |       ... comida más seleccionada para todos ...       |     choose.v.01     |    0.0     |    0.0     |    1.0     |
+|  recomendar  |                 recomienda buscar una                  |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|    buscar    |                 recomienda buscar una                  |       try.v.01      |    0.0     |    0.0     |    1.0     |
+|    haber     |         ... húmeda pues hay posibilidad de ...         |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    estar     |            ... el piso está muy lamoso ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tomar     |        ... los cuales tomamos la habitación ...        |     choose.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... la habitación es decir ducha ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    decir     |          ... habitación es decir ducha y ...           |      talk.v.02      |    0.0     |    0.0     |    1.0     |
+|    estar     |      ... piscina no estuvieron disponibles en ...      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... servicio no es la adecuada             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   adecuar    |                   ... es la adecuada                   |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|    colada    |              piña colada consumida en ...              |     slip_in.v.01    |    0.0     |    0.25    |    0.75    |
+|   consumir   |            piña colada consumida en la ...             |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|    sanar     |                 ... y no sane a la ...                 |      mend.v.02      |    0.0     |    0.0     |    1.0     |
+|    colada    |             ... la piña colada que se ...              |     slip_in.v.01    |    0.0     |    0.25    |    0.75    |
+|   consumar   |            ... que se consume en otros ...             |       eat.v.02      |    0.0     |    0.0     |    1.0     |
+|    pedir     |       ... otros lugares pedimos reembolso de ...       |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    pagar     |              ... de lo pagado por ese ...              |       pay.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... piña no es justo pagar ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    pagar     |           ... es justo pagar 40.000 por ...            |       pay.v.01      |    0.0     |    0.0     |    1.0     |
+|   cortado    |             ... de piña cortados y la ...              |       cut.v.01      |   0.125    |    0.0     |   0.875    |
+|    tener     |       ... habitación 207 tiene espacio para ...        |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    hacer     |                 ... con bar hace falta                 |      make.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... completo no son adecuados a ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   adecuar    |             ... no son adecuados a la ...              |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|   cumplir    |         ... habitación 209no cumple con el ...         |  carry_through.v.01 |    0.0     |    0.0     |    1.0     |
+|   simular    |      ... unidad sanitaria simulada no cuenta ...       |      feign.v.01     |    0.0     |    0.25    |    0.75    |
+|    contar    |           ... simulada no cuenta con el ...            |      state.v.01     |    0.0     |    0.0     |    1.0     |
+|    alojar    |            ... espacio para alojar a un ...            |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+|  transitar   |        ... ruidoso alto transito tanto del ...         |     transit.v.01    |    0.0     |    0.0     |    1.0     |
+|   filtrar    |            ... cortina no filtra luz , ...             |     filter.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |          ... no se debería considerar ni ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|  considerar  |        ... se debería considerar ni pensar ...         |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|    pensar    |         ... considerar ni pensar en alojar ...         |      think.v.01     |    0.0     |    0.0     |    1.0     |
+|    alojar    |           ... pensar en alojar a alguien ...           |      lodge.v.04     |    0.0     |    0.0     |    1.0     |
+| recomendado  |      ... alguien allí recomendada montañas y ...       |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|   encantar   |                  encantó todo muy ...                  |     please.v.01     |   0.625    |    0.0     |   0.375    |
+|    estado    |               ... en mal estado pasadía                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |                   muy importante ...                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |           muy importante tener un lugar ...            |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|              |       ... discapacitados para cambiarse la ropa        |     change.v.05     |    0.0     |    0.0     |    1.0     |
+|    estar     |              mesas que están al lado ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |             ... la cama son puntadas y ...             |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    dormir    |              ... novio se durmió y se ...              |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|   golpear    |             ... y se golpeo la cabeza ...              |     strike.v.01     |    0.0     |    0.0     |    1.0     |
+|   sangrado   |      ... chichón y sangrado favor solucionar ...       |   shed_blood.v.02   |    0.0     |    0.0     |    1.0     |
+|  solucionar  |      ... sangrado favor solucionar este problema       |     decide.v.02     |    0.0     |    0.0     |    1.0     |
+|    tener     |                     en cuenta ...                      |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    contar    |                  en cuenta que el ...                  |      state.v.01     |    0.0     |    0.0     |    1.0     |
+|    seguir    |            ... el chorro sigue siendo a ...            |      stay.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... chorro sigue siendo a pesar ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    pesar     |             ... siendo a pesar de lama ...             |      count.v.02     |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                      wifi en ...                       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   mejorar    |        ... la habitación mejorar entrega de ...        |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     sea      |                  sea incluido el ...                   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   incluir    |              sea incluido el servicio ...              |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                  la comunicación ...                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|      ir      |           ... la reserva fue muy complicada            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  complicar   |                 ... fue muy complicada                 |     complex.a.01    |    0.0     |    0.0     |    1.0     |
+|    bajar     |             salida para bajar y subir ...              |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|    subir     |           ... bajar y subir al balneario ...           |    increase.v.02    |    0.0     |    0.0     |    1.0     |
+|    tratar    |                     de mejorar ...                     |      treat.v.03     |    0.0     |   0.125    |   0.875    |
+|   mejorar    |                de mejorar el acceso ...                |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   reparar    |        ... lavamanos y reparar linterna del ...        |     repair.v.01     |    0.0     |   0.125    |   0.875    |
+|   colocar    |                 música colombiana ...                  |       put.v.01      |    0.0     |    0.0     |    1.0     |
+| suministrar  |      música colombiana suministrar el número ...       |     supply.v.01     |    0.0     |    0.0     |    1.0     |
+|    poder     |        ... no nos pudimos cuando estábamos ...         |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    estar     |         ... pudimos cuando estábamos en el ...         |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   requerir   |       ... municipio y requeríamos la información       |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|      ir      |                    muy regular ...                     |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    haber     |                 hay agua caliente ...                  |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    correr    |          ... el lavamanos corre agua por ...           |       run.v.06      |    0.0     |    0.0     |    1.0     |
+|    llevar    |             ... afuera que lleva a la ...              |    transport.v.02   |    0.0     |    0.0     |    1.0     |
+|    deber     |            atención y debería por parte ...            |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                    el servicio ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|  solicitar   |        ... restaurante y solicitamos caja y ...        |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|    haber     |              ... y se había dañado la ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    dañar     |             ... se había dañado la máquina             |     damage.v.01     |    0.0     |    0.75    |    0.25    |
+|    haber     |             ... y no hay donde colgar ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    colgar    |            ... hay donde colgar nada ni ...            |      hang.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |            habitación fue entregada con ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   entregar   |          habitación fue entregada con un ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    estar     |            habitaciones están llenas de ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    dormir    |            ... verdad no dormí por esa ...             |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|     ser      |               ... el olor es muy fuerte                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |                  ... del baño es mala                  |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   cambiar    |                    cortinas del ...                    |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|   colocar    |            ... inda y colocar repisa en ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   cambiar    |              ... ducha y cambiar el sifón              |     change.v.01     |    0.0     |    0.0     |    1.0     |
+|     sea      |                    efectivo el ...                     |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    tener     |        ... la habitación tener servicio de ...         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    llamar    |                 llame solicite que ...                 |      raise.v.07     |   0.125    |    0.0     |   0.875    |
+|  solicitar   |               llame solicite que no ...                |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|     dar      |           ... no me dieran la habitación ...           |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    haber     |              ... 209 ya he estado ahí ...              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    estado    |               ... ya he estado ahí y ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |              ... ahí y es muy pequeña ...              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    vendar    |             vende información certera ...              |      sell.v.01      |    0.0     |    0.0     |    1.0     |
+|    vendar    |        ... tanto cuando venden paquetes con ...        |      sell.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |   ... información errónea es publicidad engañosa ...   |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |          ... engañosa y es castigada por ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   castigar   |           ... y es castigada por cotelco ...           |     punish.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |                    varias cosas ...                    |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   mejorar    |        ... cosas por mejorar mobiliario de ...         |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |               ... 307 ya es hora de ...                |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  remodelar   |      ... de cambiarlo remodelar las habitaciones       |     retool.v.01     |    0.0     |    0.0     |    1.0     |
+|   incluir    |                      jugo de ...                       |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|     debe     |                      de haber ...                      |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |                     fue excelente                      |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                      la carta ...                      |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   acertar    |        ... los platos acertados no tuvimos ...         |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|    tener     |       ... acertados no tuvimos calentador en ...       |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|    estar     |          ... estadía no estaba visible la ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   esperar    |       ... los huéspedes esperamos 40 minutos ...       |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|   mejorar    |          ... la comida mejorar calidad de ...          |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |              ... que no es justo que ...               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poner     |            ... que lo pongan a esperar ...             |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   esperar    |           ... pongan a esperar dos horas ...           |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|    poder     |        ... larguísimas para poder subir al ...         |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    subir     |           ... para poder subir al hotel ...            |    increase.v.02    |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... por que hay congestión en ...            |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    venir     |        ... y nosotros vinimos desde bogotá ...         |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|     dar      |              ... y nadie dio la cara ...               |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    pedir     |             ... cara para pedir disculpas              |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|     ser      |              ... de internet es muy malo               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                   auto servicio ...                    |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   reducir    |                     la presión ...                     |     consume.v.05    |    0.0     |    0.0     |    1.0     |
+|    tratar    |         ... habitación y tratar de reducir ...         |      treat.v.03     |    0.0     |   0.125    |   0.875    |
+|   reducir    |          ... tratar de reducir la humedad ...          |     consume.v.05    |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                   la iluminación ...                   |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     ser      |           ... de comidas es muy demorado ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   demorar    |              ... es muy demorado y no ...              |    postpone.v.01    |    0.0     |    0.0     |    1.0     |
+|    haber     |               ... y no hay quien atienda               |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   atender    |                 ... hay quien atienda                  |      serve.v.10     |    0.0     |    0.0     |    1.0     |
+|    dormir    |                       en la ...                        |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|     ser      |           ... 213 y es imposible dormir ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    dormir    |            ... es imposible dormir y al ...            |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|    haber     |             ... al lado hay un vestier ...             |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... el ruido es impresionante lo ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    apagar    |        ... impresionante lo apagaron a las ...         |   switch_off.v.01   |    0.0     |    0.0     |    1.0     |
+|    poder     |              ... niña no pudo dormir bien              |    displace.v.03    |    0.0     |    0.0     |    1.0     |
+|    dormir    |                ... no pudo dormir bien                 |      sleep.v.01     |    0.0     |   0.125    |   0.875    |
+|    tener     |               instrucciones escritas ...               |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   escribir   |           instrucciones escritas en las ...            |     written.a.01    |    0.0     |    0.0     |    1.0     |
+|    haber     |                 hay salvavidas en ...                  |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|   intentar   |          ... y lo intentaron arreglar dos ...          |       try.v.01      |    0.0     |    0.0     |    1.0     |
+|   arreglar   |        ... lo intentaron arreglar dos veces ...        |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|  funcionar   |                  ... y nunca funcionó                  |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|    deber     |                  preocuparse más ...                   |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|              |                preocuparse más por ...                 |      treat.v.03     |    0.0     |   0.125    |   0.875    |
+|    pasar     |                ... los que pasan el día                |     happen.v.01     |    0.0     |    0.0     |    1.0     |
+|    tener     |             las habitaciones tengan duchas             |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                      el moho ...                       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|     dar      |             ... del baño da mal apariencia             |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    tomar     |                      un plan ...                       |     choose.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |          ... la habitación fue muy básico ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   incluir    |       ... información que incluía pétalos de ...       |     include.v.01    |    0.0     |    0.0     |    1.0     |
+|      ir      |                    ... y no fue así                    |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|      ir      |            ... mi estancia fue la misma ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     ser      |        ... misma de son cubano instrumental ...        |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  solicitar   |          ... horas y solicité cambiarla y ...          |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|      ir      |              ... la respuesta fue que no               |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  recomendar  |                 recomienda que la ...                  |    recommend.v.01   |    0.0     |   0.125    |   0.875    |
+|     ser      |       ... la recepcionista sean más educados ...       |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    educar    |           ... sean más educados son muy ...            |      teach.v.01     |    0.5     |    0.0     |    0.5     |
+|     ser      |         ... más educados son muy groseros ...          |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   respetar   |         ... groseros que respeten la gente ...         |     respect.v.01    |    0.5     |    0.0     |    0.5     |
+|  intoxicar   |        ... mala me intoxique con empanadas ...         |      elate.v.01     |    0.5     |    0.0     |    0.5     |
+|    llegar    |                 ... sr arbeláez llego                  |     arrive.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |                 hubo personal para ...                 |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    subir     |       ... personal para subir maletas muchas ...       |    increase.v.02    |    0.0     |    0.0     |    1.0     |
+|   permitir   |          ... menú no permitir el consumo ...           |       let.v.01      |    0.0     |    0.0     |    1.0     |
+|    dejar     |            ... y bebidas dejando de las ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|  funcionar   |        ... wifi no funciona correctamente y ...        |    function.v.01    |    0.0     |    0.0     |    1.0     |
+|  conseguir   |        ... o imposible conseguir hielo una ...         |     achieve.v.01    |   0.125    |   0.125    |    0.75    |
+|   maquinar   |           ... hielo una maquina de hielo ...           |      plot.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... bar no fue adecuada falta ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   adecuar    |        ... no fue adecuada falta amabilidad ...        |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|    falta     |        ... fue adecuada falta amabilidad y ...         |      miss.v.06      |   0.125    |    0.0     |   0.875    |
+|     ser      |              ... el internet es muy lento              |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                      el wifi ...                       |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    tener     |         ... habitación que tengan una neverita         |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|     baja     |             ... baño no baja por favor ...             |     descend.v.01    |    0.0     |    0.0     |    1.0     |
+|   revisar    |                 ... por favor revisar                  |      check.v.01     |    0.5     |    0.0     |    0.5     |
+|     ser      |                 recomendable poner ...                 |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|    poner     |            recomendable poner una doble ...            |       put.v.01      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |          ... ducha y mejorar la ubicación ...          |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|   aumentar   |                     el control ...                     |    increase.v.02    |    0.0     |    0.0     |    1.0     |
+|   adecuar    |          ... con ropa adecuada a piscinas ...          |       fit.a.01      |    0.5     |    0.0     |    0.5     |
+|   mejorar    |                     el ingreso ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
+|    tener     |          ... por que tuvimos que esperar ...           |   give_birth.v.01   |    0.0     |    0.0     |    1.0     |
+|   esperar    |           ... tuvimos que esperar 1 hora ...           |       ask.v.04      |   0.125    |    0.0     |   0.875    |
+|   ingresar   |           ... hora para ingresar , sería ...           |     pull_in.v.03    |   0.125    |    0.0     |   0.875    |
+|     ser      |           ... ingresar , sería bueno que ...           |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|     dar      |         ... que nos dieran preferencias al ...         |      give.v.10      |    0.0     |    0.0     |    1.0     |
+|    haber     |              ... cocina no había papelera              |       be.v.03       |    0.0     |    0.0     |    1.0     |
+|    deber     |           ... los desayunos debido a que ...           |       owe.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... 4 días es desagradable 2 ...            |       be.v.01       |    0.25    |   0.125    |   0.625    |
+|  considerar  |                      que las ...                       |    think_of.v.03    |    0.0     |    0.0     |    1.0     |
+|    pedir     |            ... se les pida su profesión ...            |   necessitate.v.01  |    0.25    |    0.25    |    0.5     |
+|   mejorar    |                    el internet ...                     |     better.v.02     |   0.375    |    0.0     |   0.625    |
++--------------+--------------------------------------------------------+---------------------+------------+------------+------------+

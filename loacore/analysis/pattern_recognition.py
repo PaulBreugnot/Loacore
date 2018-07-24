@@ -329,23 +329,50 @@ def opposite_recognition(patterns):
                 print(str(node_synset.neg_score) + "    " + str(child_synset.neg_score))
 
 
-def print_patterns(patterns, PoS_tag_display=False, label_display=False, display=True):
-    patterns_str = ''
+def verb_context_table(sentences, context_length=2):
+    from prettytable import PrettyTable
+    table = PrettyTable(["Verb", "context", "synset", "Polarity +", "Polarity -", "Polarity ="])
+    for sentence in sentences:
+        for word in sentence.words:
+            if word.PoS_tag is not None and word.PoS_tag[0] == 'V':
+                str_list = []
+                i = word.sentence_index
+                while i > 0 and word.sentence_index - i <= context_length:
+                    str_list.insert(0, sentence.words[i].word)
+                    i -= 1
+                if i > 0:
+                    str_list.insert(0, "...")
+
+                i = word.sentence_index + 1
+                while i < len(sentence.words) and i - word.sentence_index <= context_length:
+                    str_list.append(sentence.words[i].word)
+                    i += 1
+                if i < len(sentence.words):
+                    str_list.append("...")
+
+                if word.synset is not None:
+                    table.add_row([word.lemma, ' '.join(str_list), word.synset.synset_name,
+                                   str(word.synset.pos_score), str(word.synset.neg_score), str(word.synset.obj_score)])
+    return table.get_string()
+
+
+def adj_pattern_table(sentences, lang='en'):
+    from prettytable import PrettyTable
+    table = PrettyTable(
+        ["Noun", "N_Polarity +", "N_Polarity -", "Adj", "A_Polarity +", "A_Polarity -"])
+    if lang == 'en':
+        patterns = pos_tag_patterns_recognition(sentences, [['N'], ['JJ']])
+    elif lang == 'es':
+        patterns = pos_tag_patterns_recognition(sentences, [['N'], ['A']])
+
     for pattern in patterns:
-        patterns_str += "( "
-        for node in pattern[:-1]:
-            patterns_str += str(node.word.word)
-            if PoS_tag_display:
-                patterns_str += " : " + str(node.word.PoS_tag)
-            if label_display:
-                patterns_str += " : " + str(node.label)
-            patterns_str += ", "
-        patterns_str += str(pattern[-1].word.word)
-        if PoS_tag_display:
-            patterns_str += " : " + str(pattern[-1].word.PoS_tag)
-        if label_display:
-            patterns_str += " : " + str(pattern[-1].label)
-        patterns_str += " )\n"
-    if display:
-        print(patterns_str)
-    return patterns_str
+        if pattern[0].word.synset is not None and pattern[1].word.synset is not None:
+            if (pattern[0].word.synset.pos_score > pattern[0].word.synset.neg_score
+                    and pattern[1].word.synset.pos_score < pattern[1].word.synset.neg_score):
+                table.add_row([pattern[0].word.word,
+                               pattern[0].word.synset.pos_score,
+                               pattern[0].word.synset.neg_score,
+                               pattern[1].word.word,
+                               pattern[1].word.synset.pos_score,
+                               pattern[1].word.synset.neg_score])
+    return table.get_string()

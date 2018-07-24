@@ -115,13 +115,36 @@ def load_database(id_files=[], load_reviews=True, load_sentences=True, load_word
 
 
 def get_id_files_by_file_paths(file_paths_re):
+    """
+    This function can be used to retrieve file ids in database from their path.\n
+    All the regular expression in the ** argument list** will be checked.\n
+    For more information about how Python regular expressions work, see https://docs.python.org/3/library/re.html .
+
+    :param file_paths_re: Regular expressions to check
+    :type file_paths_re: :obj:`list` of :obj:`string`
+    :return: Ids of matching files.
+    :rtype: :obj:`list` of :obj:`int`
+
+    :Example:
+    Find if files of files in an uci folder.
+
+        >>> import loacore.load.file_load as file_load
+        >>> ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+        >>> print(ids)
+        [1, 2, 3]
+
+    .. note::
+
+        The full path of a file (as saved in the database) can be used as a regular expression.
+
+    """
     import re
 
     id_files = []
-    files = load_database(id_files=[], load_reviews=False, load_sentences=False, load_words=False, load_deptrees=False)
+    files = load_database(load_reviews=False, load_sentences=False, load_words=False, load_deptrees=False)
     for file_path_re in file_paths_re:
         for file in files:
-            regexp = "r'" + file_path_re + "'"
+            regexp = file_path_re
             if re.fullmatch(regexp, file.file_path) is not None:
                 id_files.append(file.id_file)
 

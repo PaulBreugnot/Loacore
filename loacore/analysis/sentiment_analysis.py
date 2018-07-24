@@ -300,8 +300,10 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_patte
 
                 CC_to_print = []
 
-                sentence.print_sentence()
                 pos_score, neg_score = children_rec(dep_tree.root, CC_to_print)
+
+                if len(CC_to_print) > 0:
+                    sentence.print_sentence()
                 for node in CC_to_print:
                      print("ROOT NODE : ", node.word.word)
                      dep_tree.print_dep_tree(root=node)

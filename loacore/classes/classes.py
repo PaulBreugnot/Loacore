@@ -14,6 +14,42 @@ class File:
         self.file_path = file_path
         self.reviews = []
 
+    def sentence_list(self):
+        """
+        Convenient way to get all the sentences of the file, avoiding Reviews.
+
+        :return: List of file sentences
+        :rtype: :obj:`list` of :class:`Sentence`
+        """
+        sentences = []
+        for review in self.reviews:
+            sentences += review.sentences
+        return sentences
+
+    def get_directory_name(self):
+        import re
+        return re.findall(r'.*/(.+)/.+\.txt', self.file_path)[0]
+
+    def get_filename(self):
+
+        import re
+        return re.findall(r'.+/(.+\.txt)', self.file_path)[0]
+
+    @staticmethod
+    def sentence_list_from_files(files):
+        """
+        Convenient way to get all the sentences of the specified files, avoiding Reviews.
+
+        :param files: Files
+        :type files: :obj:`list` of :class:`File`
+        :return: List of file sentences
+        :rtype: :obj:`list` of :class:`Sentence`
+        """
+        sentences = []
+        for file in files:
+            sentences += file.sentence_list()
+        return sentences
+
     def load(self, encoding='windows-1252'):
         """
         Load file from file system using :attr:`file_path` and specified encoding.

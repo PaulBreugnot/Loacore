@@ -1,0 +1,571 @@
++--------------+-----------------------------------------------------+------------------------+------------+------------+------------+
+|     Verb     |                       context                       |         synset         | Polarity + | Polarity - | Polarity = |
++--------------+-----------------------------------------------------+------------------------+------------+------------+------------+
+|    hacer     |                      frío y ...                     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    haber     |           ... y no hay ambientación de ...          |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|     sea      |               el hueco sea más pequeño              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    hacer     |                    mucho frío ...                   |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   cambiar    |                   almohadas y ...                   |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|   ensuciar   |           ... para no ensuciar el cabello           |      pollute.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |            ... ambiente , hace mucho frío           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     sea      |           el horario sea más temprano ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    estar     |            ... am para estar un poco ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   relajar    |                ... poco más relajado                |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|     ser      |                único es que hace ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    hacer     |            ... es que hace mucho frío ...           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    sentir    |                    la música ...                    |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    poder     |           ... el masaje puede ser más ...           |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... masaje puede ser más fuerte ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |            ... fuerte para ser excelente            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poner     |                 calefacción por ...                 |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    poner     |                   un radiador ...                   |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    emitir    |            ... algo que emita calor , ...           |       utter.v.02       |   0.125    |    0.0     |   0.875    |
+|    pensar    |                      que el ...                     |       think.v.01       |    0.0     |    0.0     |    1.0     |
+|    deber     |           ... el sitio debería ser más ...          |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|     ser      |        ... sitio debería ser más climatizado        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  climatizar  |               ... ser más climatizado               |  air-conditioned.s.01  |    0.0     |    0.0     |    1.0     |
+|     ser      |     ... la remodelación es insoportable hace ...    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    hacer     |         ... es insoportable hace que la ...         |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    perder    |            ... la terapia pierda sentido            |       lose.v.01        |    0.0     |    0.5     |    0.5     |
+|   realizar   |    ... trabajadores que realizan la remodelación    |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    estar     |             ... y todo estuvo excelente             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    estar     |        bueno que estén en remodelaciones ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |                   personas muy ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    sentir    |             ... , me sentí muy bien ...             |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    seguir    |             ... muchas gracias sigan así            |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|    gustar    |                  gustó mucho su ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|     ser      |           ... su atención son muy amables           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    sentir    |                 sentí súper bien ...                |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|      ir      |    ... muchísimas gracias fue una experiencia ...   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   mejorar    |                    la presión ...                   |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|   reducir    |              ... con movilidad reducida             |      consume.v.05      |    0.0     |    0.0     |    1.0     |
+|    volver    |                       volveré                       |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    querer    |        profesionales muy queridas , excelente       |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|    volver    |                       volveré                       |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    volver    |                  máximo volveremos                  |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|     ser      |    ... única recomendación sería proveer las ...    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   proveer    |    ... recomendación sería proveer las batas ...    |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                                                     |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    hacer     |                hizo un excelente ...                |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    ayudar    |         agua caliente ayudaría a mejorar ...        |       help.v.01        |    0.0     |    0.0     |    1.0     |
+|   mejorar    |          ... ayudaría a mejorar la terapia          |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|     ser      |                     muy amables                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    seguir    |                  sigan así con ...                  |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|     vale     |          ... muy agradable vale la pena ...         |       cost.v.01        |    0.0     |    0.0     |    1.0     |
+|   emplear    |                   otras formas ...                  |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|   atender    |          ... que me atendió dahiana fue ...         |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|      ir      |           ... atendió dahiana fue especial          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |                   muy difícil ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |          ... difícil de tener un tiempo ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... la ducha es muy mala ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |           ... muy mala tiene muy poca ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    poder     |            ... no se puede retirar el ...           |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|   retirar    |           ... se puede retirar el lodo ...          |      remove.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |           ... lugar no es muy privado ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   privado    |           ... es muy privado gracias a ...          |      private.a.01      |    0.0     |   0.125    |   0.875    |
+|    tener     |                    en cuenta ...                    |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    contar    |             en cuenta aspectos como ...             |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|  fortalecer  |          ... cuerpo se fortalece , más ...          |    strengthen.v.01     |    0.0     |    0.0     |    1.0     |
+| implementar  |                     de nuevo ...                    |  follow_through.v.02   |    0.0     |    0.0     |    1.0     |
+|     sea      |                    ... lo que sea                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |                   más personal ...                  |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |     ... terapéutico para ser atendido mínimo ...    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   atender    |       ... para ser atendido mínimo minutos ...      |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|   requerir   |       ... minutos al requerir el procedimiento      |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|   utilizar   |                 los instrumentos ...                |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |        ... las terapeutas hacen una gran ...        |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     era      |                     era muy bien                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  continuar   |                  prestando tan ...                  |     continue.v.03      |    0.0     |    0.0     |    1.0     |
+|   prestar    |             prestando tan excelente ...             |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|   encantar   |           perfecto me encantó la niña ...           |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   trabajar   |                  ... que me trabajó                 |     function.v.01      |    0.0     |    0.0     |    1.0     |
+|   aplicar    |                        aplica                       |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    deber     |                   colocar agua ...                  |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|   colocar    |              colocar agua caliente ...              |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    deber     |               colocar calefacción ...               |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|   colocar    |              colocar calefacción en ...             |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   realizar   |      ... espacio para realizar terapias con ...     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    poner     |                       elevador                      |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   encantar   |               encantó el servicio ...               |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   instalar   |                    agua caliente                    |      install.v.01      |    0.0     |    0.0     |    1.0     |
+|    ubicar    |                    tapetes o ...                    |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    evitar    |         ... , para evitar posible caídas ...        |      prevent.v.01      |    0.25    |    0.0     |    0.75    |
+|   escucha    |           ... que se escucha la música ...          |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|    salir     |            ... tapetes al salir de la ...           |        die.v.01        |    0.0     |    0.0     |    1.0     |
+|   ofertar    |                   terapias en ...                   |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |                   más variedad ...                  |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   escuchar   |            ... para no escuchar a las ...           |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|    poder     |                     ser más ...                     |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |                ser más agradable ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poder     |         ... si se puede percibir olores ...         |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|   percibir   |     ... se puede percibir olores relajantes ...     |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    tener     |              baños tienen mal olor ...              |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |         ... olor , deberían tener donde ...         |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... , deberían tener donde poner ...        |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    poner     |          ... tener donde poner la ropa ...          |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|     oler     |                 baños huelen muy mal                |       smell.v.02       |    0.0     |    0.0     |    1.0     |
+|   regresar   |                                                     |      return.v.01       |    0.0     |    0.0     |    1.0     |
+|  magnificar  |            magnifica alternativa para ...           |       laud.v.01        |    0.75    |    0.0     |    0.25    |
+|  finalizar   |      ... alternativa para finalizar un gran ...     |        end.v.02        |    0.0     |    0.0     |    1.0     |
+|    vengar    |                que vengo me hago ...                |      revenge.v.01      |    0.0     |    0.5     |    0.5     |
+|    hacer     |           ... vengo me hago un masaje ...           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|  descansar   |              ... momento para descansar             |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|   escuchar   |                  escuche más la ...                 |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|    dejar     |                    cargar los ...                   |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    cargar    |               cargar los celulares ...              |     transport.v.02     |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                  la temperatura ...                 |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|    gustar    |                 gustaría un poco ...                |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    gustar    |                 gusta vuelvo mañana                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    volver    |                 gusta vuelvo mañana                 |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    poner     |            ... donde se pone la cera ...            |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... la camilla es muy dura ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poner     |            ... dura , poner algo más ...            |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |                 más aromaterapia ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    haber     |         ... excelente no hay recomendaciones        |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    pedir     |              lo que pedí el masaje ...              |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|   parecer    |            ... relajación me pareció bien           |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|  aromatizar  |                     el lugar ...                    |      perfume.v.01      |    0.0     |    0.0     |    1.0     |
+|    hacer     |          ... donde se hacen los masajes ...         |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    tener     |           ... los baños tienen muy mal ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    situar    |          música situada diferente para ...          |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   escuchar   |              ... no se escuche el ruido             |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |            terapeutas son muy amables ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   procurar   |                     que los ...                     |      search.v.01       |    0.0     |    0.0     |    1.0     |
+|    hacer     |          ... externos y hacer aromaterapia          |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   relajar    |                  atenta y relajada                  |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|   instalar   |                     el agua ...                     |      install.v.01      |    0.0     |    0.0     |    1.0     |
+|    gustar    |                     gusta mucho                     |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    volver    |                     bien volveré                    |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                  felicito , la ...                  |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|      ir      |          ... la atención fue muy buena ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |            ... el lugar es muy cómodo ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    estar     |               estuvo increíble el ...               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poder     |             ... masaje no pudo ser mejor            |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|     ser      |                ... no pudo ser mejor                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      ir      |                   fue buena y ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    deber     |     ... baños servicios deben mejorar rentar ...    |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|   mejorar    |    ... servicios deben mejorar rentar toallas ...   |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|    rentar    |        ... deben mejorar rentar toallas o ...       |        net.v.02        |    0.0     |    0.0     |    1.0     |
+|   incluir    |           ... toallas o incluir con el ...          |      include.v.01      |    0.0     |    0.0     |    1.0     |
+|    durar     |                       dure más                      |       last.v.01        |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                   al masajista ...                  |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|     ser      |                   es cómodo el ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  atravesar   |          ... que esta atravesado en el ...          |      transit.v.01      |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... una sugerencia es cubrir los ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    cubrir    |        ... sugerencia es cubrir los ojos ...        |       cover.v.01       |    0.0     |    0.0     |    1.0     |
+|    crear     |                     que debe ...                    |       find.v.05        |   0.125    |    0.0     |   0.875    |
+|     debe     |                que debe tener más ...               |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |             que debe tener más personas             |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    sentar    |           ... ducha se siente muy mal ...           |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    poner     |            ... donde se pone el rosto ...           |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |          ... el rosto tiene pliegues y ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    causar    |          ... pliegues y causan dolor en ...         |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     ser      |                  niñas son divinas                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    deber     |          camillas deberían estar frente ...         |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|    estar     |         camillas deberían estar frente a ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    estar     |       señora adriana estaba muy pendiente ...       |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    pensar    |           ... mi y pienso regresar al ...           |       think.v.01       |    0.0     |    0.0     |    1.0     |
+|   regresar   |           ... y pienso regresar al spa ...          |      return.v.01       |    0.0     |    0.0     |    1.0     |
+|      ir      |             ... al spa fue espectacular             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  preguntar   |                    al usuario ...                   |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|    querer    |                ... que presión quiere               |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|    deber     |            camillas deberían tener un ...           |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |       camillas deberían tener un orificio ...       |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   reposar    |        ... orificio para reposar la cara ...        |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |            quintero hizo un excelente ...           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     ser      |                   bueno tener ...                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |           bueno tener horarios disponibles          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   realizar   |      ... profesionalismo al realizar su trabajo     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|  agradecer   |                agradecida por el ...                |    appreciate.v.01     |   0.125    |   0.125    |    0.75    |
+|  continuar   |     ... profesional , continúen así gracias ...     |     continue.v.03      |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                     la masajista                    |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |               ... servicios q ofrecen               |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|     dar      |           ... no me dieron reporte de ...           |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|    haber     |              ... de que había spa y ...             |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    tocar     |           ... spa y tocó averiguar con ...          |       refer.v.02       |    0.0     |    0.0     |    1.0     |
+|  averiguar   |           ... y tocó averiguar con un ...           |       learn.v.02       |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... ellas no son atentas para ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   ofrecer    |      ... atentas para ofrecer los servicios ...     |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... el personal es excelente            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |                tengan más terapeutas                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     sea      |              la camilla sea más cómoda              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |                   un perchero ...                   |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    poner     |            ... mesa par poner la ropa ...           |        put.v.01        |    0.0     |    0.0     |    1.0     |
+| suministrar  |        ... masajes , suministrar a todos ...        |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |    ... desechable y ofrecer velas encendidas ...    |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   encender   |       ... ofrecer velas encendidas en toda ...      |      ignite.v.01       |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... , felicidades tiene un lugar ...        |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    crear     |          ... servicios y creo que deben ...         |       find.v.05        |   0.125    |    0.0     |   0.875    |
+|    deber     |       ... creo que deben aprovecharlo más ...       |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                   camillas se ...                   |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|    clava     |            camillas se clava un poco ...            |    concentrate.v.02    |   0.125    |    0.0     |   0.875    |
+|    haber     |               hubiera gustado que ...               |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    gustar    |              hubiera gustado que mi ...             |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|  suspender   |      ... terapeuta no suspendiera el masaje ...     |     interrupt.v.01     |    0.0     |    0.0     |    1.0     |
+|   atender    |        ... masaje para atender al cliente ...       |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|  necesitar   |      ... cliente que necesito información , ...     |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|  interferir  |         ... pues esto interfiere con el ...         |     interfere.v.01     |    0.0     |    0.0     |    1.0     |
+|   atender    |              atendieron súper bien ...              |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|    volver    |            ... bien , vuelvo en diciembre           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    poner     |                   camilla con ...                   |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |                     un poco ...                     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   retrasar   |         temperatura se retraso porque un ...        |     postpone.v.01      |    0.0     |    0.0     |    1.0     |
+|   cumplir    |          ... huésped np cumplió el horario          |   carry_through.v.01   |    0.0     |    0.0     |    1.0     |
+|    seguir    |                  sigan así muy ...                  |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|    sentir    |                  sentí muy bien ...                 |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   atender    |           ... muy bien atendida sigan así           |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|    seguir    |             ... bien atendida sigan así             |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+| promocionar  |                     más los ...                     |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|   privado    |       ... por canal privado los servicios ...       |      private.a.01      |    0.0     |   0.125    |   0.875    |
+| promocionar  |                      más el ...                     |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|   privado    |                 ... en canal privado                |      private.a.01      |    0.0     |   0.125    |   0.875    |
+|    decir     |                    cuando va ...                    |       talk.v.02        |    0.0     |    0.0     |    1.0     |
+|      ir      |                cuando va hacer de ...               |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    hacer     |             cuando va hacer de posición             |       make.v.03        |    0.0     |    0.0     |    1.0     |
+| especializar |     ... del personal especializado que sigan ...    |      skilled.a.01      |   0.625    |    0.0     |   0.375    |
+|    seguir    |           ... especializado que sigan así           |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|    elevar    |                 elevado el costo ...                |     increase.v.02      |    0.0     |    0.0     |    1.0     |
+|   cambiar    |                     muy postizos                    |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|   realizar   |     posibilidad de realizar reservaciones o ...     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    poner     |          ... hotel , poner más volantes ...         |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    llegar    |           ... , cuando llegamos no habían           |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|    haber     |                ... llegamos no habían               |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|   mantener   |               se mantengan así muy ...              |       keep.v.01        |    0.0     |    0.0     |    1.0     |
+| recomendado  |                                                     |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|    poder     |     ... los bañistas puedan estar pendiente ...     |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|    estar     |      ... bañistas puedan estar pendiente de ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poner     |            ... pereira , poner , más ...            |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    durar     |                 dure más tiempo ...                 |       last.v.01        |    0.0     |    0.0     |    1.0     |
+|    poner     |                se pone la cabeza ...                |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    poner     |       ... la cabeza poner algo desechable ...       |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    poner     |           ... mundo no ponga la cabeza ...          |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   encantar   |                encantaría que le ...                |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    bajar     |           ... que le bajaran el precio ...          |      descend.v.01      |    0.0     |    0.0     |    1.0     |
+|    estar     |         ... resto todo está bien daniela ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  felicitar   |       ... daniela te felicito tienes manos ...      |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    tener     |         ... te felicito tienes manos de ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   atender    |     ... daniela nos atendió desde recepción ...     |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|     ser      |          ... recepción y es muy atenta ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  complacer   |                      complacida                     |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   calentar   |                     un poco ...                     |       heat.v.01        |    0.0     |    0.0     |    1.0     |
+|    abrir     |        ... vestidores camino abierto a la ...       |       open.v.01        |    0.0     |    0.0     |    1.0     |
+|      ir      |                     fue muy bien                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    gustar    |                 gustó mucho por ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    gustar    |               gustó la experiencia ...              |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|  felicitar   |                     por tan ...                     |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    estar     |      ... aunque todo estuvo maravilloso un ...      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   distraer   |          ... para no distraer al masajista          |      perturb.v.01      |    0.0     |   0.125    |   0.875    |
+|   escuchar   |             no se escuche la música ...             |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+| interrumpir  |      ... afuera porque interrumpe la relajación     |     interrupt.v.01     |    0.0     |    0.0     |    1.0     |
+|    hacer     |              ... el spa hace mucho frío             |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   utilizar   |             que utilizo la terapeuta ...            |        use.v.01        |    0.0     |    0.0     |    1.0     |
+| complementar |                piedras volcánicas ...               |     complete.v.02      |   0.125    |    0.0     |   0.875    |
+|  felicitar   |       ... volcánicas y felicito a daniela ...       |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                    al equipo ...                    |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    evitar    |                     el ruido ...                    |      prevent.v.01      |    0.25    |    0.0     |    0.75    |
+|    evitar    |                     el ruido ...                    |      prevent.v.01      |    0.25    |    0.0     |    0.75    |
+|    tener     |       excelente masajista tiene unas manos ...      |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   bendecir   |           ... unas manos benditas por dios          |       bless.v.01       |    0.0     |    0.0     |    1.0     |
+|    poder     |                podría mejorar la ...                |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|   mejorar    |         podría mejorar la insonorización ...        |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|     ser      |        ... del spa es agradable escuchar ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   escuchar   |        ... es agradable escuchar el agua ...        |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|   distraer   |         ... en ocasiones distrae un poco ...        |      perturb.v.01      |    0.0     |   0.125    |   0.875    |
+|    tener     |         ... cada cabina tenga algo para ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   guardar    |        ... algo para guardar los objetos ...        |       keep.v.18        |    0.0     |    0.0     |    1.0     |
+|    estar     |           ... manta para estar más cómodo           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |       ... posibilidad de tener una camilla ...      |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|  felicitar   |         ... atención y felicitare por el ...        |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|  desempeñar  |              ... el trabajo desempeñado             |       wield.v.01       |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                    a daniela ...                    |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   prestar    |       ... atención , prestan un excelente ...       |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|    hacer     |             ... lo cual hace ver si ...             |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     ver      |       ... cual hace ver si profesionalismo ...      |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   atender    |         ... hora de atender los clientes ...        |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|      ir      |              ... cual me voy muy a ...              |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|   relajar    |         ... masaje me relajo mi espalda ...         |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|  necesitar   |                ... lo que necesitaba                |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|   bendecir   |              ... jesucristo te bendiga              |       bless.v.01       |    0.0     |    0.0     |    1.0     |
+|   bendecir   |                 ... dios te bendiga                 |       bless.v.01       |    0.0     |    0.0     |    1.0     |
+| acondicionar |                acondicionado caliente               |        fix.v.12        |    0.0     |    0.0     |    1.0     |
+|   encantar   |                       encantó                       |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   cambiar    |                       cambien                       |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|   bendecir   |            dios los bendiga por esas ...            |       bless.v.01       |    0.0     |    0.0     |    1.0     |
+|    tener     |      ... labores de tener paciencia gracias ...     |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   sugerir    |                 sugiero no tapar ...                |       hint.v.01        |    0.5     |    0.0     |    0.5     |
+|    tapar     |            sugiero no tapar la vista ...            |       hide.v.01        |    0.0     |   0.125    |   0.875    |
+|    tener     |        ... espectacular que tiene con un ...        |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   relajar    |             ... que se relaja con el ...            |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|    lograr    |            ... lo que logran es dañar ...           |      achieve.v.01      |   0.125    |   0.125    |    0.75    |
+|     ser      |            ... que logran es dañar el ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    dañar     |         ... logran es dañar el concepto ...         |      damage.v.01       |    0.0     |    0.75    |    0.25    |
+|    tener     |      ... natural que tienen espectacular el ...     |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    volver    |           ... de angie volveré mil gracias          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|  recomendar  |           masajes recomendaría que la ...           |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|     sea      |          ... las camillas sea hacia la ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    cascar    |             ... hacia la cascad , no ...            |    masturbate.v.02     |    0.5     |    0.0     |    0.5     |
+|    poner     |            ... , no poner adhesivos a ...           |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   obstruir   |          ... ya que obstruyen la vista ...          |     obstruct.v.01      |    0.0     |    0.0     |    1.0     |
+|    quita     |         ... cascada y quita una entrada ...         |      remove.v.01       |    0.0     |    0.0     |    1.0     |
+|    poner     |                     calefacción                     |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|  interferir  |                     mucho el ...                    |     interfere.v.01     |    0.0     |    0.0     |    1.0     |
+|    deber     |       ... exterior , deberían tener otras ...       |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |       ... , deberían tener otras opciones ...       |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   parecer    |      ... camilla me parece demasiado grande ...     |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|    torna     |           ... y se torna incomodo para ...          |      become.v.01       |    0.0     |    0.0     |    1.0     |
+|    poner     |          ... incomodo para poner la cabeza          |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   escucha    |                 escucha mucho el ...                |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|   relajar    |               relajado el ambiente ...              |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|     ser      |                    ideal que ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   escuchar   |           ... no se escuchara el ruido ...          |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|     dar      |                     algo de ...                     |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|    tomar     |             algo de tomar después de ...            |      choose.v.01       |    0.0     |    0.0     |    1.0     |
+|    sentir    |                  me sentí muy bien                  |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|  facilitar   |                     el pago ...                     |      supply.v.01       |    0.0     |    0.0     |    1.0     |
+|      ir      |            ... spa se ve afectada ya ...            |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   afectado   |            ... se ve afectada ya que ...            |      affect.v.01       |   0.125    |    0.0     |   0.875    |
+|    tener     |            ... ya que tuve que pasar ...            |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    pasar     |          ... tuve que pasar por varias ...          |      happen.v.01       |    0.0     |    0.0     |    1.0     |
+|    sacar     |           ... cajas , sacar mi tarjeta ...          |      remove.v.01       |    0.0     |    0.0     |    1.0     |
+|    tener     |        ... mi tarjeta teniendo una cuenta ...       |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    abrir     |                ... una cuenta abierta               |       open.v.01        |    0.0     |    0.0     |    1.0     |
+|     dar      |                    una bebida ...                   |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|   iniciar    |            ... antes de iniciar o frutas            |     get_down.v.07      |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                       a la ...                      |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|  ambientar   |        ... terapeuta , ambientar con más ...        |    acclimatize.v.01    |    0.0     |   0.375    |   0.625    |
+|   escuchar   |            ... no se escuchaba por el ...           |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                     a gladys ...                    |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|     ver      |            ... gladys nos veremos pronto            |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|      ir      |                  muy favorable ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   parecer    |               me pareció muy bien ...               |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|   parecer    |       ... terapeuta me pareció muy amable ...       |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|    hacer     |                   masajes con ...                   |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   dedicar    |         ... la terapeuta dedicada y con ...         |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|    tener     |     ... excelente si tuviera la oportunidad ...     |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    volver    |         ... la oportunidad volvería otra vez        |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                       a la ...                      |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   encantar   |                encantó el masaje ...                |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|     ser      |            ... espalda que es lo que ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    dolar     |                   ... más me duele                  |      suffer.v.06       |    0.0     |    0.5     |    0.5     |
+|   sugerir    |                especificación en ...                |       hint.v.01        |    0.5     |    0.0     |    0.5     |
+|    volver    |          el servicio volveré muy buena ...          |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    seguir    |              muy bien sigan así los ...             |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                 ... así los felicito                |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    quedar    |         ... labor dahiana quede divinamente         |        own.v.01        |    0.0     |    0.0     |    1.0     |
+|   agradar    |                 agrada un lugar ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    tratar    |            ... donde lo traten a uno ...            |       treat.v.03       |    0.0     |   0.125    |   0.875    |
+|   ofrecer    |            ... y le ofrecen el mejor ...            |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|    sentir    |           ... y me sentí muy relajada ...           |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   relajar    |           ... sentí muy relajada y muy ...          |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+| promocionar  |                     más este ...                    |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|    pagar     |                  pagando el spa ...                 |        pay.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |            ... el spa tengo un tiempo ...           |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|   ingresar   |          ... corto para ingresar a las ...          |      pull_in.v.03      |   0.125    |    0.0     |   0.875    |
+|    estar     |                   estuvo muy bien                   |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     dar      |                  más promoción ...                  |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |       ... lugar nos ofrecieron el servicio ...      |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|    haber     |         ... de lo hubiéramos buscado no ...         |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    buscar    |         ... lo hubiéramos buscado no lo ...         |        try.v.01        |    0.0     |    0.0     |    1.0     |
+|    haber     |              ... no lo hubiera obtenido             |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|   obtener    |               ... lo hubiera obtenido               |       reach.v.01       |    0.0     |    0.0     |    1.0     |
+| implementar  |              implementen más cosas ...              |  follow_through.v.02   |    0.0     |    0.0     |    1.0     |
+|    estar     |              ... resto todo estuvo bien             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    añadir    |                   in elemento ...                   |        add.v.01        |    0.0     |    0.0     |    1.0     |
+|      ir      |                    muy bueno ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      ir      |      ... las personas fueron muy profesionales      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poder     |          ... olores eso puede hacer que ...         |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... eso puede hacer que uno ...           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+| transportar  |           ... uno se transporte a otro ...          |     transport.v.02     |    0.0     |    0.0     |    1.0     |
+|   parecer    |            me pareció muy profesional ...           |       look.v.02        |    0.0     |    0.0     |    1.0     |
+| identificar  |       ... de amable identifico mi problema ...      |     identify.v.01      |    0.0     |    0.0     |    1.0     |
+|   superar    |      ... decirle , supero mis expectativas ...      | get_the_better_of.v.01 |    0.0     |    0.0     |    1.0     |
+|  disminuir   |                    la entrada ...                   |      consume.v.05      |    0.0     |    0.0     |    1.0     |
+|   atender    |           ... que me atiende es amable ...          |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... me atiende es amable y ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     dar      |           ... cálida , da confianza el ...          |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|  felicitar   |                   la terapeuta ...                  |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   atender    |           ... que me atendió y juliana ...          |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+| promocionar  |                    al momento ...                   |     advertise.v.02     |    0.0     |    0.0     |    1.0     |
+|    sentir    |             sentí completamente relajada            |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   relajar    |             sentí completamente relajada            |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|   atender    |      ... señoritas que atienden usen sacos ...      |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|     usar     |        ... que atienden usen sacos porque ...       |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |         ... sacos porque hace mucho frío ...        |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    sentar    |           ... también se sientan excelente          |        sit.v.01        |    0.0     |    0.0     |    1.0     |
+|    tener     |           ... si que tengan en cuentan ...          |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    contar    |           ... tengan en cuentan que el ...          |       state.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |             ... el clima es muy frío ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    estar     |       ... terapeutas no están abrigadas no ...      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |              ... abrigadas no es justo              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   calentar   |                 calentar el lodo ...                |       heat.v.01        |    0.0     |    0.0     |    1.0     |
+|    sentir    |        ... lodo para sentir más comodidad ...       |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|     debe     |           ... las duchas debe ser más ...           |        owe.v.01        |    0.0     |    0.0     |    1.0     |
+|     ser      |         ... duchas debe ser más fuertes ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poder     |         ... fuertes para poder quitar el ...        |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|    quitar    |          ... para poder quitar el lodo ...          |      remove.v.01       |    0.0     |    0.0     |    1.0     |
+|    vender    |                       el lodo                       |       sell.v.01        |    0.0     |    0.0     |    1.0     |
+|    alejar    |             sitio más alejado de los ...            |       debar.v.02       |    0.0     |    0.0     |    1.0     |
+|    gustar    |                        gusta                        |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|     ser      |             ... ya que éramos dos y ...             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    haber     |             ... y no había sino una ...             |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|   colocar    |                  agua caliente ...                  |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   colocar    |                  agua caliente ...                  |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   encantar   |                encantaría que en ...                |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   utilizar   |     ... bambuterapia se utilizaran menos las ...    |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |                     falta un ...                    |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    falta     |                  falta un reloj ...                 |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|   cambiar    |         ... reloj para cambiar el tiempo ...        |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|    seguir    |                    igual van ...                    |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|      ir      |                igual van muy bien ...               |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    poner     |                    chimenea y ...                   |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   incluir    |                   paquetes de ...                   |      include.v.01      |    0.0     |    0.0     |    1.0     |
+|      ir      |          ... del personal fue muy buena ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   brindar    |           ... muy buena brindan un muy ...          |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   brindar    |           ... cual me brindo el masaje ...          |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|     nota     |          ... se le nota lo profesional ...          |       note.v.01        |    0.0     |    0.0     |    1.0     |
+|    estar     |                 estuvo muy bien ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    volver    |        ... pase súper volveré pronto gracias        |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    falta     |              ... pero le falta el café              |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|     ser      |                 espectacular que ...                |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |         espectacular que tuvieran peluquería        |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|  felicitar   |               felicito al personal ...              |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   ofrecer    |   ... amable servicial ofrecen mucha confianza ...  |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   brindar    |        ... mucha confianza brindan privacidad       |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|      ir      |         ... y sonidos fueron muy buenos ...         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  continuar   |                    continuar así                    |     continue.v.03      |    0.0     |    0.0     |    1.0     |
+|    hacer     |       felicitaciones hicieron un excelente ...      |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    sentir    |        ... trabajo me sentí muy relajada ...        |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|   relajar    |           ... sentí muy relajada y muy ...          |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|  felicitar   |                      por el ...                     |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|   revisar    |                     el ruido ...                    |       check.v.01       |    0.5     |    0.0     |    0.5     |
+|      ir      |              delicioso me fue muy bien              |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tratar    |         ... diana me trataron como reina ...        |       treat.v.03       |    0.0     |   0.125    |   0.875    |
+|     ser      |            ... del masaje es un poco ...            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  incomodar   |        ... un poco incomoda la terapeuta ...        |      perplex.v.01      |   0.125    |    0.25    |   0.625    |
+|    tener     |         ... la terapeuta tenía las uñas ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... lo cual hacía el masaje ...           |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    hacer     |     ... incómodo y hacía muchos movimientos ...     |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   repetir    |           ... muchos movimientos repetidos          |      answer.v.01       |    0.0     |    0.25    |    0.75    |
+|    tratar    |             ... que me trato , para ...             |       treat.v.03       |    0.0     |   0.125    |   0.875    |
+|   mejorar    |        ... , para mejorar las terapeutas ...        |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|    hacer     |       ... terapeutas me hacían los mismos ...       |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   recibir    |              recibimos una llamada ...              |      derive.v.02       |    0.0     |    0.0     |    1.0     |
+|    llegar    |       ... la terapeuta llegamos 20 minutos ...      |      arrive.v.01       |    0.0     |    0.0     |    1.0     |
+|   recibir    |      ... no nos recibieron bien diciéndonos ...     |      derive.v.02       |    0.0     |    0.0     |    1.0     |
+|      ir      |            ... y nos fuimos del sitio ...           |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |     ... , lamentablemente somos clientes de ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    haber     |        ... nunca nos había ocurrido algo ...        |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|   ocurrir    |       ... nos había ocurrido algo similar ...       |      happen.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |              ... la cabaña es excelente             |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   permitir   |         ... piso no permitió un ambiente ...        |        let.v.01        |    0.0     |    0.0     |    1.0     |
+|  climatizar  |                                                     |  air-conditioned.s.01  |    0.0     |    0.0     |    1.0     |
+|    gustar    |             gustaría escuchar música ...            |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   escuchar   |           gustaría escuchar música con ...          |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|    saber     |            ... terapeuta , sabe de su ...           |       know.v.01        |    0.0     |    0.0     |    1.0     |
+|    poder     |                     usar las ...                    |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+|     usar     |                  usar las aguas ...                 |        use.v.01        |    0.0     |    0.0     |    1.0     |
+|   incluir    |             ... spa o incluir en el ...             |      include.v.01      |    0.0     |    0.0     |    1.0     |
+| incrementar  |         ... pero no incrementar tanto el ...        |     increase.v.02      |    0.0     |    0.0     |    1.0     |
+|    gustar    |                 gusta todas las ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    gustar    |                  gusto mucho el ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|      ir      |      ... el servicio fue magnifico quedamos ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  magnificar  |     ... servicio fue magnifico quedamos muy ...     |       laud.v.01        |    0.75    |    0.0     |    0.25    |
+|    quedar    |      ... fue magnifico quedamos muy satisfechos     |        own.v.01        |    0.0     |    0.0     |    1.0     |
+|  satisfacer  |             ... quedamos muy satisfechos            |      satisfy.v.01      |    0.5     |    0.0     |    0.5     |
+|  necesitar   |            necesita calefacción hace ...            |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|    hacer     |         necesita calefacción hace mucho frío        |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    gustar    |                  gusto mucho el ...                 |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|      ir      |      ... el servicio fue magnifico quedamos ...     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  magnificar  |     ... servicio fue magnifico quedamos muy ...     |       laud.v.01        |    0.75    |    0.0     |    0.25    |
+|    quedar    |      ... fue magnifico quedamos muy satisfechos     |        own.v.01        |    0.0     |    0.0     |    1.0     |
+|  satisfacer  |             ... quedamos muy satisfechos            |      satisfy.v.01      |    0.5     |    0.0     |    0.5     |
+|     ser      |                     muy frío ...                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |          ... frío no es confortable es ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |         ... es confortable es hermoso el ...        |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    tener     |                más concentración ...                |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|     ser      |                   excelentes y ...                  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    hacer     |              bueno hicieron todo lo ...             |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|    sentir    |               ... que no sintiera frío              |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|  felicitar   |                  felicito a la ...                  |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|      ir      |                      lo máximo                      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   ofrecer    |                  bebidas calientes                  |       offer.v.02       |    0.0     |    0.0     |    1.0     |
+|   adecuar    |           ... por favor adecuar el spa ...          |       befit.v.01       |   0.375    |    0.0     |   0.625    |
+|    falta     |                     sonido y ...                    |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|   atender    |                ... que me atendieron                |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|   escuchar   |            ... que se escuche más en ...            |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|   parecer    |             pareció súper excelente ...             |       look.v.02        |    0.0     |    0.0     |    1.0     |
+|     ser      |      ... el personal son muy profesionales ...      |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   prestar    |               ... el servicio prestado              |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|  preguntar   |                     que tipo ...                    |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|    querer    |           ... de masaje quiere ya que ...           |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|   preferir   |      ... que algunos preferimos más fuertes ...     |      choose.v.02       |    0.0     |    0.0     |    1.0     |
+|    estar     |            ... , pero estuvo bien gracias           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   generar    |     ... que esta generando las adecuaciones ...     |      create.v.02       |    0.0     |    0.0     |    1.0     |
+|     ser      |                     un poco ...                     |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    seguir    |                  así felicitaciones                 |       stay.v.01        |    0.0     |    0.0     |    1.0     |
+|     ser      |           masaje frío es estimulante y ...          |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|   permitir   |    ... no me permitió relajarme completamente ...   |        let.v.01        |    0.0     |    0.0     |    1.0     |
+|   cambiar    | ... relajarme completamente cambiamos cabinas y ... |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... y taladros es ruido va ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      ir      |            ... es ruido va en contra ...            |      travel.v.01       |    0.0     |    0.0     |    1.0     |
+|    cerrar    |                ... momento de cerrar                |       close.v.01       |    0.0     |    0.0     |    1.0     |
+|   mejorar    |                     el ruido ...                    |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|   escucha    |                 escucha el ruido ...                |      listen.v.01       |    0.0     |    0.0     |    1.0     |
+|   mejorar    |          frío mejorar sitio cerrándolo ...          |      better.v.02       |   0.375    |    0.0     |   0.625    |
+|     sea      |            ... para que sea más caliente            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    haber     |           ... del spa hay mucho ruido ...           |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|     ser      |               ... ruido y es muy frío               |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      ir      |           ... el masaje fue muy buena ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     dado     |            ... que me dado muy relajante            |       give.v.10        |    0.0     |    0.0     |    1.0     |
+|   atender    |      ... que nos atendieron son excelentes ...      |       serve.v.10       |    0.0     |    0.0     |    1.0     |
+|     ser      |   ... nos atendieron son excelentes felicitaciones  |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  felicitar   |                      felicitar                      |   congratulate.v.02    |    0.0     |    0.0     |    1.0     |
+|    querer    |          ... verdad no quería hacerlo y ...         |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|    hacer     |             ... esposa lo hice y me ...             |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|   encantar   |         ... y me encantó excelente todo ...         |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|      ir      |             ... de daniela fue excelente            |        be.v.01         |    0.25    |   0.125    |   0.625    |
+| recomendado  |               recomendado el sitio ...              |     recommend.v.01     |    0.0     |   0.125    |   0.875    |
+|  agradecer   |            ... los terapeutas agradecidos           |    appreciate.v.01     |   0.125    |   0.125    |    0.75    |
+|    sentir    |                 sentimos en todo ...                |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    estar     |            ... el masaje estuvo excelente           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  necesitar   |                necesita un calentador               |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|  necesitar   |              necesita un calentador ...             |    necessitate.v.01    |    0.25    |    0.25    |    0.5     |
+|    hacer     |      ... calentador porque hace mucho frío ...      |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|  disfrutar   |         ... cabeza pero disfruté mucho y ...        |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   relajar    |             ... y me relajé por completo            |       relax.v.04       |    0.0     |   0.625    |   0.375    |
+|   sugerir    |           spa solo sugiero tener agua ...           |       hint.v.01        |    0.5     |    0.0     |    0.5     |
+|    tener     |          ... solo sugiero tener agua de ...         |    give_birth.v.01     |    0.0     |    0.0     |    1.0     |
+|      ir      |                    fue excelente                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|      ir      |                    fue muy buena                    |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|     ser      |            ... muy bueno es huésped y ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|  frecuentar  |           ... huésped y frecuenta el hotel          |     frequent.v.02      |    0.0     |    0.0     |    1.0     |
+|      ir      |                  fue muy amable ...                 |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    poner     |            ... sin duda pone su mejor ...           |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|   realizar   |       ... empeño para realizar su trabajo ...       |       make.v.03        |    0.0     |    0.0     |    1.0     |
+|     ser      |            ... de espalda es algo muy ...           |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    crear     |        ... lo que creemos conozco sitios ...        |       find.v.05        |   0.125    |    0.0     |   0.875    |
+|   conocer    |        ... que creemos conozco sitios que ...       |       know.v.01        |    0.0     |    0.0     |    1.0     |
+|    haber     |        ... sitios que han creado opciones ...       |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    crear     |      ... que han creado opciones enfocadas ...      |       form.v.02        |    0.0     |    0.0     |    1.0     |
+|   enfocar    |       ... creado opciones enfocadas en su ...       |    concentrate.v.02    |   0.125    |    0.0     |   0.875    |
+|    haber     |     ... tratamiento y han podido incrementar ...    |        be.v.03         |    0.0     |    0.0     |    1.0     |
+|    poder     |         ... y han podido incrementar su ...         |     displace.v.03      |    0.0     |    0.0     |    1.0     |
+| incrementar  |      ... han podido incrementar su cantidad ...     |     increase.v.02      |    0.0     |    0.0     |    1.0     |
+|    volver    |            ... atención excelente volveré           |       make.v.02        |    0.0     |    0.0     |    1.0     |
+|    querer    |                 ... niña muy querida                |       want.v.02        |   0.125    |   0.125    |    0.75    |
+|    gustar    |                 gustaría que las ...                |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|    estar     |         ... las duchas estuvieran más cerca         |        be.v.01         |    0.25    |   0.125    |   0.625    |
+|    gustar    |      ... pero me gustaría una aromaterapia ...      |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   encantar   |                       encantó                       |      please.v.01       |   0.625    |    0.0     |   0.375    |
+|   invitar    |                    al usuario ...                   |      receive.v.05      |    0.0     |    0.0     |    1.0     |
+|   retrasar   |       ... para no retrasar nuestros turnos ...      |     postpone.v.01      |    0.0     |    0.0     |    1.0     |
+|   sugerir    |       ... nuestros turnos sugerir con ropa ...      |       hint.v.01        |    0.5     |    0.0     |    0.5     |
+|    citar     |                    10 minutos ...                   |       note.v.01        |    0.0     |    0.0     |    1.0     |
+|    llenar    |          ... antes para llenar la ficha ...         |       fill.v.01        |    0.0     |    0.0     |    1.0     |
+|   cambiar    |                     las cambien                     |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|   cambiar    |                     las cambien                     |      change.v.01       |    0.0     |    0.0     |    1.0     |
+|    faltar    |                   ambiente musical                  |       miss.v.06        |   0.125    |    0.0     |   0.875    |
+|    sentir    |            maravilla me sentí como en ...           |     perceive.v.01      |   0.375    |    0.0     |   0.625    |
+|    poner     |                        música                       |        put.v.01        |    0.0     |    0.0     |    1.0     |
+|    hacer     |           ... del cuello hacer un poco ...          |       make.v.03        |    0.0     |    0.0     |    1.0     |
++--------------+-----------------------------------------------------+------------------------+------------+------------+------------+

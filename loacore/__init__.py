@@ -1,5 +1,6 @@
 import os
 
+RESULT_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'results')
 DATA_PATH = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..', 'data')
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 
