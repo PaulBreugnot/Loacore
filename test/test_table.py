@@ -39,4 +39,4 @@ def adj_patterns_table():
         file_writer.write(table, directory, file.get_filename())
 
 
-adj_patterns_table()
+# adj_patterns_table()

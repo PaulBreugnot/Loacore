@@ -330,6 +330,36 @@ def opposite_recognition(patterns):
 
 
 def verb_context_table(sentences, context_length=2):
+    """
+    Return a string table with the following fields :
+
+        - Verb : a word with a verb PoS_tag
+        - Context : the context of the words. *context_length* defines the number of words to display before and after
+          the verb.
+        - synset : name of the synset associated to the verb
+        - polarity + : positive polarity
+        - polarity - : negative polarity
+        - polarity = : objective polarity
+
+    :param sentences: Sentences to process
+    :type sentences: :obj:`list` of :class:`Sentence`
+    :param context_length: Number of words to display before and after the verb.
+    :type context_length: int
+    :return: Table as a :obj:`string`
+    :rtype: string
+
+    :Example:
+        Load files from uci and corrected folders (after they have been added to database) and print their verb context
+        tables.
+
+        >>> import loacore.load.file_load as file_load
+        >>> import loacore.analysis.pattern_recognition as pattern_recognition
+        >>> ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+', r'.*/corrected/.+'])
+        >>> files = file_load.load_database(id_files=ids, load_deptrees=False)
+        >>> for file in files:
+        ...     print(pattern_recognition.verb_context_table(file.sentence_list()))
+        ...
+    """
     from prettytable import PrettyTable
     table = PrettyTable(["Verb", "context", "synset", "Polarity +", "Polarity -", "Polarity ="])
     for sentence in sentences:
@@ -356,7 +386,44 @@ def verb_context_table(sentences, context_length=2):
     return table.get_string()
 
 
-def adj_pattern_table(sentences, lang='en'):
+def adj_pattern_table(sentences, polarity_commuter_only=True, lang='en'):
+    """
+    Return a string table with the following fiels :
+
+        - Noun : word with a Noun PoS_tag, with an associated adjective
+        - N_Polarity + : noun positive polarity
+        - N_Polatity - : noun negative polarity
+        - Adj : word with an Adjective PoS_tag, associated to the Noun according to the sentence dependency tree
+        - A_Polarity + : adjective positive polarity
+        - A_Polarity - : adjective negative polarity
+
+    Only the words associated to a synset are considered.
+
+    :param sentences: Sentences to process
+    :type sentences: :obj:`list` of :class:`Sentence`
+    :param polarity_commuter_only:
+        If True, only the patterns that are subject to a polarity commutation are displayed, i.e. those constituted by a
+        positive noun associated to a negative adjective.
+    :type polarity_commuter_only: boolean
+    :param lang:
+        Language used. (PoS_tags and dependency labels to match are chosen accordingly) Possible values : 'en', 'es'
+    :type lang: string
+    :return: Table as a :obj:`string`
+    :rtype: string
+
+    :Example:
+        Load Spanish files from corrected folder (previously added to database) and print their adj pattern table, with
+        polarity commutation only.
+
+        >>> import loacore.load.file_load as file_load
+        >>> import loacore.analysis.pattern_recognition as pattern_recognition
+        >>> ids = file_load.get_id_files_by_file_paths([r'.*/corrected/.+'])
+        >>> files = file_load.load_database(id_files=ids)
+        >>> for file in files:
+        ...     print(pattern_recognition.adj_pattern_table(file.sentence_list(), lang='es'))
+        ...
+
+    """
     from prettytable import PrettyTable
     table = PrettyTable(
         ["Noun", "N_Polarity +", "N_Polarity -", "Adj", "A_Polarity +", "A_Polarity -"])
@@ -366,13 +433,23 @@ def adj_pattern_table(sentences, lang='en'):
         patterns = pos_tag_patterns_recognition(sentences, [['N'], ['A']])
 
     for pattern in patterns:
-        if pattern[0].word.synset is not None and pattern[1].word.synset is not None:
-            if (pattern[0].word.synset.pos_score > pattern[0].word.synset.neg_score
-                    and pattern[1].word.synset.pos_score < pattern[1].word.synset.neg_score):
+        if polarity_commuter_only:
+            if pattern[0].word.synset is not None and pattern[1].word.synset is not None:
+                if (pattern[0].word.synset.pos_score > pattern[0].word.synset.neg_score
+                        and pattern[1].word.synset.pos_score < pattern[1].word.synset.neg_score):
+                    table.add_row([pattern[0].word.word,
+                                   pattern[0].word.synset.pos_score,
+                                   pattern[0].word.synset.neg_score,
+                                   pattern[1].word.word,
+                                   pattern[1].word.synset.pos_score,
+                                   pattern[1].word.synset.neg_score])
+        else:
+            if pattern[0].word.synset is not None and pattern[1].word.synset is not None:
                 table.add_row([pattern[0].word.word,
                                pattern[0].word.synset.pos_score,
                                pattern[0].word.synset.neg_score,
                                pattern[1].word.word,
                                pattern[1].word.synset.pos_score,
                                pattern[1].word.synset.neg_score])
+
     return table.get_string()

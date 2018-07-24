@@ -82,7 +82,7 @@ def test_verb_table():
 
 # process()
 # show_dep_trees(load_uci())
-pattern_test()
+# pattern_test()
 # show_adj_patterns(load_uci())
 # show_verb_patterns(load_uci())
 # test_verb_table()
