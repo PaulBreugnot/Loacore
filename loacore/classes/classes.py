@@ -71,19 +71,21 @@ class Review:
     :vartype file_index: int
     :ivar review: Review represented as a string
     :vartype review: string
-    :ivar polarity: review polarity: 0 or 1
-    :vartype polarity: int
     :ivar sentences: Review Sentences
     :vartype sentences: :obj:`list` of :class:`Sentence`
+    :ivar polarities:
+        Polarities associated to the review, that can come from directly from the source file for polarity label
+        datasets, or from the result of different analysis. Each polarity can be identified with its analysis attribute.
+    :vartype polarity: :obj:`list` of :class:`Polarity`
     """
 
-    def __init__(self, id_review, id_file, file_index, review, polarity=None):
+    def __init__(self, id_review, id_file, file_index, review):
         self.id_review = id_review
         self.id_file = id_file
         self.file_index = file_index
         self.review = review
-        self.polarity = polarity
         self.sentences = []
+        self.polarities = dict()
 
 
 class Sentence:
@@ -126,7 +128,7 @@ class Sentence:
         :return: String representation of the sentence
         :rtype: string
         """
-        sentence_str =' '.join([w.word for w in self.words])
+        sentence_str = ' '.join([w.word for w in self.words])
         if print_sentence:
             print(sentence_str)
         return sentence_str
@@ -310,3 +312,30 @@ class DepTreeNode:
         self.label = label
         self.root = root
         self.children = []
+
+
+class Polarity:
+    """
+    Object used to store possible polarities of a review.
+
+    :ivar id_polarity: ID_Polarity used in Polarity table.
+    :vartype id_polarity: int
+    :ivar analysis: An analysis identifier, from which the polarity come from.
+    :vartype analysis: string
+    :ivar id_review: SQL reference to the corresponding Review
+    :vartype id_review: int
+    :ivar pos_score: Positive polarity
+    :vartype pos_score: float
+    :ivar neg_score: Negative polarity
+    :vartype neg_score: float
+    :ivar obj_score: Objective polarity
+    :vartype obj_score: float
+    """
+
+    def __init__(self, id_polarity, analysis, id_review, pos_score, neg_score, obj_score):
+        self.id_polarity = id_polarity
+        self.analysis = analysis
+        self.id_review = id_review
+        self.pos_score = pos_score
+        self.neg_score = neg_score
+        self.obj_score = obj_score

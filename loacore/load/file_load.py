@@ -37,7 +37,7 @@ def _load_files():
     return files
 
 
-def load_database(id_files=[], load_reviews=True, load_sentences=True, load_words=True, load_deptrees=True):
+def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True):
     """
     Load the complete database as a :obj:`list` of :class:`File` , with all the dependencies specified in parameters
     loaded in them.
@@ -95,6 +95,10 @@ def load_database(id_files=[], load_reviews=True, load_sentences=True, load_word
         # Load Reviews
         import loacore.load.review_load as review_load
         reviews = review_load.load_reviews_in_files(files)
+        if load_polarities:
+            # Load Polarities
+            import loacore.load.polarity_load as polarity_load
+            polarity_load.load_polarities_in_reviews(reviews)
 
         if load_sentences:
             # Load Sentences
@@ -186,6 +190,7 @@ def clean_db():
     c.execute("DELETE FROM Dep_Tree")
     c.execute("DELETE FROM Dep_Tree_Node")
     c.execute("DELETE FROM Dep_Tree_Node_Children")
+    c.execute("DELETE FROM Polarity")
     conn.commit()
     conn.close()
 

@@ -2,8 +2,6 @@ import os
 import loacore.process.file_process as file_process
 import loacore.load.file_load as file_load
 import loacore.load.sentence_load as sentence_api
-import loacore.load.lemma_load as lemma_api
-import loacore.load.synset_load as synset_api
 import loacore.load.deptree_load as deptree_api
 import loacore.load.word_load as word_api
 
@@ -60,16 +58,6 @@ def test_load_db():
                         print("            Synset : None")
 
 
-def test_lemmas():
-    sentences = sentence_api.load_sentences()
-    lemma_api.add_lemmas_to_sentences(sentences)
-
-
-def test_synsets():
-    sentences = sentence_api.load_sentences()
-    synset_api.add_synsets_to_sentences(sentences)
-
-
 def test_dep_tree():
     selected_sentences = []
     sentences = sentence_api.load_sentences_by_id_files(id_files=[1])
@@ -90,39 +78,8 @@ def test_dep_tree():
         dep_tree.print_dep_tree()
 
 
-def test_analysis():
-    import loacore.database.analysis.sentiment_analysis as sentiment_analysis
-    files = file_load.load_database(load_deptrees=False)
-    sentiment_analysis.print_polarity_table(sentiment_analysis.compute_files_polarity(files))
-
-
-def test_adj_pattern():
-    import loacore.database.analysis.pattern_recognition as pattern_recognition
-    #files = file_load.load_database(id_files=[31, 33])
-    files = file_load.load_database()
-    sentences = []
-    for file in files:
-        for review in file.reviews:
-            sentences += review.sentences
-
-    patterns = pattern_recognition.adj_noun_pattern_recognition(sentences)
-    pattern_recognition.opposite_recognition(patterns)
-
-
-def test_verb_pattern():
-    import loacore.database.analysis.pattern_recognition as pattern_recognition
-    files = file_load.load_database(id_files=[31, 33])
-    #files = file_load.load_database()
-    sentences = []
-    for file in files:
-        for review in file.reviews:
-            sentences += review.sentences
-
-    patterns = pattern_recognition.verb_object_recognition(sentences)
-
-
 def test_label_pattern():
-    import loacore.database.analysis.pattern_recognition as pattern_recognition
+    import loacore.analysis.pattern_recognition as pattern_recognition
     files = file_load.load_database(id_files=[31, 33])
     # files = file_load.load_database()
     sentences = []
@@ -137,7 +94,7 @@ def test_label_pattern():
 
 
 def test_pos_tag_pattern():
-    import loacore.database.analysis.pattern_recognition as pattern_recognition
+    import loacore.analysis.pattern_recognition as pattern_recognition
     files = file_load.load_database(id_files=[31, 33])
     # files = file_load.load_database()
     sentences = []
@@ -150,7 +107,7 @@ def test_pos_tag_pattern():
 
 
 def test_general_pattern():
-    import loacore.database.analysis.pattern_recognition as pattern_recognition
+    import loacore.analysis.pattern_recognition as pattern_recognition
     files = file_load.load_database(id_files=[31, 33])
     # files = file_load.load_database()
     sentences = []
@@ -167,14 +124,21 @@ def test_general_pattern():
         print(pattern[-1].word.word, " : ", pattern[-1].word.PoS_tag, " : ", pattern[-1].label, " )")
 
 
+def test_load_polarities():
+    import loacore.load.file_load as file_load
+    ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+    files = file_load.load_database(id_files=ids, load_sentences=False)
+    for file in files:
+        for review in file.reviews:
+            print(review.review, " : ", review.polarities["label"].pos_score, ", ",
+                  review.polarities["label"].neg_score, ", ",
+                  review.polarities["label"].obj_score)
+
+
 file_load.clean_db()
 add_files_to_database()
-#test_lemmas()
-#test_synsets()
 #test_load_db()
 #test_dep_tree()
-#test_analysis()
-#test_verb_pattern()
-#test_label_pattern()
 #test_pos_tag_pattern()
 #test_general_pattern()
+test_load_polarities()

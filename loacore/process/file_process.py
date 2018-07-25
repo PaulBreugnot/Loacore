@@ -1,4 +1,3 @@
-import os
 import sqlite3 as sql
 from loacore import DB_PATH
 from loacore.classes.classes import File
@@ -57,11 +56,18 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
     # ********************************************* RAW DATA ********************************************************* #
 
     # Add all reviews from all files
+    print("Normalization...")
     import loacore.process.review_process as review_process
     reviews = review_process.add_reviews_from_files(files, encoding=encoding)
 
+    # ****************************************** POLARITY LABEL ****************************************************** #
+    print("Adding polarities to DB...")
+    import loacore.process.polarity_process as polarity_process
+    polarity_process.add_polarity_from_reviews(reviews)
+
     # ********************************************* FREELING ********************************************************* #
 
+    print("Tokenization...")
     # Tokenization + Add all sentences and all words from all reviews
     import loacore.process.sentence_process as sentence_process
     added_sentences = sentence_process.add_sentences_from_reviews(reviews)
@@ -71,16 +77,21 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
     sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
     # Lemmatization
+    print("Lemmatization...")
     import loacore.process.lemma_process as lemma_process
     lemma_process.add_lemmas_to_sentences(sentences)
 
     # Disambiguation
+    print("Disambiguation...")
+
     import loacore.process.synset_process as synset_process
     synset_process.add_synsets_to_sentences(sentences)
 
     # Synset polarities
+    print("Adding synset polarities...")
     synset_process.add_polarity_to_synsets()
 
     # Dep tree
+    print("Dependency tree processing...")
     import loacore.process.deptree_process as deptree_process
     deptree_process.add_dep_tree_from_sentences(sentences)

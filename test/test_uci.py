@@ -12,14 +12,11 @@ def preprocess():
 
 
 def process():
-    import loacore.load.file_load as file_load
-    file_load.clean_db()
-
     import loacore.process.file_process as file_process
     file_paths = []
     for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(loacore.DATA_PATH, "raw", "uci"))):
             for name in filenames:
-                if name == "yelp_labelled_reduced.txt":
+                if name == "yelp_labelled.txt":
                     file_paths.append(os.path.join(dirpath, name))
 
     file_process.add_files(file_paths, encoding="utf8", lang="en")
@@ -80,7 +77,7 @@ def test_verb_table():
     pattern_recognition.verb_context_table(sentences)
 
 
-# process()
+process()
 # show_dep_trees(load_uci())
 # pattern_test()
 # show_adj_patterns(load_uci())

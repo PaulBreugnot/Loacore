@@ -1,4 +1,3 @@
-import os
 import sqlite3 as sql
 from loacore import DB_PATH
 import ressources.pyfreeling as freeling

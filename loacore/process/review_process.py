@@ -3,6 +3,7 @@ import re
 import sqlite3 as sql
 from loacore import DB_PATH
 from loacore.classes.classes import Review
+from loacore.classes.classes import Polarity
 
 
 def add_reviews_from_files(files, encoding):
@@ -25,20 +26,19 @@ def add_reviews_from_files(files, encoding):
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
-    added_reviews = []
+    reviews = []
 
     for file in files:
-
         # Load review as a string
         raw_text = file.load(encoding=encoding).read()
 
         # Normalization and review splitting
         str_reviews = normalize(raw_text)
-        reviews = extract_polarity(str_reviews)
+        file_reviews = extract_polarity(str_reviews)
 
         # Add reviews
         file_index = 0
-        for review in reviews:
+        for review in file_reviews:
             sql_review = (file.id_file, file_index, review.review)
 
             c.execute("INSERT INTO Review (ID_File, File_Index, Review) "
@@ -52,15 +52,14 @@ def add_reviews_from_files(files, encoding):
             review.id_file = file.id_file
             review.file_index = file_index
 
-            # Keep trace of added reviews
-            added_reviews.append(review)
-
             file_index += 1
+
+        reviews += file_reviews
 
     conn.commit()
     conn.close()
 
-    return added_reviews
+    return reviews
 
 
 def normalize(text):
@@ -84,10 +83,13 @@ def normalize(text):
 def extract_polarity(str_reviews):
     reviews = []
     for review_str in str_reviews:
-        polarity = re.findall(r'.+\t(\d)', review_str)
+        polarity = re.findall(r'.+\t(\d)\t(\d)\t(\d)', review_str)
         if len(polarity) > 0:
-            sentence = re.findall(r'(.+)\t\d', review_str)
-            reviews.append(Review(None, None, None, sentence[0], polarity=int(polarity[0])))
+            sentence = re.findall(r'(.+)\t\d\t\d\t\d', review_str)
+            review = Review(None, None, None, sentence[0])
+            review.polarities["label"] = Polarity(None, "label", None,
+                                                  float(polarity[0][0]), float(polarity[0][1]), float(polarity[0][2]))
+            reviews.append(review)
         else:
-            reviews.append(Review(None, None, None, review_str, None))
+            reviews.append(Review(None, None, None, review_str))
     return reviews
