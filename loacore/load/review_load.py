@@ -3,7 +3,7 @@ from loacore import DB_PATH
 from loacore.classes.classes import Review
 
 
-def load_reviews(id_reviews=[], load_sentences=False, load_words=False, load_deptrees=False):
+def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
     Load :class:`Review` s from database.
@@ -46,6 +46,11 @@ def load_reviews(id_reviews=[], load_sentences=False, load_words=False, load_dep
 
     conn.close()
 
+    if load_polarities:
+        # Load Polarities
+        import  loacore.load.polarity_load as polarity_load
+        polarity_load.load_polarities_in_reviews(reviews)
+
     if load_sentences:
         # Load Sentences
         import loacore.load.sentence_load as sentence_load
@@ -54,7 +59,7 @@ def load_reviews(id_reviews=[], load_sentences=False, load_words=False, load_dep
     return reviews
 
 
-def load_reviews_by_id_files(id_files, load_sentences=False, load_words=False, load_deptrees=False):
+def load_reviews_by_id_files(id_files, load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
     Load :class:`Review` s of files specified by their ids.
@@ -92,6 +97,11 @@ def load_reviews_by_id_files(id_files, load_sentences=False, load_words=False, l
             reviews.append(Review(result[0], result[1], result[2], result[3]))
 
     conn.close()
+
+    if load_polarities:
+        # Load Polarities
+        import loacore.load.polarity_load as polarity_load
+        polarity_load.load_polarities_in_reviews(reviews)
 
     if load_sentences:
         # Load Sentences

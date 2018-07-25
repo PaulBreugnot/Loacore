@@ -126,17 +126,19 @@ def test_general_pattern():
 
 def test_load_polarities():
     import loacore.load.file_load as file_load
+    import itertools
+
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_sentences=False)
-    for file in files:
-        for review in file.reviews:
-            print(review.review, " : ", review.polarities["label"].pos_score, ", ",
-                  review.polarities["label"].neg_score, ", ",
-                  review.polarities["label"].obj_score)
+    reviews = itertools.chain.from_iterable([f.reviews for f in files])
+    for review in reviews:
+        print(review.review, " : ", review.polarities["label"].pos_score, ", ",
+              review.polarities["label"].neg_score, ", ",
+              review.polarities["label"].obj_score)
 
 
-file_load.clean_db()
-add_files_to_database()
+#file_load.clean_db()
+#add_files_to_database()
 #test_load_db()
 #test_dep_tree()
 #test_pos_tag_pattern()
