@@ -1,3 +1,0 @@
-ID_Word	ID_Lemma	Lemma
-36795	71404	bajo
-36794	71403	precio

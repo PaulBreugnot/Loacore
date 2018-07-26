@@ -1,2 +1,0 @@
-ID_Word	token36795	bajos
-36794	precios

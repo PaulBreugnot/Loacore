@@ -1,6 +1,0 @@
-barra
-billar
-juego
-mesa
-tragar
-transportar

@@ -1,6 +1,0 @@
-ID_Word	ID_Synset	Synset
-36205	34643	cook.v.03	# asado
-36202	34642	meal.n.01	# comedir
-36206	34644	sauna.n.01	# sauna
-36203	None	None	# 
-36204	None	None	# y

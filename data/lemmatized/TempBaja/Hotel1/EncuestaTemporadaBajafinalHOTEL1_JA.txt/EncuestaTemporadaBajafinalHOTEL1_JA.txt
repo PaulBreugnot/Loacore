@@ -1,5 +1,0 @@
-ID_Word	ID_Lemma	Lemma
-36220	70829	
-36219	70828	el
-36217	70826	que
-36218	70827	terminar

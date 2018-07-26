@@ -1,5 +1,0 @@
-ID_Word	ID_Lemma	Lemma
-35543	70152	
-35541	70150	de
-35540	70149	juego
-35542	70151	mesa

@@ -1,4 +1,0 @@
-ID_Word	token35543	calbalgata
-35541	de
-35540	juegos
-35542	mesa

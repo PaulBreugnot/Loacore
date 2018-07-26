@@ -1,3 +1,0 @@
-ID_Word	ID_Synset	Synset
-36795	34913	short.a.03	# bajo
-36794	34912	price.n.02	# precio

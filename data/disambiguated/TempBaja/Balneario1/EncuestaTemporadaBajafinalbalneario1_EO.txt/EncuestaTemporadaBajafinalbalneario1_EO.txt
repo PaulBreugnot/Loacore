@@ -1,4 +1,0 @@
-ID_Word	ID_Synset	Synset
-36542	34797	climb.v.01	# escalar
-36543	None	None	# el
-36544	None	None	# montano
