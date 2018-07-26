@@ -328,7 +328,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
         analysis_label = 'optimistic'
 
     for file in files:
-        compute_extreme_reviews_polarity(file.reviews, pessimistic=pessimistic)
+        compute_extreme_reviews_polarity(file.reviews, pessimistic=pessimistic, freeling_lang=freeling_lang)
         pos_score = sum([r.polarities[analysis_label].pos_score for r in file.reviews])
         neg_score = sum([r.polarities[analysis_label].neg_score for r in file.reviews])
         obj_score = sum([r.polarities[analysis_label].obj_score for r in file.reviews])
@@ -338,7 +338,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
     return file_score_dict
 
 
-def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_pattern=True):
+def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_pattern=True, cc_pattern=True, print_polarity_commutations=False):
 
     def resolve_adj_rule(parent_node, child):
         # child is the adj applied to parent_node
@@ -357,7 +357,8 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_patte
             if child.word.PoS_tag is not None and child.word.PoS_tag[:2] == 'JJ':
                     # An adjective is applied to parent_node
                     if resolve_adj_rule(node, child):
-                        print("ADJ : ", node.word.word, " : ", child.word.word)
+                        if print_polarity_commutations:
+                            print("ADJ : ", node.word.word, " : ", child.word.word)
                         # if at least one negative adjective is applied to a positive node, its polarity is inverted
                         return neg_score, pos_score
         # Nothing is changed
@@ -375,26 +376,30 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_patte
             return False
         return False
 
-    def check_cc_pattern(node, child, child_pos_score, child_neg_score, CC_to_print):
+    def check_cc_pattern(node, child, child_score, CC_to_print):
+        child_pos_score = child_score[0]
+        child_neg_score = child_score[1]
+        child_obj_score = child_score[2]
         if child.label == 'OBJ':
                 # An complement is applied to parent_node
                 if resolve_cc_rule(node, child_pos_score, child_neg_score):
                     # print(node.word.word)
                     CC_to_print.append(node)
-                    print("CC : ", node.word.word, " : ", child.word.word)
-                    return child_neg_score, child_pos_score
+                    return child_neg_score, child_pos_score, child_obj_score
         # Nothing is changed
-        return child_pos_score, child_neg_score
+        return child_pos_score, child_neg_score, child_obj_score
 
     def children_rec(parent_node, CC_to_print):
         if parent_node.word.synset is not None:
             node_pos_score = parent_node.word.synset.pos_score
             node_neg_score = parent_node.word.synset.neg_score
+            node_obj_score = parent_node.word.synset.obj_score
         else:
             node_pos_score = 0
             node_neg_score = 0
+            node_obj_score = 0
 
-        if check_adj_pattern:
+        if adj_pattern:
             # Here, we potentially need to invert the Noun parent polarity
             if parent_node.word.PoS_tag is not None and parent_node.word.PoS_tag[0] == 'N':
                 node_pos_score, node_neg_score = check_adj_pattern(parent_node, node_pos_score, node_neg_score)
@@ -404,34 +409,70 @@ def compute_pattern_files_polarity(files, check_adj_pattern=True, check_cc_patte
 
         for child in parent_node.children:
             child_score = children_rec(child, CC_to_print)
-            if check_cc_pattern:
+            if cc_pattern:
                 # Here, we potentially need to invert the Complement child tree polarity
                 if parent_node.word.PoS_tag is not None and parent_node.word.PoS_tag[0] == 'V':
-                    child_score = check_cc_pattern(parent_node, child, child_score[0], child_score[1], CC_to_print)
+                    child_score = check_cc_pattern(parent_node, child, child_score, CC_to_print)
             node_pos_score += child_score[0]
             node_neg_score += child_score[1]
+            node_obj_score += child_score[2]
 
-        return node_pos_score, node_neg_score
+        return node_pos_score, node_neg_score, node_obj_score
 
-    for file in files:
-        for review in file.reviews:
-            for sentence in review.sentences:
-                dep_tree = sentence.dep_tree
-                test_score = 0
-                for word in sentence.words:
-                    if word.synset is not None:
-                        test_score += word.synset.pos_score
+    analysis_label = "pattern"
+    if adj_pattern:
+        analysis_label += "_adj"
+    if cc_pattern:
+        analysis_label += "_cc"
 
-                CC_to_print = []
+    print(analysis_label)
+    print(check_cc_pattern)
+    for review in reviews:
+        review_pos_score = 0
+        review_neg_score = 0
+        review_obj_score = 0
+        for sentence in review.sentences:
+            dep_tree = sentence.dep_tree
+            test_score = 0
+            for word in sentence.words:
+                if word.synset is not None:
+                    test_score += word.synset.pos_score
 
-                pos_score, neg_score = children_rec(dep_tree.root, CC_to_print)
+            CC_to_print = []
 
-                #if len(CC_to_print) > 0:
-                sentence.print_sentence()
+            pos_score, neg_score, obj_score = children_rec(dep_tree.root, CC_to_print)
+
+            total = pos_score + neg_score + obj_score
+            if total > 0:
+                pos_score = pos_score / total
+                neg_score = neg_score / total
+                obj_score = obj_score / total
+
+                review_pos_score += pos_score
+                review_neg_score += neg_score
+                review_obj_score += obj_score
+
+            if print_polarity_commutations:
                 for node in CC_to_print:
-                     print("ROOT NODE : ", node.word.word)
-                     dep_tree.print_dep_tree(root=node)
+                    sentence.print_sentence()
+                    print("ROOT NODE : ", node.word.word)
+                    dep_tree.print_dep_tree(root=node)
 
                 if not pos_score == test_score:
+                    sentence.print_sentence()
                     print(pos_score, " : ", test_score)
                     print('')
+
+        total = review_pos_score + review_neg_score + review_obj_score
+
+        if total > 0:
+            review.polarities[analysis_label] = Polarity(None, analysis_label, review.id_review,
+                                                         review_pos_score/total,
+                                                         review_neg_score/total,
+                                                         review_obj_score/total)
+        else:
+            review.polarities[analysis_label] = Polarity(None, analysis_label, review.id_review, 0, 0, 0)
+
+    if commit_polarities:
+        import loacore.process.polarity_process as polarity_process
+        polarity_process.commit_polarities(reviews, analysis_label)

@@ -137,10 +137,31 @@ def test_load_polarities():
               review.polarities["label"].obj_score)
 
 
+def test_print_colored_sentences():
+    import loacore.load.sentence_load as sentence_load
+    sentences = sentence_load.load_sentences(load_words=True)
+    for sentence in sentences:
+        sentence.print_sentence(colored_polarity=True)
+
+
+def test_print_colored_deptree():
+    import loacore.load.file_load as file_load
+    import itertools
+
+    ids = file_load.get_id_files_by_file_paths([r'.*/uci/yelp_labelled.txt'])
+    files = file_load.load_database(id_files=ids)
+    for file in files:
+        for review in file.reviews:
+            for sentence in review.sentences:
+                sentence.dep_tree.print_dep_tree(colored_polarity=True)
+
+
 #file_load.clean_db()
 #add_files_to_database()
 #test_load_db()
 #test_dep_tree()
 #test_pos_tag_pattern()
 #test_general_pattern()
-test_load_polarities()
+#test_load_polarities()
+#test_print_colored_sentences()
+test_print_colored_deptree()
