@@ -106,6 +106,21 @@ def commit_pattern_cc_polarity():
               review.polarities["pattern_cc"].obj_score)
 
 
+def test_polarity_pie_charts():
+    import loacore.load.file_load as file_load
+    import loacore.analysis.sentiment_analysis as sentiment_analysis
+    import loacore.utils.plot_polarities as plot_polarities
+    import os
+    from loacore import RESULT_PATH
+
+    ids = file_load.get_id_files_by_file_paths([r'./uci/.+'])
+    files = file_load.load_database(id_files=ids)
+    polarities = sentiment_analysis.compute_simple_files_polarity(files)
+    plot_polarities.save_polarity_pie_charts(polarities,
+                                             file_path=os.path.join(RESULT_PATH, 'sentiment_analysis', 'simple', 'uci'),
+                                             file_name='uci_polarity_pie_charts.pdf')
+
+
 def test_check_polarities():
     import loacore.load.file_load as file_load
     import loacore.analysis.polarity_check as polarity_check
@@ -140,4 +155,5 @@ def test_pattern_polarity():
 # commit_pattern_adj_cc_polarity()
 # commit_pattern_adj_polarity()
 # commit_pattern_cc_polarity()
-test_check_polarities()
+# test_check_polarities()
+test_polarity_pie_charts()

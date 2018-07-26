@@ -1,9 +1,13 @@
 import re
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import os
+from loacore import RESULT_PATH
 
 
-def save_polarity_pie_charts(file_score_dict, gui=True, file_path=''):
+def save_polarity_pie_charts(file_score_dict, gui=False,
+                             file_path=os.path.join(RESULT_PATH, 'sentiment_analysis'),
+                             file_name='polarity_pie_charts.pdf'):
     """
     Plot polarity pie charts using Matplotlib, and save them into a .pdf file.
 
@@ -12,8 +16,13 @@ def save_polarity_pie_charts(file_score_dict, gui=True, file_path=''):
     :type file_score_dict: :obj:`dict` of :obj:`int` : :obj:`tuple`
     :param gui: Specify if a gui should be used to save file.
     :type gui: boolean
-    :param file_path: If gui is not called : path of the file (that don't necessarily exist yet) in which to save plots.
+    :param file_path:
+        If gui is not called : path of the directory in which plots will be saved.
+        If directory doesn't exist, will be created.
+        Default is set to *RESULT_PATH/sentiment_analysis/*
     :type file_path: :obj:`path-like object`
+    :param file_name: Name of the saved file.
+    :type file_name: string
     """
     pies_data = [t for t in file_score_dict.values()]
 
@@ -59,11 +68,12 @@ def save_polarity_pie_charts(file_score_dict, gui=True, file_path=''):
         root.filename = filedialog.asksaveasfilename(initialdir="/", title="Select file",
                                                      filetypes=[("PDF", "*.pdf")])
         pp = PdfPages(root.filename)
-    elif not file_path == '':
-        pp = PdfPages(file_path)
-    if pp is not None:
-        pp.savefig()
-        pp.close()
+    else:
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
+        pp = PdfPages(os.path.join(file_path, file_name))
+    pp.savefig()
+    pp.close()
 
 
 def print_polarity_table(file_score_dict):
