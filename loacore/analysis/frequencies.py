@@ -557,3 +557,54 @@ def count_bigram_pos_tag(file, bigram_pos_tag, c):
 
     return int(c.fetchone()[0])
 
+
+###################
+# Polarity Pos Tags
+###################
+
+def polarity_word_pos_tag_frequencies(files, polarity, tag_len=2):
+    from collections import OrderedDict
+    conn = sql.connect(DB_PATH)
+    c = conn.cursor()
+
+    frequencies = {}
+    pos_tags = get_polarity_pos_tag_set(files, c, tag_len, polarity)
+    for file in files:
+        freq = {}
+        for pos_tag in pos_tags:
+            freq[pos_tag] = count_pos_tag(file, pos_tag, c)
+        freq = OrderedDict(sorted(freq.items(), key=lambda t: t[1]))
+        total = sum(freq.values())
+        freq = {k: freq[k] / total for k in freq.keys()}
+        frequencies[file.get_filename()] = freq
+    return pos_tags, frequencies
+
+
+def get_polarity_pos_tag_set(files, c, tag_len, polarity):
+    ids = tuple(f.id_file for f in files)
+    prepared_statement = \
+        "SELECT PoS_tag " \
+        "FROM Word " \
+        "JOIN Synset ON Word.ID_Word = Synset.ID_Word " \
+        "JOIN Sentence ON Word.ID_Sentence = Sentence.ID_Sentence " \
+        "JOIN Review ON Sentence.ID_Review = Review.ID_Review " \
+        "WHERE Review.ID_File IN " + str(ids) + " AND "
+    if polarity == 'positive':
+        c.execute(prepared_statement +
+                  "Pos_Score > Neg_Score "
+                  "GROUP BY PoS_tag"
+                  )
+
+    elif polarity == 'negative':
+        c.execute(prepared_statement +
+                  "Pos_Score < Neg_Score "
+                  "GROUP BY PoS_tag"
+                  )
+
+    results = c.fetchall()
+    tags = []
+    print(tag_len)
+    for result in results:
+        if result[0] is not None:
+            tags.append(result[0][0:tag_len])
+    return list(set(tags))
