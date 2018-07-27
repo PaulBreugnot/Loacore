@@ -83,9 +83,9 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
         print(file)
         rects.append(ax.bar(index + margin + num * bar_width, files_frequencies[file].values(), bar_width, color=next(color), align='edge'))
 
-    ax.set_xlabel('Label')
+    ax.set_xlabel('Tag')
     ax.set_ylabel('Frequencies')
-    ax.set_title('Label Frequencies')
+    ax.set_title('Tag Frequencies')
     ax.set_xticks(index + margin + len(files_frequencies.keys())*bar_width/2)
     ax.set_xticklabels(labels)
     ax.legend(rects, _format_labels(list(files_frequencies.keys())))
@@ -167,7 +167,7 @@ def write_frequencies(files_frequencies,
     :param file_path: Directory path
     :type file_path: :obj:`path-like object`
     """
-    
+
     import loacore.utils.file_writer as file_writer
 
     for file_name in files_frequencies.keys():
