@@ -78,17 +78,17 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
 
     color = iter(cm.rainbow(np.linspace(0, 1, len(files_frequencies))))
 
-    for num, vals in enumerate(files_frequencies.keys()):
-        print(files_frequencies[vals])
-        ax.bar(index + margin + num * bar_width, files_frequencies[vals].values(), bar_width, color=next(color),
-               label=vals)
+    rects = []
+    for num, file in enumerate(files_frequencies.keys()):
+        print(file)
+        rects.append(ax.bar(index + margin + num * bar_width, files_frequencies[file].values(), bar_width, color=next(color), align='edge'))
 
     ax.set_xlabel('Label')
     ax.set_ylabel('Frequencies')
     ax.set_title('Label Frequencies')
-    ax.set_xticks(index + 1 / len(files_frequencies))
+    ax.set_xticks(index + margin + len(files_frequencies.keys())*bar_width/2)
     ax.set_xticklabels(labels)
-    ax.legend()
+    ax.legend(rects, _format_labels(list(files_frequencies.keys())))
     plt.xticks(rotation='vertical')
 
     # Plot
@@ -115,6 +115,7 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
             pp = PdfPages(os.path.join(file_path, file_name))
         pp.savefig()
         pp.close()
+        print("PDF saved at " + os.path.join(file_path, file_name))
 
 
 def _resort(files_frequencies):
@@ -144,3 +145,34 @@ def _truncate(files_frequencies, val_number):
         truncated_frequencies[freq_k] = truncated_freq
 
     return labels_kept, truncated_frequencies
+
+
+def _format_labels(labels):
+    formatted_labels = []
+    for label in labels:
+        if label[0] == '_':
+            formatted_labels.append(label[1:-1])
+        else:
+            formatted_labels.append(label)
+    return formatted_labels
+
+
+def write_frequencies(files_frequencies,
+                      file_path=os.path.join(RESULT_PATH, 'frequencies', 'tables')):
+    """
+    Write frequencies to a txt file in file_path folder. Original raw file names are used.
+
+    :param files_frequencies: Dictionary that maps file names to frequencies.
+    :type files_frequencies: :obj:`dict` of :obj:`string` : :obj:`dict` of label : :obj:`float` .
+    :param file_path: Directory path
+    :type file_path: :obj:`path-like object`
+    """
+    
+    import loacore.utils.file_writer as file_writer
+
+    for file_name in files_frequencies.keys():
+        table = ''
+        for label in files_frequencies[file_name].keys():
+            table += str(label) + '\t' + str(files_frequencies[file_name][label]) + '\n'
+        file_writer.write(table, file_path, file_name)
+
