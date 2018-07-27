@@ -264,12 +264,12 @@ def pos_tag_frequencies(files, tag_len=2):
     :type files: :obj:`list` of :class:`File`
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
-    :return: Dependency labels, and a dictionary that maps file names to frequencies
+    :return: PoS_tags, and a dictionary that maps file names to frequencies
     :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
 
     :Example:
 
-        Compute simple label frequencies of uci files.
+        Compute simple PoS_tags frequencies of uci files.
 
         .. code-block: Python
 
@@ -307,7 +307,7 @@ def get_pos_tag_set(files, c, tag_len):
 
     .. note ::
 
-         For a more efficient call from :func:`label_frequencies`, this function takes an already initialized SQL
+         For a more efficient call from :func:`pos_tag_frequencies`, this function takes an already initialized SQL
          cursor as an argument.
          If you want to use it, you can initialize *c* with the following code :
 
@@ -323,7 +323,7 @@ def get_pos_tag_set(files, c, tag_len):
     :param c: SQL cursor
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
-    :return: Dependency labels
+    :return: PoS_tags
     :rtype: :obj:`list` of :obj:`string`
     """
     ids = tuple(f.id_file for f in files)
@@ -349,7 +349,7 @@ def count_pos_tag(file, pos_tag, c):
 
     .. note ::
 
-         For a more efficient call from :func:`label_frequencies`, this function takes an already initialized SQL
+         For a more efficient call from :func:`pos_tag_frequencies`, this function takes an already initialized SQL
          cursor as an argument.
          If you want to use it, you can initialize *c* with the following code :
 
@@ -365,7 +365,7 @@ def count_pos_tag(file, pos_tag, c):
     :param pos_tag: Part of Speech tag
     :type pos_tag: string
     :param c: SQL cursor
-    :return: Number of label occurrences
+    :return: Number of pos_tag occurrences
     :rtype: int
     """
 
@@ -399,12 +399,12 @@ def bigram_pos_tag_frequencies(files, tag_len=2):
     :type files: :obj:`list` of :class:`File`
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
-    :return: Dependency labels, and a dictionary that maps file names to frequencies
+    :return: PoS_tags, and a dictionary that maps file names to frequencies
     :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
 
     :Example:
 
-        Compute bigram label frequencies of uci files.
+        Compute bigram PoS_tags frequencies of uci files.
 
         .. code-block: Python
 
@@ -455,7 +455,7 @@ def get_bigram_pos_tag_set(files, c, tag_len):
     :param files: Files to process. Notice that only the id_files are needed.
     :type files: :obj:`list` of :class:`File`
     :param c: SQL cursor
-    :return: Bigram labels as string tuples.
+    :return: Bigram PoS_tags as string tuples.
     :rtype: :obj:`list` of :obj:`tuple` of :obj:`string`
 
     """
@@ -501,7 +501,7 @@ def count_bigram_pos_tag(file, bigram_pos_tag, c):
 
     .. note ::
 
-         For a more efficient call from :func:`bigram_label_frequencies`, this function takes an already initialized SQL
+         For a more efficient call from :func:`bigram_pos_tag_frequencies`, this function takes an already initialized SQL
          cursor as an argument.
          If you want to use it, you can initialize *c* with the following code :
 
