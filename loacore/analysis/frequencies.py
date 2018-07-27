@@ -608,3 +608,50 @@ def get_polarity_pos_tag_set(files, c, tag_len, polarity):
         if result[0] is not None:
             tags.append(result[0][0:tag_len])
     return list(set(tags))
+
+#################
+# Polarity Labels
+#################
+
+
+def polarity_word_label_frequencies(files, polarity):
+    from collections import OrderedDict
+    conn = sql.connect(DB_PATH)
+    c = conn.cursor()
+
+    frequencies = {}
+    labels = get_polarity_label_set(files, c, polarity)
+    for file in files:
+        freq = {}
+        for label in labels:
+            freq[label] = count_label(file, label, c)
+        freq = OrderedDict(sorted(freq.items(), key=lambda t: t[1]))
+        total = sum(freq.values())
+        freq = {k: freq[k] / total for k in freq.keys()}
+        frequencies[file.get_filename()] = freq
+    return labels, frequencies
+
+
+def get_polarity_label_set(files, c, polarity):
+    ids = tuple(f.id_file for f in files)
+    prepared_statement = \
+        "SELECT Label " \
+        "FROM Dep_Tree JOIN Sentence ON Dep_Tree.ID_Sentence = Sentence.ID_Sentence " \
+        "JOIN Review ON Review.ID_Review = Sentence.ID_Review " \
+        "JOIN Dep_Tree_Node ON Dep_Tree.ID_Dep_Tree = Dep_Tree_Node.ID_Dep_Tree " \
+        "JOIN Word ON Dep_Tree_Node.ID_Word = Word.ID_Word " \
+        "JOIN Synset ON Word.ID_Synset = Synset.ID_Synset " \
+        "WHERE Review.ID_File IN " + str(ids) + " AND "
+
+    if polarity == 'positive':
+        c.execute(prepared_statement +
+                  "Pos_Score > Neg_Score "
+                  "GROUP BY Label")
+
+    elif polarity == 'negative':
+        c.execute(prepared_statement +
+                  "Pos_Score < Neg_Score "
+                  "GROUP BY Label")
+
+    results = c.fetchall()
+    return [result[0] for result in results]
