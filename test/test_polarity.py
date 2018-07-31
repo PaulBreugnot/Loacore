@@ -147,6 +147,21 @@ def test_pattern_polarity():
               review.polarities["pattern_adj_cc"].obj_score)
 
 
+def test_write_polarity_check():
+    import loacore.load.file_load as file_load
+    import loacore.analysis.polarity_check as polarity_check
+    from loacore import RESULT_PATH
+    import os
+
+    ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+    files = file_load.load_database(id_files=ids, load_deptrees=False)
+    polarity_check.write_polarity_check(files,
+                                        analysis_to_check=['simple', 'pattern_adj_cc'],
+                                        colored_polarity=True,
+                                        select='false_negative',
+                                        directory_path=os.path.join(RESULT_PATH, 'sentiment_analysis', 'check', 'uci'))
+
+
 # commit_simple_polarity()
 # commit_optimistic_polarity()
 # commit_pessimistic_polarity()
@@ -156,4 +171,5 @@ def test_pattern_polarity():
 # commit_pattern_adj_polarity()
 # commit_pattern_cc_polarity()
 # test_check_polarities()
-test_polarity_pie_charts()
+# test_polarity_pie_charts()
+test_write_polarity_check()

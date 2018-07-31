@@ -249,7 +249,7 @@ class Word:
             - pos_score > neg_score => red
             - neg_score > pos_score => green
             - neg_score = pos_score => yellow
-        
+
         :return: Colored word
         :rtype: string
         """
@@ -403,5 +403,23 @@ class Polarity:
         :rtype: boolean
         """
         if self.pos_score > self.neg_score:
+            return True
+        return False
+
+    def is_negative(self):
+        """
+        :return: True if pos_score > neg_score
+        :rtype: boolean
+        """
+        if self.pos_score < self.neg_score:
+            return True
+        return False
+
+    def is_objective(self):
+        """
+        :return: True if pos_score > neg_score
+        :rtype: boolean
+        """
+        if self.pos_score == self.neg_score:
             return True
         return False
