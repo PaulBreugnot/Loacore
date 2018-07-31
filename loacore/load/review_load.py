@@ -24,7 +24,7 @@ def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, loa
 
         >>> import loacore.load.review_load as review_load
         >>> reviews = review_load.load_reviews(load_sentences=True, load_words=True)
-        >>> reviews[0].sentences[0].print_sentence(print_sentence=False)
+        >>> reviews[0].sentences[0].sentence_str(print_sentence=False)
         'teleferico'
 
     """

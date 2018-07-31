@@ -75,7 +75,7 @@ def test_dep_tree():
     dep_trees = [sentence.dep_tree for sentence in selected_sentences]
     word_api.load_words_in_dep_trees(dep_trees)
     for dep_tree in dep_trees:
-        dep_tree.print_dep_tree()
+        dep_tree.dep_tree_str()
 
 
 def test_label_pattern():
@@ -141,7 +141,7 @@ def test_print_colored_sentences():
     import loacore.load.sentence_load as sentence_load
     sentences = sentence_load.load_sentences(load_words=True)
     for sentence in sentences:
-        sentence.print_sentence(colored_polarity=True)
+        sentence.sentence_str(colored_polarity=True)
 
 
 def test_print_colored_deptree():
@@ -153,7 +153,17 @@ def test_print_colored_deptree():
     for file in files:
         for review in file.reviews:
             for sentence in review.sentences:
-                sentence.dep_tree.print_dep_tree(colored_polarity=True)
+                sentence.dep_tree.dep_tree_str(colored_polarity=True)
+
+
+def test_colored_reviews():
+    import loacore.load.file_load as file_load
+
+    ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+    files = file_load.load_database(id_files=ids, load_deptrees=False)
+    for file in files:
+        for review in file.reviews:
+            print(review.review_str(colored_polarity=True, analysis=['label']))
 
 
 #file_load.clean_db()
@@ -164,4 +174,5 @@ def test_print_colored_deptree():
 #test_general_pattern()
 #test_load_polarities()
 #test_print_colored_sentences()
-test_print_colored_deptree()
+test_colored_reviews()
+#test_print_colored_deptree()

@@ -22,9 +22,9 @@ def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
 
         >>> import loacore.load.sentence_load as sentence_load
         >>> sentences = sentence_load.load_sentences([1,2], load_words=True)
-        >>> sentences[0].print_sentence(print_sentence=False)
+        >>> sentences[0].sentence_str(print_sentence=False)
         'teleferico'
-        >>> sentences[1].print_sentence(print_sentence=False)
+        >>> sentences[1].sentence_str(print_sentence=False)
         'toboganvy que el agua huela a asufre'
 
 
@@ -78,7 +78,7 @@ def load_sentences_by_id_files(id_files, load_words=True, load_deptrees=True):
 
     >>> import loacore.load.sentence_load as sentence_load
     >>> sentences = sentence_load.load_sentences_by_id_files([1])
-    >>> sentences[0].print_sentence(print_sentence=False)
+    >>> sentences[0].sentence_str(print_sentence=False)
     'teleferico'
 
     """

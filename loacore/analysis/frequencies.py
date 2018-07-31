@@ -563,6 +563,32 @@ def count_bigram_pos_tag(file, bigram_pos_tag, c):
 ###################
 
 def polarity_word_pos_tag_frequencies(files, polarity, tag_len=2):
+    """
+    Compute PoS_tag frequencies only for words with the specified polarity.
+
+    :param files: Files to process
+    :type files: :obj:`list` of :class:`File`
+    :param polarity: Word polarity to consider.
+    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :param tag_len: Number of letters kept in each PoS_tag
+    :param tag_len: int
+    :return: PoS_tags, and a dictionary that maps file names to frequencies
+    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+
+    :Example:
+
+        Compute pos_tag (first 2 characters) frequencies for positive words in uci files.
+
+        .. code-block:: Python
+
+            import loacore.load.file_load as file_load
+            import loacore.analysis.frequencies as frequencies
+
+            ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+            files = file_load.load_database(id_files=ids, load_reviews=False)
+            labels, freq = frequencies.polarity_word_pos_tag_frequencies(files, 'positive')
+
+    """
     from collections import OrderedDict
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -581,6 +607,19 @@ def polarity_word_pos_tag_frequencies(files, polarity, tag_len=2):
 
 
 def get_polarity_pos_tag_set(files, c, tag_len, polarity):
+    """
+    Select possible Part of Speech tags for words in files with the specified polarity, thanks to an SQL request.
+
+    :param files: File to process
+    :type files: :class:`File`
+    :param tag_len: Number of letters kept in each PoS_tag
+    :param tag_len: int
+    :param c: SQL cursor
+    :param polarity: Word polarity to consider.
+    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :return: PoS tags
+    :rtype: :obj:`list` of :obj:`string`
+    """
     ids = tuple(f.id_file for f in files)
     prepared_statement = \
         "SELECT PoS_tag " \
@@ -615,6 +654,28 @@ def get_polarity_pos_tag_set(files, c, tag_len, polarity):
 
 
 def polarity_word_label_frequencies(files, polarity):
+    """
+    Compute label frequencies for words with the specified polarity.
+
+    :param files: Files to process
+    :type files: :obj:`list` of :class:`File`
+    :param polarity: Word polarity to consider.
+    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :return: Labels, and a dictionary that maps file names to frequencies
+    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+
+    :Example:
+
+        .. code-block:: Python
+
+            import loacore.load.file_load as file_load
+            import loacore.analysis.frequencies as frequencies
+
+            ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+            files = file_load.load_database(id_files=ids, load_reviews=False)
+            labels, freq = frequencies.polarity_word_label_frequencies(files, 'positive')
+
+    """
     from collections import OrderedDict
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -633,6 +694,17 @@ def polarity_word_label_frequencies(files, polarity):
 
 
 def get_polarity_label_set(files, c, polarity):
+    """
+    Select all the possible dependency labels for words in files with the specified polarity, thanks to an SQL request.
+
+    :param files: File to process
+    :type files: :class:`File`
+    :param c: SQL cursor
+    :param polarity: Word polarity to consider.
+    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :return: Dependency labels
+    :rtype: :obj:`list` of :obj:`string`
+    """
     ids = tuple(f.id_file for f in files)
     prepared_statement = \
         "SELECT Label " \

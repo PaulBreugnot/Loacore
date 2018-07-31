@@ -454,12 +454,12 @@ def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_patte
 
             if print_polarity_commutations:
                 for node in CC_to_print:
-                    sentence.print_sentence()
+                    sentence.sentence_str()
                     print("ROOT NODE : ", node.word.word)
-                    dep_tree.print_dep_tree(root=node)
+                    dep_tree.dep_tree_str(root=node)
 
                 if not pos_score == test_score:
-                    sentence.print_sentence()
+                    sentence.sentence_str()
                     print(pos_score, " : ", test_score)
                     print('')
 

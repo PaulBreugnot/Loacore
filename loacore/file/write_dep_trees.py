@@ -18,6 +18,6 @@ def write():
                 text += "| File Index : " + str(review.file_index) + "\n"
                 text += "| Sentence : " + " ".join([w.word for w in sentence.words]) + "\n"
                 text += "+-------------------------------------------------------------------------------------------\n"
-                text += sentence.dep_tree.print_dep_tree(print_dep_tree=False)
+                text += sentence.dep_tree.dep_tree_str(print_dep_tree=False)
                 text += "\n\n"
         file_writer.write(text, os.path.join('../../data/dep_trees/', directory[0]), filename[0])

@@ -21,7 +21,7 @@ def load_dep_trees(id_dep_trees=[], load_words=True):
 
     >>> import loacore.load.deptree_load as deptree_load
     >>> deptrees = deptree_load.load_dep_trees()
-    >>> deptree_str = deptrees[500].print_dep_tree()
+    >>> deptree_str = deptrees[500].dep_tree_str()
     instalaciones (sentence, NCFP000, instalación)
         las (spec, None, el)
         agua (sn, NCCS000, agua)

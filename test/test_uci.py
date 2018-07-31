@@ -32,7 +32,7 @@ def show_dep_trees(files):
         for review in file.reviews:
             for sentence in review.sentences:
                 print(len(sentence.dep_tree.root.children))
-                sentence.dep_tree.print_dep_tree()
+                sentence.dep_tree.dep_tree_str()
 
 
 def pattern_test():
@@ -51,8 +51,8 @@ def show_adj_patterns(files):
                 patterns = pattern_recognition.pos_tag_patterns_recognition([sentence], [['*'], ['JJ']])
                 dt = sentence.dep_tree
                 for pattern in patterns:
-                    sentence.print_sentence()
-                    dt.print_dep_tree(root=pattern[0])
+                    sentence.sentence_str()
+                    dt.dep_tree_str(root=pattern[0])
                     print('')
 
 
@@ -64,8 +64,8 @@ def show_verb_patterns(files):
                 patterns = pattern_recognition.pos_tag_patterns_recognition([sentence], [['V', 'MD'], ['*']])
                 dt = sentence.dep_tree
                 for pattern in patterns:
-                    sentence.print_sentence()
-                    dt.print_dep_tree(root=pattern[0])
+                    sentence.sentence_str()
+                    dt.dep_tree_str(root=pattern[0])
                     print('')
 
 

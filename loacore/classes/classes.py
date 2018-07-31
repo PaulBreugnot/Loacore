@@ -87,6 +87,25 @@ class Review:
         self.sentences = []
         self.polarities = dict()
 
+    def review_str(self, colored_polarity=True, analysis=[]):
+        review_str = ' '.join([s.sentence_str(colored_polarity=colored_polarity) for s in self.sentences])
+        for a in analysis:
+            if a not in self.polarities.keys():
+                print("Missing analysis : '" + a + "'. Available : " + str(list(self.polarities.keys())))
+            else:
+                if colored_polarity:
+                    review_str += "\t" + a + "=["\
+                       + "\033[32m" + str(self.polarities[a].pos_score) + "\033[30m, "\
+                       + "\033[31m" + str(self.polarities[a].neg_score) + "\033[30m, "\
+                       + "\033[33m" + str(self.polarities[a].obj_score) + "\033[30m]"
+                else:
+                    review_str += "\t" + a + "=["\
+                       + str(self.polarities[a].pos_score) + ", "\
+                       + str(self.polarities[a].neg_score) + ", "\
+                       + str(self.polarities[a].obj_score) + "]"
+
+        return review_str
+
 
 class Sentence:
 
@@ -117,7 +136,7 @@ class Sentence:
         self.dep_tree = None
         self.freeling_sentence = None
 
-    def print_sentence(self, print_sentence=True, colored_polarity=False):
+    def sentence_str(self, colored_polarity=False):
         """
 
         Convenient way of printing sentences from their word list attribute.
@@ -134,8 +153,7 @@ class Sentence:
             sentence_str += '\033[30m'
         else:
             sentence_str = ' '.join([w.word for w in self.words])
-        if print_sentence:
-            print(sentence_str)
+
         return sentence_str
 
     def compute_freeling_sentence(self):
@@ -271,27 +289,22 @@ class DepTree:
         self.id_sentence = id_sentence
         self.root = None
 
-    def print_dep_tree(self, root=None, print_dep_tree=True, colored_polarity=False):
+    def dep_tree_str(self, root=None, colored_polarity=False):
         """
         :param root: If set, node from which to start to print the tree. self.root otherwise.
         :type root: :class:`DepTreeNode`
-        :param print_dep_tree:
-            Can be set to False to compute and return the string corresponding to the tree, without
-            printing it.
-        :type print_dep_tree: boolean
         :return: String representation of DepTree instance
         :rtype: string
         """
         dep_tree_str = []
         if root is None:
             root = self.root
-        self.print_node(dep_tree_str, root, "", colored_polarity)
+        self.node_str(dep_tree_str, root, "", colored_polarity)
         dep_tree_str = '\n'.join(dep_tree_str)
-        if print_dep_tree:
-            print(dep_tree_str)
+
         return dep_tree_str
 
-    def print_node(self, dep_tree_str, node, offset, colored_polarity):
+    def node_str(self, dep_tree_str, node, offset, colored_polarity):
         if node.word is None:
             dep_tree_str.append(offset + "ID_Word : " + str(node.id_word) + "Label : " + str(node.label))
         else:
@@ -302,7 +315,7 @@ class DepTree:
             dep_tree_str.append(offset + word + ' (' + str(node.label) + ', ' + str(node.word.PoS_tag) + ', '
                                 + node.word.lemma + ')')
         for child in node.children:
-            self.print_node(dep_tree_str, child, offset + '    ', colored_polarity)
+            self.node_str(dep_tree_str, child, offset + '    ', colored_polarity)
 
 
 class DepTreeNode:
