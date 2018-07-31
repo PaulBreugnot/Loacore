@@ -88,6 +88,17 @@ class Review:
         self.polarities = dict()
 
     def review_str(self, colored_polarity=True, analysis=[]):
+        """
+
+        :param colored_polarity:
+            If True, polarities are colored printed.
+            (red = Negative, green = Positive, yellow = Objective, black = No Synset)
+        :type colored_polarity: boolean
+        :param analysis: The polarities computed with the specified analysis will be added at the end of each review.
+        :type analysis: :obj:`list` of :obj:`string`
+        :return: Review string representation
+        :rtype: string
+        """
         review_str = ' '.join([s.sentence_str(colored_polarity=colored_polarity) for s in self.sentences])
         for a in analysis:
             if a not in self.polarities.keys():
@@ -141,9 +152,10 @@ class Sentence:
 
         Convenient way of printing sentences from their word list attribute.
 
-        :param print_sentence:
-            Can be set to False to compute and return the string corresponding to the sentence, without
-            printing it.
+        :param colored_polarity:
+            If True, polarities are colored printed.
+            (red = Negative, green = Positive, yellow = Objective, black = No Synset)
+        :type colored_polarity: boolean
         :return: String representation of the sentence
         :rtype: string
         """
@@ -231,6 +243,16 @@ class Word:
         return fr_word
 
     def colored_word(self):
+        """
+        Colored representation of word. If a Synset is associated, colored are assigned as follow :
+
+            - pos_score > neg_score => red
+            - neg_score > pos_score => green
+            - neg_score = pos_score => yellow
+        
+        :return: Colored word
+        :rtype: string
+        """
         if self.synset is not None:
             if self.synset.pos_score > self.synset.neg_score:
                 return '\033[32m' + self.word
@@ -293,6 +315,10 @@ class DepTree:
         """
         :param root: If set, node from which to start to print the tree. self.root otherwise.
         :type root: :class:`DepTreeNode`
+        :param colored_polarity:
+            If True, polarities are colored printed.
+            (red = Negative, green = Positive, yellow = Objective, black = No Synset)
+        :type colored_polarity: boolean
         :return: String representation of DepTree instance
         :rtype: string
         """
@@ -372,7 +398,10 @@ class Polarity:
         self.obj_score = obj_score
 
     def is_positive(self):
-        if self.pos_score + self.neg_score + self.obj_score > 0:
-            if self.pos_score > self.neg_score:
-                return True
+        """
+        :return: True if pos_score > neg_score
+        :rtype: boolean
+        """
+        if self.pos_score > self.neg_score:
+            return True
         return False
