@@ -1,0 +1,99 @@
+\indexentry{File (class in loacore.classes.classes)|hyperpage}{5}
+\indexentry{load() (loacore.classes.classes.File method)|hyperpage}{5}
+\indexentry{sentence\_list() (loacore.classes.classes.File method)|hyperpage}{5}
+\indexentry{sentence\_list\_from\_files() (loacore.classes.classes.File static method)|hyperpage}{5}
+\indexentry{Review (class in loacore.classes.classes)|hyperpage}{5}
+\indexentry{review\_str() (loacore.classes.classes.Review method)|hyperpage}{6}
+\indexentry{Sentence (class in loacore.classes.classes)|hyperpage}{6}
+\indexentry{compute\_freeling\_sentence() (loacore.classes.classes.Sentence method)|hyperpage}{6}
+\indexentry{sentence\_str() (loacore.classes.classes.Sentence method)|hyperpage}{6}
+\indexentry{Word (class in loacore.classes.classes)|hyperpage}{7}
+\indexentry{colored\_word() (loacore.classes.classes.Word method)|hyperpage}{7}
+\indexentry{compute\_freeling\_word() (loacore.classes.classes.Word method)|hyperpage}{7}
+\indexentry{Synset (class in loacore.classes.classes)|hyperpage}{7}
+\indexentry{DepTree (class in loacore.classes.classes)|hyperpage}{8}
+\indexentry{dep\_tree\_str() (loacore.classes.classes.DepTree method)|hyperpage}{8}
+\indexentry{DepTreeNode (class in loacore.classes.classes)|hyperpage}{8}
+\indexentry{Polarity (class in loacore.classes.classes)|hyperpage}{9}
+\indexentry{is\_negative() (loacore.classes.classes.Polarity method)|hyperpage}{9}
+\indexentry{is\_objective() (loacore.classes.classes.Polarity method)|hyperpage}{9}
+\indexentry{is\_positive() (loacore.classes.classes.Polarity method)|hyperpage}{9}
+\indexentry{loacore.process.review\_process (module)|hyperpage}{11}
+\indexentry{add\_reviews\_from\_files() (in module loacore.process.review\_process)|hyperpage}{11}
+\indexentry{normalize() (in module loacore.process.review\_process)|hyperpage}{11}
+\indexentry{loacore.process.sentence\_process (module)|hyperpage}{12}
+\indexentry{add\_sentences\_from\_reviews() (in module loacore.process.sentence\_process)|hyperpage}{12}
+\indexentry{loacore.process.lemma\_process (module)|hyperpage}{12}
+\indexentry{add\_lemmas\_to\_sentences() (in module loacore.process.lemma\_process)|hyperpage}{12}
+\indexentry{loacore.process.synset\_process (module)|hyperpage}{12}
+\indexentry{add\_polarity\_to\_synsets() (in module loacore.process.synset\_process)|hyperpage}{12}
+\indexentry{add\_synsets\_to\_sentences() (in module loacore.process.synset\_process)|hyperpage}{12}
+\indexentry{loacore.process.deptree\_process (module)|hyperpage}{13}
+\indexentry{add\_dep\_tree\_from\_sentences() (in module loacore.process.deptree\_process)|hyperpage}{13}
+\indexentry{loacore.process.file\_process (module)|hyperpage}{13}
+\indexentry{add\_files() (in module loacore.process.file\_process)|hyperpage}{13}
+\indexentry{loacore.load.file\_load (module)|hyperpage}{15}
+\indexentry{clean\_db() (in module loacore.load.file\_load)|hyperpage}{15}
+\indexentry{get\_id\_files\_by\_file\_paths() (in module loacore.load.file\_load)|hyperpage}{15}
+\indexentry{load\_database() (in module loacore.load.file\_load)|hyperpage}{15}
+\indexentry{remove\_files() (in module loacore.load.file\_load)|hyperpage}{16}
+\indexentry{loacore.load.review\_load (module)|hyperpage}{16}
+\indexentry{load\_reviews() (in module loacore.load.review\_load)|hyperpage}{16}
+\indexentry{load\_reviews\_by\_id\_files() (in module loacore.load.review\_load)|hyperpage}{17}
+\indexentry{load\_reviews\_in\_files() (in module loacore.load.review\_load)|hyperpage}{17}
+\indexentry{loacore.load.sentence\_load (module)|hyperpage}{18}
+\indexentry{load\_sentences() (in module loacore.load.sentence\_load)|hyperpage}{18}
+\indexentry{load\_sentences\_by\_id\_files() (in module loacore.load.sentence\_load)|hyperpage}{18}
+\indexentry{load\_sentences\_in\_reviews() (in module loacore.load.sentence\_load)|hyperpage}{19}
+\indexentry{loacore.load.word\_load (module)|hyperpage}{19}
+\indexentry{load\_words() (in module loacore.load.word\_load)|hyperpage}{19}
+\indexentry{load\_words\_in\_dep\_trees() (in module loacore.load.word\_load)|hyperpage}{20}
+\indexentry{load\_words\_in\_sentences() (in module loacore.load.word\_load)|hyperpage}{20}
+\indexentry{loacore.load.synset\_load (module)|hyperpage}{20}
+\indexentry{load\_synsets() (in module loacore.load.synset\_load)|hyperpage}{20}
+\indexentry{load\_synsets\_in\_words() (in module loacore.load.synset\_load)|hyperpage}{21}
+\indexentry{loacore.load.lemma\_load (module)|hyperpage}{21}
+\indexentry{load\_lemmas() (in module loacore.load.lemma\_load)|hyperpage}{21}
+\indexentry{load\_lemmas\_in\_words() (in module loacore.load.lemma\_load)|hyperpage}{21}
+\indexentry{loacore.load.deptree\_load (module)|hyperpage}{22}
+\indexentry{load\_dep\_tree\_in\_sentences() (in module loacore.load.deptree\_load)|hyperpage}{22}
+\indexentry{load\_dep\_trees() (in module loacore.load.deptree\_load)|hyperpage}{22}
+\indexentry{loacore.analysis.sentiment\_analysis (module)|hyperpage}{25}
+\indexentry{compute\_extreme\_files\_polarity() (in module loacore.analysis.sentiment\_analysis)|hyperpage}{25}
+\indexentry{compute\_extreme\_reviews\_polarity() (in module loacore.analysis.sentiment\_analysis)|hyperpage}{26}
+\indexentry{compute\_simple\_files\_polarity() (in module loacore.analysis.sentiment\_analysis)|hyperpage}{26}
+\indexentry{compute\_simple\_reviews\_polarity() (in module loacore.analysis.sentiment\_analysis)|hyperpage}{27}
+\indexentry{loacore.analysis.pattern\_recognition (module)|hyperpage}{27}
+\indexentry{adj\_pattern\_table() (in module loacore.analysis.pattern\_recognition)|hyperpage}{27}
+\indexentry{general\_pattern\_recognition() (in module loacore.analysis.pattern\_recognition)|hyperpage}{28}
+\indexentry{label\_patterns\_recognition() (in module loacore.analysis.pattern\_recognition)|hyperpage}{29}
+\indexentry{pos\_tag\_patterns\_recognition() (in module loacore.analysis.pattern\_recognition)|hyperpage}{30}
+\indexentry{verb\_context\_table() (in module loacore.analysis.pattern\_recognition)|hyperpage}{31}
+\indexentry{loacore.analysis.frequencies (module)|hyperpage}{32}
+\indexentry{bigram\_label\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{32}
+\indexentry{bigram\_pos\_tag\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{32}
+\indexentry{count\_bigram\_label() (in module loacore.analysis.frequencies)|hyperpage}{32}
+\indexentry{count\_bigram\_pos\_tag() (in module loacore.analysis.frequencies)|hyperpage}{33}
+\indexentry{count\_label() (in module loacore.analysis.frequencies)|hyperpage}{33}
+\indexentry{count\_pos\_tag() (in module loacore.analysis.frequencies)|hyperpage}{34}
+\indexentry{get\_bigram\_label\_set() (in module loacore.analysis.frequencies)|hyperpage}{34}
+\indexentry{get\_bigram\_pos\_tag\_set() (in module loacore.analysis.frequencies)|hyperpage}{35}
+\indexentry{get\_label\_set() (in module loacore.analysis.frequencies)|hyperpage}{35}
+\indexentry{get\_polarity\_label\_set() (in module loacore.analysis.frequencies)|hyperpage}{35}
+\indexentry{get\_polarity\_pos\_tag\_set() (in module loacore.analysis.frequencies)|hyperpage}{36}
+\indexentry{get\_pos\_tag\_set() (in module loacore.analysis.frequencies)|hyperpage}{36}
+\indexentry{label\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{36}
+\indexentry{polarity\_word\_label\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{37}
+\indexentry{polarity\_word\_pos\_tag\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{37}
+\indexentry{pos\_tag\_frequencies() (in module loacore.analysis.frequencies)|hyperpage}{37}
+\indexentry{loacore.analysis.polarity\_check (module)|hyperpage}{38}
+\indexentry{check\_polarity() (in module loacore.analysis.polarity\_check)|hyperpage}{38}
+\indexentry{write\_polarity\_check() (in module loacore.analysis.polarity\_check)|hyperpage}{38}
+\indexentry{loacore.utils.file\_writer (module)|hyperpage}{39}
+\indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{39}
+\indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{39}
+\indexentry{save\_polarity\_pie\_charts() (in module loacore.utils.plot\_polarities)|hyperpage}{39}
+\indexentry{loacore.utils.print\_patterns (module)|hyperpage}{39}
+\indexentry{loacore.utils.plot\_frequencies (module)|hyperpage}{39}
+\indexentry{frequencies\_bar\_chart() (in module loacore.utils.plot\_frequencies)|hyperpage}{39}
+\indexentry{write\_frequencies() (in module loacore.utils.plot\_frequencies)|hyperpage}{40}

@@ -1,0 +1,47 @@
+Feeding database : *process* package
+====================================
+This package contains all the necessary modules to perform the process of new files. Notice that all the processes are automatically handled by the :func:`file_process.add_files()` function.
+
+Raw Processes
+--------------
+
+Normalization and review splitting
+..................................
+
+- Normalization : conversion to UTF-8 and lower case
+- Review splitting : the file text is splitted into reviews
+
+.. automodule:: loacore.process.review_process
+    :members:
+
+Freeling Processes
+------------------
+
+tokenization
+............
+
+.. automodule:: loacore.process.sentence_process
+    :members:
+
+lemmatization
+.............
+
+.. automodule:: loacore.process.lemma_process
+    :members:
+
+disambiguation
+..............
+
+.. automodule:: loacore.process.synset_process
+    :members:
+
+dependency tree generation
+..........................
+
+.. automodule:: loacore.process.deptree_process
+    :members:
+
+Feed database
+-------------
+.. automodule:: loacore.process.file_process
+    :members:

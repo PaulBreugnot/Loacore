@@ -1,0 +1,10 @@
+Introduction
+============
+*This project was originally lead by the NLP research group of the Technichal University of Pereira, Colombia*
+
+
+
+The goal of this project is to provide a Python library that allow to easily run language processing analysis such as sentiment analysis or depency tree analysis, specialized in comments and reviews such as hotel and restaurant reviews, movie reviews, products reviews... Thus, the library provide an high level API to run backend Freeling processes or other hard coded processes involving nltk and WordNet corpus for example. 
+
+
+*Still under development*

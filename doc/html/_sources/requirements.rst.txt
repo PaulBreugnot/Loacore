@@ -1,0 +1,26 @@
+Requirements
+============
+
+Freeling
+--------
+| This project uses an external program, called Freeling, to process language : http://nlp.lsi.upc.edu/freeling/
+| Check this page to install Freeling on your computer : https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html
+| Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation.
+| **For now**, only a Linux installation in the default folder */usr/local* is supported, but this should be fixed in next improvements.
+
+Database
+--------
+| The embedded database used to store results is an sqlite database, managed with the sqlite3 Python database API : https://docs.python.org/3/library/sqlite3.html
+| The corresponding Python package should already be installed in your Python3 distribution.
+
+Utils
+-----
+Package :mod:`utils` uses a few graphical modules to show results.
+
+- PrettyTable : https://pypi.org/project/PrettyTable/
+- Matplotlib : https://matplotlib.org/users/installing.html#linux
+- | Tkinter : https://wiki.python.org/moin/TkInter
+  | Module used to generate gui to save pdf for example.
+  | Even if the package should be included in Python distribution, on Linux distributions you might need to install *tk* package through your package manager.
+
+.. |File| replace:: :class:`~loacore.classes.classes.File`

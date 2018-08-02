@@ -1,0 +1,16 @@
+Save and plot results : *utils* package
+=======================================
+
+Provides useful functions to plot and save various results.
+
+.. automodule:: loacore.utils.file_writer
+    :members:
+
+.. automodule:: loacore.utils.plot_polarities
+    :members:
+
+.. automodule:: loacore.utils.print_patterns
+    :members:
+
+.. automodule:: loacore.utils.plot_frequencies
+    :members:

@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Other Useful Examples &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Save and plot results : utils package" href="utils.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Save and plot results : utils package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="other-useful-examples">
+<h1>Other Useful Examples<a class="headerlink" href="#other-useful-examples" title="Permalink to this headline">¶</a></h1>
+<p>Display dependency trees from node that have at least one adjective as a child, from all the database file.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="kn">as</span> <span class="nn">file_load</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">loacore.analysis.pattern_recognition</span> <span class="kn">as</span> <span class="nn">pattern_recognition</span>
+<span class="k">for</span> <span class="nb">file</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">review</span> <span class="ow">in</span> <span class="nb">file</span><span class="o">.</span><span class="n">reviews</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">review</span><span class="o">.</span><span class="n">sentences</span><span class="p">:</span>
+            <span class="n">patterns</span> <span class="o">=</span> <span class="n">pattern_recognition</span><span class="o">.</span><span class="n">pos_tag_patterns_recognition</span><span class="p">([</span><span class="n">sentence</span><span class="p">],</span> <span class="p">[[</span><span class="s1">&#39;*&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">]])</span>
+            <span class="n">dt</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">dep_tree</span>
+                <span class="k">for</span> <span class="n">pattern</span> <span class="ow">in</span> <span class="n">patterns</span><span class="p">:</span>
+                    <span class="n">sentence</span><span class="o">.</span><span class="n">print_sentence</span><span class="p">()</span>
+                    <span class="n">dt</span><span class="o">.</span><span class="n">print_dep_tree</span><span class="p">(</span><span class="n">root</span><span class="o">=</span><span class="n">pattern</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+                    <span class="k">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="n">la</span> <span class="n">reserva</span> <span class="n">natural</span>
+<span class="n">reserva</span> <span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">NCCS000</span><span class="p">,</span> <span class="n">reserva</span><span class="p">)</span>
+    <span class="n">la</span> <span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">el</span><span class="p">)</span>
+    <span class="n">natural</span> <span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">AQ0CS00</span><span class="p">,</span> <span class="n">natural</span><span class="p">)</span>
+
+<span class="n">muy</span> <span class="n">buena</span> <span class="n">atencion</span> <span class="n">el</span> <span class="n">paisaje</span>
+<span class="n">atencion</span> <span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">NCFS000</span><span class="p">,</span> <span class="p">)</span>
+<span class="n">buena</span> <span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">AQ0FS00</span><span class="p">,</span> <span class="n">bueno</span><span class="p">)</span>
+    <span class="n">muy</span> <span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="n">RG</span><span class="p">,</span> <span class="n">muy</span><span class="p">)</span>
+<span class="n">paisaje</span> <span class="p">(</span><span class="n">sn</span><span class="p">,</span> <span class="n">NCMS000</span><span class="p">,</span> <span class="n">paisaje</span><span class="p">)</span>
+    <span class="n">el</span> <span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">el</span><span class="p">)</span>
+
+<span class="n">termales</span> <span class="n">y</span> <span class="n">calidad</span>
+<span class="n">calidad</span> <span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">NCFS000</span><span class="p">,</span> <span class="n">calidad</span><span class="p">)</span>
+    <span class="n">termales</span> <span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">AQ0CP00</span><span class="p">,</span> <span class="n">termal</span><span class="p">)</span>
+    <span class="n">y</span> <span class="p">(</span><span class="n">coord</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="n">el</span> <span class="n">agua</span> <span class="n">termal</span>
+<span class="n">agua</span> <span class="p">(</span><span class="n">sentence</span><span class="p">,</span> <span class="n">NCCS000</span><span class="p">,</span> <span class="n">agua</span><span class="p">)</span>
+    <span class="n">el</span> <span class="p">(</span><span class="n">spec</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">el</span><span class="p">)</span>
+    <span class="n">termal</span> <span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="n">AQ0CS00</span><span class="p">,</span> <span class="n">termal</span><span class="p">)</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="utils.html"
+                        title="previous chapter">Save and plot results : <em>utils</em> package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/other_examples.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.html" title="Save and plot results : utils package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Universidad Tecnológica de Pereira.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>
