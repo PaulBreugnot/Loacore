@@ -1,6 +1,16 @@
 
 
 def word_2_vec(files):
+    """
+    Learn a Word2Vec dictionary from the tokens of specified files (tokens obtained with :func:`get_tokens_list()` .
+
+    :param files: Files to process
+    :type files: :obj:`list` of |File|
+    :return: Word2Vec dictionary
+    :rtype:
+        `KeyedVector
+        <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+    """
     from gensim.test.utils import get_tmpfile
     from gensim.models import Word2Vec, KeyedVectors
 
@@ -15,6 +25,20 @@ def word_2_vec(files):
 
 
 def reviews_2_vec(reviews, wv):
+    """
+    Returns a list of vector representations of the reviews, according to the specified Word2Vec dictionary.\n
+    (Currently : mean of the Word2Vec vectors of words)
+
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
+    :param wv: Word2Vec dictionary
+    :type wv:
+        `KeyedVector
+        <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+    :return: Vector list
+    :rtype:
+        :obj:`list` of `numpy.array <https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html>`_
+    """
     import numpy as np
     review_vectors = []
     for review in reviews:
@@ -28,12 +52,35 @@ def reviews_2_vec(reviews, wv):
 
 
 def review_2_vec(review, wv):
+    """
+        Returns a vector representations review, according to the specified Word2Vec dictionary.\n
+        (Currently : mean of the Word2Vec vectors of words)
+
+        :param review: Reviews to process
+        :type review: :obj:`list` of |Review|
+        :param wv: Word2Vec dictionary
+        :type wv:
+            `KeyedVector
+            <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+        :return: Vector list
+        :rtype:
+            :obj:`list` of `numpy.array <https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html>`_
+        """
     import numpy as np
     review_vector = [wv[w.word_2_vec_key] for s in review.sentences for w in s.words if w.word_2_vec_key is not None]
     return np.array([np.mean(review_vector, axis=0)])
 
 
 def get_tokens_list(files):
+    """
+    Returns a list of all tokens in specified files. For each word, if a lemma is found, lemma is used. Otherwise, word
+    form is used.
+
+    :param files: Files to process
+    :type files: :obj:`list` of |File|
+    :return: List of tokens
+    :rtype: :obj:`list` of :obj:`string`
+    """
     import re
     tokens = []
     for file in files:

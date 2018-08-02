@@ -23,6 +23,8 @@ def add_files_to_database():
     # file_process.add_files(file_paths, lang='es')
     # file_paths.clear()
 
+    file_load.clean_db()
+
     for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(DATA_PATH, 'raw', 'uci'))):
         for name in filenames:
             print(name)
@@ -167,12 +169,12 @@ def test_colored_reviews():
 
 
 #file_load.clean_db()
-#add_files_to_database()
+add_files_to_database()
 #test_load_db()
 #test_dep_tree()
 #test_pos_tag_pattern()
 #test_general_pattern()
 #test_load_polarities()
 #test_print_colored_sentences()
-test_colored_reviews()
+#test_colored_reviews()
 #test_print_colored_deptree()

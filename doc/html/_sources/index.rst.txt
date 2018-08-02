@@ -16,5 +16,6 @@ Loacore : Language and Opinion Analyzer for Comments and Reviews's documentation
    process
    load
    analysis
+   learning
    utils
    other_examples

@@ -73,6 +73,7 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
         # Tokenization + Add all sentences and all words from all reviews
         import loacore.process.sentence_process as sentence_process
         added_sentences = sentence_process.add_sentences_from_reviews(reviews)
+        print("Added sentences : " + str(len(added_sentences)))
 
         # Reload sentences with words
         import loacore.load.sentence_load as sentence_load
@@ -104,7 +105,7 @@ def split_reviews(reviews):
     n = int(len(reviews)/1000)
     split_number = 0
     for i in range(n):
-        split_number+=len(reviews[i*1000:(i+1)*1000])
+        split_number += len(reviews[i*1000:(i+1)*1000])
         split_reviews_list.append(reviews[i*1000:(i+1)*1000])
     split_number += len(reviews[n*1000:len(reviews)])
     split_reviews_list.append(reviews[n*1000:len(reviews)])

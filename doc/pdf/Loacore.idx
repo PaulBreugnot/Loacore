@@ -89,11 +89,20 @@
 \indexentry{loacore.analysis.polarity\_check (module)|hyperpage}{38}
 \indexentry{check\_polarity() (in module loacore.analysis.polarity\_check)|hyperpage}{38}
 \indexentry{write\_polarity\_check() (in module loacore.analysis.polarity\_check)|hyperpage}{38}
-\indexentry{loacore.utils.file\_writer (module)|hyperpage}{39}
-\indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{39}
-\indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{39}
-\indexentry{save\_polarity\_pie\_charts() (in module loacore.utils.plot\_polarities)|hyperpage}{39}
-\indexentry{loacore.utils.print\_patterns (module)|hyperpage}{39}
-\indexentry{loacore.utils.plot\_frequencies (module)|hyperpage}{39}
-\indexentry{frequencies\_bar\_chart() (in module loacore.utils.plot\_frequencies)|hyperpage}{39}
-\indexentry{write\_frequencies() (in module loacore.utils.plot\_frequencies)|hyperpage}{40}
+\indexentry{loacore.learning.word\_embeddings (module)|hyperpage}{39}
+\indexentry{get\_tokens\_list() (in module loacore.learning.word\_embeddings)|hyperpage}{39}
+\indexentry{review\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{39}
+\indexentry{reviews\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{39}
+\indexentry{word\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{39}
+\indexentry{loacore.learning.svm (module)|hyperpage}{40}
+\indexentry{commit\_analysis() (in module loacore.learning.svm)|hyperpage}{40}
+\indexentry{get\_labels\_vector() (in module loacore.learning.svm)|hyperpage}{40}
+\indexentry{learn\_model() (in module loacore.learning.svm)|hyperpage}{40}
+\indexentry{loacore.utils.file\_writer (module)|hyperpage}{41}
+\indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{41}
+\indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{41}
+\indexentry{save\_polarity\_pie\_charts() (in module loacore.utils.plot\_polarities)|hyperpage}{41}
+\indexentry{loacore.utils.print\_patterns (module)|hyperpage}{41}
+\indexentry{loacore.utils.plot\_frequencies (module)|hyperpage}{41}
+\indexentry{frequencies\_bar\_chart() (in module loacore.utils.plot\_frequencies)|hyperpage}{41}
+\indexentry{write\_frequencies() (in module loacore.utils.plot\_frequencies)|hyperpage}{42}

@@ -56,7 +56,7 @@
 
 
 \title{Loacore : Language and Opinion Analyzer for Comments and Reviews' Documentation}
-\date{Aug 01, 2018}
+\date{Aug 02, 2018}
 \release{}
 \author{Paul Breugnot}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -680,7 +680,7 @@ added \sphinxcode{\sphinxupquote{Review}} s
 Performs raw text normalization.
 \begin{itemize}
 \item {} 
-Convertion to lower case
+Conversion to lower case
 
 \item {} 
 Review splitting using python regular expressions : each new line correspond to a new review
@@ -2843,6 +2843,204 @@ To show the colored file in terminal.
 
 
 
+\chapter{Machine Learning}
+\label{\detokenize{learning:machine-learning}}\label{\detokenize{learning::doc}}
+
+\section{Word2Vec}
+\label{\detokenize{learning:module-loacore.learning.word_embeddings}}\label{\detokenize{learning:word2vec}}\index{loacore.learning.word\_embeddings (module)}\index{get\_tokens\_list() (in module loacore.learning.word\_embeddings)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.get_tokens_list}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{get\_tokens\_list}}}{\emph{files}}{}
+Returns a list of all tokens in specified files. For each word, if a lemma is found, lemma is used. Otherwise, word
+form is used.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{files}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.File}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{File}}}}}) \textendash{} Files to process
+
+\item[{Returns}] \leavevmode
+List of tokens
+
+\item[{Return type}] \leavevmode
+\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{string}}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{review\_2\_vec() (in module loacore.learning.word\_embeddings)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.review_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{review\_2\_vec}}}{\emph{review}, \emph{wv}}{}
+Returns a vector representations review, according to the specified Word2Vec dictionary.
+
+(Currently : mean of the Word2Vec vectors of words)
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{review}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} (\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}) \textendash{} Word2Vec dictionary
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Vector list
+
+\item[{Return type}] \leavevmode
+\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{reviews\_2\_vec() (in module loacore.learning.word\_embeddings)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.reviews_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{reviews\_2\_vec}}}{\emph{reviews}, \emph{wv}}{}
+Returns a list of vector representations of the reviews, according to the specified Word2Vec dictionary.
+
+(Currently : mean of the Word2Vec vectors of words)
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word2Vec dictionary
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Vector list
+
+\item[{Return type}] \leavevmode
+
+\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{word\_2\_vec() (in module loacore.learning.word\_embeddings)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.word_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{word\_2\_vec}}}{\emph{files}}{}
+Learn a Word2Vec dictionary from the tokens of specified files (tokens obtained with {\hyperref[\detokenize{learning:loacore.learning.word_embeddings.get_tokens_list}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{get\_tokens\_list()}}}}} .
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{files}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.File}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{File}}}}}) \textendash{} Files to process
+
+\item[{Returns}] \leavevmode
+Word2Vec dictionary
+
+\item[{Return type}] \leavevmode
+
+\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{SVM}
+\label{\detokenize{learning:module-loacore.learning.svm}}\label{\detokenize{learning:svm}}\index{loacore.learning.svm (module)}\index{commit\_analysis() (in module loacore.learning.svm)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.svm.commit_analysis}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.svm.}}\sphinxbfcode{\sphinxupquote{commit\_analysis}}}{\emph{clf}, \emph{reviews}, \emph{wv}, \emph{analysis='svm'}, \emph{db\_commit=False}}{}
+Predict polarity of each review in reviews and add the result to their \sphinxstyleemphasis{review.polarity} dictionary with the
+\sphinxstyleemphasis{analysis} label.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{clf}} (\sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html\#sklearn.svm.LinearSVC}{LinearSVC}) \textendash{} LinearSVC model
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word vectors dictionary
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{analysis}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Analysis label
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{db\_commit}} \textendash{} If True, results are commit to the database.
+
+\end{itemize}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{get\_labels\_vector() (in module loacore.learning.svm)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.svm.get_labels_vector}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.svm.}}\sphinxbfcode{\sphinxupquote{get\_labels\_vector}}}{\emph{reviews}, \emph{ref='label'}}{}
+Return reviews classification based on specified ref analysis. Classes are represented as -1, 0, +1, according to
+the results of {\hyperref[\detokenize{classes:loacore.classes.classes.Polarity}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Polarity}}}}} fucntions :
+\begin{itemize}
+\item {} 
+{\hyperref[\detokenize{classes:loacore.classes.classes.Polarity.is_negative}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{is\_negative()}}}}}
+
+\item {} 
+{\hyperref[\detokenize{classes:loacore.classes.classes.Polarity.is_objective}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{is\_objective()}}}}}
+
+\item {} 
+{\hyperref[\detokenize{classes:loacore.classes.classes.Polarity.is_positive}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{is\_positive()}}}}}
+
+\end{itemize}
+
+Especially used with reviews as the learning dataset, to return labels to give to the LinearSVC learning model.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{ref}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Reference analysis
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Reviews classification
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{learn\_model() (in module loacore.learning.svm)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.svm.learn_model}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.svm.}}\sphinxbfcode{\sphinxupquote{learn\_model}}}{\emph{reviews}, \emph{wv}}{}
+Learn and return a LinearSVC model from specified labelled reviews and Word2Vec dictionnary.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Learning Dataset
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word vectors dictionary
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Learned model
+
+\item[{Return type}] \leavevmode
+
+\sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html\#sklearn.svm.LinearSVC}{LinearSVC}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
 \chapter{Save and plot results : \sphinxstyleemphasis{utils} package}
 \label{\detokenize{utils:save-and-plot-results-utils-package}}\label{\detokenize{utils::doc}}
 Provides useful functions to plot and save various results.
@@ -3038,6 +3236,8 @@ Results:
 \item {\sphinxstyleindexentry{loacore.analysis.pattern\_recognition}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.pattern_recognition}}
 \item {\sphinxstyleindexentry{loacore.analysis.polarity\_check}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.polarity_check}}
 \item {\sphinxstyleindexentry{loacore.analysis.sentiment\_analysis}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.sentiment_analysis}}
+\item {\sphinxstyleindexentry{loacore.learning.svm}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.svm}}
+\item {\sphinxstyleindexentry{loacore.learning.word\_embeddings}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.word_embeddings}}
 \item {\sphinxstyleindexentry{loacore.load.deptree\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.deptree_load}}
 \item {\sphinxstyleindexentry{loacore.load.file\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.file_load}}
 \item {\sphinxstyleindexentry{loacore.load.lemma\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.lemma_load}}

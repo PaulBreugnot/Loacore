@@ -35,6 +35,9 @@
 \contentsline {section}{\numberline {6.2}Pattern Recognition}{27}{section.6.2}
 \contentsline {section}{\numberline {6.3}Frequencies}{32}{section.6.3}
 \contentsline {section}{\numberline {6.4}Polarity Check}{38}{section.6.4}
-\contentsline {chapter}{\numberline {7}Save and plot results : \sphinxstyleemphasis {utils} package}{39}{chapter.7}
-\contentsline {chapter}{\numberline {8}Other Useful Examples}{41}{chapter.8}
-\contentsline {chapter}{Python Module Index}{43}{section*.88}
+\contentsline {chapter}{\numberline {7}Machine Learning}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Word2Vec}{39}{section.7.1}
+\contentsline {section}{\numberline {7.2}SVM}{40}{section.7.2}
+\contentsline {chapter}{\numberline {8}Save and plot results : \sphinxstyleemphasis {utils} package}{41}{chapter.8}
+\contentsline {chapter}{\numberline {9}Other Useful Examples}{43}{chapter.9}
+\contentsline {chapter}{Python Module Index}{45}{section*.95}

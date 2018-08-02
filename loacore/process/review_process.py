@@ -75,7 +75,8 @@ def normalize(text):
     :return: reviews
     :rtype: :obj:`list` of :obj:`string`
     """
-    normalized_string = text.lower()
+    # normalized_string = text.lower()
+    normalized_string = text
     reviews = re.findall(r'.+', normalized_string, re.MULTILINE)
     return reviews
 

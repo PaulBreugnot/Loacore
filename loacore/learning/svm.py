@@ -1,6 +1,21 @@
 
 
 def learn_model(reviews, wv):
+    """
+    Learn and return a LinearSVC model from specified labelled reviews and Word2Vec dictionnary.
+
+    :param reviews: Learning Dataset
+    :type reviews: :obj:`list` of |Review|
+    :param wv: Word vectors dictionary
+    :type wv:
+        `KeyedVector
+        <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+    :return: Learned model
+    :rtype:
+        `LinearSVC
+        <http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC>`_
+    """
+
     import loacore.learning.word_embeddings as we
     from sklearn.svm import LinearSVC
 
@@ -13,6 +28,26 @@ def learn_model(reviews, wv):
 
 
 def commit_analysis(clf, reviews, wv, analysis='svm', db_commit=False):
+    """
+
+    Predict polarity of each review in reviews and add the result to their *review.polarity* dictionary with the
+    *analysis* label.
+
+    :param clf: LinearSVC model
+    :type clf:
+        `LinearSVC
+        <http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC>`_
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
+    :param wv: Word vectors dictionary
+    :type wv:
+        `KeyedVector
+        <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+    :param analysis: Analysis label
+    :type analysis: string
+    :param db_commit: If True, results are commit to the database.
+
+    """
     import loacore.learning.word_embeddings as we
     from loacore.classes.classes import Polarity
     for review in reviews:
@@ -30,6 +65,22 @@ def commit_analysis(clf, reviews, wv, analysis='svm', db_commit=False):
 
 
 def get_labels_vector(reviews, ref='label'):
+    """
+    Return reviews classification based on specified ref analysis. Classes are represented as -1, 0, +1, according to
+    the results of |Polarity| fucntions :
+
+        - :func:`~loacore.classes.classes.Polarity.is_negative()`
+        - :func:`~loacore.classes.classes.Polarity.is_objective()`
+        - :func:`~loacore.classes.classes.Polarity.is_positive()`
+
+    Especially used with reviews as the learning dataset, to return labels to give to the LinearSVC learning model.
+
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
+    :param ref: Reference analysis
+    :type ref: string
+    :return: Reviews classification
+    """
     labels = [-1 if review.polarities[ref].is_negative() else
               0 if review.polarities[ref].is_objective() else
               +1 if review.polarities[ref].is_positive() else None

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.11)  1 AUG 2018 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.7.11)  2 AUG 2018 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1183,97 +1183,101 @@ ore/results/sentiment_analysis/check'\T1/pcr/m/n/10 )
 
 [38]
 Chapter 7.
+[39
+
+] [40]
+Chapter 8.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sphinxstyleemphasis' on input line 2846.
+(hyperref)                removing `\sphinxstyleemphasis' on input line 3044.
 
 
-Underfull \hbox (badness 7047) in paragraph at lines 2868--2868
+Underfull \hbox (badness 7047) in paragraph at lines 3066--3066
 []\T1/ptm/m/it/10 file_score_dict\T1/ptm/m/n/10 , \T1/ptm/m/it/10 gui=False\T1/
 ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (292.65027pt too wide) in paragraph at lines 2868--2868
+Overfull \hbox (292.65027pt too wide) in paragraph at lines 3066--3066
 \T1/ptm/m/it/10 file_path='/home/paulbreugnot/Development/Python/workspace/Loac
 ore/results/sentiment_analysis'\T1/ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (38.47354pt too wide) in paragraph at lines 2868--2868
+Overfull \hbox (38.47354pt too wide) in paragraph at lines 3066--3066
 \T1/ptm/m/it/10 file_name='polarity_pie_charts.pdf'\T1/pcr/m/n/10 ) 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2895--2895
+Underfull \hbox (badness 10000) in paragraph at lines 3093--3093
 []\T1/ptm/m/it/10 files_frequencies\T1/ptm/m/n/10 , \T1/ptm/m/it/10 plot=False\
 T1/ptm/m/n/10 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2895--2895
+Underfull \hbox (badness 10000) in paragraph at lines 3093--3093
 \T1/ptm/m/it/10 save=True\T1/ptm/m/n/10 , \T1/ptm/m/it/10 gui=False\T1/ptm/m/n/
 10 ,
  []
 
 
-Overfull \hbox (250.27066pt too wide) in paragraph at lines 2895--2895
+Overfull \hbox (250.27066pt too wide) in paragraph at lines 3093--3093
 \T1/ptm/m/it/10 file_path='/home/paulbreugnot/Development/Python/workspace/Loac
 ore/results/frequencies'\T1/ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (34.81352pt too wide) in paragraph at lines 2895--2895
+Overfull \hbox (34.81352pt too wide) in paragraph at lines 3093--3093
 \T1/ptm/m/it/10 file_name='frequencies_bar_chart.pdf'\T1/ptm/m/n/10 ,
  []
 
-[39
+[41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2965--2965
+Underfull \hbox (badness 10000) in paragraph at lines 3163--3163
 []\T1/ptm/m/it/10 files_frequencies\T1/ptm/m/n/10 ,
  []
 
 
-Overfull \hbox (256.44017pt too wide) in paragraph at lines 2965--2965
+Overfull \hbox (256.44017pt too wide) in paragraph at lines 3163--3163
 \T1/ptm/m/it/10 file_path='/home/paulbreugnot/Development/Python/workspace/Loac
 ore/results/frequencies/tables'\T1/pcr/m/n/10 ) 
  []
 
-[40]
-Chapter 8.
-[41
+[42]
+Chapter 9.
+[43
 
-] [42
+] [44
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 3038--3039
+Underfull \hbox (badness 10000) in paragraph at lines 3236--3237
 []\T1/pcr/m/n/10 loacore.analysis.pattern_recognition\T1/ptm/m/n/10 ,
  []
 
-[43
+[45
 
 
 ]
 No file Loacore.ind.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3062.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3062.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3262.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3262.
 (./Loacore.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3062.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3062.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3262.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3262.
 
 Package rerunfilecheck Info: File `Loacore.out' has not changed.
-(rerunfilecheck)             Checksum: 34CD9B98812B55A8E3377A1CF7CDE71A;4245.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3062.
+(rerunfilecheck)             Checksum: DCA87B377D561E8A02447B6233C9AC8D;4537.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3262.
  ) 
 Here is how much of TeX's memory you used:
- 13637 strings out of 492649
- 192345 string characters out of 6135778
- 372571 words of memory out of 5000000
- 17041 multiletter control sequences out of 15000+600000
+ 13665 strings out of 492649
+ 193032 string characters out of 6135778
+ 373022 words of memory out of 5000000
+ 17057 multiletter control sequences out of 15000+600000
  59558 words of font info for 80 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,12n,48p,772b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,56p,772b,728s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pf
@@ -1284,10 +1288,10 @@ helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb
 ist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
 es/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
 are/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Loacore.pdf (47 pages, 232622 bytes).
+Output written on Loacore.pdf (49 pages, 237931 bytes).
 PDF statistics:
- 621 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
- 172 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 601 compressed objects within 7 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
