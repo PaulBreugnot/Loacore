@@ -226,6 +226,7 @@ class Word:
         self.synset = None
         self.PoS_tag = PoS_tag
         self.freeling_word = None
+        self.word_2_vec_key = None
 
     def compute_freeling_word(self):
         """

@@ -6,6 +6,18 @@ def check_polarity(files,
                    analysis_to_check=[
                        "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"],
                    ref="label"):
+    """
+    .. py:curentmodule::`loacore.classes.classes`
+    Prints tables with the rates, in percentages, of correct, false positive and false negative classifications of
+    reviews by file for each analysis in *analysis_to_check*, compared with *ref* analysis.
+
+    :param files: Files to process.
+    :type files: :obj:`list` of |File|
+    :param analysis_to_check: Analysis to check
+    :type analysis_to_check: :obj:`list` of :obj:`string`
+    :param ref: Reference analysis, with which analysis to check are compared.
+    :type ref: string
+    """
     from prettytable import PrettyTable
 
     for analysis in analysis_to_check:
@@ -15,18 +27,21 @@ def check_polarity(files,
             correct = 0
             false_positive = 0
             false_negative = 0
+            false_objective = 0
             for review in file.reviews:
-                if (review.polarities[ref].is_positive() and review.polarities[analysis].is_positive()
-                   or not review.polarities[ref].is_positive() and not review.polarities[analysis].is_positive()):
+                if is_correct(review, ref, analysis):
                     correct += 1
 
-                elif not review.polarities[ref].is_positive() and review.polarities[analysis].is_positive():
+                elif is_false_positive(review, ref, analysis):
                     false_positive += 1
 
-                elif review.polarities[ref].is_positive() and not review.polarities[analysis].is_positive():
+                elif is_false_negative(review, ref, analysis):
                     false_negative += 1
 
-            total = correct + false_positive + false_negative
+                elif is_false_objective(review, ref, analysis):
+                    false_objective += 1
+
+            total = correct + false_positive + false_negative + false_objective
             table.add_row([file.get_filename(),
                            "%.2f" % (correct/total), "%.2f" % (false_positive/total), "%.2f" % (false_negative/total)])
 
@@ -48,7 +63,7 @@ def write_polarity_check(files,
     corresponding(s) polarities.
 
     :param files: Files to process.
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param analysis_to_check: Analysis to compare with *ref*
     :type analysis_to_check: :obj:`list` of :obj:`string`
     :param ref: Reference analysis
@@ -62,7 +77,7 @@ def write_polarity_check(files,
         For example, in Linux, use
 
             .. code-block:: BashLexer
-            
+
                 cat file_name.txt
 
         To show the colored file in terminal.
@@ -106,22 +121,44 @@ def write_polarity_check(files,
 
 
 def is_correct(review, ref, analysis):
-    if (review.polarities[ref].is_positive() and review.polarities[analysis].is_positive()
-            or review.polarities[ref].is_negative() and review.polarities[analysis].is_negative()
-            or review.polarities[ref].is_objective() and review.polarities[analysis].is_objective()):
-        return True
-    return False
+    ref_polarity = review.polarities.get(ref)
+    tested_polarity = review.polarities.get(analysis)
+    if ref_polarity is not None and tested_polarity is not None:
+        if (ref_polarity.is_positive() and tested_polarity.is_positive()
+                or ref_polarity.is_negative() and tested_polarity.is_negative()
+                or ref_polarity.is_objective() and tested_polarity.is_objective()):
+            return True
+        return False
+    return None
 
 
 def is_false_positive(review, ref, analysis):
-    if (review.polarities[ref].is_negative() or review.polarities[ref].is_objective())\
-            and review.polarities[analysis].is_positive():
-        return True
+    ref_polarity = review.polarities.get(ref)
+    tested_polarity = review.polarities.get(analysis)
+    if ref_polarity is not None and tested_polarity is not None:
+        if (ref_polarity.is_negative() or ref_polarity.is_objective())\
+                and tested_polarity.is_positive():
+            return True
+        return False
 
 
 def is_false_negative(review, ref, analysis):
-    if (review.polarities[ref].is_positive() or review.polarities[ref].is_objective())\
-            and review.polarities[analysis].is_negative():
-        return True
+    ref_polarity = review.polarities.get(ref)
+    tested_polarity = review.polarities.get(analysis)
+    if ref_polarity is not None and tested_polarity is not None:
+        if (ref_polarity.is_positive() or ref_polarity.is_objective())\
+                and tested_polarity.is_negative():
+            return True
+        return False
+
+
+def is_false_objective(review, ref, analysis):
+    ref_polarity = review.polarities.get(ref)
+    tested_polarity = review.polarities.get(analysis)
+    if ref_polarity is not None and tested_polarity is not None:
+        if (ref_polarity.is_positive() or ref_polarity.is_negative())\
+                and tested_polarity.is_objective():
+            return True
+        return False
 
 

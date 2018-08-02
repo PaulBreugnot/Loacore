@@ -67,7 +67,7 @@ def normalize(text):
 
     Performs raw text normalization.
 
-    - Convertion to lower case
+    - Conversion to lower case
     - Review splitting using python regular expressions : each new line correspond to a new review
 
     :param text: text to process

@@ -67,31 +67,49 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
 
     # ********************************************* FREELING ********************************************************* #
 
-    print("Tokenization...")
-    # Tokenization + Add all sentences and all words from all reviews
-    import loacore.process.sentence_process as sentence_process
-    added_sentences = sentence_process.add_sentences_from_reviews(reviews)
+    splitted_reviews = split_reviews(reviews)
+    for reviews in splitted_reviews:
+        print("Tokenization...")
+        # Tokenization + Add all sentences and all words from all reviews
+        import loacore.process.sentence_process as sentence_process
+        added_sentences = sentence_process.add_sentences_from_reviews(reviews)
 
-    # Reload sentences with words
-    import loacore.load.sentence_load as sentence_load
-    sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
+        # Reload sentences with words
+        import loacore.load.sentence_load as sentence_load
+        sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
-    # Lemmatization
-    print("Lemmatization...")
-    import loacore.process.lemma_process as lemma_process
-    lemma_process.add_lemmas_to_sentences(sentences)
+        # Lemmatization
+        print("Lemmatization...")
+        import loacore.process.lemma_process as lemma_process
+        lemma_process.add_lemmas_to_sentences(sentences)
 
-    # Disambiguation
-    print("Disambiguation...")
+        # Disambiguation
+        print("Disambiguation...")
 
-    import loacore.process.synset_process as synset_process
-    synset_process.add_synsets_to_sentences(sentences)
+        import loacore.process.synset_process as synset_process
+        synset_process.add_synsets_to_sentences(sentences)
 
-    # Synset polarities
-    print("Adding synset polarities...")
-    synset_process.add_polarity_to_synsets()
+        # Synset polarities
+        print("Adding synset polarities...")
+        synset_process.add_polarity_to_synsets()
 
-    # Dep tree
-    print("Dependency tree processing...")
-    import loacore.process.deptree_process as deptree_process
-    deptree_process.add_dep_tree_from_sentences(sentences)
+        # Dep tree
+        print("Dependency tree processing...")
+        import loacore.process.deptree_process as deptree_process
+        deptree_process.add_dep_tree_from_sentences(sentences)
+
+
+def split_reviews(reviews):
+    split_reviews_list=[]
+    n = int(len(reviews)/1000)
+    split_number = 0
+    for i in range(n):
+        split_number+=len(reviews[i*1000:(i+1)*1000])
+        split_reviews_list.append(reviews[i*1000:(i+1)*1000])
+    split_number += len(reviews[n*1000:len(reviews)])
+    split_reviews_list.append(reviews[n*1000:len(reviews)])
+
+    print("Reviews number : " + str(len(reviews)))
+    print("Split into : " + str(len(split_reviews_list)) + "(total : " + str(split_number) + ")")
+
+    return split_reviews_list
