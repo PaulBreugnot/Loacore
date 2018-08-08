@@ -46,7 +46,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         print("\r" + str(i) + " / " + str(end) + " sentences processed.", end='')
         disambiguated_sentences.append(parser.analyze(freeling_sentences[i]))
 
-    print(str(end) + " / " + str(end) + " sentences processed.")
+    print('\r' + str(end) + " / " + str(end) + " sentences processed.")
 
     freeling_sentences = disambiguated_sentences
 
@@ -58,7 +58,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
     for s in range(len(sentences)):
         progress += 1
         if progress == end:
-            print(str(progress) + " / " + str(end) + " sentences added.")
+            print('\r' + str(progress) + " / " + str(end) + " sentences added.")
         else:
             print('\r' + str(progress) + " / " + str(end) + " sentences added.", end='')
         sentence = sentences[s]
