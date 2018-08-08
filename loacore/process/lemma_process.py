@@ -1,7 +1,7 @@
 import os
 import sqlite3 as sql
 from loacore import DB_PATH
-import ressources.pyfreeling as freeling
+import resources.pyfreeling as freeling
 
 
 def add_lemmas_to_sentences(sentences, print_lemmas=False):

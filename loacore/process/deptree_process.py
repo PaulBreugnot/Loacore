@@ -1,6 +1,6 @@
 import os
 import sqlite3 as sql
-import ressources.pyfreeling as freeling
+import resources.pyfreeling as freeling
 from loacore import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
