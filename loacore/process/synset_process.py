@@ -132,10 +132,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    import loacore
-    lang = loacore.lang
-    # path to language data
-    lpath = loacore.LANG_PATH
+    from loacore import lang
+    from loacore import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))
@@ -154,7 +152,7 @@ def init_freeling():
                              True)  # ProbabilityAssignment
 
     # create tagger
-    tagger = freeling.hmm_tagger(lpath + "tagger.dat", True, 2)
+    tagger = freeling.hmm_tagger(lpath + "tagger.dat", False, 2)
 
     # create sense annotator
     sen = freeling.senses(lpath + "senses.dat")

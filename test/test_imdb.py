@@ -5,7 +5,7 @@ def add_train_imdb_neg():
     from loacore import DATA_PATH
     import os
 
-    file_load.clean_db()
+    # file_load.clean_db()
     file_process.add_files(
         [os.path.join(DATA_PATH, 'raw', 'imdb', 'train', 'train_imdb_labelled_neg.txt')],
         encoding='utf8',

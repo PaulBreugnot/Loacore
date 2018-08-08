@@ -80,10 +80,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    import loacore
-    lang = loacore.lang
-    # path to language data
-    lpath = loacore.LANG_PATH
+    from loacore import lang
+    from loacore import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

@@ -93,11 +93,11 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
         synset_process.add_synsets_to_sentences(sentences)
 
         # Synset polarities
-        print("Adding synset polarities...")
+        print("==> Adding synset polarities")
         synset_process.add_polarity_to_synsets()
 
         # Dep tree
-        print("Dependency tree processing...")
+        print("==> Dependency tree processing")
         import loacore.process.deptree_process as deptree_process
         deptree_process.add_dep_tree_from_sentences(sentences)
 
