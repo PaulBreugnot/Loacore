@@ -1,6 +1,6 @@
 import os
 import sqlite3 as sql
-import ressources.pyfreeling as freeling
+import resources.pyfreeling as freeling
 from loacore import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
@@ -178,13 +178,15 @@ def init_freeling():
                              True)  # ProbabilityAssignment
 
     # create tagger
-    tagger = freeling.hmm_tagger(lpath + "tagger.dat", False, 2)
+    from loacore import RESOURCES_PATHS
+    import os
+    tagger = freeling.hmm_tagger(os.path.join(RESOURCES_PATHS, "chunked_tagger.dat"), False, 2)
 
     # create sense annotator
     sen = freeling.senses(lpath + "senses.dat")
     # create sense disambiguator
     wsd = freeling.ukb(lpath + "ukb.dat")
     # create dependency parser
-    parser = freeling.dep_treeler(lpath + "dep_treeler/dependences.dat")
+    parser = freeling.dep_treeler(os.path.join(RESOURCES_PATHS, "chunked_treeler.dat"))
 
     return morfo, tagger, sen, wsd, parser

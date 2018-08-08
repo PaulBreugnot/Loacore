@@ -184,7 +184,7 @@ class Sentence:
         :rtype: :class:`pyfreeling.sentence`
         """
 
-        from ressources.pyfreeling import sentence as freeling_sentence_class
+        from resources.pyfreeling import sentence as freeling_sentence_class
         fr_words = [word.compute_freeling_word() for word in self.words]
         fr_sentence = freeling_sentence_class(fr_words)
         self.freeling_sentence = fr_sentence
@@ -236,7 +236,7 @@ class Word:
         because all Freeling analysis work with :class:`pyfreeling.sentence` instances.
         """
 
-        from ressources.pyfreeling import word as freeling_word_class
+        from resources.pyfreeling import word as freeling_word_class
         fr_word = freeling_word_class()
         fr_word.set_form(self.word)
 

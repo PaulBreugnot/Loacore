@@ -3,6 +3,7 @@ import os
 RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'results'))
 DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
+RESOURCES_PATHS = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
 
 FR_PATH = "/usr/local/share/"
 lang = "es"

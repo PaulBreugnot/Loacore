@@ -1,7 +1,7 @@
 import os
 import sqlite3 as sql
 from loacore import DB_PATH
-import ressources.pyfreeling as freeling
+import resources.pyfreeling as freeling
 
 
 def add_lemmas_to_sentences(sentences, print_lemmas=False):
@@ -63,7 +63,9 @@ def my_maco_options(lang, lpath):
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
+
     opt.DictionaryFile = lpath + "dicc.src"
+
     opt.PunctuationFile = lpath + "../common/punct.dat"
     return opt
 
