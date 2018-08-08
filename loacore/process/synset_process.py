@@ -36,6 +36,12 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
+
+        if not len(sentence.words) == len(freeling_sentences[s]):
+            print("/!\\ Warning, sentence offset error in synset_process /!\\")
+            print(sentence.sentence_str())
+            print([w.get_form() for w in freeling_sentences[s]])
+
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
@@ -126,10 +132,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    import loacore
-    lang = loacore.lang
-    # path to language data
-    lpath = loacore.LANG_PATH
+    from loacore import lang
+    from loacore import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

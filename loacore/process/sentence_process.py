@@ -20,7 +20,7 @@ def add_sentences_from_reviews(reviews):
     :rtype: :obj:`list` of :class:`Sentence`
     """
 
-    tk, sp = init_freeling()
+    morfo, tk, sp = init_freeling()
 
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -30,6 +30,7 @@ def add_sentences_from_reviews(reviews):
         raw_review = review.review
         tokens = tk.tokenize(raw_review)
         sentences = sp.split(tokens)
+        sentences = morfo.analyze(sentences)
 
         review_index = 0
         for sentence in sentences:
@@ -64,15 +65,42 @@ def add_sentences_from_reviews(reviews):
 
 # ********************************************* Freeling Options****************************************************** #
 
+def my_maco_options(lang, lpath):
+
+    # create options holder
+    opt = freeling.maco_options(lang)
+
+    # Provide files for morphological submodules. Note that it is not
+    # necessary to set file for modules that will not be used.
+    opt.UserMapFile = ""
+    opt.DictionaryFile = lpath + "dicc.src"
+    opt.PunctuationFile = lpath + "../common/punct.dat"
+    return opt
+
+
 def init_freeling():
-    freeling.util_init_locale("default");
+    freeling.util_init_locale("default")
 
-    import loacore
-    lang = loacore.lang
-    # path to language data
-    lpath = loacore.LANG_PATH
+    from loacore import lang
+    from loacore import LANG_PATH as lpath
 
-    tk = freeling.tokenizer(lpath + "tokenizer.dat");
-    sp = freeling.splitter(lpath + "splitter.dat");
+    # create the analyzer with the required set of maco_options
+    morfo = freeling.maco(my_maco_options(lang, lpath))
 
-    return tk, sp
+    morfo.set_active_options(False,  # UserMap
+                             False,  # NumbersDetection,
+                             True,  # PunctuationDetection,
+                             False,  # DatesDetection,
+                             True,  # DictionarySearch,
+                             False,  # AffixAnalysis,
+                             False,  # CompoundAnalysis,
+                             True,  # RetokContractions,
+                             False,  # MultiwordsDetection,
+                             False,  # NERecognition,
+                             False,  # QuantitiesDetection,
+                             False)  # ProbabilityAssignment
+
+    tk = freeling.tokenizer(lpath + "tokenizer.dat")
+    sp = freeling.splitter(lpath + "splitter.dat")
+
+    return morfo, tk, sp

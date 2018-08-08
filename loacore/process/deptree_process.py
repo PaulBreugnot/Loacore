@@ -40,7 +40,15 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
     print("Dependency tree parsing...")
     # parse sentences
-    freeling_sentences = parser.analyze(freeling_sentences)
+    end = len(freeling_sentences)
+    disambiguated_sentences = []
+    for i in range(end):
+        print("\r" + str(i) + " / " + str(end) + " sentences processed.", end='')
+        disambiguated_sentences.append(parser.analyze(freeling_sentences[i]))
+
+    print(str(end) + " / " + str(end) + " sentences processed.")
+
+    freeling_sentences = disambiguated_sentences
 
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -52,7 +60,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         if progress == end:
             print(str(progress) + " / " + str(end) + " sentences added.")
         else:
-            print(str(progress) + " / " + str(end) + " sentences added.", end='\r')
+            print('\r' + str(progress) + " / " + str(end) + " sentences added.", end='')
         sentence = sentences[s]
 
         # Add dep_tree to database
@@ -69,8 +77,8 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         # Database process
         root = None
         if not len(sentence.words) == len(freeling_sentences[s]):
-            print("/!\\ Warning, sentence offset error /!\\")
-            sentence.print(sentence)
+            print("/!\\ Warning, sentence offset error in deptree_process /!\\")
+            print(sentence.sentence_str())
             print([w.get_form() for w in freeling_sentences[s]])
 
         for w in range(len(sentence.words)):
@@ -155,11 +163,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    import loacore
-    lang = loacore.lang
-    # path to language data
-    lpath = loacore.LANG_PATH
-    print(lpath)
+    from loacore import lang
+    from loacore import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))
