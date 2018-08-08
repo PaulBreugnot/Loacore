@@ -36,6 +36,12 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
+
+        if not len(sentence.words) == len(freeling_sentences[s]):
+            print("/!\\ Warning, sentence offset error in synset_process /!\\")
+            print(sentence.sentence_str())
+            print([w.get_form() for w in freeling_sentences[s]])
+
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             rank = freeling_sentences[s][w].get_senses()
@@ -148,9 +154,7 @@ def init_freeling():
                              True)  # ProbabilityAssignment
 
     # create tagger
-    from loacore import RESOURCES_PATHS
-    import os
-    tagger = freeling.hmm_tagger(os.path.join(RESOURCES_PATHS, "chunked_tagger.dat"), False, 2)
+    tagger = freeling.hmm_tagger(lpath + "tagger.dat", True, 2)
 
     # create sense annotator
     sen = freeling.senses(lpath + "senses.dat")

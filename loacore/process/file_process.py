@@ -56,20 +56,22 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
     # ********************************************* RAW DATA ********************************************************* #
 
     # Add all reviews from all files
-    print("Normalization...")
+    print("==> Normalization")
     import loacore.process.review_process as review_process
     reviews = review_process.add_reviews_from_files(files, encoding=encoding)
 
     # ****************************************** POLARITY LABEL ****************************************************** #
-    print("Adding polarities to DB...")
+    print("==> Adding polarities to DB")
     import loacore.process.polarity_process as polarity_process
     polarity_process.add_polarity_from_reviews(reviews)
 
     # ********************************************* FREELING ********************************************************* #
 
     splitted_reviews = split_reviews(reviews)
+    review_count = 1
     for reviews in splitted_reviews:
-        print("Tokenization...")
+        print("\nProcessing review " + str(review_count) + "/" + str(len(splitted_reviews)))
+        print("==> Tokenization")
         # Tokenization + Add all sentences and all words from all reviews
         import loacore.process.sentence_process as sentence_process
         added_sentences = sentence_process.add_sentences_from_reviews(reviews)
@@ -80,12 +82,12 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
         sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
         # Lemmatization
-        print("Lemmatization...")
+        print("==> Lemmatization")
         import loacore.process.lemma_process as lemma_process
         lemma_process.add_lemmas_to_sentences(sentences)
 
         # Disambiguation
-        print("Disambiguation...")
+        print("==> Disambiguation")
 
         import loacore.process.synset_process as synset_process
         synset_process.add_synsets_to_sentences(sentences)
@@ -107,8 +109,10 @@ def split_reviews(reviews):
     for i in range(n):
         split_number += len(reviews[i*1000:(i+1)*1000])
         split_reviews_list.append(reviews[i*1000:(i+1)*1000])
-    split_number += len(reviews[n*1000:len(reviews)])
-    split_reviews_list.append(reviews[n*1000:len(reviews)])
+
+    if n*1000 < len(reviews):
+        split_number += len(reviews[n*1000:len(reviews)])
+        split_reviews_list.append(reviews[n*1000:len(reviews)])
 
     print("Reviews number : " + str(len(reviews)))
     print("Split into : " + str(len(split_reviews_list)) + "(total : " + str(split_number) + ")")

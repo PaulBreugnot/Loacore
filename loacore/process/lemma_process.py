@@ -28,6 +28,12 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
+
+        if not len(sentence.words) == len(freeling_sentences[s]):
+            print("/!\\ Warning, sentence offset error in lemma_process /!\\")
+            print(sentence.sentence_str())
+            print([w.get_form() for w in freeling_sentences[s]])
+
         for w in range(len(sentence.words)):
             word = sentence.words[w]
             word.lemma = freeling_sentences[s][w].get_lemma()

@@ -69,8 +69,8 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         # Database process
         root = None
         if not len(sentence.words) == len(freeling_sentences[s]):
-            print("/!\\ Warning, sentence offset error /!\\")
-            sentence.print(sentence)
+            print("/!\\ Warning, sentence offset error in deptree_process /!\\")
+            print(sentence.sentence_str())
             print([w.get_form() for w in freeling_sentences[s]])
 
         for w in range(len(sentence.words)):
@@ -178,15 +178,13 @@ def init_freeling():
                              True)  # ProbabilityAssignment
 
     # create tagger
-    from loacore import RESOURCES_PATHS
-    import os
-    tagger = freeling.hmm_tagger(os.path.join(RESOURCES_PATHS, "chunked_tagger.dat"), False, 2)
+    tagger = freeling.hmm_tagger(lpath + "tagger.dat", True, 2)
 
     # create sense annotator
     sen = freeling.senses(lpath + "senses.dat")
     # create sense disambiguator
     wsd = freeling.ukb(lpath + "ukb.dat")
     # create dependency parser
-    parser = freeling.dep_treeler(os.path.join(RESOURCES_PATHS, "chunked_treeler.dat"))
+    parser = freeling.dep_treeler(lpath + "dep_treeler/dependences.dat")
 
     return morfo, tagger, sen, wsd, parser
