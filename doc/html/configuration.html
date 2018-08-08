@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Configuration &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Classes" href="classes.html" />
+    <link rel="prev" title="Requirements" href="requirements.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classes.html" title="Classes"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="requirements.html" title="Requirements"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-loacore.conf">
+<span id="configuration"></span><h1>Configuration<a class="headerlink" href="#module-loacore.conf" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="loacore.conf.check_freeling_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">check_freeling_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_freeling_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print current <em>freeling_path</em>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.check_lang">
+<code class="descclassname">loacore.conf.</code><code class="descname">check_lang</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print current <em>lang</em>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_freeling_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_freeling_path</code><span class="sig-paren">(</span><em>freeling_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_freeling_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set Freeling path.
+Changes are permanent, until the next call to <a class="reference internal" href="#loacore.conf.set_freeling_path" title="loacore.conf.set_freeling_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_freeling_path()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>freeling_path</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">path-like</span> <span class="pre">object</span></code>) – <p>Absolute path of the folder containing the <em>freeling</em> folder.</p>
+<p>The path must always be specified in the following format : <em>/path/to/freeling</em> .
+Python will then automatically format it according to the current OS.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_lang">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_lang</code><span class="sig-paren">(</span><em>user_lang</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set default language used in Freeling.</p>
+<p>Changes are permanent, until the next call to <a class="reference internal" href="#loacore.conf.set_lang" title="loacore.conf.set_lang"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_lang()</span></code></a>.</p>
+<p>Possible values : ‘as’, ‘ca’, ‘cy’, ‘de’, ‘en’, ‘es’, ‘fr’, ‘gl’, ‘hr’, ‘it’, ‘nb’, ‘pt’, ‘ru’, ‘sl’.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_lang</strong> (<em>str</em>) – Freeling language</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="requirements.html"
+                        title="previous chapter">Requirements</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="classes.html"
+                        title="next chapter">Classes</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/configuration.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="classes.html" title="Classes"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="requirements.html" title="Requirements"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Universidad Tecnológica de Pereira.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>

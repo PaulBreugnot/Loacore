@@ -22,5 +22,3 @@ Package :mod:`utils` uses a few graphical modules to show results.
 - | Tkinter : https://wiki.python.org/moin/TkInter
   | Module used to generate gui to save pdf for example.
   | Even if the package should be included in Python distribution, on Linux distributions you might need to install *tk* package through your package manager.
-
-.. |File| replace:: :class:`~loacore.classes.classes.File`

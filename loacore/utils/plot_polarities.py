@@ -2,7 +2,7 @@ import re
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import os
-from loacore import RESULT_PATH
+from loacore.conf import RESULT_PATH
 
 
 def save_polarity_pie_charts(file_score_dict, gui=False,

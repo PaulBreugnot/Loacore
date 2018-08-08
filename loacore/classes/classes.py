@@ -5,7 +5,7 @@ class File:
     :ivar file_path: Path used to load file from file system.
     :vartype file_path: path-like object
     :ivar reviews: File reviews
-    :vartype reviews: :obj:`list` of :class:`Review`
+    :vartype reviews: :obj:`list` of |Review|
 
     """
 
@@ -19,7 +19,7 @@ class File:
         Convenient way to get all the sentences of the file, avoiding Reviews.
 
         :return: List of file sentences
-        :rtype: :obj:`list` of :class:`Sentence`
+        :rtype: :obj:`list` of |Sentence|
         """
         sentences = []
         for review in self.reviews:
@@ -41,21 +41,21 @@ class File:
         Convenient way to get all the sentences of the specified files, avoiding Reviews.
 
         :param files: Files
-        :type files: :obj:`list` of :class:`File`
+        :type files: :obj:`list` of |File|
         :return: List of file sentences
-        :rtype: :obj:`list` of :class:`Sentence`
+        :rtype: :obj:`list` of |Sentence|
         """
         sentences = []
         for file in files:
             sentences += file.sentence_list()
         return sentences
 
-    def load(self, encoding='windows-1252'):
+    def load(self, encoding='utf8'):
         """
         Load file from file system using :attr:`file_path` and specified encoding.
 
         :param encoding:
-            Source file encoding. Default is set to *windows-1252*, the encoding obtained from .txt conversion in Excel.
+            Source file encoding. Default : *utf8*.
         :return: file object
         """
         return open(self.file_path, encoding=encoding)
@@ -72,11 +72,11 @@ class Review:
     :ivar review: Review represented as a string
     :vartype review: string
     :ivar sentences: Review Sentences
-    :vartype sentences: :obj:`list` of :class:`Sentence`
+    :vartype sentences: :obj:`list` of |Sentence|
     :ivar polarities:
         Polarities associated to the review, that can come from directly from the source file for polarity label
         datasets, or from the result of different analysis. Each polarity can be identified with its analysis attribute.
-    :vartype polarity: :obj:`list` of :class:`Polarity`
+    :vartype polarity: :obj:`list` of |Polarity|
     """
 
     def __init__(self, id_review, id_file, file_index, review):
@@ -95,7 +95,7 @@ class Review:
             (red = Negative, green = Positive, yellow = Objective, black = No Synset)
         :type colored_polarity: boolean
         :param analysis: The polarities computed with the specified analysis will be added at the end of each review.
-        :type analysis: :obj:`list` of :obj:`string`
+        :type analysis: :obj:`list` of :obj:`str`
         :return: Review string representation
         :rtype: string
         """
@@ -130,9 +130,9 @@ class Sentence:
     :ivar id_dep_tree: SQL reference to a possibly associated DepTree
     :vartype id_dep_tree: int
     :ivar words: Sentence Words
-    :vartype words: :obj:`list` of :class:`Word`
+    :vartype words: :obj:`list` of |Word|
     :ivar dep_tree: Possibly associated DepTree
-    :vartype dep_tree: :class:`DepTree`
+    :vartype dep_tree: |DepTree|
     :ivar freeling_sentence: result of :meth:`compute_freeling_sentence()` when called
     :vartype freeling_sentence: :class:`pyfreeling.sentence`
 
@@ -171,10 +171,10 @@ class Sentence:
     def compute_freeling_sentence(self):
         """
         Generates a basic :class:`pyfreeling.sentence` instance, converting :attr:`words` as :class:`pyfreeling.word` .
-        \nThis function is used to process :class:`Sentence` with Freeling.
+        \nThis function is used to process |Sentence| with Freeling.
 
         :Example:
-            Load :class:`Sentence` s from database and convert them into Freeling Sentences.
+            Load sentences from database and convert them into Freeling Sentences.
 
             >>> import loacore.load.sentence_load as sentence_load
             >>> sentences = sentence_load.load_sentences()
@@ -208,7 +208,7 @@ class Word:
     :ivar id_synset: SQL references to corresponding Synset
     :vartype id_synset: int
     :ivar synset: Possibly associated Synset
-    :vartype synset: :class:`Synset`
+    :vartype synset: |Synset|
     :ivar PoS_tag: Possibly associated Part-of-Speech tag
     :vartype PoS_tag: string
     :ivar freeling_word: result of :meth:`compute_freeling_word()` when called
@@ -303,7 +303,7 @@ class DepTree:
     :ivar id_sentence: SQL reference to the corresponding Sentence
     :vartype id_sentence: int
     :ivar root: Root node
-    :vartype root: :class:`DepTreeNode`
+    :vartype root: |DepTreeNode|
     """
 
     def __init__(self, id_dep_tree, id_dep_tree_node, id_sentence):
@@ -315,7 +315,7 @@ class DepTree:
     def dep_tree_str(self, root=None, colored_polarity=False):
         """
         :param root: If set, node from which to start to print the tree. self.root otherwise.
-        :type root: :class:`DepTreeNode`
+        :type root: |DepTreeNode|
         :param colored_polarity:
             If True, polarities are colored printed.
             (red = Negative, green = Positive, yellow = Objective, black = No Synset)
@@ -354,13 +354,13 @@ class DepTreeNode:
     :ivar id_word: SQL reference to corresponding id_word
     :vartype id_word: int
     :ivar word: Possibly loaded associated word
-    :vartype word: :class:`Word`
+    :vartype word: |Word|
     :ivar label: Node dependency label. See annex for details.
     :vartype label: string
     :ivar root: True if and only if this is the root of the corresponding DepTree
     :vartype root: boolean
     :ivar children: Node children
-    :vartype children: :obj:`list` of :class:`DepTreeNode`
+    :vartype children: :obj:`list` of |DepTreeNode|
     """
     def __init__(self, id_dep_tree_node, id_dep_tree, id_word, label, root):
         self.id_dep_tree_node = id_dep_tree_node

@@ -4,7 +4,7 @@ def test_label_frequencies():
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/corrected/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -26,7 +26,7 @@ def test_label_bigram_frequencies():
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/corrected/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -49,7 +49,7 @@ def test_pos_tag_frequencies():
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/corrected/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -71,7 +71,7 @@ def test_pos_tag_bigram_frequencies():
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/corrected/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -94,7 +94,7 @@ def test_polarity_pos_tags(polarity):
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -118,7 +118,7 @@ def test_polarity_labels(polarity):
     import loacore.analysis.frequencies as frequencies
     import loacore.utils.plot_frequencies as plot_frequencies
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_reviews=False)

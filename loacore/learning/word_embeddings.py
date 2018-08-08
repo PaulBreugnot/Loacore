@@ -79,7 +79,7 @@ def get_tokens_list(files):
     :param files: Files to process
     :type files: :obj:`list` of |File|
     :return: List of tokens
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     import re
     tokens = []

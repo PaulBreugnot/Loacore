@@ -1,14 +1,14 @@
 import os
 import sqlite3 as sql
 import resources.pyfreeling as freeling
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
 
 
 def add_dep_tree_from_sentences(sentences, print_result=False):
     """
-    Generates the dependency trees of the specified :class:`Sentence` s and add the results to the
+    Generates the dependency trees of the specified sentences and add the results to the
     database.\n
     Sentences are firstly converted into "raw" Freeling sentences (without any analysis) and then all the necessary
     Freeling processes are performed.\n
@@ -18,9 +18,9 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
     .. note:: This process can be quite long. (at least a few minutes)
 
-    :param sentences: :class:`Sentence` s to process
-    :type sentences: :obj:`list` of :class:`Sentence`
-    :param print_result: Print PoS_tags and labels associated to each :class:`Word`
+    :param sentences: Sentences to process
+    :type sentences: :obj:`list` of |Sentence|
+    :param print_result: Print PoS_tags and labels associated to each |Word|
     :type print_result: boolean
     """
     print("Loading Freeling Modules...")
@@ -165,8 +165,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    from loacore import lang
-    from loacore import LANG_PATH as lpath
+    from loacore.conf import lang
+    from loacore.conf import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

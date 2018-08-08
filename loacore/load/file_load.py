@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import File
 
 
@@ -39,16 +39,16 @@ def _load_files():
 
 def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True):
     """
-    Load the complete database as a :obj:`list` of :class:`File` , with all the dependencies specified in parameters
+    Load the complete database as a :obj:`list` of |File| , with all the dependencies specified in parameters
     loaded in them.
 
     :param id_files: If specified, load only the files with the corresponding ids. Otherwise, load all the files.
-    :param load_reviews: Specify if Reviews need to be loaded if :class:`File` s.
-    :param load_sentences: If Reviews have been loaded, specify if Sentences need to be loaded in :class:`Review` s.
-    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in :class:`Sentence` s.
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_reviews: Specify if Reviews need to be loaded if files.
+    :param load_sentences: If Reviews have been loaded, specify if Sentences need to be loaded in reviews.
+    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :return: loaded files
-    :rtype: :obj:`list` of :class:`File`
+    :rtype: :obj:`list` of |File|
 
     .. note::
         Among the dependencies, only the load_deptrees should be set to False to significantly reduce processing
@@ -65,7 +65,7 @@ def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sen
         '../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_GR.txt']
 
     :Example:
-        Load the first 10 files without :class:`DepTree` s.
+        Load the first 10 files without Dep Trees.
 
         >>> import loacore.load.file_load as file_load
         >>> files = load_database(id_files=range(1, 11), load_deptrees=False)
@@ -125,7 +125,7 @@ def get_id_files_by_file_paths(file_paths_re):
     For more information about how Python regular expressions work, see https://docs.python.org/3/library/re.html .
 
     :param file_paths_re: Regular expressions to check
-    :type file_paths_re: :obj:`list` of :obj:`string`
+    :type file_paths_re: :obj:`list` of :obj:`str`
     :return: Ids of matching files.
     :rtype: :obj:`list` of :obj:`int`
 
@@ -160,7 +160,7 @@ def remove_files(files):
     Remove specified files from database. Implemented references will also engender the deletion of all files
     dependencies in database.
 
-    :param files: :obj:`list` of :class:`File`
+    :param files: :obj:`list` of |File|
     """
     conn = sql.connect(DB_PATH)
     c = conn.cursor()

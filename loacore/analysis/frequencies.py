@@ -1,4 +1,4 @@
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 import sqlite3 as sql
 
 ##############################
@@ -18,9 +18,9 @@ def label_frequencies(files):
     A list of dependency labels is also returns. \n
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :return: Dependency labels, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -68,15 +68,15 @@ def get_label_set(files, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param c: SQL cursor
     :return: Dependency labels
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     ids = tuple(f.id_file for f in files)
     c.execute("SELECT Label "
@@ -101,14 +101,14 @@ def count_label(file, label, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param file: File to process
-    :type file: :class:`File`
+    :type file: |File|
     :param label: Dependency label
-    :type label: string
+    :type label: str
     :param c: SQL cursor
     :return: Number of label occurrences
     :rtype: int
@@ -135,9 +135,9 @@ def bigram_label_frequencies(files):
     A list of dependency labels is also returns. \n
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :return: Dependency labels, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -185,15 +185,15 @@ def get_bigram_label_set(files, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param c: SQL cursor
     :return: Bigram labels as string tuples.
-    :rtype: :obj:`list` of :obj:`tuple` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`tuple` of :obj:`str`
 
     """
     ids = tuple(f.id_file for f in files)
@@ -223,14 +223,14 @@ def count_bigram_label(file, bigram_label, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param file: File to process
-    :type file: :class:`File`
+    :type file: |File|
     :param bigram_label: Tuple of two dependency labels.
-    :type bigram_label: :obj:`tuple` of :obj:`string`
+    :type bigram_label: :obj:`tuple` of :obj:`str`
     :param c: SQL cursor
     :return: Number of bigram_label occurrences
     :rtype: int
@@ -261,11 +261,11 @@ def pos_tag_frequencies(files, tag_len=2):
     The number of characters of the PoS_tags to consider can be specified with tag_len.
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
     :return: PoS_tags, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -314,17 +314,17 @@ def get_pos_tag_set(files, c, tag_len):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param c: SQL cursor
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
     :return: PoS_tags
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     ids = tuple(f.id_file for f in files)
     c.execute("SELECT PoS_tag "
@@ -356,12 +356,12 @@ def count_pos_tag(file, pos_tag, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param file: File to process
-    :type file: :class:`File`
+    :type file: |File|
     :param pos_tag: Part of Speech tag
     :type pos_tag: string
     :param c: SQL cursor
@@ -396,11 +396,11 @@ def bigram_pos_tag_frequencies(files, tag_len=2):
     The number of characters of the PoS_tags to consider can be specified with tag_len.
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
     :return: PoS_tags, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -448,15 +448,15 @@ def get_bigram_pos_tag_set(files, c, tag_len):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param c: SQL cursor
     :return: Bigram PoS_tags as string tuples.
-    :rtype: :obj:`list` of :obj:`tuple` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`tuple` of :obj:`str`
 
     """
     ids = tuple(f.id_file for f in files)
@@ -508,14 +508,14 @@ def count_bigram_pos_tag(file, bigram_pos_tag, c):
          .. code-block:: Python
 
             import sqlite3 as sql
-            from loacore import DB_PATH
+            from loacore.conf import DB_PATH
             conn = sql.connect(DB_PATH)
             c = conn.cursor()
 
     :param file: File to process
-    :type file: :class:`File`
+    :type file: |File|
     :param bigram_pos_tag: Tuple of two pos_tags.
-    :type bigram_pos_tag: :obj:`tuple` of :obj:`string`
+    :type bigram_pos_tag: :obj:`tuple` of :obj:`str`
     :param c: SQL cursor
     :return: Number of bigram_pos_tag occurrences
     :rtype: int
@@ -567,13 +567,13 @@ def polarity_word_pos_tag_frequencies(files, polarity, tag_len=2):
     Compute PoS_tag frequencies only for words with the specified polarity.
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param polarity: Word polarity to consider.
-    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :type polarity: :obj:`str` : {'positive', 'negative'}
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
     :return: PoS_tags, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -611,14 +611,14 @@ def get_polarity_pos_tag_set(files, c, tag_len, polarity):
     Select possible Part of Speech tags for words in files with the specified polarity, thanks to an SQL request.
 
     :param files: File to process
-    :type files: :class:`File`
+    :type files: |File|
     :param tag_len: Number of letters kept in each PoS_tag
     :param tag_len: int
     :param c: SQL cursor
     :param polarity: Word polarity to consider.
-    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :type polarity: :obj:`str` : {'positive', 'negative'}
     :return: PoS tags
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     ids = tuple(f.id_file for f in files)
     prepared_statement = \
@@ -658,11 +658,11 @@ def polarity_word_label_frequencies(files, polarity):
     Compute label frequencies for words with the specified polarity.
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param polarity: Word polarity to consider.
-    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :type polarity: :obj:`str` : {'positive', 'negative'}
     :return: Labels, and a dictionary that maps file names to frequencies
-    :rtype: :obj:`list` of :obj:`string` , :obj:`dict` of :obj:`string` : :obj:`dict` of :obj:`string` : :obj:`float`
+    :rtype: :obj:`list` of :obj:`str` , :obj:`dict` of :obj:`str` : :obj:`dict` of :obj:`str` : :obj:`float`
 
     :Example:
 
@@ -698,12 +698,12 @@ def get_polarity_label_set(files, c, polarity):
     Select all the possible dependency labels for words in files with the specified polarity, thanks to an SQL request.
 
     :param files: File to process
-    :type files: :class:`File`
+    :type files: |File|
     :param c: SQL cursor
     :param polarity: Word polarity to consider.
-    :type polarity: :obj:`string` : {'positive', 'negative'}
+    :type polarity: :obj:`str` : {'positive', 'negative'}
     :return: Dependency labels
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     ids = tuple(f.id_file for f in files)
     prepared_statement = \

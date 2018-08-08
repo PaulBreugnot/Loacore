@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
 
@@ -7,14 +7,14 @@ from loacore.classes.classes import DepTreeNode
 def load_dep_trees(id_dep_trees=[], load_words=True):
     """
 
-    Load :class:`DepTree` s from database.
+    Load Dep Trees from database.
 
     :param id_dep_trees: If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.
     :type id_dep_trees: :obj:`list` of :obj:`int`
-    :param load_words: Specify if Words need to be loaded in :class:`DepTree` s.
+    :param load_words: Specify if Words need to be loaded in Dep Trees.
     :type load_words: boolean
     :return: loaded deptrees
-    :rtype: :obj:`list` of :class:`DepTree`
+    :rtype: :obj:`list` of |DepTree|
 
     :Example:
     Load all deptrees from database : can take a few moments.
@@ -91,7 +91,7 @@ def load_dep_trees(id_dep_trees=[], load_words=True):
 def load_dep_tree_in_sentences(sentences, load_words=True):
     """
 
-    Load :class:`DepTree` s into corresponding *sentences*, setting up their attribute :attr:`dep_tree`.\n
+    Load Dep Trees into corresponding *sentences*, setting up their attribute :attr:`dep_tree`.\n
     Also return all the loaded deptrees.\n
 
     .. note::
@@ -100,11 +100,11 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
         In most of the cases, those functions should be used instead to load sentences and deptrees in one go.
 
     :param sentences: Sentences in which corresponding DepTrees should be loaded.
-    :type sentences: :obj:`list` of :class:`Sentence`
-    :param load_words: Specify if Words need to be loaded in :class:`DepTree` s.
+    :type sentences: :obj:`list` of |Sentence|
+    :param load_words: Specify if Words need to be loaded in Dep Trees.
     :type load_words: boolean
     :return: loaded deptrees
-    :rtype: :obj:`list` of :class:`DepTree`
+    :rtype: :obj:`list` of |DepTree|
     """
 
     conn = sql.connect(DB_PATH)

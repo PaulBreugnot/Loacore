@@ -1,16 +1,16 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import Synset
 
 
 def load_synsets(id_synsets=[]):
     """
-    Load :class:`Synset` s from database.
+    Load |Synset| s from database.
 
     :param id_synsets: If specified, load only the synsets with corresponding ids. Otherwise, load all the synsets.
-    :type id_synsets: :obj:`list` of :class:`Word`
+    :type id_synsets: :obj:`list` of |Word|
     :return: loaded synsets
-    :rtype: :obj:`list` of :class:`Synset`
+    :rtype: :obj:`list` of |Synset|
 
     :Example:
     Load all synsets from database.
@@ -48,7 +48,7 @@ def load_synsets(id_synsets=[]):
 def load_synsets_in_words(words):
     """
 
-    Load :class:`Synset` s into corresponding *words*, setting up their attribute :attr:`synset`.\n
+    Load |Synset| s into corresponding *words*, setting up their attribute :attr:`synset`.\n
     Also return all the loaded synsets.\n
 
     .. note::
@@ -57,9 +57,9 @@ def load_synsets_in_words(words):
         In most of the cases, those functions should be used instead to load words and synsets in one go.
 
     :param words: Words in which corresponding synsets should be loaded.
-    :type words: :obj:`list` of :class:`Word`
+    :type words: :obj:`list` of |Word|
     :return: loaded synsets
-    :rtype: :obj:`list` of :class:`Synset`
+    :rtype: :obj:`list` of |Synset|
     """
 
     conn = sql.connect(DB_PATH)

@@ -1,3 +1,5 @@
+.. include:: replace.txt
+
 Load data from database : *load* package
 ========================================
 

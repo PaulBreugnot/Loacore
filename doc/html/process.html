@@ -60,22 +60,22 @@
 <p>Compute Reviews objects and add them to the database.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
+<p class="last">This function should be used only inside the <a class="reference internal" href="#loacore.process.file_process.add_files" title="loacore.process.file_process.add_files"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_files()</span></code></a> function.</p>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code> s to process</li>
-<li><strong>encoding</strong> (<em>String</em>) – Encoding used to load files.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
+<li><strong>encoding</strong> (<em>str</em>) – Encoding used to load files.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">added <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">added reviews</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -94,11 +94,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<em>string</em>) – text to process</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>text</strong> (<em>str</em>) – text to process</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">reviews</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -124,11 +124,11 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code>) – <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s to process</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">added <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">added sentences</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -140,9 +140,9 @@
 <dl class="function">
 <dt id="loacore.process.lemma_process.add_lemmas_to_sentences">
 <code class="descclassname">loacore.process.lemma_process.</code><code class="descname">add_lemmas_to_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_lemmas=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.lemma_process.add_lemmas_to_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a Freeling process to add lemmas to <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</p>
+<dd><p>Performs a Freeling process to add lemmas to words.</p>
 <p>However, the argument is actually a sentence to better fit Freeling usage.</p>
-<p>Our <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s will be converted to a Freeling Sentences before processing.</p>
+<p>Our sentences will be converted to a Freeling Sentences before processing.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
@@ -152,7 +152,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s to process</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
 <li><strong>print_lemmas</strong> (<em>boolean</em>) – If True, print lemmatization results</li>
 </ul>
 </td>
@@ -180,9 +180,9 @@ Synset, from the SentiWordNet corpus.</p>
 <code class="descclassname">loacore.process.synset_process.</code><code class="descname">add_synsets_to_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_synsets=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.synset_process.add_synsets_to_sentences" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs a Freeling process to disambiguate words of the sentences according to their context
 (UKB algorithm) linking them to a unique synset (if possible).</p>
-<p>Our <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s are converted to Freeling Sentences before processing.</p>
+<p>Our sentences are converted to Freeling Sentences before processing.</p>
 <p>Notice that even if we may have already computed the Lemmas for example, Freeling Sentences generated from our
-<code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s are “raw sentences”, without any analysis linked to their Words. So we make all the Freeling
+sentences are “raw sentences”, without any analysis linked to their Words. So we make all the Freeling
 process from scratch every time, except <em>tokenization</em> and <em>sentence splitting</em>, to avoid any confusion.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -193,7 +193,7 @@ process from scratch every time, except <em>tokenization</em> and <em>sentence s
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s to process</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
 <li><strong>print_synsets</strong> (<em>boolean</em>) – If True, print disambiguation results</li>
 </ul>
 </td>
@@ -208,7 +208,7 @@ process from scratch every time, except <em>tokenization</em> and <em>sentence s
 <dl class="function">
 <dt id="loacore.process.deptree_process.add_dep_tree_from_sentences">
 <code class="descclassname">loacore.process.deptree_process.</code><code class="descname">add_dep_tree_from_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_result=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.deptree_process.add_dep_tree_from_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generates the dependency trees of the specified <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s and add the results to the
+<dd><p>Generates the dependency trees of the specified sentences and add the results to the
 database.</p>
 <p>Sentences are firstly converted into “raw” Freeling sentences (without any analysis) and then all the necessary
 Freeling processes are performed.</p>
@@ -226,8 +226,8 @@ Freeling processes are performed.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s to process</li>
-<li><strong>print_result</strong> (<em>boolean</em>) – Print PoS_tags and labels associated to each <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
+<li><strong>print_result</strong> (<em>boolean</em>) – Print PoS_tags and labels associated to each <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></li>
 </ul>
 </td>
 </tr>
@@ -241,7 +241,7 @@ Freeling processes are performed.</p>
 <span id="feed-database"></span><h2>Feed database<a class="headerlink" href="#module-loacore.process.file_process" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.process.file_process.add_files">
-<code class="descclassname">loacore.process.file_process.</code><code class="descname">add_files</code><span class="sig-paren">(</span><em>file_paths</em>, <em>encoding='windows-1252'</em>, <em>lang='es'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.file_process.add_files" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.process.file_process.</code><code class="descname">add_files</code><span class="sig-paren">(</span><em>file_paths</em>, <em>encoding='utf8'</em>, <em>lang=''</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.file_process.add_files" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function performs the full process on all the file_paths specified, and add the results to the corresponding
 tables.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -250,8 +250,9 @@ tables.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>file_paths</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">path-like</span> <span class="pre">object</span></code>) – Paths used to load files</li>
-<li><strong>encoding</strong> (<em>String</em>) – Files encoding.</li>
-<li><strong>lang</strong> (<em>String</em>) – <p>Specify language used by Freeling. Default : ‘es’.</p>
+<li><strong>encoding</strong> (<em>str</em>) – Files encoding.</li>
+<li><strong>lang</strong> (<em>str</em>) – <p>If specify, <em>lang</em> will be used as Freeling language.
+Otherwise, default language is used (See <code class="xref py py-mod docutils literal notranslate"><span class="pre">loacore</span></code>)</p>
 <p>Possible values : ‘as’, ‘ca’, ‘cs’, ‘cy’, ‘de’, ‘en’, ‘es’, ‘fr’, ‘gl’, ‘hr’, ‘it’, ‘nb’, ‘pt’, ‘ru’, ‘sl’)</p>
 <p>See <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html</a> for more details.</p>
 </li>

@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 
 
 def add_polarity_from_reviews(reviews):

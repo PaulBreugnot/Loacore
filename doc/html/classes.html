@@ -16,7 +16,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Feeding database : process package" href="process.html" />
-    <link rel="prev" title="Requirements" href="requirements.html" /> 
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -31,7 +31,7 @@
           <a href="process.html" title="Feeding database : process package"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="requirements.html" title="Requirements"
+          <a href="configuration.html" title="Configuration"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
       </ul>
@@ -64,13 +64,13 @@
 </table>
 <dl class="method">
 <dt id="loacore.classes.classes.File.load">
-<code class="descname">load</code><span class="sig-paren">(</span><em>encoding='windows-1252'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File.load" title="Permalink to this definition">¶</a></dt>
+<code class="descname">load</code><span class="sig-paren">(</span><em>encoding='utf8'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File.load" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load file from file system using <code class="xref py py-attr docutils literal notranslate"><span class="pre">file_path</span></code> and specified encoding.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encoding</strong> – Source file encoding. Default is set to <em>windows-1252</em>, the encoding obtained from .txt conversion in Excel.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encoding</strong> – Source file encoding. Default : <em>utf8</em>.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">file object</td>
 </tr>
@@ -147,7 +147,7 @@ datasets, or from the result of different analysis. Each polarity can be identif
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>colored_polarity</strong> (<em>boolean</em>) – If True, polarities are colored printed.
 (red = Negative, green = Positive, yellow = Objective, black = No Synset)</li>
-<li><strong>analysis</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – The polarities computed with the specified analysis will be added at the end of each review.</li>
+<li><strong>analysis</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – The polarities computed with the specified analysis will be added at the end of each review.</li>
 </ul>
 </td>
 </tr>
@@ -197,7 +197,7 @@ datasets, or from the result of different analysis. Each polarity can be identif
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load <a class="reference internal" href="#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a> s from database and convert them into Freeling Sentences.</p>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load sentences from database and convert them into Freeling Sentences.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.sentence_load</span> <span class="k">as</span> <span class="nn">sentence_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span> <span class="o">=</span> <span class="n">sentence_load</span><span class="o">.</span><span class="n">load_sentences</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">freeling_sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">compute_freeling_sentence</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">]</span>
@@ -492,8 +492,8 @@ because all Freeling analysis work with <code class="xref py py-class docutils l
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="requirements.html"
-                        title="previous chapter">Requirements</a></p>
+  <p class="topless"><a href="configuration.html"
+                        title="previous chapter">Configuration</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="process.html"
                         title="next chapter">Feeding database : <em>process</em> package</a></p>
@@ -533,7 +533,7 @@ because all Freeling analysis work with <code class="xref py py-class docutils l
           <a href="process.html" title="Feeding database : process package"
              >next</a> |</li>
         <li class="right" >
-          <a href="requirements.html" title="Requirements"
+          <a href="configuration.html" title="Configuration"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
       </ul>

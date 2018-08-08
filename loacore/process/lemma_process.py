@@ -1,20 +1,20 @@
 import os
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
 
 
 def add_lemmas_to_sentences(sentences, print_lemmas=False):
     """
 
-    Performs a Freeling process to add lemmas to :class:`Word` s.\n
+    Performs a Freeling process to add lemmas to words.\n
     However, the argument is actually a sentence to better fit Freeling usage.\n
-    Our :class:`Sentence` s will be converted to a Freeling Sentences before processing.
+    Our sentences will be converted to a Freeling Sentences before processing.
 
     .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
 
-    :param sentences: :class:`Sentence` s to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :param sentences: Sentences to process
+    :type sentences: :obj:`list` of |Sentence|
     :param print_lemmas: If True, print lemmatization results
     :type print_lemmas: boolean
     """
@@ -80,8 +80,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    from loacore import lang
-    from loacore import LANG_PATH as lpath
+    from loacore.conf import lang
+    from loacore.conf import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

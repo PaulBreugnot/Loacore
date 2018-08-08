@@ -1,4 +1,4 @@
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 import sqlite3 as sql
 
 

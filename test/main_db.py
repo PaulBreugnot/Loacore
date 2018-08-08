@@ -7,7 +7,7 @@ import loacore.load.word_load as word_api
 
 
 def add_files_to_database():
-    from loacore import DATA_PATH
+    from loacore.conf import DATA_PATH
     file_paths = []
 
     # for dirpath, dirnames, filenames in os.walk(os.path.join(DATA_PATH, 'raw', 'TempAlta')):

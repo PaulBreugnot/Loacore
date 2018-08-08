@@ -15,7 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Save and plot results : utils package" href="utils.html" />
+    <link rel="next" title="Machine Learning" href="learning.html" />
     <link rel="prev" title="Load data from database : load package" href="load.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -28,7 +28,7 @@
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="utils.html" title="Save and plot results : utils package"
+          <a href="learning.html" title="Machine Learning"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="load.html" title="Load data from database : load package"
@@ -57,7 +57,7 @@ neg_score, obj_score).</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
 <li><strong>pessimistic</strong> (<em>boolean</em>) – Specify if pessimistic computing should be used. Optimistic is used if set to False.</li>
 </ul>
 </td>
@@ -117,7 +117,7 @@ used.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code>) – Reviews to process</li>
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
 <li><strong>commit_polarities</strong> (<em>boolean</em>) – If set to True, computed polarities are commited to database.</li>
 <li><strong>pessimistic</strong> (<em>boolean</em>) – Specify if pessimistic computing should be used. Optimistic is used if set to False.</li>
 <li><strong>freeling_lang</strong> (<em>String</em>) – <p>Specify language used by Freeling. Default : ‘es’.</p>
@@ -154,7 +154,7 @@ neg_score, obj_score).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Polarity dict</p>
@@ -195,7 +195,7 @@ available in all synsets of each review, setting the polarity in the review.pola
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code>) – Files to process</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Files to process</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Commit simple polarities of uci files to database.</p>
@@ -239,14 +239,14 @@ structures will be matched, what <strong>don’t necessarily correspond to adjac
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences to process</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
 <li><strong>polarity_commuter_only</strong> (<em>boolean</em>) – If True, only the patterns that are subject to a polarity commutation are displayed, i.e. those constituted by a
 positive noun associated to a negative adjective.</li>
 <li><strong>lang</strong> (<em>string</em>) – Language used. (PoS_tags and dependency labels to match are chosen accordingly) Possible values : ‘en’, ‘es’</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Table as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Table as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
@@ -279,11 +279,11 @@ sentences.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences to process</li>
-<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of :obj`string`) – A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
+<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label
 that will match at position i. ex : <em>pattern = [[‘V’], [‘cc’, ‘ci’, ‘cd’]]</em> will match all the
 <em>Verb/complement</em> structures.</li>
-<li><strong>types</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>. Allowed value are ‘PoS_tag’ and ‘label’. Otherwise, nothing will
+<li><strong>types</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>. Allowed value are ‘PoS_tag’ and ‘label’. Otherwise, nothing will
 match.) – Specify what type of match to use, such that <em>types[i]</em> specifies if elements of <em>pattern[i]</em> have to be
 condidered as PoS_tag or label. Notice that types is unidimensional, whereas pattern can be 2 dimensional :
 this means that for consistency reason, we assume that all the tags that can match in a position <em>i</em> are of
@@ -294,7 +294,7 @@ the same nature.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Matching patterns in specified sentences, as node tuples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Find all the Verb(PoS_tag)/complement(label) patterns in file 28(_PQRS.txt).</p>
@@ -342,8 +342,8 @@ the same nature.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences to process</li>
-<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of :obj`string`) – A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label that
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
+<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label that
 will match at position i. ex : <em>pattern = [[‘sentence’, ‘v’], [‘</em>’]]* could be used to find all the dependency
 functions that could follow <em>sentence</em> of <em>v</em> function.</li>
 </ul>
@@ -352,7 +352,7 @@ functions that could follow <em>sentence</em> of <em>v</em> function.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Matching patterns in specified sentences, as node tuples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Find all node to which a verbal modifier is applied in file 28 (_PQRS.txt).</p>
@@ -411,8 +411,8 @@ functions that could follow <em>sentence</em> of <em>v</em> function.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences to process</li>
-<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of :obj`string`) – <p>A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the PoS_tags that
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
+<li><strong>pattern</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – <p>A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the PoS_tags that
 will match at position i. ex : <em>pattern = [[‘V’], [‘A’, ‘NC’]]</em> recognizes verbs followed by an adjective or a
 common noun.</p>
 <div class="admonition note">
@@ -427,7 +427,7 @@ tags. For example, ‘A’ will match ‘AQ0CS00’, ‘AQ0MS00’…</p>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Matching patterns in specified sentences, as node tuples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Find all Noun/Adjective patterns in file 28 (_PQRS.txt).</p>
@@ -498,12 +498,12 @@ the verb.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences to process</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
 <li><strong>context_length</strong> (<em>int</em>) – Number of words to display before and after the verb.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Table as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Table as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">string</p>
@@ -543,11 +543,11 @@ children.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dependency labels, and a dictionary that maps file names to frequencies</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">Compute bigram label frequencies of uci files.</td>
 </tr>
@@ -565,7 +565,7 @@ children.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
 <li><strong>tag_len</strong> – Number of letters kept in each PoS_tag</li>
 <li><strong>tag_len</strong> – int</li>
 </ul>
@@ -574,7 +574,7 @@ children.</p>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">PoS_tags, and a dictionary that maps file names to frequencies</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">Compute bigram PoS_tags frequencies of uci files.</p>
@@ -594,7 +594,7 @@ children.</p>
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -605,8 +605,8 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
-<li><strong>bigram_label</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – Tuple of two dependency labels.</li>
+<li><strong>file</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
+<li><strong>bigram_label</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Tuple of two dependency labels.</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -631,7 +631,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -642,8 +642,8 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
-<li><strong>bigram_pos_tag</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – Tuple of two pos_tags.</li>
+<li><strong>file</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
+<li><strong>bigram_pos_tag</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Tuple of two pos_tags.</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -668,7 +668,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -679,8 +679,8 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
-<li><strong>label</strong> (<em>string</em>) – Dependency label</li>
+<li><strong>file</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
+<li><strong>label</strong> (<em>str</em>) – Dependency label</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -705,7 +705,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -716,7 +716,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
+<li><strong>file</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
 <li><strong>pos_tag</strong> (<em>string</em>) – Part of Speech tag</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
@@ -744,7 +744,7 @@ children.</p>
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -755,7 +755,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process. Notice that only the id_files are needed.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process. Notice that only the id_files are needed.</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -763,7 +763,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Bigram labels as string tuples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -782,7 +782,7 @@ children.</p>
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -793,7 +793,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process. Notice that only the id_files are needed.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process. Notice that only the id_files are needed.</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -801,7 +801,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Bigram PoS_tags as string tuples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -818,7 +818,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -829,7 +829,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process. Notice that only the id_files are needed.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process. Notice that only the id_files are needed.</li>
 <li><strong>c</strong> – SQL cursor</li>
 </ul>
 </td>
@@ -837,7 +837,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dependency labels</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -853,16 +853,16 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
+<li><strong>files</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
 <li><strong>c</strong> – SQL cursor</li>
-<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
+<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dependency labels</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -878,18 +878,18 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – File to process</li>
+<li><strong>files</strong> (<a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – File to process</li>
 <li><strong>tag_len</strong> – Number of letters kept in each PoS_tag</li>
 <li><strong>tag_len</strong> – int</li>
 <li><strong>c</strong> – SQL cursor</li>
-<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
+<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">PoS tags</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -907,7 +907,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
-<span class="kn">from</span> <span class="nn">loacore</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
 <span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
@@ -918,7 +918,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process. Notice that only the id_files are needed.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process. Notice that only the id_files are needed.</li>
 <li><strong>c</strong> – SQL cursor</li>
 <li><strong>tag_len</strong> – Number of letters kept in each PoS_tag</li>
 <li><strong>tag_len</strong> – int</li>
@@ -928,7 +928,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">PoS_tags</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></p>
 </td>
 </tr>
 </tbody>
@@ -946,11 +946,11 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dependency labels, and a dictionary that maps file names to frequencies</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body">Compute simple label frequencies of uci files.</td>
 </tr>
@@ -967,15 +967,15 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</li>
-<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
+<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Labels, and a dictionary that maps file names to frequencies</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><div class="first last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="kn">as</span> <span class="nn">file_load</span>
@@ -1001,8 +1001,8 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</li>
-<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
+<li><strong>polarity</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : {‘positive’, ‘negative’}) – Word polarity to consider.</li>
 <li><strong>tag_len</strong> – Number of letters kept in each PoS_tag</li>
 <li><strong>tag_len</strong> – int</li>
 </ul>
@@ -1011,7 +1011,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">PoS_tags, and a dictionary that maps file names to frequencies</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Compute pos_tag (first 2 characters) frequencies for positive words in uci files.</p>
@@ -1039,7 +1039,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files to process</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
 <li><strong>tag_len</strong> – Number of letters kept in each PoS_tag</li>
 <li><strong>tag_len</strong> – int</li>
 </ul>
@@ -1048,7 +1048,7 @@ If you want to use it, you can initialize <em>c</em> with the following code :</
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">PoS_tags, and a dictionary that maps file names to frequencies</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> , <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first last">Compute simple PoS_tags frequencies of uci files.</p>
@@ -1072,8 +1072,8 @@ reviews by file for each analysis in <em>analysis_to_check</em>, compared with <
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a href="#id5"><span class="problematic" id="id6">|File|</span></a>) – Files to process.</li>
-<li><strong>analysis_to_check</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – Analysis to check</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process.</li>
+<li><strong>analysis_to_check</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Analysis to check</li>
 <li><strong>ref</strong> (<em>string</em>) – Reference analysis, with which analysis to check are compared.</li>
 </ul>
 </td>
@@ -1094,10 +1094,10 @@ corresponding(s) polarities.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a href="#id7"><span class="problematic" id="id8">|File|</span></a>) – Files to process.</li>
-<li><strong>analysis_to_check</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – Analysis to compare with <em>ref</em></li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process.</li>
+<li><strong>analysis_to_check</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Analysis to compare with <em>ref</em></li>
 <li><strong>ref</strong> (<em>string</em>) – Reference analysis</li>
-<li><strong>select</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code> : {‘all’, ‘false_positive’, ‘false_negative’}) – Select option</li>
+<li><strong>select</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : {‘all’, ‘false_positive’, ‘false_negative’}) – Select option</li>
 <li><strong>terminal_print</strong> (<em>boolean</em>) – If True, print results in the terminal.</li>
 <li><strong>colored_polarity</strong> – <p>If True, write words with colored polarity. Notice that colors are not display in most of the .txt editors.
 For example, in Linux, use</p>
@@ -1140,8 +1140,8 @@ For example, in Linux, use</p>
   <p class="topless"><a href="load.html"
                         title="previous chapter">Load data from database : <em>load</em> package</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="utils.html"
-                        title="next chapter">Save and plot results : <em>utils</em> package</a></p>
+  <p class="topless"><a href="learning.html"
+                        title="next chapter">Machine Learning</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -1175,7 +1175,7 @@ For example, in Linux, use</p>
           <a href="py-modindex.html" title="Python Module Index"
              >modules</a> |</li>
         <li class="right" >
-          <a href="utils.html" title="Save and plot results : utils package"
+          <a href="learning.html" title="Machine Learning"
              >next</a> |</li>
         <li class="right" >
           <a href="load.html" title="Load data from database : load package"

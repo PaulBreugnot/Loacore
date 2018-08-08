@@ -1,3 +1,5 @@
+.. include:: replace.txt
+
 Save and plot results : *utils* package
 =======================================
 

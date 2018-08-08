@@ -1,21 +1,21 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import Word
 
 
 def load_words(id_words=[], load_lemmas=True, load_synsets=True):
     """
 
-    Load :class:`Word` s from database.
+    Load words from database.
 
     :param id_words: If specified, load only the words with corresponding ids. Otherwise, load all the words.
     :type id_words: :obj:`list` of :obj:`int`
-    :param load_lemmas: Specify if Lemmas need to be loaded in :class:`Word` s.
+    :param load_lemmas: Specify if Lemmas need to be loaded in words.
     :type load_lemmas: boolean
-    :param load_synsets: Specify if Synsets need to be loaded in :class:`Word` s.
+    :param load_synsets: Specify if Synsets need to be loaded in words.
     :type load_synsets: boolean
     :return: loaded words
-    :rtype: :obj:`list` of :class:`Word`
+    :rtype: :obj:`list` of |Word|
 
     :Example:
         Load all words and their lemmas, synsets.
@@ -59,7 +59,7 @@ def load_words(id_words=[], load_lemmas=True, load_synsets=True):
 def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
     """
 
-    Load :class:`Word` s into corresponding *sentences*, setting up their attribute :attr:`words`.\n
+    Load words into corresponding *sentences*, setting up their attribute :attr:`words`.\n
     Also return all the loaded words.\n
 
     .. note::
@@ -68,13 +68,13 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
         In most of the cases, those functions should be used instead to load sentences and words in one go.
 
     :param sentences: Sentences in which corresponding words should be loaded.
-    :type sentences: :obj:`list` of :class:`Sentence`
-    :param load_lemmas: Specify if Lemmas need to be loaded in :class:`Word` s.
+    :type sentences: :obj:`list` of |Sentence|
+    :param load_lemmas: Specify if Lemmas need to be loaded in words.
     :type load_lemmas: boolean
-    :param load_synsets: Specify if Synsets need to be loaded in :class:`Word` s.
+    :param load_synsets: Specify if Synsets need to be loaded in words.
     :type load_synsets: boolean
     :return: loaded words
-    :rtype: :obj:`list` of :class:`Word`
+    :rtype: :obj:`list` of |Word|
     """
 
     conn = sql.connect(DB_PATH)
@@ -106,7 +106,7 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
 def load_words_in_dep_trees(dep_trees, load_lemmas=True, load_synsets=True):
     """
 
-    Load :class:`Word` s into corresponding *dep_trees*, setting up the attribute :attr:`word` of each node.\n
+    Load words into corresponding *dep_trees*, setting up the attribute :attr:`word` of each node.\n
 
     .. note::
         This function is automatically called by :func:`file_load.load_database()` when *load_deptrees* is set to
@@ -114,10 +114,10 @@ def load_words_in_dep_trees(dep_trees, load_lemmas=True, load_synsets=True):
         In most of the cases, those functions should be used instead to load dep_trees and words in one go.
 
     :param dep_trees: DepTrees in which corresponding words should be loaded.
-    :type dep_trees: :obj:`list` of :class:`DepTree`
-    :param load_lemmas: Specify if Lemmas need to be loaded in :class:`Word` s.
+    :type dep_trees: :obj:`list` of |DepTree|
+    :param load_lemmas: Specify if Lemmas need to be loaded in words.
     :type load_lemmas: boolean
-    :param load_synsets: Specify if Synsets need to be loaded in :class:`Word` s.
+    :param load_synsets: Specify if Synsets need to be loaded in words.
     :type load_synsets: boolean
     """
 

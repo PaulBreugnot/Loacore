@@ -1,4 +1,4 @@
-from loacore import RESULT_PATH
+from loacore.conf import RESULT_PATH
 import os
 
 
@@ -17,7 +17,7 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
     "interesting" labels. Those labels actually correspond to the *val_number* most common labels of the first file.
 
     :param files_frequencies: Dictionary that maps file names to frequencies.
-    :type files_frequencies: :obj:`dict` of :obj:`string` : :obj:`dict` of label : :obj:`float` .
+    :type files_frequencies: :obj:`dict` of :obj:`str` : :obj:`dict` of label : :obj:`float` .
     :param plot: If True, plot results as a figure.
     :type plot: boolean
     :param save: If not *plot*, save figure as a PDF.
@@ -42,7 +42,7 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
             import loacore.analysis.frequencies as frequencies
             import loacore.utils.plot_frequencies as plot_frequencies
             import os
-            from loacore import RESULT_PATH
+            from loacore.conf import RESULT_PATH
 
             ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
             files = file_load.load_database(id_files=ids, load_reviews=False)
@@ -163,7 +163,7 @@ def write_frequencies(files_frequencies,
     Write frequencies to a txt file in file_path folder. Original raw file names are used.
 
     :param files_frequencies: Dictionary that maps file names to frequencies.
-    :type files_frequencies: :obj:`dict` of :obj:`string` : :obj:`dict` of label : :obj:`float` .
+    :type files_frequencies: :obj:`dict` of :obj:`str` : :obj:`dict` of label : :obj:`float` .
     :param file_path: Directory path
     :type file_path: :obj:`path-like object`
     """

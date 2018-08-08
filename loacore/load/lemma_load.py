@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 
 
 def load_lemmas(id_lemmas=[]):
@@ -10,7 +10,7 @@ def load_lemmas(id_lemmas=[]):
     :param id_lemmas: If specified, load only the lemmas with corresponding ids. Otherwise, load all the lemmas.
     :type id_lemmas: :obj:`list` of :obj:`int`
     :return: loaded lemmas
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
 
     :Example:
 
@@ -57,9 +57,9 @@ def load_lemmas_in_words(words):
         In most of the cases, those functions should be used instead to load words and synsets in one go.
 
     :param words: Words in which corresponding synsets should be loaded.
-    :type words: :obj:`list` of :class:`Word`
+    :type words: :obj:`list` of |Word|
     :return: loaded lemmas
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
 
     conn = sql.connect(DB_PATH)

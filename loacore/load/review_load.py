@@ -1,23 +1,23 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import Review
 
 
 def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
-    Load :class:`Review` s from database.
+    Load reviews from database.
 
     :param id_reviews: If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.
     :type id_reviews: :obj:`list` of :obj:`int`
-    :param load_sentences: Specify if Sentences need to be loaded in :class:`Review` s.
+    :param load_sentences: Specify if Sentences need to be loaded in reviews.
     :type load_sentences: boolean
-    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in :class:`Sentence` s.
+    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded reviews
-    :rtype: :obj:`list` of :class:`Review` s
+    :rtype: :obj:`list` of |Review|
 
     :Example:
         Load all reviews with sentences and words
@@ -62,22 +62,22 @@ def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, loa
 def load_reviews_by_id_files(id_files, load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
-    Load :class:`Review` s of files specified by their ids.
+    Load reviews of files specified by their ids.
 
     :param id_files: Ids of files from which reviews should be loaded.
     :type id_files: :obj:`list` of :obj:`int`
-    :param load_sentences: Specify if Sentences need to be loaded in :class:`Review` s.
+    :param load_sentences: Specify if Sentences need to be loaded in reviews.
     :type load_sentences: boolean
-    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in :class:`Sentence` s.
+    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded reviews
-    :rtype: :obj:`list` of :class:`Review` s
+    :rtype: :obj:`list` of |Review|
 
     :Example:
 
-        Load reviews from the first file as "raw" reviews, without :class:`Sentence` s.
+        Load reviews from the first file as "raw" reviews, without sentences.
 
         >>> import loacore.load.review_load as review_load
         >>> reviews = review_load.load_reviews_by_id_files([1])
@@ -114,7 +114,7 @@ def load_reviews_by_id_files(id_files, load_polarities=False, load_sentences=Fal
 def load_reviews_in_files(files, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
-    Load :class:`Review` s into corresponding *files*, setting up their attribute :attr:`reviews`.\n
+    Load reviews into corresponding *files*, setting up their attribute :attr:`reviews`.\n
     Also return all the loaded reviews.\n
 
     .. note::
@@ -122,15 +122,15 @@ def load_reviews_in_files(files, load_sentences=False, load_words=False, load_de
         :obj:`True`. In most of the cases, this function should be used to load files and reviews in one go.
 
     :param files: Files in which corresponding reviews will be loaded.
-    :type files: :obj:`list` of :class:`File`
-    :param load_sentences: Specify if Sentences need to be loaded in :class:`Review` s.
+    :type files: :obj:`list` of |File|
+    :param load_sentences: Specify if Sentences need to be loaded in reviews.
     :type load_sentences: boolean
-    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in :class:`Sentence` s.
+    :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded reviews
-    :rtype: :obj:`list` of :class:`Review` s
+    :rtype: :obj:`list` of |Review|
     """
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -158,7 +158,7 @@ def load_reviews_in_files(files, load_sentences=False, load_words=False, load_de
 
 
 def count_reviews(file_path):
-    from loacore import DB_PATH
+    from loacore.conf import DB_PATH
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
     c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File "

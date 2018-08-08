@@ -2,7 +2,7 @@
 
 def verb_patterns_tables():
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
     import loacore.utils.file_writer as file_writer
     import loacore.load.file_load as file_load
     import loacore.analysis.pattern_recognition as pattern_recognition
@@ -17,7 +17,7 @@ def verb_patterns_tables():
 
 def adj_patterns_table():
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
     import loacore.utils.file_writer as file_writer
     import loacore.load.file_load as file_load
     import loacore.analysis.pattern_recognition as pattern_recognition

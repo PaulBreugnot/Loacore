@@ -6,12 +6,15 @@
 Loacore : Language and Opinion Analyzer for Comments and Reviews's documentation!
 *********************************************************************************
 
+.. include:: replace.txt
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    
    introduction
    requirements
+   configuration
    classes
    process
    load

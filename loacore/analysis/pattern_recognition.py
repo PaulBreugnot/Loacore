@@ -12,7 +12,7 @@ def pos_tag_patterns_recognition(sentences, pattern):
     https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/tagsets.html
 
     :param sentences: Sentences to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :type sentences: :obj:`list` of |Sentence|
     :param pattern:
         A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the PoS_tags that
         will match at position i. ex : *pattern = [['V'], ['A', 'NC']]* recognizes verbs followed by an adjective or a
@@ -21,9 +21,9 @@ def pos_tag_patterns_recognition(sentences, pattern):
         .. note::   Matches are performed with the beginning of the PoS_tag, according to the length of the specified
                     tags. For example, 'A' will match 'AQ0CS00', 'AQ0MS00'...
 
-    :type pattern: :obj:`list` of :obj:`list` of :obj`string`
+    :type pattern: :obj:`list` of :obj:`list` of :obj:`str`
     :return: Matching patterns in specified sentences, as node tuples.
-    :rtype: :obj:`list` of :obj:`tuple` of :class:`DepTreeNode`
+    :rtype: :obj:`list` of :obj:`tuple` of |DepTreeNode|
 
     :Example:
         Find all Noun/Adjective patterns in file 28 (_PQRS.txt).
@@ -119,15 +119,15 @@ def label_patterns_recognition(sentences, pattern):
         - http://clic.ub.edu/corpus/webfm_send/49
 
     :param sentences: Sentences to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :type sentences: :obj:`list` of |Sentence|
     :param pattern:
         A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label that
         will match at position i. ex : *pattern = [['sentence', 'v'], ['*']]* could be used to find all the dependency
         functions that could follow *sentence* of *v* function.
 
-    :type pattern: :obj:`list` of :obj:`list` of :obj`string`
+    :type pattern: :obj:`list` of :obj:`list` of :obj:`str`
     :return: Matching patterns in specified sentences, as node tuples.
-    :rtype: :obj:`list` of :obj:`tuple` of :class:`DepTreeNode`
+    :rtype: :obj:`list` of :obj:`tuple` of |DepTreeNode|
 
     :Example:
         Find all node to which a verbal modifier is applied in file 28 (_PQRS.txt).\n
@@ -201,22 +201,22 @@ def general_pattern_recognition(sentences, pattern, types):
 
 
         :param sentences: Sentences to process
-        :type sentences: :obj:`list` of :class:`Sentence`
+        :type sentences: :obj:`list` of |Sentence|
         :param pattern:
             A 2 dimensional list of strings representing patterns. The patterns list pattern[i] represents the label
             that will match at position i. ex : *pattern = [['V'], ['cc', 'ci', 'cd']]* will match all the
             *Verb/complement* structures.
-        :type pattern: :obj:`list` of :obj:`list` of :obj`string`
+        :type pattern: :obj:`list` of :obj:`list` of :obj:`str`
         :param types:
             Specify what type of match to use, such that *types[i]* specifies if elements of *pattern[i]* have to be
             condidered as PoS_tag or label. Notice that types is unidimensional, whereas pattern can be 2 dimensional :
             this means that for consistency reason, we assume that all the tags that can match in a position *i* are of
             the same nature.
         :type types:
-            :obj:`list` of :obj:`string`. Allowed value are 'PoS_tag' and 'label'. Otherwise, nothing will
+            :obj:`list` of :obj:`str`. Allowed value are 'PoS_tag' and 'label'. Otherwise, nothing will
             match.
         :return: Matching patterns in specified sentences, as node tuples.
-        :rtype: :obj:`list` of :obj:`tuple` of :class:`DepTreeNode`
+        :rtype: :obj:`list` of :obj:`tuple` of |DepTreeNode|
 
         :Example:
             Find all the Verb(PoS_tag)/complement(label) patterns in file 28(_PQRS.txt).\n
@@ -342,10 +342,10 @@ def verb_context_table(sentences, context_length=2):
         - polarity = : objective polarity
 
     :param sentences: Sentences to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :type sentences: :obj:`list` of |Sentence|
     :param context_length: Number of words to display before and after the verb.
     :type context_length: int
-    :return: Table as a :obj:`string`
+    :return: Table as a :obj:`str`
     :rtype: string
 
     :Example:
@@ -400,7 +400,7 @@ def adj_pattern_table(sentences, polarity_commuter_only=True, lang='en'):
     Only the words associated to a synset are considered.
 
     :param sentences: Sentences to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :type sentences: :obj:`list` of |Sentence|
     :param polarity_commuter_only:
         If True, only the patterns that are subject to a polarity commutation are displayed, i.e. those constituted by a
         positive noun associated to a negative adjective.
@@ -408,7 +408,7 @@ def adj_pattern_table(sentences, polarity_commuter_only=True, lang='en'):
     :param lang:
         Language used. (PoS_tags and dependency labels to match are chosen accordingly) Possible values : 'en', 'es'
     :type lang: string
-    :return: Table as a :obj:`string`
+    :return: Table as a :obj:`str`
     :rtype: string
 
     :Example:

@@ -63,7 +63,7 @@ dependencies in database : all the tables will be emptied.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_paths_re</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code>) – Regular expressions to check</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_paths_re</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Regular expressions to check</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ids of matching files.</td>
 </tr>
@@ -89,7 +89,7 @@ dependencies in database : all the tables will be emptied.</p>
 <dl class="function">
 <dt id="loacore.load.file_load.load_database">
 <code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code> , with all the dependencies specified in parameters
+<dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> , with all the dependencies specified in parameters
 loaded in them.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -97,17 +97,17 @@ loaded in them.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_files</strong> – If specified, load only the files with the corresponding ids. Otherwise, load all the files.</li>
-<li><strong>load_reviews</strong> – Specify if Reviews need to be loaded if <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code> s.</li>
-<li><strong>load_sentences</strong> – If Reviews have been loaded, specify if Sentences need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s.</li>
-<li><strong>load_words</strong> – If Sentences have been loaded, specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>load_reviews</strong> – Specify if Reviews need to be loaded if files.</li>
+<li><strong>load_sentences</strong> – If Reviews have been loaded, specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded files</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -132,7 +132,7 @@ time if they are not needed. Loading other structures is quite fast.</p>
 </div>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load the first 10 files without <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code> s.</p>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load the first 10 files without Dep Trees.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">load_deptrees</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">reviews</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">review</span><span class="p">)</span>
@@ -163,7 +163,7 @@ dependencies in database.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> – <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> – <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -175,23 +175,23 @@ dependencies in database.</p>
 <dl class="function">
 <dt id="loacore.load.review_load.load_reviews">
 <code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews</code><span class="sig-paren">(</span><em>id_reviews=[]</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s from database.</p>
+<dd><p>Load reviews from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.</li>
-<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load all reviews with sentences and words</p>
@@ -210,26 +210,26 @@ dependencies in database.</p>
 <dl class="function">
 <dt id="loacore.load.review_load.load_reviews_by_id_files">
 <code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews_by_id_files</code><span class="sig-paren">(</span><em>id_files</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews_by_id_files" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s of files specified by their ids.</p>
+<dd><p>Load reviews of files specified by their ids.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – Ids of files from which reviews should be loaded.</li>
-<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load reviews from the first file as “raw” reviews, without <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</p>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load reviews from the first file as “raw” reviews, without sentences.</p>
 <div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.review_load</span> <span class="k">as</span> <span class="nn">review_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">reviews</span> <span class="o">=</span> <span class="n">review_load</span><span class="o">.</span><span class="n">load_reviews_by_id_files</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">reviews</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">review</span><span class="p">)</span>
@@ -245,7 +245,7 @@ dependencies in database.</p>
 <dl class="function">
 <dt id="loacore.load.review_load.load_reviews_in_files">
 <code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews_in_files</code><span class="sig-paren">(</span><em>files</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews_in_files" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s into corresponding <em>files</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">reviews</span></code>.</p>
+<dd><p>Load reviews into corresponding <em>files</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">reviews</span></code>.</p>
 <p>Also return all the loaded reviews.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -257,17 +257,17 @@ dependencies in database.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code>) – Files in which corresponding reviews will be loaded.</li>
-<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files in which corresponding reviews will be loaded.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code> s</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -287,15 +287,15 @@ dependencies in database.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load sentences 1,2 and their words.</p>
@@ -323,15 +323,15 @@ dependencies in database.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – Ids of files from which reviews should be loaded.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
@@ -350,7 +350,7 @@ dependencies in database.</p>
 <dl class="function">
 <dt id="loacore.load.sentence_load.load_sentences_in_reviews">
 <code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences_in_reviews</code><span class="sig-paren">(</span><em>reviews</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences_in_reviews" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s into corresponding <em>reviews</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">sentences</span></code>.</p>
+<dd><p>Load sentences into corresponding <em>reviews</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">sentences</span></code>.</p>
 <p>Also return all the loaded sentences.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -363,16 +363,16 @@ In most of the cases, those functions should be used instead to load reviews and
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code>) – Reviews in which corresponding sentences should be loaded.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
-<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code> s.</li>
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews in which corresponding sentences should be loaded.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -385,22 +385,22 @@ In most of the cases, those functions should be used instead to load reviews and
 <dl class="function">
 <dt id="loacore.load.word_load.load_words">
 <code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words</code><span class="sig-paren">(</span><em>id_words=[]</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s from database.</p>
+<dd><p>Load words from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the words with corresponding ids. Otherwise, load all the words.</li>
-<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
-<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded words</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load all words and their lemmas, synsets.</p>
@@ -421,7 +421,7 @@ In most of the cases, those functions should be used instead to load reviews and
 <dl class="function">
 <dt id="loacore.load.word_load.load_words_in_dep_trees">
 <code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words_in_dep_trees</code><span class="sig-paren">(</span><em>dep_trees</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words_in_dep_trees" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s into corresponding <em>dep_trees</em>, setting up the attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">word</span></code> of each node.</p>
+<dd><p>Load words into corresponding <em>dep_trees</em>, setting up the attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">word</span></code> of each node.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> when <em>load_deptrees</em> is set to
@@ -433,9 +433,9 @@ In most of the cases, those functions should be used instead to load dep_trees a
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code>) – DepTrees in which corresponding words should be loaded.</li>
-<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
-<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
+<li><strong>dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a>) – DepTrees in which corresponding words should be loaded.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
 </ul>
 </td>
 </tr>
@@ -446,7 +446,7 @@ In most of the cases, those functions should be used instead to load dep_trees a
 <dl class="function">
 <dt id="loacore.load.word_load.load_words_in_sentences">
 <code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words_in_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words_in_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">words</span></code>.</p>
+<dd><p>Load words into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">words</span></code>.</p>
 <p>Also return all the loaded words.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -459,16 +459,16 @@ In most of the cases, those functions should be used instead to load sentences a
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences in which corresponding words should be loaded.</li>
-<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
-<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code> s.</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences in which corresponding words should be loaded.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded words</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -481,16 +481,16 @@ In most of the cases, those functions should be used instead to load sentences a
 <dl class="function">
 <dt id="loacore.load.synset_load.load_synsets">
 <code class="descclassname">loacore.load.synset_load.</code><code class="descname">load_synsets</code><span class="sig-paren">(</span><em>id_synsets=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.synset_load.load_synsets" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code> s from database.</p>
+<dd><p>Load <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a> s from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_synsets</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code>) – If specified, load only the synsets with corresponding ids. Otherwise, load all the synsets.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_synsets</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – If specified, load only the synsets with corresponding ids. Otherwise, load all the synsets.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded synsets</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
 </tr>
@@ -510,7 +510,7 @@ In most of the cases, those functions should be used instead to load sentences a
 <dl class="function">
 <dt id="loacore.load.synset_load.load_synsets_in_words">
 <code class="descclassname">loacore.load.synset_load.</code><code class="descname">load_synsets_in_words</code><span class="sig-paren">(</span><em>words</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.synset_load.load_synsets_in_words" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code> s into corresponding <em>words</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">synset</span></code>.</p>
+<dd><p>Load <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a> s into corresponding <em>words</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">synset</span></code>.</p>
 <p>Also return all the loaded synsets.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -522,11 +522,11 @@ In most of the cases, those functions should be used instead to load words and s
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code>) – Words in which corresponding synsets should be loaded.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Words in which corresponding synsets should be loaded.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded synsets</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a></td>
 </tr>
 </tbody>
 </table>
@@ -547,7 +547,7 @@ In most of the cases, those functions should be used instead to load words and s
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded lemmas</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
 </tr>
@@ -579,11 +579,11 @@ In most of the cases, those functions should be used instead to load words and s
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code>) – Words in which corresponding synsets should be loaded.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Words in which corresponding synsets should be loaded.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded lemmas</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">string</span></code></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
 </tr>
 </tbody>
 </table>
@@ -595,7 +595,7 @@ In most of the cases, those functions should be used instead to load words and s
 <dl class="function">
 <dt id="loacore.load.deptree_load.load_dep_tree_in_sentences">
 <code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_tree_in_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_tree_in_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code> s into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">dep_tree</span></code>.</p>
+<dd><p>Load Dep Trees into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">dep_tree</span></code>.</p>
 <p>Also return all the loaded deptrees.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -608,15 +608,15 @@ In most of the cases, those functions should be used instead to load sentences a
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code>) – Sentences in which corresponding DepTrees should be loaded.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code> s.</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences in which corresponding DepTrees should be loaded.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in Dep Trees.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded deptrees</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a></p>
 </td>
 </tr>
 </tbody>
@@ -626,21 +626,21 @@ In most of the cases, those functions should be used instead to load sentences a
 <dl class="function">
 <dt id="loacore.load.deptree_load.load_dep_trees">
 <code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_trees</code><span class="sig-paren">(</span><em>id_dep_trees=[]</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_trees" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code> s from database.</p>
+<dd><p>Load Dep Trees from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>id_dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.</li>
-<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code> s.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in Dep Trees.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded deptrees</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>

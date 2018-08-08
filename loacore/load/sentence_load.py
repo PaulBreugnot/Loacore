@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import Sentence
 
 
@@ -10,12 +10,12 @@ def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
     :param id_sentences:
         If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.
     :type id_sentences: :obj:`list` of :obj:`int`
-    :param load_words: Specify if Words need to be loaded in :class:`Sentence` s.
+    :param load_words: Specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded sentences
-    :rtype: :obj:`list` of :class:`Sentence`
+    :rtype: :obj:`list` of |Sentence|
 
     :Example:
         Load sentences 1,2 and their words.
@@ -66,12 +66,12 @@ def load_sentences_by_id_files(id_files, load_words=True, load_deptrees=True):
 
     :param id_files: Ids of files from which reviews should be loaded.
     :type id_files: :obj:`list` of :obj:`int`
-    :param load_words: Specify if Words need to be loaded in :class:`Sentence` s.
+    :param load_words: Specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded sentences
-    :rtype: :obj:`list` of :class:`Sentence`
+    :rtype: :obj:`list` of |Sentence|
 
     :Example:
     Load all the sentences from file 1.
@@ -109,7 +109,7 @@ def load_sentences_by_id_files(id_files, load_words=True, load_deptrees=True):
 def load_sentences_in_reviews(reviews, load_words=False, load_deptrees=False):
     """
 
-    Load :class:`Sentence` s into corresponding *reviews*, setting up their attribute :attr:`sentences`.\n
+    Load sentences into corresponding *reviews*, setting up their attribute :attr:`sentences`.\n
     Also return all the loaded sentences.\n
 
     .. note::
@@ -118,13 +118,13 @@ def load_sentences_in_reviews(reviews, load_words=False, load_deptrees=False):
         In most of the cases, those functions should be used instead to load reviews and sentences in one go.
 
     :param reviews: Reviews in which corresponding sentences should be loaded.
-    :type reviews: :obj:`list` of :class:`Review`
-    :param load_words: Specify if Words need to be loaded in :class:`Sentence` s.
+    :type reviews: :obj:`list` of |Review|
+    :param load_words: Specify if Words need to be loaded in sentences.
     :type load_words: boolean
-    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in :class:`Sentence` s.
+    :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
     :type load_deptrees: boolean
     :return: Loaded sentences
-    :rtype: :obj:`list` of :class:`Sentence`
+    :rtype: :obj:`list` of |Sentence|
     """
     conn = sql.connect(DB_PATH)
     c = conn.cursor()

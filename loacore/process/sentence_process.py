@@ -1,6 +1,6 @@
 import os
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
 from loacore.classes.classes import Sentence
 
@@ -14,10 +14,10 @@ def add_sentences_from_reviews(reviews):
 
     .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
 
-    :param reviews: :class:`Review` s to process
-    :type reviews: :obj:`list` of :class:`Review`
-    :return: added :class:`Sentence` s
-    :rtype: :obj:`list` of :class:`Sentence`
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
+    :return: added sentences
+    :rtype: :obj:`list` of |Sentence|
     """
 
     morfo, tk, sp = init_freeling()
@@ -80,8 +80,8 @@ def my_maco_options(lang, lpath):
 def init_freeling():
     freeling.util_init_locale("default")
 
-    from loacore import lang
-    from loacore import LANG_PATH as lpath
+    from loacore.conf import lang
+    from loacore.conf import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

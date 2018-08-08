@@ -1,5 +1,5 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
 from nltk.corpus import wordnet as wn
 from loacore.classes.classes import Synset
@@ -9,15 +9,15 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
     """
     Performs a Freeling process to disambiguate words of the sentences according to their context
     (UKB algorithm) linking them to a unique synset (if possible).\n
-    Our :class:`Sentence` s are converted to Freeling Sentences before processing.\n
+    Our sentences are converted to Freeling Sentences before processing.\n
     Notice that even if we may have already computed the Lemmas for example, Freeling Sentences generated from our
-    :class:`Sentence` s are "raw sentences", without any analysis linked to their Words. So we make all the Freeling
+    sentences are "raw sentences", without any analysis linked to their Words. So we make all the Freeling
     process from scratch every time, except *tokenization* and *sentence splitting*, to avoid any confusion.
 
     .. note:: This function should be used only inside the file_process.add_files() function.
 
-    :param sentences: :class:`Sentence` s to process
-    :type sentences: :obj:`list` of :class:`Sentence`
+    :param sentences: Sentences to process
+    :type sentences: :obj:`list` of |Sentence|
     :param print_synsets: If True, print disambiguation results
     :type print_synsets: boolean
     """
@@ -123,7 +123,7 @@ def my_maco_options(lang, lpath):
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
     opt.ProbabilityFile = os.path.join(lpath, "probabilitats.dat")
-    opt.DictionaryFile = os.path.join(lpath, "dicc.src"
+    opt.DictionaryFile = os.path.join(lpath, "dicc.src")
     opt.PunctuationFile = os.path.join(lpath, "..", "common", "punct.dat")
     return opt
 
@@ -133,8 +133,8 @@ def init_freeling():
 
     freeling.util_init_locale("default")
 
-    from loacore import lang
-    from loacore import LANG_PATH as lpath
+    from loacore.conf import lang
+    from loacore.conf import LANG_PATH as lpath
 
     # create the analyzer with the required set of maco_options
     morfo = freeling.maco(my_maco_options(lang, lpath))

@@ -8,7 +8,7 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
     available in all synsets of each review, setting the polarity in the review.polarities dict, with the entry "simple".
 
     :param reviews: Files to process
-    :type reviews: :obj:`list` of :class:`Review`
+    :type reviews: :obj:`list` of |Review|
 
     :Example:
 
@@ -57,7 +57,7 @@ def compute_simple_files_polarity(files):
     neg_score, obj_score).
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :return: Polarity dict
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
 
@@ -108,7 +108,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
     *pessimistic* parameter, and eventually committed to database if *commit_polarities* is set to True.
 
     :param reviews: Reviews to process
-    :type reviews: :obj:`list` of :class:`Review`
+    :type reviews: :obj:`list` of |Review|
     :param commit_polarities: If set to True, computed polarities are commited to database.
     :type commit_polarities: boolean
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
@@ -137,7 +137,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
 
     """
 
-    from loacore import set_lang
+    from loacore.conf import set_lang
     set_lang(freeling_lang)
 
     import ressources.pyfreeling as freeling
@@ -286,7 +286,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
     neg_score, obj_score).
 
     :param files: Files to process
-    :type files: :obj:`list` of :class:`File`
+    :type files: :obj:`list` of |File|
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
     :type pessimistic: boolean
     :return: Score dictionary

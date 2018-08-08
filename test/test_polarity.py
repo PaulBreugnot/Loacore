@@ -111,7 +111,7 @@ def test_polarity_pie_charts():
     import loacore.analysis.sentiment_analysis as sentiment_analysis
     import loacore.utils.plot_polarities as plot_polarities
     import os
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
 
     ids = file_load.get_id_files_by_file_paths([r'./uci/.+'])
     files = file_load.load_database(id_files=ids)
@@ -150,7 +150,7 @@ def test_pattern_polarity():
 def test_write_polarity_check():
     import loacore.load.file_load as file_load
     import loacore.analysis.polarity_check as polarity_check
-    from loacore import RESULT_PATH
+    from loacore.conf import RESULT_PATH
     import os
 
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])

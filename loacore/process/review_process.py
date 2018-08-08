@@ -1,7 +1,7 @@
 import os
 import re
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import Review
 from loacore.classes.classes import Polarity
 
@@ -12,14 +12,14 @@ def add_reviews_from_files(files, encoding):
     Load argument files from file system and normalize their content.\n
     Compute Reviews objects and add them to the database.
 
-    .. note:: This function should be used only inside the :func:`file_process.add_files()` function.
+    .. note:: This function should be used only inside the :func:`~loacore.process.file_process.add_files()` function.
 
-    :param files: :class:`File` s to process
-    :type files: :obj:`list` of :class:`File`
+    :param files: Files to process
+    :type files: :obj:`list` of |File|
     :param encoding: Encoding used to load files.
-    :type encoding: String
-    :return: added :class:`Review` s
-    :rtype: :obj:`list` of :class:`Review`
+    :type encoding: str
+    :return: added reviews
+    :rtype: :obj:`list` of |Review|
 
     """
 
@@ -71,9 +71,9 @@ def normalize(text):
     - Review splitting using python regular expressions : each new line correspond to a new review
 
     :param text: text to process
-    :type text: string
+    :type text: str
     :return: reviews
-    :rtype: :obj:`list` of :obj:`string`
+    :rtype: :obj:`list` of :obj:`str`
     """
     # normalized_string = text.lower()
     normalized_string = text

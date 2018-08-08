@@ -1,3 +1,5 @@
+.. include:: replace.txt
+
 Introduction
 ============
 *This project was originally lead by the NLP research group of the Technichal University of Pereira, Colombia*

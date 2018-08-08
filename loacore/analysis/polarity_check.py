@@ -1,4 +1,4 @@
-from loacore import RESULT_PATH
+from loacore.conf import RESULT_PATH
 import os
 
 
@@ -7,14 +7,13 @@ def check_polarity(files,
                        "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"],
                    ref="label"):
     """
-    .. py:curentmodule::`loacore.classes.classes`
     Prints tables with the rates, in percentages, of correct, false positive and false negative classifications of
     reviews by file for each analysis in *analysis_to_check*, compared with *ref* analysis.
 
     :param files: Files to process.
     :type files: :obj:`list` of |File|
     :param analysis_to_check: Analysis to check
-    :type analysis_to_check: :obj:`list` of :obj:`string`
+    :type analysis_to_check: :obj:`list` of :obj:`str`
     :param ref: Reference analysis, with which analysis to check are compared.
     :type ref: string
     """
@@ -65,11 +64,11 @@ def write_polarity_check(files,
     :param files: Files to process.
     :type files: :obj:`list` of |File|
     :param analysis_to_check: Analysis to compare with *ref*
-    :type analysis_to_check: :obj:`list` of :obj:`string`
+    :type analysis_to_check: :obj:`list` of :obj:`str`
     :param ref: Reference analysis
     :type ref: string
     :param select: Select option
-    :type select: :obj:`list` of :obj:`string` : {'all', 'false_positive', 'false_negative'}
+    :type select: :obj:`list` of :obj:`str` : {'all', 'false_positive', 'false_negative'}
     :param terminal_print: If True, print results in the terminal.
     :type terminal_print: boolean
     :param colored_polarity:

@@ -1,9 +1,9 @@
 import sqlite3 as sql
-from loacore import DB_PATH
+from loacore.conf import DB_PATH
 from loacore.classes.classes import File
 
 
-def add_files(file_paths, encoding='windows-1252', lang="es"):
+def add_files(file_paths, encoding='utf8', lang=""):
     """
     This function performs the full process on all the file_paths specified, and add the results to the corresponding
     tables.
@@ -12,11 +12,12 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
     :type file_paths: :obj:`list` of :obj:`path-like object`
     :param encoding: Files encoding.
     :param lang:
-        Specify language used by Freeling. Default : 'es'.\n
+        If specify, *lang* will be used as Freeling language.
+        Otherwise, default language is used (See :mod:`loacore`) \n
         Possible values : 'as', 'ca', 'cs', 'cy', 'de', 'en', 'es', 'fr', 'gl', 'hr', 'it', 'nb', 'pt', 'ru', 'sl')\n
         See https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html for more details.
-    :type lang: String
-    :type encoding: String
+    :type lang: str
+    :type encoding: str
 
     :Example:
 
@@ -32,8 +33,10 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
        file_process.add_files(file_paths)
 
     """
-    from loacore import set_lang
-    set_lang(lang)
+
+    if not lang == "":
+        from loacore.conf import _set_temp_lang
+        _set_temp_lang(lang)
 
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
@@ -71,6 +74,7 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
     review_count = 1
     for reviews in splitted_reviews:
         print("\nProcessing review " + str(review_count) + "/" + str(len(splitted_reviews)))
+        review_count += 1
         print("==> Tokenization")
         # Tokenization + Add all sentences and all words from all reviews
         import loacore.process.sentence_process as sentence_process
@@ -100,6 +104,10 @@ def add_files(file_paths, encoding='windows-1252', lang="es"):
         print("==> Dependency tree processing")
         import loacore.process.deptree_process as deptree_process
         deptree_process.add_dep_tree_from_sentences(sentences)
+
+    if not lang == "":
+        from loacore.conf import _load_conf
+        _load_conf()
 
 
 def split_reviews(reviews):
