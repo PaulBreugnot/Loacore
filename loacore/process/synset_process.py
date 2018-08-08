@@ -116,19 +116,20 @@ def add_polarity_to_synsets():
 
 def my_maco_options(lang, lpath):
 
+    import os
     # create options holder
     opt = freeling.maco_options(lang)
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
-    opt.UserMapFile = ""
-    opt.ProbabilityFile = lpath + "probabilitats.dat"
-    opt.DictionaryFile = lpath + "dicc.src"
-    opt.PunctuationFile = lpath + "../common/punct.dat"
+    opt.ProbabilityFile = os.path.join(lpath, "probabilitats.dat")
+    opt.DictionaryFile = os.path.join(lpath, "dicc.src"
+    opt.PunctuationFile = os.path.join(lpath, "..", "common", "punct.dat")
     return opt
 
 
 def init_freeling():
+    import os
 
     freeling.util_init_locale("default")
 
@@ -152,11 +153,11 @@ def init_freeling():
                              True)  # ProbabilityAssignment
 
     # create tagger
-    tagger = freeling.hmm_tagger(lpath + "tagger.dat", False, 2)
+    tagger = freeling.hmm_tagger(os.path.join(lpath, "tagger.dat"), False, 2)
 
     # create sense annotator
-    sen = freeling.senses(lpath + "senses.dat")
+    sen = freeling.senses(os.path.join(lpath, "senses.dat"))
     # create sense disambiguator
-    wsd = freeling.ukb(lpath + "ukb.dat")
+    wsd = freeling.ukb(os.path.join(lpath, "ukb.dat"))
 
     return morfo, tagger, sen, wsd

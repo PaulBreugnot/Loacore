@@ -7,7 +7,7 @@ RESOURCES_PATHS = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 
 
 FR_PATH = "/usr/local/share/"
 lang = "es"
-LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling/", lang))
+LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
 
 
 def set_lang(user_lang):

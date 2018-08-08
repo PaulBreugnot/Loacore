@@ -72,9 +72,8 @@ def my_maco_options(lang, lpath):
 
     # Provide files for morphological submodules. Note that it is not
     # necessary to set file for modules that will not be used.
-    opt.UserMapFile = ""
-    opt.DictionaryFile = lpath + "dicc.src"
-    opt.PunctuationFile = lpath + "../common/punct.dat"
+    opt.DictionaryFile = os.path.join(lpath, "dicc.src")
+    opt.PunctuationFile = os.path.join(lpath, "..", "common", "punct.dat")
     return opt
 
 
@@ -100,7 +99,7 @@ def init_freeling():
                              False,  # QuantitiesDetection,
                              False)  # ProbabilityAssignment
 
-    tk = freeling.tokenizer(lpath + "tokenizer.dat")
-    sp = freeling.splitter(lpath + "splitter.dat")
+    tk = freeling.tokenizer(os.path.join(lpath, "tokenizer.dat"))
+    sp = freeling.splitter(os.path.join(lpath, "splitter.dat"))
 
     return morfo, tk, sp
