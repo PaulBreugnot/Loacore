@@ -1,11 +1,11 @@
 
 
-def word_2_vec(files):
+def word_2_vec(reviews):
     """
-    Learn a Word2Vec dictionary from the tokens of specified files (tokens obtained with :func:`get_tokens_list()` .
+    Learn a Word2Vec dictionary from the tokens of specified reviews (tokens obtained with :func:`get_tokens_list()` .
 
-    :param files: Files to process
-    :type files: :obj:`list` of |File|
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
     :return: Word2Vec dictionary
     :rtype:
         `KeyedVector
@@ -16,7 +16,7 @@ def word_2_vec(files):
 
     path = get_tmpfile("wordvectors.kv")
 
-    tokens = get_tokens_list(files)
+    tokens = get_tokens_list(reviews)
 
     model = Word2Vec(tokens, size=100, window=5, min_count=1, workers=4)
     model.wv.save(path)
@@ -71,30 +71,29 @@ def review_2_vec(review, wv):
     return np.array([np.mean(review_vector, axis=0)])
 
 
-def get_tokens_list(files):
+def get_tokens_list(reviews):
     """
-    Returns a list of all tokens in specified files. For each word, if a lemma is found, lemma is used. Otherwise, word
-    form is used.
+    Returns a list of all tokens in specified reviews. For each word, if a lemma is found, lemma is used. Otherwise,
+    word form is used.
 
-    :param files: Files to process
-    :type files: :obj:`list` of |File|
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
     :return: List of tokens
     :rtype: :obj:`list` of :obj:`str`
     """
     import re
     tokens = []
-    for file in files:
-        for review in file.reviews:
-            for sentence in review.sentences:
-                sentence_tokens = []
-                for word in sentence.words:
-                    if re.fullmatch(r'\w+', word.word):
-                        if word.lemma != '':
-                            word.word_2_vec_key = word.lemma
-                        else:
-                            word.word_2_vec_key = word.word
-                        sentence_tokens.append(word.word_2_vec_key)
-                tokens.append(sentence_tokens)
+    for review in reviews:
+        for sentence in review.sentences:
+            sentence_tokens = []
+            for word in sentence.words:
+                if re.fullmatch(r'\w+', word.word):
+                    if word.lemma != '':
+                        word.word_2_vec_key = word.lemma
+                    else:
+                        word.word_2_vec_key = word.word
+                    sentence_tokens.append(word.word_2_vec_key)
+            tokens.append(sentence_tokens)
     return tokens
 
 

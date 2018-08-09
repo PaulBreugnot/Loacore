@@ -1,7 +1,7 @@
 
 def test_tokens():
     import loacore.load.file_load as file_load
-    import loacore.learning.word_embeddings as we
+    import loacore.learning.word2vec as we
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_deptrees=False)
 
@@ -10,7 +10,7 @@ def test_tokens():
 
 def test_vectors():
     import loacore.load.file_load as file_load
-    import loacore.learning.word_embeddings as we
+    import loacore.learning.word2vec as we
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_deptrees=False)
 
@@ -21,7 +21,7 @@ def test_vectors():
 
 def test_review_vectors():
     import loacore.load.file_load as file_load
-    import loacore.learning.word_embeddings as we
+    import loacore.learning.word2vec as we
     ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
     files = file_load.load_database(id_files=ids, load_deptrees=False)
 

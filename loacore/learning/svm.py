@@ -1,25 +1,22 @@
 
 
-def learn_model(reviews, wv):
+def learn_model(reviews, reviews_vectors):
     """
     Learn and return a LinearSVC model from specified labelled reviews and Word2Vec dictionnary.
 
     :param reviews: Learning Dataset
     :type reviews: :obj:`list` of |Review|
-    :param wv: Word vectors dictionary
-    :type wv:
-        `KeyedVector
-        <https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors>`_
+    :param reviews_vectors: Vector representations of reviews
+    :type reviews_vectors:
+        :obj:`list` of `numpy.array <https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html>`_
     :return: Learned model
     :rtype:
         `LinearSVC
         <http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC>`_
     """
 
-    import loacore.learning.word_embeddings as we
     from sklearn.svm import LinearSVC
 
-    reviews_vectors = we.reviews_2_vec(reviews, wv)
     labels = get_labels_vector(reviews)
     clf = LinearSVC()
     clf.fit(reviews_vectors, labels)
@@ -48,7 +45,7 @@ def commit_analysis(clf, reviews, wv, analysis='svm', db_commit=False):
     :param db_commit: If True, results are commit to the database.
 
     """
-    import loacore.learning.word_embeddings as we
+    import loacore.learning.word2vec as we
     from loacore.classes.classes import Polarity
     for review in reviews:
         score = clf.predict(we.review_2_vec(review, wv))
@@ -90,11 +87,11 @@ def get_labels_vector(reviews, ref='label'):
 
 
 def full_process(files, learn_test_split=0.7):
-    import loacore.learning.word_embeddings as we
+    import loacore.learning.word2vec as we
     print("Learning Word2Vec vocabulary...")
-    wv = we.word_2_vec(files)
-
     reviews = [r for file in files for r in file.reviews]
+    wv = we.word_2_vec(reviews)
+
     print(reviews)
     print(len(reviews))
     split_index = int(learn_test_split*len(reviews))
@@ -103,10 +100,13 @@ def full_process(files, learn_test_split=0.7):
     testing_dataset = reviews[split_index:len(reviews)]
     print("Testing dataset size : ", len(testing_dataset))
 
+    import loacore.learning.word2vec as we
+
+    reviews_vectors = we.reviews_2_vec(learning_dataset, wv)
     print("Learning SVM model...")
-    clf = learn_model(learning_dataset, wv)
+    clf = learn_model(learning_dataset, reviews_vectors)
     print("Analyze testing set...")
-    commit_analysis(clf, learning_dataset, wv)
+    commit_analysis(clf, learning_dataset, reviews_vectors)
 
     import loacore.analysis.polarity_check as polarity_check
     polarity_check.check_polarity(files, analysis_to_check=['svm'])
