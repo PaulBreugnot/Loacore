@@ -41,7 +41,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
                 print(word.word + " : " + word.lemma)
 
     # Add lemmas to database
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=60)
     c = conn.cursor()
 
     for sentence in sentences:
@@ -55,8 +55,8 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
 
             # Update Word table
             c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
+            conn.commit()
 
-    conn.commit()
     conn.close()
 
 

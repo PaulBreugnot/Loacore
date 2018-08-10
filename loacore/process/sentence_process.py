@@ -1,4 +1,5 @@
 import os
+import sys
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
@@ -22,11 +23,16 @@ def add_sentences_from_reviews(reviews):
 
     morfo, tk, sp = init_freeling()
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
     added_sentences = []
+    review_count = 0
+    total_review = len(reviews)
     for review in reviews:
+        review_count += 1
+        print("\r" + str(review_count) + " / " + str(total_review) + " sentences added.", end="\n")
+        sys.stdout.flush()
         raw_review = review.review
         tokens = tk.tokenize(raw_review)
         sentences = sp.split(tokens)
@@ -34,10 +40,10 @@ def add_sentences_from_reviews(reviews):
 
         review_index = 0
         for sentence in sentences:
-
             # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
                       "VALUES (?, ?)", (review.id_review, review_index))
+            conn.commit()
 
             # Get back id of last inserted sentence
             c.execute("SELECT last_insert_rowid()")
@@ -56,8 +62,8 @@ def add_sentences_from_reviews(reviews):
                 sql_words.append((id_sentence, sentence_index, word.get_form()))
                 sentence_index += 1
             c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
+            conn.commit()
 
-    conn.commit()
     conn.close()
 
     return added_sentences

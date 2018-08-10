@@ -50,7 +50,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
     freeling_sentences = disambiguated_sentences
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=60)
     c = conn.cursor()
 
     progress = 0
@@ -68,6 +68,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
         dep_tree = DepTree(None, None, sentence.id_sentence)
 
         c.execute("INSERT INTO Dep_Tree (ID_Sentence) VALUES (?)", [dep_tree.id_sentence])
+        conn.commit()
 
         # Get back id_dep_tree
         c.execute("SELECT last_insert_rowid()")
@@ -106,6 +107,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
                        dep_tree_node.id_word,
                        dep_tree_node.label,
                        dep_tree_node.root))
+            conn.commit()
 
             # Get back id_dep_tree_node
             c.execute("SELECT last_insert_rowid()")
@@ -120,17 +122,19 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
             if word.PoS_tag is not None:
                 c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag + "' "
                           "WHERE ID_Word = " + str(word.id_word))
+                conn.commit()
 
         # Add dep_tree root to database
         dep_tree.root = root
         c.execute("UPDATE Dep_Tree SET ID_Dep_Tree_Node = " + str(root.id_dep_tree_node) + " "
                   "WHERE ID_Dep_Tree = " + str(id_dep_tree))
+        conn.commit()
 
         # Add children relations
         root_node = dt.begin()
         rec_children(c, root_node)
+        conn.commit()
 
-    conn.commit()
     print("Commit end.")
     conn.close()
 

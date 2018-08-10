@@ -57,7 +57,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
     # Add synsets to database
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=60)
     c = conn.cursor()
 
     for sentence in sentences:
@@ -75,8 +75,8 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
                 # Update Word table
                 c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
+                conn.commit()
 
-    conn.commit()
     conn.close()
 
 
@@ -92,7 +92,7 @@ def add_polarity_to_synsets():
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=60)
     c = conn.cursor()
 
     synsets = synset_load.load_synsets()
@@ -107,8 +107,8 @@ def add_polarity_to_synsets():
             c.execute("UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
                       "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(synset.obj_score) + ") "
                       "WHERE Id_Synset = " + str(synset.id_synset))
+            conn.commit()
 
-    conn.commit()
     conn.close()
 
 

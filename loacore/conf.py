@@ -3,7 +3,8 @@ import os
 RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'results'))
 DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
-RESOURCES_PATHS = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
+RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
+OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
 
 lang = ""
 FR_PATH = ""
@@ -82,12 +83,17 @@ def _load_conf():
     c.execute("SELECT lang, freeling_path FROM Configuration")
     result = c.fetchone()
     global FR_PATH
-    for path in result[1].split('/'):
-        FR_PATH = os.path.join(FR_PATH, path)
+    list_path = result[1].split('/')
+    print(list_path)
+    FR_PATH = "/"
+    for path in list_path:
+        FR_PATH = os.path.abspath(os.path.join(FR_PATH, path))
+    print("Freeling path : " + FR_PATH)
     global lang
     lang = result[0]
     global LANG_PATH
     LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
+    print("Language path : " + LANG_PATH)
 
     conn.close()
 

@@ -23,11 +23,12 @@ def add_reviews_from_files(files, encoding):
 
     """
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=60)
     c = conn.cursor()
 
     reviews = []
 
+    review_count = 0
     for file in files:
         # Load review as a string
         raw_text = file.load(encoding=encoding).read()
@@ -35,10 +36,13 @@ def add_reviews_from_files(files, encoding):
         # Normalization and review splitting
         str_reviews = normalize(raw_text)
         file_reviews = extract_polarity(str_reviews)
+        total_review = len(file_reviews)
 
         # Add reviews
         file_index = 0
         for review in file_reviews:
+            review_count += 1
+            print("\r" + str(review_count) + " / " + str(total_review) + " reviews added.", end="")
             sql_review = (file.id_file, file_index, review.review)
 
             c.execute("INSERT INTO Review (ID_File, File_Index, Review) "
@@ -55,8 +59,9 @@ def add_reviews_from_files(files, encoding):
             file_index += 1
 
         reviews += file_reviews
-
+    print("")
     conn.commit()
+
     conn.close()
 
     return reviews

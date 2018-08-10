@@ -12,6 +12,20 @@ def add_train_imdb_neg():
         lang='en')
 
 
+def add_train_imdb_pos():
+    import loacore.process.file_process as file_process
+    import loacore.load.file_load as file_load
+    from loacore.conf import DATA_PATH
+    import os
+
+    # file_load.clean_db()
+    file_process.add_files(
+        [os.path.join(DATA_PATH, 'raw', 'imdb', 'train', 'train_imdb_labelled_pos.txt')],
+        encoding='utf8',
+        lang='en',
+        workers=4)
+
+
 def add_all():
     import loacore.process.file_process as file_process
     import os
@@ -23,5 +37,7 @@ def add_all():
 
     file_process.add_files(file_paths, encoding="utf8", lang="en")
 
-add_train_imdb_neg()
+
+# add_train_imdb_neg()
+add_train_imdb_pos()
 # add_all()
