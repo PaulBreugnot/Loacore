@@ -1,12 +1,12 @@
 import os
-import sys
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
 from loacore.classes.classes import Sentence
+from loacore.utils.status import ProcessState
 
 
-def add_sentences_from_reviews(reviews):
+def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, freeling_modules=None):
     """
 
     Performs the first Freeling process applied to each normalized review.\n
@@ -20,8 +20,15 @@ def add_sentences_from_reviews(reviews):
     :return: added sentences
     :rtype: :obj:`list` of |Sentence|
     """
+    from loacore.classes.classes import Word
 
-    morfo, tk, sp = init_freeling()
+    if freeling_modules is None:
+        if _state_queue is not None:
+            _state_queue.put(
+                ProcessState(_id_process, os.getpid(), "Loading Freeling...", " - "))
+        morfo, tk, sp = init_freeling()
+    else:
+        morfo, tk, sp = freeling_modules
 
     conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
@@ -30,39 +37,60 @@ def add_sentences_from_reviews(reviews):
     review_count = 0
     total_review = len(reviews)
     for review in reviews:
+
+        # Print state
         review_count += 1
-        print("\r" + str(review_count) + " / " + str(total_review) + " sentences added.", end="\n")
-        sys.stdout.flush()
+        _tokenization_state(_state_queue, _id_process, review_count, total_review)
+
         raw_review = review.review
         tokens = tk.tokenize(raw_review)
         sentences = sp.split(tokens)
         sentences = morfo.analyze(sentences)
 
         review_index = 0
+
         for sentence in sentences:
+
+            if len(sentence) <= 50:
+                review_sentence = Sentence(None, review.id_review, review_index, None)
+
+                review_index += 1
+
+                # Add words
+                sentence_index = 0
+                for word in sentence:
+                    review_sentence.words.append(Word(None, None, sentence_index, word.get_form(), None, None, None))
+                    sentence_index += 1
+
+                review.sentences.append(review_sentence)
+
+    sentence_count = 0
+    total_sentence = len([s for r in reviews for s in r.sentences])
+    for r in reviews:
+        for s in r.sentences:
+
+            # Print state
+            sentence_count += 1
+            _commit_state(_state_queue, _id_process, sentence_count, total_sentence)
+
             # Add sentence
             c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
-                      "VALUES (?, ?)", (review.id_review, review_index))
-            conn.commit()
+                      "VALUES (?, ?)", (s.id_review, s.review_index))
 
             # Get back id of last inserted sentence
             c.execute("SELECT last_insert_rowid()")
             id_sentence = c.fetchone()[0]
+            s.id_sentence = id_sentence
 
-            # Keep trace of added sentences
-            added_sentence = Sentence(id_sentence, review.id_review, review_index, None)
-            added_sentences.append(added_sentence)
-
-            review_index += 1
-
-            # Add words
             sql_words = []
-            sentence_index = 0
-            for word in sentence:
-                sql_words.append((id_sentence, sentence_index, word.get_form()))
-                sentence_index += 1
+            for w in s.words:
+                w.id_sentence = id_sentence
+                sql_words.append((id_sentence, w.sentence_index, w.word))
             c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
-            conn.commit()
+            added_sentences.append(s)
+
+    print("")
+    conn.commit()
 
     conn.close()
 
@@ -109,3 +137,19 @@ def init_freeling():
     sp = freeling.splitter(os.path.join(lpath, "splitter.dat"))
 
     return morfo, tk, sp
+
+
+def _tokenization_state(state_queue, id_process, review_count, total_review):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Tokenization", str(review_count) + " / " + str(total_review)))
+    else:
+        print("\r" + str(review_count) + " / " + str(total_review) + " reviews processed.", end="")
+
+
+def _commit_state(state_queue, id_process, sentence_count, total_sentence):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Token DB commit...", str(sentence_count) + " / " + str(total_sentence)))
+    else:
+        print("\r" + str(sentence_count) + " / " + str(total_sentence) + " sentences added.", end="")

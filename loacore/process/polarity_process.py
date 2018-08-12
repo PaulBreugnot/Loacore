@@ -3,7 +3,7 @@ from loacore.conf import DB_PATH
 
 
 def add_polarity_from_reviews(reviews):
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
     polarity_count = 0
@@ -25,7 +25,7 @@ def add_polarity_from_reviews(reviews):
 
 def commit_polarities(reviews, label):
 
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
     for review in reviews:
         polarity = review.polarities[label]

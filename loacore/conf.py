@@ -84,16 +84,15 @@ def _load_conf():
     result = c.fetchone()
     global FR_PATH
     list_path = result[1].split('/')
-    print(list_path)
     FR_PATH = "/"
     for path in list_path:
         FR_PATH = os.path.abspath(os.path.join(FR_PATH, path))
-    print("Freeling path : " + FR_PATH)
+    # print("Freeling path : " + FR_PATH)
     global lang
     lang = result[0]
     global LANG_PATH
     LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
-    print("Language path : " + LANG_PATH)
+    # print("Language path : " + LANG_PATH)
 
     conn.close()
 

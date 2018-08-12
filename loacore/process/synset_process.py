@@ -1,11 +1,14 @@
+import os
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
 from nltk.corpus import wordnet as wn
 from loacore.classes.classes import Synset
+from loacore.utils.status import ProcessState
 
 
-def add_synsets_to_sentences(sentences, print_synsets=False):
+def add_synsets_to_sentences(sentences, print_synsets=False,
+                             _state_queue=None, _id_process=None, freeling_modules=None):
     """
     Performs a Freeling process to disambiguate words of the sentences according to their context
     (UKB algorithm) linking them to a unique synset (if possible).\n
@@ -24,27 +27,34 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
-    morfo, tagger, sen, wsd = init_freeling()
+    if freeling_modules is None:
+        if _state_queue is not None:
+            _state_queue.put(
+                ProcessState(_id_process, os.getpid(), "Loading Freeling...", " - "))
+        morfo, tagger, sen, wsd = init_freeling()
+    else:
+        morfo, tagger, sen, wsd = freeling_modules
 
+    _disambiguation_state(_state_queue, _id_process)
     # perform morphosyntactic analysis and disambiguation
-    freeling_sentences = morfo.analyze(freeling_sentences)
-    freeling_sentences = tagger.analyze(freeling_sentences)
+    processed_sentences = morfo.analyze(freeling_sentences)
+    processed_sentences = tagger.analyze(processed_sentences)
     # annotate and disambiguate senses
-    freeling_sentences = sen.analyze(freeling_sentences)
-    freeling_sentences = wsd.analyze(freeling_sentences)
+    processed_sentences = sen.analyze(processed_sentences)
+    processed_sentences = wsd.analyze(processed_sentences)
 
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
 
-        if not len(sentence.words) == len(freeling_sentences[s]):
+        if not len(sentence.words) == len(processed_sentences[s]):
             print("/!\\ Warning, sentence offset error in synset_process /!\\")
             print(sentence.sentence_str())
-            print([w.get_form() for w in freeling_sentences[s]])
+            print([w.get_form() for w in processed_sentences[s]])
 
         for w in range(len(sentence.words)):
             word = sentence.words[w]
-            rank = freeling_sentences[s][w].get_senses()
+            rank = processed_sentences[s][w].get_senses()
             if len(rank) > 0:
                 if not rank[0][0][0] == '8':
                     # ignore synsets offsets 8.......-.
@@ -57,10 +67,16 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
     # Add synsets to database
 
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
+    sentence_count = 0
+    total_sentence = len(sentences)
     for sentence in sentences:
+        # Print state
+        sentence_count += 1
+        _commit_state(_state_queue, _id_process, sentence_count, total_sentence)
+
         for word in sentence.words:
             synset = word.synset
 
@@ -75,12 +91,13 @@ def add_synsets_to_sentences(sentences, print_synsets=False):
 
                 # Update Word table
                 c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
-                conn.commit()
+
+    conn.commit()
 
     conn.close()
 
 
-def add_polarity_to_synsets():
+def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
     """
     Adds the positive/negative/objective polarities of all the synsets currently in the table
     Synset, from the SentiWordNet corpus.
@@ -92,12 +109,17 @@ def add_polarity_to_synsets():
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
 
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
-    synsets = synset_load.load_synsets()
+    synsets = synset_load.load_synsets(id_synsets=synset_load.get_id_synsets_for_id_words(id_words))
 
+    synset_count = 0
+    total_synset = len(synsets)
     for synset in synsets:
+        # Print state
+        synset_count += 1
+        _commit_polarity_state(_state_queue, _id_process, synset_count, total_synset)
         synset.pos_score = swn.senti_synset(synset.synset_name).pos_score()
         if synset.pos_score is not None:
             # There is an entry in the SentiWordNet database for our synset
@@ -107,7 +129,9 @@ def add_polarity_to_synsets():
             c.execute("UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
                       "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(synset.obj_score) + ") "
                       "WHERE Id_Synset = " + str(synset.id_synset))
-            conn.commit()
+
+    print("")
+    conn.commit()
 
     conn.close()
 
@@ -116,7 +140,6 @@ def add_polarity_to_synsets():
 
 def my_maco_options(lang, lpath):
 
-    import os
     # create options holder
     opt = freeling.maco_options(lang)
 
@@ -129,7 +152,6 @@ def my_maco_options(lang, lpath):
 
 
 def init_freeling():
-    import os
 
     freeling.util_init_locale("default")
 
@@ -161,3 +183,28 @@ def init_freeling():
     wsd = freeling.ukb(os.path.join(lpath, "ukb.dat"))
 
     return morfo, tagger, sen, wsd
+
+
+def _disambiguation_state(state_queue, id_process):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Disambiguation", "-"))
+    else:
+        print("Disambiguation", end="\n")
+
+
+def _commit_state(state_queue, id_process, sentence_count, total_sentence):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Synset DB commit...", str(sentence_count) + " / " + str(total_sentence)))
+    else:
+        print("\r" + str(sentence_count) + " / " + str(total_sentence) + " sentences added.", end="")
+
+
+def _commit_polarity_state(state_queue, id_process, sentence_count, total_sentence):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(),
+                         "Add polarity to synset", str(sentence_count) + " / " + str(total_sentence)))
+    else:
+        print("\r" + str(sentence_count) + " / " + str(total_sentence) + " polarities added.", end="")

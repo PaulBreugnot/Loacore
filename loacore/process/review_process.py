@@ -23,7 +23,7 @@ def add_reviews_from_files(files, encoding):
 
     """
 
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
     reviews = []
@@ -89,9 +89,9 @@ def normalize(text):
 def extract_polarity(str_reviews):
     reviews = []
     for review_str in str_reviews:
-        polarity = re.findall(r'.+\t(\d)\t(\d)\t(\d)', review_str)
+        polarity = re.findall(r'.+\t(\d+\.*\d*)\t(\d+\.*\d*)\t(\d+\.*\d*)', review_str)
         if len(polarity) > 0:
-            sentence = re.findall(r'(.+)\t\d\t\d\t\d', review_str)
+            sentence = re.findall(r'(.+)\t\d+\.*\d*\t\d+\.*\d*\t\d+\.*\d*', review_str)
             review = Review(None, None, None, sentence[0])
             review.polarities["label"] = Polarity(None, "label", None,
                                                   float(polarity[0][0]), float(polarity[0][1]), float(polarity[0][2]))

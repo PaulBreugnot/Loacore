@@ -150,12 +150,13 @@ def test_print_colored_deptree():
     import loacore.load.file_load as file_load
     import itertools
 
-    ids = file_load.get_id_files_by_file_paths([r'.*/uci/yelp_labelled.txt'])
+    # ids = file_load.get_id_files_by_file_paths([r'.*/uci/yelp_labelled.txt'])
+    ids = [1]
     files = file_load.load_database(id_files=ids)
     for file in files:
         for review in file.reviews:
             for sentence in review.sentences:
-                sentence.dep_tree.dep_tree_str(colored_polarity=True)
+                print(sentence.dep_tree.dep_tree_str(colored_polarity=True))
 
 
 def test_colored_reviews():
@@ -169,7 +170,7 @@ def test_colored_reviews():
 
 
 #file_load.clean_db()
-add_files_to_database()
+#add_files_to_database()
 #test_load_db()
 #test_dep_tree()
 #test_pos_tag_pattern()
@@ -177,4 +178,4 @@ add_files_to_database()
 #test_load_polarities()
 #test_print_colored_sentences()
 #test_colored_reviews()
-#test_print_colored_deptree()
+test_print_colored_deptree()

@@ -4,9 +4,11 @@ import resources.pyfreeling as freeling
 from loacore.conf import DB_PATH
 from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
+from loacore.utils.status import ProcessState
 
 
-def add_dep_tree_from_sentences(sentences, print_result=False):
+def add_dep_tree_from_sentences(sentences, print_result=False,
+                                _state_queue=None, _id_process=None, freeling_modules=None):
     """
     Generates the dependency trees of the specified sentences and add the results to the
     database.\n
@@ -23,52 +25,53 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
     :param print_result: Print PoS_tags and labels associated to each |Word|
     :type print_result: boolean
     """
-    print("Loading Freeling Modules...")
-    morfo, tagger, sen, wsd, parser = init_freeling()
+    if freeling_modules is None:
+        if _state_queue is not None:
+            _state_queue.put(
+                ProcessState(_id_process, os.getpid(), "Loading Freeling...", " - "))
+        morfo, tagger, sen, wsd, parser = init_freeling()
+    else:
+        morfo, tagger, sen, wsd, parser = freeling_modules
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
-    print("Morphosyntactic analysis and tagging...")
-    # perform morphosyntactic analysis and disambiguation
-    freeling_sentences = morfo.analyze(freeling_sentences)
-    freeling_sentences = tagger.analyze(freeling_sentences)
 
-    print("Disambiguation...")
+    # Print state
+    _parsing_state(_state_queue, "DT Tagging...", _id_process)
+
+    # perform morphosyntactic analysis
+    processed_sentences = morfo.analyze(freeling_sentences)
+    processed_sentences = tagger.analyze(processed_sentences)
+
+    # Print state
+    _parsing_state(_state_queue, "DT Disambiguation...", _id_process)
+
     # annotate and disambiguate senses
-    freeling_sentences = sen.analyze(freeling_sentences)
-    freeling_sentences = wsd.analyze(freeling_sentences)
+    processed_sentences = sen.analyze(processed_sentences)
+    processed_sentences = wsd.analyze(processed_sentences)
 
-    print("Dependency tree parsing...")
-    # parse sentences
-    end = len(freeling_sentences)
-    disambiguated_sentences = []
-    for i in range(end):
-        print("\r" + str(i) + " / " + str(end) + " sentences processed.", end='')
-        disambiguated_sentences.append(parser.analyze(freeling_sentences[i]))
+    # Print state
+    _parsing_state(_state_queue, "Dep Tree Parsing...", _id_process)
+    # Dependency tree parsing
+    processed_sentences = parser.analyze(processed_sentences)
 
-    print('\r' + str(end) + " / " + str(end) + " sentences processed.")
-
-    freeling_sentences = disambiguated_sentences
-
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
-    progress = 0
-    end = len(sentences)
+    sentence_count = 0
+    total_sentence = len(sentences)
     for s in range(len(sentences)):
-        progress += 1
-        if progress == end:
-            print('\r' + str(progress) + " / " + str(end) + " sentences added.")
-        else:
-            print('\r' + str(progress) + " / " + str(end) + " sentences added.", end='')
+        # Print State
+        sentence_count += 1
+        _commit_state(_state_queue, _id_process, sentence_count, total_sentence)
+
         sentence = sentences[s]
 
         # Add dep_tree to database
-        dt = freeling_sentences[s].get_dep_tree()
+        dt = processed_sentences[s].get_dep_tree()
         dep_tree = DepTree(None, None, sentence.id_sentence)
 
         c.execute("INSERT INTO Dep_Tree (ID_Sentence) VALUES (?)", [dep_tree.id_sentence])
-        conn.commit()
 
         # Get back id_dep_tree
         c.execute("SELECT last_insert_rowid()")
@@ -77,19 +80,19 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
 
         # Database process
         root = None
-        if not len(sentence.words) == len(freeling_sentences[s]):
+        if not len(sentence.words) == len(processed_sentences[s]):
             print("/!\\ Warning, sentence offset error in deptree_process /!\\")
             print(sentence.sentence_str())
-            print([w.get_form() for w in freeling_sentences[s]])
+            print([w.get_form() for w in processed_sentences[s]])
 
         for w in range(len(sentence.words)):
             word = sentence.words[w]
-            rank = freeling_sentences[s][w].get_senses()
+            rank = processed_sentences[s][w].get_senses()
             if len(rank) > 0:
-                word.PoS_tag = freeling_sentences[s][w].get_tag()
+                word.PoS_tag = processed_sentences[s][w].get_tag()
                 if print_result:
                     print("Word : " + word.word)
-                    print("PoS_tag : " + freeling_sentences[s][w].get_tag())
+                    print("PoS_tag : " + processed_sentences[s][w].get_tag())
                     print("Label : " + dt.get_node_by_pos(w).get_label())
 
             # We use the get_node_by_pos function to map the tree to our sentence
@@ -107,7 +110,6 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
                        dep_tree_node.id_word,
                        dep_tree_node.label,
                        dep_tree_node.root))
-            conn.commit()
 
             # Get back id_dep_tree_node
             c.execute("SELECT last_insert_rowid()")
@@ -122,20 +124,19 @@ def add_dep_tree_from_sentences(sentences, print_result=False):
             if word.PoS_tag is not None:
                 c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag + "' "
                           "WHERE ID_Word = " + str(word.id_word))
-                conn.commit()
 
         # Add dep_tree root to database
         dep_tree.root = root
         c.execute("UPDATE Dep_Tree SET ID_Dep_Tree_Node = " + str(root.id_dep_tree_node) + " "
                   "WHERE ID_Dep_Tree = " + str(id_dep_tree))
-        conn.commit()
 
         # Add children relations
         root_node = dt.begin()
         rec_children(c, root_node)
-        conn.commit()
 
-    print("Commit end.")
+    print("")
+    conn.commit()
+
     conn.close()
 
 
@@ -199,3 +200,19 @@ def init_freeling():
     parser = freeling.dep_treeler(os.path.join(lpath, "dep_treeler", "dependences.dat"))
 
     return morfo, tagger, sen, wsd, parser
+
+
+def _parsing_state(state_queue, state, id_process):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), state, "-"))
+    else:
+        print(state, end="\n")
+
+
+def _commit_state(state_queue, id_process, sentence_count, total_sentence):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "DB commit...", str(sentence_count) + " / " + str(total_sentence)))
+    else:
+        print("\r" + str(sentence_count) + " / " + str(total_sentence) + " sentences added.", end="")

@@ -1,6 +1,7 @@
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 from loacore.classes.classes import File
+import resources.pyfreeling as freeling
 
 
 def add_files(file_paths, encoding='utf8', lang="", workers=1):
@@ -38,7 +39,7 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
         from loacore.conf import _set_temp_lang
         _set_temp_lang(lang)
 
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
     # Add files
@@ -70,62 +71,63 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
 
     # ********************************************* FREELING ********************************************************* #
 
-    splitted_reviews = split_reviews(reviews)
+    _split_reviews = split_reviews(reviews)
 
-    from multiprocessing import Process, Queue
-    import queue
-    from loacore.conf import OUTPUT_PATH
-    import os
-    process_queue = queue.Queue()
+    freeling_modules = load_all_freeling_modules()
 
-    index = 0
-    output_files = []
+    if workers <= 0:
+        review_count = 0
+        total_reviews = len(_split_reviews)
+        for reviews in _split_reviews[0:1]:
+            print("\nProcess review " + str(review_count) + " / " + str(total_reviews))
+            split_reviews_process(reviews, freeling_modules)
 
-    state_queue = Queue()
+    else:
+        from multiprocessing import Process, Queue
+        import queue
+        process_queue = queue.Queue()
 
-    for reviews in splitted_reviews:
-        f = open(os.path.join(OUTPUT_PATH, "output_" + str(index) + ".out"), 'w')
-        f.close()
-        output_file = open(os.path.join(OUTPUT_PATH, "output_" + str(index) + ".out"), 'a')
-        output_file.flush()
-        index += 1
-        process_queue.put(
-            Process(
-                target=split_reviews_process,
-                args=(reviews, output_file)))
-        output_files.append(output_file)
+        index = 0
 
-    running_processes = []
+        state_queue = Queue(maxsize=100)
 
-    opened_files = []
-    for file in os.listdir(OUTPUT_PATH):
-        opened_files.append(open(os.path.join(OUTPUT_PATH, file), 'r'))
+        for reviews in _split_reviews:
+            index += 1
+            process_queue.put(
+                Process(
+                    target=split_reviews_process,
+                    args=(reviews, freeling_modules),
+                    kwargs={'_state_queue': state_queue, '_id_process': index}))
 
-    # printer = Process(target=print_process_states, args=(output_files, opened_files))
-    # printer.start()
+        running_processes = []
 
-    while not process_queue.empty():
-            if len(running_processes) < workers:
-                p = process_queue.get()
-                p.start()
-                running_processes.append(p)
-            terminated_processes = []
+        import os
+        import sys
+        from loacore.conf import OUTPUT_PATH
+        with open(os.path.join(OUTPUT_PATH, "log.out"), "w") as log_file,\
+                open(os.path.join(OUTPUT_PATH, "error_log.out"), "w") as error_log_file:
+            sys.stdout = log_file
+            sys.stderr = error_log_file
+
+            printer = Process(target=print_process_states, args=(index, state_queue))
+            printer.start()
+
+            while not process_queue.empty():
+                    if len(running_processes) < workers:
+                        p = process_queue.get()
+                        p.start()
+                        running_processes.append(p)
+                    terminated_processes = []
+                    for p in running_processes:
+                        if not p.is_alive():
+                            terminated_processes.append(p)
+                    for p in terminated_processes:
+                        running_processes.remove(p)
             for p in running_processes:
-                if not p.is_alive():
-                    terminated_processes.append(p)
-            for p in terminated_processes:
-                running_processes.remove(p)
-    for p in running_processes:
-        p.join()
+                p.join()
 
-    running_processes.clear()
-    # printer.terminate()
-
-    for file in opened_files:
-        file.close()
-
-    for file in os.listdir(OUTPUT_PATH):
-        os.remove(file)
+            running_processes.clear()
+            printer.join()
 
     if not lang == "":
         from loacore.conf import _load_conf
@@ -133,16 +135,17 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
 
 
 def split_reviews(reviews):
+    split_size = 500
     split_reviews_list = []
-    n = int(len(reviews)/1000)
+    n = int(len(reviews)/split_size)
     split_number = 0
     for i in range(n):
-        split_number += len(reviews[i*1000:(i+1)*1000])
-        split_reviews_list.append(reviews[i*1000:(i+1)*1000])
+        split_number += len(reviews[i*split_size:(i+1)*split_size])
+        split_reviews_list.append(reviews[i*split_size:(i+1)*split_size])
 
-    if n*1000 < len(reviews):
-        split_number += len(reviews[n*1000:len(reviews)])
-        split_reviews_list.append(reviews[n*1000:len(reviews)])
+    if n*split_size < len(reviews):
+        split_number += len(reviews[n*split_size:len(reviews)])
+        split_reviews_list.append(reviews[n*split_size:len(reviews)])
 
     print("Reviews number : " + str(len(reviews)))
     print("Split into : " + str(len(split_reviews_list)) + "(total : " + str(split_number) + ")")
@@ -150,61 +153,205 @@ def split_reviews(reviews):
     return split_reviews_list
 
 
-def split_reviews_process(reviews, output, id_process, q):
-    import sys
-    sys.stdout = output
+def split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_process=None):
+    import os
+    from loacore.utils.status import ProcessState
 
-    print("==> Tokenization")
     # Tokenization + Add all sentences and all words from all reviews
     import loacore.process.sentence_process as sentence_process
-    added_sentences = sentence_process.add_sentences_from_reviews(reviews)
-    print("Added sentences : " + str(len(added_sentences)))
+    added_sentences = sentence_process.add_sentences_from_reviews(
+        reviews,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"], freeling_modules["tk"], freeling_modules["sp"]))
+
+    # added_sentences = sentence_process.add_sentences_from_reviews(
+    #     reviews,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
     # Reload sentences with words
     import loacore.load.sentence_load as sentence_load
+    if _state_queue is not None:
+        _state_queue.put(ProcessState(_id_process, os.getpid(), "Reload Sentences", "-"))
+    else:
+        print("Reload Sentences...")
+
     sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
+    # Some test outputs ############################################
+    from loacore.conf import OUTPUT_PATH
+    f = open(os.path.join(OUTPUT_PATH, "test_sentence.txt"), 'w')
+    f.write(str(len(sentences)) + "\n")
+    for s in sentences:
+        f.write(str(len(s.words)) + "\t" + s.sentence_str() + "\n")
+    f.close()
+    #################################################################
+
     # Lemmatization
-    print("==> Lemmatization")
     import loacore.process.lemma_process as lemma_process
-    lemma_process.add_lemmas_to_sentences(sentences)
+    lemma_process.add_lemmas_to_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=freeling_modules["morfo"])
+
+    # lemma_process.add_lemmas_to_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
     # Disambiguation
-    print("==> Disambiguation")
-
     import loacore.process.synset_process as synset_process
-    synset_process.add_synsets_to_sentences(sentences)
+    synset_process.add_synsets_to_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"],
+                          freeling_modules["tagger"],
+                          freeling_modules["sen"],
+                          freeling_modules["wsd"]))
+
+    # synset_process.add_synsets_to_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
     # Synset polarities
-    print("==> Adding synset polarities")
-    synset_process.add_polarity_to_synsets()
+    id_words = [w.id_word for s in sentences for w in s.words]
+    synset_process.add_polarity_to_synsets(
+        id_words,
+        _state_queue=_state_queue,
+        _id_process=_id_process)
 
     # Dep tree
-    print("==> Dependency tree processing")
     import loacore.process.deptree_process as deptree_process
-    deptree_process.add_dep_tree_from_sentences(sentences)
+    deptree_process.add_dep_tree_from_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"],
+                          freeling_modules["tagger"],
+                          freeling_modules["sen"],
+                          freeling_modules["wsd"],
+                          freeling_modules["parser"]))
 
-    output.close()
+    # deptree_process.add_dep_tree_from_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
+
+    if _state_queue is not None:
+        _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
 
 
-def print_process_states():
-    import time
-    import os
+def print_process_states(num_process, q):
+    import curses
+    from loacore.utils.status import ProcessState
+
+    curses.update_lines_cols()
+
+    def printer(stdscr):
+        def plot_window(stdscr):
+            stdscr.move(0, 0)
+            stdscr.addstr(0, 0, "Process")
+            stdscr.addstr(0, 14, "PID")
+            stdscr.addstr(0, 21, "Activity")
+            stdscr.addstr(0, 45, "Progress")
+            stdscr.move(0, 0)
+            stdscr.chgat(curses.A_REVERSE)
+
+            for i in range(min(curses.LINES - 1, num_process)):
+                items = processes[i + 1].state_str()
+                stdscr.move(i + 1, 0)
+                stdscr.clrtoeol()
+                stdscr.addstr(i + 1, 0, items[0])
+                stdscr.addstr(i + 1, 14, items[1])
+                stdscr.addstr(i + 1, 21, items[2])
+                stdscr.addstr(i + 1, 45, items[3])
+            if num_process + 1 <= curses.LINES:
+                stdscr.move(num_process + 1, 0)
+            stdscr.refresh()
+
+        print("Printer initialized")
+        for n in unterminated_processes:
+            processes[n] = ProcessState(n, "-", "Waiting", "-")
+        old_lines = curses.LINES
+        while len(unterminated_processes) > 0:
+            curses.update_lines_cols()
+            if curses.LINES != old_lines:
+                stdscr.clear()
+                plot_window()
+                old_lines = curses.LINES
+            while not q.empty():
+                state = q.get()
+                processes[state.id_process] = state
+                if state.activity == "Terminated":
+                    unterminated_processes.remove(state.id_process)
+                plot_window(stdscr)
+
+    unterminated_processes = [n + 1 for n in range(num_process)]
     processes = {}
-    index = 0
-    for file in opened_files:
-        files[index] = file
-        index += 1
 
-    while True:
-        for file in output_files:
-            file.flush()
+    curses.wrapper(printer)
 
-        os.system('clear')
-        for index in files.keys():
-            if len(files[index].readlines()) > 0:
-                print(str(index) + "\t: " + files[index].readlines()[-1])
-            else:
-                print(str(index) + "\t: Waiting")
-        time.sleep(.1)
+
+def my_maco_options(lang, lpath):
+    import os
+
+    # create options holder
+    opt = freeling.maco_options(lang)
+
+    # Provide files for morphological submodules. Note that it is not
+    # necessary to set file for modules that will not be used.
+    opt.UserMapFile = ""
+    opt.ProbabilityFile = os.path.join(lpath, "probabilitats.dat")
+    opt.DictionaryFile = os.path.join(lpath, "dicc.src")
+    opt.PunctuationFile = os.path.join(lpath, "..", "common", "punct.dat")
+    return opt
+
+
+def load_all_freeling_modules():
+
+    print("Loading Freeling Modules...")
+
+    import os
+
+    freeling.util_init_locale("default")
+
+    from loacore.conf import lang
+    from loacore.conf import LANG_PATH as lpath
+
+    # create the analyzer with the required set of maco_options
+    morfo = freeling.maco(my_maco_options(lang, lpath))
+
+    morfo.set_active_options(False,  # UserMap
+                             False,  # NumbersDetection,
+                             True,  # PunctuationDetection,
+                             False,  # DatesDetection,
+                             True,  # DictionarySearch,
+                             False,  # AffixAnalysis,
+                             False,  # CompoundAnalysis,
+                             True,  # RetokContractions,
+                             False,  # MultiwordsDetection,
+                             False,  # NERecognition,
+                             False,  # QuantitiesDetection,
+                             True)  # ProbabilityAssignment
+
+    tk = freeling.tokenizer(os.path.join(lpath, "tokenizer.dat"))
+    sp = freeling.splitter(os.path.join(lpath, "splitter.dat"))
+
+    # create tagger
+    tagger = freeling.hmm_tagger(os.path.join(lpath, "tagger.dat"), False, 2)
+
+    # create sense annotator
+    sen = freeling.senses(os.path.join(lpath, "senses.dat"))
+    # create sense disambiguator
+    wsd = freeling.ukb(os.path.join(lpath, "ukb.dat"))
+    # create dependency parser
+    parser = freeling.dep_treeler(os.path.join(lpath, "dep_treeler", "dependences.dat"))
+
+    return {"tk": tk, "sp": sp, "morfo": morfo, "tagger": tagger, "sen": sen, "wsd": wsd, "parser": parser}
+
+
 

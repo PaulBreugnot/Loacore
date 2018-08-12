@@ -2,9 +2,10 @@ import os
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 import resources.pyfreeling as freeling
+from loacore.utils.status import ProcessState
 
 
-def add_lemmas_to_sentences(sentences, print_lemmas=False):
+def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _id_process=None, freeling_modules=None):
     """
 
     Performs a Freeling process to add lemmas to words.\n
@@ -21,30 +22,47 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
-    morfo = init_freeling()
+    if freeling_modules is None:
+        if _state_queue is not None:
+            _state_queue.put(
+                ProcessState(_id_process, os.getpid(), "Loading Freeling...", " - "))
+        morfo = init_freeling()
+    else:
+        morfo = freeling_modules
 
-    freeling_sentences = morfo.analyze(freeling_sentences)
+
+    # Print sentence
+    _lemmatization_state(_state_queue, _id_process)
+
+    processed_sentences = morfo.analyze(freeling_sentences)
 
     # Copy freeling results into our Words
     for s in range(len(sentences)):
         sentence = sentences[s]
 
-        if not len(sentence.words) == len(freeling_sentences[s]):
+        if not len(sentence.words) == len(processed_sentences[s]):
             print("/!\\ Warning, sentence offset error in lemma_process /!\\")
             print(sentence.sentence_str())
-            print([w.get_form() for w in freeling_sentences[s]])
+            print([w.get_form() for w in processed_sentences[s]])
 
         for w in range(len(sentence.words)):
             word = sentence.words[w]
-            word.lemma = freeling_sentences[s][w].get_lemma()
+            word.lemma = processed_sentences[s][w].get_lemma()
             if print_lemmas:
                 print(word.word + " : " + word.lemma)
 
     # Add lemmas to database
-    conn = sql.connect(DB_PATH, timeout=60)
+    conn = sql.connect(DB_PATH, timeout=120)
     c = conn.cursor()
 
+    sentence_count = 0
+    total_sentence = len(sentences)
+    _commit_state(_state_queue, _id_process, " - ", " - ")
     for sentence in sentences:
+        # Print state
+        sentence_count += 1
+        _commit_state(_state_queue, _id_process, sentence_count, total_sentence)
+
         for word in sentence.words:
             # Add Lemma to Lemma Table
             c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES (?, ?)", (word.lemma, word.id_word))
@@ -55,7 +73,9 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False):
 
             # Update Word table
             c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
-            conn.commit()
+
+    print("")
+    conn.commit()
 
     conn.close()
 
@@ -100,3 +120,19 @@ def init_freeling():
                              False)  # ProbabilityAssignment
 
     return morfo
+
+
+def _lemmatization_state(state_queue, id_process):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Lemmatization", "-"))
+    else:
+        print("Lemmatization", end="\n")
+
+
+def _commit_state(state_queue, id_process, sentence_count, total_sentence):
+    if state_queue is not None:
+        state_queue.put(
+            ProcessState(id_process, os.getpid(), "Lemma DB commit...", str(sentence_count) + " / " + str(total_sentence)))
+    else:
+        print("\r" + str(sentence_count) + " / " + str(total_sentence) + " sentences added.", end="")

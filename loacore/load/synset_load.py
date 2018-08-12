@@ -3,7 +3,7 @@ from loacore.conf import DB_PATH
 from loacore.classes.classes import Synset
 
 
-def load_synsets(id_synsets=[]):
+def load_synsets(id_synsets=None):
     """
     Load |Synset| s from database.
 
@@ -28,7 +28,7 @@ def load_synsets(id_synsets=[]):
     synsets = []
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
-    if len(id_synsets) > 0:
+    if id_synsets is not None:
         for id_synset in id_synsets:
             c.execute("SELECT ID_Synset, ID_Word, Synset_Code, Synset_Name, Neg_Score, Pos_Score, Obj_Score "
                       "FROM Synset WHERE ID_Synset = " + str(id_synset))
@@ -43,6 +43,22 @@ def load_synsets(id_synsets=[]):
             synsets.append(Synset(result[0], result[1], result[2], result[3], result[4], result[5], result[6]))
 
     return synsets
+
+
+def get_id_synsets_for_id_words(id_words):
+    conn = sql.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT Synset.ID_Synset "
+              "FROM Synset "
+              "JOIN Word ON Word.ID_Synset = Synset.ID_Synset "
+              "WHERE Word.ID_Word IN " + str(tuple(id_words)))
+
+    results = c.fetchall()
+    id_synsets = []
+    for result in results:
+        id_synsets.append(result[0])
+
+    return id_synsets
 
 
 def load_synsets_in_words(words):

@@ -38,6 +38,11 @@ def add_all():
     file_process.add_files(file_paths, encoding="utf8", lang="en")
 
 
-# add_train_imdb_neg()
-add_train_imdb_pos()
-# add_all()
+def main():
+    # add_train_imdb_neg()
+    add_train_imdb_pos()
+    # add_all()
+
+
+if __name__ == "__main__":
+    main()
