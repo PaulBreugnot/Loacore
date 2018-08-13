@@ -3,7 +3,10 @@
 \contentsline {chapter}{\numberline {2}Requirements}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Freeling}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Database}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Utils}{3}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.1}SQlite}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Prebuild DB}{3}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Machine Learning}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}Utils}{4}{section.2.4}
 \contentsline {chapter}{\numberline {3}Configuration}{5}{chapter.3}
 \contentsline {chapter}{\numberline {4}Classes}{7}{chapter.4}
 \contentsline {section}{\numberline {4.1}File}{7}{section.4.1}
@@ -25,10 +28,10 @@
 \contentsline {section}{\numberline {5.3}Feed database}{16}{section.5.3}
 \contentsline {chapter}{\numberline {6}Load data from database : \sphinxstyleemphasis {load} package}{17}{chapter.6}
 \contentsline {section}{\numberline {6.1}Load Files}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Load Reviews}{18}{section.6.2}
+\contentsline {section}{\numberline {6.2}Load Reviews}{19}{section.6.2}
 \contentsline {section}{\numberline {6.3}Load Sentences}{20}{section.6.3}
 \contentsline {section}{\numberline {6.4}Load Words}{21}{section.6.4}
-\contentsline {section}{\numberline {6.5}Load Synsets}{22}{section.6.5}
+\contentsline {section}{\numberline {6.5}Load Synsets}{23}{section.6.5}
 \contentsline {section}{\numberline {6.6}Load Lemmas}{23}{section.6.6}
 \contentsline {section}{\numberline {6.7}Load DepTrees}{24}{section.6.7}
 \contentsline {chapter}{\numberline {7}Analyse data : \sphinxstyleemphasis {analysis} package}{27}{chapter.7}
@@ -38,7 +41,9 @@
 \contentsline {section}{\numberline {7.4}Polarity Check}{40}{section.7.4}
 \contentsline {chapter}{\numberline {8}Machine Learning}{41}{chapter.8}
 \contentsline {section}{\numberline {8.1}Word2Vec}{41}{section.8.1}
-\contentsline {section}{\numberline {8.2}SVM}{41}{section.8.2}
-\contentsline {chapter}{\numberline {9}Save and plot results : \sphinxstyleemphasis {utils} package}{43}{chapter.9}
-\contentsline {chapter}{\numberline {10}Other Useful Examples}{45}{chapter.10}
-\contentsline {chapter}{Python Module Index}{47}{section*.95}
+\contentsline {section}{\numberline {8.2}Latent Semantic Indexing}{42}{section.8.2}
+\contentsline {section}{\numberline {8.3}SVM}{43}{section.8.3}
+\contentsline {section}{\numberline {8.4}Validation}{43}{section.8.4}
+\contentsline {chapter}{\numberline {9}Save and plot results : \sphinxstyleemphasis {utils} package}{45}{chapter.9}
+\contentsline {chapter}{\numberline {10}Other Useful Examples}{47}{chapter.10}
+\contentsline {chapter}{Python Module Index}{49}{section*.104}

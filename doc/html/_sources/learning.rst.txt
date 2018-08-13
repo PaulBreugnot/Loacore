@@ -3,16 +3,26 @@
 Machine Learning
 ================
 
-.. include:: replace.txt
-
 Word2Vec
 --------
 
-.. automodule:: loacore.learning.word_embeddings
-        :members:
+.. automodule:: loacore.learning.word2vec
+     :members:
+
+Latent Semantic Indexing
+------------------------
+
+.. automodule:: loacore.learning.lsi
+     :members:
 
 SVM
 ---
 
 .. automodule:: loacore.learning.svm
-        :members:
+    :members:
+
+Validation
+----------
+
+.. automodule:: loacore.learning.validation
+    :members:

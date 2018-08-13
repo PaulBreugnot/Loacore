@@ -49,16 +49,48 @@
 <div class="line-block">
 <div class="line">This project uses an external program, called Freeling, to process language : <a class="reference external" href="http://nlp.lsi.upc.edu/freeling/">http://nlp.lsi.upc.edu/freeling/</a></div>
 <div class="line">Check this page to install Freeling on your computer : <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html</a></div>
-<div class="line">Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation.</div>
-<div class="line"><strong>For now</strong>, only a Linux installation in the default folder <em>/usr/local</em> is supported, but this should be fixed in next improvements.</div>
+<div class="line">Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation. <em>(Not sure, this needs to be checked.)</em></div>
+<div class="line">The folder <em>/usr/local/</em> is used as the default Freeling path, because it is the default Freeling installation folder on Linux systems. This path can be set at any moment using <a class="reference internal" href="configuration.html#loacore.conf.set_freeling_path" title="loacore.conf.set_freeling_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_freeling_path()</span></code></a>, on Windows, Linux or MacOS.</div>
 </div>
 </div>
 <div class="section" id="database">
 <h2>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sqlite">
+<h3>SQlite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">The embedded database used to store results is an sqlite database, managed with the sqlite3 Python database API : <a class="reference external" href="https://docs.python.org/3/library/sqlite3.html">https://docs.python.org/3/library/sqlite3.html</a></div>
 <div class="line">The corresponding Python package should already be installed in your Python3 distribution.</div>
 </div>
+</div>
+<div class="section" id="prebuild-db">
+<h3>Prebuild DB<a class="headerlink" href="#prebuild-db" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><em>Incomplete section</em></div>
+<div class="line">Because the database is quite heavy, it is not included in the GitHub repository. Of course you could build it on your own, but because this process can be quite long prebuild databases can be found there <em>enter url</em> with following files:</div>
+</div>
+<ul class="simple">
+<li>IMDB</li>
+<li>UCI</li>
+</ul>
+</div>
+</div>
+<div class="section" id="machine-learning">
+<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Machine learning modules are based on two Python libraries.</div>
+</div>
+<ul>
+<li><div class="first line-block">
+<div class="line">Gensim : <a class="reference external" href="https://radimrehurek.com/gensim/">https://radimrehurek.com/gensim/</a></div>
+<div class="line">Installation : <a class="reference external" href="https://radimrehurek.com/gensim/install.html">https://radimrehurek.com/gensim/install.html</a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Scikit Learn : <a class="reference external" href="http://scikit-learn.org/stable/">http://scikit-learn.org/stable/</a></div>
+<div class="line">Installation : <a class="reference external" href="http://scikit-learn.org/stable/install.html">http://scikit-learn.org/stable/install.html</a></div>
+</div>
+</li>
+</ul>
 </div>
 <div class="section" id="utils">
 <h2>Utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h2>
@@ -88,7 +120,12 @@
   <ul>
 <li><a class="reference internal" href="#">Requirements</a><ul>
 <li><a class="reference internal" href="#freeling">Freeling</a></li>
-<li><a class="reference internal" href="#database">Database</a></li>
+<li><a class="reference internal" href="#database">Database</a><ul>
+<li><a class="reference internal" href="#sqlite">SQlite</a></li>
+<li><a class="reference internal" href="#prebuild-db">Prebuild DB</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#machine-learning">Machine Learning</a></li>
 <li><a class="reference internal" href="#utils">Utils</a></li>
 </ul>
 </li>

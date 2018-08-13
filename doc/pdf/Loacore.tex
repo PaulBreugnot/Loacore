@@ -88,17 +88,57 @@ The goal of this project is to provide a Python library that allow to easily run
 \begin{DUlineblock}{0em}
 \item[] This project uses an external program, called Freeling, to process language : \sphinxurl{http://nlp.lsi.upc.edu/freeling/}
 \item[] Check this page to install Freeling on your computer : \sphinxurl{https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html}
-\item[] Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation.
-\item[] \sphinxstylestrong{For now}, only a Linux installation in the default folder \sphinxstyleemphasis{/usr/local} is supported, but this should be fixed in next improvements.
+\item[] Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation. \sphinxstyleemphasis{(Not sure, this needs to be checked.)}
+\item[] The folder \sphinxstyleemphasis{/usr/local/} is used as the default Freeling path, because it is the default Freeling installation folder on Linux systems. This path can be set at any moment using {\hyperref[\detokenize{configuration:loacore.conf.set_freeling_path}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{set\_freeling\_path()}}}}}, on Windows, Linux or MacOS.
 \end{DUlineblock}
 
 
 \section{Database}
 \label{\detokenize{requirements:database}}
+
+\subsection{SQlite}
+\label{\detokenize{requirements:sqlite}}
 \begin{DUlineblock}{0em}
 \item[] The embedded database used to store results is an sqlite database, managed with the sqlite3 Python database API : \sphinxurl{https://docs.python.org/3/library/sqlite3.html}
 \item[] The corresponding Python package should already be installed in your Python3 distribution.
 \end{DUlineblock}
+
+
+\subsection{Prebuild DB}
+\label{\detokenize{requirements:prebuild-db}}
+\begin{DUlineblock}{0em}
+\item[] \sphinxstyleemphasis{Incomplete section}
+\item[] Because the database is quite heavy, it is not included in the GitHub repository. Of course you could build it on your own, but because this process can be quite long prebuild databases can be found there \sphinxstyleemphasis{enter url} with following files:
+\end{DUlineblock}
+\begin{itemize}
+\item {} 
+IMDB
+
+\item {} 
+UCI
+
+\end{itemize}
+
+
+\section{Machine Learning}
+\label{\detokenize{requirements:machine-learning}}
+\begin{DUlineblock}{0em}
+\item[] Machine learning modules are based on two Python libraries.
+\end{DUlineblock}
+\begin{itemize}
+\item {} 
+\begin{DUlineblock}{0em}
+\item[] Gensim : \sphinxurl{https://radimrehurek.com/gensim/}
+\item[] Installation : \sphinxurl{https://radimrehurek.com/gensim/install.html}
+\end{DUlineblock}
+
+\item {} 
+\begin{DUlineblock}{0em}
+\item[] Scikit Learn : \sphinxurl{http://scikit-learn.org/stable/}
+\item[] Installation : \sphinxurl{http://scikit-learn.org/stable/install.html}
+\end{DUlineblock}
+
+\end{itemize}
 
 
 \section{Utils}
@@ -126,7 +166,7 @@ Matplotlib : \sphinxurl{https://matplotlib.org/users/installing.html\#linux}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{configuration:loacore.conf.check_freeling_path}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.conf.}}\sphinxbfcode{\sphinxupquote{check\_freeling\_path}}}{}{}
-Print current \sphinxstyleemphasis{freeling\_path}.
+Return current \sphinxstyleemphasis{freeling\_path}.
 
 \end{fulllineitems}
 
@@ -134,7 +174,7 @@ Print current \sphinxstyleemphasis{freeling\_path}.
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{configuration:loacore.conf.check_lang}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.conf.}}\sphinxbfcode{\sphinxupquote{check\_lang}}}{}{}
-Print current \sphinxstyleemphasis{lang}.
+Return current \sphinxstyleemphasis{lang}.
 
 \end{fulllineitems}
 
@@ -931,10 +971,10 @@ See \sphinxurl{https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/bas
 \sphinxstyleliteralstrong{\sphinxupquote{workers}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} 
 Number of workers used to perform Freeling processes.
 
-If 0, Multiprocessing is not used and all the programm is run in a unique process.
+If \sphinxstyleemphasis{workers} \textless{}= 0, Multiprocessing is not used and all the programm is run in a unique process.
 
 if \sphinxstyleemphasis{workers} \textgreater{} 0, \sphinxstyleemphasis{workers} processes are created in addition of the main process. This is useful to take
-advantage of multicore processors architecture to greatly speed up the process.
+advantage of multi-core architectures to greatly speed up the process.
 
 \begin{sphinxadmonition}{note}{Note:}
 To control the state of each process when \sphinxstyleemphasis{workers} \textgreater{} 0, a Python curses app is opened. Notice that
@@ -976,18 +1016,16 @@ dependencies in database : all the tables will be emptied.
 
 \end{fulllineitems}
 
-\index{get\_id\_files\_by\_file\_paths() (in module loacore.load.file\_load)}
+\index{get\_id\_files\_by\_file\_path() (in module loacore.load.file\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{load:loacore.load.file_load.get_id_files_by_file_paths}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{get\_id\_files\_by\_file\_paths}}}{\emph{file\_paths\_re}}{}
+\phantomsection\label{\detokenize{load:loacore.load.file_load.get_id_files_by_file_path}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{get\_id\_files\_by\_file\_path}}}{\emph{file\_path\_re}}{}
 This function can be used to retrieve file ids in database from their path.
-
-All the regular expression in the ** argument list** will be checked.
 
 For more information about how Python regular expressions work, see \sphinxurl{https://docs.python.org/3/library/re.html} .
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
-\sphinxstyleliteralstrong{\sphinxupquote{file\_paths\_re}} (\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{str}}) \textendash{} Regular expressions to check
+\sphinxstyleliteralstrong{\sphinxupquote{file\_path\_re}} (\sphinxcode{\sphinxupquote{str}}) \textendash{} Regular expression to check
 
 \item[{Returns}] \leavevmode
 Ids of matching files.
@@ -1003,7 +1041,7 @@ Find if files of files in an uci folder.
 \fvset{hllines={, ,}}%
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{k+kn}{import} \PYG{n+nn}{loacore}\PYG{n+nn}{.}\PYG{n+nn}{load}\PYG{n+nn}{.}\PYG{n+nn}{file\PYGZus{}load} \PYG{k}{as} \PYG{n+nn}{file\PYGZus{}load}
-\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{ids} \PYG{o}{=} \PYG{n}{file\PYGZus{}load}\PYG{o}{.}\PYG{n}{get\PYGZus{}id\PYGZus{}files\PYGZus{}by\PYGZus{}file\PYGZus{}paths}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.*/uci/.+}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{ids} \PYG{o}{=} \PYG{n}{file\PYGZus{}load}\PYG{o}{.}\PYG{n}{get\PYGZus{}id\PYGZus{}files\PYGZus{}by\PYGZus{}file\PYGZus{}path}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.*/uci/.+}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
 \PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print}\PYG{p}{(}\PYG{n}{ids}\PYG{p}{)}
 \PYG{g+go}{[1, 2, 3]}
 \end{sphinxVerbatim}
@@ -1017,25 +1055,38 @@ The full path of a file (as saved in the database) can be used as a regular expr
 \index{load\_database() (in module loacore.load.file\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{load:loacore.load.file_load.load_database}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{load\_database}}}{\emph{id\_files={[}{]}}, \emph{load\_reviews=True}, \emph{load\_polarities=True}, \emph{load\_sentences=True}, \emph{load\_words=True}, \emph{load\_deptrees=True}}{}
+\phantomsection\label{\detokenize{load:loacore.load.file_load.load_database}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.file\_load.}}\sphinxbfcode{\sphinxupquote{load\_database}}}{\emph{id\_files={[}{]}}, \emph{load\_reviews=True}, \emph{load\_polarities=True}, \emph{load\_sentences=True}, \emph{load\_words=True}, \emph{load\_deptrees=True}, \emph{workers=1}}{}
 Load the complete database as a \sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.File}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{File}}}}} , with all the dependencies specified in parameters
 loaded in them.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{id\_files}} \textendash{} If specified, load only the files with the corresponding ids. Otherwise, load all the files.
+\sphinxstyleliteralstrong{\sphinxupquote{id\_files}} (\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{int}}) \textendash{} If specified, load only the files with the corresponding ids. Otherwise, load all the files.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{load\_reviews}} \textendash{} Specify if Reviews need to be loaded if files.
+\sphinxstyleliteralstrong{\sphinxupquote{load\_reviews}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}) \textendash{} Specify if Reviews need to be loaded if files.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{load\_sentences}} \textendash{} If Reviews have been loaded, specify if Sentences need to be loaded in reviews.
+\sphinxstyleliteralstrong{\sphinxupquote{load\_polarities}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}) \textendash{} If Reviews have been loaded, specify if Polarities need to be loaded in reviews.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{load\_words}} \textendash{} If Sentences have been loaded, specify if Words need to be loaded in sentences.
+\sphinxstyleliteralstrong{\sphinxupquote{load\_sentences}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}) \textendash{} If Reviews have been loaded, specify if Sentences need to be loaded in reviews.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{load\_deptrees}} \textendash{} If Words have been loaded, specify if DepTrees need to be loaded in sentences.
+\sphinxstyleliteralstrong{\sphinxupquote{load\_words}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}) \textendash{} If Sentences have been loaded, specify if Words need to be loaded in sentences.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{load\_deptrees}} (\sphinxstyleliteralemphasis{\sphinxupquote{bool}}) \textendash{} If Words have been loaded, specify if DepTrees need to be loaded in sentences.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{workers}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} 
+Number of workers used to load database.
+
+If \sphinxstyleemphasis{workers} \textless{}= 0, Multiprocessing is not used and all the program is run in a unique process.
+
+if \sphinxstyleemphasis{workers} \textgreater{} 0, \sphinxstyleemphasis{workers} processes are created in addition of the main process. This is useful to take
+advantage of multi-core architectures to greatly speed up the process.
+
 
 \end{itemize}
 
@@ -2918,7 +2969,204 @@ To show the colored file in terminal.
 \label{\detokenize{learning:machine-learning}}\label{\detokenize{learning::doc}}
 
 \section{Word2Vec}
-\label{\detokenize{learning:word2vec}}
+\label{\detokenize{learning:module-loacore.learning.word2vec}}\label{\detokenize{learning:word2vec}}\index{loacore.learning.word2vec (module)}\index{get\_tokens\_list() (in module loacore.learning.word2vec)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word2vec.get_tokens_list}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word2vec.}}\sphinxbfcode{\sphinxupquote{get\_tokens\_list}}}{\emph{reviews}}{}
+Returns a list of all tokens in specified reviews. For each word, if a lemma is found, lemma is used. Otherwise,
+word form is used.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item[{Returns}] \leavevmode
+List of tokens
+
+\item[{Return type}] \leavevmode
+\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{str}}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{review\_2\_vec() (in module loacore.learning.word2vec)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word2vec.review_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word2vec.}}\sphinxbfcode{\sphinxupquote{review\_2\_vec}}}{\emph{review}, \emph{wv}}{}
+Returns a vector representations review, according to the specified Word2Vec dictionary.
+
+(Currently : mean of the Word2Vec vectors of words)
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{review}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} (\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}) \textendash{} Word2Vec dictionary
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Vector list
+
+\item[{Return type}] \leavevmode
+\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{reviews\_2\_vec() (in module loacore.learning.word2vec)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word2vec.reviews_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word2vec.}}\sphinxbfcode{\sphinxupquote{reviews\_2\_vec}}}{\emph{reviews}, \emph{wv}}{}
+Returns a list of vector representations of the reviews, according to the specified Word2Vec dictionary.
+
+(Currently : mean of the Word2Vec vectors of words)
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word2Vec dictionary
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Vector list
+
+\item[{Return type}] \leavevmode
+
+\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{word\_2\_vec() (in module loacore.learning.word2vec)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.word2vec.word_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word2vec.}}\sphinxbfcode{\sphinxupquote{word\_2\_vec}}}{\emph{reviews}}{}
+Learn a Word2Vec dictionary from the tokens of specified reviews (tokens obtained with {\hyperref[\detokenize{learning:loacore.learning.word2vec.get_tokens_list}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{get\_tokens\_list()}}}}} .
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
+
+\item[{Returns}] \leavevmode
+Word2Vec dictionary
+
+\item[{Return type}] \leavevmode
+
+\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{Latent Semantic Indexing}
+\label{\detokenize{learning:module-loacore.learning.lsi}}\label{\detokenize{learning:latent-semantic-indexing}}\index{loacore.learning.lsi (module)}\index{lsi\_model() (in module loacore.learning.lsi)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.lsi.lsi_model}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.lsi.}}\sphinxbfcode{\sphinxupquote{lsi\_model}}}{\emph{reviews}}{}
+Train a Latent Semantic Indexing model from input \sphinxstyleemphasis{reviews}, with
+\sphinxhref{https://radimrehurek.com/gensim/models/lsimodel.html}{gensim.models.LsiModel}.
+
+During the process, a vocabulary and a dictionary mapping this vocabulary to unique integers
+(because \sphinxhref{https://radimrehurek.com/gensim/models/lsimodel.html\#gensim.models.lsimodel.LsiModel}{LsiModel}
+use this representation of texts) is computed from input \sphinxstyleemphasis{reviews}, and this dictionary is also returned.
+
+To compute vocabulary, word lemmas are considered if defines, otherwise word forms are used.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Input reviews.
+
+\item[{Returns}] \leavevmode
+A dictionary mapping vocabulary to integers, and the trained LSI model.
+
+\item[{Return type}] \leavevmode
+
+\sphinxcode{\sphinxupquote{dict}} of \sphinxcode{\sphinxupquote{string}} : \sphinxcode{\sphinxupquote{int}},
+\sphinxhref{https://radimrehurek.com/gensim/models/lsimodel.html\#gensim.models.lsimodel.LsiModel}{LsiModel}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{review\_2\_vec() (in module loacore.learning.lsi)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.lsi.review_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.lsi.}}\sphinxbfcode{\sphinxupquote{review\_2\_vec}}}{\emph{review}, \emph{model}, \emph{word2int\_dict}}{}
+Return a vector representation of \sphinxstyleemphasis{review} according to the given model.
+
+\begin{sphinxadmonition}{note}{Note:}
+\sphinxstyleemphasis{word2int\_dict} should be consistent with \sphinxstyleemphasis{model}, i.e. \sphinxstyleemphasis{word2int\_dict} and \sphinxstyleemphasis{model} should be the results of
+the same call of {\hyperref[\detokenize{learning:loacore.learning.lsi.lsi_model}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{lsi\_model()}}}}}.
+\end{sphinxadmonition}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{review}} \textendash{} Input review
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{review}} \textendash{} {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{model}} \textendash{} Trained LsiModel
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{word2int\_dict}} (\sphinxcode{\sphinxupquote{dict}} of \sphinxcode{\sphinxupquote{string}} : \sphinxcode{\sphinxupquote{int}}) \textendash{} A dictionary mapping vocabulary to integers.
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+A vector representation of \sphinxstyleemphasis{review}, according to \sphinxstyleemphasis{model}.
+
+\item[{Return type}] \leavevmode
+
+\sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{reviews\_2\_vec() (in module loacore.learning.lsi)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.lsi.reviews_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.lsi.}}\sphinxbfcode{\sphinxupquote{reviews\_2\_vec}}}{\emph{reviews}, \emph{model}, \emph{word2int\_dict}}{}
+List of vector representations of \sphinxstyleemphasis{reviews}, as returned by {\hyperref[\detokenize{learning:loacore.learning.lsi.review_2_vec}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{review\_2\_vec()}}}}}.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Input reviews.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{model}} \textendash{} Trained LsiModel
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{word2int\_dict}} (\sphinxcode{\sphinxupquote{dict}} of \sphinxcode{\sphinxupquote{string}} : \sphinxcode{\sphinxupquote{int}}) \textendash{} A dictionary mapping vocabulary to integers.
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Vector representations of \sphinxstyleemphasis{reviews}.
+
+\item[{Return type}] \leavevmode
+
+\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
 
 \section{SVM}
 \label{\detokenize{learning:module-loacore.learning.svm}}\label{\detokenize{learning:svm}}\index{loacore.learning.svm (module)}\index{commit\_analysis() (in module loacore.learning.svm)}
@@ -2936,7 +3184,7 @@ Predict polarity of each review in reviews and add the result to their \sphinxst
 \sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{wv}} (\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}) \textendash{} Word vectors dictionary
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word vectors dictionary
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{analysis}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Analysis label
@@ -2997,7 +3245,7 @@ Learn and return a LinearSVC model from specified labelled reviews and Word2Vec 
 \sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Learning Dataset
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{reviews\_vectors}} (\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}) \textendash{} Vector representations of reviews
+\sphinxstyleliteralstrong{\sphinxupquote{reviews\_vectors}} \textendash{} Vector representations of reviews
 
 \end{itemize}
 
@@ -3007,6 +3255,71 @@ Learned model
 \item[{Return type}] \leavevmode
 
 \sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html\#sklearn.svm.LinearSVC}{LinearSVC}
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{Validation}
+\label{\detokenize{learning:module-loacore.learning.validation}}\label{\detokenize{learning:validation}}\index{loacore.learning.validation (module)}\index{k\_fold\_validation() (in module loacore.learning.validation)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.validation.k_fold_validation}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.validation.}}\sphinxbfcode{\sphinxupquote{k\_fold\_validation}}}{\emph{reviews}, \emph{reviews\_vectors}, \emph{k}}{}
+Performs a K-Fold validation from \sphinxstyleemphasis{reviews} and their associated vector representation using sklearn function
+\sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.model\_selection.cross\_val\_score.html\#sklearn.model\_selection.cross\_val\_score}{cross\_val\_score}.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to check.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews\_vectors}} \textendash{} Vectors representations associated to reviews.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{k}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} K-Fold model parameter
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Cross validation results.
+
+\item[{Return type}] \leavevmode
+
+array-like object, as returned by \sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.model\_selection.cross\_val\_score.html\#sklearn.model\_selection.cross\_val\_score}{cross\_val\_score}.
+
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+\index{leave\_p\_out\_validation() (in module loacore.learning.validation)}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{learning:loacore.learning.validation.leave_p_out_validation}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.validation.}}\sphinxbfcode{\sphinxupquote{leave\_p\_out\_validation}}}{\emph{reviews}, \emph{reviews\_vectors}, \emph{p}}{}
+Performs a Leave-P-out validation from \sphinxstyleemphasis{reviews} and their associated vector representation using sklearn function
+\sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.model\_selection.cross\_val\_score.html\#sklearn.model\_selection.cross\_val\_score}{cross\_val\_score}.
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to check.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{reviews\_vectors}} \textendash{} Vectors representations associated to reviews.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{p}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} Leave-P-out model parameter
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+Cross validation results.
+
+\item[{Return type}] \leavevmode
+
+array-like object, as returned by \sphinxhref{http://scikit-learn.org/stable/modules/generated/sklearn.model\_selection.cross\_val\_score.html\#sklearn.model\_selection.cross\_val\_score}{cross\_val\_score}.
 
 
 \end{description}\end{quote}
@@ -3211,7 +3524,10 @@ Results:
 \item {\sphinxstyleindexentry{loacore.analysis.polarity\_check}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.polarity_check}}
 \item {\sphinxstyleindexentry{loacore.analysis.sentiment\_analysis}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.sentiment_analysis}}
 \item {\sphinxstyleindexentry{loacore.conf}}\sphinxstyleindexpageref{configuration:\detokenize{module-loacore.conf}}
+\item {\sphinxstyleindexentry{loacore.learning.lsi}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.lsi}}
 \item {\sphinxstyleindexentry{loacore.learning.svm}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.svm}}
+\item {\sphinxstyleindexentry{loacore.learning.validation}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.validation}}
+\item {\sphinxstyleindexentry{loacore.learning.word2vec}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.word2vec}}
 \item {\sphinxstyleindexentry{loacore.load.deptree\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.deptree_load}}
 \item {\sphinxstyleindexentry{loacore.load.file\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.file_load}}
 \item {\sphinxstyleindexentry{loacore.load.lemma\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.lemma_load}}

@@ -54,16 +54,15 @@ dependencies in database : all the tables will be emptied.</p>
 </dd></dl>
 
 <dl class="function">
-<dt id="loacore.load.file_load.get_id_files_by_file_paths">
-<code class="descclassname">loacore.load.file_load.</code><code class="descname">get_id_files_by_file_paths</code><span class="sig-paren">(</span><em>file_paths_re</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.get_id_files_by_file_paths" title="Permalink to this definition">¶</a></dt>
+<dt id="loacore.load.file_load.get_id_files_by_file_path">
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">get_id_files_by_file_path</code><span class="sig-paren">(</span><em>file_path_re</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.get_id_files_by_file_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function can be used to retrieve file ids in database from their path.</p>
-<p>All the regular expression in the ** argument list** will be checked.</p>
 <p>For more information about how Python regular expressions work, see <a class="reference external" href="https://docs.python.org/3/library/re.html">https://docs.python.org/3/library/re.html</a> .</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_paths_re</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Regular expressions to check</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path_re</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Regular expression to check</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ids of matching files.</td>
 </tr>
@@ -75,7 +74,7 @@ dependencies in database : all the tables will be emptied.</p>
 </table>
 <p>Find if files of files in an uci folder.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_paths</span><span class="p">([</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
 <span class="go">[1, 2, 3]</span>
 </pre></div>
@@ -88,7 +87,7 @@ dependencies in database : all the tables will be emptied.</p>
 
 <dl class="function">
 <dt id="loacore.load.file_load.load_database">
-<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> , with all the dependencies specified in parameters
 loaded in them.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -96,11 +95,17 @@ loaded in them.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>id_files</strong> – If specified, load only the files with the corresponding ids. Otherwise, load all the files.</li>
-<li><strong>load_reviews</strong> – Specify if Reviews need to be loaded if files.</li>
-<li><strong>load_sentences</strong> – If Reviews have been loaded, specify if Sentences need to be loaded in reviews.</li>
-<li><strong>load_words</strong> – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
-<li><strong>load_deptrees</strong> – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+<li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the files with the corresponding ids. Otherwise, load all the files.</li>
+<li><strong>load_reviews</strong> (<em>bool</em>) – Specify if Reviews need to be loaded if files.</li>
+<li><strong>load_polarities</strong> (<em>bool</em>) – If Reviews have been loaded, specify if Polarities need to be loaded in reviews.</li>
+<li><strong>load_sentences</strong> (<em>bool</em>) – If Reviews have been loaded, specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>bool</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>bool</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+<li><strong>workers</strong> (<em>int</em>) – <p>Number of workers used to load database.</p>
+<p>If <em>workers</em> &lt;= 0, Multiprocessing is not used and all the program is run in a unique process.</p>
+<p>if <em>workers</em> &gt; 0, <em>workers</em> processes are created in addition of the main process. This is useful to take
+advantage of multi-core architectures to greatly speed up the process.</p>
+</li>
 </ul>
 </td>
 </tr>

@@ -46,6 +46,7 @@
  | <a href="#F"><strong>F</strong></a>
  | <a href="#G"><strong>G</strong></a>
  | <a href="#I"><strong>I</strong></a>
+ | <a href="#K"><strong>K</strong></a>
  | <a href="#L"><strong>L</strong></a>
  | <a href="#N"><strong>N</strong></a>
  | <a href="#P"><strong>P</strong></a>
@@ -166,12 +167,12 @@
 </li>
       <li><a href="analysis.html#loacore.analysis.frequencies.get_bigram_pos_tag_set">get_bigram_pos_tag_set() (in module loacore.analysis.frequencies)</a>
 </li>
-      <li><a href="load.html#loacore.load.file_load.get_id_files_by_file_paths">get_id_files_by_file_paths() (in module loacore.load.file_load)</a>
+      <li><a href="load.html#loacore.load.file_load.get_id_files_by_file_path">get_id_files_by_file_path() (in module loacore.load.file_load)</a>
+</li>
+      <li><a href="analysis.html#loacore.analysis.frequencies.get_label_set">get_label_set() (in module loacore.analysis.frequencies)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="analysis.html#loacore.analysis.frequencies.get_label_set">get_label_set() (in module loacore.analysis.frequencies)</a>
-</li>
       <li><a href="learning.html#loacore.learning.svm.get_labels_vector">get_labels_vector() (in module loacore.learning.svm)</a>
 </li>
       <li><a href="analysis.html#loacore.analysis.frequencies.get_polarity_label_set">get_polarity_label_set() (in module loacore.analysis.frequencies)</a>
@@ -179,6 +180,8 @@
       <li><a href="analysis.html#loacore.analysis.frequencies.get_polarity_pos_tag_set">get_polarity_pos_tag_set() (in module loacore.analysis.frequencies)</a>
 </li>
       <li><a href="analysis.html#loacore.analysis.frequencies.get_pos_tag_set">get_pos_tag_set() (in module loacore.analysis.frequencies)</a>
+</li>
+      <li><a href="learning.html#loacore.learning.word2vec.get_tokens_list">get_tokens_list() (in module loacore.learning.word2vec)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -197,6 +200,14 @@
   </ul></td>
 </tr></table>
 
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="learning.html#loacore.learning.validation.k_fold_validation">k_fold_validation() (in module loacore.learning.validation)</a>
+</li>
+  </ul></td>
+</tr></table>
+
 <h2 id="L">L</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
@@ -205,6 +216,8 @@
       <li><a href="analysis.html#loacore.analysis.pattern_recognition.label_patterns_recognition">label_patterns_recognition() (in module loacore.analysis.pattern_recognition)</a>
 </li>
       <li><a href="learning.html#loacore.learning.svm.learn_model">learn_model() (in module loacore.learning.svm)</a>
+</li>
+      <li><a href="learning.html#loacore.learning.validation.leave_p_out_validation">leave_p_out_validation() (in module loacore.learning.validation)</a>
 </li>
       <li><a href="analysis.html#module-loacore.analysis.frequencies">loacore.analysis.frequencies (module)</a>
 </li>
@@ -216,7 +229,13 @@
 </li>
       <li><a href="configuration.html#module-loacore.conf">loacore.conf (module)</a>
 </li>
+      <li><a href="learning.html#module-loacore.learning.lsi">loacore.learning.lsi (module)</a>
+</li>
       <li><a href="learning.html#module-loacore.learning.svm">loacore.learning.svm (module)</a>
+</li>
+      <li><a href="learning.html#module-loacore.learning.validation">loacore.learning.validation (module)</a>
+</li>
+      <li><a href="learning.html#module-loacore.learning.word2vec">loacore.learning.word2vec (module)</a>
 </li>
       <li><a href="load.html#module-loacore.load.deptree_load">loacore.load.deptree_load (module)</a>
 </li>
@@ -240,10 +259,10 @@
 </li>
       <li><a href="process.html#module-loacore.process.review_process">loacore.process.review_process (module)</a>
 </li>
-      <li><a href="process.html#module-loacore.process.sentence_process">loacore.process.sentence_process (module)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="process.html#module-loacore.process.sentence_process">loacore.process.sentence_process (module)</a>
+</li>
       <li><a href="process.html#module-loacore.process.synset_process">loacore.process.synset_process (module)</a>
 </li>
       <li><a href="utils.html#module-loacore.utils.file_writer">loacore.utils.file_writer (module)</a>
@@ -288,6 +307,8 @@
 </li>
       <li><a href="load.html#loacore.load.word_load.load_words_in_sentences">load_words_in_sentences() (in module loacore.load.word_load)</a>
 </li>
+      <li><a href="learning.html#loacore.learning.lsi.lsi_model">lsi_model() (in module loacore.learning.lsi)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -324,12 +345,24 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="load.html#loacore.load.file_load.remove_files">remove_files() (in module loacore.load.file_load)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="classes.html#loacore.classes.classes.Review">Review (class in loacore.classes.classes)</a>
 </li>
+      <li><a href="learning.html#loacore.learning.lsi.review_2_vec">review_2_vec() (in module loacore.learning.lsi)</a>
+
+      <ul>
+        <li><a href="learning.html#loacore.learning.word2vec.review_2_vec">(in module loacore.learning.word2vec)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="classes.html#loacore.classes.classes.Review.review_str">review_str() (loacore.classes.classes.Review method)</a>
 </li>
+      <li><a href="learning.html#loacore.learning.lsi.reviews_2_vec">reviews_2_vec() (in module loacore.learning.lsi)</a>
+
+      <ul>
+        <li><a href="learning.html#loacore.learning.word2vec.reviews_2_vec">(in module loacore.learning.word2vec)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
@@ -369,6 +402,8 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="classes.html#loacore.classes.classes.Word">Word (class in loacore.classes.classes)</a>
+</li>
+      <li><a href="learning.html#loacore.learning.word2vec.word_2_vec">word_2_vec() (in module loacore.learning.word2vec)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>

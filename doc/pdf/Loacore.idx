@@ -39,11 +39,11 @@
 \indexentry{add\_files() (in module loacore.process.file\_process)|hyperpage}{16}
 \indexentry{loacore.load.file\_load (module)|hyperpage}{17}
 \indexentry{clean\_db() (in module loacore.load.file\_load)|hyperpage}{17}
-\indexentry{get\_id\_files\_by\_file\_paths() (in module loacore.load.file\_load)|hyperpage}{17}
+\indexentry{get\_id\_files\_by\_file\_path() (in module loacore.load.file\_load)|hyperpage}{17}
 \indexentry{load\_database() (in module loacore.load.file\_load)|hyperpage}{17}
 \indexentry{remove\_files() (in module loacore.load.file\_load)|hyperpage}{18}
-\indexentry{loacore.load.review\_load (module)|hyperpage}{18}
-\indexentry{load\_reviews() (in module loacore.load.review\_load)|hyperpage}{18}
+\indexentry{loacore.load.review\_load (module)|hyperpage}{19}
+\indexentry{load\_reviews() (in module loacore.load.review\_load)|hyperpage}{19}
 \indexentry{load\_reviews\_by\_id\_files() (in module loacore.load.review\_load)|hyperpage}{19}
 \indexentry{load\_reviews\_in\_files() (in module loacore.load.review\_load)|hyperpage}{19}
 \indexentry{loacore.load.sentence\_load (module)|hyperpage}{20}
@@ -54,12 +54,12 @@
 \indexentry{load\_words() (in module loacore.load.word\_load)|hyperpage}{21}
 \indexentry{load\_words\_in\_dep\_trees() (in module loacore.load.word\_load)|hyperpage}{22}
 \indexentry{load\_words\_in\_sentences() (in module loacore.load.word\_load)|hyperpage}{22}
-\indexentry{loacore.load.synset\_load (module)|hyperpage}{22}
-\indexentry{load\_synsets() (in module loacore.load.synset\_load)|hyperpage}{22}
+\indexentry{loacore.load.synset\_load (module)|hyperpage}{23}
+\indexentry{load\_synsets() (in module loacore.load.synset\_load)|hyperpage}{23}
 \indexentry{load\_synsets\_in\_words() (in module loacore.load.synset\_load)|hyperpage}{23}
 \indexentry{loacore.load.lemma\_load (module)|hyperpage}{23}
 \indexentry{load\_lemmas() (in module loacore.load.lemma\_load)|hyperpage}{23}
-\indexentry{load\_lemmas\_in\_words() (in module loacore.load.lemma\_load)|hyperpage}{23}
+\indexentry{load\_lemmas\_in\_words() (in module loacore.load.lemma\_load)|hyperpage}{24}
 \indexentry{loacore.load.deptree\_load (module)|hyperpage}{24}
 \indexentry{load\_dep\_tree\_in\_sentences() (in module loacore.load.deptree\_load)|hyperpage}{24}
 \indexentry{load\_dep\_trees() (in module loacore.load.deptree\_load)|hyperpage}{24}
@@ -94,15 +94,27 @@
 \indexentry{loacore.analysis.polarity\_check (module)|hyperpage}{40}
 \indexentry{check\_polarity() (in module loacore.analysis.polarity\_check)|hyperpage}{40}
 \indexentry{write\_polarity\_check() (in module loacore.analysis.polarity\_check)|hyperpage}{40}
-\indexentry{loacore.learning.svm (module)|hyperpage}{41}
-\indexentry{commit\_analysis() (in module loacore.learning.svm)|hyperpage}{41}
-\indexentry{get\_labels\_vector() (in module loacore.learning.svm)|hyperpage}{41}
-\indexentry{learn\_model() (in module loacore.learning.svm)|hyperpage}{41}
-\indexentry{loacore.utils.file\_writer (module)|hyperpage}{43}
-\indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{43}
-\indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{43}
-\indexentry{save\_polarity\_pie\_charts() (in module loacore.utils.plot\_polarities)|hyperpage}{43}
-\indexentry{loacore.utils.print\_patterns (module)|hyperpage}{43}
-\indexentry{loacore.utils.plot\_frequencies (module)|hyperpage}{43}
-\indexentry{frequencies\_bar\_chart() (in module loacore.utils.plot\_frequencies)|hyperpage}{43}
-\indexentry{write\_frequencies() (in module loacore.utils.plot\_frequencies)|hyperpage}{44}
+\indexentry{loacore.learning.word2vec (module)|hyperpage}{41}
+\indexentry{get\_tokens\_list() (in module loacore.learning.word2vec)|hyperpage}{41}
+\indexentry{review\_2\_vec() (in module loacore.learning.word2vec)|hyperpage}{41}
+\indexentry{reviews\_2\_vec() (in module loacore.learning.word2vec)|hyperpage}{41}
+\indexentry{word\_2\_vec() (in module loacore.learning.word2vec)|hyperpage}{41}
+\indexentry{loacore.learning.lsi (module)|hyperpage}{42}
+\indexentry{lsi\_model() (in module loacore.learning.lsi)|hyperpage}{42}
+\indexentry{review\_2\_vec() (in module loacore.learning.lsi)|hyperpage}{42}
+\indexentry{reviews\_2\_vec() (in module loacore.learning.lsi)|hyperpage}{42}
+\indexentry{loacore.learning.svm (module)|hyperpage}{43}
+\indexentry{commit\_analysis() (in module loacore.learning.svm)|hyperpage}{43}
+\indexentry{get\_labels\_vector() (in module loacore.learning.svm)|hyperpage}{43}
+\indexentry{learn\_model() (in module loacore.learning.svm)|hyperpage}{43}
+\indexentry{loacore.learning.validation (module)|hyperpage}{43}
+\indexentry{k\_fold\_validation() (in module loacore.learning.validation)|hyperpage}{43}
+\indexentry{leave\_p\_out\_validation() (in module loacore.learning.validation)|hyperpage}{44}
+\indexentry{loacore.utils.file\_writer (module)|hyperpage}{45}
+\indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{45}
+\indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{45}
+\indexentry{save\_polarity\_pie\_charts() (in module loacore.utils.plot\_polarities)|hyperpage}{45}
+\indexentry{loacore.utils.print\_patterns (module)|hyperpage}{45}
+\indexentry{loacore.utils.plot\_frequencies (module)|hyperpage}{45}
+\indexentry{frequencies\_bar\_chart() (in module loacore.utils.plot\_frequencies)|hyperpage}{45}
+\indexentry{write\_frequencies() (in module loacore.utils.plot\_frequencies)|hyperpage}{46}

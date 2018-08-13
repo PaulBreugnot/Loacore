@@ -257,9 +257,9 @@ Otherwise, default language is used (See <code class="xref py py-mod docutils li
 <p>See <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html</a> for more details.</p>
 </li>
 <li><strong>workers</strong> (<em>int</em>) – <p>Number of workers used to perform Freeling processes.</p>
-<p>If 0, Multiprocessing is not used and all the programm is run in a unique process.</p>
+<p>If <em>workers</em> &lt;= 0, Multiprocessing is not used and all the programm is run in a unique process.</p>
 <p>if <em>workers</em> &gt; 0, <em>workers</em> processes are created in addition of the main process. This is useful to take
-advantage of multicore processors architecture to greatly speed up the process.</p>
+advantage of multi-core architectures to greatly speed up the process.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">To control the state of each process when <em>workers</em> &gt; 0, a Python curses app is opened. Notice that
