@@ -37,16 +37,31 @@ def _load_files():
     return files
 
 
-def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True):
+def load_database(id_files=[],
+                  load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True,
+                  workers=1):
     """
     Load the complete database as a :obj:`list` of |File| , with all the dependencies specified in parameters
     loaded in them.
 
     :param id_files: If specified, load only the files with the corresponding ids. Otherwise, load all the files.
+    :type id_files: :obj:`list` of :obj:`int`
     :param load_reviews: Specify if Reviews need to be loaded if files.
+    :type load_reviews: bool
+    :param load_polarities: If Reviews have been loaded, specify if Polarities need to be loaded in reviews.
+    :type load_polarities: bool
     :param load_sentences: If Reviews have been loaded, specify if Sentences need to be loaded in reviews.
+    :type load_sentences: bool
     :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
+    :type load_words: bool
     :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.
+    :type load_deptrees: bool
+    :param workers:
+        Number of workers used to load database.\n
+        If *workers* <= 0, Multiprocessing is not used and all the program is run in a unique process.\n
+        if *workers* > 0, *workers* processes are created in addition of the main process. This is useful to take
+        advantage of multi-core architectures to greatly speed up the process.
+    :type workers: int
     :return: loaded files
     :rtype: :obj:`list` of |File|
 
@@ -82,9 +97,6 @@ def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sen
 
     """
 
-    conn = sql.connect(DB_PATH)
-    c = conn.cursor()
-
     # Load Files
     if len(id_files) == 0:
         files = _load_files()
@@ -95,37 +107,49 @@ def load_database(id_files=[], load_reviews=True, load_polarities=True, load_sen
         # Load Reviews
         import loacore.load.review_load as review_load
         reviews = review_load.load_reviews_in_files(files)
-        if load_polarities:
-            # Load Polarities
-            import loacore.load.polarity_load as polarity_load
-            polarity_load.load_polarities_in_reviews(reviews)
-
-        if load_sentences:
-            # Load Sentences
-            import loacore.load.sentence_load as sentence_load
-            sentences = sentence_load.load_sentences_in_reviews(reviews)
-
-            if load_words:
-                # Load Words
-                import loacore.load.word_load as word_load
-                word_load.load_words_in_sentences(sentences)
-
-                if load_deptrees:
-                    # Load DepTrees
-                    import loacore.load.deptree_load as deptree_load
-                    deptree_load.load_dep_tree_in_sentences(sentences)
+        if workers <= 0:
+            _load_reviews_process(reviews, load_polarities, load_sentences, load_words, load_deptrees)
+        else:
+            from multiprocessing import Pool
+            from loacore.process.file_process import _split_reviews
+            split_size = 500
+            pool = Pool(workers)
+            split_reviews = _split_reviews(reviews, split_size)
+            pool.map(_load_reviews_process,
+                     [(r, load_polarities, load_sentences, load_words, load_deptrees) for r in split_reviews])
 
     return files
 
 
-def get_id_files_by_file_paths(file_paths_re):
+def _load_reviews_process(reviews, load_polarities, load_sentences, load_words, load_deptrees):
+    if load_polarities:
+        # Load Polarities
+        import loacore.load.polarity_load as polarity_load
+        polarity_load.load_polarities_in_reviews(reviews)
+
+    if load_sentences:
+        # Load Sentences
+        import loacore.load.sentence_load as sentence_load
+        sentences = sentence_load.load_sentences_in_reviews(reviews)
+
+        if load_words:
+            # Load Words
+            import loacore.load.word_load as word_load
+            word_load.load_words_in_sentences(sentences)
+
+            if load_deptrees:
+                # Load DepTrees
+                import loacore.load.deptree_load as deptree_load
+                deptree_load.load_dep_tree_in_sentences(sentences)
+
+
+def get_id_files_by_file_path(file_path_re):
     """
     This function can be used to retrieve file ids in database from their path.\n
-    All the regular expression in the ** argument list** will be checked.\n
     For more information about how Python regular expressions work, see https://docs.python.org/3/library/re.html .
 
-    :param file_paths_re: Regular expressions to check
-    :type file_paths_re: :obj:`list` of :obj:`str`
+    :param file_path_re: Regular expression to check
+    :type file_path_re: :obj:`str`
     :return: Ids of matching files.
     :rtype: :obj:`list` of :obj:`int`
 
@@ -133,7 +157,7 @@ def get_id_files_by_file_paths(file_paths_re):
     Find if files of files in an uci folder.
 
         >>> import loacore.load.file_load as file_load
-        >>> ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+        >>> ids = file_load.get_id_files_by_file_path(r'.*/uci/.+')
         >>> print(ids)
         [1, 2, 3]
 
@@ -146,11 +170,10 @@ def get_id_files_by_file_paths(file_paths_re):
 
     id_files = []
     files = load_database(load_reviews=False, load_sentences=False, load_words=False, load_deptrees=False)
-    for file_path_re in file_paths_re:
-        for file in files:
-            regexp = file_path_re
-            if re.fullmatch(regexp, file.file_path) is not None:
-                id_files.append(file.id_file)
+    for file in files:
+        regexp = file_path_re
+        if re.fullmatch(regexp, file.file_path) is not None:
+            id_files.append(file.id_file)
 
     return list(set(id_files))
 
