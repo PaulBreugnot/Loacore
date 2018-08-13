@@ -1,0 +1,258 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Save and plot results : utils package &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Other Useful Examples" href="other_examples.html" />
+    <link rel="prev" title="Machine Learning" href="learning.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="other_examples.html" title="Other Useful Examples"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="learning.html" title="Machine Learning"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="learning.html"
+                        title="previous chapter">Machine Learning</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="other_examples.html"
+                        title="next chapter">Other Useful Examples</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/utils.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Save and plot results : <em>utils</em> package</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="save-and-plot-results-utils-package">
+<h1>Save and plot results : <em>utils</em> package<a class="headerlink" href="#save-and-plot-results-utils-package" title="Permalink to this headline">¶</a></h1>
+<p>Provides useful functions to plot and save various results.</p>
+<span class="target" id="module-loacore.utils.file_writer"></span><span class="target" id="module-loacore.utils.plot_polarities"></span><dl class="function">
+<dt id="loacore.utils.plot_polarities.print_polarity_table">
+<code class="descclassname">loacore.utils.plot_polarities.</code><code class="descname">print_polarity_table</code><span class="sig-paren">(</span><em>file_score_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_polarities.print_polarity_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print a table with columns File path, Positive Score, Negative Score and Objective Score.</p>
+<p>Notice that displayed scores are rounded values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_score_dict</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code>) – A <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> that maps file_paths to a score tuple.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.utils.plot_polarities.save_polarity_pie_charts">
+<code class="descclassname">loacore.utils.plot_polarities.</code><code class="descname">save_polarity_pie_charts</code><span class="sig-paren">(</span><em>file_score_dict</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/sentiment_analysis'</em>, <em>file_name='polarity_pie_charts.pdf'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_polarities.save_polarity_pie_charts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot polarity pie charts using Matplotlib, and save them into a .pdf file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>file_score_dict</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">tuple</span></code>) – Data to plot and save. The <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> maps ID_Files to a polarity tuple (pos_score, neg_score, obj_score).</li>
+<li><strong>gui</strong> (<em>boolean</em>) – Specify if a gui should be used to save file.</li>
+<li><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – If gui is not called : path of the directory in which plots will be saved.
+If directory doesn’t exist, will be created.
+Default is set to <em>RESULT_PATH/sentiment_analysis/</em></li>
+<li><strong>file_name</strong> (<em>string</em>) – Name of the saved file.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<span class="target" id="module-loacore.utils.print_patterns"></span><span class="target" id="module-loacore.utils.plot_frequencies"></span><dl class="function">
+<dt id="loacore.utils.plot_frequencies.frequencies_bar_chart">
+<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">frequencies_bar_chart</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>plot=False</em>, <em>save=True</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/frequencies'</em>, <em>file_name='frequencies_bar_chart.pdf'</em>, <em>val_number=0</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.frequencies_bar_chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function allows to plot or save results of <a class="reference internal" href="analysis.html#module-loacore.analysis.frequencies" title="loacore.analysis.frequencies"><code class="xref py py-mod docutils literal notranslate"><span class="pre">loacore.analysis.frequencies</span></code></a>.</p>
+<p>If plot is set to True, results will be presented in a matplotlib figure, but <em>save</em> will be set to False.
+(matplotlib restriction)</p>
+<p>Notice that all the results are arbitrarily re-ordered in the order of the first file of files_frequencies. This
+means for example that the right-most label of the graph corresponds to the most common of the first file, but that
+is not necessarily true for the others. This could also be useful to consider when <em>val_number</em> is used to show only
+“interesting” labels. Those labels actually correspond to the <em>val_number</em> most common labels of the first file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>files_frequencies</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of label : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code> .) – Dictionary that maps file names to frequencies.</li>
+<li><strong>plot</strong> (<em>boolean</em>) – If True, plot results as a figure.</li>
+<li><strong>save</strong> (<em>boolean</em>) – If not <em>plot</em>, save figure as a PDF.</li>
+<li><strong>gui</strong> (<em>boolean</em>) – Specify if a GUI should be used to set directory.</li>
+<li><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – <p>Path of the directory used.</p>
+<p>Default : ‘RESULT_PATH/frequencies/’</p>
+</li>
+<li><strong>file_name</strong> (<em>string</em>) – File name</li>
+<li><strong>val_number</strong> – Number of labels to show. Only the most commons in the first file will be kept.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Save the 60 most commons bigram labels frequencies of uci files in a PDF.</p>
+<div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="kn">as</span> <span class="nn">file_load</span>
+<span class="kn">import</span> <span class="nn">loacore.analysis.frequencies</span> <span class="kn">as</span> <span class="nn">frequencies</span>
+<span class="kn">import</span> <span class="nn">loacore.utils.plot_frequencies</span> <span class="kn">as</span> <span class="nn">plot_frequencies</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">RESULT_PATH</span>
+
+<span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_paths</span><span class="p">([</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">])</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="n">ids</span><span class="p">,</span> <span class="n">load_reviews</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">labels</span><span class="p">,</span> <span class="n">freq</span> <span class="o">=</span> <span class="n">frequencies</span><span class="o">.</span><span class="n">bigram_label_frequencies</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+
+<span class="n">plot_frequencies</span><span class="o">.</span><span class="n">frequencies_bar_chart</span><span class="p">(</span>
+    <span class="n">freq</span><span class="p">,</span>
+    <span class="n">plot</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+    <span class="n">save</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+    <span class="n">file_path</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RESULT_PATH</span><span class="p">,</span> <span class="s1">&#39;frequencies&#39;</span><span class="p">,</span> <span class="s1">&#39;label_frequencies&#39;</span><span class="p">,</span> <span class="s1">&#39;uci&#39;</span><span class="p">),</span>
+    <span class="n">file_name</span><span class="o">=</span><span class="s2">&quot;uci_label_bigrams_frequencies.pdf&quot;</span><span class="p">,</span>
+    <span class="n">val_number</span><span class="o">=</span><span class="mi">60</span><span class="p">)</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.utils.plot_frequencies.write_frequencies">
+<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">write_frequencies</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/frequencies/tables'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.write_frequencies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write frequencies to a txt file in file_path folder. Original raw file names are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>files_frequencies</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code> : <code class="xref py py-obj docutils literal notranslate"><span class="pre">dict</span></code> of label : <code class="xref py py-obj docutils literal notranslate"><span class="pre">float</span></code> .) – Dictionary that maps file names to frequencies.</li>
+<li><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Directory path</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="learning.html" title="previous chapter (use the left arrow)">Machine Learning</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="other_examples.html" title="next chapter (use the right arrow)">Other Useful Examples</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="other_examples.html" title="Other Useful Examples"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="learning.html" title="Machine Learning"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2018, Universidad Tecnológica de Pereira. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

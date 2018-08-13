@@ -1,0 +1,799 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Load data from database : load package &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Analyse data : analysis package" href="analysis.html" />
+    <link rel="prev" title="Feeding database : process package" href="process.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="analysis.html" title="Analyse data : analysis package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="Feeding database : process package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Contents</h2>
+    <div class="sidebar-localtoc">
+      <ul>
+<li><a class="reference internal" href="#">Load data from database : <em>load</em> package</a><ul>
+<li><a class="reference internal" href="#module-loacore.load.file_load">Load Files</a></li>
+<li><a class="reference internal" href="#module-loacore.load.review_load">Load Reviews</a></li>
+<li><a class="reference internal" href="#module-loacore.load.sentence_load">Load Sentences</a></li>
+<li><a class="reference internal" href="#module-loacore.load.word_load">Load Words</a></li>
+<li><a class="reference internal" href="#module-loacore.load.synset_load">Load Synsets</a></li>
+<li><a class="reference internal" href="#module-loacore.load.lemma_load">Load Lemmas</a></li>
+<li><a class="reference internal" href="#module-loacore.load.deptree_load">Load DepTrees</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="process.html"
+                        title="previous chapter">Feeding database : <em>process</em> package</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="analysis.html"
+                        title="next chapter">Analyse data : <em>analysis</em> package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/load.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Load data from database : <em>load</em> package</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="load-data-from-database-load-package">
+<h1>Load data from database : <em>load</em> package<a class="headerlink" href="#load-data-from-database-load-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-loacore.load.file_load">
+<span id="load-files"></span><h2>Load Files<a class="headerlink" href="#module-loacore.load.file_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.file_load.clean_db">
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">clean_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.clean_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all files from database. Implemented references will also engender the deletion of all files
+dependencies in database : all the tables will be emptied.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.file_load.get_id_files_by_file_path">
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">get_id_files_by_file_path</code><span class="sig-paren">(</span><em>file_path_re</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.get_id_files_by_file_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function can be used to retrieve file ids in database from their path.</p>
+<p>For more information about how Python regular expressions work, see <a class="reference external" href="https://docs.python.org/3/library/re.html">https://docs.python.org/3/library/re.html</a> .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path_re</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – Regular expression to check</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Ids of matching files.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Find if files of files in an uci folder.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+<span class="go">[1, 2, 3]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The full path of a file (as saved in the database) can be used as a regular expression.</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.file_load.load_database">
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> , with all the dependencies specified in parameters
+loaded in them.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the files with the corresponding ids. Otherwise, load all the files.</li>
+<li><strong>load_reviews</strong> (<em>bool</em>) – Specify if Reviews need to be loaded if files.</li>
+<li><strong>load_polarities</strong> (<em>bool</em>) – If Reviews have been loaded, specify if Polarities need to be loaded in reviews.</li>
+<li><strong>load_sentences</strong> (<em>bool</em>) – If Reviews have been loaded, specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>bool</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>bool</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+<li><strong>workers</strong> (<em>int</em>) – <p>Number of workers used to load database.</p>
+<p>If <em>workers</em> &lt;= 0, Multiprocessing is not used and all the program is run in a unique process.</p>
+<p>if <em>workers</em> &gt; 0, <em>workers</em> processes are created in addition of the main process. This is useful to take
+advantage of multi-core architectures to greatly speed up the process.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded files</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Among the dependencies, only the load_deptrees should be set to False to significantly reduce processing
+time if they are not needed. Loading other structures is quite fast.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load files 1,2,3 with only their <code class="xref py py-attr docutils literal notranslate"><span class="pre">id_file</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">id_path</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">load_reviews</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">f</span><span class="o">.</span><span class="n">file_path</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">])</span>
+<span class="go">[&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_EO.txt&#39;,</span>
+<span class="go">&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_CC.txt&#39;,</span>
+<span class="go">&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_GR.txt&#39;]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load the first 10 files without Dep Trees.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">load_deptrees</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">reviews</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span><span class="o">.</span><span class="n">review</span><span class="p">)</span>
+<span class="go">que sea mas grande el parqueadero</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load the complete database.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">load_database</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">files</span><span class="p">))</span>
+<span class="go">33</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.file_load.remove_files">
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">remove_files</code><span class="sig-paren">(</span><em>files</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.remove_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove specified files from database. Implemented references will also engender the deletion of all files
+dependencies in database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> – <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.review_load">
+<span id="load-reviews"></span><h2>Load Reviews<a class="headerlink" href="#module-loacore.load.review_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.review_load.load_reviews">
+<code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews</code><span class="sig-paren">(</span><em>id_reviews=[]</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load reviews from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load all reviews with sentences and words</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.review_load</span> <span class="k">as</span> <span class="nn">review_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reviews</span> <span class="o">=</span> <span class="n">review_load</span><span class="o">.</span><span class="n">load_reviews</span><span class="p">(</span><span class="n">load_sentences</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">load_words</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reviews</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sentences</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sentence_str</span><span class="p">(</span><span class="n">print_sentence</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">&#39;teleferico&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.review_load.load_reviews_by_id_files">
+<code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews_by_id_files</code><span class="sig-paren">(</span><em>id_files</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews_by_id_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load reviews of files specified by their ids.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – Ids of files from which reviews should be loaded.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load reviews from the first file as “raw” reviews, without sentences.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.review_load</span> <span class="k">as</span> <span class="nn">review_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">reviews</span> <span class="o">=</span> <span class="n">review_load</span><span class="o">.</span><span class="n">load_reviews_by_id_files</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">reviews</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">review</span><span class="p">)</span>
+<span class="go">teleferico</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.review_load.load_reviews_in_files">
+<code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews_in_files</code><span class="sig-paren">(</span><em>files</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews_in_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load reviews into corresponding <em>files</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">reviews</span></code>.</p>
+<p>Also return all the loaded reviews.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> when <em>load_reviews</em> is set to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>. In most of the cases, this function should be used to load files and reviews in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files in which corresponding reviews will be loaded.</li>
+<li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded reviews</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.sentence_load">
+<span id="load-sentences"></span><h2>Load Sentences<a class="headerlink" href="#module-loacore.load.sentence_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.sentence_load.load_sentences">
+<code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences</code><span class="sig-paren">(</span><em>id_sentences=[]</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load sentences from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load sentences 1,2 and their words.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.sentence_load</span> <span class="k">as</span> <span class="nn">sentence_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span> <span class="o">=</span> <span class="n">sentence_load</span><span class="o">.</span><span class="n">load_sentences</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="n">load_words</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sentence_str</span><span class="p">(</span><span class="n">print_sentence</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">&#39;teleferico&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">sentence_str</span><span class="p">(</span><span class="n">print_sentence</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">&#39;toboganvy que el agua huela a asufre&#39;</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.sentence_load.load_sentences_by_id_files">
+<code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences_by_id_files</code><span class="sig-paren">(</span><em>id_files</em>, <em>load_words=True</em>, <em>load_deptrees=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences_by_id_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ids of files from which sentences should be loaded.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – Ids of files from which reviews should be loaded.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Load all the sentences from file 1.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.sentence_load</span> <span class="k">as</span> <span class="nn">sentence_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span> <span class="o">=</span> <span class="n">sentence_load</span><span class="o">.</span><span class="n">load_sentences_by_id_files</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">sentence_str</span><span class="p">(</span><span class="n">print_sentence</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="go">&#39;teleferico&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.sentence_load.load_sentences_in_reviews">
+<code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences_in_reviews</code><span class="sig-paren">(</span><em>reviews</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences_in_reviews" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load sentences into corresponding <em>reviews</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">sentences</span></code>.</p>
+<p>Also return all the loaded sentences.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> or <code class="xref py py-func docutils literal notranslate"><span class="pre">review_load.load_reviews()</span></code>
+when <em>load_sentences</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load reviews and sentences in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews in which corresponding sentences should be loaded.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
+<li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Loaded sentences</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.word_load">
+<span id="load-words"></span><h2>Load Words<a class="headerlink" href="#module-loacore.load.word_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.word_load.load_words">
+<code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words</code><span class="sig-paren">(</span><em>id_words=[]</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load words from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the words with corresponding ids. Otherwise, load all the words.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded words</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load all words and their lemmas, synsets.</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.word_load</span> <span class="k">as</span> <span class="nn">word_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">words</span> <span class="o">=</span> <span class="n">word_load</span><span class="o">.</span><span class="n">load_words</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">w</span><span class="o">.</span><span class="n">word</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">11</span><span class="p">]])</span>
+<span class="go">[&#39;teleferico&#39;, &#39;toboganvy&#39;, &#39;que&#39;, &#39;el&#39;, &#39;agua&#39;, &#39;huela&#39;, &#39;a&#39;, &#39;asufre&#39;, &#39;pista&#39;, &#39;de&#39;, &#39;baile&#39;]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">w</span><span class="o">.</span><span class="n">lemma</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">words</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">11</span><span class="p">]])</span>
+<span class="go">[&#39;&#39;, &#39;&#39;, &#39;que&#39;, &#39;el&#39;, &#39;agua&#39;, &#39;oler&#39;, &#39;a&#39;, &#39;&#39;, &#39;pista&#39;, &#39;de&#39;, &#39;bailar&#39;]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.word_load.load_words_in_dep_trees">
+<code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words_in_dep_trees</code><span class="sig-paren">(</span><em>dep_trees</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words_in_dep_trees" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load words into corresponding <em>dep_trees</em>, setting up the attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">word</span></code> of each node.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> when <em>load_deptrees</em> is set to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>, or by <code class="xref py py-func docutils literal notranslate"><span class="pre">dep_tree.load_deptrees()</span></code> when <em>load_words</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load dep_trees and words in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a>) – DepTrees in which corresponding words should be loaded.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.word_load.load_words_in_sentences">
+<code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words_in_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words_in_sentences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load words into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">words</span></code>.</p>
+<p>Also return all the loaded words.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> or
+<code class="xref py py-func docutils literal notranslate"><span class="pre">sentence_load.load_sentences()</span></code> when <em>load_words</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load sentences and words in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences in which corresponding words should be loaded.</li>
+<li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
+<li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded words</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.synset_load">
+<span id="load-synsets"></span><h2>Load Synsets<a class="headerlink" href="#module-loacore.load.synset_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.synset_load.load_synsets">
+<code class="descclassname">loacore.load.synset_load.</code><code class="descname">load_synsets</code><span class="sig-paren">(</span><em>id_synsets=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.synset_load.load_synsets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a> s from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_synsets</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – If specified, load only the synsets with corresponding ids. Otherwise, load all the synsets.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded synsets</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Load all synsets from database.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.synset_load</span> <span class="k">as</span> <span class="nn">synset_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">synsets</span> <span class="o">=</span> <span class="n">synset_load</span><span class="o">.</span><span class="n">load_synsets</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">synsets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">synset_code</span><span class="p">)</span>
+<span class="go">14845743-n</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">synsets</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">synset_name</span><span class="p">)</span>
+<span class="go">water.n.01</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.synset_load.load_synsets_in_words">
+<code class="descclassname">loacore.load.synset_load.</code><code class="descname">load_synsets_in_words</code><span class="sig-paren">(</span><em>words</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.synset_load.load_synsets_in_words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a> s into corresponding <em>words</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">synset</span></code>.</p>
+<p>Also return all the loaded synsets.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> when <em>load_words</em> is set to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code> or by <code class="xref py py-func docutils literal notranslate"><span class="pre">word_load.load_words()</span></code> when <em>load_synsets</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load words and synsets in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Words in which corresponding synsets should be loaded.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded synsets</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.lemma_load">
+<span id="load-lemmas"></span><h2>Load Lemmas<a class="headerlink" href="#module-loacore.load.lemma_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.lemma_load.load_lemmas">
+<code class="descclassname">loacore.load.lemma_load.</code><code class="descname">load_lemmas</code><span class="sig-paren">(</span><em>id_lemmas=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.lemma_load.load_lemmas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load lemmas from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_lemmas</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the lemmas with corresponding ids. Otherwise, load all the lemmas.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded lemmas</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Load all lemmas from database.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.lemma_load</span> <span class="k">as</span> <span class="nn">lemma_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lemmas</span> <span class="o">=</span> <span class="n">lemma_load</span><span class="o">.</span><span class="n">load_lemmas</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">lemmas</span><span class="p">))</span>
+<span class="go">103827</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lemmas</span><span class="p">[</span><span class="mi">10</span><span class="p">])</span>
+<span class="go">bailar</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.lemma_load.load_lemmas_in_words">
+<code class="descclassname">loacore.load.lemma_load.</code><code class="descname">load_lemmas_in_words</code><span class="sig-paren">(</span><em>words</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.lemma_load.load_lemmas_in_words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load lemmas into corresponding <em>words</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">lemma</span></code>.</p>
+<p>Also return all the loaded lemmas.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> when <em>load_words</em> is set to
+<code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code> or by <code class="xref py py-func docutils literal notranslate"><span class="pre">word_load.load_words()</span></code> when <em>load_synsets</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load words and synsets in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Words in which corresponding synsets should be loaded.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded lemmas</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.load.deptree_load">
+<span id="load-deptrees"></span><h2>Load DepTrees<a class="headerlink" href="#module-loacore.load.deptree_load" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="loacore.load.deptree_load.load_dep_tree_in_sentences">
+<code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_tree_in_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_tree_in_sentences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load Dep Trees into corresponding <em>sentences</em>, setting up their attribute <code class="xref py py-attr docutils literal notranslate"><span class="pre">dep_tree</span></code>.</p>
+<p>Also return all the loaded deptrees.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This function is automatically called by <code class="xref py py-func docutils literal notranslate"><span class="pre">file_load.load_database()</span></code> or
+<code class="xref py py-func docutils literal notranslate"><span class="pre">sentence_load.load_sentences()</span></code> when <em>load_deptrees</em> is set to <code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code>.
+In most of the cases, those functions should be used instead to load sentences and deptrees in one go.</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences in which corresponding DepTrees should be loaded.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in Dep Trees.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded deptrees</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.load.deptree_load.load_dep_trees">
+<code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_trees</code><span class="sig-paren">(</span><em>id_dep_trees=[]</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_trees" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load Dep Trees from database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>id_dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.</li>
+<li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in Dep Trees.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">loaded deptrees</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Load all deptrees from database : can take a few moments.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.deptree_load</span> <span class="k">as</span> <span class="nn">deptree_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deptrees</span> <span class="o">=</span> <span class="n">deptree_load</span><span class="o">.</span><span class="n">load_dep_trees</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">deptree_str</span> <span class="o">=</span> <span class="n">deptrees</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span><span class="o">.</span><span class="n">dep_tree_str</span><span class="p">()</span>
+<span class="go">instalaciones (sentence, NCFP000, instalación)</span>
+<span class="go">    las (spec, None, el)</span>
+<span class="go">    agua (sn, NCCS000, agua)</span>
+<span class="go">        el (spec, None, el)</span>
+<span class="go">        fria (s.a, None, )</span>
+<span class="go">            y (coord, None, y)</span>
+<span class="go">            caliente (grup.a, AQ0CS00, calentar)</span>
+<span class="go">        caminata (sn, NCFS000, caminata)</span>
+<span class="go">            la (spec, None, el)</span>
+<span class="go">        tranquilidad (sn, NCFS000, tranquilidad)</span>
+<span class="go">            la (spec, None, el)</span>
+<span class="go">        servicio (sn, NCMS000, servicio)</span>
+<span class="go">            el (spec, None, el)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="process.html" title="previous chapter (use the left arrow)">Feeding database : <em>process</em> package</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="analysis.html" title="next chapter (use the right arrow)">Analyse data : <em>analysis</em> package</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="analysis.html" title="Analyse data : analysis package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="Feeding database : process package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2018, Universidad Tecnológica de Pereira. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>

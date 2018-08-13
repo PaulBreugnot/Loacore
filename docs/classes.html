@@ -1,0 +1,594 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- Licensed under the Apache 2.0 License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
+  <!-- Licensed under the SIL Open Font License -->
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Classes &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Feeding database : process package" href="process.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" />
+  
+   
+
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="Feeding database : process package"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="container-wrapper">
+
+      <div id="mobile-toggle">
+        <a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></a>
+      </div>
+  <div id="left-column">
+    <div class="sphinxsidebar">
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <h2>Contents</h2>
+    <div class="sidebar-localtoc">
+      <ul>
+<li><a class="reference internal" href="#">Classes</a><ul>
+<li><a class="reference internal" href="#file">File</a></li>
+<li><a class="reference internal" href="#review">Review</a></li>
+<li><a class="reference internal" href="#sentence">Sentence</a></li>
+<li><a class="reference internal" href="#word">Word</a></li>
+<li><a class="reference internal" href="#synset">Synset</a></li>
+<li><a class="reference internal" href="#deptree">DepTree</a></li>
+<li><a class="reference internal" href="#deptreenode">DepTreeNode</a></li>
+<li><a class="reference internal" href="#polarity">Polarity</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+</div>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="previous chapter">Configuration</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="process.html"
+                        title="next chapter">Feeding database : <em>process</em> package</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/classes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div class="sidebar-block">
+  <div class="sidebar-wrapper">
+    <div id="main-search">
+      <form class="form-inline" action="search.html" method="GET" role="form">
+        <div class="input-group">
+          <input name="q" type="text" class="form-control" placeholder="Search...">
+        </div>
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
+        <div id="right-column">
+          
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <ol class="breadcrumb">
+              <li><a href="index.html">Docs</a></li>
+              
+              <li>Classes</li>
+            </ol>
+          </div>
+          
+          <div class="document clearer body">
+            
+  <div class="section" id="classes">
+<h1>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="file">
+<h2>File<a class="headerlink" href="#file" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.File">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">File</code><span class="sig-paren">(</span><em>id_file</em>, <em>file_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_file</strong> (<em>int</em>) – ID_File used in File table</li>
+<li><strong>file_path</strong> (<em>path-like object</em>) – Path used to load file from file system.</li>
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – File reviews</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.File.load">
+<code class="descname">load</code><span class="sig-paren">(</span><em>encoding='utf8'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load file from file system using <code class="xref py py-attr docutils literal notranslate"><span class="pre">file_path</span></code> and specified encoding.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>encoding</strong> – Source file encoding. Default : <em>utf8</em>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">file object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.classes.classes.File.sentence_list">
+<code class="descname">sentence_list</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File.sentence_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenient way to get all the sentences of the file, avoiding Reviews.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">List of file sentences</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="loacore.classes.classes.File.sentence_list_from_files">
+<em class="property">static </em><code class="descname">sentence_list_from_files</code><span class="sig-paren">(</span><em>files</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.File.sentence_list_from_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenient way to get all the sentences of the specified files, avoiding Reviews.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of file sentences</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="review">
+<h2>Review<a class="headerlink" href="#review" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.Review">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">Review</code><span class="sig-paren">(</span><em>id_review</em>, <em>id_file</em>, <em>file_index</em>, <em>review</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Review" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_review</strong> (<em>int</em>) – ID_Review used id Review table</li>
+<li><strong>id_file</strong> (<em>int</em>) – SQL reference to the corresponding File</li>
+<li><strong>file_index</strong> (<em>int</em>) – Index of the Review in referenced File</li>
+<li><strong>review</strong> (<em>string</em>) – Review represented as a string</li>
+<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Review Sentences</li>
+<li><strong>polarities</strong> – Polarities associated to the review, that can come from directly from the source file for polarity label
+datasets, or from the result of different analysis. Each polarity can be identified with its analysis attribute.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.Review.review_str">
+<code class="descname">review_str</code><span class="sig-paren">(</span><em>colored_polarity=True</em>, <em>analysis=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Review.review_str" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>colored_polarity</strong> (<em>boolean</em>) – If True, polarities are colored printed.
+(red = Negative, green = Positive, yellow = Objective, black = No Synset)</li>
+<li><strong>analysis</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>) – The polarities computed with the specified analysis will be added at the end of each review.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Review string representation</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="sentence">
+<h2>Sentence<a class="headerlink" href="#sentence" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.Sentence">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">Sentence</code><span class="sig-paren">(</span><em>id_sentence</em>, <em>id_review</em>, <em>review_index</em>, <em>id_dep_tree</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Sentence" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_sentence</strong> (<em>int</em>) – ID_Sentence used in Sentence table</li>
+<li><strong>id_review</strong> (<em>int</em>) – SQL reference to the corresponding Review</li>
+<li><strong>review_index</strong> (<em>int</em>) – Index of the Sentence in referenced Review</li>
+<li><strong>id_dep_tree</strong> (<em>int</em>) – SQL reference to a possibly associated DepTree</li>
+<li><strong>words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Sentence Words</li>
+<li><strong>dep_tree</strong> (<a class="reference internal" href="#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a>) – Possibly associated DepTree</li>
+<li><strong>freeling_sentence</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.sentence</span></code>) – result of <a class="reference internal" href="#loacore.classes.classes.Sentence.compute_freeling_sentence" title="loacore.classes.classes.Sentence.compute_freeling_sentence"><code class="xref py py-meth docutils literal notranslate"><span class="pre">compute_freeling_sentence()</span></code></a> when called</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.Sentence.compute_freeling_sentence">
+<code class="descname">compute_freeling_sentence</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Sentence.compute_freeling_sentence" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div>Generates a basic <code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.sentence</span></code> instance, converting <code class="xref py py-attr docutils literal notranslate"><span class="pre">words</span></code> as <code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.word</span></code> .</div></blockquote>
+<p>This function is used to process <a class="reference internal" href="#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a> with Freeling.</p>
+<blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load sentences from database and convert them into Freeling Sentences.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.sentence_load</span> <span class="k">as</span> <span class="nn">sentence_load</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sentences</span> <span class="o">=</span> <span class="n">sentence_load</span><span class="o">.</span><span class="n">load_sentences</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freeling_sentences</span> <span class="o">=</span> <span class="p">[</span><span class="n">s</span><span class="o">.</span><span class="n">compute_freeling_sentence</span><span class="p">()</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">sentences</span><span class="p">]</span>
+</pre></div>
+</div>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">return:</th><td class="field-body"><p class="first">generated Freeling Sentence instance</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><p class="first last"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.sentence</span></code></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.classes.classes.Sentence.sentence_str">
+<code class="descname">sentence_str</code><span class="sig-paren">(</span><em>colored_polarity=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Sentence.sentence_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convenient way of printing sentences from their word list attribute.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>colored_polarity</strong> (<em>boolean</em>) – If True, polarities are colored printed.
+(red = Negative, green = Positive, yellow = Objective, black = No Synset)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">String representation of the sentence</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="word">
+<h2>Word<a class="headerlink" href="#word" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.Word">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">Word</code><span class="sig-paren">(</span><em>id_word</em>, <em>id_sentence</em>, <em>sentence_index</em>, <em>word</em>, <em>id_lemma</em>, <em>id_synset</em>, <em>PoS_tag</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Word" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_word</strong> (<em>int</em>) – ID_Word used in Word table</li>
+<li><strong>id_sentence</strong> (<em>int</em>) – SQL reference to the corresponding Sentence</li>
+<li><strong>sentence_index</strong> (<em>int</em>) – Index of the Word in referenced Sentence</li>
+<li><strong>word</strong> (<em>string</em>) – Word form</li>
+<li><strong>id_lemma</strong> (<em>int</em>) – SQL references to the corresponding Lemma (Table Lemma)</li>
+<li><strong>lemma</strong> (<em>string</em>) – Possibly associated Lemma</li>
+<li><strong>id_synset</strong> (<em>int</em>) – SQL references to corresponding Synset</li>
+<li><strong>synset</strong> (<a class="reference internal" href="#loacore.classes.classes.Synset" title="loacore.classes.classes.Synset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Synset</span></code></a>) – Possibly associated Synset</li>
+<li><strong>PoS_tag</strong> (<em>string</em>) – Possibly associated Part-of-Speech tag</li>
+<li><strong>freeling_word</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.word</span></code>) – result of <a class="reference internal" href="#loacore.classes.classes.Word.compute_freeling_word" title="loacore.classes.classes.Word.compute_freeling_word"><code class="xref py py-meth docutils literal notranslate"><span class="pre">compute_freeling_word()</span></code></a> when called</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.Word.colored_word">
+<code class="descname">colored_word</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Word.colored_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>Colored representation of word. If a Synset is associated, colored are assigned as follow :</p>
+<blockquote>
+<div><ul class="simple">
+<li>pos_score &gt; neg_score =&gt; red</li>
+<li>neg_score &gt; pos_score =&gt; green</li>
+<li>neg_score = pos_score =&gt; yellow</li>
+</ul>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Colored word</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.classes.classes.Word.compute_freeling_word">
+<code class="descname">compute_freeling_word</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Word.compute_freeling_word" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a basic <code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.word</span></code> instance, generated by only the word form, even if some analysis
+could have already been realized.</p>
+<p>Moreover, only <code class="xref py py-func docutils literal notranslate"><span class="pre">loacore.classes.classes.File.load_sentence()</span></code> (that itself uses this function) should be used,
+because all Freeling analysis work with <code class="xref py py-class docutils literal notranslate"><span class="pre">pyfreeling.sentence</span></code> instances.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="synset">
+<h2>Synset<a class="headerlink" href="#synset" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.Synset">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">Synset</code><span class="sig-paren">(</span><em>id_synset</em>, <em>id_word</em>, <em>synset_code</em>, <em>synset_name</em>, <em>neg_score</em>, <em>pos_score</em>, <em>obj_score</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Synset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_synset</strong> (<em>int</em>) – ID_Synset used in Synset table</li>
+<li><strong>id_word</strong> (<em>int</em>) – SQL reference to the corresponding Word</li>
+<li><strong>synset_code</strong> (<em>string</em>) – Synset as represented in Freeling (ex : 01123148-a)</li>
+<li><strong>synset_name</strong> (<em>string</em>) – Synset as represent in WordNet and SentiWordNet (ex : good.a.01)</li>
+<li><strong>neg_score</strong> (<em>float</em>) – Negative polarity from SentiWordNet.</li>
+<li><strong>pos_score</strong> (<em>float</em>) – Positive polarity from SentiWordNet.</li>
+<li><strong>obj_score</strong> (<em>float</em>) – Objective polarity from SentiWordNet.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">neg_score + pos_score + obj_score = 1</p>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="deptree">
+<h2>DepTree<a class="headerlink" href="#deptree" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.DepTree">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">DepTree</code><span class="sig-paren">(</span><em>id_dep_tree</em>, <em>id_dep_tree_node</em>, <em>id_sentence</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.DepTree" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_dep_tree</strong> (<em>int</em>) – Id_Dep_Tree used in DepTree table</li>
+<li><strong>id_dep_tree_node</strong> (<em>int</em>) – SQL reference to root node (Dep_Tree_Node table)</li>
+<li><strong>id_sentence</strong> (<em>int</em>) – SQL reference to the corresponding Sentence</li>
+<li><strong>root</strong> (<a class="reference internal" href="#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a>) – Root node</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.DepTree.dep_tree_str">
+<code class="descname">dep_tree_str</code><span class="sig-paren">(</span><em>root=None</em>, <em>colored_polarity=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.DepTree.dep_tree_str" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>root</strong> (<a class="reference internal" href="#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a>) – If set, node from which to start to print the tree. self.root otherwise.</li>
+<li><strong>colored_polarity</strong> (<em>boolean</em>) – If True, polarities are colored printed.
+(red = Negative, green = Positive, yellow = Objective, black = No Synset)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">String representation of DepTree instance</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="deptreenode">
+<h2>DepTreeNode<a class="headerlink" href="#deptreenode" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.DepTreeNode">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">DepTreeNode</code><span class="sig-paren">(</span><em>id_dep_tree_node</em>, <em>id_dep_tree</em>, <em>id_word</em>, <em>label</em>, <em>root</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.DepTreeNode" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_dep_tree_node</strong> (<em>int</em>) – ID_Dep_Tree_Node used in Dep_Tree_Node table</li>
+<li><strong>id_dep_tree</strong> (<em>int</em>) – SQL reference to the corresponding DepTree</li>
+<li><strong>id_word</strong> (<em>int</em>) – SQL reference to corresponding id_word</li>
+<li><strong>word</strong> (<a class="reference internal" href="#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a>) – Possibly loaded associated word</li>
+<li><strong>label</strong> (<em>string</em>) – Node dependency label. See annex for details.</li>
+<li><strong>root</strong> (<em>boolean</em>) – True if and only if this is the root of the corresponding DepTree</li>
+<li><strong>children</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="#loacore.classes.classes.DepTreeNode" title="loacore.classes.classes.DepTreeNode"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTreeNode</span></code></a>) – Node children</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="polarity">
+<h2>Polarity<a class="headerlink" href="#polarity" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.classes.classes.Polarity">
+<em class="property">class </em><code class="descclassname">loacore.classes.classes.</code><code class="descname">Polarity</code><span class="sig-paren">(</span><em>id_polarity</em>, <em>analysis</em>, <em>id_review</em>, <em>pos_score</em>, <em>neg_score</em>, <em>obj_score</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Polarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object used to store possible polarities of a review.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body"><ul class="first last simple">
+<li><strong>id_polarity</strong> (<em>int</em>) – ID_Polarity used in Polarity table.</li>
+<li><strong>analysis</strong> (<em>string</em>) – An analysis identifier, from which the polarity come from.</li>
+<li><strong>id_review</strong> (<em>int</em>) – SQL reference to the corresponding Review</li>
+<li><strong>pos_score</strong> (<em>float</em>) – Positive polarity</li>
+<li><strong>neg_score</strong> (<em>float</em>) – Negative polarity</li>
+<li><strong>obj_score</strong> (<em>float</em>) – Objective polarity</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="loacore.classes.classes.Polarity.is_negative">
+<code class="descname">is_negative</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Polarity.is_negative" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if pos_score &gt; neg_score</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.classes.classes.Polarity.is_objective">
+<code class="descname">is_objective</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Polarity.is_objective" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if pos_score &gt; neg_score</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.classes.classes.Polarity.is_positive">
+<code class="descname">is_positive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.classes.classes.Polarity.is_positive" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if pos_score &gt; neg_score</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+            
+  <div class="footer-relations">
+    
+      <div class="pull-left">
+        <a class="btn btn-default" href="configuration.html" title="previous chapter (use the left arrow)">Configuration</a>
+      </div>
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="process.html" title="next chapter (use the right arrow)">Feeding database : <em>process</em> package</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="process.html" title="Feeding database : process package"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+<script type="text/javascript">
+  $("#mobile-toggle a").click(function () {
+    $("#left-column").toggle();
+  });
+</script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
+  <div class="footer">
+    &copy; Copyright 2018, Universidad Tecnológica de Pereira. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
+  </div>
+  </body>
+</html>
