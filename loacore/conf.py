@@ -37,9 +37,9 @@ def set_lang(user_lang):
 
 def check_lang():
     """
-    Print current *lang*.
+    Return current *lang*.
     """
-    print(lang)
+    return lang
 
 
 def set_freeling_path(freeling_path):
@@ -71,9 +71,9 @@ def set_freeling_path(freeling_path):
 
 def check_freeling_path():
     """
-    Print current *freeling_path*.
+    Return current *freeling_path*.
     """
-    print(FR_PATH)
+    return FR_PATH
 
 
 def _load_conf():

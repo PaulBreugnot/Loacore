@@ -21,9 +21,9 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
     :type encoding: str
     :param workers:
         Number of workers used to perform Freeling processes.\n
-        If 0, Multiprocessing is not used and all the programm is run in a unique process.\n
+        If *workers* <= 0, Multiprocessing is not used and all the programm is run in a unique process.\n
         if *workers* > 0, *workers* processes are created in addition of the main process. This is useful to take
-        advantage of multicore processors architecture to greatly speed up the process.
+        advantage of multi-core architectures to greatly speed up the process.
 
         .. note::
 
