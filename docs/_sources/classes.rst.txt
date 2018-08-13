@@ -1,0 +1,45 @@
+.. include:: replace.txt
+
+Classes
+=======
+
+File
+----
+.. autoclass:: loacore.classes.classes.File
+    :members:
+
+Review
+------
+.. autoclass:: loacore.classes.classes.Review
+    :members:
+
+Sentence
+--------
+.. autoclass:: loacore.classes.classes.Sentence
+    :members:
+
+Word
+----
+.. autoclass:: loacore.classes.classes.Word
+    :members:
+
+Synset
+------
+.. autoclass:: loacore.classes.classes.Synset
+    :members:
+
+DepTree
+-------
+.. autoclass:: loacore.classes.classes.DepTree
+    :members:
+
+DepTreeNode
+-----------
+.. autoclass:: loacore.classes.classes.DepTreeNode
+    :members:
+
+Polarity
+--------
+.. autoclass:: loacore.classes.classes.Polarity
+    :members:
+

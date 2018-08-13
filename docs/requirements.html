@@ -1,0 +1,186 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Requirements &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="requirements">
+<h1>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="freeling">
+<h2>Freeling<a class="headerlink" href="#freeling" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">This project uses an external program, called Freeling, to process language : <a class="reference external" href="http://nlp.lsi.upc.edu/freeling/">http://nlp.lsi.upc.edu/freeling/</a></div>
+<div class="line">Check this page to install Freeling on your computer : <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html</a></div>
+<div class="line">Notice that to use Python API, Freeling needs to be installed from source with the dedicated options as described in documentation. <em>(Not sure, this needs to be checked.)</em></div>
+<div class="line">The folder <em>/usr/local/</em> is used as the default Freeling path, because it is the default Freeling installation folder on Linux systems. This path can be set at any moment using <a class="reference internal" href="configuration.html#loacore.conf.set_freeling_path" title="loacore.conf.set_freeling_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_freeling_path()</span></code></a>, on Windows, Linux or MacOS.</div>
+</div>
+</div>
+<div class="section" id="database">
+<h2>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sqlite">
+<h3>SQlite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line">The embedded database used to store results is an sqlite database, managed with the sqlite3 Python database API : <a class="reference external" href="https://docs.python.org/3/library/sqlite3.html">https://docs.python.org/3/library/sqlite3.html</a></div>
+<div class="line">The corresponding Python package should already be installed in your Python3 distribution.</div>
+</div>
+</div>
+<div class="section" id="prebuild-db">
+<h3>Prebuild DB<a class="headerlink" href="#prebuild-db" title="Permalink to this headline">¶</a></h3>
+<div class="line-block">
+<div class="line"><em>Incomplete section</em></div>
+<div class="line">Because the database is quite heavy, it is not included in the GitHub repository. Of course you could build it on your own, but because this process can be quite long prebuild databases can be found there <em>enter url</em> with following files:</div>
+</div>
+<ul class="simple">
+<li>IMDB</li>
+<li>UCI</li>
+</ul>
+</div>
+</div>
+<div class="section" id="machine-learning">
+<h2>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h2>
+<div class="line-block">
+<div class="line">Machine learning modules are based on two Python libraries.</div>
+</div>
+<ul>
+<li><div class="first line-block">
+<div class="line">Gensim : <a class="reference external" href="https://radimrehurek.com/gensim/">https://radimrehurek.com/gensim/</a></div>
+<div class="line">Installation : <a class="reference external" href="https://radimrehurek.com/gensim/install.html">https://radimrehurek.com/gensim/install.html</a></div>
+</div>
+</li>
+<li><div class="first line-block">
+<div class="line">Scikit Learn : <a class="reference external" href="http://scikit-learn.org/stable/">http://scikit-learn.org/stable/</a></div>
+<div class="line">Installation : <a class="reference external" href="http://scikit-learn.org/stable/install.html">http://scikit-learn.org/stable/install.html</a></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="utils">
+<h2>Utils<a class="headerlink" href="#utils" title="Permalink to this headline">¶</a></h2>
+<p>Package <code class="xref py py-mod docutils literal notranslate"><span class="pre">utils</span></code> uses a few graphical modules to show results.</p>
+<ul>
+<li><p class="first">PrettyTable : <a class="reference external" href="https://pypi.org/project/PrettyTable/">https://pypi.org/project/PrettyTable/</a></p>
+</li>
+<li><p class="first">Matplotlib : <a class="reference external" href="https://matplotlib.org/users/installing.html#linux">https://matplotlib.org/users/installing.html#linux</a></p>
+</li>
+<li><div class="first line-block">
+<div class="line">Tkinter : <a class="reference external" href="https://wiki.python.org/moin/TkInter">https://wiki.python.org/moin/TkInter</a></div>
+<div class="line">Module used to generate gui to save pdf for example.</div>
+<div class="line">Even if the package should be included in Python distribution, on Linux distributions you might need to install <em>tk</em> package through your package manager.</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Requirements</a><ul>
+<li><a class="reference internal" href="#freeling">Freeling</a></li>
+<li><a class="reference internal" href="#database">Database</a><ul>
+<li><a class="reference internal" href="#sqlite">SQlite</a></li>
+<li><a class="reference internal" href="#prebuild-db">Prebuild DB</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#machine-learning">Machine Learning</a></li>
+<li><a class="reference internal" href="#utils">Utils</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="previous chapter">Introduction</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="configuration.html"
+                        title="next chapter">Configuration</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/requirements.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="configuration.html" title="Configuration"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2018, Universidad Tecnológica de Pereira.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.6.
+    </div>
+  </body>
+</html>
