@@ -1,7 +1,0 @@
-.. include:: replace.txt
-
-Configuration
-=============
-
-.. automodule:: loacore.conf
-    :members:
