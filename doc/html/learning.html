@@ -44,96 +44,8 @@
             
   <div class="section" id="machine-learning">
 <h1>Machine Learning<a class="headerlink" href="#machine-learning" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-loacore.learning.word_embeddings">
-<span id="word2vec"></span><h2>Word2Vec<a class="headerlink" href="#module-loacore.learning.word_embeddings" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="loacore.learning.word_embeddings.get_tokens_list">
-<code class="descclassname">loacore.learning.word_embeddings.</code><code class="descname">get_tokens_list</code><span class="sig-paren">(</span><em>files</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.word_embeddings.get_tokens_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a list of all tokens in specified files. For each word, if a lemma is found, lemma is used. Otherwise, word
-form is used.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of tokens</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="loacore.learning.word_embeddings.review_2_vec">
-<code class="descclassname">loacore.learning.word_embeddings.</code><code class="descname">review_2_vec</code><span class="sig-paren">(</span><em>review</em>, <em>wv</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.word_embeddings.review_2_vec" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a vector representations review, according to the specified Word2Vec dictionary.</p>
-<p>(Currently : mean of the Word2Vec vectors of words)</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>review</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
-<li><strong>wv</strong> (<a class="reference external" href="https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors">KeyedVector</a>) – Word2Vec dictionary</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Vector list</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference external" href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html">numpy.array</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="loacore.learning.word_embeddings.reviews_2_vec">
-<code class="descclassname">loacore.learning.word_embeddings.</code><code class="descname">reviews_2_vec</code><span class="sig-paren">(</span><em>reviews</em>, <em>wv</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.word_embeddings.reviews_2_vec" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns a list of vector representations of the reviews, according to the specified Word2Vec dictionary.</p>
-<p>(Currently : mean of the Word2Vec vectors of words)</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
-<li><strong>wv</strong> – Word2Vec dictionary</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Vector list</p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference external" href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html">numpy.array</a></p>
-</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="loacore.learning.word_embeddings.word_2_vec">
-<code class="descclassname">loacore.learning.word_embeddings.</code><code class="descname">word_2_vec</code><span class="sig-paren">(</span><em>files</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.word_embeddings.word_2_vec" title="Permalink to this definition">¶</a></dt>
-<dd><p>Learn a Word2Vec dictionary from the tokens of specified files (tokens obtained with <a class="reference internal" href="#loacore.learning.word_embeddings.get_tokens_list" title="loacore.learning.word_embeddings.get_tokens_list"><code class="xref py py-func docutils literal notranslate"><span class="pre">get_tokens_list()</span></code></a> .</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Word2Vec dictionary</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors">KeyedVector</a></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="word2vec">
+<h2>Word2Vec<a class="headerlink" href="#word2vec" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-loacore.learning.svm">
 <span id="svm"></span><h2>SVM<a class="headerlink" href="#module-loacore.learning.svm" title="Permalink to this headline">¶</a></h2>
@@ -149,7 +61,7 @@ form is used.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>clf</strong> (<a class="reference external" href="http://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC">LinearSVC</a>) – LinearSVC model</li>
 <li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
-<li><strong>wv</strong> – Word vectors dictionary</li>
+<li><strong>wv</strong> (<a class="reference external" href="https://radimrehurek.com/gensim/models/keyedvectors.html#gensim.models.keyedvectors.KeyedVectors">KeyedVector</a>) – Word vectors dictionary</li>
 <li><strong>analysis</strong> (<em>string</em>) – Analysis label</li>
 <li><strong>db_commit</strong> – If True, results are commit to the database.</li>
 </ul>
@@ -191,7 +103,7 @@ the results of <a class="reference internal" href="classes.html#loacore.classes.
 
 <dl class="function">
 <dt id="loacore.learning.svm.learn_model">
-<code class="descclassname">loacore.learning.svm.</code><code class="descname">learn_model</code><span class="sig-paren">(</span><em>reviews</em>, <em>wv</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.svm.learn_model" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.learning.svm.</code><code class="descname">learn_model</code><span class="sig-paren">(</span><em>reviews</em>, <em>reviews_vectors</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.learning.svm.learn_model" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn and return a LinearSVC model from specified labelled reviews and Word2Vec dictionnary.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -199,7 +111,7 @@ the results of <a class="reference internal" href="classes.html#loacore.classes.
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Learning Dataset</li>
-<li><strong>wv</strong> – Word vectors dictionary</li>
+<li><strong>reviews_vectors</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference external" href="https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html">numpy.array</a>) – Vector representations of reviews</li>
 </ul>
 </td>
 </tr>
@@ -226,7 +138,7 @@ the results of <a class="reference internal" href="classes.html#loacore.classes.
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Machine Learning</a><ul>
-<li><a class="reference internal" href="#module-loacore.learning.word_embeddings">Word2Vec</a></li>
+<li><a class="reference internal" href="#word2vec">Word2Vec</a></li>
 <li><a class="reference internal" href="#module-loacore.learning.svm">SVM</a></li>
 </ul>
 </li>

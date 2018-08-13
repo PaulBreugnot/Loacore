@@ -23,7 +23,7 @@ def add_reviews_from_files(files, encoding):
 
     """
 
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     reviews = []

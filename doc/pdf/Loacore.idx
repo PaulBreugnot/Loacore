@@ -32,11 +32,11 @@
 \indexentry{add\_lemmas\_to\_sentences() (in module loacore.process.lemma\_process)|hyperpage}{14}
 \indexentry{loacore.process.synset\_process (module)|hyperpage}{14}
 \indexentry{add\_polarity\_to\_synsets() (in module loacore.process.synset\_process)|hyperpage}{14}
-\indexentry{add\_synsets\_to\_sentences() (in module loacore.process.synset\_process)|hyperpage}{14}
+\indexentry{add\_synsets\_to\_sentences() (in module loacore.process.synset\_process)|hyperpage}{15}
 \indexentry{loacore.process.deptree\_process (module)|hyperpage}{15}
 \indexentry{add\_dep\_tree\_from\_sentences() (in module loacore.process.deptree\_process)|hyperpage}{15}
-\indexentry{loacore.process.file\_process (module)|hyperpage}{15}
-\indexentry{add\_files() (in module loacore.process.file\_process)|hyperpage}{15}
+\indexentry{loacore.process.file\_process (module)|hyperpage}{16}
+\indexentry{add\_files() (in module loacore.process.file\_process)|hyperpage}{16}
 \indexentry{loacore.load.file\_load (module)|hyperpage}{17}
 \indexentry{clean\_db() (in module loacore.load.file\_load)|hyperpage}{17}
 \indexentry{get\_id\_files\_by\_file\_paths() (in module loacore.load.file\_load)|hyperpage}{17}
@@ -94,15 +94,10 @@
 \indexentry{loacore.analysis.polarity\_check (module)|hyperpage}{40}
 \indexentry{check\_polarity() (in module loacore.analysis.polarity\_check)|hyperpage}{40}
 \indexentry{write\_polarity\_check() (in module loacore.analysis.polarity\_check)|hyperpage}{40}
-\indexentry{loacore.learning.word\_embeddings (module)|hyperpage}{41}
-\indexentry{get\_tokens\_list() (in module loacore.learning.word\_embeddings)|hyperpage}{41}
-\indexentry{review\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{41}
-\indexentry{reviews\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{41}
-\indexentry{word\_2\_vec() (in module loacore.learning.word\_embeddings)|hyperpage}{41}
-\indexentry{loacore.learning.svm (module)|hyperpage}{42}
-\indexentry{commit\_analysis() (in module loacore.learning.svm)|hyperpage}{42}
-\indexentry{get\_labels\_vector() (in module loacore.learning.svm)|hyperpage}{42}
-\indexentry{learn\_model() (in module loacore.learning.svm)|hyperpage}{42}
+\indexentry{loacore.learning.svm (module)|hyperpage}{41}
+\indexentry{commit\_analysis() (in module loacore.learning.svm)|hyperpage}{41}
+\indexentry{get\_labels\_vector() (in module loacore.learning.svm)|hyperpage}{41}
+\indexentry{learn\_model() (in module loacore.learning.svm)|hyperpage}{41}
 \indexentry{loacore.utils.file\_writer (module)|hyperpage}{43}
 \indexentry{loacore.utils.plot\_polarities (module)|hyperpage}{43}
 \indexentry{print\_polarity\_table() (in module loacore.utils.plot\_polarities)|hyperpage}{43}

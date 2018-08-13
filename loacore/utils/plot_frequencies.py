@@ -27,7 +27,7 @@ def frequencies_bar_chart(files_frequencies, plot=False, save=True,
     :param file_path:
         Path of the directory used.\n
         Default : 'RESULT_PATH/frequencies/'
-    :type file_path: :obj:`path-like object`
+    :type file_path: |path-like-object|
     :param file_name: File name
     :type file_name: string
     :param val_number: Number of labels to show. Only the most commons in the first file will be kept.
@@ -165,7 +165,7 @@ def write_frequencies(files_frequencies,
     :param files_frequencies: Dictionary that maps file names to frequencies.
     :type files_frequencies: :obj:`dict` of :obj:`str` : :obj:`dict` of label : :obj:`float` .
     :param file_path: Directory path
-    :type file_path: :obj:`path-like object`
+    :type file_path: |path-like-object|
     """
 
     import loacore.utils.file_writer as file_writer

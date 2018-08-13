@@ -30,7 +30,7 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
     else:
         morfo, tk, sp = freeling_modules
 
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     added_sentences = []

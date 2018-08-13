@@ -52,7 +52,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
                 print(word.word + " : " + word.lemma)
 
     # Add lemmas to database
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     sentence_count = 0

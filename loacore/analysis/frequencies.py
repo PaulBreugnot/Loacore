@@ -37,7 +37,7 @@ def label_frequencies(files):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     frequencies = {}

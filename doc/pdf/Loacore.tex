@@ -56,7 +56,7 @@
 
 
 \title{Loacore : Language and Opinion Analyzer for Comments and Reviews' Documentation}
-\date{Aug 08, 2018}
+\date{Aug 13, 2018}
 \release{}
 \author{Paul Breugnot}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -146,7 +146,7 @@ Set Freeling path.
 Changes are permanent, until the next call to {\hyperref[\detokenize{configuration:loacore.conf.set_freeling_path}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{set\_freeling\_path()}}}}}.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
-\sphinxstyleliteralstrong{\sphinxupquote{freeling\_path}} (\sphinxcode{\sphinxupquote{path-like object}}) \textendash{} 
+\sphinxstyleliteralstrong{\sphinxupquote{freeling\_path}} (\sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} 
 Absolute path of the folder containing the \sphinxstyleemphasis{freeling} folder.
 
 The path must always be specified in the following format : \sphinxstyleemphasis{/path/to/freeling} .
@@ -764,7 +764,7 @@ reviews
 \label{\detokenize{process:module-loacore.process.sentence_process}}\label{\detokenize{process:tokenization}}\index{loacore.process.sentence\_process (module)}\index{add\_sentences\_from\_reviews() (in module loacore.process.sentence\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.sentence_process.add_sentences_from_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.sentence\_process.}}\sphinxbfcode{\sphinxupquote{add\_sentences\_from\_reviews}}}{\emph{reviews}}{}
+\phantomsection\label{\detokenize{process:loacore.process.sentence_process.add_sentences_from_reviews}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.sentence\_process.}}\sphinxbfcode{\sphinxupquote{add\_sentences\_from\_reviews}}}{\emph{reviews}, \emph{\_state\_queue=None}, \emph{\_id\_process=None}, \emph{freeling\_modules=None}}{}
 Performs the first Freeling process applied to each normalized review.
 
 Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.
@@ -794,7 +794,7 @@ added sentences
 \label{\detokenize{process:module-loacore.process.lemma_process}}\label{\detokenize{process:lemmatization}}\index{loacore.process.lemma\_process (module)}\index{add\_lemmas\_to\_sentences() (in module loacore.process.lemma\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.lemma_process.add_lemmas_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.lemma\_process.}}\sphinxbfcode{\sphinxupquote{add\_lemmas\_to\_sentences}}}{\emph{sentences}, \emph{print\_lemmas=False}}{}
+\phantomsection\label{\detokenize{process:loacore.process.lemma_process.add_lemmas_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.lemma\_process.}}\sphinxbfcode{\sphinxupquote{add\_lemmas\_to\_sentences}}}{\emph{sentences}, \emph{print\_lemmas=False}, \emph{\_state\_queue=None}, \emph{\_id\_process=None}, \emph{freeling\_modules=None}}{}
 Performs a Freeling process to add lemmas to words.
 
 However, the argument is actually a sentence to better fit Freeling usage.
@@ -824,7 +824,7 @@ This function should be used only inside the \sphinxcode{\sphinxupquote{file\_pr
 \label{\detokenize{process:module-loacore.process.synset_process}}\label{\detokenize{process:disambiguation}}\index{loacore.process.synset\_process (module)}\index{add\_polarity\_to\_synsets() (in module loacore.process.synset\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.synset_process.add_polarity_to_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_polarity\_to\_synsets}}}{}{}
+\phantomsection\label{\detokenize{process:loacore.process.synset_process.add_polarity_to_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_polarity\_to\_synsets}}}{\emph{id\_words}, \emph{\_state\_queue=None}, \emph{\_id\_process=None}}{}
 Adds the positive/negative/objective polarities of all the synsets currently in the table
 Synset, from the SentiWordNet corpus.
 
@@ -837,7 +837,7 @@ This function should be used only inside the \sphinxcode{\sphinxupquote{file\_pr
 \index{add\_synsets\_to\_sentences() (in module loacore.process.synset\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.synset_process.add_synsets_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_synsets\_to\_sentences}}}{\emph{sentences}, \emph{print\_synsets=False}}{}
+\phantomsection\label{\detokenize{process:loacore.process.synset_process.add_synsets_to_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.synset\_process.}}\sphinxbfcode{\sphinxupquote{add\_synsets\_to\_sentences}}}{\emph{sentences}, \emph{print\_synsets=False}, \emph{\_state\_queue=None}, \emph{\_id\_process=None}, \emph{freeling\_modules=None}}{}
 Performs a Freeling process to disambiguate words of the sentences according to their context
 (UKB algorithm) linking them to a unique synset (if possible).
 
@@ -870,7 +870,7 @@ This function should be used only inside the file\_process.add\_files() function
 \label{\detokenize{process:module-loacore.process.deptree_process}}\label{\detokenize{process:dependency-tree-generation}}\index{loacore.process.deptree\_process (module)}\index{add\_dep\_tree\_from\_sentences() (in module loacore.process.deptree\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.deptree_process.add_dep_tree_from_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.deptree\_process.}}\sphinxbfcode{\sphinxupquote{add\_dep\_tree\_from\_sentences}}}{\emph{sentences}, \emph{print\_result=False}}{}
+\phantomsection\label{\detokenize{process:loacore.process.deptree_process.add_dep_tree_from_sentences}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.deptree\_process.}}\sphinxbfcode{\sphinxupquote{add\_dep\_tree\_from\_sentences}}}{\emph{sentences}, \emph{print\_result=False}, \emph{\_state\_queue=None}, \emph{\_id\_process=None}, \emph{freeling\_modules=None}}{}
 Generates the dependency trees of the specified sentences and add the results to the
 database.
 
@@ -906,13 +906,13 @@ This process can be quite long. (at least a few minutes)
 \label{\detokenize{process:module-loacore.process.file_process}}\label{\detokenize{process:feed-database}}\index{loacore.process.file\_process (module)}\index{add\_files() (in module loacore.process.file\_process)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{process:loacore.process.file_process.add_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.file\_process.}}\sphinxbfcode{\sphinxupquote{add\_files}}}{\emph{file\_paths}, \emph{encoding='utf8'}, \emph{lang=''}}{}
+\phantomsection\label{\detokenize{process:loacore.process.file_process.add_files}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.process.file\_process.}}\sphinxbfcode{\sphinxupquote{add\_files}}}{\emph{file\_paths}, \emph{encoding='utf8'}, \emph{lang=''}, \emph{workers=1}}{}
 This function performs the full process on all the file\_paths specified, and add the results to the corresponding
 tables.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{file\_paths}} (\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{path-like object}}) \textendash{} Paths used to load files
+\sphinxstyleliteralstrong{\sphinxupquote{file\_paths}} (\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} Paths used to load files
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{encoding}} (\sphinxstyleliteralemphasis{\sphinxupquote{str}}) \textendash{} Files encoding.
@@ -925,6 +925,21 @@ Otherwise, default language is used (See \sphinxcode{\sphinxupquote{loacore}})
 Possible values : ‘as’, ‘ca’, ‘cs’, ‘cy’, ‘de’, ‘en’, ‘es’, ‘fr’, ‘gl’, ‘hr’, ‘it’, ‘nb’, ‘pt’, ‘ru’, ‘sl’)
 
 See \sphinxurl{https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html} for more details.
+
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{workers}} (\sphinxstyleliteralemphasis{\sphinxupquote{int}}) \textendash{} 
+Number of workers used to perform Freeling processes.
+
+If 0, Multiprocessing is not used and all the programm is run in a unique process.
+
+if \sphinxstyleemphasis{workers} \textgreater{} 0, \sphinxstyleemphasis{workers} processes are created in addition of the main process. This is useful to take
+advantage of multicore processors architecture to greatly speed up the process.
+
+\begin{sphinxadmonition}{note}{Note:}
+To control the state of each process when \sphinxstyleemphasis{workers} \textgreater{} 0, a Python curses app is opened. Notice that
+seems to work badly in PyCharm terminal.
+\end{sphinxadmonition}
 
 
 \end{itemize}
@@ -1448,7 +1463,7 @@ loaded words
 \label{\detokenize{load:module-loacore.load.synset_load}}\label{\detokenize{load:load-synsets}}\index{loacore.load.synset\_load (module)}\index{load\_synsets() (in module loacore.load.synset\_load)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{load:loacore.load.synset_load.load_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets}}}{\emph{id\_synsets={[}{]}}}{}
+\phantomsection\label{\detokenize{load:loacore.load.synset_load.load_synsets}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.load.synset\_load.}}\sphinxbfcode{\sphinxupquote{load\_synsets}}}{\emph{id\_synsets=None}}{}
 Load {\hyperref[\detokenize{classes:loacore.classes.classes.Synset}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Synset}}}}} s from database.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode
@@ -2889,7 +2904,7 @@ To show the colored file in terminal.
 
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{directory\_path}} (\sphinxcode{\sphinxupquote{path-like object}}) \textendash{} Path of the directory in which to write files.
+\sphinxstyleliteralstrong{\sphinxupquote{directory\_path}} (\sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} Path of the directory in which to write files.
 
 \end{itemize}
 
@@ -2903,104 +2918,7 @@ To show the colored file in terminal.
 \label{\detokenize{learning:machine-learning}}\label{\detokenize{learning::doc}}
 
 \section{Word2Vec}
-\label{\detokenize{learning:module-loacore.learning.word_embeddings}}\label{\detokenize{learning:word2vec}}\index{loacore.learning.word\_embeddings (module)}\index{get\_tokens\_list() (in module loacore.learning.word\_embeddings)}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.get_tokens_list}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{get\_tokens\_list}}}{\emph{files}}{}
-Returns a list of all tokens in specified files. For each word, if a lemma is found, lemma is used. Otherwise, word
-form is used.
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxstyleliteralstrong{\sphinxupquote{files}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.File}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{File}}}}}) \textendash{} Files to process
-
-\item[{Returns}] \leavevmode
-List of tokens
-
-\item[{Return type}] \leavevmode
-\sphinxcode{\sphinxupquote{list}} of \sphinxcode{\sphinxupquote{str}}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{review\_2\_vec() (in module loacore.learning.word\_embeddings)}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.review_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{review\_2\_vec}}}{\emph{review}, \emph{wv}}{}
-Returns a vector representations review, according to the specified Word2Vec dictionary.
-
-(Currently : mean of the Word2Vec vectors of words)
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{review}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{wv}} (\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}) \textendash{} Word2Vec dictionary
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-Vector list
-
-\item[{Return type}] \leavevmode
-\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{reviews\_2\_vec() (in module loacore.learning.word\_embeddings)}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.reviews_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{reviews\_2\_vec}}}{\emph{reviews}, \emph{wv}}{}
-Returns a list of vector representations of the reviews, according to the specified Word2Vec dictionary.
-
-(Currently : mean of the Word2Vec vectors of words)
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word2Vec dictionary
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-Vector list
-
-\item[{Return type}] \leavevmode
-
-\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}
-
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-\index{word\_2\_vec() (in module loacore.learning.word\_embeddings)}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{learning:loacore.learning.word_embeddings.word_2_vec}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.word\_embeddings.}}\sphinxbfcode{\sphinxupquote{word\_2\_vec}}}{\emph{files}}{}
-Learn a Word2Vec dictionary from the tokens of specified files (tokens obtained with {\hyperref[\detokenize{learning:loacore.learning.word_embeddings.get_tokens_list}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{get\_tokens\_list()}}}}} .
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode
-\sphinxstyleliteralstrong{\sphinxupquote{files}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.File}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{File}}}}}) \textendash{} Files to process
-
-\item[{Returns}] \leavevmode
-Word2Vec dictionary
-
-\item[{Return type}] \leavevmode
-
-\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}
-
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-
+\label{\detokenize{learning:word2vec}}
 
 \section{SVM}
 \label{\detokenize{learning:module-loacore.learning.svm}}\label{\detokenize{learning:svm}}\index{loacore.learning.svm (module)}\index{commit\_analysis() (in module loacore.learning.svm)}
@@ -3018,7 +2936,7 @@ Predict polarity of each review in reviews and add the result to their \sphinxst
 \sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Reviews to process
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word vectors dictionary
+\sphinxstyleliteralstrong{\sphinxupquote{wv}} (\sphinxhref{https://radimrehurek.com/gensim/models/keyedvectors.html\#gensim.models.keyedvectors.KeyedVectors}{KeyedVector}) \textendash{} Word vectors dictionary
 
 \item {} 
 \sphinxstyleliteralstrong{\sphinxupquote{analysis}} (\sphinxstyleliteralemphasis{\sphinxupquote{string}}) \textendash{} Analysis label
@@ -3071,7 +2989,7 @@ Reviews classification
 \index{learn\_model() (in module loacore.learning.svm)}
 
 \begin{fulllineitems}
-\phantomsection\label{\detokenize{learning:loacore.learning.svm.learn_model}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.svm.}}\sphinxbfcode{\sphinxupquote{learn\_model}}}{\emph{reviews}, \emph{wv}}{}
+\phantomsection\label{\detokenize{learning:loacore.learning.svm.learn_model}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{loacore.learning.svm.}}\sphinxbfcode{\sphinxupquote{learn\_model}}}{\emph{reviews}, \emph{reviews\_vectors}}{}
 Learn and return a LinearSVC model from specified labelled reviews and Word2Vec dictionnary.
 \begin{quote}\begin{description}
 \item[{Parameters}] \leavevmode\begin{itemize}
@@ -3079,7 +2997,7 @@ Learn and return a LinearSVC model from specified labelled reviews and Word2Vec 
 \sphinxstyleliteralstrong{\sphinxupquote{reviews}} (\sphinxcode{\sphinxupquote{list}} of {\hyperref[\detokenize{classes:loacore.classes.classes.Review}]{\sphinxcrossref{\sphinxcode{\sphinxupquote{Review}}}}}) \textendash{} Learning Dataset
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{wv}} \textendash{} Word vectors dictionary
+\sphinxstyleliteralstrong{\sphinxupquote{reviews\_vectors}} (\sphinxcode{\sphinxupquote{list}} of \sphinxhref{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.array.html}{numpy.array}) \textendash{} Vector representations of reviews
 
 \end{itemize}
 
@@ -3130,7 +3048,7 @@ Plot polarity pie charts using Matplotlib, and save them into a .pdf file.
 \sphinxstyleliteralstrong{\sphinxupquote{gui}} (\sphinxstyleliteralemphasis{\sphinxupquote{boolean}}) \textendash{} Specify if a gui should be used to save file.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxcode{\sphinxupquote{path-like object}}) \textendash{} If gui is not called : path of the directory in which plots will be saved.
+\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} If gui is not called : path of the directory in which plots will be saved.
 If directory doesn’t exist, will be created.
 Default is set to \sphinxstyleemphasis{RESULT\_PATH/sentiment\_analysis/}
 
@@ -3171,7 +3089,7 @@ is not necessarily true for the others. This could also be useful to consider wh
 \sphinxstyleliteralstrong{\sphinxupquote{gui}} (\sphinxstyleliteralemphasis{\sphinxupquote{boolean}}) \textendash{} Specify if a GUI should be used to set directory.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxcode{\sphinxupquote{path-like object}}) \textendash{} 
+\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} 
 Path of the directory used.
 
 Default : ‘RESULT\_PATH/frequencies/’
@@ -3224,7 +3142,7 @@ Write frequencies to a txt file in file\_path folder. Original raw file names ar
 \sphinxstyleliteralstrong{\sphinxupquote{files\_frequencies}} (\sphinxcode{\sphinxupquote{dict}} of \sphinxcode{\sphinxupquote{str}} : \sphinxcode{\sphinxupquote{dict}} of label : \sphinxcode{\sphinxupquote{float}} .) \textendash{} Dictionary that maps file names to frequencies.
 
 \item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxcode{\sphinxupquote{path-like object}}) \textendash{} Directory path
+\sphinxstyleliteralstrong{\sphinxupquote{file\_path}} (\sphinxhref{https://docs.python.org/3/glossary.html\#term-path-like-object}{path-like object}) \textendash{} Directory path
 
 \end{itemize}
 
@@ -3294,7 +3212,6 @@ Results:
 \item {\sphinxstyleindexentry{loacore.analysis.sentiment\_analysis}}\sphinxstyleindexpageref{analysis:\detokenize{module-loacore.analysis.sentiment_analysis}}
 \item {\sphinxstyleindexentry{loacore.conf}}\sphinxstyleindexpageref{configuration:\detokenize{module-loacore.conf}}
 \item {\sphinxstyleindexentry{loacore.learning.svm}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.svm}}
-\item {\sphinxstyleindexentry{loacore.learning.word\_embeddings}}\sphinxstyleindexpageref{learning:\detokenize{module-loacore.learning.word_embeddings}}
 \item {\sphinxstyleindexentry{loacore.load.deptree\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.deptree_load}}
 \item {\sphinxstyleindexentry{loacore.load.file\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.file_load}}
 \item {\sphinxstyleindexentry{loacore.load.lemma\_load}}\sphinxstyleindexpageref{load:\detokenize{module-loacore.load.lemma_load}}

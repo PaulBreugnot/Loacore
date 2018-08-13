@@ -55,7 +55,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
     # Dependency tree parsing
     processed_sentences = parser.analyze(processed_sentences)
 
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     sentence_count = 0

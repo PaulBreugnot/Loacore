@@ -67,7 +67,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
 
     # Add synsets to database
 
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     sentence_count = 0
@@ -109,7 +109,7 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
 
-    conn = sql.connect(DB_PATH, timeout=120)
+    conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
 
     synsets = synset_load.load_synsets(id_synsets=synset_load.get_id_synsets_for_id_words(id_words))

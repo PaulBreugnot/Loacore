@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {5.2.2}lemmatization}{14}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}disambiguation}{14}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}dependency tree generation}{15}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Feed database}{15}{section.5.3}
+\contentsline {section}{\numberline {5.3}Feed database}{16}{section.5.3}
 \contentsline {chapter}{\numberline {6}Load data from database : \sphinxstyleemphasis {load} package}{17}{chapter.6}
 \contentsline {section}{\numberline {6.1}Load Files}{17}{section.6.1}
 \contentsline {section}{\numberline {6.2}Load Reviews}{18}{section.6.2}
@@ -38,7 +38,7 @@
 \contentsline {section}{\numberline {7.4}Polarity Check}{40}{section.7.4}
 \contentsline {chapter}{\numberline {8}Machine Learning}{41}{chapter.8}
 \contentsline {section}{\numberline {8.1}Word2Vec}{41}{section.8.1}
-\contentsline {section}{\numberline {8.2}SVM}{42}{section.8.2}
+\contentsline {section}{\numberline {8.2}SVM}{41}{section.8.2}
 \contentsline {chapter}{\numberline {9}Save and plot results : \sphinxstyleemphasis {utils} package}{43}{chapter.9}
 \contentsline {chapter}{\numberline {10}Other Useful Examples}{45}{chapter.10}
-\contentsline {chapter}{Python Module Index}{47}{section*.99}
+\contentsline {chapter}{Python Module Index}{47}{section*.95}

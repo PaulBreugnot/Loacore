@@ -51,7 +51,7 @@ def set_freeling_path(freeling_path):
         Absolute path of the folder containing the *freeling* folder.\n
         The path must always be specified in the following format : */path/to/freeling* .
         Python will then automatically format it according to the current OS.
-    :type freeling_path: :obj:`path-like object`
+    :type freeling_path: |path-like-object|
     """
 
     import sqlite3 as sql

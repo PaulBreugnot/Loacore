@@ -20,7 +20,7 @@ def save_polarity_pie_charts(file_score_dict, gui=False,
         If gui is not called : path of the directory in which plots will be saved.
         If directory doesn't exist, will be created.
         Default is set to *RESULT_PATH/sentiment_analysis/*
-    :type file_path: :obj:`path-like object`
+    :type file_path: |path-like-object|
     :param file_name: Name of the saved file.
     :type file_name: string
     """

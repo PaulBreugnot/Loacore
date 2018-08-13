@@ -11,15 +11,14 @@ def preprocess():
         ignore=["readme.txt", ".DS_Store"])
 
 
-def process():
+def process(workers):
     import loacore.process.file_process as file_process
     file_paths = []
-    for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(loacore.DATA_PATH, "raw", "uci"))):
+    for dirpath, dirnames, filenames in os.walk(os.path.abspath(os.path.join(loacore.conf.DATA_PATH, "raw", "uci"))):
             for name in filenames:
-                if name == "yelp_labelled.txt":
-                    file_paths.append(os.path.join(dirpath, name))
+                file_paths.append(os.path.join(dirpath, name))
 
-    file_process.add_files(file_paths, encoding="utf8", lang="en")
+    file_process.add_files(file_paths, encoding="utf8", lang="en", workers=workers)
 
 
 def load_uci():
@@ -32,7 +31,7 @@ def show_dep_trees(files):
         for review in file.reviews:
             for sentence in review.sentences:
                 print(len(sentence.dep_tree.root.children))
-                sentence.dep_tree.dep_tree_str()
+                print(sentence.dep_tree.dep_tree_str())
 
 
 def pattern_test():
@@ -77,9 +76,14 @@ def test_verb_table():
     pattern_recognition.verb_context_table(sentences)
 
 
-process()
-# show_dep_trees(load_uci())
-# pattern_test()
-# show_adj_patterns(load_uci())
-# show_verb_patterns(load_uci())
-# test_verb_table()
+def main(workers):
+    # process(workers)
+    show_dep_trees(load_uci())
+    # pattern_test()
+    # show_adj_patterns(load_uci())
+    # show_verb_patterns(load_uci())
+    # test_verb_table()
+
+
+if __name__ == "__main__":
+    main(0)
