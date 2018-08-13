@@ -1,0 +1,40 @@
+.. include:: replace.txt
+
+Load data from database : *load* package
+========================================
+
+Load Files
+----------
+.. automodule:: loacore.load.file_load
+    :members:
+
+Load Reviews
+------------
+.. automodule:: loacore.load.review_load
+    :members:
+
+Load Sentences
+--------------
+.. automodule:: loacore.load.sentence_load
+    :members:
+
+Load Words
+----------
+.. automodule:: loacore.load.word_load
+    :members:
+
+Load Synsets
+------------
+.. automodule:: loacore.load.synset_load
+    :members:
+
+Load Lemmas
+-----------
+.. automodule:: loacore.load.lemma_load
+    :members:
+
+Load DepTrees
+-------------
+.. automodule:: loacore.load.deptree_load
+    :members:
+
