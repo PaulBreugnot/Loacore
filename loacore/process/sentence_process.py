@@ -21,6 +21,7 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
     :rtype: :obj:`list` of |Sentence|
     """
     from loacore.classes.classes import Word
+    from loacore.utils.db import safe_commit
 
     if freeling_modules is None:
         if _state_queue is not None:
@@ -90,7 +91,8 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
             added_sentences.append(s)
 
     print("")
-    conn.commit()
+
+    safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 

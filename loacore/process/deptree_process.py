@@ -25,6 +25,9 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
     :param print_result: Print PoS_tags and labels associated to each |Word|
     :type print_result: boolean
     """
+
+    from loacore.utils.db import safe_commit
+
     if freeling_modules is None:
         if _state_queue is not None:
             _state_queue.put(
@@ -135,7 +138,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
         rec_children(c, root_node)
 
     print("")
-    conn.commit()
+    safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 

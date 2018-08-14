@@ -5,6 +5,7 @@ DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
+MAX_DB_COMMIT_ATTEMPTS = 10
 
 lang = ""
 FR_PATH = ""
@@ -102,3 +103,4 @@ def _set_temp_lang(temp_lang):
     lang = temp_lang
     global LANG_PATH
     LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
+

@@ -19,6 +19,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
     :param print_lemmas: If True, print lemmatization results
     :type print_lemmas: boolean
     """
+    from loacore.utils.db import safe_commit
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
@@ -75,7 +76,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
             c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
 
     print("")
-    conn.commit()
+    safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 

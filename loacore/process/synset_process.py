@@ -25,6 +25,8 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
     :type print_synsets: boolean
     """
 
+    from loacore.utils.db import safe_commit
+
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
     if freeling_modules is None:
@@ -92,7 +94,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
                 # Update Word table
                 c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
 
-    conn.commit()
+    safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 
@@ -108,6 +110,7 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
 
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
+    from loacore.utils.db import safe_commit
 
     conn = sql.connect(DB_PATH, timeout=1800)
     c = conn.cursor()
@@ -131,7 +134,7 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
                       "WHERE Id_Synset = " + str(synset.id_synset))
 
     print("")
-    conn.commit()
+    safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 

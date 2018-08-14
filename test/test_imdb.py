@@ -27,6 +27,20 @@ def add_train_imdb_neg(workers):
         workers=workers)
 
 
+def add_test_imdb_neg(workers):
+    import loacore.process.file_process as file_process
+    import loacore.load.file_load as file_load
+    from loacore.conf import DATA_PATH
+    import os
+
+    # file_load.clean_db()
+    file_process.add_files(
+        [os.path.join(DATA_PATH, 'raw', 'imdb', 'test', 'test_imdb_labelled_neg.txt')],
+        encoding='utf8',
+        lang='en',
+        workers=workers)
+
+
 def add_all():
     import loacore.process.file_process as file_process
     import os
@@ -41,7 +55,7 @@ def add_all():
 
 def main(workers):
     # add_train_imdb_neg()
-    add_train_imdb_neg(workers)
+    add_test_imdb_neg(workers)
     # add_all()
 
 
