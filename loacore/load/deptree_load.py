@@ -106,38 +106,55 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
     :return: loaded deptrees
     :rtype: :obj:`list` of |DepTree|
     """
+    import os
 
     conn = sql.connect(DB_PATH)
     c = conn.cursor()
 
-    dep_trees = []
-    for sentence in sentences:
-        c.execute("SELECT ID_Dep_Tree, ID_Dep_Tree_Node, ID_Sentence FROM Dep_Tree "
-                  "WHERE ID_Sentence = " + str(sentence.id_sentence))
+    sentences_dict = {s.id_sentence: s for s in sentences}
 
-        result = c.fetchone()
-        if result is not None:
+    # Load dep trees
+    dep_trees = {}
+    c.execute("SELECT ID_Dep_Tree, ID_Dep_Tree_Node, ID_Sentence FROM Dep_Tree "
+              "WHERE ID_Sentence IN " + str(tuple([s.id_sentence for s in sentences])))
+    for result in c.fetchall():
+        dep_tree = DepTree(result[0], result[1], result[2])
+        sentences_dict[result[2]].dep_tree = dep_tree
+        dep_trees[result[0]] = dep_tree
 
-            dep_tree = DepTree(result[0], result[1], result[2])
+    # Load roots
+    current_nodes = {}
+    c.execute("SELECT ID_Dep_Tree_Node, ID_Dep_Tree, ID_Word, Label, root FROM Dep_Tree_Node "
+              "WHERE ID_Dep_Tree IN " + str(tuple(dep_trees.keys())) + " "
+              "AND root = 1")
+    for result in c.fetchall():
+        node = DepTreeNode(result[0], result[1], result[2], result[3], 1)
+        current_nodes[result[0]] = node
+        dep_trees[result[1]].root = node
 
-            # Select root
-            c.execute("SELECT ID_Dep_Tree_Node, ID_Dep_Tree, ID_Word, Label, root FROM Dep_Tree_Node "
-                      "WHERE ID_Dep_Tree = " + str(dep_tree.id_dep_tree) + " "
-                      "AND root = 1")
+    depth = 0
+    while len(current_nodes) > 0:
+        print("[" + str(os.getpid()) + "] Loading depth " + str(depth))
+        depth += 1
+        if len(current_nodes) > 1:
+            tuple_str = str(tuple(current_nodes.keys()))
+        else:
+            tuple_str = "(" + str(list(current_nodes.keys())[0]) + ")"
 
-            result = c.fetchone()
+        c.execute("SELECT ID_Parent_Node, ID_Dep_Tree_Node, ID_Dep_Tree, ID_Word, Label, root "
+                  "FROM Dep_Tree_Node JOIN Dep_Tree_Node_Children "
+                  "ON Dep_Tree_Node.ID_Dep_Tree_Node = Dep_Tree_Node_Children.ID_Child_Node "
+                  "WHERE ID_Parent_Node IN " + tuple_str)
 
-            if result is not None:
-                # Set root
-                dep_tree.root = DepTreeNode(result[0], result[1], result[2], result[3], 1)
-
-                # Load children
-                rec_children_select(c, dep_tree.root)
-
-            sentence.dep_tree = dep_tree
-            dep_trees.append(dep_tree)
+        nodes_to_update = current_nodes.copy()
+        current_nodes.clear()
+        for result in c.fetchall():
+            child_node = DepTreeNode(result[1], result[2], result[3], result[4], 0)
+            nodes_to_update[result[0]].children.append(child_node)
+            current_nodes[result[1]] = child_node
 
     if load_words:
+        print("[" + str(os.getpid()) + "] Loading words in deptrees...")
         import loacore.load.word_load as word_load
         word_load.load_words_in_dep_trees([sentence.dep_tree for sentence in sentences])
 

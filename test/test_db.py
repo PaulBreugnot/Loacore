@@ -169,6 +169,15 @@ def test_colored_reviews():
             print(review.review_str(colored_polarity=True, analysis=['label']))
 
 
+def test_multiprocessed_load():
+    import loacore.load.file_load as file_load
+    files = file_load.load_database(id_files=[1], workers=4)
+    for file in files:
+        for r in file.reviews:
+            for s in r.sentences:
+                print(s.dep_tree.dep_tree_str(colored_polarity=True))
+
+
 #file_load.clean_db()
 #add_files_to_database()
 #test_load_db()
@@ -178,4 +187,5 @@ def test_colored_reviews():
 #test_load_polarities()
 #test_print_colored_sentences()
 #test_colored_reviews()
-test_print_colored_deptree()
+#test_print_colored_deptree()
+test_multiprocessed_load()

@@ -39,6 +39,7 @@ def _load_files():
 
 def load_database(id_files=[],
                   load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True,
+                  load_in_temp_file=True,
                   workers=1):
     """
     Load the complete database as a :obj:`list` of |File| , with all the dependencies specified in parameters
@@ -106,41 +107,145 @@ def load_database(id_files=[],
     if load_reviews:
         # Load Reviews
         import loacore.load.review_load as review_load
-        reviews = review_load.load_reviews_in_files(files)
+        from loacore.process.file_process import _split_reviews
+        from loacore.utils.data_stream import ReviewIterator
+        from loacore.utils.data_stream import save_to_temp_file
+
+        review_load.load_reviews_in_files(files)
+        split_size = 500
+
+        # Maps id_files to review subsets
+        split_reviews = {}
+        for file in files:
+            # Ensure that each subset come from a unique file
+            split_reviews[file.id_file] = _split_reviews(file.reviews, split_size)
+
         if workers <= 0:
-            _load_reviews_process(reviews, load_polarities, load_sentences, load_words, load_deptrees)
+            for file in files:
+                if load_in_temp_file:
+                    file.reviews = ReviewIterator()
+                for review_sublist in split_reviews[file.id_file]:
+                    _load_reviews_process(load_polarities, load_sentences, load_words, load_deptrees,
+                                          review_sublist)
+                    if load_in_temp_file:
+                        file.reviews.temp_file_list.append(save_to_temp_file(review_sublist))
+
         else:
-            from multiprocessing import Pool
-            from loacore.process.file_process import _split_reviews
-            split_size = 500
-            pool = Pool(workers)
-            split_reviews = _split_reviews(reviews, split_size)
-            pool.map(_load_reviews_process,
-                     [(r, load_polarities, load_sentences, load_words, load_deptrees) for r in split_reviews])
+            # from multiprocessing import Pool
+            # from functools import partial
+            #
+            # pool = Pool(workers)
+            # partial_func = partial(_load_reviews_process, load_polarities, load_sentences, load_words, load_deptrees)
+            #
+            # for file in files:
+            #     if load_in_temp_file:
+            #         file.reviews = ReviewIterator()
+            #     else:
+            #         file.reviews = []
+            #     for processed_reviews in pool.map(partial_func, split_reviews[file.id_file]):
+            #         # Parallelization works on shallow copies of reviews (I guess), so they are not processed on the fly
+            #         # in File instances, and results need to be re-injected in files.
+            #         if load_in_temp_file:
+            #             file.reviews.temp_file_list.append(save_to_temp_file(processed_reviews))
+            #         else:
+            #             file.reviews += processed_reviews
+            from multiprocessing import Process, Queue
+            import queue
+
+            process_queue = queue.Queue()
+            result_queue = Queue()
+
+            id_file_map = {f.id_file: f for f in files}
+            for file in files:
+                if load_in_temp_file:
+                    file.reviews = ReviewIterator()
+                else:
+                    file.reviews = []
+                for review_sublist in split_reviews[file.id_file]:
+                    process_queue.put(Process(
+                        target=_load_reviews_process,
+                        args=(load_polarities, load_sentences, load_words, load_deptrees, review_sublist),
+                        kwargs={"_result_queue": result_queue, "_id_file": file.id_file}))
+
+            # Main launcher
+            running_processes = []
+            while not process_queue.empty():
+
+                    # Launch processes
+                    if len(running_processes) < workers:
+                        p = process_queue.get()
+                        p.start()
+                        running_processes.append(p)
+                    terminated_processes = []
+
+                    # Check terminated processes
+                    for p in running_processes:
+                        if not p.is_alive():
+                            terminated_processes.append(p)
+                    for p in terminated_processes:
+                        running_processes.remove(p)
+
+                    # Check results
+                    while not result_queue.empty():
+                        result = result_queue.get()
+                        if load_in_temp_file:
+                            id_file_map[result[0]].reviews.temp_file_list.append(save_to_temp_file(result[1]))
+                        else:
+                            id_file_map[result[0]].reviews += result[1]
+
+            # Wait for the end of last processes
+            while len(running_processes) > 0:
+                # Check terminated processes
+                terminated_processes = []
+                for p in running_processes:
+                    if not p.is_alive():
+                        terminated_processes.append(p)
+                for p in terminated_processes:
+                    running_processes.remove(p)
+
+                # Check results
+                while not result_queue.empty():
+                    result = result_queue.get()
+                    if load_in_temp_file:
+                        id_file_map[result[0]].reviews.temp_file_list.append(save_to_temp_file(result[1]))
+                    else:
+                        id_file_map[result[0]].reviews += result[1]
 
     return files
 
 
-def _load_reviews_process(reviews, load_polarities, load_sentences, load_words, load_deptrees):
+def _load_reviews_process(load_polarities, load_sentences, load_words, load_deptrees, reviews,
+                          _id_file=None, _result_queue=None):
+    import os
+    print("[" + str(os.getpid()) + "] Process initialized.")
     if load_polarities:
         # Load Polarities
+        print("[" + str(os.getpid()) + "] Loading polarities...")
         import loacore.load.polarity_load as polarity_load
         polarity_load.load_polarities_in_reviews(reviews)
 
     if load_sentences:
         # Load Sentences
+        print("[" + str(os.getpid()) + "] Loading sentences...")
         import loacore.load.sentence_load as sentence_load
         sentences = sentence_load.load_sentences_in_reviews(reviews)
 
         if load_words:
             # Load Words
+            print("[" + str(os.getpid()) + "] Loading words...")
             import loacore.load.word_load as word_load
             word_load.load_words_in_sentences(sentences)
-
             if load_deptrees:
                 # Load DepTrees
+                print("[" + str(os.getpid()) + "] Loading dep trees...")
                 import loacore.load.deptree_load as deptree_load
                 deptree_load.load_dep_tree_in_sentences(sentences)
+    if _result_queue is not None:
+        # Multiprocess return
+        _result_queue.put((_id_file, reviews))
+    else:
+        # Normal return
+        return reviews
 
 
 def get_id_files_by_file_path(file_path_re):
