@@ -256,9 +256,10 @@ def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_pro
         if _state_queue is not None:
             _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
 
-    except sql.OperationalError:
+    except sql.OperationalError as e:
         if _state_queue is not None:
             _state_queue.put(ProcessState(_id_process, os.getpid(), "DB error", " - "))
+            print(e)
 
 
 def _print_states_process(num_process, q):

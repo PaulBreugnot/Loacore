@@ -38,3 +38,8 @@ Load DepTrees
 .. automodule:: loacore.load.deptree_load
     :members:
 
+Check database
+--------------
+.. automodule:: loacore.load.check
+    :members:
+
