@@ -78,7 +78,7 @@ dependencies in database : all the tables will be emptied.</p>
 
 <dl class="function">
 <dt id="loacore.load.file_load.load_database">
-<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>load_in_temp_file=True</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> , with all the dependencies specified in parameters
 loaded in them.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -97,6 +97,9 @@ loaded in them.</p>
 <p>if <em>workers</em> &gt; 0, <em>workers</em> processes are created in addition of the main process. This is useful to take
 advantage of multi-core architectures to greatly speed up the process.</p>
 </li>
+<li><strong>load_in_temp_file</strong> (<em>bool</em>) – If True, loaded reviews are stored in temporary file and <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> reviews attribute becomes
+a <code class="xref py py-class docutils literal notranslate"><span class="pre">ReviewIterator</span></code>. This option is useful, and even necessary, when huge files
+are loaded to manage RAM usage.</li>
 </ul>
 </td>
 </tr>

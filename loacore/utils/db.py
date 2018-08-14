@@ -1,5 +1,6 @@
 
 def safe_commit(conn, try_number, state_queue, id_process):
+    import os
     import sqlite3 as sql
     from loacore.utils.status import ProcessState
     from loacore.conf import MAX_DB_COMMIT_ATTEMPTS

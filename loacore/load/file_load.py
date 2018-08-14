@@ -63,6 +63,11 @@ def load_database(id_files=[],
         if *workers* > 0, *workers* processes are created in addition of the main process. This is useful to take
         advantage of multi-core architectures to greatly speed up the process.
     :type workers: int
+    :param load_in_temp_file:
+        If True, loaded reviews are stored in temporary file and |File| reviews attribute becomes
+        a :class:`~loacore.utils.data_stream.ReviewIterator`. This option is useful, and even necessary, when huge files
+        are loaded to manage RAM usage.
+    :type load_in_temp_file: bool
     :return: loaded files
     :rtype: :obj:`list` of |File|
 
@@ -131,24 +136,6 @@ def load_database(id_files=[],
                         file.reviews.temp_file_list.append(save_to_temp_file(review_sublist))
 
         else:
-            # from multiprocessing import Pool
-            # from functools import partial
-            #
-            # pool = Pool(workers)
-            # partial_func = partial(_load_reviews_process, load_polarities, load_sentences, load_words, load_deptrees)
-            #
-            # for file in files:
-            #     if load_in_temp_file:
-            #         file.reviews = ReviewIterator()
-            #     else:
-            #         file.reviews = []
-            #     for processed_reviews in pool.map(partial_func, split_reviews[file.id_file]):
-            #         # Parallelization works on shallow copies of reviews (I guess), so they are not processed on the fly
-            #         # in File instances, and results need to be re-injected in files.
-            #         if load_in_temp_file:
-            #             file.reviews.temp_file_list.append(save_to_temp_file(processed_reviews))
-            #         else:
-            #             file.reviews += processed_reviews
             from multiprocessing import Process, Queue
             import queue
 

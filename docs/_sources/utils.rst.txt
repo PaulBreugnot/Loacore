@@ -1,7 +1,10 @@
 .. include:: replace.txt
 
-Save and plot results : *utils* package
-=======================================
+*utils* package
+===============
+
+Save and plot results
+---------------------
 
 Provides useful functions to plot and save various results.
 
@@ -15,4 +18,10 @@ Provides useful functions to plot and save various results.
     :members:
 
 .. automodule:: loacore.utils.plot_frequencies
+    :members:
+
+Temporary Files management
+--------------------------
+
+.. automodule:: loacore.utils.data_stream
     :members:
