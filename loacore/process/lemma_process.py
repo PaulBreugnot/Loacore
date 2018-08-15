@@ -75,7 +75,8 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
             # Update Word table
             c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
 
-    print("")
+    if _state_queue is None:
+        print("")
     safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()

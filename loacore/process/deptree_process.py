@@ -137,7 +137,9 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
         root_node = dt.begin()
         rec_children(c, root_node)
 
-    print("")
+    if _state_queue is None:
+        print("")
+
     safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()

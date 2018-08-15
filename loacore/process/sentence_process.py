@@ -90,7 +90,8 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
             c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
             added_sentences.append(s)
 
-    print("")
+    if _state_queue is None:
+        print("")
 
     safe_commit(conn, 0, _state_queue, _id_process)
 

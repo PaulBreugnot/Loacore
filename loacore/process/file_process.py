@@ -168,98 +168,93 @@ def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_pro
     import os
     from loacore.utils.status import ProcessState
 
-    try:
-        # Tokenization + Add all sentences and all words from all reviews
-        import loacore.process.sentence_process as sentence_process
-        added_sentences = sentence_process.add_sentences_from_reviews(
-            reviews,
-            _state_queue=_state_queue,
-            _id_process=_id_process,
-            freeling_modules=(freeling_modules["morfo"], freeling_modules["tk"], freeling_modules["sp"]))
+    # Tokenization + Add all sentences and all words from all reviews
+    import loacore.process.sentence_process as sentence_process
+    added_sentences = sentence_process.add_sentences_from_reviews(
+        reviews,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"], freeling_modules["tk"], freeling_modules["sp"]))
 
-        # added_sentences = sentence_process.add_sentences_from_reviews(
-        #     reviews,
-        #     _state_queue=state_queue,
-        #     _id_process=id_process)
+    # added_sentences = sentence_process.add_sentences_from_reviews(
+    #     reviews,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
-        # Reload sentences with words
-        import loacore.load.sentence_load as sentence_load
-        if _state_queue is not None:
-            _state_queue.put(ProcessState(_id_process, os.getpid(), "Reload Sentences", "-"))
-        else:
-            print("Reload Sentences...")
+    # Reload sentences with words
+    import loacore.load.sentence_load as sentence_load
+    if _state_queue is not None:
+        _state_queue.put(ProcessState(_id_process, os.getpid(), "Reload Sentences", "-"))
+    else:
+        print("Reload Sentences...")
 
-        sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
+    sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
-        # Some test outputs ############################################
-        from loacore.conf import OUTPUT_PATH
-        f = open(os.path.join(OUTPUT_PATH, "test_sentence.txt"), 'w')
-        f.write(str(len(sentences)) + "\n")
-        for s in sentences:
-            f.write(str(len(s.words)) + "\t" + s.sentence_str() + "\n")
-        f.close()
-        #################################################################
+    # Some test outputs ############################################
+    from loacore.conf import OUTPUT_PATH
+    f = open(os.path.join(OUTPUT_PATH, "test_sentence.txt"), 'w')
+    f.write(str(len(sentences)) + "\n")
+    for s in sentences:
+        f.write(str(len(s.words)) + "\t" + s.sentence_str() + "\n")
+    f.close()
+    #################################################################
 
-        # Lemmatization
-        import loacore.process.lemma_process as lemma_process
-        lemma_process.add_lemmas_to_sentences(
-            sentences,
-            _state_queue=_state_queue,
-            _id_process=_id_process,
-            freeling_modules=freeling_modules["morfo"])
+    # Lemmatization
+    import loacore.process.lemma_process as lemma_process
+    lemma_process.add_lemmas_to_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=freeling_modules["morfo"])
 
-        # lemma_process.add_lemmas_to_sentences(
-        #     sentences,
-        #     _state_queue=state_queue,
-        #     _id_process=id_process)
+    # lemma_process.add_lemmas_to_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
-        # Disambiguation
-        import loacore.process.synset_process as synset_process
-        synset_process.add_synsets_to_sentences(
-            sentences,
-            _state_queue=_state_queue,
-            _id_process=_id_process,
-            freeling_modules=(freeling_modules["morfo"],
-                              freeling_modules["tagger"],
-                              freeling_modules["sen"],
-                              freeling_modules["wsd"]))
+    # Disambiguation
+    import loacore.process.synset_process as synset_process
+    synset_process.add_synsets_to_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"],
+                          freeling_modules["tagger"],
+                          freeling_modules["sen"],
+                          freeling_modules["wsd"]))
 
-        # synset_process.add_synsets_to_sentences(
-        #     sentences,
-        #     _state_queue=state_queue,
-        #     _id_process=id_process)
+    # synset_process.add_synsets_to_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
-        # Synset polarities
-        id_words = [w.id_word for s in sentences for w in s.words]
-        synset_process.add_polarity_to_synsets(
-            id_words,
-            _state_queue=_state_queue,
-            _id_process=_id_process)
+    # Synset polarities
+    id_words = [w.id_word for s in sentences for w in s.words]
+    synset_process.add_polarity_to_synsets(
+        id_words,
+        _state_queue=_state_queue,
+        _id_process=_id_process)
 
-        # Dep tree
-        import loacore.process.deptree_process as deptree_process
-        deptree_process.add_dep_tree_from_sentences(
-            sentences,
-            _state_queue=_state_queue,
-            _id_process=_id_process,
-            freeling_modules=(freeling_modules["morfo"],
-                              freeling_modules["tagger"],
-                              freeling_modules["sen"],
-                              freeling_modules["wsd"],
-                              freeling_modules["parser"]))
+    # Dep tree
+    import loacore.process.deptree_process as deptree_process
+    deptree_process.add_dep_tree_from_sentences(
+        sentences,
+        _state_queue=_state_queue,
+        _id_process=_id_process,
+        freeling_modules=(freeling_modules["morfo"],
+                          freeling_modules["tagger"],
+                          freeling_modules["sen"],
+                          freeling_modules["wsd"],
+                          freeling_modules["parser"]))
 
-        # deptree_process.add_dep_tree_from_sentences(
-        #     sentences,
-        #     _state_queue=state_queue,
-        #     _id_process=id_process)
+    # deptree_process.add_dep_tree_from_sentences(
+    #     sentences,
+    #     _state_queue=state_queue,
+    #     _id_process=id_process)
 
-        if _state_queue is not None:
-            _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
+    if _state_queue is not None:
+        _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
 
-    except sql.OperationalError as e:
-        if _state_queue is not None:
-            _state_queue.put(ProcessState(_id_process, os.getpid(), "DB error", " - "))
-            print(e)
 
 
 def _print_states_process(num_process, q):
@@ -312,6 +307,14 @@ def _print_states_process(num_process, q):
                 if state.activity == "Terminated" or state.activity == "DB error":
                     unterminated_processes.remove(state.id_process)
                 plot_window()
+
+        import os
+        from loacore.conf import OUTPUT_PATH
+        f = open(os.path.join(OUTPUT_PATH, "result.log"), "w")
+        for i in processes.keys():
+            items = processes[i].state_str()
+            f.write(items[0] + '\t' + items[1] + '\t' + items[2] + '\t' + items[3] + '\t\n')
+        f.close()
 
     unterminated_processes = [n + 1 for n in range(num_process)]
     processes = {}

@@ -132,8 +132,8 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
             c.execute("UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
                       "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(synset.obj_score) + ") "
                       "WHERE Id_Synset = " + str(synset.id_synset))
-
-    print("")
+    if _state_queue is None:
+        print("")
     safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
