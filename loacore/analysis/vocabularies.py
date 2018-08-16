@@ -3,7 +3,7 @@ import sqlite3 as sql
 
 
 def word_count(file):
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     c.execute("SELECT count(*) FROM "
@@ -17,7 +17,7 @@ def word_count(file):
 
 
 def lemma_count(file):
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     c.execute("SELECT count(*) FROM "
@@ -32,7 +32,7 @@ def lemma_count(file):
 
 
 def synset_count(file):
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     c.execute("SELECT count(*) FROM "

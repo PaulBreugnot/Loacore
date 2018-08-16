@@ -46,12 +46,13 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
        file_process.add_files(file_paths)
 
     """
+    from loacore.conf import DB_TIMEOUT
 
     if not lang == "":
         from loacore.conf import _set_temp_lang
         _set_temp_lang(lang)
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     # Add files
@@ -254,7 +255,6 @@ def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_pro
 
     if _state_queue is not None:
         _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
-
 
 
 def _print_states_process(num_process, q):

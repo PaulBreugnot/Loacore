@@ -28,8 +28,9 @@ def load_words(id_words=[], load_lemmas=True, load_synsets=True):
         ['', '', 'que', 'el', 'agua', 'oler', 'a', '', 'pista', 'de', 'bailar']
 
     """
+    from loacore.conf import DB_TIMEOUT
     words = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     if len(id_words) > 0:
         for id_word in id_words:
@@ -77,7 +78,8 @@ def load_words_in_sentences(sentences, load_lemmas=True, load_synsets=True):
     :rtype: :obj:`list` of |Word|
     """
 
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     words = []
     for sentence in sentences:
@@ -120,6 +122,7 @@ def load_words_in_dep_trees(dep_trees, load_lemmas=True, load_synsets=True):
     :param load_synsets: Specify if Synsets need to be loaded in words.
     :type load_synsets: boolean
     """
+    from loacore.conf import DB_TIMEOUT
 
     def rec_children(c, node, words):
         c.execute("SELECT ID_Word, ID_Sentence, Sentence_Index, word, ID_Lemma, ID_Synset, PoS_tag "
@@ -131,7 +134,7 @@ def load_words_in_dep_trees(dep_trees, load_lemmas=True, load_synsets=True):
         for node in node.children:
             rec_children(c, node, words)
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     words = []

@@ -19,7 +19,8 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
     :param print_lemmas: If True, print lemmatization results
     :type print_lemmas: boolean
     """
-    from loacore.utils.db import safe_commit
+    from loacore.utils.db import safe_commit, safe_execute
+    from loacore.conf import DB_TIMEOUT
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
@@ -53,7 +54,7 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
                 print(word.word + " : " + word.lemma)
 
     # Add lemmas to database
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     sentence_count = 0
@@ -66,14 +67,27 @@ def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _i
 
         for word in sentence.words:
             # Add Lemma to Lemma Table
-            c.execute("INSERT INTO Lemma (Lemma, ID_Word) VALUES (?, ?)", (word.lemma, word.id_word))
+            safe_execute(c,
+                         "INSERT INTO Lemma (Lemma, ID_Word) VALUES (?, ?)",
+                         0,
+                         _state_queue,
+                         _id_process,
+                         mark_args=(word.lemma, word.id_word))
 
             # Get back id of last inserted lemma
-            c.execute("SELECT last_insert_rowid()")
+            safe_execute(c,
+                         "SELECT last_insert_rowid()",
+                         0,
+                         _state_queue,
+                         _id_process)
             id_lemma = c.fetchone()[0]
 
             # Update Word table
-            c.execute("UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word))
+            safe_execute(c,
+                         "UPDATE Word SET ID_Lemma = " + str(id_lemma) + " WHERE ID_Word = " + str(word.id_word),
+                         0,
+                         _state_queue,
+                         _id_process)
 
     if _state_queue is None:
         print("")

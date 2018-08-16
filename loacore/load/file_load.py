@@ -7,8 +7,9 @@ def _load_files_by_id_files(id_files):
 
     # Load files with specified ids, only initialized with id_file and file_path
 
+    from loacore.conf import DB_TIMEOUT
     files = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     for id_file in id_files:
         c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
@@ -22,9 +23,10 @@ def _load_files_by_id_files(id_files):
 
 def _load_files():
 
+    from loacore.conf import DB_TIMEOUT
     # Load all the files of the database, only initialized with id_file and file_path
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT ID_File, File_Path FROM File")
 
@@ -103,6 +105,7 @@ def load_database(id_files=[],
 
     """
 
+    from loacore.conf import DB_TIMEOUT
     # Load Files
     if len(id_files) == 0:
         files = _load_files()
@@ -277,7 +280,8 @@ def remove_files(files):
 
     :param files: :obj:`list` of |File|
     """
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("PRAGMA foreign_keys = on")
     for file in files:
@@ -292,8 +296,9 @@ def clean_db():
     Remove all files from database. Implemented references will also engender the deletion of all files
     dependencies in database : all the tables will be emptied.
     """
+    from loacore.conf import DB_TIMEOUT
     print("Cleaning all database...")
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     c.execute("DELETE FROM File")

@@ -22,8 +22,9 @@ def add_reviews_from_files(files, encoding):
     :rtype: :obj:`list` of |Review|
 
     """
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     reviews = []

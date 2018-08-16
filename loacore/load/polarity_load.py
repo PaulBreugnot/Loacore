@@ -5,7 +5,8 @@ from loacore.classes.classes import Polarity
 
 def load_polarities_in_reviews(reviews):
 
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     for review in reviews:
         c.execute("SELECT ID_Polarity, Analysis, ID_Review, Pos_Score, Neg_Score, Obj_Score "

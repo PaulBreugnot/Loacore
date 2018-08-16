@@ -25,7 +25,8 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
     :type print_synsets: boolean
     """
 
-    from loacore.utils.db import safe_commit
+    from loacore.conf import DB_TIMEOUT
+    from loacore.utils.db import safe_commit, safe_execute
 
     freeling_sentences = [sentence.compute_freeling_sentence() for sentence in sentences]
 
@@ -69,7 +70,7 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
 
     # Add synsets to database
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     sentence_count = 0
@@ -84,15 +85,30 @@ def add_synsets_to_sentences(sentences, print_synsets=False,
 
             if synset is not None:
                 # Add synset
-                c.execute("INSERT INTO Synset (ID_Word, Synset_Code, Synset_Name) "
-                          "VALUES (?, ?, ?)", (word.id_word, synset.synset_code, synset.synset_name))
+
+                safe_execute(c,
+                             "INSERT INTO Synset (ID_Word, Synset_Code, Synset_Name) "
+                             "VALUES (?, ?, ?)",
+                             0,
+                             _state_queue,
+                             _id_process,
+                             mark_args=(word.id_word, synset.synset_code, synset.synset_name)
+                             )
 
                 # Get back id of last inserted review
-                c.execute("SELECT last_insert_rowid()")
+                safe_execute(c,
+                             "SELECT last_insert_rowid()",
+                             0,
+                             _state_queue,
+                             _id_process)
                 id_synset = c.fetchone()[0]
 
                 # Update Word table
-                c.execute("UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word))
+                safe_execute(c,
+                             "UPDATE Word SET ID_Synset = " + str(id_synset) + " WHERE ID_Word = " + str(word.id_word),
+                             0,
+                             _state_queue,
+                             _id_process)
 
     safe_commit(conn, 0, _state_queue, _id_process)
 
@@ -110,9 +126,10 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
 
     from nltk.corpus import sentiwordnet as swn
     from loacore.load import synset_load
-    from loacore.utils.db import safe_commit
+    from loacore.utils.db import safe_commit, safe_execute
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     synsets = synset_load.load_synsets(id_synsets=synset_load.get_id_synsets_for_id_words(id_words))
@@ -129,9 +146,16 @@ def add_polarity_to_synsets(id_words, _state_queue=None, _id_process=None):
             synset.neg_score = swn.senti_synset(synset.synset_name).neg_score()
             synset.obj_score = 1 - (synset.pos_score + synset.neg_score)
 
-            c.execute("UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
-                      "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(synset.obj_score) + ") "
-                      "WHERE Id_Synset = " + str(synset.id_synset))
+            safe_execute(c,
+                         "UPDATE Synset SET (Pos_Score, Neg_Score, Obj_Score) "
+                         "= (" + str(synset.pos_score) + ", " + str(synset.neg_score) + ", " + str(
+                             synset.obj_score) + ") "
+                         "WHERE Id_Synset = " + str(synset.id_synset),
+                         0,
+                         _state_queue,
+                         _id_process
+                         )
+
     if _state_queue is None:
         print("")
     safe_commit(conn, 0, _state_queue, _id_process)

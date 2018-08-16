@@ -24,9 +24,10 @@ def load_lemmas(id_lemmas=[]):
     bailar
 
     """
+    from loacore.conf import DB_TIMEOUT
 
     lemmas = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     if len(id_lemmas) > 0:
         for id_lemma in id_lemmas:
@@ -61,8 +62,9 @@ def load_lemmas_in_words(words):
     :return: loaded lemmas
     :rtype: :obj:`list` of :obj:`str`
     """
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     lemmas = []
     for word in words:

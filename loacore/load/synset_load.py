@@ -24,9 +24,10 @@ def load_synsets(id_synsets=None):
 
 
     """
+    from loacore.conf import DB_TIMEOUT
 
     synsets = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     if id_synsets is not None:
         for id_synset in id_synsets:
@@ -46,7 +47,8 @@ def load_synsets(id_synsets=None):
 
 
 def get_id_synsets_for_id_words(id_words):
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT Synset.ID_Synset "
               "FROM Synset "
@@ -77,8 +79,9 @@ def load_synsets_in_words(words):
     :return: loaded synsets
     :rtype: :obj:`list` of |Synset|
     """
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     synsets = []
     for word in words:

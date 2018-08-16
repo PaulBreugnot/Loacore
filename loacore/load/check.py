@@ -5,8 +5,9 @@ def check_db():
     """
     import sqlite3 as sql
     from loacore.conf import DB_PATH
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     # File check
