@@ -7,8 +7,8 @@ class ReviewIterator(object):
     :obj:`True`, to replace |File| attribute *reviews*.
     """
 
-    def __init__(self):
-        self.temp_file_list = []
+    def __init__(self, temp_file_list=[]):
+        self.temp_file_list = temp_file_list
 
     def __iter__(self):
         import pickle
