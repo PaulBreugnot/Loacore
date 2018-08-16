@@ -29,7 +29,8 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
     :type print_result: boolean
     """
 
-    from loacore.utils.db import safe_commit
+    from loacore.utils.db import safe_commit, safe_execute
+    from loacore.conf import DB_TIMEOUT
 
     if freeling_modules is None:
         if _state_queue is not None:
@@ -61,7 +62,7 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
     # Dependency tree parsing
     processed_sentences = parser.analyze(processed_sentences)
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     sentence_count = 0
@@ -77,10 +78,20 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
         dt = processed_sentences[s].get_dep_tree()
         dep_tree = DepTree(None, None, sentence.id_sentence)
 
-        c.execute("INSERT INTO Dep_Tree (ID_Sentence) VALUES (?)", [dep_tree.id_sentence])
+        safe_execute(c,
+                     "INSERT INTO Dep_Tree (ID_Sentence) VALUES (?)",
+                     0,
+                     _state_queue,
+                     _id_process,
+                     mark_args=[dep_tree.id_sentence])
 
         # Get back id_dep_tree
-        c.execute("SELECT last_insert_rowid()")
+        safe_execute(c,
+                     "SELECT last_insert_rowid()",
+                     0,
+                     _state_queue,
+                     _id_process)
+
         id_dep_tree = c.fetchone()[0]
         dep_tree.id_dep_tree = id_dep_tree
 
@@ -110,15 +121,24 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
                 root = dep_tree_node
 
             # Add DepTreeNode to database
-            c.execute("INSERT INTO Dep_Tree_Node (ID_Dep_Tree, ID_Word, Label, root) "
-                      "VALUES (?, ?, ?, ?)",
-                      (dep_tree_node.id_dep_tree,
-                       dep_tree_node.id_word,
-                       dep_tree_node.label,
-                       dep_tree_node.root))
+            safe_execute(c,
+                         "INSERT INTO Dep_Tree_Node (ID_Dep_Tree, ID_Word, Label, root) "
+                         "VALUES (?, ?, ?, ?)",
+                         0,
+                         _state_queue,
+                         _id_process,
+                         mark_args=(dep_tree_node.id_dep_tree,
+                                    dep_tree_node.id_word,
+                                    dep_tree_node.label,
+                                    dep_tree_node.root))
 
             # Get back id_dep_tree_node
-            c.execute("SELECT last_insert_rowid()")
+            safe_execute(c,
+                         "SELECT last_insert_rowid()",
+                         0,
+                         _state_queue,
+                         _id_process)
+
             id_dep_tree_node = c.fetchone()[0]
 
             dep_tree_node.id_dep_tree_node = id_dep_tree_node
@@ -128,30 +148,50 @@ def add_dep_tree_from_sentences(sentences, print_result=False,
 
             # Add PoS_tag to Word
             if word.PoS_tag is not None:
-                c.execute("UPDATE Word SET PoS_tag = '" + word.PoS_tag + "' "
-                          "WHERE ID_Word = " + str(word.id_word))
+                safe_execute(c,
+                             "UPDATE Word SET PoS_tag = '" + word.PoS_tag + "' "
+                             "WHERE ID_Word = " + str(word.id_word),
+                             0,
+                             _state_queue,
+                             _id_process
+                             )
 
         # Add dep_tree root to database
         dep_tree.root = root
-        c.execute("UPDATE Dep_Tree SET ID_Dep_Tree_Node = " + str(root.id_dep_tree_node) + " "
-                  "WHERE ID_Dep_Tree = " + str(id_dep_tree))
+        safe_execute(c,
+                     "UPDATE Dep_Tree SET ID_Dep_Tree_Node = " + str(root.id_dep_tree_node) + " "
+                     "WHERE ID_Dep_Tree = " + str(id_dep_tree),
+                     0,
+                     _state_queue,
+                     _id_process
+                     )
 
         # Add children relations
         root_node = dt.begin()
-        rec_children(c, root_node)
+        _rec_children(c, root_node, _state_queue, _id_process)
 
-    print("")
+    if _state_queue is None:
+        print("")
+
     safe_commit(conn, 0, _state_queue, _id_process)
 
     conn.close()
 
 
-def rec_children(c, node):
+def _rec_children(c, node, _state_queue, _id_process):
+    from loacore.utils.db import safe_execute
     for ch in range(0, node.num_children()):
         child = node.nth_child(ch)
-        c.execute("INSERT INTO Dep_Tree_Node_Children (ID_Parent_Node, ID_Child_Node) "
-                  "VALUES (?, ?)", (int(node.get_node_id()), int(child.get_node_id())))
-        rec_children(c, child)
+
+        safe_execute(c,
+                     "INSERT INTO Dep_Tree_Node_Children (ID_Parent_Node, ID_Child_Node) "
+                     "VALUES (?, ?)",
+                     0,
+                     _state_queue,
+                     _id_process,
+                     mark_args=(int(node.get_node_id()), int(child.get_node_id()))
+                     )
+        _rec_children(c, child, _state_queue, _id_process)
 
 
 # ********************************************* Freeling Options****************************************************** #

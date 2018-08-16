@@ -24,7 +24,8 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
     :rtype: :obj:`list` of |Sentence|
     """
     from loacore.classes.classes import Word
-    from loacore.utils.db import safe_commit
+    from loacore.utils.db import safe_commit, safe_execute
+    from loacore.conf import DB_TIMEOUT
 
     if freeling_modules is None:
         if _state_queue is not None:
@@ -34,7 +35,7 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
     else:
         morfo, tk, sp = freeling_modules
 
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     added_sentences = []
@@ -78,11 +79,21 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
             _commit_state(_state_queue, _id_process, sentence_count, total_sentence)
 
             # Add sentence
-            c.execute("INSERT INTO Sentence (ID_Review, Review_Index) "
-                      "VALUES (?, ?)", (s.id_review, s.review_index))
+            safe_execute(c,
+                         "INSERT INTO Sentence (ID_Review, Review_Index) "
+                         "VALUES (?, ?)",
+                         0,
+                         _state_queue,
+                         _id_process,
+                         mark_args=(s.id_review, s.review_index)
+                         )
 
             # Get back id of last inserted sentence
-            c.execute("SELECT last_insert_rowid()")
+            safe_execute(c,
+                         "SELECT last_insert_rowid()",
+                         0,
+                         _state_queue,
+                         _id_process)
             id_sentence = c.fetchone()[0]
             s.id_sentence = id_sentence
 
@@ -90,10 +101,17 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
             for w in s.words:
                 w.id_sentence = id_sentence
                 sql_words.append((id_sentence, w.sentence_index, w.word))
-            c.executemany("INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)", sql_words)
+                safe_execute(c,
+                             "INSERT INTO Word (ID_Sentence, Sentence_Index, word) VALUES (?, ?, ?)",
+                             0,
+                             _state_queue,
+                             _id_process,
+                             mark_args=sql_words,
+                             execute_many=True)
             added_sentences.append(s)
 
-    print("")
+    if _state_queue is None:
+        print("")
 
     safe_commit(conn, 0, _state_queue, _id_process)
 

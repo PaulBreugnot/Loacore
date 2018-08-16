@@ -28,8 +28,9 @@ def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, loa
         'teleferico'
 
     """
+    from loacore.conf import DB_TIMEOUT
     reviews = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     if len(id_reviews) > 0:
         for id_review in id_reviews:
@@ -85,8 +86,9 @@ def load_reviews_by_id_files(id_files, load_polarities=False, load_sentences=Fal
         teleferico
 
     """
+    from loacore.conf import DB_TIMEOUT
     reviews = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     for id_file in id_files:
@@ -132,7 +134,8 @@ def load_reviews_in_files(files, load_sentences=False, load_words=False, load_de
     :return: Loaded reviews
     :rtype: :obj:`list` of |Review|
     """
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     reviews = []
@@ -158,8 +161,9 @@ def load_reviews_in_files(files, load_sentences=False, load_words=False, load_de
 
 
 def count_reviews(file_path):
+    from loacore.conf import DB_TIMEOUT
     from loacore.conf import DB_PATH
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File "
               "WHERE File_Path = '" + file_path + "'")

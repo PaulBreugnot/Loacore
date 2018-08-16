@@ -37,7 +37,7 @@ def label_frequencies(files):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH, timeout=1800)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}
@@ -69,7 +69,7 @@ def get_label_set(files, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
@@ -102,7 +102,7 @@ def count_label(file, label, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param file: File to process
@@ -154,7 +154,7 @@ def bigram_label_frequencies(files):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}
@@ -186,7 +186,7 @@ def get_bigram_label_set(files, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
@@ -224,7 +224,7 @@ def count_bigram_label(file, bigram_label, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param file: File to process
@@ -282,7 +282,7 @@ def pos_tag_frequencies(files, tag_len=2):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}
@@ -315,7 +315,7 @@ def get_pos_tag_set(files, c, tag_len):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
@@ -357,7 +357,7 @@ def count_pos_tag(file, pos_tag, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param file: File to process
@@ -417,7 +417,7 @@ def bigram_pos_tag_frequencies(files, tag_len=2):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}
@@ -449,7 +449,7 @@ def get_bigram_pos_tag_set(files, c, tag_len):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param files: Files to process. Notice that only the id_files are needed.
@@ -509,7 +509,7 @@ def count_bigram_pos_tag(file, bigram_pos_tag, c):
 
             import sqlite3 as sql
             from loacore.conf import DB_PATH
-            conn = sql.connect(DB_PATH)
+            conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
             c = conn.cursor()
 
     :param file: File to process
@@ -590,7 +590,7 @@ def polarity_word_pos_tag_frequencies(files, polarity, tag_len=2):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}
@@ -677,7 +677,7 @@ def polarity_word_label_frequencies(files, polarity):
 
     """
     from collections import OrderedDict
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     frequencies = {}

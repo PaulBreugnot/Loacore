@@ -5,8 +5,11 @@ DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
-MAX_DB_COMMIT_ATTEMPTS = 10
 OS_API = "windows_api"
+
+MAX_DB_COMMIT_ATTEMPTS = 20
+DB_TIMEOUT = 180
+DB_ERROR_TIMEOUT = 10
 
 lang = ""
 FR_PATH = ""
@@ -24,7 +27,7 @@ def set_lang(user_lang):
     """
     import sqlite3 as sql
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     print("Updating Configuration...")
     c.execute("DELETE FROM Configuration")
@@ -58,7 +61,7 @@ def set_freeling_path(freeling_path):
 
     import sqlite3 as sql
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     print("Updating Configuration...")
     c.execute("DELETE FROM Configuration")
@@ -80,7 +83,7 @@ def check_freeling_path():
 
 def _load_conf():
     import sqlite3 as sql
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT lang, freeling_path FROM Configuration")
     result = c.fetchone()

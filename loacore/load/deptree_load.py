@@ -37,6 +37,7 @@ def load_dep_trees(id_dep_trees=[], load_words=True):
                 el (spec, None, el)
 
     """
+    from loacore.conf import DB_TIMEOUT
 
     def load_dep_tree_from_result(result, c):
         dep_tree = DepTree(result[0], result[1], result[2])
@@ -55,7 +56,7 @@ def load_dep_trees(id_dep_trees=[], load_words=True):
             rec_children_select(c, dep_tree.root)
         return dep_tree
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     dep_trees = []
@@ -107,8 +108,9 @@ def load_dep_tree_in_sentences(sentences, load_words=True):
     :rtype: :obj:`list` of |DepTree|
     """
     import os
+    from loacore.conf import DB_TIMEOUT
 
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     sentences_dict = {s.id_sentence: s for s in sentences}

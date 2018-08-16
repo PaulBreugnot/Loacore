@@ -242,7 +242,7 @@ class Word:
         from loacore.conf import OS_API
         freeling = importlib.import_module(OS_API + ".pyfreeling")
         freeling_word_class = freeling.word
-        
+
         fr_word = freeling_word_class()
         fr_word.set_form(self.word)
 

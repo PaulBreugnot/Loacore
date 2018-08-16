@@ -29,7 +29,8 @@ def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
 
 
     """
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     sentences = []
     if len(id_sentences) > 0:
@@ -82,8 +83,9 @@ def load_sentences_by_id_files(id_files, load_words=True, load_deptrees=True):
     'teleferico'
 
     """
+    from loacore.conf import DB_TIMEOUT
     sentences = []
-    conn = sql.connect(DB_PATH)
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     for id_file in id_files:
         c.execute("SELECT ID_Sentence, Sentence.ID_Review, Review_Index, ID_Dep_Tree FROM Sentence "
@@ -126,7 +128,8 @@ def load_sentences_in_reviews(reviews, load_words=False, load_deptrees=False):
     :return: Loaded sentences
     :rtype: :obj:`list` of |Sentence|
     """
-    conn = sql.connect(DB_PATH)
+    from loacore.conf import DB_TIMEOUT
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
     loaded_sentences = []
