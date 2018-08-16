@@ -1,7 +1,10 @@
 import sqlite3 as sql
 from loacore.conf import DB_PATH
 from loacore.classes.classes import File
-import resources.pyfreeling as freeling
+
+import importlib
+from loacore.conf import OS_API
+freeling = importlib.import_module(OS_API+".pyfreeling")
 
 
 def add_files(file_paths, encoding='utf8', lang="", workers=1):

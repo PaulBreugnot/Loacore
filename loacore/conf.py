@@ -6,6 +6,7 @@ DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
 MAX_DB_COMMIT_ATTEMPTS = 10
+OS_API = "windows_api"
 
 lang = ""
 FR_PATH = ""

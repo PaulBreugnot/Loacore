@@ -183,8 +183,11 @@ class Sentence:
         :return: generated Freeling Sentence instance
         :rtype: :class:`pyfreeling.sentence`
         """
+        import importlib
+        from loacore.conf import OS_API
+        freeling = importlib.import_module(OS_API + ".pyfreeling")
+        freeling_sentence_class = freeling.sentence
 
-        from resources.pyfreeling import sentence as freeling_sentence_class
         fr_words = [word.compute_freeling_word() for word in self.words]
         fr_sentence = freeling_sentence_class(fr_words)
         self.freeling_sentence = fr_sentence
@@ -235,8 +238,11 @@ class Word:
         Moreover, only :func:`loacore.classes.classes.File.load_sentence()` (that itself uses this function) should be used,
         because all Freeling analysis work with :class:`pyfreeling.sentence` instances.
         """
-
-        from resources.pyfreeling import word as freeling_word_class
+        import importlib
+        from loacore.conf import OS_API
+        freeling = importlib.import_module(OS_API + ".pyfreeling")
+        freeling_word_class = freeling.word
+        
         fr_word = freeling_word_class()
         fr_word.set_form(self.word)
 

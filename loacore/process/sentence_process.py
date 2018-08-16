@@ -1,9 +1,12 @@
 import os
 import sqlite3 as sql
 from loacore.conf import DB_PATH
-import resources.pyfreeling as freeling
 from loacore.classes.classes import Sentence
 from loacore.utils.status import ProcessState
+
+import importlib
+from loacore.conf import OS_API
+freeling = importlib.import_module(OS_API+".pyfreeling")
 
 
 def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, freeling_modules=None):
