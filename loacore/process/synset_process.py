@@ -6,8 +6,8 @@ from loacore.classes.classes import Synset
 from loacore.utils.status import ProcessState
 
 import importlib
-from loacore.conf import OS_API
-freeling = importlib.import_module(OS_API+".pyfreeling")
+from loacore.conf import FREELING_API
+freeling = importlib.import_module(FREELING_API+".pyfreeling")
 
 def add_synsets_to_sentences(sentences, print_synsets=False,
                              _state_queue=None, _id_process=None, freeling_modules=None):

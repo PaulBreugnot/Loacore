@@ -1,11 +1,16 @@
 import os
+import platform
 
 RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'results'))
 DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
 OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
-OS_API = "windows_api"
+
+if platform.system() == 'Windows':
+    FREELING_API = "windows_api"
+elif platform.system() == 'Linux':
+    FREELING_API = 'linux_api'
 
 MAX_DB_COMMIT_ATTEMPTS = 20
 DB_TIMEOUT = 180

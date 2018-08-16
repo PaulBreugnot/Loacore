@@ -6,8 +6,8 @@ from loacore.classes.classes import DepTreeNode
 from loacore.utils.status import ProcessState
 
 import importlib
-from loacore.conf import OS_API
-freeling = importlib.import_module(OS_API+".pyfreeling")
+from loacore.conf import FREELING_API
+freeling = importlib.import_module(FREELING_API+".pyfreeling")
 
 
 def add_dep_tree_from_sentences(sentences, print_result=False,
