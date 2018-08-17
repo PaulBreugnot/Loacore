@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(name='loacore',
       version='0.1',
@@ -10,4 +10,4 @@ setup(name='loacore',
       packages=[''],
       package_data={'': ['data', 'docs']},
       long_description=open('README.md').read(),
-      setup_requires=['nltk', 'matplotlib', 'PrettyTable'])
+      setup_requires=['PyFreeling', 'nltk', 'matplotlib', 'PrettyTable'])
