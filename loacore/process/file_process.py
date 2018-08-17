@@ -2,7 +2,7 @@ import sqlite3 as sql
 from loacore.conf import DB_PATH
 from loacore.classes.classes import File
 
-from PyFreeling import freeling_api as freeling
+from PyFreelingApi import freeling_api as freeling
 
 
 def add_files(file_paths, encoding='utf8', lang="", workers=1):

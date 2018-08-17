@@ -4,7 +4,7 @@ from loacore.conf import DB_PATH
 from nltk.corpus import wordnet as wn
 from loacore.classes.classes import Synset
 from loacore.utils.status import ProcessState
-from PyFreeling import freeling_api as freeling
+from PyFreelingApi import freeling_api as freeling
 
 
 def add_synsets_to_sentences(sentences, print_synsets=False,
