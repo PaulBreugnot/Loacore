@@ -7,7 +7,7 @@ from loacore.utils.status import ProcessState
 
 import importlib
 from loacore.conf import FREELING_API
-freeling = importlib.import_module(FREELING_API+".pyfreeling")
+freeling = importlib.import_module("freeling" + FREELING_API+".pyfreeling")
 
 
 def add_dep_tree_from_sentences(sentences, print_result=False,
