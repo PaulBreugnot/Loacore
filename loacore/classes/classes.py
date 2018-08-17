@@ -185,7 +185,7 @@ class Sentence:
         """
         import importlib
         from loacore.conf import FREELING_API
-        freeling = importlib.import_module("freeling" + FREELING_API + ".pyfreeling")
+        freeling = importlib.import_module("freeling."I + FREELING_API + ".pyfreeling")
         freeling_sentence_class = freeling.sentence
 
         fr_words = [word.compute_freeling_word() for word in self.words]
@@ -240,7 +240,7 @@ class Word:
         """
         import importlib
         from loacore.conf import FREELING_API
-        freeling = importlib.import_module("freeling" + FREELING_API + ".pyfreeling")
+        freeling = importlib.import_module("freeling."I + FREELING_API + ".pyfreeling")
         freeling_word_class = freeling.word
 
         fr_word = freeling_word_class()

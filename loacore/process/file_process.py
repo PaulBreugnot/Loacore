@@ -4,7 +4,7 @@ from loacore.classes.classes import File
 
 import importlib
 from loacore.conf import FREELING_API
-freeling = importlib.import_module("freeling" + FREELING_API+".pyfreeling")
+freeling = importlib.import_module("freeling."I + FREELING_API+".pyfreeling")
 
 
 def add_files(file_paths, encoding='utf8', lang="", workers=1):
