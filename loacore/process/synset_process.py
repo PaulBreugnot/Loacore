@@ -7,7 +7,7 @@ from loacore.utils.status import ProcessState
 
 import importlib
 from loacore.conf import FREELING_API
-freeling = importlib.import_module("freeling."I + FREELING_API+".pyfreeling")
+freeling = importlib.import_module("freeling." + FREELING_API+".pyfreeling")
 
 def add_synsets_to_sentences(sentences, print_synsets=False,
                              _state_queue=None, _id_process=None, freeling_modules=None):
