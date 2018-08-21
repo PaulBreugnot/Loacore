@@ -25,3 +25,11 @@ Temporary Files management
 
 .. automodule:: loacore.utils.data_stream
     :members:
+
+Database management
+-------------------
+.. automodule:: loacore.utils.db
+    :members:
+    :special-members: __init__
+
+

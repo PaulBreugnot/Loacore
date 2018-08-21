@@ -151,7 +151,7 @@ is not necessarily true for the others. This could also be useful to consider wh
 <span id="temporary-files-management"></span><h2>Temporary Files management<a class="headerlink" href="#module-loacore.utils.data_stream" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="loacore.utils.data_stream.ReviewIterator">
-<em class="property">class </em><code class="descclassname">loacore.utils.data_stream.</code><code class="descname">ReviewIterator</code><a class="headerlink" href="#loacore.utils.data_stream.ReviewIterator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">loacore.utils.data_stream.</code><code class="descname">ReviewIterator</code><span class="sig-paren">(</span><em>temp_file_list=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.data_stream.ReviewIterator" title="Permalink to this definition">¶</a></dt>
 <dd><p>An iterator used to stream reviews from
 <a class="reference external" href="https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile">TemporaryFiles</a>
 This class is mainly used in <a class="reference internal" href="load.html#loacore.load.file_load.load_database" title="loacore.load.file_load.load_database"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_database()</span></code></a> when <em>load_in_temp_file</em> is
@@ -174,6 +174,94 @@ using <a class="reference external" href="https://docs.python.org/3/library/pick
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Opened temporary file.</td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile">TemporaryFile</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="module-loacore.utils.db">
+<span id="database-management"></span><h2>Database management<a class="headerlink" href="#module-loacore.utils.db" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="loacore.utils.db.database_backup">
+<em class="property">class </em><code class="descclassname">loacore.utils.db.</code><code class="descname">database_backup</code><span class="sig-paren">(</span><em>path=None</em>, <em>delete_backup=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.database_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>A context manager that allows to make a backup of the current database, and that restores it if an error occurs during
+the execution of wrapped code.</p>
+<p>Notice that you can also just use this class to make a backup on your local file system using
+<a class="reference internal" href="#loacore.utils.db.database_backup.write_backup" title="loacore.utils.db.database_backup.write_backup"><code class="xref py py-func docutils literal notranslate"><span class="pre">write_backup()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+<p>Make a persistent manual backup to a local file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">loacore.utils.db</span> <span class="kn">import</span> <span class="n">database_backup</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">backup</span> <span class="o">=</span> <span class="n">database_backup</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">&quot;/home/paulbreugnot/test_backup.db&quot;</span><span class="p">,</span> <span class="n">delete_backup</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">backup</span><span class="o">.</span><span class="n">write_backup</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="loacore.utils.db.database_backup.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>path=None</em>, <em>delete_backup=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.database_backup.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – <p>If specified, path of the file to write the backup. Otherwise, a
+<a class="reference external" href="https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile">TemporaryFile</a> is used.</p>
+</li>
+<li><strong>delete_backup</strong> – If path is specified, specify if the generated file should be removed when  __exit__ is</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>called.
+:type delete_backup: bool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="loacore.utils.db.database_backup.write_backup">
+<code class="descname">write_backup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.database_backup.write_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a persistent backup to the file specified at initialization.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.utils.db.download_db">
+<code class="descclassname">loacore.utils.db.</code><code class="descname">download_db</code><span class="sig-paren">(</span><em>db_url=None</em>, <em>db_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.download_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download and replace the current database.
+See <a class="reference external" href="https://sourceforge.net/projects/loacore/files/Database/">https://sourceforge.net/projects/loacore/files/Database/</a> for available databases.</p>
+<p>The use of <a class="reference internal" href="#loacore.utils.db.database_backup" title="loacore.utils.db.database_backup"><code class="xref py py-class docutils literal notranslate"><span class="pre">database_backup</span></code></a> as a context manager ensure that the database will be restored if an exception
+occurs (e.g.: Download fail or user interruption)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>db_url</strong> (<em>str</em>) – An download url to a database file.</li>
+<li><strong>db_name</strong> (<em>str</em>) – A database name. Possible values : <em>‘new’</em>, <em>‘full_uci_imdb’</em></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.utils.db.restore_db">
+<code class="descclassname">loacore.utils.db.</code><code class="descname">restore_db</code><span class="sig-paren">(</span><em>backup_file</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.restore_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore database from the specified backup_file, overriding the current one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>backup_file</strong> (<em>:obj:file</em>) – A file opened in read and binary mode.</td>
 </tr>
 </tbody>
 </table>
@@ -212,6 +300,7 @@ using <a class="reference external" href="https://docs.python.org/3/library/pick
 <li class="toctree-l1 current"><a class="current reference internal" href="#"><em>utils</em> package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#save-and-plot-results">Save and plot results</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-loacore.utils.data_stream">Temporary Files management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-loacore.utils.db">Database management</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="other_examples.html">Other Useful Examples</a></li>

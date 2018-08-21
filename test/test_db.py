@@ -178,6 +178,12 @@ def test_multiprocessed_load():
                 print(s.dep_tree.dep_tree_str(colored_polarity=True))
 
 
+def download_test():
+    from loacore.utils.db import download_db
+
+    download_db(db_name="full_uci_imdb")
+
+
 #file_load.clean_db()
 #add_files_to_database()
 #test_load_db()
@@ -188,4 +194,5 @@ def test_multiprocessed_load():
 #test_print_colored_sentences()
 #test_colored_reviews()
 #test_print_colored_deptree()
-test_multiprocessed_load()
+#test_multiprocessed_load()
+download_test()

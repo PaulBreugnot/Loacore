@@ -51,7 +51,7 @@
 <p>Compute Reviews objects and add them to the database.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <a class="reference internal" href="#loacore.process.file_process.add_files" title="loacore.process.file_process.add_files"><code class="xref py py-func docutils literal notranslate"><span class="pre">add_files()</span></code></a> function.</p>
+<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">add_files()</span></code> function.</p>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -99,182 +99,21 @@
 </div>
 <div class="section" id="freeling-processes">
 <h2>Freeling Processes<a class="headerlink" href="#freeling-processes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="module-loacore.process.sentence_process">
-<span id="tokenization"></span><h3>tokenization<a class="headerlink" href="#module-loacore.process.sentence_process" title="Permalink to this headline">¶</a></h3>
-<dl class="function">
-<dt id="loacore.process.sentence_process.add_sentences_from_reviews">
-<code class="descclassname">loacore.process.sentence_process.</code><code class="descname">add_sentences_from_reviews</code><span class="sig-paren">(</span><em>reviews</em>, <em>_state_queue=None</em>, <em>_id_process=None</em>, <em>freeling_modules=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.sentence_process.add_sentences_from_reviews" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs the first Freeling process applied to each normalized review.</p>
-<p>Each review is tokenized, and then splitted into sentences, thanks to corresponding Freeling modules.</p>
-<p>A representation of the Sentences and their Words (tokens) are then added to corresponding tables.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
+<div class="section" id="tokenization">
+<h3>tokenization<a class="headerlink" href="#tokenization" title="Permalink to this headline">¶</a></h3>
 </div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">added sentences</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="lemmatization">
+<h3>lemmatization<a class="headerlink" href="#lemmatization" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="module-loacore.process.lemma_process">
-<span id="lemmatization"></span><h3>lemmatization<a class="headerlink" href="#module-loacore.process.lemma_process" title="Permalink to this headline">¶</a></h3>
-<dl class="function">
-<dt id="loacore.process.lemma_process.add_lemmas_to_sentences">
-<code class="descclassname">loacore.process.lemma_process.</code><code class="descname">add_lemmas_to_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_lemmas=False</em>, <em>_state_queue=None</em>, <em>_id_process=None</em>, <em>freeling_modules=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.lemma_process.add_lemmas_to_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a Freeling process to add lemmas to words.</p>
-<p>However, the argument is actually a sentence to better fit Freeling usage.</p>
-<p>Our sentences will be converted to a Freeling Sentences before processing.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
+<div class="section" id="disambiguation">
+<h3>disambiguation<a class="headerlink" href="#disambiguation" title="Permalink to this headline">¶</a></h3>
 </div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
-<li><strong>print_lemmas</strong> (<em>boolean</em>) – If True, print lemmatization results</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-<div class="section" id="module-loacore.process.synset_process">
-<span id="disambiguation"></span><h3>disambiguation<a class="headerlink" href="#module-loacore.process.synset_process" title="Permalink to this headline">¶</a></h3>
-<dl class="function">
-<dt id="loacore.process.synset_process.add_polarity_to_synsets">
-<code class="descclassname">loacore.process.synset_process.</code><code class="descname">add_polarity_to_synsets</code><span class="sig-paren">(</span><em>id_words</em>, <em>_state_queue=None</em>, <em>_id_process=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.synset_process.add_polarity_to_synsets" title="Permalink to this definition">¶</a></dt>
-<dd><p>Adds the positive/negative/objective polarities of all the synsets currently in the table
-Synset, from the SentiWordNet corpus.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
-</div>
-</dd></dl>
-
-<dl class="function">
-<dt id="loacore.process.synset_process.add_synsets_to_sentences">
-<code class="descclassname">loacore.process.synset_process.</code><code class="descname">add_synsets_to_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_synsets=False</em>, <em>_state_queue=None</em>, <em>_id_process=None</em>, <em>freeling_modules=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.synset_process.add_synsets_to_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Performs a Freeling process to disambiguate words of the sentences according to their context
-(UKB algorithm) linking them to a unique synset (if possible).</p>
-<p>Our sentences are converted to Freeling Sentences before processing.</p>
-<p>Notice that even if we may have already computed the Lemmas for example, Freeling Sentences generated from our
-sentences are “raw sentences”, without any analysis linked to their Words. So we make all the Freeling
-process from scratch every time, except <em>tokenization</em> and <em>sentence splitting</em>, to avoid any confusion.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the file_process.add_files() function.</p>
-</div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
-<li><strong>print_synsets</strong> (<em>boolean</em>) – If True, print disambiguation results</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-<div class="section" id="module-loacore.process.deptree_process">
-<span id="dependency-tree-generation"></span><h3>dependency tree generation<a class="headerlink" href="#module-loacore.process.deptree_process" title="Permalink to this headline">¶</a></h3>
-<dl class="function">
-<dt id="loacore.process.deptree_process.add_dep_tree_from_sentences">
-<code class="descclassname">loacore.process.deptree_process.</code><code class="descname">add_dep_tree_from_sentences</code><span class="sig-paren">(</span><em>sentences</em>, <em>print_result=False</em>, <em>_state_queue=None</em>, <em>_id_process=None</em>, <em>freeling_modules=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.deptree_process.add_dep_tree_from_sentences" title="Permalink to this definition">¶</a></dt>
-<dd><p>Generates the dependency trees of the specified sentences and add the results to the
-database.</p>
-<p>Sentences are firstly converted into “raw” Freeling sentences (without any analysis) and then all the necessary
-Freeling processes are performed.</p>
-<p>The PoS_tag of words are also computed and added to the database in this function.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This function should be used only inside the <code class="xref py py-func docutils literal notranslate"><span class="pre">file_process.add_files()</span></code> function.</p>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">This process can be quite long. (at least a few minutes)</p>
-</div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Sentence" title="loacore.classes.classes.Sentence"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sentence</span></code></a>) – Sentences to process</li>
-<li><strong>print_result</strong> (<em>boolean</em>) – Print PoS_tags and labels associated to each <a class="reference internal" href="classes.html#loacore.classes.classes.Word" title="loacore.classes.classes.Word"><code class="xref py py-class docutils literal notranslate"><span class="pre">Word</span></code></a></li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="dependency-tree-generation">
+<h3>dependency tree generation<a class="headerlink" href="#dependency-tree-generation" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
-<div class="section" id="module-loacore.process.file_process">
-<span id="feed-database"></span><h2>Feed database<a class="headerlink" href="#module-loacore.process.file_process" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="loacore.process.file_process.add_files">
-<code class="descclassname">loacore.process.file_process.</code><code class="descname">add_files</code><span class="sig-paren">(</span><em>file_paths</em>, <em>encoding='utf8'</em>, <em>lang=''</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.process.file_process.add_files" title="Permalink to this definition">¶</a></dt>
-<dd><p>This function performs the full process on all the file_paths specified, and add the results to the corresponding
-tables.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>file_paths</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Paths used to load files</li>
-<li><strong>encoding</strong> (<em>str</em>) – Files encoding.</li>
-<li><strong>lang</strong> (<em>str</em>) – <p>If specify, <em>lang</em> will be used as Freeling language.
-Otherwise, default language is used (See <code class="xref py py-mod docutils literal notranslate"><span class="pre">loacore</span></code>)</p>
-<p>Possible values : ‘as’, ‘ca’, ‘cs’, ‘cy’, ‘de’, ‘en’, ‘es’, ‘fr’, ‘gl’, ‘hr’, ‘it’, ‘nb’, ‘pt’, ‘ru’, ‘sl’)</p>
-<p>See <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html</a> for more details.</p>
-</li>
-<li><strong>workers</strong> (<em>int</em>) – <p>Number of workers used to perform Freeling processes.</p>
-<p>If <em>workers</em> &lt;= 0, Multiprocessing is not used and all the programm is run in a unique process.</p>
-<p>if <em>workers</em> &gt; 0, <em>workers</em> processes are created in addition of the main process. This is useful to take
-advantage of multi-core architectures to greatly speed up the process.</p>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">To control the state of each process when <em>workers</em> &gt; 0, a Python curses app is opened. Notice that
-seems to work badly in PyCharm terminal.</p>
-</div>
-</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-<p>Process and load file from the relative directory <em>data/raw/</em></p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">file_paths</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">dirpath</span><span class="p">,</span> <span class="n">dirnames</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="s1">&#39;raw&#39;</span><span class="p">)):</span>
-    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
-        <span class="n">file_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">dirpath</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
-
-<span class="n">file_process</span><span class="o">.</span><span class="n">add_files</span><span class="p">(</span><span class="n">file_paths</span><span class="p">)</span>
-</pre></div>
-</div>
-</dd></dl>
-
+<div class="section" id="feed-database">
+<h2>Feed database<a class="headerlink" href="#feed-database" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -304,13 +143,13 @@ seems to work badly in PyCharm terminal.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Feeding database : <em>process</em> package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#raw-processes">Raw Processes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#freeling-processes">Freeling Processes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-loacore.process.file_process">Feed database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feed-database">Feed database</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="load.html">Load data from database : <em>load</em> package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analysis.html">Analyse data : <em>analysis</em> package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="learning.html">Machine Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="utils.html">Save and plot results : <em>utils</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html"><em>utils</em> package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="other_examples.html">Other Useful Examples</a></li>
 </ul>
 

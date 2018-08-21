@@ -586,7 +586,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -623,7 +623,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -660,7 +660,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -697,7 +697,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -736,7 +736,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -774,7 +774,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -810,7 +810,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -899,7 +899,7 @@ cursor as an argument.
 If you want to use it, you can initialize <em>c</em> with the following code :</p>
 <div class="last highlight-Python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sqlite3</span> <span class="kn">as</span> <span class="nn">sql</span>
 <span class="kn">from</span> <span class="nn">loacore.conf</span> <span class="kn">import</span> <span class="n">DB_PATH</span>
-<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">)</span>
+<span class="n">conn</span> <span class="o">=</span> <span class="n">sql</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">DB_PATH</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">DB_TIMEOUT</span><span class="p">)</span>
 <span class="n">c</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">cursor</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -1143,7 +1143,7 @@ For example, in Linux, use</p>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="learning.html">Machine Learning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="utils.html">Save and plot results : <em>utils</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utils.html"><em>utils</em> package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="other_examples.html">Other Useful Examples</a></li>
 </ul>
 
