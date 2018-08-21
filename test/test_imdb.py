@@ -67,7 +67,7 @@ def add_all():
     file_process.add_files(file_paths, encoding="utf8", lang="en")
 
 
-def main(workers):
+def main(workers=4):
     # add_train_imdb_neg()
     add_test_imdb_pos(workers)
     # add_all()

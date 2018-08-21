@@ -1,4 +1,3 @@
-import os
 import re
 import sqlite3 as sql
 from loacore.conf import DB_PATH
