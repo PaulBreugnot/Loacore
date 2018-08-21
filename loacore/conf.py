@@ -85,12 +85,24 @@ def check_freeling_path():
     return FR_PATH
 
 
-def _load_conf():
+def _load_conf(config_name=None):
+    if config_name is None:
+        import platform
+        if platform.system() == "Windows":
+            config_name = "windows_default"
+        else:
+            config_name = "linux_default"
+
+    _load_external_conf(config_name)
+    _load_freeling_conf(config_name)
+
+
+def _load_freeling_conf(config_name):
     import sqlite3 as sql
     import platform
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
-    c.execute("SELECT lang, freeling_path FROM Configuration")
+    c.execute("SELECT lang, freeling_path FROM Configuration WHERE config_name = '" + config_name + "'")
     result = c.fetchone()
     global FR_PATH
     if platform.system() == "Windows":
@@ -108,6 +120,44 @@ def _load_conf():
     LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
 
     conn.close()
+
+
+def _load_external_conf(config_name):
+
+    # If external configuration information are found in the current database, global variable at the header of this
+    # file are redefined.
+    # Otherwise, default configuration defined in the header is used.
+
+    import sqlite3 as sql
+    import platform
+    global DB_PATH
+
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
+    c = conn.cursor()
+    c.execute("SELECT result_path, data_path, output_path FROM Configuration WHERE config_name = '" + config_name + "'")
+    result = c.fetchone()
+    if result[0] is not None:
+        global RESULT_PATH
+        if platform.system() == "Windows":
+            RESULT_PATH = os.path.join(result[0].split("\\"))
+        else:
+            RESULT_PATH = os.path.join(result[0].split("/"))
+
+    if result[1] is not None:
+        global DATA_PATH
+        if platform.system() == "Windows":
+            DATA_PATH = os.path.join(result[1].split("\\"))
+        else:
+            DATA_PATH = os.path.join(result[1].split("/"))
+
+        DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
+
+    if result[2] is not None:
+        global OUTPUT_PATH
+        if platform.system() == "Windows":
+            OUTPUT_PATH = os.path.join(result[2].split("\\"))
+        else:
+            OUTPUT_PATH = os.path.join(result[2].split("/"))
 
 
 def _set_temp_lang(temp_lang):
