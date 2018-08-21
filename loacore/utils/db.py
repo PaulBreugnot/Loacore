@@ -59,3 +59,13 @@ def safe_execute(c, request, try_number, state_queue, id_process,  mark_args=Non
                 print("[Process " + str(id_process) + "] Execute fail.")
             else:
                 print("Execute fail.")
+
+
+def download_db(db_url):
+    import os
+    import urllib.request
+    from loacore.conf import DB_PATH
+
+    if os.path.exists(DB_PATH):
+        os.remove(DB_PATH)
+    urllib.request.urlretrieve(db_url, DB_PATH)
