@@ -53,6 +53,11 @@ def set_freeling_path(freeling_path):
 
     :param freeling_path:
         Absolute path of the folder containing the *freeling* folder.\n
+        :example:
+            .. code-block:: console
+
+                /usr/local/share/
+
         The path must always be specified in the following format : */path/to/freeling* .
         Python will then automatically format it according to the current OS.
     :type freeling_path: |path-like-object|
@@ -82,21 +87,25 @@ def check_freeling_path():
 
 def _load_conf():
     import sqlite3 as sql
+    import platform
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT lang, freeling_path FROM Configuration")
     result = c.fetchone()
     global FR_PATH
-    list_path = result[1].split('/')
-    FR_PATH = "/"
+    if platform.system() == "Windows":
+        list_path = result[1].split('\\')
+        FR_PATH = ""
+    else:
+        list_path = result[1].split('/')
+        FR_PATH = "/"
     for path in list_path:
         FR_PATH = os.path.abspath(os.path.join(FR_PATH, path))
-    # print("Freeling path : " + FR_PATH)
+
     global lang
     lang = result[0]
     global LANG_PATH
     LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
-    # print("Language path : " + LANG_PATH)
 
     conn.close()
 

@@ -92,7 +92,7 @@ def download_db(db_url=None, db_name=None):
             confirm_delete()
 
     def show_progress(count, block_size, total_size):
-        print("\rDownloading... {:.0%}".format(count * block_size / total_size), end="")
+        print("\rDownloading... {:.0%}".format(min(count * block_size / total_size, 1)), end="")
 
     from loacore.conf import DATA_PATH
     with database_backup(path=os.path.join(DATA_PATH, "backup.db")):
@@ -175,7 +175,6 @@ class database_backup:
         self.backup_file.flush()
 
     def __exit__(self, exc_type, exc_value, traceback):
-        print("execute exit")
         if exc_type is not None:
             restore_db(self.backup_file)
         if self.path is not None and self.delete_backup:

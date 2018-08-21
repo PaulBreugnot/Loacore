@@ -181,7 +181,7 @@ def test_multiprocessed_load():
 def download_test():
     from loacore.utils.db import download_db
 
-    download_db(db_name="full_uci_imdb")
+    download_db(db_name="new")
 
 
 #file_load.clean_db()
