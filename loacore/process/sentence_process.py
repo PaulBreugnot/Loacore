@@ -40,7 +40,12 @@ def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, fre
 
     added_sentences = []
     review_count = 0
-    total_review = len(reviews)
+    try:
+        total_review = len(reviews)
+    except TypeError:
+        # Review is a ReviewIterator, unkown length.
+        total_review = " - "
+
     for review in reviews:
 
         # Print state

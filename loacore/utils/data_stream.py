@@ -1,3 +1,5 @@
+import pickle
+
 
 class ReviewIterator(object):
     """
@@ -11,10 +13,9 @@ class ReviewIterator(object):
         self.temp_file_list = temp_file_list
 
     def __iter__(self):
-        import pickle
         for file in self.temp_file_list:
-            unpickler = pickle.Unpickler(file)
             file.seek(0)
+            unpickler = pickle.Unpickler(file)
             for review in unpickler.load():
                 yield review
 
