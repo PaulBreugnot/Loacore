@@ -204,6 +204,8 @@ def _load_freeling_conf(config_name):
     result = c.fetchone()
     global FR_PATH
     if platform.system() == "Windows":
+        # C:\ management (otherwise, we get C:foo)
+        result[1][1] = "\\" + result[1][1]
         list_path = result[1].split('\\')
         FR_PATH = ""
     else:
@@ -237,6 +239,10 @@ def _load_external_conf(config_name):
 
     if platform.system() == "Windows":
         split_char = "\\"
+        # C:\ management (otherwise, we get C:foo)
+        result[0][1] = "\\" + result[0][1]
+        result[1][1] = "\\" + result[1][1]
+        result[2][1] = "\\" + result[2][1]
     else:
         split_char = "/"
 
