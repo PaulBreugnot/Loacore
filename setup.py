@@ -10,4 +10,6 @@ setup(name='loacore',
       packages=[''],
       package_data={'': ['data', 'docs']},
       long_description=open('README.md').read(),
-      setup_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable'])
+      install_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable'],
+      dependency_links=['git+https://github.com/PaulBreugnot/PyFreelingApi@master#egg=PyFreelingApi']
+     )
