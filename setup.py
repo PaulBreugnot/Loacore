@@ -9,7 +9,8 @@ setup(name='loacore',
       # packages=find_packages(exclude=['test', 'results', 'resources']),
       packages=find_packages(exclude=['test']),
       # package_dir={'': 'loacore'},
-      package_data={'loacore': ['data']},
+      # package_data={'loacore': ['data']},
+      include_package_data=True,
       long_description=open('README.md').read(),
       install_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable']
       )
