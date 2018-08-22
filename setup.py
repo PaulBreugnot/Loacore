@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='loacore',
       version='0.1',
@@ -7,8 +7,9 @@ setup(name='loacore',
       author_email='paul.breugnot@etu.emse.fr',
       description="Language and Opinion Analyzer For Comments and Reviews",
       # packages=find_packages(exclude=['test', 'results', 'resources']),
-      packages=[''],
-      package_data={'': ['data', 'docs']},
+      packages=[find_packages('loacore')],
+      package_dir={'loacore': 'loacore'}
+      package_data={'loacore': ['data', 'docs']},
       long_description=open('README.md').read(),
       install_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable']
      )
