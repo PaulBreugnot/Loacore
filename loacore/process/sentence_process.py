@@ -4,7 +4,7 @@ from loacore.conf import DB_PATH
 from loacore.classes.classes import Sentence
 from loacore.utils.status import ProcessState
 
-from PyFreelingApi import freeling_api as freeling
+from pyFreelingApi import freeling_api as freeling
 
 
 def add_sentences_from_reviews(reviews, _state_queue=None, _id_process=None, freeling_modules=None):

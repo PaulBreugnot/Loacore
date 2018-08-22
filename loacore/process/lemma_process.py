@@ -3,7 +3,7 @@ import sqlite3 as sql
 from loacore.conf import DB_PATH
 from loacore.utils.status import ProcessState
 
-from PyFreelingApi import freeling_api as freeling
+from pyFreelingApi import freeling_api as freeling
 
 
 def add_lemmas_to_sentences(sentences, print_lemmas=False, _state_queue=None, _id_process=None, freeling_modules=None):

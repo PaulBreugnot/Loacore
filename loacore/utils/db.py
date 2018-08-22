@@ -148,19 +148,27 @@ class database_backup:
         self.delete_backup = delete_backup
         self.backup_file = None
 
-    def write_backup(self):
+    def write_backup(self, temp=True):
         """
-        Write a persistent backup to the file specified at initialization.
+        Write a persistent backup to the file specified at initialization. When this function is used,
+        *self.backup_file* potentially needs to be closed manually.
         """
 
-        if self.path is None:
-            print("No path specified, nothing written.")
+        from loacore.conf import DB_PATH
+
+        if not temp:
+            if self.path is None:
+                print("No path specified, nothing written.")
+            else:
+                self.backup_file = open(self.path, mode="w+b")
+
+                self.backup_file.write(open(DB_PATH, mode="rb").read())
+                self.backup_file.flush()
         else:
-            from loacore.conf import DB_PATH
-            self.backup_file = open(self.path, mode="w+b")
-
+            from tempfile import TemporaryFile
+            self.backup_file = TemporaryFile()
             self.backup_file.write(open(DB_PATH, mode="rb").read())
-            self.backup_file.close()
+            self.backup_file.flush()
 
     def __enter__(self):
         import tempfile
@@ -183,7 +191,7 @@ class database_backup:
         self.backup_file.close()
 
 
-def restore_db(backup_file):
+def restore_db(backup_file, close=False):
     """
     Restore database from the specified backup_file, overriding the current one.
 
@@ -197,6 +205,8 @@ def restore_db(backup_file):
     new_db_file = open(DB_PATH, mode='w+b')
     new_db_file.write(backup_file.read())
     new_db_file.close()
+    if close:
+        backup_file.close()
 
 
 

@@ -5,7 +5,7 @@ from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
 from loacore.utils.status import ProcessState
 
-from PyFreelingApi import freeling_api as freeling
+from pyFreelingApi import freeling_api as freeling
 
 
 def add_dep_tree_from_sentences(sentences, print_result=False,

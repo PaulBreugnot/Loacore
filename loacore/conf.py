@@ -203,16 +203,17 @@ def _load_freeling_conf(config_name):
     c.execute("SELECT lang, freeling_path FROM Configuration WHERE config_name = '" + config_name + "'")
     result = c.fetchone()
     global FR_PATH
-    if platform.system() == "Windows":
-        # C:\ management (otherwise, we get C:foo)
-        result[1][1] = "\\" + result[1][1]
-        list_path = result[1].split('\\')
-        FR_PATH = ""
-    else:
-        list_path = result[1].split('/')
-        FR_PATH = "/"
-    for path in list_path:
-        FR_PATH = os.path.join(FR_PATH, path)
+    FR_PATH = result[1]
+    # if platform.system() == "Windows":
+    #     # C:\ management (otherwise, we get C:foo)
+    #     result[1][1] = "\\" + result[1][1]
+    #     list_path = result[1].split('\\')
+    #     FR_PATH = ""
+    # else:
+    #     list_path = result[1].split('/')
+    #     FR_PATH = "/"
+    # for path in list_path:
+    #     FR_PATH = os.path.join(FR_PATH, path)
 
     global lang
     lang = result[0]
@@ -229,44 +230,56 @@ def _load_external_conf(config_name):
     # Otherwise, default configuration defined in the header is used.
 
     import sqlite3 as sql
-    import platform
+    # import platform
     global DB_PATH
 
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT result_path, data_path, output_path FROM Configuration WHERE config_name = '" + config_name + "'")
     result = c.fetchone()
-
-    if platform.system() == "Windows":
-        split_char = "\\"
-        # C:\ management (otherwise, we get C:foo)
-        result[0][1] = "\\" + result[0][1]
-        result[1][1] = "\\" + result[1][1]
-        result[2][1] = "\\" + result[2][1]
-    else:
-        split_char = "/"
-
     if result[0] is not None:
         global RESULT_PATH
-        RESULT_PATH = ""
-        for path in result[0].split(split_char):
-            RESULT_PATH = os.path.join(RESULT_PATH, path)
+        RESULT_PATH = result[0]
 
     if result[1] is not None:
         global DATA_PATH
-        DATA_PATH = ""
-        for path in result[1].split(split_char):
-            DATA_PATH = os.path.join(DATA_PATH, path)
-            print("Loaded datapath : " + str(DATA_PATH))
-
+        DATA_PATH = result[1]
         DB_PATH = os.path.join(DATA_PATH, 'database', 'reviews.db')
-        print("Resulting db path : " + str(DB_PATH))
 
     if result[2] is not None:
         global OUTPUT_PATH
-        OUTPUT_PATH = ""
-        for path in result[2].split(split_char):
-            OUTPUT_PATH = os.path.join(OUTPUT_PATH, path)
+        OUTPUT_PATH = result[2]
+
+    # if platform.system() == "Windows":
+    #     split_char = "\\"
+    #     # C:\ management (otherwise, we get C:foo)
+    #     result[0][1] = "\\" + result[0][1]
+    #     result[1][1] = "\\" + result[1][1]
+    #     result[2][1] = "\\" + result[2][1]
+    # else:
+    #     split_char = "/"
+    #
+    # if result[0] is not None:
+    #     global RESULT_PATH
+    #     RESULT_PATH = ""
+    #     for path in result[0].split(split_char):
+    #         RESULT_PATH = os.path.join(RESULT_PATH, path)
+    #
+    # if result[1] is not None:
+    #     global DATA_PATH
+    #     DATA_PATH = ""
+    #     for path in result[1].split(split_char):
+    #         DATA_PATH = os.path.join(DATA_PATH, path)
+    #         print("Loaded datapath : " + str(DATA_PATH))
+    #
+    #     DB_PATH = os.path.join(DATA_PATH, 'database', 'reviews.db')
+    #     print("Resulting db path : " + str(DB_PATH))
+    #
+    # if result[2] is not None:
+    #     global OUTPUT_PATH
+    #     OUTPUT_PATH = ""
+    #     for path in result[2].split(split_char):
+    #         OUTPUT_PATH = os.path.join(OUTPUT_PATH, path)
 
 
 def _set_temp_lang(temp_lang):
