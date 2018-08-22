@@ -1,3 +1,0 @@
-A	JJ
-V	V-MD
-N	N

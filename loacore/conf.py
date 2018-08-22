@@ -1,10 +1,10 @@
 import os
 
-RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'results'))
-DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'data'))
+RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'results'))
+DATA_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'data'))
 DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
-RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'resources'))
-OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'output'))
+RESOURCES_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'resources'))
+OUTPUT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'output'))
 
 MAX_DB_COMMIT_ATTEMPTS = 20
 DB_TIMEOUT = 180
