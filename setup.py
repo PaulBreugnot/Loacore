@@ -8,7 +8,7 @@ setup(name='loacore',
       description="Language and Opinion Analyzer For Comments and Reviews",
       # packages=find_packages(exclude=['test', 'results', 'resources']),
       packages=[find_packages('loacore')],
-      package_dir={'loacore': 'loacore'}
+      package_dir={'loacore': 'loacore'},
       package_data={'loacore': ['data', 'docs']},
       long_description=open('README.md').read(),
       install_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable']
