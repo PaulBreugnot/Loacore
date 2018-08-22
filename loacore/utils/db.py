@@ -61,7 +61,7 @@ def safe_execute(c, request, try_number, state_queue, id_process,  mark_args=Non
                 print("Execute fail.")
 
 
-def download_db(db_url=None, db_name=None):
+def download_db(db_url=None, db_name=None, forced=False):
     """
     Download and replace the current database.
     See https://sourceforge.net/projects/loacore/files/Database/ for available databases.
@@ -96,10 +96,11 @@ def download_db(db_url=None, db_name=None):
 
     with database_backup():
         if os.path.exists(DB_PATH):
-            if confirm_delete():
-                os.remove(DB_PATH)
-            else:
-                return
+            if not forced:
+                if confirm_delete():
+                    os.remove(DB_PATH)
+                else:
+                    return
         if db_url is None:
             if db_name is not None:
                 if db_name == "new":

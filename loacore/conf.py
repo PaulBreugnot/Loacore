@@ -141,13 +141,13 @@ def set_data_path(data_path):
     from loacore.load.file_load import clean_db
 
     if not os.path.exists(os.path.join(data_path, "database")):
-        os.makedirs(data_path)
+        os.makedirs(os.path.join(data_path, "database"))
 
     with database_backup():
         conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
         c = conn.cursor()
         print("Updating Configuration...")
-        c.execute("UPDATE Configuration SET output_path = ? WHERE config_name = '" + CURRENT_CONF_NAME + "'",
+        c.execute("UPDATE Configuration SET data_path = ? WHERE config_name = '" + CURRENT_CONF_NAME + "'",
                   (data_path,))
 
         conn.commit()
@@ -163,6 +163,10 @@ def set_data_path(data_path):
 
         # New data paths will be loaded
         _load_conf()
+
+
+def check_data_path():
+    return DATA_PATH
 
 
 def set_external_conf(folder_path):
@@ -184,6 +188,12 @@ def _load_conf(config_name=None):
     _load_external_conf(config_name)
     _load_freeling_conf(config_name)
 
+    print("Freeling path : " + check_freeling_path())
+    print("Default language : " + check_lang())
+    print("Data path : " + check_data_path())
+    print("Result path : " + check_result_path())
+    print("Output path : " + check_output_path())
+
 
 def _load_freeling_conf(config_name):
     import sqlite3 as sql
@@ -200,12 +210,12 @@ def _load_freeling_conf(config_name):
         list_path = result[1].split('/')
         FR_PATH = "/"
     for path in list_path:
-        FR_PATH = os.path.abspath(os.path.join(FR_PATH, path))
+        FR_PATH = os.path.join(FR_PATH, path)
 
     global lang
     lang = result[0]
     global LANG_PATH
-    LANG_PATH = os.path.abspath(os.path.join(FR_PATH, "freeling", lang))
+    LANG_PATH = os.path.join(FR_PATH, "freeling", lang)
 
     conn.close()
 
@@ -232,17 +242,25 @@ def _load_external_conf(config_name):
 
     if result[0] is not None:
         global RESULT_PATH
-        RESULT_PATH = os.path.join(result[0].split(split_char))
+        RESULT_PATH = ""
+        for path in result[0].split(split_char):
+            RESULT_PATH = os.path.join(RESULT_PATH, path)
 
     if result[1] is not None:
         global DATA_PATH
-        DATA_PATH = os.path.join(result[1].split(split_char))
+        DATA_PATH = ""
+        for path in result[1].split(split_char):
+            DATA_PATH = os.path.join(DATA_PATH, path)
+            print("Loaded datapath : " + str(DATA_PATH))
 
-        DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
+        DB_PATH = os.path.join(DATA_PATH, 'database', 'reviews.db')
+        print("Resulting db path : " + str(DB_PATH))
 
     if result[2] is not None:
         global OUTPUT_PATH
-        OUTPUT_PATH = os.path.join(result[2].split(split_char))
+        OUTPUT_PATH = ""
+        for path in result[2].split(split_char):
+            OUTPUT_PATH = os.path.join(OUTPUT_PATH, path)
 
 
 def _set_temp_lang(temp_lang):
