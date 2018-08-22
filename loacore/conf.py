@@ -13,6 +13,7 @@ DB_ERROR_TIMEOUT = 10
 lang = ""
 FR_PATH = ""
 LANG_PATH = ""
+CURRENT_CONF_NAME = ""
 
 
 def set_lang(user_lang):
@@ -29,8 +30,8 @@ def set_lang(user_lang):
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     print("Updating Configuration...")
-    c.execute("DELETE FROM Configuration")
-    c.execute("INSERT INTO Configuration (lang, freeling_path) VALUES (?, ?)", (user_lang, FR_PATH))
+    c.execute("UPDATE Configuration (lang, freeling_path) = (?, ?) WHERE config_name = '" + CURRENT_CONF_NAME + "'",
+              (user_lang, FR_PATH))
 
     conn.commit()
     print("Done.")
@@ -69,7 +70,7 @@ def set_freeling_path(freeling_path):
     c = conn.cursor()
     print("Updating Configuration...")
     c.execute("DELETE FROM Configuration")
-    c.execute("INSERT INTO Configuration (lang, freeling_path) VALUES (?, ?)", (lang, freeling_path))
+    c.execute("INSERT INTO Configuration SET (lang, freeling_path) VALUES (?, ?)", (lang, freeling_path))
 
     conn.commit()
     print("Done.")
@@ -85,7 +86,93 @@ def check_freeling_path():
     return FR_PATH
 
 
+def set_result_path(result_path):
+    import sqlite3 as sql
+
+    if not os.path.exists(result_path):
+        os.makedirs(result_path)
+
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
+    c = conn.cursor()
+    print("Updating Configuration...")
+    c.execute("UPDATE Configuration SET result_path = ? WHERE config_name = '" + CURRENT_CONF_NAME + "'",
+              (result_path, ))
+
+    conn.commit()
+    print("Done.")
+    conn.close()
+
+    _load_conf()
+
+
+def check_result_path():
+    return RESULT_PATH
+
+
+def set_output_path(output_path):
+    import sqlite3 as sql
+
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+
+    conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
+    c = conn.cursor()
+    print("Updating Configuration...")
+    c.execute("UPDATE Configuration SET output_path = ? WHERE config_name = '" + CURRENT_CONF_NAME + "'",
+              (output_path, ))
+
+    conn.commit()
+    print("Done.")
+    conn.close()
+
+    _load_conf()
+
+
+def check_output_path():
+    return OUTPUT_PATH
+
+
+def set_data_path(data_path):
+    # Tricky one, because the program will still need to read the default database at initialization.
+
+    import sqlite3 as sql
+    import shutil
+    from loacore.utils.db import database_backup
+    from loacore.load.file_load import clean_db
+
+    if not os.path.exists(os.path.join(data_path, "database")):
+        os.makedirs(data_path)
+
+    with database_backup():
+        conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
+        c = conn.cursor()
+        print("Updating Configuration...")
+        c.execute("UPDATE Configuration SET output_path = ? WHERE config_name = '" + CURRENT_CONF_NAME + "'",
+                  (data_path,))
+
+        conn.commit()
+        print("Done.")
+        conn.close()
+
+        new_db_path = os.path.abspath(os.path.join(data_path, 'database', 'reviews.db'))
+
+        shutil.copyfile(DB_PATH, new_db_path)
+
+        # Delete everything except Configuration in initialization database
+        clean_db()
+
+        # New data paths will be loaded
+        _load_conf()
+
+
+def set_external_conf(folder_path):
+    set_result_path(os.path.join(folder_path, "result"))
+    set_output_path(os.path.join(folder_path, "output"))
+    set_data_path(os.path.join(folder_path, "data"))
+
+
 def _load_conf(config_name=None):
+    global CURRENT_CONF_NAME
     if config_name is None:
         import platform
         if platform.system() == "Windows":
@@ -93,6 +180,7 @@ def _load_conf(config_name=None):
         else:
             config_name = "linux_default"
 
+    CURRENT_CONF_NAME = config_name
     _load_external_conf(config_name)
     _load_freeling_conf(config_name)
 
@@ -136,28 +224,25 @@ def _load_external_conf(config_name):
     c = conn.cursor()
     c.execute("SELECT result_path, data_path, output_path FROM Configuration WHERE config_name = '" + config_name + "'")
     result = c.fetchone()
+
+    if platform.system() == "Windows":
+        split_char = "\\"
+    else:
+        split_char = "/"
+
     if result[0] is not None:
         global RESULT_PATH
-        if platform.system() == "Windows":
-            RESULT_PATH = os.path.join(result[0].split("\\"))
-        else:
-            RESULT_PATH = os.path.join(result[0].split("/"))
+        RESULT_PATH = os.path.join(result[0].split(split_char))
 
     if result[1] is not None:
         global DATA_PATH
-        if platform.system() == "Windows":
-            DATA_PATH = os.path.join(result[1].split("\\"))
-        else:
-            DATA_PATH = os.path.join(result[1].split("/"))
+        DATA_PATH = os.path.join(result[1].split(split_char))
 
         DB_PATH = os.path.abspath(os.path.join(DATA_PATH, 'database', 'reviews.db'))
 
     if result[2] is not None:
         global OUTPUT_PATH
-        if platform.system() == "Windows":
-            OUTPUT_PATH = os.path.join(result[2].split("\\"))
-        else:
-            OUTPUT_PATH = os.path.join(result[2].split("/"))
+        OUTPUT_PATH = os.path.join(result[2].split(split_char))
 
 
 def _set_temp_lang(temp_lang):
