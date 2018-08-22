@@ -10,4 +10,4 @@ setup(name='loacore',
       packages=[''],
       package_data={'': ['data', 'docs']},
       long_description=open('README.md').read(),
-      setup_requires=['pyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable'])
+      setup_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable'])
