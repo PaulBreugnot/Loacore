@@ -94,8 +94,7 @@ def download_db(db_url=None, db_name=None):
     def show_progress(count, block_size, total_size):
         print("\rDownloading... {:.0%}".format(min(count * block_size / total_size, 1)), end="")
 
-    from loacore.conf import DATA_PATH
-    with database_backup(path=os.path.join(DATA_PATH, "backup.db")):
+    with database_backup():
         if os.path.exists(DB_PATH):
             if confirm_delete():
                 os.remove(DB_PATH)
