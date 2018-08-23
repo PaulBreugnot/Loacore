@@ -8,7 +8,9 @@ from pyFreelingApi import freeling_api as freeling
 def add_files(file_paths, encoding='utf8', lang="", workers=1):
     """
     This function performs the full process on all the file_paths specified, and add the results to the corresponding
-    tables.
+    tables. While file a processing and adding to the database, the :class:`~loacore.utils.db.database_backup` is used
+    so that if an error occurs during the full process (including a user interruption) the database is restored as it
+    was before the call of this function.
 
     :param file_paths: Paths used to load files
     :type file_paths: :obj:`list` of |path-like-object|
@@ -48,6 +50,7 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
 
     """
     from loacore.conf import DB_TIMEOUT
+    from loacore.utils.db import database_backup
 
     if not lang == "":
         from loacore.conf import _set_temp_lang
@@ -56,97 +59,98 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 
-    # Add files
-    files = []
-    for file_path in file_paths:
-        c.execute("INSERT INTO File (File_Path) VALUES (?)", [file_path])
-        conn.commit()
+    with database_backup():
+        # Add files
+        files = []
+        for file_path in file_paths:
+            c.execute("INSERT INTO File (File_Path) VALUES (?)", [file_path])
+            conn.commit()
 
-        # Get back id of last inserted file
-        c.execute("SELECT last_insert_rowid()")
-        id_file = c.fetchone()[0]
+            # Get back id of last inserted file
+            c.execute("SELECT last_insert_rowid()")
+            id_file = c.fetchone()[0]
 
-        # Keep trace of added Files
-        files.append(File(id_file, file_path))
+            # Keep trace of added Files
+            files.append(File(id_file, file_path))
 
-    conn.close()
+        conn.close()
 
-    # ********************************************* RAW DATA ********************************************************* #
+        # ********************************************* RAW DATA ******************************************************#
 
-    # Add all reviews from all files
-    print("==> Normalization")
-    import loacore.process.review_process as review_process
-    reviews = review_process.add_reviews_from_files(files, encoding=encoding)
+        # Add all reviews from all files
+        print("==> Normalization")
+        import loacore.process.review_process as review_process
+        reviews = review_process.add_reviews_from_files(files, encoding=encoding)
 
-    # ****************************************** POLARITY LABEL ****************************************************** #
-    print("==> Adding polarities to DB")
-    import loacore.process.polarity_process as polarity_process
-    polarity_process.add_polarity_from_reviews(reviews)
+        # ****************************************** POLARITY LABEL ***************************************************#
+        print("==> Adding polarities to DB")
+        import loacore.process.polarity_process as polarity_process
+        polarity_process.add_polarity_from_reviews(reviews)
 
-    # ********************************************* FREELING ********************************************************* #
+        # ********************************************* FREELING ********************************************************* #
 
-    split_reviews = _split_reviews(reviews, 500)
-    # reviews.clear()
+        split_reviews = _split_reviews(reviews, 500)
+        # reviews.clear()
 
-    freeling_modules = load_all_freeling_modules()
+        freeling_modules = load_all_freeling_modules()
 
-    if workers <= 0:
-        review_count = 0
-        total_reviews = len(split_reviews)
-        for reviews in split_reviews[0:1]:
-            print("\nProcess review " + str(review_count) + " / " + str(total_reviews))
-            _split_reviews_process(reviews, freeling_modules)
+        if workers <= 0:
+            review_count = 0
+            total_reviews = len(split_reviews)
+            for reviews in split_reviews[0:1]:
+                print("\nProcess review " + str(review_count) + " / " + str(total_reviews))
+                _split_reviews_process(reviews, freeling_modules)
 
-    else:
-        from multiprocessing import Process, Queue
-        import queue
-        process_queue = queue.Queue()
+        else:
+            from multiprocessing import Process, Queue
+            import queue
+            process_queue = queue.Queue()
 
-        index = 0
+            index = 0
 
-        state_queue = Queue(maxsize=100)
+            state_queue = Queue(maxsize=100)
 
-        for reviews in split_reviews:
-            index += 1
-            process_queue.put(
-                Process(
-                    target=_split_reviews_process,
-                    args=(reviews, freeling_modules),
-                    kwargs={'_state_queue': state_queue, '_id_process': index}))
+            for reviews in split_reviews:
+                index += 1
+                process_queue.put(
+                    Process(
+                        target=_split_reviews_process,
+                        args=(reviews, freeling_modules),
+                        kwargs={'_state_queue': state_queue, '_id_process': index}))
 
-        running_processes = []
+            running_processes = []
 
-        import os
-        import sys
-        from loacore.conf import OUTPUT_PATH
-        with open(os.path.join(OUTPUT_PATH, "log.out"), "w") as log_file,\
-                open(os.path.join(OUTPUT_PATH, "error_log.out"), "w") as error_log_file:
-            sys.stdout = log_file
-            sys.stderr = error_log_file
+            import os
+            import sys
+            from loacore.conf import OUTPUT_PATH
+            with open(os.path.join(OUTPUT_PATH, "log.out"), "w") as log_file,\
+                    open(os.path.join(OUTPUT_PATH, "error_log.out"), "w") as error_log_file:
+                sys.stdout = log_file
+                sys.stderr = error_log_file
 
-            printer = Process(target=_print_states_process, args=(index, state_queue))
-            printer.start()
+                printer = Process(target=_print_states_process, args=(index, state_queue))
+                printer.start()
 
-            while not process_queue.empty():
-                    if len(running_processes) < workers:
-                        p = process_queue.get()
-                        p.start()
-                        running_processes.append(p)
-                    terminated_processes = []
-                    for p in running_processes:
-                        if not p.is_alive():
-                            terminated_processes.append(p)
-                    for p in terminated_processes:
-                        running_processes.remove(p)
-            for p in running_processes:
-                p.join()
+                while not process_queue.empty():
+                        if len(running_processes) < workers:
+                            p = process_queue.get()
+                            p.start()
+                            running_processes.append(p)
+                        terminated_processes = []
+                        for p in running_processes:
+                            if not p.is_alive():
+                                terminated_processes.append(p)
+                        for p in terminated_processes:
+                            running_processes.remove(p)
+                for p in running_processes:
+                    p.join()
 
-            running_processes.clear()
-            printer.join()
+                running_processes.clear()
+                printer.join()
 
-    if not lang == "":
-        from loacore.conf import _load_conf
-        _load_conf()
+        if not lang == "":
+            from loacore.conf import _load_conf
+            _load_conf()
 
 
 def _split_reviews(reviews, split_size):
@@ -354,10 +358,11 @@ def load_all_freeling_modules():
     freeling.util_init_locale("default")
 
     from loacore.conf import lang
-    from loacore.conf import LANG_PATH as lpath
+    from loacore.conf import LANG_PATH
+
 
     # create the analyzer with the required set of maco_options
-    morfo = freeling.maco(my_maco_options(lang, lpath))
+    morfo = freeling.maco(my_maco_options(lang, LANG_PATH))
 
     morfo.set_active_options(False,  # UserMap
                              False,  # NumbersDetection,
@@ -372,18 +377,19 @@ def load_all_freeling_modules():
                              False,  # QuantitiesDetection,
                              True)  # ProbabilityAssignment
 
-    tk = freeling.tokenizer(os.path.join(lpath, "tokenizer.dat"))
-    sp = freeling.splitter(os.path.join(lpath, "splitter.dat"))
+    tk = freeling.tokenizer(os.path.join(LANG_PATH, "tokenizer.dat"))
+    sp = freeling.splitter(os.path.join(LANG_PATH, "splitter.dat"))
 
     # create tagger
-    tagger = freeling.hmm_tagger(os.path.join(lpath, "tagger.dat"), False, 2)
+    tagger = freeling.hmm_tagger(os.path.join(LANG_PATH, "tagger.dat"), False, 2)
 
     # create sense annotator
-    sen = freeling.senses(os.path.join(lpath, "senses.dat"))
+    sen = freeling.senses(os.path.join(LANG_PATH, "senses.dat"))
     # create sense disambiguator
-    wsd = freeling.ukb(os.path.join(lpath, "ukb.dat"))
+    wsd = freeling.ukb(os.path.join(LANG_PATH, "ukb.dat"))
     # create dependency parser
-    parser = freeling.dep_treeler(os.path.join(lpath, "dep_treeler", "dependences.dat"))
+    parser = freeling.dep_treeler(os.path.join(LANG_PATH, "dep_treeler", "dependences.dat"))
+    print("Done.")
 
     return {"tk": tk, "sp": sp, "morfo": morfo, "tagger": tagger, "sen": sen, "wsd": wsd, "parser": parser}
 
