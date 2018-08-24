@@ -55,7 +55,7 @@
 
 <dl class="function">
 <dt id="loacore.utils.plot_polarities.save_polarity_pie_charts">
-<code class="descclassname">loacore.utils.plot_polarities.</code><code class="descname">save_polarity_pie_charts</code><span class="sig-paren">(</span><em>file_score_dict</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/sentiment_analysis'</em>, <em>file_name='polarity_pie_charts.pdf'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_polarities.save_polarity_pie_charts" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.utils.plot_polarities.</code><code class="descname">save_polarity_pie_charts</code><span class="sig-paren">(</span><em>file_score_dict</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/loacore/results/sentiment_analysis'</em>, <em>file_name='polarity_pie_charts.pdf'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_polarities.save_polarity_pie_charts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plot polarity pie charts using Matplotlib, and save them into a .pdf file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -77,7 +77,7 @@ Default is set to <em>RESULT_PATH/sentiment_analysis/</em></li>
 
 <span class="target" id="module-loacore.utils.print_patterns"></span><span class="target" id="module-loacore.utils.plot_frequencies"></span><dl class="function">
 <dt id="loacore.utils.plot_frequencies.frequencies_bar_chart">
-<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">frequencies_bar_chart</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>plot=False</em>, <em>save=True</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/frequencies'</em>, <em>file_name='frequencies_bar_chart.pdf'</em>, <em>val_number=0</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.frequencies_bar_chart" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">frequencies_bar_chart</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>plot=False</em>, <em>save=True</em>, <em>gui=False</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/loacore/results/frequencies'</em>, <em>file_name='frequencies_bar_chart.pdf'</em>, <em>val_number=0</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.frequencies_bar_chart" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function allows to plot or save results of <a class="reference internal" href="analysis.html#module-loacore.analysis.frequencies" title="loacore.analysis.frequencies"><code class="xref py py-mod docutils literal notranslate"><span class="pre">loacore.analysis.frequencies</span></code></a>.</p>
 <p>If plot is set to True, results will be presented in a matplotlib figure, but <em>save</em> will be set to False.
 (matplotlib restriction)</p>
@@ -130,7 +130,7 @@ is not necessarily true for the others. This could also be useful to consider wh
 
 <dl class="function">
 <dt id="loacore.utils.plot_frequencies.write_frequencies">
-<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">write_frequencies</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/results/frequencies/tables'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.write_frequencies" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.utils.plot_frequencies.</code><code class="descname">write_frequencies</code><span class="sig-paren">(</span><em>files_frequencies</em>, <em>file_path='/home/paulbreugnot/Development/Python/workspace/Loacore/loacore/results/frequencies/tables'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.plot_frequencies.write_frequencies" title="Permalink to this definition">¶</a></dt>
 <dd><p>Write frequencies to a txt file in file_path folder. Original raw file names are used.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -226,15 +226,16 @@ the execution of wrapped code.</p>
 
 <dl class="method">
 <dt id="loacore.utils.db.database_backup.write_backup">
-<code class="descname">write_backup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.database_backup.write_backup" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write a persistent backup to the file specified at initialization.</p>
+<code class="descname">write_backup</code><span class="sig-paren">(</span><em>temp=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.database_backup.write_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a persistent backup to the file specified at initialization. When this function is used,
+<em>self.backup_file</em> potentially needs to be closed manually.</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="function">
 <dt id="loacore.utils.db.download_db">
-<code class="descclassname">loacore.utils.db.</code><code class="descname">download_db</code><span class="sig-paren">(</span><em>db_url=None</em>, <em>db_name=None</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.download_db" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.utils.db.</code><code class="descname">download_db</code><span class="sig-paren">(</span><em>db_url=None</em>, <em>db_name=None</em>, <em>forced=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.download_db" title="Permalink to this definition">¶</a></dt>
 <dd><p>Download and replace the current database.
 See <a class="reference external" href="https://sourceforge.net/projects/loacore/files/Database/">https://sourceforge.net/projects/loacore/files/Database/</a> for available databases.</p>
 <p>The use of <a class="reference internal" href="#loacore.utils.db.database_backup" title="loacore.utils.db.database_backup"><code class="xref py py-class docutils literal notranslate"><span class="pre">database_backup</span></code></a> as a context manager ensure that the database will be restored if an exception
@@ -255,7 +256,7 @@ occurs (e.g.: Download fail or user interruption)</p>
 
 <dl class="function">
 <dt id="loacore.utils.db.restore_db">
-<code class="descclassname">loacore.utils.db.</code><code class="descname">restore_db</code><span class="sig-paren">(</span><em>backup_file</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.restore_db" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.utils.db.</code><code class="descname">restore_db</code><span class="sig-paren">(</span><em>backup_file</em>, <em>close=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.db.restore_db" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restore database from the specified backup_file, overriding the current one.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

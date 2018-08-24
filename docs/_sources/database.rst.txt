@@ -1,0 +1,3 @@
+Database
+========
+Loacore allow you to represent a text document as a set of entries in an SQL database, allow various SQL based analysis and statistics.
