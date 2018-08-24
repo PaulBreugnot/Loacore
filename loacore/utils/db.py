@@ -95,12 +95,13 @@ def download_db(db_url=None, db_name=None, forced=False, unexisting_db=False):
         print("\rDownloading... {:.0%}".format(min(count * block_size / total_size, 1)), end="")
         
     def download():
-         if os.path.exists(DB_PATH):
+        if os.path.exists(DB_PATH):
             if not forced:
                 if confirm_delete():
                     os.remove(DB_PATH)
                 else:
                     return
+        nonlocal db_url
         if db_url is None:
             if db_name is not None:
                 if db_name == "new":
