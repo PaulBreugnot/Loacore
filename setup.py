@@ -16,5 +16,5 @@ setup(name='loacore',
                                 'results/*',
                                 'output/*']},
       long_description=open('README.md').read(),
-      install_requires=['PyFreelingApi', 'nltk', 'matplotlib', 'PrettyTable']
+      install_requires=['nltk', 'matplotlib', 'PrettyTable']
       )
