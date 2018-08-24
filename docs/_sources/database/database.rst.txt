@@ -1,0 +1,56 @@
+Database
+========
+Loacore allow you to represent a text document as a set of entries in an SQL database, allow various SQL based analysis and statistics.
+
+.. image:: nlp_database.png
+
+Main Structure
+--------------
+
+.. image:: main_db_structure.png
+
+This part stricly contains all the information of the original texts files, meaning that the full content and structure of the original text can be retrieve from those tables without any loss of information.
+
+File table
+**********
+
+   - File_Name : an arbitrary name for each file, that should be unique. In Loacore, the absolute path of the added file is used, but the user is free to change File_Name as he wants.
+
+   **SQL requests examples**
+   
+   .. code-block:: sql
+      
+      # Select all file name
+      SELECT File_Name FROM File;
+
+      # Select number of files in database
+      SELECT count(*) FROM File;
+
+Reviews table
+*************
+This table contains reviews originally contained in each files.
+
+   - ID_File : id of the associated file.
+   - File_Index : position of the review inside the file (starting from 0).
+   - Review : a string representation of the review.
+
+   .. note::
+
+      Considering the following structures of Sentence and Word, the attribute review is not necessary.
+      However, Freeling processes are made from those representations in practice.
+
+   **SQL requests examples**
+
+   .. code-block:: sql
+      
+      # Select reviews content of file 1
+      SELECT Review FROM Review ORDER BY File_Index WHERE ID_File = 1;
+
+      # Select review count in each file
+      SELECT File_Name, count(*) FROM File JOIN Review ON File.ID_File = Review.ID_File GROUP BY File_Name;
+
+Sentence table
+**************
+Abstract representation of sentences, that links reviews to words.
+
+   - ID_Review : id of the associated review.

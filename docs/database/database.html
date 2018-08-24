@@ -1,0 +1,172 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Database &#8212; Loacore : Language and Opinion Analyzer for Comments and Reviews  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Classes" href="../classes.html" />
+    <link rel="prev" title="Configuration" href="../configuration.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="database">
+<h1>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h1>
+<p>Loacore allow you to represent a text document as a set of entries in an SQL database, allow various SQL based analysis and statistics.</p>
+<img alt="../_images/nlp_database.png" src="../_images/nlp_database.png" />
+<div class="section" id="main-structure">
+<h2>Main Structure<a class="headerlink" href="#main-structure" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/main_db_structure.png" src="../_images/main_db_structure.png" />
+<p>This part stricly contains all the information of the original texts files, meaning that the full content and structure of the original text can be retrieve from those tables without any loss of information.</p>
+<div class="section" id="file-table">
+<h3>File table<a class="headerlink" href="#file-table" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li>File_Name : an arbitrary name for each file, that should be unique. In Loacore, the absolute path of the added file is used, but the user is free to change File_Name as he wants.</li>
+</ul>
+<p><strong>SQL requests examples</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="o">#</span> <span class="k">Select</span> <span class="k">all</span> <span class="n">file</span> <span class="n">name</span>
+<span class="k">SELECT</span> <span class="n">File_Name</span> <span class="k">FROM</span> <span class="n">File</span><span class="p">;</span>
+
+<span class="o">#</span> <span class="k">Select</span> <span class="nb">number</span> <span class="k">of</span> <span class="n">files</span> <span class="k">in</span> <span class="k">database</span>
+<span class="k">SELECT</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span><span class="p">;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="reviews-table">
+<h3>Reviews table<a class="headerlink" href="#reviews-table" title="Permalink to this headline">¶</a></h3>
+<p>This table contains reviews originally contained in each files.</p>
+<blockquote>
+<div><ul class="simple">
+<li>ID_File : id of the associated file.</li>
+<li>File_Index : position of the review inside the file (starting from 0).</li>
+<li>Review : a string representation of the review.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Considering the following structures of Sentence and Word, the attribute review is not necessary.
+However, Freeling processes are made from those representations in practice.</p>
+</div>
+<p><strong>SQL requests examples</strong></p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="o">#</span> <span class="k">Select</span> <span class="n">reviews</span> <span class="n">content</span> <span class="k">of</span> <span class="n">file</span> <span class="mi">1</span>
+<span class="k">SELECT</span> <span class="n">Review</span> <span class="k">FROM</span> <span class="n">Review</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">File_Index</span> <span class="k">WHERE</span> <span class="n">ID_File</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="o">#</span> <span class="k">Select</span> <span class="n">review</span> <span class="k">count</span> <span class="k">in</span> <span class="k">each</span> <span class="n">file</span>
+<span class="k">SELECT</span> <span class="n">File_Name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span> <span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">File</span><span class="p">.</span><span class="n">ID_File</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_File</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">File_Name</span><span class="p">;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="sentence-table">
+<h3>Sentence table<a class="headerlink" href="#sentence-table" title="Permalink to this headline">¶</a></h3>
+<p>Abstract representation of sentences, that links reviews to words.</p>
+<blockquote>
+<div><ul class="simple">
+<li>ID_Review : id of the associated review.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Loacore : Language and Opinion Analyzer for Comments and Reviews</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirements.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Database</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#main-structure">Main Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../classes.html">Classes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process.html">Feeding database : <em>process</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../load.html">Load data from database : <em>load</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analysis.html">Analyse data : <em>analysis</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../learning.html">Machine Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../utils.html"><em>utils</em> package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../other_examples.html">Other Useful Examples</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../configuration.html" title="previous chapter">Configuration</a></li>
+      <li>Next: <a href="../classes.html" title="next chapter">Classes</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Universidad Tecnológica de Pereira.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/database/database.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
