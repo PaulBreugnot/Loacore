@@ -61,7 +61,7 @@ def safe_execute(c, request, try_number, state_queue, id_process,  mark_args=Non
                 print("Execute fail.")
 
 
-def download_db(db_url=None, db_name=None, forced=False):
+def download_db(db_url=None, db_name=None, forced=False, unexisting_db=False):
     """
     Download and replace the current database.
     See https://sourceforge.net/projects/loacore/files/Database/ for available databases.
@@ -93,9 +93,9 @@ def download_db(db_url=None, db_name=None, forced=False):
 
     def show_progress(count, block_size, total_size):
         print("\rDownloading... {:.0%}".format(min(count * block_size / total_size, 1)), end="")
-
-    with database_backup():
-        if os.path.exists(DB_PATH):
+        
+    def download():
+         if os.path.exists(DB_PATH):
             if not forced:
                 if confirm_delete():
                     os.remove(DB_PATH)
@@ -111,6 +111,10 @@ def download_db(db_url=None, db_name=None, forced=False):
         if db_url is not None:
                 urllib.request.urlretrieve(db_url, DB_PATH, show_progress)
                 print("\nDatabase successfully downloaded.")
+   
+    with database_backup():
+        download()
+       
 
 
 class database_backup:
@@ -162,7 +166,7 @@ class database_backup:
             else:
                 self.backup_file = open(self.path, mode="w+b")
 
-                self.backup_file.write(open(DB_PATH, mode="rb").read())
+                self.backup_file.write(open(DB_PATH, mode="w+b").read())
                 self.backup_file.flush()
         else:
             from tempfile import TemporaryFile
@@ -179,7 +183,7 @@ class database_backup:
         else:
             self.backup_file = open(self.path, mode="w+b")
 
-        self.backup_file.write(open(DB_PATH, mode="rb").read())
+        self.backup_file.write(open(DB_PATH, mode="w+b").read())
         self.backup_file.flush()
 
     def __exit__(self, exc_type, exc_value, traceback):
