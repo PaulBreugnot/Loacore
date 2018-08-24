@@ -61,7 +61,7 @@ def safe_execute(c, request, try_number, state_queue, id_process,  mark_args=Non
                 print("Execute fail.")
 
 
-def download_db(db_url=None, db_name=None, forced=False, unexisting_db=False):
+def download_db(db_url=None, db_name=None, forced=False):
     """
     Download and replace the current database.
     See https://sourceforge.net/projects/loacore/files/Database/ for available databases.
@@ -110,8 +110,14 @@ def download_db(db_url=None, db_name=None, forced=False, unexisting_db=False):
                     db_url = "https://sourceforge.net/projects/loacore/files/Database/full_uci_imdb.db/download"
 
         if db_url is not None:
-                urllib.request.urlretrieve(db_url, DB_PATH, show_progress)
-                print("\nDatabase successfully downloaded.")
+            temp_file, headers = urllib.request.urlretrieve(db_url, reporthook=show_progress)
+            d = open(temp_file, mode="rb")
+            print("Content length : " + str(len(d.read())))
+            d.seek(0)
+            print("Content length : " + str(len(d.read())))
+            restore_db(d)
+            print(headers)
+            print("\nDatabase successfully downloaded.")
    
     with database_backup():
         download()
@@ -165,14 +171,14 @@ class database_backup:
                 print("No path specified, nothing written.")
             else:
                 self.backup_file = open(self.path, mode="w+b")
-                db_file = open(DB_PATH, mode="w+b")
+                db_file = open(DB_PATH, mode="a+b")
                 self.backup_file.write(db_file.read())
                 db_file.close()
                 self.backup_file.flush()
         else:
             from tempfile import TemporaryFile
             self.backup_file = TemporaryFile()
-            db_file = open(DB_PATH, mode="w+b")
+            db_file = open(DB_PATH, mode="a+b")
             self.backup_file.write(db_file.read())
             db_file.close()
             self.backup_file.flush()
@@ -186,7 +192,7 @@ class database_backup:
         else:
             self.backup_file = open(self.path, mode="w+b")
 
-        db_file = open(DB_PATH, mode="w+b")
+        db_file = open(DB_PATH, mode="a+b")
         self.backup_file.write(db_file.read())
         db_file.close()
         self.backup_file.flush()
@@ -209,7 +215,9 @@ def restore_db(backup_file, close=False):
     """
     from loacore.conf import DB_PATH
 
+    backup_file.seek(0)
     print("\n==> Restoring database...\n")
+    print("Content length (restore): " + str(len(backup_file.read())))
     backup_file.seek(0)
     new_db_file = open(DB_PATH, mode='w+b')
     new_db_file.write(backup_file.read())
