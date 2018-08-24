@@ -115,7 +115,6 @@ def download_db(db_url=None, db_name=None, forced=False, unexisting_db=False):
    
     with database_backup():
         download()
-       
 
 
 class database_backup:
@@ -166,13 +165,16 @@ class database_backup:
                 print("No path specified, nothing written.")
             else:
                 self.backup_file = open(self.path, mode="w+b")
-
-                self.backup_file.write(open(DB_PATH, mode="w+b").read())
+                db_file = open(DB_PATH, mode="w+b")
+                self.backup_file.write(db_file.read())
+                db_file.close()
                 self.backup_file.flush()
         else:
             from tempfile import TemporaryFile
             self.backup_file = TemporaryFile()
-            self.backup_file.write(open(DB_PATH, mode="rb").read())
+            db_file = open(DB_PATH, mode="w+b")
+            self.backup_file.write(db_file.read())
+            db_file.close()
             self.backup_file.flush()
 
     def __enter__(self):
@@ -184,7 +186,9 @@ class database_backup:
         else:
             self.backup_file = open(self.path, mode="w+b")
 
-        self.backup_file.write(open(DB_PATH, mode="w+b").read())
+        db_file = open(DB_PATH, mode="w+b")
+        self.backup_file.write(db_file.read())
+        db_file.close()
         self.backup_file.flush()
 
     def __exit__(self, exc_type, exc_value, traceback):
