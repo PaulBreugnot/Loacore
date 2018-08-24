@@ -5,7 +5,7 @@ def check_db():
     if not os.path.exists(DB_PATH):
         import loacore.utils.db as db
         print("No database available. A new database will be downloaded.")
-        db.download_db("new")
+        db.download_db(db_name="new")
 
 
 RESULT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'results'))
