@@ -9,8 +9,8 @@ def write():
     files = file_load.load_database(load_deptrees=False)
 
     for file in files:
-        directory = re.findall(r'../../data/raw/(.+)', file.file_path)
-        filename = re.findall(r'.+/(.+\.txt)', file.file_path)
+        directory = re.findall(r'../../data/raw/(.+)', file.file_name)
+        filename = re.findall(r'.+/(.+\.txt)', file.file_name)
         text = ''
         for review in file.reviews:
             text += (str(review.file_index) + '\t')

@@ -9,9 +9,9 @@ class File:
 
     """
 
-    def __init__(self, id_file, file_path):
+    def __init__(self, id_file, file_name):
         self.id_file = id_file
-        self.file_path = file_path
+        self.file_name = file_name
         self.reviews = []
 
     def sentence_list(self):
@@ -28,12 +28,12 @@ class File:
 
     def get_directory_name(self):
         import re
-        return re.findall(r'.*/(.+)/.+\.txt', self.file_path)[0]
+        return re.findall(r'.*/(.+)/.+\.txt', self.file_name)[0]
 
     def get_filename(self):
 
         import re
-        return re.findall(r'.+/(.+\.txt)', self.file_path)[0]
+        return re.findall(r'.+/(.+\.txt)', self.file_name)[0]
 
     @staticmethod
     def sentence_list_from_files(files):
@@ -58,7 +58,7 @@ class File:
             Source file encoding. Default : *utf8*.
         :return: file object
         """
-        return open(self.file_path, encoding=encoding)
+        return open(self.file_name, encoding=encoding)
 
 
 class Review:

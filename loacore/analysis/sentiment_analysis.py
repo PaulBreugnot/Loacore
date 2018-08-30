@@ -9,6 +9,7 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
 
     :param reviews: Files to process
     :type reviews: :obj:`list` of |Review|
+    :return: Reviews with polarity.
 
     :Example:
 
@@ -24,9 +25,15 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
             reviews = review_load.load_reviews_by_id_files(id_files=ids, load_sentences=True, load_words=True)
             sentiment_analysis.compute_simple_reviews_polarity(reviews, commit_polarities=True)
 
+    .. warning::
 
+        If *reviews* have been loaded in temporary files (with *load_in_temp_file=True* in
+        :func:`~loacore.load.file_load.load_database()`), input *reviews* (that is an iterator) won't be modified
+        dynamically. However, results can be committed to database normally, and results will be available in the
+        returned reviews list (that is a shallow copy of the iterator elements, with added polarities).
     """
 
+    modified_reviews = []
     for review in reviews:
         review_pos_score = 0
         review_neg_score = 0
@@ -45,9 +52,13 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         else:
             review.polarities["simple"] = Polarity(None, "simple", review.id_review, 0, 0, 0)
 
+        modified_reviews.append(review)
+
     if commit_polarities:
         import loacore.process.polarity_process as polarity_process
-        polarity_process.commit_polarities(reviews, "simple")
+        polarity_process.commit_polarities(modified_reviews, "simple")
+
+    return modified_reviews
 
 
 def compute_simple_files_polarity(files):
@@ -140,7 +151,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
     from loacore.conf import set_lang
     set_lang(freeling_lang)
 
-    import ressources.pyfreeling as freeling
+    from pyFreelingApi import freeling_api as freeling
     from nltk.corpus import wordnet as wn
     from nltk.corpus import sentiwordnet as swn
 

@@ -12,7 +12,7 @@ def _load_files_by_id_files(id_files):
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     for id_file in id_files:
-        c.execute("SELECT ID_File, File_Path FROM File WHERE ID_File = " + str(id_file))
+        c.execute("SELECT ID_File, File_Name FROM File WHERE ID_File = " + str(id_file))
         result = c.fetchone()
         if result is not None:
             files.append(File(result[0], result[1]))
@@ -28,7 +28,7 @@ def _load_files():
 
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
-    c.execute("SELECT ID_File, File_Path FROM File")
+    c.execute("SELECT ID_File, File_Name FROM File")
 
     files = []
     results = c.fetchall()
@@ -39,9 +39,9 @@ def _load_files():
     return files
 
 
-def load_database(id_files=[],
+def load_database(id_files=(),
                   load_reviews=True, load_polarities=True, load_sentences=True, load_words=True, load_deptrees=True,
-                  load_in_temp_file=True,
+                  load_in_temp_file=False,
                   workers=1):
     """
     Load the complete database as a :obj:`list` of |File| , with all the dependencies specified in parameters
@@ -82,7 +82,7 @@ def load_database(id_files=[],
 
         >>> import loacore.load.file_load as file_load
         >>> files = file_load.load_database(id_files=[1, 2, 3], load_reviews=False)
-        >>> print([f.file_path for f in files])
+        >>> print([f.file_name for f in files])
         ['../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_EO.txt',
         '../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_CC.txt',
         '../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_GR.txt']
@@ -105,7 +105,6 @@ def load_database(id_files=[],
 
     """
 
-    from loacore.conf import DB_TIMEOUT
     # Load Files
     if len(id_files) == 0:
         files = _load_files()
@@ -267,7 +266,7 @@ def get_id_files_by_file_path(file_path_re):
     files = load_database(load_reviews=False, load_sentences=False, load_words=False, load_deptrees=False)
     for file in files:
         regexp = file_path_re
-        if re.fullmatch(regexp, file.file_path) is not None:
+        if re.fullmatch(regexp, file.file_name) is not None:
             id_files.append(file.id_file)
 
     return list(set(id_files))
@@ -285,7 +284,7 @@ def remove_files(files):
     c = conn.cursor()
     c.execute("PRAGMA foreign_keys = on")
     for file in files:
-        c.execute("DELETE FROM File WHERE File_Path = '" + file.file_path + "'")
+        c.execute("DELETE FROM File WHERE File_Path = '" + file.file_name + "'")
 
     conn.commit()
     conn.close()

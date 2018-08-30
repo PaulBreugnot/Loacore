@@ -37,6 +37,6 @@ def commit_polarities(reviews, label):
                   "VALUES (?, ?, ?, ?, ?)",
                   (polarity.analysis, review.id_review,
                    polarity.pos_score, polarity.neg_score, polarity.obj_score))
-        conn.commit()
+    conn.commit()
 
     conn.close()

@@ -29,7 +29,7 @@ def save_polarity_pie_charts(file_score_dict, gui=False,
     import loacore.load.file_load as file_load
     files = file_load.load_database(id_files=file_score_dict.keys(), load_reviews=False, load_sentences=False,
                                     load_words=False, load_deptrees=False)
-    pies_titles = [re.findall(r'.+/(.+\.txt)', f.file_path)[0] for f in files]
+    pies_titles = [re.findall(r'.+/(.+\.txt)', f.file_name)[0] for f in files]
 
     index = 0
     colors = ['green', 'red', 'skyblue']
@@ -91,7 +91,7 @@ def print_polarity_table(file_score_dict):
     import loacore.load.file_load as file_load
     files = file_load.load_database(id_files=file_score_dict.keys(), load_reviews=False, load_sentences=False,
                                     load_words=False, load_deptrees=False)
-    file_names = dict([(f.id_file, re.findall(r'.+/(.+\.txt)', f.file_path)[0]) for f in files])
+    file_names = dict([(f.id_file, re.findall(r'.+/(.+\.txt)', f.file_name)[0]) for f in files])
     table = PrettyTable(['File', 'Pos_Score', 'Neg_Score', 'Obj_Score'])
     for id_file in file_score_dict.keys():
         table.add_row([file_names[id_file], "%.3f" % file_score_dict[id_file][0], "%.3f" % file_score_dict[id_file][1],
