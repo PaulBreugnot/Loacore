@@ -417,6 +417,7 @@ def bigram_pos_tag_frequencies(files, tag_len=2):
 
     """
     from collections import OrderedDict
+    from loacore.conf import DB_TIMEOUT
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
 

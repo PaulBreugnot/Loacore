@@ -162,7 +162,7 @@ class Sentence:
 
         if colored_polarity:
             sentence_str = ' '.join([w.colored_word() for w in self.words])
-            sentence_str += '\033[30m'
+            sentence_str += '\033[0m'
         else:
             sentence_str = ' '.join([w.word for w in self.words])
 
@@ -260,11 +260,11 @@ class Word:
         """
         if self.synset is not None:
             if self.synset.pos_score > self.synset.neg_score:
-                return '\033[32m' + self.word
+                return '\033[32m' + self.word + '\033[0m'
             if self.synset.pos_score < self.synset.neg_score:
-                return '\033[31m' + self.word
-            return '\033[33m' + self.word
-        return '\033[30m' + self.word
+                return '\033[31m' + self.word + '\033[0m'
+            return '\033[33m' + self.word + '\033[0m'
+        return '\033[0m' + self.word + '\033[0m'
 
 
 class Synset:

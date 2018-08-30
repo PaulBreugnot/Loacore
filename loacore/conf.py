@@ -62,14 +62,7 @@ def set_freeling_path(freeling_path):
     Changes are permanent, until the next call to :func:`~loacore.conf.set_freeling_path`.\n
 
     :param freeling_path:
-        Absolute path of the folder containing the *freeling* folder.\n
-        :example:
-            .. code-block:: console
-
-                /usr/local/share/
-
-        The path must always be specified in the following format : */path/to/freeling* .
-        Python will then automatically format it according to the current OS.
+        Absolute path of the folder containing the *freeling* folder.
     :type freeling_path: |path-like-object|
     """
 
@@ -90,12 +83,20 @@ def set_freeling_path(freeling_path):
 
 def check_freeling_path():
     """
-    Return current *freeling_path*.
+    :return: Current *freeling_path*.
     """
     return FR_PATH
 
 
 def set_result_path(result_path):
+    """
+    Set result path. A new folder will be created if it doesn't exist.
+    Changes are permanent, until the next call to :func:`~loacore.conf.set_result_path`.\n
+
+    :param result_path:
+        Absolute path of the folder containing the *result* folder.
+    :type result_path: |path-like-object|
+    """
     import sqlite3 as sql
 
     if not os.path.exists(result_path):
@@ -115,10 +116,21 @@ def set_result_path(result_path):
 
 
 def check_result_path():
+    """
+    :return: Current *result_path*
+    """
     return RESULT_PATH
 
 
 def set_output_path(output_path):
+    """
+    Set output path. A new folder will be created if it doesn't exist.
+    Changes are permanent, until the next call to :func:`~loacore.conf.set_output_path`.\n
+
+    :param output_path:
+        Absolute path of the folder containing the *result* folder.
+    :type output_path: |path-like-object|
+    """
     import sqlite3 as sql
 
     if not os.path.exists(output_path):
@@ -138,10 +150,21 @@ def set_output_path(output_path):
 
 
 def check_output_path():
+    """
+    :return: Current *output_path*
+    """
     return OUTPUT_PATH
 
 
 def set_data_path(data_path):
+    """
+    Set data path. A new folder will be created if it doesn't exist.
+    Changes are permanent, until the next call to :func:`~loacore.conf.set_data_path`.\n
+
+    :param data_path:
+        Absolute path of the folder containing the *result* folder.
+    :type data_path: |path-like-object|
+    """
     # Tricky one, because the program will still need to read the default database at initialization.
 
     import sqlite3 as sql
@@ -175,10 +198,22 @@ def set_data_path(data_path):
 
 
 def check_data_path():
+    """
+    :return: Current *data_path*
+    """
     return DATA_PATH
 
 
 def set_external_conf(folder_path):
+    """
+    Set a path for all external data/output, creating *result*, *output* and *data* folders at the specified path.
+    Configuration is updated calling :func:`~loacore.conf.set_result_path`, :func:`~loacore.conf.set_output_path` and
+    :func:`~loacore.conf.set_data_path`.
+
+    :param folder_path:
+        Absolute path of the folder containing the *result*, *output* and *data* folders.
+    :type data_path: |path-like-object|
+    """
     set_result_path(os.path.join(folder_path, "result"))
     set_output_path(os.path.join(folder_path, "output"))
     set_data_path(os.path.join(folder_path, "data"))

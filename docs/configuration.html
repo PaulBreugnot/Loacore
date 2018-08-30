@@ -15,7 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Classes" href="classes.html" />
+    <link rel="next" title="Database" href="database/database.html" />
     <link rel="prev" title="Requirements" href="requirements.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -36,15 +36,92 @@
   <div class="section" id="module-loacore.conf">
 <span id="configuration"></span><h1>Configuration<a class="headerlink" href="#module-loacore.conf" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
+<dt id="loacore.conf.check_data_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">check_data_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_data_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Current <em>data_path</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
 <dt id="loacore.conf.check_freeling_path">
 <code class="descclassname">loacore.conf.</code><code class="descname">check_freeling_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_freeling_path" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return current <em>freeling_path</em>.</p>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Current <em>freeling_path</em>.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="function">
 <dt id="loacore.conf.check_lang">
 <code class="descclassname">loacore.conf.</code><code class="descname">check_lang</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_lang" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return current <em>lang</em>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.check_output_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">check_output_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_output_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Current <em>output_path</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.check_result_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">check_result_path</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.check_result_path" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">Current <em>result_path</em></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_data_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_data_path</code><span class="sig-paren">(</span><em>data_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_data_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set data path. A new folder will be created if it doesn’t exist.
+Changes are permanent, until the next call to <a class="reference internal" href="#loacore.conf.set_data_path" title="loacore.conf.set_data_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_data_path()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>data_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Absolute path of the folder containing the <em>result</em> folder.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_external_conf">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_external_conf</code><span class="sig-paren">(</span><em>folder_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_external_conf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a path for all external data/output, creating <em>result</em>, <em>output</em> and <em>data</em> folders at the specified path.
+Configuration is updated calling <a class="reference internal" href="#loacore.conf.set_result_path" title="loacore.conf.set_result_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_result_path()</span></code></a>, <a class="reference internal" href="#loacore.conf.set_output_path" title="loacore.conf.set_output_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_output_path()</span></code></a> and
+<a class="reference internal" href="#loacore.conf.set_data_path" title="loacore.conf.set_data_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_data_path()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>folder_path</strong> – Absolute path of the folder containing the <em>result</em>, <em>output</em> and <em>data</em> folders.</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <dl class="function">
@@ -56,21 +133,7 @@ Changes are permanent, until the next call to <a class="reference internal" href
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>freeling_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – <p>Absolute path of the folder containing the <em>freeling</em> folder.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">example:</th><td class="field-body"><div class="first last highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/usr/local/share/</span>
-</pre></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p>The path must always be specified in the following format : <em>/path/to/freeling</em> .
-Python will then automatically format it according to the current OS.</p>
-</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>freeling_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Absolute path of the folder containing the <em>freeling</em> folder.</td>
 </tr>
 </tbody>
 </table>
@@ -87,6 +150,36 @@ Python will then automatically format it according to the current OS.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>user_lang</strong> (<em>str</em>) – Freeling language</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_output_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_output_path</code><span class="sig-paren">(</span><em>output_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_output_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set output path. A new folder will be created if it doesn’t exist.
+Changes are permanent, until the next call to <a class="reference internal" href="#loacore.conf.set_output_path" title="loacore.conf.set_output_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_output_path()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>output_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Absolute path of the folder containing the <em>result</em> folder.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.conf.set_result_path">
+<code class="descclassname">loacore.conf.</code><code class="descname">set_result_path</code><span class="sig-paren">(</span><em>result_path</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.conf.set_result_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set result path. A new folder will be created if it doesn’t exist.
+Changes are permanent, until the next call to <a class="reference internal" href="#loacore.conf.set_result_path" title="loacore.conf.set_result_path"><code class="xref py py-func docutils literal notranslate"><span class="pre">set_result_path()</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>result_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Absolute path of the folder containing the <em>result</em> folder.</td>
 </tr>
 </tbody>
 </table>
@@ -116,6 +209,7 @@ Python will then automatically format it according to the current OS.</p>
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database/database.html">Database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Feeding database : <em>process</em> package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="load.html">Load data from database : <em>load</em> package</a></li>
@@ -130,7 +224,7 @@ Python will then automatically format it according to the current OS.</p>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
       <li>Previous: <a href="requirements.html" title="previous chapter">Requirements</a></li>
-      <li>Next: <a href="classes.html" title="next chapter">Classes</a></li>
+      <li>Next: <a href="database/database.html" title="next chapter">Database</a></li>
   </ul></li>
 </ul>
 </div>

@@ -75,7 +75,7 @@ def write_polarity_check(files,
         If True, write words with colored polarity. Notice that colors are not display in most of the .txt editors.
         For example, in Linux, use
 
-            .. code-block:: BashLexer
+            .. code-block:: console
 
                 cat file_name.txt
 
