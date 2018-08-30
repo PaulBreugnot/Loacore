@@ -9,7 +9,10 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
 
     :param reviews: Files to process
     :type reviews: :obj:`list` of |Review|
+    :param commit_polarities: If True, results will be committed to database.
+    :type commit_polarities: bool
     :return: Reviews with polarity.
+    :rtype: :obj:`list` of |Review|
 
     :Example:
 
@@ -120,8 +123,8 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
 
     :param reviews: Reviews to process
     :type reviews: :obj:`list` of |Review|
-    :param commit_polarities: If set to True, computed polarities are commited to database.
-    :type commit_polarities: boolean
+    :param commit_polarities: If True, results will be committed to database.
+    :type commit_polarities: bool
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
     :type pessimistic: boolean
     :param freeling_lang:
@@ -129,6 +132,8 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
         Possible values : 'as', 'ca', 'cs', 'cy', 'de', 'en', 'es', 'fr', 'gl', 'hr', 'it', 'nb', 'pt', 'ru', 'sl')\n
         See https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html for more details.
     :type freeling_lang: String
+    :return: Reviews with polarity.
+    :rtype: :obj:`list` of |Review|
 
     :Example:
 
@@ -145,7 +150,12 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
             sentiment_analysis.compute_extreme_reviews_polarity(reviews, commit_polarities=True, pessimistic=True,
                                                                 freeling_lang='en')
 
+    .. warning::
 
+        If *reviews* have been loaded in temporary files (with *load_in_temp_file=True* in
+        :func:`~loacore.load.file_load.load_database()`), input *reviews* (that is an iterator) won't be modified
+        dynamically. However, results can be committed to database normally, and results will be available in the
+        returned reviews list (that is a shallow copy of the iterator elements, with added polarities).
     """
 
     from loacore.conf import set_lang
@@ -247,6 +257,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
     else:
         analysis_label = 'optimistic'
 
+    modified_reviews = []
     for review in reviews:
         review_pos_score = 0
         review_neg_score = 0
@@ -284,13 +295,16 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
         else:
             review.polarities[analysis_label] = \
                 Polarity(None, analysis_label, review.id_review, 0, 0, 0)
+        modified_reviews.append(review)
 
     if commit_polarities:
         import loacore.process.polarity_process as polarity_process
-        polarity_process.commit_polarities(reviews, analysis_label)
+        polarity_process.commit_polarities(modified_reviews, analysis_label)
+
+    return modified_reviews
 
 
-def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es'):
+def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='en'):
     """
     Compute the extreme polarity of all the reviews in each file, and then compute the normalized sum of polarities of
     all reviews of each file, and return them as a dictionary that map id_files to polarity tuples (pos_score,
@@ -300,6 +314,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
     :type files: :obj:`list` of |File|
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
     :type pessimistic: boolean
+    :param freeling_lang: Freeling language to use.
     :return: Score dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
 
@@ -309,7 +324,7 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
         >>> import loacore.load.file_load as file_load
         >>> import loacore.analysis.sentiment_analysis as sentiment_analysis
         >>> from loacore.utils import plot_polarities
-        >>> ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+        >>> ids = file_load.get_id_files_by_file_path(r'.*/uci/.+')
         >>> files = file_load.load_database(id_files=ids, load_deptrees=False)
         >>> polarities = sentiment_analysis.compute_extreme_files_polarity(files, freeling_lang='en')
         >>> plot_polarities.print_polarity_table(polarities)
@@ -349,7 +364,24 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='es')
     return file_score_dict
 
 
-def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_pattern=True, cc_pattern=True, print_polarity_commutations=False):
+def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_pattern=True, cc_pattern=True,
+                                     print_polarity_commutations=False):
+    """
+    Compute reviews polarity considering adjective and/or complement polarity commutation.
+
+    :param reviews: Reviews to process
+    :type reviews: :obj:`list` of |Review|
+    :param commit_polarities: If True, results will be committed to database.
+    :type commit_polarities: bool
+    :param adj_pattern: If True, adjective commutation are considered.
+    :type adj_pattern: bool
+    :param cc_pattern: If True, complement commutation are considered.
+    :type cc_pattern: bool
+    :param print_polarity_commutations: If True, prints elements where a commutation occured.
+    :type print_polarity_commutations: bool
+    :return: Reviews with polarity.
+    :rtype: :obj:`list` of |Review|
+    """
 
     def resolve_adj_rule(parent_node, child):
         # child is the adj applied to parent_node
@@ -438,6 +470,8 @@ def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_patte
 
     print(analysis_label)
     print(check_cc_pattern)
+
+    modified_reviews = []
     for review in reviews:
         review_pos_score = 0
         review_neg_score = 0
@@ -484,6 +518,10 @@ def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_patte
         else:
             review.polarities[analysis_label] = Polarity(None, analysis_label, review.id_review, 0, 0, 0)
 
+        modified_reviews.append(review)
+
     if commit_polarities:
         import loacore.process.polarity_process as polarity_process
-        polarity_process.commit_polarities(reviews, analysis_label)
+        polarity_process.commit_polarities(modified_reviews, analysis_label)
+
+    return modified_reviews
