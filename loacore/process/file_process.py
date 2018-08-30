@@ -63,7 +63,7 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
         # Add files
         files = []
         for file_path in file_paths:
-            c.execute("INSERT INTO File (File_Path) VALUES (?)", [file_path])
+            c.execute("INSERT INTO File (File_Name) VALUES (?)", [file_path])
             conn.commit()
 
             # Get back id of last inserted file

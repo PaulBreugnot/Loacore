@@ -166,7 +166,7 @@ def count_reviews(file_path):
     conn = sql.connect(DB_PATH, timeout=DB_TIMEOUT)
     c = conn.cursor()
     c.execute("SELECT count(ID_Review) FROM Review JOIN File ON Review.ID_File = File.ID_File "
-              "WHERE File_Path = '" + file_path + "'")
+              "WHERE File_Name = '" + file_path + "'")
 
     conn.close()
     return c.fetchone()[0]

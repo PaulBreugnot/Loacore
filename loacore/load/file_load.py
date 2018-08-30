@@ -284,7 +284,7 @@ def remove_files(files):
     c = conn.cursor()
     c.execute("PRAGMA foreign_keys = on")
     for file in files:
-        c.execute("DELETE FROM File WHERE File_Path = '" + file.file_name + "'")
+        c.execute("DELETE FROM File WHERE File_Name = '" + file.file_name + "'")
 
     conn.commit()
     conn.close()
