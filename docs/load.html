@@ -78,7 +78,7 @@ dependencies in database : all the tables will be emptied.</p>
 
 <dl class="function">
 <dt id="loacore.load.file_load.load_database">
-<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=[]</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>load_in_temp_file=True</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.file_load.</code><code class="descname">load_database</code><span class="sig-paren">(</span><em>id_files=()</em>, <em>load_reviews=True</em>, <em>load_polarities=True</em>, <em>load_sentences=True</em>, <em>load_words=True</em>, <em>load_deptrees=True</em>, <em>load_in_temp_file=False</em>, <em>workers=1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.file_load.load_database" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load the complete database as a <code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a> , with all the dependencies specified in parameters
 loaded in them.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -123,7 +123,7 @@ time if they are not needed. Loading other structures is quite fast.</p>
 <tr class="field-odd field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load files 1,2,3 with only their <code class="xref py py-attr docutils literal notranslate"><span class="pre">id_file</span></code> and <code class="xref py py-attr docutils literal notranslate"><span class="pre">id_path</span></code>.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">load_reviews</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">f</span><span class="o">.</span><span class="n">file_path</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">f</span><span class="o">.</span><span class="n">file_name</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">])</span>
 <span class="go">[&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_EO.txt&#39;,</span>
 <span class="go">&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_CC.txt&#39;,</span>
 <span class="go">&#39;../../data/raw/TempBaja/Balneario2/EncuestaTemporadaBajafinalbalneario2_GR.txt&#39;]</span>
@@ -701,6 +701,7 @@ In most of the cases, those functions should be used instead to load sentences a
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requirements.html">Requirements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="database/database.html">Database</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classes.html">Classes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="process.html">Feeding database : <em>process</em> package</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Load data from database : <em>load</em> package</a><ul>

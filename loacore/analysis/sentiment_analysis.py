@@ -102,7 +102,7 @@ def compute_simple_files_polarity(files, commit_polarities=True):
 
     file_score_dict = {}
     for file in files:
-        reviews_with_polarities = compute_simple_reviews_polarity(file.reviews, commit_polairities=commit_polarities)
+        reviews_with_polarities = compute_simple_reviews_polarity(file.reviews, commit_polarities=commit_polarities)
         pos_score = sum([r.polarities["simple"].pos_score for r in reviews_with_polarities])
         neg_score = sum([r.polarities["simple"].neg_score for r in reviews_with_polarities])
         obj_score = sum([r.polarities["simple"].obj_score for r in reviews_with_polarities])

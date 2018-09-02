@@ -39,7 +39,7 @@
 <span id="sentiment-analysis"></span><h2>Sentiment Analysis<a class="headerlink" href="#module-loacore.analysis.sentiment_analysis" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.analysis.sentiment_analysis.compute_extreme_files_polarity">
-<code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_extreme_files_polarity</code><span class="sig-paren">(</span><em>files</em>, <em>pessimistic=False</em>, <em>freeling_lang='es'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_extreme_files_polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_extreme_files_polarity</code><span class="sig-paren">(</span><em>files</em>, <em>pessimistic=False</em>, <em>commit_polarities=True</em>, <em>freeling_lang='en'</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_extreme_files_polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the extreme polarity of all the reviews in each file, and then compute the normalized sum of polarities of
 all reviews of each file, and return them as a dictionary that map id_files to polarity tuples (pos_score,
 neg_score, obj_score).</p>
@@ -50,6 +50,8 @@ neg_score, obj_score).</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
 <li><strong>pessimistic</strong> (<em>boolean</em>) – Specify if pessimistic computing should be used. Optimistic is used if set to False.</li>
+<li><strong>commit_polarities</strong> (<em>bool</em>) – If True, results will be committed to database.</li>
+<li><strong>freeling_lang</strong> – Freeling language to use.</li>
 </ul>
 </td>
 </tr>
@@ -63,7 +65,7 @@ neg_score, obj_score).</p>
 <div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.analysis.sentiment_analysis</span> <span class="k">as</span> <span class="nn">sentiment_analysis</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">loacore.utils</span> <span class="k">import</span> <span class="n">plot_polarities</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_paths</span><span class="p">([</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_path</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="n">ids</span><span class="p">,</span> <span class="n">load_deptrees</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">polarities</span> <span class="o">=</span> <span class="n">sentiment_analysis</span><span class="o">.</span><span class="n">compute_extreme_files_polarity</span><span class="p">(</span><span class="n">files</span><span class="p">,</span> <span class="n">freeling_lang</span><span class="o">=</span><span class="s1">&#39;en&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">plot_polarities</span><span class="o">.</span><span class="n">print_polarity_table</span><span class="p">(</span><span class="n">polarities</span><span class="p">)</span>
@@ -109,13 +111,19 @@ used.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
-<li><strong>commit_polarities</strong> (<em>boolean</em>) – If set to True, computed polarities are commited to database.</li>
+<li><strong>commit_polarities</strong> (<em>bool</em>) – If True, results will be committed to database.</li>
 <li><strong>pessimistic</strong> (<em>boolean</em>) – Specify if pessimistic computing should be used. Optimistic is used if set to False.</li>
 <li><strong>freeling_lang</strong> (<em>String</em>) – <p>Specify language used by Freeling. Default : ‘es’.</p>
 <p>Possible values : ‘as’, ‘ca’, ‘cs’, ‘cy’, ‘de’, ‘en’, ‘es’, ‘fr’, ‘gl’, ‘hr’, ‘it’, ‘nb’, ‘pt’, ‘ru’, ‘sl’)</p>
 <p>See <a class="reference external" href="https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html">https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/basics.html</a> for more details.</p>
 </li>
 </ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Reviews with polarity.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Commit pessimistic polarities of uci files to database.</p>
@@ -133,11 +141,52 @@ used.</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If <em>reviews</em> have been loaded in temporary files (with <em>load_in_temp_file=True</em> in
+<a class="reference internal" href="load.html#loacore.load.file_load.load_database" title="loacore.load.file_load.load_database"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_database()</span></code></a>), input <em>reviews</em> (that is an iterator) won’t be modified
+dynamically. However, results can be committed to database normally, and results will be available in the
+returned ReviewIterator (i.e. new temp files).</p>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="loacore.analysis.sentiment_analysis.compute_pattern_reviews_polarity">
+<code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_pattern_reviews_polarity</code><span class="sig-paren">(</span><em>reviews</em>, <em>commit_polarities=False</em>, <em>adj_pattern=True</em>, <em>cc_pattern=True</em>, <em>print_polarity_commutations=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_pattern_reviews_polarity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute reviews polarity considering adjective and/or complement polarity commutation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Reviews to process</li>
+<li><strong>commit_polarities</strong> (<em>bool</em>) – If True, results will be committed to database.</li>
+<li><strong>adj_pattern</strong> (<em>bool</em>) – If True, adjective commutation are considered.</li>
+<li><strong>cc_pattern</strong> (<em>bool</em>) – If True, complement commutation are considered.</li>
+<li><strong>print_polarity_commutations</strong> (<em>bool</em>) – If True, prints elements where a commutation occured.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Reviews with polarity.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If <em>reviews</em> have been loaded in temporary files (with <em>load_in_temp_file=True</em> in
+<a class="reference internal" href="load.html#loacore.load.file_load.load_database" title="loacore.load.file_load.load_database"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_database()</span></code></a>), input <em>reviews</em> (that is an iterator) won’t be modified
+dynamically. However, results can be committed to database normally, and results will be available in the
+returned ReviewIterator (i.e. new temp files).</p>
+</div>
 </dd></dl>
 
 <dl class="function">
 <dt id="loacore.analysis.sentiment_analysis.compute_simple_files_polarity">
-<code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_simple_files_polarity</code><span class="sig-paren">(</span><em>files</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_simple_files_polarity" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_simple_files_polarity</code><span class="sig-paren">(</span><em>files</em>, <em>commit_polarities=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_simple_files_polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the simple polarity of all the reviews in each file, and then compute the normalized sum of polarities of
 all reviews of each file, and return them as a dictionary that map id_files to polarity tuples (pos_score,
 neg_score, obj_score).</p>
@@ -145,7 +194,10 @@ neg_score, obj_score).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>files</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.File" title="loacore.classes.classes.File"><code class="xref py py-class docutils literal notranslate"><span class="pre">File</span></code></a>) – Files to process</li>
+<li><strong>commit_polarities</strong> (<em>bool</em>) – If True, results will be committed to database.</li>
+</ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Polarity dict</p>
@@ -157,7 +209,7 @@ neg_score, obj_score).</p>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Load uci files, compute basic polarities, and show results with <code class="xref py py-func docutils literal notranslate"><span class="pre">utils.print_polarity_table()</span></code>.</p>
 <div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.load.file_load</span> <span class="k">as</span> <span class="nn">file_load</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">loacore.analysis.sentiment_analysis</span> <span class="k">as</span> <span class="nn">sentiment_analysis</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_paths</span><span class="p">([</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ids</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">get_id_files_by_file_path</span><span class="p">([</span><span class="sa">r</span><span class="s1">&#39;.*/uci/.+&#39;</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">files</span> <span class="o">=</span> <span class="n">file_load</span><span class="o">.</span><span class="n">load_database</span><span class="p">(</span><span class="n">id_files</span><span class="o">=</span><span class="n">ids</span><span class="p">,</span> <span class="n">load_deptrees</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">polarities</span> <span class="o">=</span> <span class="n">sentiment_analysis</span><span class="o">.</span><span class="n">compute_simple_files_polarity</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">loacore.utils</span> <span class="k">import</span> <span class="n">plot_polarities</span>
@@ -181,12 +233,22 @@ neg_score, obj_score).</p>
 <dt id="loacore.analysis.sentiment_analysis.compute_simple_reviews_polarity">
 <code class="descclassname">loacore.analysis.sentiment_analysis.</code><code class="descname">compute_simple_reviews_polarity</code><span class="sig-paren">(</span><em>reviews</em>, <em>commit_polarities=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.analysis.sentiment_analysis.compute_simple_reviews_polarity" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform the easiest sentiment analysis possible : a normalized sum of the positive/negative/objective polarities
-available in all synsets of each review, setting the polarity in the review.polarities dict, with the entry “simple”.</p>
+available in all synsets of each review, setting the polarity in the review.polarities dict, with the entry
+“simple”.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Files to process</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <a class="reference internal" href="classes.html#loacore.classes.classes.Review" title="loacore.classes.classes.Review"><code class="xref py py-class docutils literal notranslate"><span class="pre">Review</span></code></a>) – Files to process</li>
+<li><strong>commit_polarities</strong> (<em>bool</em>) – If True, results will be committed to database.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Reviews with polarity.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><cite>~loacore.utils.data_stream.ReviewIterator</cite></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Example:</th><td class="field-body"><p class="first">Commit simple polarities of uci files to database.</p>
@@ -203,6 +265,13 @@ available in all synsets of each review, setting the polarity in the review.pola
 </tr>
 </tbody>
 </table>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">If <em>reviews</em> have been loaded in temporary files (with <em>load_in_temp_file=True</em> in
+<a class="reference internal" href="load.html#loacore.load.file_load.load_database" title="loacore.load.file_load.load_database"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_database()</span></code></a>), input <em>reviews</em> (that is an iterator) won’t be modified
+dynamically. However, results can be committed to database normally, and results will be available in the
+returned ReviewIterator (i.e. new temp files).</p>
+</div>
 </dd></dl>
 
 </div>
@@ -1099,7 +1168,8 @@ For example, in Linux, use</p>
 </div></blockquote>
 <p>To show the colored file in terminal.</p>
 </li>
-<li><strong>directory_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Path of the directory in which to write files.</li>
+<li><strong>directory_path</strong> (<a class="reference external" href="https://docs.python.org/3/glossary.html#term-path-like-object">path-like object</a>) – Path of the directory in which to write files.
+Default value computed using os.path.join(RESULT_PATH, ‘sentiment_analysis’, ‘check’)</li>
 </ul>
 </td>
 </tr>
