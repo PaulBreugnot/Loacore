@@ -114,7 +114,7 @@ def load_database(id_files=(),
     if load_reviews:
         # Load Reviews
         import loacore.load.review_load as review_load
-        from loacore.process.file_process import _split_reviews
+        from loacore.utils.data_stream import split_reviews
         from loacore.utils.data_stream import ReviewIterator
         from loacore.utils.data_stream import save_to_temp_file
 
@@ -122,16 +122,16 @@ def load_database(id_files=(),
         split_size = 500
 
         # Maps id_files to review subsets
-        split_reviews = {}
+        reviews_dict = {}
         for file in files:
             # Ensure that each subset come from a unique file
-            split_reviews[file.id_file] = _split_reviews(file.reviews, split_size)
+            reviews_dict[file.id_file] = split_reviews(file.reviews, split_size)
 
         if workers <= 0:
             for file in files:
                 if load_in_temp_file:
                     file.reviews = ReviewIterator()
-                for review_sublist in split_reviews[file.id_file]:
+                for review_sublist in reviews_dict[file.id_file]:
                     _load_reviews_process(load_polarities, load_sentences, load_words, load_deptrees,
                                           review_sublist)
                     if load_in_temp_file:
@@ -150,7 +150,7 @@ def load_database(id_files=(),
                     file.reviews = ReviewIterator()
                 else:
                     file.reviews = []
-                for review_sublist in split_reviews[file.id_file]:
+                for review_sublist in reviews_dict[file.id_file]:
                     process_queue.put(Process(
                         target=_load_reviews_process,
                         args=(load_polarities, load_sentences, load_words, load_deptrees, review_sublist),

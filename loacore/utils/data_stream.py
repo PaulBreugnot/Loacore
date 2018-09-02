@@ -41,3 +41,25 @@ def save_to_temp_file(reviews):
     pickler.dump(reviews)
 
     return reviews_temp_file
+
+
+def split_reviews(reviews, split_size):
+    split_reviews_list = []
+    n = int(len(reviews)/split_size)
+    split_number = 0
+    for i in range(n):
+        split_number += len(reviews[i*split_size:(i+1)*split_size])
+        # split reviews are stored as temporary file to limit RAM usage
+        # split_reviews_list.append(
+        #     data_stream.ReviewIterator(
+        #         temp_file_list=data_stream.save_to_temp_file(reviews[i*split_size:(i+1)*split_size])))
+        split_reviews_list.append(reviews[i*split_size:(i+1)*split_size])
+
+    if n*split_size < len(reviews):
+        split_number += len(reviews[n*split_size:len(reviews)])
+        split_reviews_list.append(reviews[n*split_size:len(reviews)])
+
+    print("Reviews number : " + str(len(reviews)))
+    print("Split into : " + str(len(split_reviews_list)) + "(total : " + str(split_number) + ")")
+
+    return split_reviews_list

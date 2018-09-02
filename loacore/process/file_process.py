@@ -89,7 +89,8 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
 
         # ********************************************* FREELING ***************************************************** #
 
-        split_reviews = _split_reviews(reviews, 500)
+        from loacore.utils.data_stream import split_reviews
+        split_reviews = split_reviews(reviews, 500)
         # reviews.clear()
 
         freeling_modules = load_all_freeling_modules()
@@ -155,29 +156,6 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
         if not lang == "":
             from loacore.conf import _load_conf
             _load_conf()
-
-
-def _split_reviews(reviews, split_size):
-    import loacore.utils.data_stream as data_stream
-    split_reviews_list = []
-    n = int(len(reviews)/split_size)
-    split_number = 0
-    for i in range(n):
-        split_number += len(reviews[i*split_size:(i+1)*split_size])
-        # split reviews are stored as temporary file to limit RAM usage
-        # split_reviews_list.append(
-        #     data_stream.ReviewIterator(
-        #         temp_file_list=data_stream.save_to_temp_file(reviews[i*split_size:(i+1)*split_size])))
-        split_reviews_list.append(reviews[i*split_size:(i+1)*split_size])
-
-    if n*split_size < len(reviews):
-        split_number += len(reviews[n*split_size:len(reviews)])
-        split_reviews_list.append(reviews[n*split_size:len(reviews)])
-
-    print("Reviews number : " + str(len(reviews)))
-    print("Split into : " + str(len(split_reviews_list)) + "(total : " + str(split_number) + ")")
-
-    return split_reviews_list
 
 
 def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_process=None):

@@ -37,9 +37,26 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         returned ReviewIterator (i.e. new temp files).
     """
 
+    def commit_subset():
+        nonlocal modified_reviews
+        nonlocal temp_files
+        temp_files.append(save_to_temp_file(modified_reviews))
+        if commit_polarities:
+            import loacore.process.polarity_process as polarity_process
+            polarity_process.commit_polarities(modified_reviews, "simple")
+        modified_reviews.clear()
+
     from loacore.utils.data_stream import ReviewIterator, save_to_temp_file
+    # Reviews are split to avoid RAM overload
+    temp_files = []
+    split_size = 500
+    index = 0
+    review_count = 0
     modified_reviews = []
     for review in reviews:
+        index += 1
+        review_count += 1
+        print("\r" + str(review_count) + " reviews processed.", end="")
         review_pos_score = 0
         review_neg_score = 0
         review_obj_score = 0
@@ -59,12 +76,14 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
 
         modified_reviews.append(review)
 
-    temp_file = save_to_temp_file(modified_reviews)
-    if commit_polarities:
-        import loacore.process.polarity_process as polarity_process
-        polarity_process.commit_polarities(modified_reviews, "simple")
+        if index == split_size:
+            index = 0
+            commit_subset()
 
-    return ReviewIterator(temp_file_list=[temp_file])
+    commit_subset()
+    print("")
+
+    return ReviewIterator(temp_file_list=temp_files)
 
 
 def compute_simple_files_polarity(files, commit_polarities=True):
