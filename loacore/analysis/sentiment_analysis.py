@@ -5,14 +5,15 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
     """
 
     Perform the easiest sentiment analysis possible : a normalized sum of the positive/negative/objective polarities
-    available in all synsets of each review, setting the polarity in the review.polarities dict, with the entry "simple".
+    available in all synsets of each review, setting the polarity in the review.polarities dict, with the entry
+    "simple".
 
     :param reviews: Files to process
     :type reviews: :obj:`list` of |Review|
     :param commit_polarities: If True, results will be committed to database.
     :type commit_polarities: bool
     :return: Reviews with polarity.
-    :rtype: :obj:`list` of |Review|
+    :rtype: |ReviewIterator|
 
     :Example:
 
@@ -33,9 +34,10 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         If *reviews* have been loaded in temporary files (with *load_in_temp_file=True* in
         :func:`~loacore.load.file_load.load_database()`), input *reviews* (that is an iterator) won't be modified
         dynamically. However, results can be committed to database normally, and results will be available in the
-        returned reviews list (that is a shallow copy of the iterator elements, with added polarities).
+        returned ReviewIterator (i.e. new temp files).
     """
 
+    from utils.data_stream import ReviewIterator, save_to_temp_file
     modified_reviews = []
     for review in reviews:
         review_pos_score = 0
@@ -57,14 +59,15 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
 
         modified_reviews.append(review)
 
+    temp_file = save_to_temp_file(modified_reviews)
     if commit_polarities:
         import loacore.process.polarity_process as polarity_process
         polarity_process.commit_polarities(modified_reviews, "simple")
 
-    return modified_reviews
+    return ReviewIterator(temp_file_list=[temp_file])
 
 
-def compute_simple_files_polarity(files):
+def compute_simple_files_polarity(files, commit_polarities=True):
     """
     Compute the simple polarity of all the reviews in each file, and then compute the normalized sum of polarities of
     all reviews of each file, and return them as a dictionary that map id_files to polarity tuples (pos_score,
@@ -72,6 +75,8 @@ def compute_simple_files_polarity(files):
 
     :param files: Files to process
     :type files: :obj:`list` of |File|
+    :param commit_polarities: If True, results will be committed to database.
+    :type commit_polarities: bool
     :return: Polarity dict
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
 
@@ -80,7 +85,7 @@ def compute_simple_files_polarity(files):
 
         >>> import loacore.load.file_load as file_load
         >>> import loacore.analysis.sentiment_analysis as sentiment_analysis
-        >>> ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+        >>> ids = file_load.get_id_files_by_file_path([r'.*/uci/.+'])
         >>> files = file_load.load_database(id_files=ids, load_deptrees=False)
         >>> polarities = sentiment_analysis.compute_simple_files_polarity(files)
         >>> from loacore.utils import plot_polarities
@@ -97,10 +102,10 @@ def compute_simple_files_polarity(files):
 
     file_score_dict = {}
     for file in files:
-        compute_simple_reviews_polarity(file.reviews)
-        pos_score = sum([r.polarities["simple"].pos_score for r in file.reviews])
-        neg_score = sum([r.polarities["simple"].neg_score for r in file.reviews])
-        obj_score = sum([r.polarities["simple"].obj_score for r in file.reviews])
+        reviews_with_polarities = compute_simple_reviews_polarity(file.reviews, commit_polairities=commit_polarities)
+        pos_score = sum([r.polarities["simple"].pos_score for r in reviews_with_polarities])
+        neg_score = sum([r.polarities["simple"].neg_score for r in reviews_with_polarities])
+        obj_score = sum([r.polarities["simple"].obj_score for r in reviews_with_polarities])
         total = pos_score + neg_score + obj_score
         file_score_dict[file.id_file] = (pos_score / total, neg_score / total, obj_score / total)
 
@@ -155,7 +160,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
         If *reviews* have been loaded in temporary files (with *load_in_temp_file=True* in
         :func:`~loacore.load.file_load.load_database()`), input *reviews* (that is an iterator) won't be modified
         dynamically. However, results can be committed to database normally, and results will be available in the
-        returned reviews list (that is a shallow copy of the iterator elements, with added polarities).
+        returned ReviewIterator (i.e. new temp files).
     """
 
     from loacore.conf import set_lang
@@ -180,10 +185,8 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
 
         freeling.util_init_locale("default")
 
-        import loacore
-        lang = loacore.lang
-        # path to language data
-        lpath = loacore.LANG_PATH
+        from loacore.conf import lang
+        from loacore.conf import LANG_PATH as lpath
 
         # create the analyzer with the required set of maco_options
         morfo = freeling.maco(my_maco_options(lang, lpath))
@@ -304,7 +307,7 @@ def compute_extreme_reviews_polarity(reviews, commit_polarities=False, pessimist
     return modified_reviews
 
 
-def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='en'):
+def compute_extreme_files_polarity(files, pessimistic=False, commit_polarities=True, freeling_lang='en'):
     """
     Compute the extreme polarity of all the reviews in each file, and then compute the normalized sum of polarities of
     all reviews of each file, and return them as a dictionary that map id_files to polarity tuples (pos_score,
@@ -314,6 +317,8 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='en')
     :type files: :obj:`list` of |File|
     :param pessimistic: Specify if pessimistic computing should be used. Optimistic is used if set to False.
     :type pessimistic: boolean
+    :param commit_polarities: If True, results will be committed to database.
+    :type commit_polarities: bool
     :param freeling_lang: Freeling language to use.
     :return: Score dictionary
     :rtype: :obj:`dict` of :obj:`int` : :obj:`tuple`
@@ -354,7 +359,10 @@ def compute_extreme_files_polarity(files, pessimistic=False, freeling_lang='en')
         analysis_label = 'optimistic'
 
     for file in files:
-        compute_extreme_reviews_polarity(file.reviews, pessimistic=pessimistic, freeling_lang=freeling_lang)
+        compute_extreme_reviews_polarity(file.reviews,
+                                         pessimistic=pessimistic,
+                                         freeling_lang=freeling_lang,
+                                         commit_polarities=commit_polarities)
         pos_score = sum([r.polarities[analysis_label].pos_score for r in file.reviews])
         neg_score = sum([r.polarities[analysis_label].neg_score for r in file.reviews])
         obj_score = sum([r.polarities[analysis_label].obj_score for r in file.reviews])
@@ -381,6 +389,13 @@ def compute_pattern_reviews_polarity(reviews, commit_polarities=False, adj_patte
     :type print_polarity_commutations: bool
     :return: Reviews with polarity.
     :rtype: :obj:`list` of |Review|
+
+    .. warning::
+
+        If *reviews* have been loaded in temporary files (with *load_in_temp_file=True* in
+        :func:`~loacore.load.file_load.load_database()`), input *reviews* (that is an iterator) won't be modified
+        dynamically. However, results can be committed to database normally, and results will be available in the
+        returned ReviewIterator (i.e. new temp files).
     """
 
     def resolve_adj_rule(parent_node, child):

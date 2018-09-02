@@ -87,7 +87,7 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
         import loacore.process.polarity_process as polarity_process
         polarity_process.add_polarity_from_reviews(reviews)
 
-        # ********************************************* FREELING ********************************************************* #
+        # ********************************************* FREELING ***************************************************** #
 
         split_reviews = _split_reviews(reviews, 500)
         # reviews.clear()
@@ -123,6 +123,8 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
             import os
             import sys
             from loacore.conf import OUTPUT_PATH
+            origin_std_out = sys.stdout
+            origin_std_err = sys.stderr
             with open(os.path.join(OUTPUT_PATH, "log.out"), "w") as log_file,\
                     open(os.path.join(OUTPUT_PATH, "error_log.out"), "w") as error_log_file:
                 sys.stdout = log_file
@@ -148,6 +150,8 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
                 running_processes.clear()
                 printer.join()
 
+            sys.stdout = origin_std_out
+            sys.stderr = origin_std_err
         if not lang == "":
             from loacore.conf import _load_conf
             _load_conf()

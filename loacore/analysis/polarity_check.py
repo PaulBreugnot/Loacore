@@ -80,7 +80,9 @@ def write_polarity_check(files,
                 cat file_name.txt
 
         To show the colored file in terminal.
-    :param directory_path: Path of the directory in which to write files.
+    :param directory_path:
+        Path of the directory in which to write files.
+        Default value computed using os.path.join(RESULT_PATH, 'sentiment_analysis', 'check')
     :type directory_path: |path-like-object|
     """
     import loacore.utils.file_writer as file_writer
