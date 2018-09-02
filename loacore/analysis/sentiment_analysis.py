@@ -47,40 +47,43 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         modified_reviews.clear()
 
     from loacore.utils.data_stream import ReviewIterator, save_to_temp_file
-    # Reviews are split to avoid RAM overload
-    temp_files = []
-    split_size = 500
-    index = 0
-    review_count = 0
-    modified_reviews = []
-    for review in reviews:
-        index += 1
-        review_count += 1
-        print("\r" + str(review_count) + " reviews processed.", end="")
-        review_pos_score = 0
-        review_neg_score = 0
-        review_obj_score = 0
-        for sentence in review.sentences:
-            for word in sentence.words:
-                if word.synset is not None:
-                    review_pos_score += word.synset.pos_score
-                    review_neg_score += word.synset.neg_score
-                    review_obj_score += word.synset.obj_score
-        total = review_pos_score + review_neg_score + review_obj_score
-        if total > 0:
-            review.polarities["simple"] =\
-                Polarity(None, "simple", review.id_review,
-                         review_pos_score/total, review_neg_score/total, review_obj_score/total)
-        else:
-            review.polarities["simple"] = Polarity(None, "simple", review.id_review, 0, 0, 0)
+    from loacore.utils.db import database_backup
 
-        modified_reviews.append(review)
+    with database_backup():
+        # Reviews are split to avoid RAM overload
+        temp_files = []
+        split_size = 500
+        index = 0
+        review_count = 0
+        modified_reviews = []
+        for review in reviews:
+            index += 1
+            review_count += 1
+            print("\r" + str(review_count) + " reviews processed.", end="")
+            review_pos_score = 0
+            review_neg_score = 0
+            review_obj_score = 0
+            for sentence in review.sentences:
+                for word in sentence.words:
+                    if word.synset is not None:
+                        review_pos_score += word.synset.pos_score
+                        review_neg_score += word.synset.neg_score
+                        review_obj_score += word.synset.obj_score
+            total = review_pos_score + review_neg_score + review_obj_score
+            if total > 0:
+                review.polarities["simple"] =\
+                    Polarity(None, "simple", review.id_review,
+                             review_pos_score/total, review_neg_score/total, review_obj_score/total)
+            else:
+                review.polarities["simple"] = Polarity(None, "simple", review.id_review, 0, 0, 0)
 
-        if index == split_size:
-            index = 0
-            commit_subset()
+            modified_reviews.append(review)
 
-    commit_subset()
+            if index == split_size:
+                index = 0
+                commit_subset()
+
+        commit_subset()
     print("")
 
     return ReviewIterator(temp_file_list=temp_files)
