@@ -37,7 +37,7 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         returned ReviewIterator (i.e. new temp files).
     """
 
-    from utils.data_stream import ReviewIterator, save_to_temp_file
+    from loacore.utils.data_stream import ReviewIterator, save_to_temp_file
     modified_reviews = []
     for review in reviews:
         review_pos_score = 0
