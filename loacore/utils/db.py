@@ -171,14 +171,14 @@ class database_backup:
                 print("No path specified, nothing written.")
             else:
                 self.backup_file = open(self.path, mode="w+b")
-                db_file = open(DB_PATH, mode="a+b")
+                db_file = open(DB_PATH, mode="r+b")
                 self.backup_file.write(db_file.read())
                 db_file.close()
                 self.backup_file.flush()
         else:
             from tempfile import TemporaryFile
             self.backup_file = TemporaryFile()
-            db_file = open(DB_PATH, mode="a+b")
+            db_file = open(DB_PATH, mode="r+b")
             self.backup_file.write(db_file.read())
             db_file.close()
             self.backup_file.flush()
@@ -192,7 +192,7 @@ class database_backup:
         else:
             self.backup_file = open(self.path, mode="w+b")
 
-        db_file = open(DB_PATH, mode="a+b")
+        db_file = open(DB_PATH, mode="r+b")
         self.backup_file.write(db_file.read())
         db_file.close()
         self.backup_file.flush()
