@@ -3,8 +3,8 @@ import os
 
 
 def check_polarity(files,
-                   analysis_to_check=[
-                       "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"],
+                   analysis_to_check=(
+                       "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"),
                    ref="label"):
     """
     Prints tables with the rates, in percentages, of correct, false positive and false negative classifications of
@@ -13,7 +13,7 @@ def check_polarity(files,
     :param files: Files to process.
     :type files: :obj:`list` of |File|
     :param analysis_to_check: Analysis to check
-    :type analysis_to_check: :obj:`list` of :obj:`str`
+    :type analysis_to_check: :obj:`sequence` of :obj:`str`
     :param ref: Reference analysis, with which analysis to check are compared.
     :type ref: string
     """
@@ -48,8 +48,8 @@ def check_polarity(files,
 
 
 def write_polarity_check(files,
-                         analysis_to_check=[
-                             "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"],
+                         analysis_to_check=(
+                             "simple", "optimistic", "pessimistic", "pattern_adj_cc", "pattern_adj", "pattern_cc"),
                          ref="label",
                          select="all",
                          terminal_print=True,
@@ -64,7 +64,7 @@ def write_polarity_check(files,
     :param files: Files to process.
     :type files: :obj:`list` of |File|
     :param analysis_to_check: Analysis to compare with *ref*
-    :type analysis_to_check: :obj:`list` of :obj:`str`
+    :type analysis_to_check: :obj:`sequence` of :obj:`str`
     :param ref: Reference analysis
     :type ref: string
     :param select: Select option

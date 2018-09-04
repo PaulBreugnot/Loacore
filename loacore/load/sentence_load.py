@@ -3,13 +3,13 @@ from loacore.conf import DB_PATH
 from loacore.classes.classes import Sentence
 
 
-def load_sentences(id_sentences=[], load_words=False, load_deptrees=False):
+def load_sentences(id_sentences=(), load_words=False, load_deptrees=False):
     """
     Load sentences from database.
 
     :param id_sentences:
         If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.
-    :type id_sentences: :obj:`list` of :obj:`int`
+    :type id_sentences: :obj:`sequence` of :obj:`int`
     :param load_words: Specify if Words need to be loaded in sentences.
     :type load_words: boolean
     :param load_deptrees: If Words have been loaded, specify if DepTrees need to be loaded in sentences.

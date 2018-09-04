@@ -3,13 +3,13 @@ from loacore.conf import DB_PATH
 from loacore.classes.classes import Word
 
 
-def load_words(id_words=[], load_lemmas=True, load_synsets=True):
+def load_words(id_words=(), load_lemmas=True, load_synsets=True):
     """
 
     Load words from database.
 
     :param id_words: If specified, load only the words with corresponding ids. Otherwise, load all the words.
-    :type id_words: :obj:`list` of :obj:`int`
+    :type id_words: :obj:`sequence` of :obj:`int`
     :param load_lemmas: Specify if Lemmas need to be loaded in words.
     :type load_lemmas: boolean
     :param load_synsets: Specify if Synsets need to be loaded in words.

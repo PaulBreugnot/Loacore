@@ -130,7 +130,8 @@ def load_database(id_files=(),
         if workers <= 0:
             for file in files:
                 if load_in_temp_file:
-                    file.reviews = ReviewIterator()
+                    reviews_count = len(file.reviews)
+                    file.reviews = ReviewIterator(iterator_length=reviews_count)
                 for review_sublist in reviews_dict[file.id_file]:
                     _load_reviews_process(load_polarities, load_sentences, load_words, load_deptrees,
                                           review_sublist)
@@ -147,7 +148,8 @@ def load_database(id_files=(),
             id_file_map = {f.id_file: f for f in files}
             for file in files:
                 if load_in_temp_file:
-                    file.reviews = ReviewIterator()
+                    reviews_count = len(file.reviews)
+                    file.reviews = ReviewIterator(iterator_length=reviews_count)
                 else:
                     file.reviews = []
                 for review_sublist in reviews_dict[file.id_file]:

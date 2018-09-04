@@ -151,7 +151,7 @@ is not necessarily true for the others. This could also be useful to consider wh
 <span id="temporary-files-management"></span><h2>Temporary Files management<a class="headerlink" href="#module-loacore.utils.data_stream" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="loacore.utils.data_stream.ReviewIterator">
-<em class="property">class </em><code class="descclassname">loacore.utils.data_stream.</code><code class="descname">ReviewIterator</code><span class="sig-paren">(</span><em>temp_file_list=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.data_stream.ReviewIterator" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">loacore.utils.data_stream.</code><code class="descname">ReviewIterator</code><span class="sig-paren">(</span><em>temp_file_list=None</em>, <em>iterator_length=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.utils.data_stream.ReviewIterator" title="Permalink to this definition">¶</a></dt>
 <dd><p>An iterator used to stream reviews from
 <a class="reference external" href="https://docs.python.org/3/library/tempfile.html#tempfile.TemporaryFile">TemporaryFiles</a>
 This class is mainly used in <a class="reference internal" href="load.html#loacore.load.file_load.load_database" title="loacore.load.file_load.load_database"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_database()</span></code></a> when <em>load_in_temp_file</em> is

@@ -2,13 +2,13 @@ import sqlite3 as sql
 from loacore.conf import DB_PATH
 
 
-def load_lemmas(id_lemmas=[]):
+def load_lemmas(id_lemmas=()):
     """
 
     Load lemmas from database.
 
     :param id_lemmas: If specified, load only the lemmas with corresponding ids. Otherwise, load all the lemmas.
-    :type id_lemmas: :obj:`list` of :obj:`int`
+    :type id_lemmas: :obj:`sequence` of :obj:`int`
     :return: loaded lemmas
     :rtype: :obj:`list` of :obj:`str`
 

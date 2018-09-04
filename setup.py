@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='loacore',
-      version='0.1.5',
+      version='0.1.6',
       url='https://github.com/PaulBreugnot/Loacore',
       author="Paul Breugnot",
       author_email='paul.breugnot@etu.emse.fr',
@@ -16,5 +16,5 @@ setup(name='loacore',
                                 'results/*',
                                 'output/*']},
       long_description=open('README.md').read(),
-      install_requires=['nltk', 'matplotlib', 'PrettyTable']
+      install_requires=['nltk', 'matplotlib', 'gensim', 'sklearn', 'PrettyTable']
       )

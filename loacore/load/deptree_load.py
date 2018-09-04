@@ -4,13 +4,13 @@ from loacore.classes.classes import DepTree
 from loacore.classes.classes import DepTreeNode
 
 
-def load_dep_trees(id_dep_trees=[], load_words=True):
+def load_dep_trees(id_dep_trees=(), load_words=True):
     """
 
     Load Dep Trees from database.
 
     :param id_dep_trees: If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.
-    :type id_dep_trees: :obj:`list` of :obj:`int`
+    :type id_dep_trees: :obj:`sequence` of :obj:`int`
     :param load_words: Specify if Words need to be loaded in Dep Trees.
     :type load_words: boolean
     :return: loaded deptrees

@@ -173,14 +173,14 @@ dependencies in database.</p>
 <span id="load-reviews"></span><h2>Load Reviews<a class="headerlink" href="#module-loacore.load.review_load" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.load.review_load.load_reviews">
-<code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews</code><span class="sig-paren">(</span><em>id_reviews=[]</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.review_load.</code><code class="descname">load_reviews</code><span class="sig-paren">(</span><em>id_reviews=()</em>, <em>load_polarities=False</em>, <em>load_sentences=False</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.review_load.load_reviews" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load reviews from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>id_reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.</li>
+<li><strong>id_reviews</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.</li>
 <li><strong>load_sentences</strong> (<em>boolean</em>) – Specify if Sentences need to be loaded in reviews.</li>
 <li><strong>load_words</strong> (<em>boolean</em>) – If Sentences have been loaded, specify if Words need to be loaded in sentences.</li>
 <li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
@@ -278,14 +278,14 @@ dependencies in database.</p>
 <span id="load-sentences"></span><h2>Load Sentences<a class="headerlink" href="#module-loacore.load.sentence_load" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.load.sentence_load.load_sentences">
-<code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences</code><span class="sig-paren">(</span><em>id_sentences=[]</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.sentence_load.</code><code class="descname">load_sentences</code><span class="sig-paren">(</span><em>id_sentences=()</em>, <em>load_words=False</em>, <em>load_deptrees=False</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.sentence_load.load_sentences" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load sentences from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>id_sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.</li>
+<li><strong>id_sentences</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the sentences with corresponding ids. Otherwise, load all the sentences.</li>
 <li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in sentences.</li>
 <li><strong>load_deptrees</strong> (<em>boolean</em>) – If Words have been loaded, specify if DepTrees need to be loaded in sentences.</li>
 </ul>
@@ -383,14 +383,14 @@ In most of the cases, those functions should be used instead to load reviews and
 <span id="load-words"></span><h2>Load Words<a class="headerlink" href="#module-loacore.load.word_load" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.load.word_load.load_words">
-<code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words</code><span class="sig-paren">(</span><em>id_words=[]</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.word_load.</code><code class="descname">load_words</code><span class="sig-paren">(</span><em>id_words=()</em>, <em>load_lemmas=True</em>, <em>load_synsets=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.word_load.load_words" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load words from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>id_words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the words with corresponding ids. Otherwise, load all the words.</li>
+<li><strong>id_words</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the words with corresponding ids. Otherwise, load all the words.</li>
 <li><strong>load_lemmas</strong> (<em>boolean</em>) – Specify if Lemmas need to be loaded in words.</li>
 <li><strong>load_synsets</strong> (<em>boolean</em>) – Specify if Synsets need to be loaded in words.</li>
 </ul>
@@ -536,13 +536,13 @@ In most of the cases, those functions should be used instead to load words and s
 <span id="load-lemmas"></span><h2>Load Lemmas<a class="headerlink" href="#module-loacore.load.lemma_load" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="loacore.load.lemma_load.load_lemmas">
-<code class="descclassname">loacore.load.lemma_load.</code><code class="descname">load_lemmas</code><span class="sig-paren">(</span><em>id_lemmas=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.lemma_load.load_lemmas" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.lemma_load.</code><code class="descname">load_lemmas</code><span class="sig-paren">(</span><em>id_lemmas=()</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.lemma_load.load_lemmas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load lemmas from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_lemmas</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the lemmas with corresponding ids. Otherwise, load all the lemmas.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>id_lemmas</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the lemmas with corresponding ids. Otherwise, load all the lemmas.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">loaded lemmas</td>
 </tr>
@@ -624,14 +624,14 @@ In most of the cases, those functions should be used instead to load sentences a
 
 <dl class="function">
 <dt id="loacore.load.deptree_load.load_dep_trees">
-<code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_trees</code><span class="sig-paren">(</span><em>id_dep_trees=[]</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_trees" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">loacore.load.deptree_load.</code><code class="descname">load_dep_trees</code><span class="sig-paren">(</span><em>id_dep_trees=()</em>, <em>load_words=True</em><span class="sig-paren">)</span><a class="headerlink" href="#loacore.load.deptree_load.load_dep_trees" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load Dep Trees from database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>id_dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.</li>
+<li><strong>id_dep_trees</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">sequence</span></code> of <code class="xref py py-obj docutils literal notranslate"><span class="pre">int</span></code>) – If specified, load only the deptrees with corresponding ids. Otherwise, load all the deptrees.</li>
 <li><strong>load_words</strong> (<em>boolean</em>) – Specify if Words need to be loaded in Dep Trees.</li>
 </ul>
 </td>

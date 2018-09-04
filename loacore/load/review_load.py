@@ -3,13 +3,13 @@ from loacore.conf import DB_PATH
 from loacore.classes.classes import Review
 
 
-def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
+def load_reviews(id_reviews=(), load_polarities=False, load_sentences=False, load_words=False, load_deptrees=False):
     """
 
     Load reviews from database.
 
     :param id_reviews: If specified, load only the reviews with corresponding ids. Otherwise, load all the reviews.
-    :type id_reviews: :obj:`list` of :obj:`int`
+    :type id_reviews: :obj:`sequence` of :obj:`int`
     :param load_sentences: Specify if Sentences need to be loaded in reviews.
     :type load_sentences: boolean
     :param load_words: If Sentences have been loaded, specify if Words need to be loaded in sentences.
@@ -49,7 +49,7 @@ def load_reviews(id_reviews=[], load_polarities=False, load_sentences=False, loa
 
     if load_polarities:
         # Load Polarities
-        import  loacore.load.polarity_load as polarity_load
+        import loacore.load.polarity_load as polarity_load
         polarity_load.load_polarities_in_reviews(reviews)
 
     if load_sentences:

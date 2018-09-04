@@ -87,7 +87,7 @@ class Review:
         self.sentences = []
         self.polarities = dict()
 
-    def review_str(self, colored_polarity=True, analysis=[]):
+    def review_str(self, colored_polarity=True, analysis=()):
         """
 
         :param colored_polarity:

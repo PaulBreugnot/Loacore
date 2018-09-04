@@ -9,8 +9,12 @@ class ReviewIterator(object):
     :obj:`True`, to replace |File| attribute *reviews*.
     """
 
-    def __init__(self, temp_file_list=[]):
-        self.temp_file_list = temp_file_list
+    def __init__(self, temp_file_list=None, iterator_length=-1):
+        if temp_file_list is not None:
+            self.temp_file_list = temp_file_list
+        else:
+            self.temp_file_list = []
+        self.iterator_length = iterator_length
 
     def __iter__(self):
         for file in self.temp_file_list:
@@ -18,6 +22,9 @@ class ReviewIterator(object):
             unpickler = pickle.Unpickler(file)
             for review in unpickler.load():
                 yield review
+
+    def __len__(self):
+        return self.iterator_length
 
 
 def save_to_temp_file(reviews):

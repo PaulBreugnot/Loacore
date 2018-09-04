@@ -86,7 +86,7 @@ def compute_simple_reviews_polarity(reviews, commit_polarities=False):
         commit_subset()
     print("")
 
-    return ReviewIterator(temp_file_list=temp_files)
+    return ReviewIterator(temp_file_list=temp_files, iterator_length=review_count)
 
 
 def compute_simple_files_polarity(files, commit_polarities=True):

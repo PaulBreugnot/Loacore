@@ -1,5 +1,6 @@
 from loacore.conf import DB_PATH
 import sqlite3 as sql
+from loacore.conf import DB_TIMEOUT
 
 ##############################
 # Dependency Label Frequencies
