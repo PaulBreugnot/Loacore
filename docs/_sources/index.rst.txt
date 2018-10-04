@@ -14,6 +14,7 @@ Loacore : Language and Opinion Analyzer for Comments and Reviews's documentation
    
    introduction
    requirements
+   installation
    configuration
    database/database.rst
    classes

@@ -1,0 +1,32 @@
+Installation
+============
+
+*Currently only tested on Linux, more precisely on Ubuntu and ArchLinux.*
+
+FreeLing
+--------
+To use loacore, you need to install FreeLing with its Python API.
+
+To do it, you can follow the FreeLing documentation : https://talp-upc.gitbooks.io/freeling-4-1-user-manual/content/installation/apis-linux.html
+
+Pip
+---
+In order to install the following packages easily, you need to install `pip <https://pypi.org/project/pip/>`_ .
+There are several way to do it, depending on your OS.
+
+
+PyFreelingApi
+-------------
+This Python module should provide an easier way to access the Freeling Python API with a platform independent package. More details can be found on GitHub : https://github.com/PaulBreugnot/PyFreelingApi
+
+Installation :
+::
+   pip install git+https://github.com/PaulBreugnot/PyFreelingApi
+
+Loacore
+-------
+This is finally the main program.
+
+Installation :
+::
+   pip install git+https://github.com/PaulBreugnot/Loacore

@@ -16,14 +16,6 @@ SQlite
 | The embedded database used to store results is an sqlite database, managed with the sqlite3 Python database API : https://docs.python.org/3/library/sqlite3.html
 | The corresponding Python package should already be installed in your Python3 distribution.
 
-Prebuild DB
-***********
-| *Incomplete section*
-| Because the database is quite heavy, it is not included in the GitHub repository. Of course you could build it on your own, but because this process can be quite long prebuild databases can be found there *enter url* with following files:
-
-- IMDB
-- UCI
-
 Machine Learning
 ----------------
 | Machine learning modules are based on two Python libraries.
