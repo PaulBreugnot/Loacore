@@ -130,7 +130,7 @@ def test_load_polarities():
     import loacore.load.file_load as file_load
     import itertools
 
-    ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+    ids = file_load.get_id_files_by_file_path(r'.*/uci/.+')
     files = file_load.load_database(id_files=ids, load_sentences=False)
     reviews = itertools.chain.from_iterable([f.reviews for f in files])
     for review in reviews:
@@ -162,7 +162,7 @@ def test_print_colored_deptree():
 def test_colored_reviews():
     import loacore.load.file_load as file_load
 
-    ids = file_load.get_id_files_by_file_paths([r'.*/uci/.+'])
+    ids = file_load.get_id_files_by_file_path(r'.*/uci/.+')
     files = file_load.load_database(id_files=ids, load_deptrees=False)
     for file in files:
         for review in file.reviews:

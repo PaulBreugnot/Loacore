@@ -110,6 +110,7 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
             index = 0
 
             state_queue = Queue(maxsize=100)
+            interrupt = Queue()
 
             for reviews in split_reviews:
                 index += 1
@@ -135,16 +136,26 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
                 printer.start()
 
                 while not process_queue.empty():
-                        if len(running_processes) < workers:
-                            p = process_queue.get()
-                            p.start()
-                            running_processes.append(p)
-                        terminated_processes = []
-                        for p in running_processes:
-                            if not p.is_alive():
-                                terminated_processes.append(p)
-                        for p in terminated_processes:
-                            running_processes.remove(p)
+                    if not interrupt.empty():
+                        from loacore.conf import OUTPUT_PATH
+                        file = open(os.path.join(OUTPUT_PATH, "debug.txt"))
+                        file.close()
+                        print("Child process interruption")
+                        for process in running_processes:
+                            print("Kill process " + process.pid)
+                            process.terminate()
+                        raise KeyboardInterrupt
+
+                    if len(running_processes) < workers:
+                        p = process_queue.get()
+                        p.start()
+                        running_processes.append(p)
+                    terminated_processes = []
+                    for p in running_processes:
+                        if not p.is_alive():
+                            terminated_processes.append(p)
+                    for p in terminated_processes:
+                        running_processes.remove(p)
                 for p in running_processes:
                     p.join()
 
@@ -158,97 +169,109 @@ def add_files(file_paths, encoding='utf8', lang="", workers=1):
             _load_conf()
 
 
-def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_process=None):
-    import os
-    from loacore.utils.status import ProcessState
+def _split_reviews_process(reviews, freeling_modules, _state_queue=None, _id_process=None, interrupt=None):
+    try:
+        import os
+        from loacore.utils.status import ProcessState
 
-    # Tokenization + Add all sentences and all words from all reviews
-    import loacore.process.sentence_process as sentence_process
-    added_sentences = sentence_process.add_sentences_from_reviews(
-        reviews,
-        _state_queue=_state_queue,
-        _id_process=_id_process,
-        freeling_modules=(freeling_modules["morfo"], freeling_modules["tk"], freeling_modules["sp"]))
-    print(len(added_sentences))
+        # Tokenization + Add all sentences and all words from all reviews
+        import loacore.process.sentence_process as sentence_process
+        added_sentences = sentence_process.add_sentences_from_reviews(
+            reviews,
+            _state_queue=_state_queue,
+            _id_process=_id_process,
+            freeling_modules=(freeling_modules["morfo"], freeling_modules["tk"], freeling_modules["sp"]))
+        print(len(added_sentences))
 
-    # added_sentences = sentence_process.add_sentences_from_reviews(
-    #     reviews,
-    #     _state_queue=state_queue,
-    #     _id_process=id_process)
+        # added_sentences = sentence_process.add_sentences_from_reviews(
+        #     reviews,
+        #     _state_queue=state_queue,
+        #     _id_process=id_process)
 
-    # Reload sentences with words
-    import loacore.load.sentence_load as sentence_load
-    if _state_queue is not None:
-        _state_queue.put(ProcessState(_id_process, os.getpid(), "Reload Sentences", "-"))
-    else:
-        print("Reload Sentences...")
+        # Reload sentences with words
+        import loacore.load.sentence_load as sentence_load
+        if _state_queue is not None:
+            _state_queue.put(ProcessState(_id_process, os.getpid(), "Reload Sentences", "-"))
+        else:
+            print("Reload Sentences...")
 
-    sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
+        sentences = sentence_load.load_sentences(id_sentences=[s.id_sentence for s in added_sentences], load_words=True)
 
-    # Some test outputs ############################################
-    from loacore.conf import OUTPUT_PATH
-    f = open(os.path.join(OUTPUT_PATH, "test_sentence.txt"), 'w')
-    f.write(str(len(sentences)) + "\n")
-    for s in sentences:
-        f.write(str(len(s.words)) + "\t" + s.sentence_str() + "\n")
-    f.close()
-    #################################################################
+        # Some test outputs ############################################
+        from loacore.conf import OUTPUT_PATH
+        f = open(os.path.join(OUTPUT_PATH, "test_sentence.txt"), 'w')
+        f.write(str(len(sentences)) + "\n")
+        for s in sentences:
+            f.write(str(len(s.words)) + "\t" + s.sentence_str() + "\n")
+        f.close()
+        #################################################################
 
-    # Lemmatization
-    import loacore.process.lemma_process as lemma_process
-    lemma_process.add_lemmas_to_sentences(
-        sentences,
-        _state_queue=_state_queue,
-        _id_process=_id_process,
-        freeling_modules=freeling_modules["morfo"])
+        # Lemmatization
+        import loacore.process.lemma_process as lemma_process
+        lemma_process.add_lemmas_to_sentences(
+            sentences,
+            _state_queue=_state_queue,
+            _id_process=_id_process,
+            freeling_modules=freeling_modules["morfo"])
 
-    # lemma_process.add_lemmas_to_sentences(
-    #     sentences,
-    #     _state_queue=state_queue,
-    #     _id_process=id_process)
+        # lemma_process.add_lemmas_to_sentences(
+        #     sentences,
+        #     _state_queue=state_queue,
+        #     _id_process=id_process)
 
-    # Disambiguation
-    import loacore.process.synset_process as synset_process
-    synset_process.add_synsets_to_sentences(
-        sentences,
-        _state_queue=_state_queue,
-        _id_process=_id_process,
-        freeling_modules=(freeling_modules["morfo"],
-                          freeling_modules["tagger"],
-                          freeling_modules["sen"],
-                          freeling_modules["wsd"]))
+        # Disambiguation
+        import loacore.process.synset_process as synset_process
+        synset_process.add_synsets_to_sentences(
+            sentences,
+            _state_queue=_state_queue,
+            _id_process=_id_process,
+            freeling_modules=(freeling_modules["morfo"],
+                              freeling_modules["tagger"],
+                              freeling_modules["sen"],
+                              freeling_modules["wsd"]))
 
-    # synset_process.add_synsets_to_sentences(
-    #     sentences,
-    #     _state_queue=state_queue,
-    #     _id_process=id_process)
+        # synset_process.add_synsets_to_sentences(
+        #     sentences,
+        #     _state_queue=state_queue,
+        #     _id_process=id_process)
 
-    # Synset polarities
-    id_words = [w.id_word for s in sentences for w in s.words]
-    synset_process.add_polarity_to_synsets(
-        id_words,
-        _state_queue=_state_queue,
-        _id_process=_id_process)
+        # Synset polarities
+        id_words = [w.id_word for s in sentences for w in s.words]
+        synset_process.add_polarity_to_synsets(
+            id_words,
+            _state_queue=_state_queue,
+            _id_process=_id_process)
 
-    # Dep tree
-    import loacore.process.deptree_process as deptree_process
-    deptree_process.add_dep_tree_from_sentences(
-        sentences,
-        _state_queue=_state_queue,
-        _id_process=_id_process,
-        freeling_modules=(freeling_modules["morfo"],
-                          freeling_modules["tagger"],
-                          freeling_modules["sen"],
-                          freeling_modules["wsd"],
-                          freeling_modules["parser"]))
+        # Dep tree
+        import loacore.process.deptree_process as deptree_process
+        deptree_process.add_dep_tree_from_sentences(
+            sentences,
+            _state_queue=_state_queue,
+            _id_process=_id_process,
+            freeling_modules=(freeling_modules["morfo"],
+                              freeling_modules["tagger"],
+                              freeling_modules["sen"],
+                              freeling_modules["wsd"],
+                              freeling_modules["parser"]))
 
-    # deptree_process.add_dep_tree_from_sentences(
-    #     sentences,
-    #     _state_queue=state_queue,
-    #     _id_process=id_process)
+        # deptree_process.add_dep_tree_from_sentences(
+        #     sentences,
+        #     _state_queue=state_queue,
+        #     _id_process=id_process)
 
-    if _state_queue is not None:
-        _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
+        if _state_queue is not None:
+            _state_queue.put(ProcessState(_id_process, os.getpid(), "Terminated", " - "))
+
+    except:
+        from loacore.conf import OUTPUT_PATH
+        import logging
+        import os
+        file = open(os.path.join(OUTPUT_PATH, str(os.getpid()) + ".txt"))
+        file.close()
+        logging.basicConfig(filename=os.path.join(OUTPUT_PATH, "error_log.out"))
+        logging.exception("Process " + str(os.getpid()) + " interrupted.")
+        if interrupt is not None:
+            interrupt.put("error")
 
 
 def _print_states_process(num_process, q):
@@ -258,57 +281,62 @@ def _print_states_process(num_process, q):
     curses.update_lines_cols()
 
     def printer(stdscr):
-        refresh_count = 0
+        try :
+            refresh_count = 0
 
-        def plot_window():
-            nonlocal refresh_count
-            refresh_count += 1
-            if refresh_count >= 1000:
-                refresh_count = 0
-                stdscr.clear()
-            stdscr.move(0, 0)
-            stdscr.addstr(0, 0, "Process")
-            stdscr.addstr(0, 14, "PID")
-            stdscr.addstr(0, 21, "Activity")
-            stdscr.addstr(0, 45, "Progress")
-            stdscr.move(0, 0)
-            stdscr.chgat(curses.A_REVERSE)
+            def plot_window():
+                nonlocal refresh_count
+                refresh_count += 1
+                if refresh_count >= 1000:
+                    refresh_count = 0
+                    stdscr.clear()
+                stdscr.move(0, 0)
+                stdscr.addstr(0, 0, "Process")
+                stdscr.addstr(0, 14, "PID")
+                stdscr.addstr(0, 21, "Activity")
+                stdscr.addstr(0, 45, "Progress")
+                stdscr.move(0, 0)
+                stdscr.chgat(curses.A_REVERSE)
 
-            for i in range(min(curses.LINES - 1, num_process)):
-                items = processes[i + 1].state_str()
-                stdscr.move(i + 1, 0)
-                stdscr.clrtoeol()
-                stdscr.addstr(i + 1, 0, items[0])
-                stdscr.addstr(i + 1, 14, items[1])
-                stdscr.addstr(i + 1, 21, items[2])
-                stdscr.addstr(i + 1, 45, items[3])
-            if num_process + 1 <= curses.LINES:
-                stdscr.move(num_process + 1, 0)
-            stdscr.refresh()
+                for i in range(min(curses.LINES - 1, num_process)):
+                    items = processes[i + 1].state_str()
+                    stdscr.move(i + 1, 0)
+                    stdscr.clrtoeol()
+                    stdscr.addstr(i + 1, 0, items[0])
+                    stdscr.addstr(i + 1, 14, items[1])
+                    stdscr.addstr(i + 1, 21, items[2])
+                    stdscr.addstr(i + 1, 45, items[3])
+                if num_process + 1 <= curses.LINES:
+                    stdscr.move(num_process + 1, 0)
+                stdscr.refresh()
 
-        print("Printer initialized")
-        for n in unterminated_processes:
-            processes[n] = ProcessState(n, "-", "Waiting", "-")
-        old_lines = curses.LINES
-        while len(unterminated_processes) > 0:
-            curses.update_lines_cols()
-            if curses.LINES != old_lines:
-                plot_window()
-                old_lines = curses.LINES
-            while not q.empty():
-                state = q.get()
-                processes[state.id_process] = state
-                if state.activity == "Terminated" or state.activity == "DB error":
-                    unterminated_processes.remove(state.id_process)
-                plot_window()
+            print("Printer initialized")
+            for n in unterminated_processes:
+                processes[n] = ProcessState(n, "-", "Waiting", "-")
+            old_lines = curses.LINES
+            while len(unterminated_processes) > 0:
+                curses.update_lines_cols()
+                if curses.LINES != old_lines:
+                    plot_window()
+                    old_lines = curses.LINES
+                while not q.empty():
+                    state = q.get()
+                    processes[state.id_process] = state
+                    if state.activity == "Terminated" or state.activity == "DB error":
+                        unterminated_processes.remove(state.id_process)
+                    plot_window()
 
-        import os
-        from loacore.conf import OUTPUT_PATH
-        f = open(os.path.join(OUTPUT_PATH, "result.log"), "w")
-        for i in processes.keys():
-            items = processes[i].state_str()
-            f.write(items[0] + '\t' + items[1] + '\t' + items[2] + '\t' + items[3] + '\t\n')
-        f.close()
+            import os
+            from loacore.conf import OUTPUT_PATH
+            f = open(os.path.join(OUTPUT_PATH, "result.log"), "w")
+            for i in processes.keys():
+                items = processes[i].state_str()
+                f.write(items[0] + '\t' + items[1] + '\t' + items[2] + '\t' + items[3] + '\t\n')
+            f.close()
+        except:
+            from loacore.conf import OUTPUT_PATH
+            file = open(os.path.join(OUTPUT_PATH, "debug_curse.txt"))
+            file.close()
 
     unterminated_processes = [n + 1 for n in range(num_process)]
     processes = {}

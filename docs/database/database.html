@@ -48,11 +48,11 @@
 <li>File_Name : an arbitrary name for each file, that should be unique. In Loacore, the absolute path of the added file is used, but the user is free to change File_Name as he wants.</li>
 </ul>
 <p><strong>SQL requests examples</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="o">#</span> <span class="k">Select</span> <span class="k">all</span> <span class="n">file</span> <span class="n">name</span>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select all file name</span>
 <span class="k">SELECT</span> <span class="n">File_Name</span> <span class="k">FROM</span> <span class="n">File</span><span class="p">;</span>
 
-<span class="o">#</span> <span class="k">Select</span> <span class="nb">number</span> <span class="k">of</span> <span class="n">files</span> <span class="k">in</span> <span class="k">database</span>
-<span class="k">SELECT</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span><span class="p">;</span>
+<span class="c1"># Select number of files in database</span>
+<span class="k">SELECT</span> <span class="nf">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span><span class="p">;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -63,7 +63,7 @@
 <blockquote>
 <div><ul class="simple">
 <li>ID_File : id of the associated file.</li>
-<li>File_Index : position of the review inside the file (starting from 0).</li>
+<li>File_Index : position of the review in the file (start from 0).</li>
 <li>Review : a string representation of the review.</li>
 </ul>
 <div class="admonition note">
@@ -72,11 +72,11 @@
 However, Freeling processes are made from those representations in practice.</p>
 </div>
 <p><strong>SQL requests examples</strong></p>
-<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="o">#</span> <span class="k">Select</span> <span class="n">reviews</span> <span class="n">content</span> <span class="k">of</span> <span class="n">file</span> <span class="mi">1</span>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># Select reviews content of file 1</span>
 <span class="k">SELECT</span> <span class="n">Review</span> <span class="k">FROM</span> <span class="n">Review</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">File_Index</span> <span class="k">WHERE</span> <span class="n">ID_File</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
-<span class="o">#</span> <span class="k">Select</span> <span class="n">review</span> <span class="k">count</span> <span class="k">in</span> <span class="k">each</span> <span class="n">file</span>
-<span class="k">SELECT</span> <span class="n">File_Name</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span> <span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">File</span><span class="p">.</span><span class="n">ID_File</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_File</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">File_Name</span><span class="p">;</span>
+<span class="c1"># Select review count in each file</span>
+<span class="k">SELECT</span> <span class="n">File_Name</span><span class="p">,</span> <span class="nf">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span> <span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">File</span><span class="p">.</span><span class="n">ID_File</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_File</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">File_Name</span><span class="p">;</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -87,8 +87,135 @@ However, Freeling processes are made from those representations in practice.</p>
 <blockquote>
 <div><ul class="simple">
 <li>ID_Review : id of the associated review.</li>
+<li>Review_Index : position of the sentence in the review (start from 0)</li>
+<li>ID_Dep_Tree : id of a possibly associated dependency tree</li>
 </ul>
+<p><strong>SQL Requests Example</strong></p>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># sentence count in each file</span>
+<span class="k">SELECT</span> <span class="n">File_Name</span><span class="p">,</span> <span class="nf">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">File</span> <span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">File</span><span class="p">.</span><span class="n">ID_File</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_File</span> <span class="k">JOIN</span> <span class="n">Sentence</span> <span class="k">ON</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span> <span class="o">=</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Review</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">File_Name</span><span class="p">;</span>
+</pre></div>
+</div>
 </div></blockquote>
+</div>
+<div class="section" id="word-table">
+<h3>Word table<a class="headerlink" href="#word-table" title="Permalink to this headline">¶</a></h3>
+<p>Concrete file content.</p>
+<blockquote>
+<div><ul class="simple">
+<li>ID_Sentence : id of the associated sentence.</li>
+<li>Word : string representing the word, in its original form.</li>
+<li>Sentence_Index : position of the word in the sentence.</li>
+<li>ID_Lemma : id of a possibly associated lemma</li>
+<li>ID_Synset : id of a possibly associated <em>synset</em></li>
+<li>PoS_tag : possibly associated Part Of Speech tag.</li>
+</ul>
+<p><strong>SQL Requests Example</strong></p>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># select sentence&#39;s words in their original order</span>
+<span class="k">SELECT</span> <span class="n">ID_Sentence</span><span class="p">,</span> <span class="n">Word</span> <span class="k">FROM</span> <span class="n">Word</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">ID_Sentence</span><span class="p">,</span> <span class="n">Sentence_Index</span><span class="p">;</span>
+
+<span class="c1"># select average sentence length for each file (reminder : punctuation elements are considered as words)</span>
+<span class="k">SELECT</span> <span class="n">File_Name</span><span class="p">,</span> <span class="nf">AVG</span><span class="p">(</span><span class="n">word_count</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="p">(</span><span class="k">SELECT</span> <span class="n">ID_Sentence</span> <span class="k">AS</span> <span class="n">id</span><span class="p">,</span> <span class="nf">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">AS</span> <span class="n">word_count</span> <span class="k">FROM</span> <span class="n">Word</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">id</span><span class="p">)</span>
+<span class="k">JOIN</span> <span class="n">Sentence</span> <span class="k">ON</span> <span class="n">id</span> <span class="o">=</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Sentence</span>
+<span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Review</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span>
+<span class="k">JOIN</span> <span class="n">File</span> <span class="k">ON</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_File</span> <span class="o">=</span> <span class="n">File</span><span class="p">.</span><span class="n">ID_File</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">File_Name</span><span class="p">;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="analysis-results">
+<h2>Analysis Results<a class="headerlink" href="#analysis-results" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="lemma">
+<h3>Lemma<a class="headerlink" href="#lemma" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/lemma_table.png" src="../_images/lemma_table.png" />
+<p>Considering its content, this table does not seem really necessary and lemma could have been stored directly in the Word table, but this has been done to enhence clarity.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Lemma : string representation of a lemma</li>
+</ul>
+<p><strong>SQL Requests Example</strong></p>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># select global lemma vocabulary</span>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Lemma</span> <span class="k">FROM</span> <span class="n">Lemma</span><span class="p">;</span>
+
+<span class="c1"># compute bag of word representations of each review using lemmas</span>
+<span class="k">SELECT</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span><span class="p">,</span> <span class="n">Lemma</span><span class="p">,</span> <span class="nf">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Word</span>
+<span class="k">JOIN</span> <span class="n">Lemma</span> <span class="k">ON</span> <span class="n">Word</span><span class="p">.</span><span class="n">ID_Lemma</span> <span class="o">=</span> <span class="n">Lemma</span><span class="p">.</span><span class="n">ID_Lemma</span>
+<span class="k">JOIN</span> <span class="n">Sentence</span> <span class="k">ON</span> <span class="n">Word</span><span class="p">.</span><span class="n">ID_Sentence</span> <span class="o">=</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Sentence</span>
+<span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Review</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span><span class="p">,</span> <span class="n">Lemma</span><span class="p">;</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="synset">
+<h3>Synset<a class="headerlink" href="#synset" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/synset_table.png" src="../_images/synset_table.png" />
+<p>Results from Freeling disambiguation and SentiWordNet polarities.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Synset_Code : WordNet offset (used in FreeLing)</li>
+<li>Synset_Name : name representation (e.g. : dog.n.1, used in nltk)</li>
+<li>Neg_Score, Pos_Score, Obj_Score : positive, negative and objective scores obtained in SentiWordNet.</li>
+</ul>
+<p><strong>SQL Requests Example</strong></p>
+</div></blockquote>
+<div class="highlight-mysql notranslate"><div class="highlight"><pre><span></span><span class="c1"># select global synset vocabulary (disambiguated synsets)</span>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">Synset_Name</span> <span class="k">FROM</span> <span class="n">Synset</span><span class="p">;</span>
+
+<span class="c1"># compute bag of word representations of each review using disambiguated synsets</span>
+<span class="k">SELECT</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span><span class="p">,</span> <span class="n">Synset_Name</span><span class="p">,</span> <span class="nf">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<span class="k">FROM</span> <span class="n">Word</span>
+<span class="k">JOIN</span> <span class="n">Synset</span> <span class="k">ON</span> <span class="n">Word</span><span class="p">.</span><span class="n">ID_Synset</span> <span class="o">=</span> <span class="n">Synset</span><span class="p">.</span><span class="n">ID_Synset</span>
+<span class="k">JOIN</span> <span class="n">Sentence</span> <span class="k">ON</span> <span class="n">Word</span><span class="p">.</span><span class="n">ID_Sentence</span> <span class="o">=</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Sentence</span>
+<span class="k">JOIN</span> <span class="n">Review</span> <span class="k">ON</span> <span class="n">Sentence</span><span class="p">.</span><span class="n">ID_Review</span> <span class="o">=</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">Review</span><span class="p">.</span><span class="n">ID_Review</span><span class="p">,</span> <span class="n">Synset_Name</span><span class="p">;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependency-trees">
+<h3>Dependency Trees<a class="headerlink" href="#dependency-trees" title="Permalink to this headline">¶</a></h3>
+<p>Dependency tree structure is represented using three tables.</p>
+<img alt="../_images/dep_tree_tables.png" src="../_images/dep_tree_tables.png" />
+<div class="section" id="dep-tree">
+<h4>Dep_tree<a class="headerlink" href="#dep-tree" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>This table represent the entry point to retrieve a Dep_Tree from a Sentence.</dt>
+<dd><ul class="first last simple">
+<li>ID_Dep_Tree_Node : ID of the root node, reference to Dep_Tree_Node table.</li>
+<li>ID_Sentence : ID of the represented sentence, reference to Sentence table.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dep-tree-node">
+<h4>Dep_Tree_Node<a class="headerlink" href="#dep-tree-node" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>This table stores data about each node.</dt>
+<dd><ul class="first last simple">
+<li>ID_Dep_Tree : reference to the Dep_Tree to which this node belongs.</li>
+<li>ID_Word : Word linked to this node, reference to Word table.</li>
+<li>Label : dependency label.</li>
+<li>root : 1 if this node is the root of its Dep_Tree, else 0.</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="dep-tree-node-children">
+<h4>Dep_Tree_Node_Children<a class="headerlink" href="#dep-tree-node-children" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>This table represents node hierarchy.</dt>
+<dd><ul class="first last simple">
+<li>ID_Parent_Node : ID of a parent, reference to Dep_Tree_Node.</li>
+<li>ID_Child : ID of a child of the considered parent, reference to Dep_Tree_Node.</li>
+</ul>
+</dd>
+</dl>
+<p>Several childs can be linked to the same parent through several records in the table.</p>
+<p>The <a class="reference internal" href="../load.html#loacore.load.deptree_load.load_dep_trees" title="loacore.load.deptree_load.load_dep_trees"><code class="xref py py-func docutils literal notranslate"><span class="pre">load_dep_trees()</span></code></a> combines SQL requests and recursion to load Dep Trees contained in those tables in <a class="reference internal" href="../classes.html#loacore.classes.classes.DepTree" title="loacore.classes.classes.DepTree"><code class="xref py py-class docutils literal notranslate"><span class="pre">DepTree</span></code></a> classes.</p>
+<p>Source code : <a class="reference external" href="https://github.com/PaulBreugnot/Loacore/blob/master/loacore/load/deptree_load.py">https://github.com/PaulBreugnot/Loacore/blob/master/loacore/load/deptree_load.py</a></p>
+</div>
 </div>
 </div>
 </div>
@@ -117,6 +244,7 @@ However, Freeling processes are made from those representations in practice.</p>
 <li class="toctree-l1"><a class="reference internal" href="../configuration.html">Configuration</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Database</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#main-structure">Main Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#analysis-results">Analysis Results</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../classes.html">Classes</a></li>
@@ -157,7 +285,7 @@ However, Freeling processes are made from those representations in practice.</p>
       &copy;2018, Universidad Tecnológica de Pereira.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |

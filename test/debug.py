@@ -1,9 +1,8 @@
-from loacore.load import file_load
-from loacore.analysis.sentiment_analysis import compute_simple_files_polarity
+from loacore.process.file_process import add_files
+from loacore.conf import DATA_PATH
+import os
 
-files = file_load.load_database(id_files=(1,), load_in_temp_file=True, workers=4, load_deptrees=False)
+print(DATA_PATH)
+print(os.path.join(DATA_PATH, "raw/imdb/test/test_imdb_labelled_neg.txt"))
+add_files([os.path.join(DATA_PATH, "raw/imdb/test/test_imdb_labelled_neg.txt")], workers=2)
 
-for file in files:
-    print(str(file.id_file) + " : " + str(len(file.reviews)))
-
-polarities = compute_simple_files_polarity(files, commit_polarities=True)

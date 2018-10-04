@@ -21,7 +21,7 @@ def check_polarity(files,
 
     for analysis in analysis_to_check:
         print(analysis)
-        table = PrettyTable(["File", "Correct", "False Positive", "False Negative"])
+        table = PrettyTable(["File", "Correct", "False Positive", "False Negative", "False Objective"])
         for file in files:
             correct = 0
             false_positive = 0
@@ -41,8 +41,18 @@ def check_polarity(files,
                     false_objective += 1
 
             total = correct + false_positive + false_negative + false_objective
-            table.add_row([file.get_filename(),
-                           "%.2f" % (correct/total), "%.2f" % (false_positive/total), "%.2f" % (false_negative/total)])
+            if total > 0:
+                table.add_row([file.get_filename(),
+                               "%.2f" % (correct / total),
+                               "%.2f" % (false_positive / total),
+                               "%.2f" % (false_negative / total),
+                               "%.2f" % (false_objective / total)])
+            else:
+                table.add_row([file.get_filename(),
+                               str(None),
+                               str(None),
+                               str(None),
+                               str(None)])
 
         print(table)
 
